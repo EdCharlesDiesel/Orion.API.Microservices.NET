@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  orion.services.stockanalyzer.api:
+    image: ${DOCKER_REGISTRY-}orionservicesstockanalyzerapi
+    build:
+      context: .
+      dockerfile: src/Services/StockAnalyzer/StockAnalyzer.API/Dockerfile
+
+  orion.webapps.healthcheck:
+    image: ${DOCKER_REGISTRY-}orionwebappshealthcheck
+    build:
+      context: .
+      dockerfile: src/WebApps/WebStatus/Dockerfile
+

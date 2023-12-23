@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orion.Services.StockAnalyze
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StockAnalyzer", "StockAnalyzer", "{FFBB6A7B-FD31-4A7C-ADE6-A36E005B381B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Services.StockAnalyzer.API.Tests", "src\Services\StockAnalyzer\StockAnalyzer.API.Tests\Orion.Services.StockAnalyzer.API.Tests.csproj", "{69B62104-8836-433A-88FB-498B39A35694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orion.Services.StockAnalyzer.API.Tests", "src\Services\StockAnalyzer\StockAnalyzer.API.Tests\Orion.Services.StockAnalyzer.API.Tests.csproj", "{69B62104-8836-433A-88FB-498B39A35694}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AB352D60-68B8-428E-AC98-EC44F6CF6436}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{69B62104-8836-433A-88FB-498B39A35694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69B62104-8836-433A-88FB-498B39A35694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69B62104-8836-433A-88FB-498B39A35694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB352D60-68B8-428E-AC98-EC44F6CF6436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB352D60-68B8-428E-AC98-EC44F6CF6436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB352D60-68B8-428E-AC98-EC44F6CF6436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB352D60-68B8-428E-AC98-EC44F6CF6436}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

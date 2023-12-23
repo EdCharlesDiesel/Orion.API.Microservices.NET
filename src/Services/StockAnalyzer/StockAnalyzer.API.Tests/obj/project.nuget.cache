@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JbkmQruOXwKUygXeBy4KYNOwdpmuLY4FrQzlM4yT5CO6VBnNmeyQuAq3VfXaTzJgVy2mKJ2yjB5U5UUg1RXkRw==",
+  "dgSpecHash": "MmxyPpDpAdQQMCth7AhXrwYG54aBWO12PZ8inxLEpydJWdGI4+VVNGBoLNg1lcbBMyahGy0ojDki1UFMyxKetw==",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\Services\\StockAnalyzer\\StockAnalyzer.API.Tests\\Orion.Services.StockAnalyzer.API.Tests.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.5.0\\microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.testplatform.testhost\\17.5.0\\microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

@@ -2,14 +2,14 @@ using Microsoft.AspNetCore.Mvc;
 using StockAnalyzer.API.Controllers;
 using Xunit;
 
-namespace StockAnalyzer.API.Tests
+namespace Orion.Services.StockAnalyzer.API.Tests.Controllers
 {
     public class LatestControllerTest
     {
         private readonly LatestController _controller;
-        
+
         public LatestControllerTest()
-        {            
+        {
             _controller = new LatestController();
         }
 
@@ -22,13 +22,13 @@ namespace StockAnalyzer.API.Tests
             Assert.IsType<OkObjectResult>(okResult as OkObjectResult);
         }
 
-        [Fact(Skip ="I'll sort this one later")]
+        [Fact(Skip = "I'll sort this one later")]
         public void Get_WhenCalled_ReturnsAllItems()
         {
-           // Act
-           //var okResult = _controller.getLatestUpdates().Result;
-           // Assert
-           //var items = Assert.IsType<JsonResult>(okResult);
+            // Act
+            //var okResult = _controller.getLatestUpdates().Result;
+            // Assert
+            //var items = Assert.IsType<JsonResult>(okResult);
             //Assert.Equal(OkObjectResult, items.StatusCode);
         }
 

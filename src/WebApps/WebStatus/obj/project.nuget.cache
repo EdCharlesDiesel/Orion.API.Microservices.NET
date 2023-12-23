@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qLeFxpe55vrumofuXZFTg6N3KH+a7O4jGO/2yBwXax4geBtpukEdkwp2MOwYDZUbpaZvg7RIZRfpMVEhifKC1Q==",
+  "dgSpecHash": "Ng4sQZ9FILavZ3zZYXoU6Lk13vbA4o/EZUDJki7HG3AaVfwhPWxjZ+sAvse9Nx5PPiD1SRe2iIaI836Mu0CY2A==",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\WebStatus\\Orion.WebApps.HealthCheck.csproj",
   "expectedPackageFiles": [
@@ -43,7 +43,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.packaging.tools\\1.0.0-preview1-25301-01\\microsoft.packaging.tools.1.0.0-preview1-25301-01.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.10\\microsoft.rest.clientruntime.2.3.10.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\netstandard.library\\2.0.0-preview1-25301-01\\netstandard.library.2.0.0-preview1-25301-01.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\portable.bouncycastle\\1.8.1.3\\portable.bouncycastle.1.8.1.3.nupkg.sha512",

@@ -10,7 +10,7 @@
         "dependencies": {
           "AspNetCore.HealthChecks.UI": "5.0.1",
           "AspNetCore.HealthChecks.UI.InMemory.Storage": "5.0.1",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9"
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.5"
         },
         "runtime": {
           "Orion.WebApps.HealthCheck.dll": {}
@@ -330,7 +330,7 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.9": {},
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.19.5": {},
       "NETStandard.Library/2.0.0-preview1-25301-01": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -969,12 +969,12 @@
       "path": "microsoft.rest.clientruntime/2.3.10",
       "hashPath": "microsoft.rest.clientruntime.2.3.10.nupkg.sha512"
     },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.9": {
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.19.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Sug+YeP9YYigFnUdvPCUJjBz7cc2VVR7UBZkIRwPWmVR/HmIM5HbcpX940s4BM3xgL3QHGp3qN7AqkcZ/MjZEw==",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.10.9",
-      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+      "sha512": "sha512-Kaa1rBZdJFq5A0qgAcl6Bmk/UqLXTq9acEqxUlPEBA8oscmakLfkvuSXfG7Wa9t1/keaT85EuuDNgOo+Z9VYOQ==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.19.5",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
     },
     "NETStandard.Library/2.0.0-preview1-25301-01": {
       "type": "package",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Services.StockAnalyzer.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+520cf5eac60e00a2a36b8edff3adc64c0d86e8bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+889b3638935909b312f7185da53cebaf47b0c157")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Services.StockAnalyzer.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Services.StockAnalyzer.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

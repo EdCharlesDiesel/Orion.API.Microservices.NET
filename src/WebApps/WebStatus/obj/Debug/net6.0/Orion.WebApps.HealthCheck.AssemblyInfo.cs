@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("1dfd1b6e-42e4-45c0-b8f7-d95f9297da3f")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.WebApps.HealthCheck")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+889b3638935909b312f7185da53cebaf47b0c157")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.WebApps.HealthCheck")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.WebApps.HealthCheck")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
