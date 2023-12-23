@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.External.PaymentGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce27e1fd0ff8fcd790e70df833e14ae5f1400dd4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.External.PaymentGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.External.PaymentGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
