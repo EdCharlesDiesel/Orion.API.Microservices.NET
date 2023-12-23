@@ -1,7 +1,0 @@
-C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\Discount\Discount.Grpc\obj\Debug\net5.0\Orion.Services.Discount.Grpc.csproj.AssemblyReference.cache
-C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\Discount\Discount.Grpc\obj\Debug\net5.0\Orion.Services.Discount.Grpc.GeneratedMSBuildEditorConfig.editorconfig
-C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\Discount\Discount.Grpc\obj\Debug\net5.0\Orion.Services.Discount.Grpc.AssemblyInfoInputs.cache
-C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\Discount\Discount.Grpc\obj\Debug\net5.0\Orion.Services.Discount.Grpc.AssemblyInfo.cs
-C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\Discount\Discount.Grpc\obj\Debug\net5.0\Orion.Services.Discount.Grpc.csproj.CoreCompileInputs.cache
-C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\Discount\Discount.Grpc\obj\Debug\net5.0\Orion.Services.Discount.Grpc.MvcApplicationPartsAssemblyInfo.cache
-C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\Discount\Discount.Grpc\obj\Debug\net5.0\Orion.Services.Discount.Grpc.sourcelink.json

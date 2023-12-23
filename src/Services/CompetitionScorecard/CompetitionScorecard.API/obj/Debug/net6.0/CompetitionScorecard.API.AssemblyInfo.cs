@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CompetitionScorecard.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cef04d119c6f693fd15a1e3545844ec50e3ee941")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CompetitionScorecard.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CompetitionScorecard.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

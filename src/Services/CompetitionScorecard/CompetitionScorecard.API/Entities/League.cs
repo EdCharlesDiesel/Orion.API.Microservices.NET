@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CompetitionScorecard.API.Entities
+namespace Orion.Services.CompetitionScorecard.API.Entities
 {
     public class League
     {

@@ -1,7 +1,7 @@
-using CompetitionScorecard.API.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Orion.Services.CompetitionScorecard.API.Entities;
 
-namespace CompetitionScorecard.API.Controllers
+namespace Orion.Services.CompetitionScorecard.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fs+WrLdLZFwY1xWJjEsdqNnlHz5E1MHIaaqigIQxLi7jqvSqR1amaqQYgjuuZV5eEQTs9HeEMTmexdZNsn1WyQ==",
+  "dgSpecHash": "CIib1bD6PnWUk1++9J1zRRVuWUBGJ47lk9ywW2W6x6pGYXxOBPOe5zq7WBW+TicRpB+WI06uzqxuRXFIO8dMeA==",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\CompetitionScorecard.API.csproj",
+  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\Orion.Services.CompetitionScorecard.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.25\\microsoft.entityframeworkcore.6.0.25.nupkg.sha512",

@@ -1,9 +1,8 @@
-﻿using CompetitionScorecard.API.Entities;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
+using Orion.Services.CompetitionScorecard.API.Entities;
 
 
-namespace CompetitionScorecard.API.Context
+namespace Orion.Services.CompetitionScorecard.API.Context
 {
     public class OrionCompetitionScoreCardDbContext : DbContext
     {

@@ -1255,9 +1255,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\CompetitionScorecard.API.csproj",
-      "projectName": "CompetitionScorecard.API",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\CompetitionScorecard.API.csproj",
+      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\Orion.Services.CompetitionScorecard.API.csproj",
+      "projectName": "Orion.Services.CompetitionScorecard.API",
+      "projectPath": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\Orion.Services.CompetitionScorecard.API.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "QrTs2CZvaZm/gCxvfcdAsqSgUU7CeoX6Gc36H5wVs3w=",
-  "Source": "CompetitionScorecard.API",
-  "BasePath": "_content/CompetitionScorecard.API",
+  "Hash": "PT9a3tnm/SAfHKKdV+Sv1w1LHFw+SiMjNjVopjSMNtM=",
+  "Source": "Orion.Services.CompetitionScorecard.API",
+  "BasePath": "_content/Orion.Services.CompetitionScorecard.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
