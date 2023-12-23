@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Orion.Services.StockAnalyzer.API.ActionFilters;
 using System.Net;
 using System.Net.Http.Headers;
 using System.Text;
@@ -7,7 +8,7 @@ namespace StockAnalyzer.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class StocksController : ControllerBase
+    public class LatestController : ControllerBase
     {
 
         /// <summary>
@@ -16,6 +17,8 @@ namespace StockAnalyzer.API.Controllers
         /// <returns></returns>
         [HttpGet]
         [ProducesResponseType((int)HttpStatusCode.OK)]
+        
+        //[CheckClientKeyHeader]
         public async Task<IActionResult> getLatestUpdates()
         {              
             var getLatestUpdates = GetLatestUpdates().Result;
@@ -26,8 +29,8 @@ namespace StockAnalyzer.API.Controllers
         /// Get latest updates since a specific date
         /// </summary>        
         /// <returns></returns>
-
         [HttpGet("{date}", Name = "GetLatestUpdatesByDate")]
+        [CheckClientKeyHeader]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]        
         public async Task<IActionResult> getLatestUpdatesByDate(DateTime date)
