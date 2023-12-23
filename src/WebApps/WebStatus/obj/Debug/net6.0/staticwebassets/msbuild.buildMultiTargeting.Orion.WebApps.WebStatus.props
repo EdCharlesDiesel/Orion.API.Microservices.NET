@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Orion.WebApps.WebStatus.props" />
+</Project>

@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\banner\\banner1.png",
+      "PackagePath": "staticwebassets\\images\\banner\\banner1.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\banner\\banner2.png",
+      "PackagePath": "staticwebassets\\images\\banner\\banner2.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\banner\\banner3.png",
+      "PackagePath": "staticwebassets\\images\\banner\\banner3.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\placeholder.png",
+      "PackagePath": "staticwebassets\\images\\placeholder.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\product-1.png",
+      "PackagePath": "staticwebassets\\images\\product\\product-1.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\product-2.png",
+      "PackagePath": "staticwebassets\\images\\product\\product-2.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\product-3.png",
+      "PackagePath": "staticwebassets\\images\\product\\product-3.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\product-4.png",
+      "PackagePath": "staticwebassets\\images\\product\\product-4.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\product-5.png",
+      "PackagePath": "staticwebassets\\images\\product\\product-5.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\product-6.png",
+      "PackagePath": "staticwebassets\\images\\product\\product-6.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\product-7.png",
+      "PackagePath": "staticwebassets\\images\\product\\product-7.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\productx1.png",
+      "PackagePath": "staticwebassets\\images\\product\\productx1.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\productx2.png",
+      "PackagePath": "staticwebassets\\images\\product\\productx2.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\productx3.png",
+      "PackagePath": "staticwebassets\\images\\product\\productx3.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\productx4.png",
+      "PackagePath": "staticwebassets\\images\\product\\productx4.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\productx5.png",
+      "PackagePath": "staticwebassets\\images\\product\\productx5.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\productx6.png",
+      "PackagePath": "staticwebassets\\images\\product\\productx6.png"
+    },
+    {
+      "Id": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\WebApps\\AspnetRunBasics\\wwwroot\\images\\product\\productx7.png",
+      "PackagePath": "staticwebassets\\images\\product\\productx7.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Orion.WebApps.WebASP.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Orion.WebApps.WebASP.props",
+      "PackagePath": "build\\Orion.WebApps.WebASP.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Orion.WebApps.WebASP.props",
+      "PackagePath": "buildMultiTargeting\\Orion.WebApps.WebASP.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Orion.WebApps.WebASP.props",
+      "PackagePath": "buildTransitive\\Orion.WebApps.WebASP.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

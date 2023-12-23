@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QrTs2CZvaZm/gCxvfcdAsqSgUU7CeoX6Gc36H5wVs3w=",
+  "Source": "CompetitionScorecard.API",
+  "BasePath": "_content/CompetitionScorecard.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

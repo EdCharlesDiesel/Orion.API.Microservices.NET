@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vVZKZdsO3UyR7guWRrN9bdElM5eORj9Pwoe7yEUfjKc=",
+  "Source": "Orion.Services.Catalog.API",
+  "BasePath": "_content/Orion.Services.Catalog.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

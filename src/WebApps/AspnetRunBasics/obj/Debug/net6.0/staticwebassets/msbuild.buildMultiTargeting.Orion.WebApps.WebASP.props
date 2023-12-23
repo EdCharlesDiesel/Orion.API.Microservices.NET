@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Orion.WebApps.WebASP.props" />
+</Project>
