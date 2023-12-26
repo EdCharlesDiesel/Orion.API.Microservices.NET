@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "z89gpezxX7q+J6Vk038/SxpKTQT0E9VxjV9aKZKUflQ=",
+  "Source": "Orion.WebApps.HealthCheck",
+  "BasePath": "_content/Orion.WebApps.HealthCheck",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
