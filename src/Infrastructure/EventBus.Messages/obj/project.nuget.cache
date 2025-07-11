@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GUSW/VBjnmL+DhsNgn+Dk5215XFkebbdB3n89DQAKftUyme97Y5XZ1hCTebGknOetRCTU067m1K4cjW7L5ctEw==",
+  "dgSpecHash": "4gSPfGkKX9g=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET.v1.0.1\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }
