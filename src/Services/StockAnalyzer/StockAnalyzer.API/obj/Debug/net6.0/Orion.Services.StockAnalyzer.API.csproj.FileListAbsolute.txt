@@ -33,3 +33,6 @@ C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\StockAnalyzer\StockAnalyzer
 C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net6.0\Orion.Services.StockAnalyzer.API.pdb
 C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net6.0\Orion.Services.StockAnalyzer.API.genruntimeconfig.cache
 C:\x\Orion.API.Microservices.NET.v1.0.1\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net6.0\ref\Orion.Services.StockAnalyzer.API.dll
+C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net6.0\Orion.Services.StockAnalyzer.API.dll
+C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net6.0\refint\Orion.Services.StockAnalyzer.API.dll
+C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net6.0\Orion.Services.StockAnalyzer.API.pdb

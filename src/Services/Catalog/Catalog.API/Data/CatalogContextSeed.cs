@@ -1,9 +1,9 @@
-﻿using Catalog.API.Entities;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
+using Orion.Services.Catalog.API.Entities;
 
-namespace Catalog.API.Data
+namespace Orion.Services.Catalog.API.Data
 {
-    public class CatalogContextSeed
+    public abstract class CatalogContextSeed
     {
         public static void SeedData(IMongoCollection<Product> productCollection)
         {

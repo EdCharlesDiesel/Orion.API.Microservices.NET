@@ -1,8 +1,7 @@
-using Catalog.API.Data;
-using Catalog.API.Repositories;
-using Microsoft.OpenApi.Models;
+using Orion.Services.Catalog.API.Data;
+using Orion.Services.Catalog.API.Repositories;
 
-namespace Catalog.API
+namespace Orion.Services.Catalog.API
 {
     public class Program
     {

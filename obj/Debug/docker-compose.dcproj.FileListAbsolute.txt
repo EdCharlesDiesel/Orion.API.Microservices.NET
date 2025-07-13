@@ -12,3 +12,4 @@ C:\x\Orion.API.Microservices.NET.v1.0.1\bin\Debug\Orion.Services.StockAnalyzer.A
 C:\x\Orion.API.Microservices.NET.v1.0.1\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\x\Orion.API.Microservices.NET.v1.0.1\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\x\Orion.API.Microservices.NET.v1.0.1\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\x\Orion.API.Microservices.NET\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

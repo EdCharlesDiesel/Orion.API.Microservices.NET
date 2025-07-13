@@ -1,9 +1,9 @@
-﻿using Catalog.API.Entities;
-using Catalog.API.Repositories;
+﻿using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using System.Net;
+using Orion.Services.Catalog.API.Entities;
+using Orion.Services.Catalog.API.Repositories;
 
-namespace Catalog.API.Controllers
+namespace Orion.Services.Catalog.API.Controllers
 {
 
     [ApiController]
@@ -36,11 +36,6 @@ namespace Catalog.API.Controllers
         public async Task<ActionResult<Product>> GetProductById(string id)
         {
             var product = await _repository.GetProduct(id);
-            if (product == null)
-            {
-           //     _logger.LogError($"Product with id: {id}, not found.");
-                return NotFound();
-            }
             return Ok(product);
         }
 
