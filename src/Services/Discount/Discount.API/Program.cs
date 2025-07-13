@@ -1,7 +1,7 @@
-using Discount.API.Extensions;
-using Discount.API.Repositories;
+using Orion.Services.Discount.API.Extensions;
+using Orion.Services.Discount.API.Repositories;
 
-namespace Discount.API
+namespace Orion.Services.Discount.API
 {
     public class Program
     {

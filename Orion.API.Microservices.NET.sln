@@ -53,6 +53,10 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.WebApps.HealthCheck", "src\WebApps\Orion.WebApps.HealthCheck\Orion.WebApps.HealthCheck.csproj", "{9AF373F3-EC33-431D-BC90-A60FF2D1AC5C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{13EC0738-2AEB-4F26-9258-2D27586D0A0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users", "src\Services\Users\Users.csproj", "{0487772E-3D42-412D-B125-2B74518D4F09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,10 @@ Global
 		{9AF373F3-EC33-431D-BC90-A60FF2D1AC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AF373F3-EC33-431D-BC90-A60FF2D1AC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AF373F3-EC33-431D-BC90-A60FF2D1AC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0487772E-3D42-412D-B125-2B74518D4F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0487772E-3D42-412D-B125-2B74518D4F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0487772E-3D42-412D-B125-2B74518D4F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0487772E-3D42-412D-B125-2B74518D4F09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,6 +155,8 @@ Global
 		{FFBB6A7B-FD31-4A7C-ADE6-A36E005B381B} = {9EB5AA97-4ABD-4608-8EBE-06BF0CC8D23D}
 		{69B62104-8836-433A-88FB-498B39A35694} = {FFBB6A7B-FD31-4A7C-ADE6-A36E005B381B}
 		{9AF373F3-EC33-431D-BC90-A60FF2D1AC5C} = {5151D664-65D8-45F0-B6D4-B6AE172FAFEE}
+		{13EC0738-2AEB-4F26-9258-2D27586D0A0F} = {9EB5AA97-4ABD-4608-8EBE-06BF0CC8D23D}
+		{0487772E-3D42-412D-B125-2B74518D4F09} = {13EC0738-2AEB-4F26-9258-2D27586D0A0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFC31B86-B732-491F-9E63-995F435D6ED6}
