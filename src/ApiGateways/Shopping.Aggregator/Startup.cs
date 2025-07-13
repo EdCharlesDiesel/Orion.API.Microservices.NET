@@ -11,20 +11,15 @@ using Orion.Common.Logging;
 using Polly;
 using Polly.Extensions.Http;
 using Serilog;
-using Shopping.Aggregator.Services;
 using System;
 using System.Net.Http;
+using Orion.Shopping.Aggregator.Services;
 
 namespace Orion.Shopping.Aggregator
 {
-    public class Startup
+    public class Startup(IConfiguration configuration)
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; } = configuration;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -32,19 +27,19 @@ namespace Orion.Shopping.Aggregator
             services.AddTransient<LoggingDelegatingHandler>();
 
             services.AddHttpClient<ICatalogService, CatalogService>(c =>
-                c.BaseAddress = new Uri(Configuration["ApiSettings:CatalogUrl"]))
+                c.BaseAddress = new Uri(Configuration["ApiSettings:CatalogUrl"] ?? throw new InvalidOperationException()))
                 .AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy())
                 .AddPolicyHandler(GetCircuitBreakerPolicy());
 
             services.AddHttpClient<IBasketService, BasketService>(c =>
-                c.BaseAddress = new Uri(Configuration["ApiSettings:BasketUrl"]))
+                c.BaseAddress = new Uri(Configuration["ApiSettings:BasketUrl"] ?? throw new InvalidOperationException()))
                 .AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy())
                 .AddPolicyHandler(GetCircuitBreakerPolicy());
 
             services.AddHttpClient<IOrderService, OrderService>(c =>
-                c.BaseAddress = new Uri(Configuration["ApiSettings:OrderingUrl"]))
+                c.BaseAddress = new Uri(Configuration["ApiSettings:OrderingUrl"] ?? throw new InvalidOperationException()))
                 .AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy())
                 .AddPolicyHandler(GetCircuitBreakerPolicy());

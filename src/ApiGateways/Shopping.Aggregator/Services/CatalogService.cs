@@ -1,20 +1,15 @@
-﻿using Shopping.Aggregator.Extensions;
-using Shopping.Aggregator.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Orion.Shopping.Aggregator.Models;
+using Shopping.Aggregator.Extensions;
 
-namespace Shopping.Aggregator.Services
+namespace Orion.Shopping.Aggregator.Services
 {
-    public class CatalogService : ICatalogService
+    public class CatalogService(HttpClient client) : ICatalogService
     {
-        private readonly HttpClient _client;
-
-        public CatalogService(HttpClient client)
-        {
-            _client = client ?? throw new ArgumentNullException(nameof(client));
-        }
+        private readonly HttpClient _client = client ?? throw new ArgumentNullException(nameof(client));
 
         public async Task<IEnumerable<CatalogModel>> GetCatalog()
         {

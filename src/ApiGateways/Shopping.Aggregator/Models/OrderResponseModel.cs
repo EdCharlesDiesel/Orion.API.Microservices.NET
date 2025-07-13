@@ -1,6 +1,6 @@
-﻿namespace Shopping.Aggregator.Models
+﻿namespace Orion.Shopping.Aggregator.Models
 {
-    public class OrderResponseModel
+    public abstract class OrderResponseModel
     {
         public string UserName { get; set; }
         public decimal TotalPrice { get; set; }

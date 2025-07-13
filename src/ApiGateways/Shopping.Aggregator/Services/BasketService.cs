@@ -1,19 +1,14 @@
-﻿using Shopping.Aggregator.Extensions;
-using Shopping.Aggregator.Models;
-using System;
+﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Orion.Shopping.Aggregator.Models;
+using Shopping.Aggregator.Extensions;
 
-namespace Shopping.Aggregator.Services
+namespace Orion.Shopping.Aggregator.Services
 {
-    public class BasketService : IBasketService
+    public class BasketService(HttpClient client) : IBasketService
     {
-        private readonly HttpClient _client;
-
-        public BasketService(HttpClient client)
-        {
-            _client = client ?? throw new ArgumentNullException(nameof(client));
-        }
+        private readonly HttpClient _client = client ?? throw new ArgumentNullException(nameof(client));
 
         public async Task<BasketModel> GetBasket(string userName)
         {

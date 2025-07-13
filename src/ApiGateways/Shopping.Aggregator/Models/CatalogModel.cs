@@ -1,6 +1,6 @@
-﻿namespace Shopping.Aggregator.Models
+﻿namespace Orion.Shopping.Aggregator.Models
 {
-    public class CatalogModel
+    public abstract class CatalogModel
     {
         public string Id { get; set; }
         public string Name { get; set; }

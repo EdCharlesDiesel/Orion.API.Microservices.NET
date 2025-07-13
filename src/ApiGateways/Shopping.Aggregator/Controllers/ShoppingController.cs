@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Shopping.Aggregator.Models;
-using Shopping.Aggregator.Services;
 using System;
 using System.Net;
 using System.Threading.Tasks;
+using Orion.Shopping.Aggregator.Models;
+using Orion.Shopping.Aggregator.Services;
 
 namespace Shopping.Aggregator.Controllers
 {
@@ -33,11 +33,6 @@ namespace Shopping.Aggregator.Controllers
                 var product = await _catalogService.GetCatalog(item.ProductId);
 
                 // set additional product fields
-                item.ProductName = product.Name;
-                item.Category = product.Category;
-                item.Summary = product.Summary;
-                item.Description = product.Description;
-                item.ImageFile = product.ImageFile;
             }            
 
             var orders = await _orderService.GetOrdersByUserName(userName);

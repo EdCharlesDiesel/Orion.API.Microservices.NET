@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Orion.Core.StockAnalyzer.Domain
+﻿namespace Orion.StockAnalyzer.Core.Domain
 {
     public class StockPrice
     {
