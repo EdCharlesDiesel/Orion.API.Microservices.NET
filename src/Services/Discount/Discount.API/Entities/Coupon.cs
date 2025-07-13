@@ -1,4 +1,4 @@
-﻿namespace Discount.API.Entities
+﻿namespace Orion.Services.Discount.API.Entities
 {
     public class Coupon
     {

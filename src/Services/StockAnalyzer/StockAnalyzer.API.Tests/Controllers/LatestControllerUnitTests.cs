@@ -1,17 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
-using StockAnalyzer.API.Controllers;
+using Orion.Services.StockAnalyzer.API.Controllers;
 using Xunit;
 
 namespace Orion.Services.StockAnalyzer.API.Tests.Controllers
 {
     public class LatestControllerTest
     {
-        private readonly LatestController _controller;
-
-        public LatestControllerTest()
-        {
-            _controller = new LatestController();
-        }
+        private readonly LatestController _controller = new();
 
         [Fact]
         public void Get_WhenCalled_ReturnsOkResult()

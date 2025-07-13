@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
+
 
 namespace Orion.External.PaymentGateway
 {
@@ -17,7 +18,18 @@ namespace Orion.External.PaymentGateway
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "External Payment Gateway API", Version = "v1" });
+                //TODO: Uncomment this
+                // c.SwaggerDoc("v1", new OpenApiInfo
+                // {
+                //     Title = "External Payment Gateway API",
+                //     Summary = null,
+                //     Description = null,
+                //     Version = "v1",
+                //     TermsOfService = null,
+                //     Contact = null,
+                //     License = null,
+                //     Extensions = null
+                // });
             });
         }
 

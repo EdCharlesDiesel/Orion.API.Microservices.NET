@@ -1,6 +1,6 @@
-﻿using Catalog.API.Entities;
+﻿using Orion.Services.Catalog.API.Entities;
 
-namespace Catalog.API.Repositories
+namespace Orion.Services.Catalog.API.Repositories
 {
 
     public interface IProductRepository
