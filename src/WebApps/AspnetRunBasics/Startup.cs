@@ -31,28 +31,28 @@ namespace Orion.WebApps.WebASP
         {
             services.AddTransient<LoggingDelegatingHandler>();
 
-            services.AddHttpClient<ICatalogService, CatalogService>(c =>
-                c.BaseAddress = new Uri(Configuration["ApiSettings:GatewayAddress"]))
-                .AddHttpMessageHandler<LoggingDelegatingHandler>()
-                .AddPolicyHandler(GetRetryPolicy())
-                .AddPolicyHandler(GetCircuitBreakerPolicy());
-
-            services.AddHttpClient<IBasketService, BasketService>(c =>
-                c.BaseAddress = new Uri(Configuration["ApiSettings:GatewayAddress"]))
-                .AddHttpMessageHandler<LoggingDelegatingHandler>()
-                .AddPolicyHandler(GetRetryPolicy())
-                .AddPolicyHandler(GetCircuitBreakerPolicy());
-
-            services.AddHttpClient<IOrderService, OrderService>(c =>
-                c.BaseAddress = new Uri(Configuration["ApiSettings:GatewayAddress"]))
-                .AddHttpMessageHandler<LoggingDelegatingHandler>()
-                .AddPolicyHandler(GetRetryPolicy())
-                .AddPolicyHandler(GetCircuitBreakerPolicy());
+            // services.AddHttpClient<ICatalogService, CatalogService>(c =>
+            //     c.BaseAddress = new Uri(Configuration["ApiSettings:GatewayAddress"]))
+            //     .AddHttpMessageHandler<LoggingDelegatingHandler>()
+            //     .AddPolicyHandler(GetRetryPolicy())
+            //     .AddPolicyHandler(GetCircuitBreakerPolicy());
+            //
+            // services.AddHttpClient<IBasketService, BasketService>(c =>
+            //     c.BaseAddress = new Uri(Configuration["ApiSettings:GatewayAddress"]))
+            //     .AddHttpMessageHandler<LoggingDelegatingHandler>()
+            //     .AddPolicyHandler(GetRetryPolicy())
+            //     .AddPolicyHandler(GetCircuitBreakerPolicy());
+            //
+            // services.AddHttpClient<IOrderService, OrderService>(c =>
+            //     c.BaseAddress = new Uri(Configuration["ApiSettings:GatewayAddress"]))
+            //     .AddHttpMessageHandler<LoggingDelegatingHandler>()
+            //     .AddPolicyHandler(GetRetryPolicy())
+            //     .AddPolicyHandler(GetCircuitBreakerPolicy());
 
             services.AddRazorPages();
 
-            services.AddHealthChecks()
-                .AddUrlGroup(new Uri(Configuration["ApiSettings:GatewayAddress"]), "Ocelot API Gw", HealthStatus.Degraded);
+            // services.AddHealthChecks()
+            //     .AddUrlGroup(new Uri(Configuration["ApiSettings:GatewayAddress"]), "Ocelot API Gw", HealthStatus.Degraded);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -78,11 +78,11 @@ namespace Orion.WebApps.WebASP
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-                endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
-                {
-                    Predicate = _ => true,
-                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-                });
+                // endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
+                // {
+                //     Predicate = _ => true,
+                //     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                // });
             });
         }
 

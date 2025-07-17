@@ -10,13 +10,13 @@ namespace Orion.Services.Users.Controllers
     [Route("[controller]")]
     public class UsersController(IUserRepository repository) : ControllerBase
     {
-
         private readonly IUserRepository _repository = repository ?? throw new ArgumentNullException(nameof(repository));
-       // private readonly ILogger<CatalogController> _logger;
 
-       //   _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-
-
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<User>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()

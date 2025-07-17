@@ -16,13 +16,13 @@ namespace Orion.WebApps.WebASP.Services
             _client = client ?? throw new ArgumentNullException(nameof(client));
         }
 
-        public async Task<BasketModel> GetBasket(string userName)
+        public async Task<BasketModel?> GetBasket(string userName)
         {
             var response = await _client.GetAsync($"/Basket/{userName}");
             return await response.ReadContentAs<BasketModel>();
         }
 
-        public async Task<BasketModel> UpdateBasket(BasketModel model)
+        public async Task<BasketModel?> UpdateBasket(BasketModel? model)
         {
             var response = await _client.PostAsJson($"/Basket", model);
             if (response.IsSuccessStatusCode)

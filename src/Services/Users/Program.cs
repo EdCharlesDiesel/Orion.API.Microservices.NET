@@ -10,12 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddDbContext<UserContextDbContext>(op => op.UseNpgsql(connectionString));
 
-
-builder.Services.AddControllers();
-builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddScoped<UserRepository>();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
@@ -30,7 +25,12 @@ builder.Services.AddAuthorization(options =>
 
 var app = builder.Build();
 
+builder.Services.AddDbContext<UserContextDbContext>(op => op.UseNpgsql(connectionString));
 
+
+builder.Services.AddControllers();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<UserRepository>();
 
 // Services.AddDbContext<UserContextDbContext>(options =>
 //     options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
