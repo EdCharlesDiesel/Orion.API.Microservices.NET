@@ -6,6 +6,6 @@ namespace Orion.WebApps.WebASP.Services
 {
     public interface IOrderService
     {
-        Task<IEnumerable<OrderResponseModel>> GetOrdersByUserName(string userName);
+        Task<IEnumerable<OrderResponseModel>?> GetOrdersByUserName(string userName);
     }
 }

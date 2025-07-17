@@ -19,3 +19,21 @@ services:
       context: .
       dockerfile: src/Services/Users/Dockerfile
 
+  orion.webapps.healthcheck-1:
+    image: orion.webapps.healthcheck-1
+    build:
+      context: .
+      dockerfile: src/WebApps/Orion.WebApps.HealthCheck/Dockerfile
+
+  orion.blazor.web:
+    image: orion.blazor.web
+    build:
+      context: .
+      dockerfile: Orion.Blazor.Web/Dockerfile
+
+  orion.web:
+    image: orion.web
+    build:
+      context: .
+      dockerfile: Orion.Web/Dockerfile
+

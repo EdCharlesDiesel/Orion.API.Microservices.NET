@@ -57,6 +57,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{13EC0738
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users", "src\Services\Users\Users.csproj", "{0487772E-3D42-412D-B125-2B74518D4F09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Web", "src\WebApps\Orion.Web\Orion.Web.csproj", "{405339CA-DBDB-4D90-85F7-797049FA0F7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -131,6 +133,10 @@ Global
 		{0487772E-3D42-412D-B125-2B74518D4F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0487772E-3D42-412D-B125-2B74518D4F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0487772E-3D42-412D-B125-2B74518D4F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405339CA-DBDB-4D90-85F7-797049FA0F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405339CA-DBDB-4D90-85F7-797049FA0F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405339CA-DBDB-4D90-85F7-797049FA0F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405339CA-DBDB-4D90-85F7-797049FA0F7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -157,6 +163,7 @@ Global
 		{9AF373F3-EC33-431D-BC90-A60FF2D1AC5C} = {5151D664-65D8-45F0-B6D4-B6AE172FAFEE}
 		{13EC0738-2AEB-4F26-9258-2D27586D0A0F} = {9EB5AA97-4ABD-4608-8EBE-06BF0CC8D23D}
 		{0487772E-3D42-412D-B125-2B74518D4F09} = {13EC0738-2AEB-4F26-9258-2D27586D0A0F}
+		{405339CA-DBDB-4D90-85F7-797049FA0F7D} = {5151D664-65D8-45F0-B6D4-B6AE172FAFEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFC31B86-B732-491F-9E63-995F435D6ED6}

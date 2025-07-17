@@ -1,0 +1,17 @@
+@model TModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+    var date = ViewBag.RequestedDate;
+}    
+@{
+    ViewData["Title"] = "Updates By Date";
+
+}
+
+<h2>Updates for @date.ToString("yyyy-MM-dd")</h2>
+
+<div>
+    <pre>@ViewBag.UpdatesByDate</pre>
+</div>

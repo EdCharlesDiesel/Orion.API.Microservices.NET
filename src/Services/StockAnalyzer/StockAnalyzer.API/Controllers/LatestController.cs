@@ -10,7 +10,7 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
     {
 
         /// <summary>
-        /// Get the latest news from trading ecomomics
+        /// Get the latest news from trading economics
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -44,7 +44,7 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
         /// <returns>A task that will be resolved in a string with the request result</returns>
         private static async Task<string> GetLatestUpdates()
         {
-            return await Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass.HttpRequester("/updates");
+            return await Helper.HttpRequesterClass.HttpRequester("/updates");
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
         /// <returns>A task that will be resolved in a string with the request result</returns>
         private static async Task<string> GetLatestUpdatesByDate(DateTime startDate)
         {
-            return await Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass.HttpRequester($"/updates/{startDate.ToString("yyyy-MM-dd")}");
+            return await Helper.HttpRequesterClass.HttpRequester($"/updates/{startDate.ToString("yyyy-MM-dd")}");
         }
     }
 }
