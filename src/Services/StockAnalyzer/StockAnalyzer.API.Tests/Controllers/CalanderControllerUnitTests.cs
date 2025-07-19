@@ -1,106 +1,92 @@
 using Microsoft.AspNetCore.Mvc;
+using Moq;
 using Orion.Services.StockAnalyzer.API.Controllers;
+using Orion.Services.StockAnalyzer.API.Repositories;
+using Orion.Services.StockAnalyzer.API.Services;
 using Orion.StockAnalyzer.Core.Domain;
 using Xunit;
 
 namespace Orion.Services.StockAnalyzer.API.Tests.Controllers;
 
-public class CalanderControllerUnitTests : Controller
+public class CalendarControllerTests
 {
-    public class CalendarControllerTests
+    private readonly Mock<CalendarRepository> _mockService;
+    private readonly CalendarController _controller;
+
+    public CalendarControllerTests()
     {
-        private readonly CalendarController _controller;
+        _mockService = new Mock<CalendarRepository>();
+        _controller = new CalendarController(_mockService.Object);
+    }
 
-        public CalendarControllerTests()
-        {
-            _controller = new CalendarController();
-        }
+    [Fact]
+    public async Task GetAllEvents_ReturnsOk()
+    {
+        // Arrange
+        var expected = "All calendar events";
+        _mockService.Setup(s => s.GetCalendarEvents()).ReturnsAsync(expected);
 
-        [Fact]
-        public void GetAll_ReturnsAllEvents()
-        {
-            // Act
-            var result = _controller.GetAll();
+        // Act
+        var result = await _controller.GetAllEvents();
 
-            // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result.Result);
-            var events = Assert.IsAssignableFrom<IEnumerable<Calendar>>(okResult.Value);
-            Assert.True(events.Any());
-        }
+        // Assert
+        var okResult = Assert.IsType<OkObjectResult>(result);
+        Assert.Equal(expected, okResult.Value);
+    }
 
-        [Fact]
-        public void GetById_ReturnsCorrectEvent()
-        {
-            // Arrange
-            var allEvents = (_controller.GetAll().Result as OkObjectResult)?.Value as List<Calendar>;
-            var target = allEvents.First();
+    [Fact]
+    public async Task GetEventsByDate_ReturnsOk()
+    {
+        var expected = "Events by date";
+        var start = new DateTime(2025, 7, 1);
+        var end = new DateTime(2025, 7, 31);
+        _mockService.Setup(s => s.GetCalendarEventsByDate(start, end)).ReturnsAsync(expected);
 
-            // Act
-            var result = _controller.GetById(target.Id);
+        var result = await _controller.GetEventsByDate(start, end);
 
-            // Assert
-            var okResult = Assert.IsType<OkObjectResult>(result.Result);
-            var calendar = Assert.IsType<Calendar>(okResult.Value);
-            Assert.Equal(target.Id, calendar.Id);
-        }
+        var okResult = Assert.IsType<OkObjectResult>(result);
+        Assert.Equal(expected, okResult.Value);
+    }
 
-        [Fact]
-        public void GetById_ReturnsNotFound_WhenInvalid()
-        {
-            var result = _controller.GetById(Guid.NewGuid());
+    [Fact]
+    public async Task GetEventsByCountries_ReturnsOk()
+    {
+        var expected = "Events by countries";
+        string[] countries = { "South Africa", "USA" };
+        _mockService.Setup(s => s.GetCalendarEventsByCountries(countries)).ReturnsAsync(expected);
 
-            Assert.IsType<NotFoundResult>(result.Result);
-        }
+        var result = await _controller.GetEventsByCountries(countries);
 
-        [Fact]
-        public void Create_AddsNewEvent()
-        {
-            // Arrange
-            var newEvent = new Calendar { EventName = "Test Event", Date = DateTime.Now.AddDays(5) };
+        var okResult = Assert.IsType<OkObjectResult>(result);
+        Assert.Equal(expected, okResult.Value);
+    }
 
-            // Act
-            var result = _controller.Create(newEvent);
+    [Fact]
+    public async Task GetEventsByCountriesAndDates_ReturnsOk()
+    {
+        var expected = "Events by countries and date";
+        string[] countries = { "USA", "Germany" };
+        var start = new DateTime(2025, 7, 1);
+        var end = new DateTime(2025, 7, 31);
+        _mockService.Setup(s => s.GetCalendarEventsByCountriesAndDates(start, end, countries))
+                    .ReturnsAsync(expected);
 
-            // Assert
-            var createdAt = Assert.IsType<CreatedAtActionResult>(result.Result);
-            var calendar = Assert.IsType<Calendar>(createdAt.Value);
-            Assert.Equal("Test Event", calendar.EventName);
-        }
+        var result = await _controller.GetEventsByCountriesAndDates(start, end, countries);
 
-        [Fact]
-        public void Update_ModifiesExistingEvent()
-        {
-            // Arrange
-            var allEvents = (_controller.GetAll().Result as OkObjectResult)?.Value as List<Calendar>;
-            var target = allEvents.First();
-            var updated = new Calendar { EventName = "Updated Event", Date = DateTime.Now.AddDays(10) };
+        var okResult = Assert.IsType<OkObjectResult>(result);
+        Assert.Equal(expected, okResult.Value);
+    }
 
-            // Act
-            var result = _controller.Update(target.Id, updated);
+    [Fact]
+    public async Task GetEventsByIndicators_ReturnsOk()
+    {
+        var expected = "Events by indicators";
+        string[] indicators = { "GDP", "Inflation" };
+        _mockService.Setup(s => s.GetCalendarEventsByIndicator(indicators)).ReturnsAsync(expected);
 
-            // Assert
-            Assert.IsType<NoContentResult>(result);
-        }
+        var result = await _controller.GetEventsByIndicators(indicators);
 
-        [Fact]
-        public void Delete_RemovesEvent()
-        {
-            // Arrange
-            var allEvents = (_controller.GetAll().Result as OkObjectResult)?.Value as List<Calendar>;
-            var target = allEvents.First();
-
-            // Act
-            var result = _controller.Delete(target.Id);
-
-            // Assert
-            Assert.IsType<NoContentResult>(result);
-        }
-
-        [Fact]
-        public void Delete_ReturnsNotFound_IfMissing()
-        {
-            var result = _controller.Delete(Guid.NewGuid());
-            Assert.IsType<NotFoundResult>(result);
-        }
+        var okResult = Assert.IsType<OkObjectResult>(result);
+        Assert.Equal(expected, okResult.Value);
     }
 }

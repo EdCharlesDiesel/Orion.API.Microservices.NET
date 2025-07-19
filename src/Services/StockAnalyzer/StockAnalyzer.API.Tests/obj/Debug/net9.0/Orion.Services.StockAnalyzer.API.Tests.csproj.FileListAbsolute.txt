@@ -172,3 +172,6 @@ C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API.Te
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API.Tests\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API.Tests\bin\Debug\net9.0\Npgsql.dll
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API.Tests\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API.Tests\bin\Debug\net9.0\Castle.Core.dll
+C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API.Tests\bin\Debug\net9.0\JetBrains.Annotations.dll
+C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API.Tests\bin\Debug\net9.0\Moq.dll
