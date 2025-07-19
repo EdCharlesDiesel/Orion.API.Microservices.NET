@@ -1,4 +1,5 @@
-﻿using Orion.Services.Discount.API.Entities;
+﻿using Orion.Discount.Core;
+
 
 namespace Orion.Services.Discount.API.Repositories
 {

@@ -16,4 +16,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Orion.Discount.Core\Orion.Discount.Core.csproj" />
+    <ProjectReference Include="..\..\..\Core\Orion.Discount.Core\Orion.Discount.Core.csproj" />
+  </ItemGroup>
+
 </Project>

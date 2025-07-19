@@ -31,3 +31,9 @@ services:
       context: .
       dockerfile: Orion.Web/Dockerfile
 
+  orion.services.stockanalyzer.api-1:
+    image: orion.services.stockanalyzer.api-1
+    build:
+      context: .
+      dockerfile: src/Services/StockAnalyzer/StockAnalyzer.API/Dockerfile
+

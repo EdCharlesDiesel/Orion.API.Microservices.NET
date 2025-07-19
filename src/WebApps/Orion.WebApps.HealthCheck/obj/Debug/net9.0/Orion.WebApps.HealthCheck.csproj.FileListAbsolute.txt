@@ -128,3 +128,17 @@ C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\obj\Debug
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\obj\Debug\net9.0\Orion.WebApps.HealthCheck.pdb
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\obj\Debug\net9.0\Orion.WebApps.HealthCheck.genruntimeconfig.cache
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\obj\Debug\net9.0\ref\Orion.WebApps.HealthCheck.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\HealthChecks.Prometheus.Metrics.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Npgsql.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\Orion.WebApps.HealthCheck.staticwebassets.runtime.json
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\bin\Debug\net9.0\HealthChecks.Publisher.Prometheus.dll

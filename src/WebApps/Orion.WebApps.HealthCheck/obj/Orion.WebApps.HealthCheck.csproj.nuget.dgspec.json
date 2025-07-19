@@ -44,6 +44,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AspNetCore.HealthChecks.Prometheus.Metrics": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "AspNetCore.HealthChecks.Publisher.Prometheus": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "AspNetCore.HealthChecks.UI": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -59,6 +67,14 @@
             "Devart.Data.PostgreSql": {
               "target": "Package",
               "version": "[8.2.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
