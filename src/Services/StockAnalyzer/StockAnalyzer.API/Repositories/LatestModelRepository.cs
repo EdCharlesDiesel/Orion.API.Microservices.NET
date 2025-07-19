@@ -8,9 +8,9 @@ namespace Orion.Services.StockAnalyzer.API.Repositories
 
     public class LatestModelRepository : ILatestModelRepository
     {
-         private readonly IStockAnalyzerContext _context;
+         private readonly StockAnalyzerContext _context;
 
-          public LatestModelRepository(IStockAnalyzerContext context)
+        public LatestModelRepository(StockAnalyzerContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
