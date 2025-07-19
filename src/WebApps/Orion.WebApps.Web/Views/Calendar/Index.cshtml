@@ -1,28 +1,43 @@
-@model List<Orion.StockAnalyzer.Core.Domain.Calendar>
+@model List<Orion.StockAnalyzer.Core.Domain.CalendarEvent>
 
-@{
-    ViewData["Title"] = "Calendar Events";
+
+<h2>Upcoming Calendar Events</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No events found.</p>
 }
-
-<h1>Calendar Events</h1>
-
-<table class="table table-bordered">
-    <thead>
-    <tr>
-        <th>Event Name</th>
-        <th>Date</th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var item in Model)
-    {
+else
+{
+    <table class="table table-striped">
+        <thead>
         <tr>
-            <td>@item.EventName</td>
-            <td>@item.Date.ToString("dddd, MMM dd yyyy hh:mm tt")</td>
-            <td><a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a></td>
-            <td><a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
-            <td><a asp-action="Index" class="btn btn-secondary">Back to List</a></td>
+            <th>Date</th>
+            <th>Country</th>
+            <th>Event</th>
+            <th>Category</th>
+            <th>Actual</th>
+            <th>Forecast</th>
+            <th>Previous</th>
+            <th>Importance</th>
+            <th>Source</th>
         </tr>
-    }
-    </tbody>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Date.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@item.Country</td>
+                <td>@item.Event</td>
+                <td>@item.Category</td>
+                <td>@item.Actual</td>
+                <td>@item.Forecast</td>
+                <td>@item.Previous</td>
+                <td>@item.Importance</td>
+                <td><a href="@item.SourceURL" target="_blank">@item.Source</a></td>
+            </tr>
+        }
+        </tbody>
     </table>
+}
