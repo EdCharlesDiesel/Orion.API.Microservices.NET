@@ -1,66 +1,62 @@
 using Microsoft.AspNetCore.Mvc;
+using Orion.Services.StockAnalyzer.API.Helper;
 
 namespace Orion.Services.StockAnalyzer.API.Controllers;
 [ApiController]
 [Route("api/[controller]")]
 public class ComtradeController :  ControllerBase
 {
+
         /// <summary>
-        /// get categories
+        /// Get all comtrade categories
         /// </summary>
-        /// <returns>A task that will be resolved in a string with the request result</returns>
-          [HttpGet]
-        public static async Task<string> GetComCategories()
+        [HttpGet("categories")]
+        public async Task<IActionResult> GetComCategories()
         {
-            return await Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass.HttpRequester("/comtrade/categories");
+            var result = await HttpRequesterClass.HttpRequester("/comtrade/categories");
+            return Ok(result);
         }
 
         /// <summary>
-        /// get countries
+        /// Get all comtrade countries
         /// </summary>
-        /// <returns>A task that will be resolved in a string with the request result</returns>
-        public static async Task<string> GetComCountries()
+        [HttpGet("countries")]
+        public async Task<IActionResult> GetComCountries()
         {
-            return await Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass.HttpRequester("/comtrade/countries");
+            var result = await HttpRequesterClass.HttpRequester("/comtrade/countries");
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// Get comtrade by country and page
+        /// </summary>
+        [HttpGet("country/{country}/{page_number}")]
+        public async Task<IActionResult> GetComCountryPage(string country, int page_number)
+        {
+            var result = await HttpRequesterClass.HttpRequester($"/comtrade/country/{country}/{page_number}");
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// Get comtrade between two countries with pagination
+        /// </summary>
+        [HttpGet("country/{country1}/{country2}/{page_number}")]
+        public async Task<IActionResult> GetComBetweenCountries(string country1, string country2, int page_number)
+        {
+            var result =
+                await HttpRequesterClass.HttpRequester($"/comtrade/country/{country1}/{country2}/{page_number}");
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// Get historical comtrade data by symbol
+        /// </summary>
+        [HttpGet("historical/{symbol}")]
+        public async Task<IActionResult> GetComHistorical(string symbol)
+        {
+            var result = await HttpRequesterClass.HttpRequester($"/comtrade/historical/{symbol}");
+            return Ok(result);
         }
 
     
-        /// <summary>
-        /// Get comtrade by country and page number
-        /// </summary>
-        /// <param name="country">country</param>
-        /// <param name="page_number">pagination</param>
-        /// <returns>A task that will be resolved in a string with the request result</returns>
-        public static async Task<string> GetComCountryPage(string country, int page_number)
-        {
-
-            return await Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass.HttpRequester($"/comtrade/country/{country}/{page_number}");
-        }
-
-
-        /// <summary>
-        /// Get comtrade between 2 countries and page number
-        /// </summary>
-        /// <param name="country1">country</param>
-        /// <param name="country2">country</param>
-        /// <param name="page_number">pagination</param>
-        /// <returns>A task that will be resolved in a string with the request result</returns>
-        public static async Task<string> GetComBetweenCountries(string country1, string country2, int page_number)
-        {
-
-            return await Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass.HttpRequester($"/comtrade/country/{country1}/{country2}/{page_number}");
-        }
-
-        /// <summary>
-        /// Get historical by symbol
-        /// </summary>
-        /// <param name="symbol">country</param>
-        /// <returns>A task that will be resolved in a string with the request result</returns>
-        public static async Task<string> GetComHistorical(string symbol)
-        {
-
-            return await Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass.HttpRequester($"/comtrade/historical/{symbol}");
-        }
-
-       
 }
