@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services
     .AddHealthChecks()
     .AddCheck<CustomHealthCheck>(nameof(CustomHealthCheck));
-
+    
 // Add HealthChecks UI with in-memory storage
 builder.Services
     .AddHealthChecksUI(options =>

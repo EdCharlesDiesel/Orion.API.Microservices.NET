@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.Web.Helper;
+using Orion.WebApps.Web.Helper;
 
-namespace Orion.Web.Controllers
+
+namespace Orion.WebApps.Web.Controllers
 {
     [Route("[controller]")]
     public class LatestController : Controller

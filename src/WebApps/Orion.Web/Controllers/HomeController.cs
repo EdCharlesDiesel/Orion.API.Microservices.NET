@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Web.Models;
 
-namespace Orion.Web.Controllers;
+namespace Orion.WebApps.Web.Controllers;
 
 public class HomeController : Controller
 {

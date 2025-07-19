@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Orion.StockAnalyzer.Core.Domain;
 
-namespace Orion.Web.Controllers;
+namespace Orion.WebApps.Web.Controllers;
 
 public class CalendarController : Controller
 {

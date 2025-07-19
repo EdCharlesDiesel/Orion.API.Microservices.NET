@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace Orion.Web.Helper
+namespace Orion.WebApps.Web.Helper
 {
     public static class HttpRequesterClass
     {

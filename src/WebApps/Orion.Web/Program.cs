@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Orion.Web.Data;
 
-namespace Orion.Web;
+namespace Orion.WebApps.Web;
 
 public class Program
 {
