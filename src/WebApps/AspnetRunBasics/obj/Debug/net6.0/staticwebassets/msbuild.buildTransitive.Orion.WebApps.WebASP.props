@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Orion.WebApps.WebASP.props" />
-</Project>
