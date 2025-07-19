@@ -6,22 +6,34 @@ namespace Orion.WebApps.Web.Controllers;
 
 public class CalendarController : Controller
 {
+    private readonly IHttpClientFactory _httpClientFactory;
 
-        private static readonly List<Calendar> _calendarEvents = new()
-        {
-            new Calendar { Id = Guid.NewGuid(), EventName = "GDP Release", Date = DateTime.Now.AddDays(1) },
-            new Calendar { Id = Guid.NewGuid(), EventName = "Unemployment Report", Date = DateTime.Now.AddDays(3) }
-        };
+    public CalendarController(IHttpClientFactory httpClientFactory)
+    {
+        _httpClientFactory = httpClientFactory;
+    }
+    // GET: /Calendar
+    public async Task<IActionResult> Index()
+    {
+        var client = _httpClientFactory.CreateClient();
+        var response = await client.GetAsync("https://api.example.com/data");
 
-        // GET: /Calendar
-        public IActionResult Index()
+        if (response.IsSuccessStatusCode)
         {
-            return View(_calendarEvents);
+            var result = await response.Content.ReadAsStringAsync();
+            ViewBag.ApiResult = result;
+            return View();
         }
+
+        ViewBag.ApiResult = "Error: " + response.StatusCode;
+        return View();
+    }
 
         // GET: /Calendar/Details/{id}
         public IActionResult Details(Guid id)
         {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync("https://api.example.com/data");
             var item = _calendarEvents.FirstOrDefault(c => c.Id == id);
             if (item == null)
                 return NotFound();
