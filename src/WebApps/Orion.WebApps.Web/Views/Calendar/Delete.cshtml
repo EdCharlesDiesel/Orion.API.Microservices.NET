@@ -8,7 +8,7 @@
 
 <div>
     <h4>@Model.Country</h4>
-    <p><strong>Date:</strong> @Model.Date.ToString("dddd, MMM dd yyyy hh:mm tt")</p>
+    <p><strong>Date:</strong> @Model.Date?.ToString("dddd, MMM dd yyyy hh:mm tt")</p>
 </div>
 
 <form asp-action="DeleteConfirmed" method="post">

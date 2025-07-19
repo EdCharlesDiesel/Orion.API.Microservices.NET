@@ -1,23 +1,23 @@
 # This is a generated file. Not intended for manual editing.
 version: "3.4"
 services:
-  orion.webapps.healthcheck-1:
+  orion.webapps.web:
     build:
       context: "C:\\x\\Orion.API.Microservices.NET"
-      dockerfile: "src/WebApps/Orion.WebApps.HealthCheck/Dockerfile"
+      dockerfile: "src/WebApps/Orion.WebApps.Web/Dockerfile"
       target: "base"
     command: []
     entrypoint:
     - "dotnet"
-    - "/app/bin/Debug/net9.0/Orion.WebApps.HealthCheck.dll"
+    - "/app/bin/Debug/net9.0/Orion.WebApps.Web.dll"
     environment:
       ASPNETCORE_ENVIRONMENT: "Development"
-      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net9.0/Orion.WebApps.HealthCheck.staticwebassets.runtime.CT.json"
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net9.0/Orion.WebApps.Web.staticwebassets.runtime.CT.json"
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
-    image: "orion.webapps.healthcheck-1:dev"
+    image: "orion.webapps.web:dev"
     ports: []
     volumes:
-    - "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheck:/app:rw"
+    - "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.Web:/app:rw"
     - "C:\\x\\Orion.API.Microservices.NET:/src:rw"
     - "C:\\Users\\PC\\.nuget\\packages:/home/app/.nuget/packages"
     working_dir: "/app"

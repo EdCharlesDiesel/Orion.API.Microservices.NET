@@ -27,7 +27,7 @@ else
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.Date.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@item.Date?.ToString("yyyy-MM-dd HH:mm")</td>
                 <td>@item.Country</td>
                 <td>@item.Event</td>
                 <td>@item.Category</td>
