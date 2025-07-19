@@ -30,4 +30,10 @@
     <ProjectReference Include="..\..\..\Core\Orion.Core.StockAnalyzer\Orion.StockAnalyzer.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\..\..\..\.dockerignore">
+      <Link>.dockerignore</Link>
+    </Content>
+  </ItemGroup>
+
 </Project>
