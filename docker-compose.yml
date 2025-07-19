@@ -1,15 +1,27 @@
 version: '3.4'
 
 services:
-  orion.services.stockanalyzer.api:
-    image: ${DOCKER_REGISTRY-}orionservicesstockanalyzerapi
+  
+  orion.webapps.healthcheck-1:
+    image: orion.webapps.healthcheck-1
+    build:
+      context: .
+      dockerfile: src/WebApps/Orion.WebApps.HealthCheck/Dockerfile
+    ports:
+      - "5001:80"   # HostPort:ContainerPort
+
+  orion.services.stockanalyzer.api-1:
+    image: orion.services.stockanalyzer.api-1
     build:
       context: .
       dockerfile: src/Services/StockAnalyzer/StockAnalyzer.API/Dockerfile
+    ports:
+      - "5002:80"
 
-  orion.webapps.healthcheck:
-    image: ${DOCKER_REGISTRY-}orionwebappshealthcheck
+  orion.webapps.web:
+    image: orion.webapps.web
     build:
       context: .
-      dockerfile: src/WebApps/WebStatus/Dockerfile
-
+      dockerfile: src/WebApps/Orion.WebApps.Web/Dockerfile
+    ports:
+      - "5000:80"

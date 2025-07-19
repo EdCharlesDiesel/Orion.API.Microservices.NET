@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.Discount.API.Entities;
+using Orion.Discount.Core;
+
 using Orion.Services.Discount.API.Repositories;
 
 namespace Orion.Services.Discount.API.Controllers

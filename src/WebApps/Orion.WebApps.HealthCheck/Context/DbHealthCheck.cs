@@ -11,8 +11,8 @@ namespace Orion.WebApps.HealthCheck.Context
             try
             {
                 using (PgSqlConnection pgSqlConnection =
-                     new PgSqlConnection("User Id = postgres; Password = postgres;" +
-                     "host=localhost;database=Demo;"))
+                     new PgSqlConnection("User Id = postgres; Password = $ta99Ath0;" +
+                     "host=localhost;database=DbHealthCheckDb;"))
                 {
                     if (pgSqlConnection.State !=
                         System.Data.ConnectionState.Open)
