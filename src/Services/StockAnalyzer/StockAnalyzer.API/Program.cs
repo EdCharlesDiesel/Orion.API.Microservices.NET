@@ -19,6 +19,7 @@ builder.Services.AddDbContext<StockAnalyzerContext>(options =>
 
 // Register repositories and services
 builder.Services.AddScoped<ILatestModelRepository, LatestModelRepository>();
+// builder.Services.AddHttpClient<TradingEconomicsMarketService>();
 
 // Add controller support
 builder.Services.AddControllers();
