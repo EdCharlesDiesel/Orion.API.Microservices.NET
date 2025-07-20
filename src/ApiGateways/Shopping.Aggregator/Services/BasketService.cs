@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Orion.Shopping.Aggregator.Extensions;
 using Orion.Shopping.Aggregator.Models;
-using Shopping.Aggregator.Extensions;
 
 namespace Orion.Shopping.Aggregator.Services
 {

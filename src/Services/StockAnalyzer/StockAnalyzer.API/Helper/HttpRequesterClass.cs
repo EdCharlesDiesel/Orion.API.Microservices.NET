@@ -13,15 +13,15 @@ namespace Orion.Services.StockAnalyzer.API.Helper
         /// Method to make HTTP calls to TradingEconomics API
         /// </summary>
         /// <param name="url">The URL to fetch</param>
-        /// <param name="baseURL">The base path, the default is 'https://api.tradingeconomics.com/'</param>
+        /// <param name="baseUrl">The base path, the default is 'https://api.tradingeconomics.com/'</param>
         /// <returns>A task tha will be resolved in a string with the content of the response</returns>
-        public async static Task<string> HttpRequester(string url, string baseURL = "https://api.tradingeconomics.com/")
+        public static async Task<string> HttpRequester(string url, string baseUrl = "https://api.tradingeconomics.com/")
         {
             try
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri(baseURL);
+                    client.BaseAddress = new Uri(baseUrl);
                     client.DefaultRequestHeaders.Clear();
 
                     //ADD Acept Header to tell the server what data type you want

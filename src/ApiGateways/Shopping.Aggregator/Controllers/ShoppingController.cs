@@ -1,26 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Orion.Shopping.Aggregator.Models;
 using Orion.Shopping.Aggregator.Services;
 
-namespace Shopping.Aggregator.Controllers
+namespace Orion.Shopping.Aggregator.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
-    public class ShoppingController : ControllerBase
+    public class ShoppingController(
+        ICatalogService catalogService,
+        IBasketService basketService,
+        IOrderService orderService)
+        : ControllerBase
     {
-        private readonly ICatalogService _catalogService;
-        private readonly IBasketService _basketService;
-        private readonly IOrderService _orderService;
-
-        public ShoppingController(ICatalogService catalogService, IBasketService basketService, IOrderService orderService)
-        {
-            _catalogService = catalogService ?? throw new ArgumentNullException(nameof(catalogService));
-            _basketService = basketService ?? throw new ArgumentNullException(nameof(basketService));
-            _orderService = orderService ?? throw new ArgumentNullException(nameof(orderService));
-        }
+        private readonly ICatalogService _catalogService = catalogService ?? throw new ArgumentNullException(nameof(catalogService));
+        private readonly IBasketService _basketService = basketService ?? throw new ArgumentNullException(nameof(basketService));
+        private readonly IOrderService _orderService = orderService ?? throw new ArgumentNullException(nameof(orderService));
 
         [HttpGet("{userName}", Name = "GetShopping")]
         [ProducesResponseType(typeof(ShoppingModel), (int)HttpStatusCode.OK)]

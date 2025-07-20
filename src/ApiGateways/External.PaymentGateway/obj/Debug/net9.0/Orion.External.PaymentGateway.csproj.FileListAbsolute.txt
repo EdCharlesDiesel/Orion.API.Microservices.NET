@@ -33,3 +33,12 @@ C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\obj\Deb
 C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\obj\Debug\net9.0\Orion.External.PaymentGateway.pdb
 C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\obj\Debug\net9.0\Orion.External.PaymentGateway.genruntimeconfig.cache
 C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\obj\Debug\net9.0\ref\Orion.External.PaymentGateway.dll
+C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\bin\Debug\net9.0\Microsoft.Extensions.Logging.Debug.dll
+C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\bin\Debug\net9.0\Microsoft.OpenApi.Readers.dll
+C:\x\Orion.API.Microservices.NET\src\ApiGateways\External.PaymentGateway\bin\Debug\net9.0\SharpYaml.dll

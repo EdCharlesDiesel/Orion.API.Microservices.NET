@@ -1,15 +1,16 @@
-#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+﻿FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+USER $APP_UID
 WORKDIR /app
-EXPOSE 80
+EXPOSE 5002
+EXPOSE 8080
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj", "src/Services/StockAnalyzer/StockAnalyzer.API/"]
 COPY ["src/Core/Orion.Core.StockAnalyzer/Orion.StockAnalyzer.Core.csproj", "src/Core/Orion.Core.StockAnalyzer/"]
-RUN dotnet restore "./src/Services/StockAnalyzer/StockAnalyzer.API/./Orion.Services.StockAnalyzer.API.csproj"
+RUN dotnet restore "src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj"
 COPY . .
 WORKDIR "/src/src/Services/StockAnalyzer/StockAnalyzer.API"
 RUN dotnet build "./Orion.Services.StockAnalyzer.API.csproj" -c $BUILD_CONFIGURATION -o /app/build

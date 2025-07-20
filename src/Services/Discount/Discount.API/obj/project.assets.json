@@ -1,16 +1,16 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Dapper/2.0.151": {
+    "net9.0": {
+      "Dapper/2.1.66": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Dapper.dll": {
+          "lib/net8.0/Dapper.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Dapper.dll": {
+          "lib/net8.0/Dapper.dll": {
             "related": ".xml"
           }
         }
@@ -55,7 +55,7 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.19.4": {
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1": {
         "type": "package",
         "build": {
           "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props": {},
@@ -65,16 +65,15 @@
       "Npgsql/7.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Npgsql.dll": {
+          "lib/net7.0/Npgsql.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Npgsql.dll": {
+          "lib/net7.0/Npgsql.dll": {
             "related": ".xml"
           }
         }
@@ -97,12 +96,12 @@
           "Microsoft.OpenApi": "1.2.3"
         },
         "compile": {
-          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+          "lib/net7.0/Swashbuckle.AspNetCore.Swagger.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+          "lib/net7.0/Swashbuckle.AspNetCore.Swagger.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -116,12 +115,12 @@
           "Swashbuckle.AspNetCore.Swagger": "6.5.0"
         },
         "compile": {
-          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+          "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+          "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -129,12 +128,12 @@
       "Swashbuckle.AspNetCore.SwaggerUI/6.5.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+          "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+          "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
             "related": ".pdb;.xml"
           }
         },
@@ -142,41 +141,36 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
-        "type": "package",
+      "Orion.Discount.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
+          "bin/placeholder/Orion.Discount.Core.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "bin/placeholder/Orion.Discount.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Dapper/2.0.151": {
-      "sha512": "mMcZgx1lim0/i1Ozu+lgnBM4GwNIHpCuxV6BV2ovsEfZAXRAq4jb6RIhxGDcVjtmXMLPpdp85jHPdDjBMMwejw==",
+    "Dapper/2.1.66": {
+      "sha512": "/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
       "type": "package",
-      "path": "dapper/2.0.151",
+      "path": "dapper/2.1.66",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.0.151.nupkg.sha512",
+        "dapper.2.1.66.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
-        "lib/net5.0/Dapper.dll",
-        "lib/net5.0/Dapper.xml",
+        "lib/net8.0/Dapper.dll",
+        "lib/net8.0/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
-        "lib/netstandard2.0/Dapper.xml"
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
@@ -479,10 +473,10 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.19.4": {
-      "sha512": "aKxpRAUIxDrnSnyr7xJWGixOBgsB7Z4oHpWRkpRzzq04kfze4mN7944gRc4X9H2U5KG3A/btF74kavkO8KXqCg==",
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1": {
+      "sha512": "EfYANhAWqmWKoLwN6bxoiPZSOfJSO9lzX+UrU6GVhLhPub1Hd+5f0zL0/tggIA6mRz6Ebw2xCNcIsM4k+7NPng==",
       "type": "package",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.19.4",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.22.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -511,7 +505,7 @@
         "build/ToolsTarget.props",
         "build/ToolsTarget.targets",
         "icon.png",
-        "microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
+        "microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512",
         "microsoft.visualstudio.azure.containers.tools.targets.nuspec",
         "tools/Microsoft.VisualStudio.Containers.Tools.Common.dll",
         "tools/Microsoft.VisualStudio.Containers.Tools.Shared.dll",
@@ -551,7 +545,6 @@
         "tools/tr/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
         "tools/tr/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
         "tools/tr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/utils/KillProcess.exe",
         "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
         "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
         "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
@@ -675,37 +668,18 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
-      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
-      "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
+    "Orion.Discount.Core/1.0.0": {
+      "type": "project",
+      "path": "../../../Core/Orion.Discount.Core/Orion.Discount.Core.csproj",
+      "msbuildProject": "../../../Core/Orion.Discount.Core/Orion.Discount.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Dapper >= 2.0.151",
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.19.4",
+    "net9.0": [
+      "Dapper >= 2.1.66",
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql >= 7.0.4",
+      "Orion.Discount.Core >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -725,15 +699,22 @@
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net9.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "projectReferences": {}
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj"
+            },
+            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -749,16 +730,16 @@
       "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net9.0": {
+        "targetAlias": "net9.0",
         "dependencies": {
           "Dapper": {
             "target": "Package",
-            "version": "[2.0.151, )"
+            "version": "[2.1.66, )"
           },
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
-            "version": "[1.19.4, )"
+            "version": "[1.22.1, )"
           },
           "Npgsql": {
             "target": "Package",
@@ -780,24 +761,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -806,7 +769,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -818,7 +781,7 @@
       "message": "Package 'Npgsql' 7.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
       "libraryId": "Npgsql",
       "targetGraphs": [
-        "net6.0"
+        "net9.0"
       ]
     }
   ]

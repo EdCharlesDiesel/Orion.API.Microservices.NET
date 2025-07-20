@@ -1,23 +1,17 @@
-using Catalog.API.Controllers;
-using Catalog.API.Entities;
-using Catalog.API.Repositories;
+using System.Collections.Generic;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
-
 using Moq;
-using System.Collections.Generic;
+using Orion.Services.Catalog.API.Controllers;
+using Orion.Services.Catalog.API.Entities;
+using Orion.Services.Catalog.API.Repositories;
 using Xunit;
 
-namespace Catalog.API.Tests
+namespace Orion.Services.Catalog.API.Tests
 {
     public class CatalogControllerUnitTest
     {
-        private Mock<IProductRepository> productRepository;
-
-        public CatalogControllerUnitTest()
-        {
-            productRepository = new Mock<IProductRepository>();
-        }
+        private readonly Mock<IProductRepository> productRepository = new();
 
         #region Get By Id  
 
@@ -27,10 +21,10 @@ namespace Catalog.API.Tests
             // Arrange
 
             var controller = new CatalogController(productRepository.Object);
-            var ProductId = 2;
+            var productId = 2;
 
             // Act
-            var result = await controller.GetProductById(ProductId.ToString());
+            var result = await controller.GetProductById(productId.ToString());
 
             // Assert       
             Assert.IsType<ActionResult<Product>>(result);
@@ -42,7 +36,7 @@ namespace Catalog.API.Tests
             //Arrange  
             var productRepository = new Mock<IProductRepository>();
             var controller = new CatalogController(productRepository.Object);
-            var ProductId = 3;
+            var productId = 3;
 
             //Act  
             var data = await controller.GetProductById(null);

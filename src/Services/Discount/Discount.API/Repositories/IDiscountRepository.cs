@@ -1,6 +1,7 @@
-﻿using Discount.API.Entities;
+﻿using Orion.Discount.Core;
 
-namespace Discount.API.Repositories
+
+namespace Orion.Services.Discount.API.Repositories
 {
     public interface IDiscountRepository
     {

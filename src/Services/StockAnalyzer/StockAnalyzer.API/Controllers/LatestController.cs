@@ -1,10 +1,8 @@
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Services.StockAnalyzer.API.ActionFilters;
-using System.Net;
-using System.Net.Http.Headers;
-using System.Text;
 
-namespace StockAnalyzer.API.Controllers
+namespace Orion.Services.StockAnalyzer.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -12,7 +10,7 @@ namespace StockAnalyzer.API.Controllers
     {
 
         /// <summary>
-        /// Get the latest news from trading ecomomics
+        /// Get the latest news from trading economics
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -33,24 +31,20 @@ namespace StockAnalyzer.API.Controllers
         [CheckClientKeyHeader]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]        
-        public async Task<IActionResult> getLatestUpdatesByDate(DateTime date)
+        public Task<IActionResult> getLatestUpdatesByDate(DateTime date)
         {            
-            var getLatestUpdatesByDate = GetLatestUpdatesByDate(date).Result;         
+            var getLatestUpdatesByDate = GetLatestUpdatesByDate(date).Result;
 
-            if (getLatestUpdatesByDate == null)
-            {                
-                return NotFound();
-            }
-            return Ok(getLatestUpdatesByDate);
+            return Task.FromResult<IActionResult>(Ok(getLatestUpdatesByDate));
         }   
 
         /// <summary>
         /// Get latest updates with no filters
         /// </summary>
         /// <returns>A task that will be resolved in a string with the request result</returns>
-        public async static Task<string> GetLatestUpdates()
+        private static async Task<string> GetLatestUpdates()
         {
-            return await Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass.HttpRequester("/updates");
+            return await Helper.HttpRequesterClass.HttpRequester("/updates");
         }
 
         /// <summary>
@@ -58,9 +52,9 @@ namespace StockAnalyzer.API.Controllers
         /// </summary>
         /// <param name="startDate">Start date if needed</param>
         /// <returns>A task that will be resolved in a string with the request result</returns>
-        public async static Task<string> GetLatestUpdatesByDate(DateTime startDate)
+        private static async Task<string> GetLatestUpdatesByDate(DateTime startDate)
         {
-            return await Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass.HttpRequester($"/updates/{startDate.ToString("yyyy-MM-dd")}");
+            return await Helper.HttpRequesterClass.HttpRequester($"/updates/{startDate.ToString("yyyy-MM-dd")}");
         }
     }
 }

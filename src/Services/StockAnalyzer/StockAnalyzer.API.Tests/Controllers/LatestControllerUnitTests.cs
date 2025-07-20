@@ -1,17 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
-using StockAnalyzer.API.Controllers;
+using Orion.Services.StockAnalyzer.API.Controllers;
 using Xunit;
 
 namespace Orion.Services.StockAnalyzer.API.Tests.Controllers
 {
     public class LatestControllerTest
     {
-        private readonly LatestController _controller;
-
-        public LatestControllerTest()
-        {
-            _controller = new LatestController();
-        }
+        private readonly LatestController _controller = new();
 
         [Fact]
         public void Get_WhenCalled_ReturnsOkResult()
@@ -25,11 +20,11 @@ namespace Orion.Services.StockAnalyzer.API.Tests.Controllers
         [Fact(Skip = "I'll sort this one later")]
         public void Get_WhenCalled_ReturnsAllItems()
         {
-            // Act
-            //var okResult = _controller.getLatestUpdates().Result;
-            // Assert
-            //var items = Assert.IsType<JsonResult>(okResult);
-            //Assert.Equal(OkObjectResult, items.StatusCode);
+        
+            var okResult = _controller.getLatestUpdates().Result;
+          
+            var items = Assert.IsType<JsonResult>(okResult);
+            Assert.Equal(OkObjectResult, items.StatusCode);
         }
 
         [Fact]
@@ -45,11 +40,13 @@ namespace Orion.Services.StockAnalyzer.API.Tests.Controllers
         [Fact(Skip = "I'll sort this one later")]
         public void getLatestUpdatesByDate_WhenCalled_ReturnsAllItems()
         {
-            // Act
-            //var okResult = _controller.getLatestUpdates().Result;
-            // Assert
-            //var items = Assert.IsType<JsonResult>(okResult);
-            //Assert.Equal(OkObjectResult, items.StatusCode);
+             
+            var okResult = _controller.getLatestUpdates().Result;
+           
+            var items = Assert.IsType<JsonResult>(okResult);
+            Assert.Equal(OkObjectResult, items.StatusCode);
         }
+
+        public int? OkObjectResult { get; set; }
     }
 }

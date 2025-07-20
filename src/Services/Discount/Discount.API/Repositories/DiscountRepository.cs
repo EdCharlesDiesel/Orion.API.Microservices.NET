@@ -1,8 +1,9 @@
 ﻿using Dapper;
-using Discount.API.Entities;
 using Npgsql;
+using Orion.Discount.Core;
 
-namespace Discount.API.Repositories
+
+namespace Orion.Services.Discount.API.Repositories
 {
     public class DiscountRepository : IDiscountRepository
     {

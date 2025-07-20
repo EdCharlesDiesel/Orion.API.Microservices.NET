@@ -1,7 +1,7 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
-namespace Catalog.API.Entities
+namespace Orion.Services.Catalog.API.Entities
 {
     public class Product
     {

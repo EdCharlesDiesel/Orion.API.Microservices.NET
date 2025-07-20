@@ -1,9 +1,10 @@
-﻿using Discount.API.Entities;
-using Discount.API.Repositories;
+﻿using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using System.Net;
+using Orion.Discount.Core;
 
-namespace Discount.API.Controllers
+using Orion.Services.Discount.API.Repositories;
+
+namespace Orion.Services.Discount.API.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
