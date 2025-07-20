@@ -8,15 +8,7 @@ services:
       context: .
       dockerfile: src/WebApps/Orion.WebApps.HealthCheck/Dockerfile
     ports:
-      - "5001:80"   # HostPort:ContainerPort
-
-  orion.services.stockanalyzer.api-1:
-    image: orion.services.stockanalyzer.api-1
-    build:
-      context: .
-      dockerfile: src/Services/StockAnalyzer/StockAnalyzer.API/Dockerfile
-    ports:
-      - "5002:80"
+      - "5000:5000"   # HostPort:ContainerPort
 
   orion.webapps.web:
     image: orion.webapps.web
@@ -24,4 +16,14 @@ services:
       context: .
       dockerfile: src/WebApps/Orion.WebApps.Web/Dockerfile
     ports:
-      - "5000:80"
+      - "5001:5001"        
+  
+  orion.services.stockanalyzer.api-1:
+    image: orion.services.stockanalyzer.api-1
+    build:
+      context: .
+      dockerfile: src/Services/StockAnalyzer/StockAnalyzer.API/Dockerfile
+    ports:
+      - "5002:5002"
+
+
