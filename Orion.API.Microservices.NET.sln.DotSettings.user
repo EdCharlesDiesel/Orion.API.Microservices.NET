@@ -26,6 +26,12 @@
     &lt;TestId&gt;xUnit::69B62104-8836-433A-88FB-498B39A35694::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.CalanderControllerUnitTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=af74c70d_002D2983_002D488d_002D8182_002D8e628b28702a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CatalogControllerUnitTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8C82AB9F-7FC6-4B7D-8770-176FDC21034F::net9.0::Orion.Services.Catalog.API.Tests.CatalogControllerUnitTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::69B62104-8836-433A-88FB-498B39A35694::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.CalendarControllerTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c104ed0d_002D0c1c_002D4e68_002Da0a5_002D7faf4b175417/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalanderControllerUnitTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::69B62104-8836-433A-88FB-498B39A35694::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.CalanderControllerUnitTests&lt;/TestId&gt;&#xD;
@@ -36,4 +42,6 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::69B62104-8836-433A-88FB-498B39A35694::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.CalendarControllerTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=ocelotapigw/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=stockanalyzer/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

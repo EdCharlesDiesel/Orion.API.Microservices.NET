@@ -18,4 +18,10 @@
     <ProjectReference Include="..\..\Infrastructure\Common.Logging\Orion.Common.Logging.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\..\..\.dockerignore">
+      <Link>.dockerignore</Link>
+    </Content>
+  </ItemGroup>
+
 </Project>
