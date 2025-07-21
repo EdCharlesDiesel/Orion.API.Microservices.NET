@@ -43,5 +43,7 @@
     &lt;TestId&gt;xUnit::69B62104-8836-433A-88FB-498B39A35694::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.CalendarControllerTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=059f5c20_002D4604_002D40f8_002D8067_002D49e6e2ba8444_0023Orion_002EWebApps_002EWeb/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=9af373f3_002Dec33_002D431d_002Dbc90_002Da60ff2d1ac5c_0023Orion_002EWebApps_002EHealthCheck/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=ocelotapigw/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=stockanalyzer/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
