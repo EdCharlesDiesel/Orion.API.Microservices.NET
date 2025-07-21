@@ -21,7 +21,8 @@ builder.Services
     .AddHealthChecksUI(options =>
     {
         options.SetEvaluationTimeInSeconds(15); // Interval between checks
-        options.AddHealthCheckEndpoint("Healthcheck API", "/healthcheck");
+        options.AddHealthCheckEndpoint("Healthcheck API", "http://localhost:5000/healthcheck");
+        // options.AddHealthCheckEndpoint("Healthcheck API", "/healthcheck");
     })
     .AddInMemoryStorage(); // Use memory; for production consider SQL or Postgres
 builder.WebHost.UseWebRoot("wwwroot");

@@ -18,8 +18,6 @@ C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\ob
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\Orion.Services.StockAnalyzer.API.AssemblyInfoInputs.cache
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\Orion.Services.StockAnalyzer.API.AssemblyInfo.cs
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\Orion.Services.StockAnalyzer.API.csproj.CoreCompileInputs.cache
-C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\Orion.Services.StockAnalyzer.API.MvcApplicationPartsAssemblyInfo.cs
-C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\Orion.Services.StockAnalyzer.API.MvcApplicationPartsAssemblyInfo.cache
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\Orion.Services.StockAnalyzer.API.sourcelink.json
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
