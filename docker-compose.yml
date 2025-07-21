@@ -27,3 +27,9 @@ services:
       - "5002:5002"
 
 
+  orion.ocelotapigw:
+    image: orion.ocelotapigw
+    build:
+      context: .
+      dockerfile: src/ApiGateways/OcelotApiGw/Dockerfile
+
