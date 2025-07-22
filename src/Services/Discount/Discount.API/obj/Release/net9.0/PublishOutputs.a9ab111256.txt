@@ -1,0 +1,15 @@
+C:\x\Orion.API.Microservices.NET\out\Orion.Services.Discount.API.exe
+C:\x\Orion.API.Microservices.NET\out\appsettings.Development.json
+C:\x\Orion.API.Microservices.NET\out\appsettings.json
+C:\x\Orion.API.Microservices.NET\out\Orion.Services.Discount.API.dll
+C:\x\Orion.API.Microservices.NET\out\Orion.Services.Discount.API.deps.json
+C:\x\Orion.API.Microservices.NET\out\Orion.Services.Discount.API.runtimeconfig.json
+C:\x\Orion.API.Microservices.NET\out\Orion.Services.Discount.API.pdb
+C:\x\Orion.API.Microservices.NET\out\Dapper.dll
+C:\x\Orion.API.Microservices.NET\out\Microsoft.OpenApi.dll
+C:\x\Orion.API.Microservices.NET\out\Npgsql.dll
+C:\x\Orion.API.Microservices.NET\out\Swashbuckle.AspNetCore.Swagger.dll
+C:\x\Orion.API.Microservices.NET\out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\x\Orion.API.Microservices.NET\out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\x\Orion.API.Microservices.NET\out\Orion.Discount.Core.dll
+C:\x\Orion.API.Microservices.NET\out\Orion.Discount.Core.pdb
