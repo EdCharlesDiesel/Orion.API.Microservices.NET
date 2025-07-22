@@ -23,7 +23,10 @@ public class CalendarEvent: Entity
     public string Ticker { get; set; }
     public string Symbol { get; set; }
     public string Reference { get; set; }
+    
     public DateTime? LastUpdate { get; set; }
+    
     public DateTime? Date { get; set; }
+    
     public DateTime? ReferenceDate { get; set; }
 }

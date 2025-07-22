@@ -6,11 +6,10 @@ namespace Orion.Services.StockAnalyzer.API.Data
 {
     public class StockAnalyzerContext : DbContext, IStockAnalyzerContext
     {
-    
-
         public StockAnalyzerContext(DbContextOptions<StockAnalyzerContext> options)
             : base(options) { }
         
         public IEnumerable<LatestModel> LatestModels { get; set; }
+        public DbSet<CalendarEvent> CalendarEvents => Set<CalendarEvent>();
     }
 }
