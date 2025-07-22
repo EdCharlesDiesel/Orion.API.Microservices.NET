@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Orion.Services.StockAnalyzer.API.Services;
 
+namespace Orion.Services.StockAnalyzer.API.Repositories;
+
 public class Repository<T>(DbContext context) : IRepository<T> where T : class
 {
     private readonly DbContext _context = context;
