@@ -104,6 +104,9 @@
             "projectReferences": {
               "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Catalog\\Catalog.API\\Orion.Services.Catalog.API.csproj": {
                 "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Catalog\\Catalog.API\\Orion.Services.Catalog.API.csproj"
+              },
+              "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Catalog.API\\Orion.Services.Catalog.API.csproj": {
+                "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Catalog.API\\Orion.Services.Catalog.API.csproj"
               }
             }
           }

@@ -7708,6 +7708,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Catalog.API\\Orion.Services.Catalog.API.csproj",
       "FluentAssertions >= 8.5.0",
       "Microsoft.AspNetCore.Mvc.Core >= 2.1.34",
       "Microsoft.NET.Test.Sdk >= 17.7.1",
@@ -7745,6 +7746,9 @@
           "projectReferences": {
             "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Catalog\\Catalog.API\\Orion.Services.Catalog.API.csproj": {
               "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Catalog\\Catalog.API\\Orion.Services.Catalog.API.csproj"
+            },
+            "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Catalog.API\\Orion.Services.Catalog.API.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Catalog.API\\Orion.Services.Catalog.API.csproj"
             }
           }
         }
@@ -7817,5 +7821,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Catalog.API\\Orion.Services.Catalog.API.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Catalog.API\\Orion.Services.Catalog.API.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

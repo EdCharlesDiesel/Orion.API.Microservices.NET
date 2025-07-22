@@ -676,6 +676,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj",
       "Dapper >= 2.1.66",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql >= 7.0.4",
@@ -708,6 +709,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj"
+            },
             "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
               "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj"
             }
@@ -771,6 +775,15 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
     {
       "code": "NU1903",
       "level": "Warning",

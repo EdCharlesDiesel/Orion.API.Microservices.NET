@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "DeVEZgscU9U=",
-  "success": true,
+  "dgSpecHash": "83fe/nVUBUc=",
+  "success": false,
   "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API.Tests\\Orion.Services.StockAnalyzer.API.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\15.0.1\\automapper.15.0.1.nupkg.sha512",
@@ -228,6 +228,17 @@
       "warningLevel": 1,
       "filePath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API.Tests\\Orion.Services.StockAnalyzer.API.Tests.csproj",
       "libraryId": "MediatR",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API.Tests\\Orion.Services.StockAnalyzer.API.Tests.csproj",
+      "filePath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API.Tests\\Orion.Services.StockAnalyzer.API.Tests.csproj",
+      "libraryId": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
       "targetGraphs": [
         "net9.0"
       ]

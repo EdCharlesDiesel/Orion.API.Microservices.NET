@@ -85,6 +85,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
+                "projectPath": "C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj"
+              },
               "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
                 "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj"
               }
