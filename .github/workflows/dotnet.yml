@@ -3,6 +3,7 @@
 
 name: .NET
 
+
 on:
   push:
     branches: [ "master" ]
@@ -21,7 +22,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore Orion.API.Microservices.NET.sln
+      working-directory: ./src
     - name: Build
       run: dotnet build --no-restore
     - name: Test
