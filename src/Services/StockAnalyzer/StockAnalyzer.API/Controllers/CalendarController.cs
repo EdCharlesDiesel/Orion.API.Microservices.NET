@@ -1,8 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using Orion.Services.StockAnalyzer.API.Repositories;
-using Orion.Services.StockAnalyzer.API.Services;
-using Orion.StockAnalyzer.Core.Domain;
 
 namespace Orion.Services.StockAnalyzer.API.Controllers
 {

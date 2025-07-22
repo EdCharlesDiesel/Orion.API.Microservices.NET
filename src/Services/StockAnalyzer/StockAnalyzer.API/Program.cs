@@ -1,10 +1,12 @@
+
+
 using FastEndpoints;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Orion.Services.StockAnalyzer.API.Data;
 using Orion.Services.StockAnalyzer.API.Mappings;
-using Orion.Services.StockAnalyzer.API.Services;
 using Orion.Services.StockAnalyzer.API.Repositories;
+using Orion.Services.StockAnalyzer.API.Services;
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
 
