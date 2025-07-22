@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.StockAnalyzer.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d0b92d390cd08cedf95d1636c76ce77f3d835d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa72806ff3cfd60555b7b285a77147a48bb27f14")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.StockAnalyzer.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.StockAnalyzer.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
