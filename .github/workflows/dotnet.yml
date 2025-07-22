@@ -24,6 +24,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore Orion.API.Microservices.NET.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build Orion.API.Microservices.NET.sln --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test Orion.API.Microservices.NET.sln --no-build --verbosity normal
