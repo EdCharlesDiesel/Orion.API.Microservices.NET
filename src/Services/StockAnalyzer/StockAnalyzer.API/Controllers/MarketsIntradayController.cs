@@ -9,10 +9,10 @@ public class MarketsIntradayController : ControllerBase
 {
         private readonly Orion.Services.StockAnalyzer.API.Services.TradingEconomicsService _service;
 
-        // public MarketsController(Orion.Services.StockAnalyzer.API.Services.TradingEconomicsMarketService service)
-        // {
-        //     _service = service;
-        // }
+        public MarketsIntradayController(Orion.Services.StockAnalyzer.API.Services.TradingEconomicsService service)
+        {
+            _service = service;
+        }
 
         /// <summary>
         /// Get intraday prices for a single market symbol.

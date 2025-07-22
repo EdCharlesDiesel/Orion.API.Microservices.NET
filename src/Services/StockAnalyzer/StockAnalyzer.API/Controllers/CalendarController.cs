@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using Orion.StockAnalyzer.Core.Domain;
+using Orion.Services.StockAnalyzer.API.Repositories;
 
 namespace Orion.Services.StockAnalyzer.API.Controllers
 {
@@ -8,57 +7,54 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
     [Route("api/[controller]")]
     public class CalendarController : ControllerBase
     {
-        private static readonly List<Calendar> _calendarEvents = new()
+        
+        private readonly ICalendarServices _service;
+
+        public CalendarController(CalendarRepository service)
         {
-            new Calendar { Id = Guid.NewGuid(), EventName = "GDP Release", Date = DateTime.Now.AddDays(1) },
-            new Calendar { Id = Guid.NewGuid(), EventName = "Unemployment Data", Date = DateTime.Now.AddDays(3) }
-        };
+            _service = service;
+        }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Calendar>> GetAll()
+        public async Task<IActionResult> GetAllEvents()
         {
-            return Ok(_calendarEvents);
+            var result = await _service.GetCalendarEvents();
+            return Ok(result);
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<Calendar> GetById(Guid id)
+        // GET: api/calendar/daterange?startDate=2025-07-01&endDate=2025-07-31
+        [HttpGet("daterange")]
+        public async Task<IActionResult> GetEventsByDate([FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
         {
-            var item = _calendarEvents.Find(c => c.Id == id);
-            if (item == null)
-                return NotFound();
-            return Ok(item);
+            var result = await _service.GetCalendarEventsByDate(startDate, endDate);
+            return Ok(result);
         }
 
-        [HttpPost]
-        public ActionResult<Calendar> Create(Calendar calendar)
+        // GET: api/calendar/countries?names=South Africa,USA
+        [HttpGet("countries")]
+        public async Task<IActionResult> GetEventsByCountries([FromQuery] string[] names)
         {
-            // calendar.Id = _calendarEvents.Count + 1;
-            calendar.Id = Guid.NewGuid();
-            _calendarEvents.Add(calendar);
-            return CreatedAtAction(nameof(GetById), new { id = calendar.Id }, calendar);
+            var result = await _service.GetCalendarEventsByCountries(names);
+            return Ok(result);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult Update(Guid id, Calendar calendar)
+        // GET: api/calendar/countriesdaterange?startDate=2025-07-01&endDate=2025-07-31&names=USA,Germany
+        [HttpGet("countriesdaterange")]
+        public async Task<IActionResult> GetEventsByCountriesAndDates([FromQuery] DateTime startDate, [FromQuery] DateTime endDate, [FromQuery] string[] names)
         {
-            var existing = _calendarEvents.Find(c => c.Id == id);
-            if (existing == null)
-                return NotFound();
-
-            existing.EventName = calendar.EventName;
-            existing.Date = calendar.Date;
-            return NoContent();
+            var result = await _service.GetCalendarEventsByCountriesAndDates(startDate, endDate, names);
+            return Ok(result);
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult Delete(Guid id)
+        // GET: api/calendar/indicators?names=GDP,Inflation
+        [HttpGet("indicators")]
+        public async Task<IActionResult> GetEventsByIndicators([FromQuery] string[] names)
         {
-            var item = _calendarEvents.Find(c => c.Id == id);
-            if (item == null)
-                return NotFound();
-
-            _calendarEvents.Remove(item);
-            return NoContent();
+            var result = await _service.GetCalendarEventsByIndicator(names);
+            return Ok(result);
         }
+
     }
+
+
 }

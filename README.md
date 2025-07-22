@@ -1,2 +1,2 @@
 # Orion.API.Microservices.NET
-This is an online Book Store a new version written in .NET 6/7
+This is an web API written in .NET 9.

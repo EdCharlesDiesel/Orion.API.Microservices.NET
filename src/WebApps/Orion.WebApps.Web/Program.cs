@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Orion.WebApps.Web.Data;
+using Orion.WebApps.Web.Helper;
 
 namespace Orion.WebApps.Web;
 
@@ -9,7 +10,9 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
+        builder.Services.AddControllersWithViews();
+        builder.Services.AddHttpClient();
+        builder.Services.Configure<ApiSettings>(builder.Configuration.GetSection("ApiSettings"));
         // Add services to the container.
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
                                throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");

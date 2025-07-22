@@ -28,9 +28,14 @@
     <projectFile profileName="AspnetRunBasics">src/WebApps/AspnetRunBasics/Orion.WebApps.WebASP.csproj</projectFile>
     <projectFile pubXmlPath="src/WebApps/AspnetRunBasics/Properties/PublishProfiles/local.pubxml">src/WebApps/AspnetRunBasics/Orion.WebApps.WebASP.csproj</projectFile>
     <projectFile kind="Docker">src/WebApps/Orion.Web/Orion.Web.csproj</projectFile>
+    <projectFile kind="Docker">src/WebApps/Orion.WebApps.HealthCheck/Orion.WebApps.HealthCheck.csproj</projectFile>
     <projectFile profileName="IIS Express">src/WebApps/Orion.WebApps.HealthCheck/Orion.WebApps.HealthCheck.csproj</projectFile>
     <projectFile profileName="Orion.WebApps.HealthCheck">src/WebApps/Orion.WebApps.HealthCheck/Orion.WebApps.HealthCheck.csproj</projectFile>
+    <projectFile kind="Docker">src/WebApps/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj</projectFile>
+    <projectFile profileName="http">src/WebApps/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj</projectFile>
+    <projectFile profileName="https">src/WebApps/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj</projectFile>
     <projectFile kind="Docker">src/WebApps/Orion.WebApps.Web/Orion.Web.csproj</projectFile>
+    <projectFile kind="Docker">src/WebApps/Orion.WebApps.Web/Orion.WebApps.Web.csproj</projectFile>
     <projectFile profileName="http">src/WebApps/Orion.WebApps.Web/Orion.WebApps.Web.csproj</projectFile>
     <projectFile profileName="https">src/WebApps/Orion.WebApps.Web/Orion.WebApps.Web.csproj</projectFile>
   </component>
@@ -62,39 +67,39 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "EdCharlesDiesel"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EdCharlesDiesel&quot;
   }
-}]]></component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDOK88hu86fu9S1",
-        "number": 4
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOK88hu86fu9S1&quot;,
+        &quot;number&quot;: 4
       },
-      "lastSeen": 1753015643958
+      &quot;lastSeen&quot;: 1753015643958
     }
   ]
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/EdCharlesDiesel/Orion.API.Microservices.NET.git",
-    "accountId": "26545295-636b-4bc1-8554-8d165a7f4a30"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EdCharlesDiesel/Orion.API.Microservices.NET.git&quot;,
+    &quot;accountId&quot;: &quot;26545295-636b-4bc1-8554-8d165a7f4a30&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "EdCharlesDiesel",
-    "repository": "Orion.API.Microservices.NET"
+    &quot;owner&quot;: &quot;EdCharlesDiesel&quot;,
+    &quot;repository&quot;: &quot;Orion.API.Microservices.NET&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/459bbf9fdb12446c978a3113a173b6d335928/55/d7e61a9e/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d1e0b313578742df9fa24022a890f31b23908/8d/ca2874b6/ServiceCollection.cs" root0="FORCE_HIGHLIGHTING" />
@@ -158,7 +163,7 @@
     "Publish to IIS.Publish Orion.WebApps.WebASP to IIS.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "#10 on Feature/DEV-02-StockAnalyzer",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -1042,6 +1047,17 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Orion.WebApps.HealthCheckUI/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="orion.webapps.healthcheckui" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="sourceFilePath" value="src/WebApps/Orion.WebApps.HealthCheckUI/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Orion.WebApps.HealthCheck/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -1379,6 +1395,7 @@
       <item itemvalue=".NET Launch Settings Profile.Users: https" />
       <item itemvalue=".NET Launch Settings Profile.Orion.Web: http (1)" />
       <item itemvalue=".NET Project.Orion.Web" />
+      <item itemvalue="Docker.Orion.WebApps.HealthCheckUI/Dockerfile" />
       <item itemvalue="Docker.Orion.WebApps.Web/Dockerfile" />
       <item itemvalue="Docker.Orion.Web/Dockerfile (1)" />
       <item itemvalue="Docker.Orion.Web/Dockerfile" />
@@ -1392,6 +1409,7 @@
       <item itemvalue="Docker.Shopping.Aggregator/Dockerfile" />
       <item itemvalue="Docker.StockAnalyzer.API/Dockerfile" />
       <item itemvalue="Docker.Users/Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml.orion.webapps.healthcheck: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.override.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.orion.services.stockanalyzer.api-1: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment" />
@@ -1429,6 +1447,8 @@
       <workItem from="1752946244141" duration="6975000" />
       <workItem from="1752955397712" duration="2046000" />
       <workItem from="1753013871092" duration="1806000" />
+      <workItem from="1753187776652" duration="872000" />
+      <workItem from="1753189290611" duration="1032000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Still,&#10;Working on fixing the Dockerfile">
       <option name="closed" value="true" />
@@ -1438,7 +1458,31 @@
       <option name="project" value="LOCAL" />
       <updated>1753015550133</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".">
+      <option name="closed" value="true" />
+      <created>1753183464323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753183464323</updated>
+    </task>
+    <task id="LOCAL-00003" summary=".">
+      <option name="closed" value="true" />
+      <created>1753189822134</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753189822134</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".">
+      <option name="closed" value="true" />
+      <created>1753190055775</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753190055775</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1461,7 +1505,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Refactoring Still" />
     <MESSAGE value="Refactoring Still,&#10;Working on fixing the Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Still,&#10;Working on fixing the Dockerfile" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1481,27 +1526,13 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/Users/Controllers/UsersController.cs</url>
           <line>23</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Users\Controllers\UsersController.cs" containingFunctionPresentation="Method 'GetUsers'">
-            <startOffsets>
-              <option value="721" />
-            </startOffsets>
-            <endOffsets>
-              <option value="762" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Users\Controllers\UsersController.cs" containingFunctionPresentation="Method 'GetUsers'" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/Users/Controllers/UsersController.cs</url>
           <line>32</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Users\Controllers\UsersController.cs" containingFunctionPresentation="Method 'GetUserById'">
-            <startOffsets>
-              <option value="1067" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1068" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Users\Controllers\UsersController.cs" containingFunctionPresentation="Method 'GetUserById'" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
@@ -1509,10 +1540,10 @@
           <line>62</line>
           <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\Controllers\LatestController.cs" containingFunctionPresentation="Method 'GetLatestUpdatesByDate'">
             <startOffsets>
-              <option value="2256" />
+              <option value="-1" />
             </startOffsets>
             <endOffsets>
-              <option value="2344" />
+              <option value="-1" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
@@ -1526,27 +1557,13 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/WebApps/Orion.WebApps.HealthCheck/Controllers/HealthCheckController.cs</url>
           <line>14</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\Controllers\HealthCheckController.cs" containingFunctionPresentation="Constructor 'HealthCheckController'">
-            <startOffsets>
-              <option value="499" />
-            </startOffsets>
-            <endOffsets>
-              <option value="516" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\Controllers\HealthCheckController.cs" containingFunctionPresentation="Constructor 'HealthCheckController'" />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/WebApps/Orion.WebApps.HealthCheck/Controllers/HealthCheckController.cs</url>
           <line>21</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\Controllers\HealthCheckController.cs" containingFunctionPresentation="Method 'Get'">
-            <startOffsets>
-              <option value="647" />
-            </startOffsets>
-            <endOffsets>
-              <option value="694" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheck\Controllers\HealthCheckController.cs" containingFunctionPresentation="Method 'Get'" />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>

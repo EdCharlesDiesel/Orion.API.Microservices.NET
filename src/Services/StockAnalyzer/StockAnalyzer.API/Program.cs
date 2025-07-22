@@ -1,46 +1,61 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
+
+
+using FastEndpoints;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Orion.Services.StockAnalyzer.API.Data;
-using Orion.Services.StockAnalyzer.API.Services;
+using Orion.Services.StockAnalyzer.API.Mappings;
 using Orion.Services.StockAnalyzer.API.Repositories;
+using Orion.Services.StockAnalyzer.API.Services;
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+// ✅ Configuration
+var configuration = builder.Configuration;
+string connectionString = configuration.GetConnectionString("DefaultConnection");
 
-// Add EF Core with PostgreSQL
+// ✅ Add EF Core with PostgreSQL
 builder.Services.AddDbContext<StockAnalyzerContext>(options =>
     options.UseNpgsql(connectionString));
 
-// Register repositories and services
+// ✅ Register application services
 builder.Services.AddScoped<ILatestModelRepository, LatestModelRepository>();
-// builder.Services.AddHttpClient<TradingEconomicsMarketService>();
+builder.Services.AddScoped<CalendarRepository>();
+builder.Services.AddAutoMapper(typeof(CalendarEventProfile));
+builder.Services.AddMediatR(typeof(Program));
+builder.Services.AddFastEndpoints();
 
-// Add controller support
+// ✅ Add HTTP client support if needed
+builder.Services.AddHttpClient(); // Or named client if needed
+
+// ✅ Add controller support
 builder.Services.AddControllers();
 
-// Swagger support
+// ✅ Swagger configuration
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
+app.UseFastEndpoints();
+// ✅ Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage(); // Better error info in dev
     app.UseSwagger();
     app.UseSwaggerUI();
+}
+else
+{
+    app.UseExceptionHandler("/error"); // Optional: your custom error endpoint
+    app.UseHsts(); // Enforce HTTPS in production
 }
 
 app.UseHttpsRedirection();
 
-// Optional: Add authentication here if used
-app.UseAuthentication();
+// Optional: add if you configure authentication
+// app.UseAuthentication();
 
 app.UseAuthorization();
 
