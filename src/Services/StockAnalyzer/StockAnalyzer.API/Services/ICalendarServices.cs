@@ -1,3 +1,5 @@
+using Orion.StockAnalyzer.Core.Domain;
+
 namespace Orion.Services.StockAnalyzer.API.Repositories;
 
 public interface ICalendarServices
@@ -7,4 +9,5 @@ public interface ICalendarServices
     Task<string> GetCalendarEventsByCountries(params string[] countries);
     Task<string> GetCalendarEventsByCountriesAndDates(DateTime startDate, DateTime endDate, params string[] countries);
     Task<string> GetCalendarEventsByIndicator(params string[] indicators);
+    Task<CalendarEvent> Create(List<CalendarEvent> calendarEvents);
 }

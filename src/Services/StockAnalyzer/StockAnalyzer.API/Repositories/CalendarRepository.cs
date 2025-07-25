@@ -1,7 +1,16 @@
+using Orion.Services.StockAnalyzer.API.Data;
+using Orion.StockAnalyzer.Core.Domain;
+
 namespace Orion.Services.StockAnalyzer.API.Repositories;
 
 public class CalendarRepository: ICalendarServices
 {
+    private readonly StockAnalyzerContext _context;
+
+    public CalendarRepository(StockAnalyzerContext context)
+    {
+        _context = context;
+    }
     public async Task<string> GetCalendarEvents()
     {
         return await Helper.HttpRequesterClass.HttpRequester("/calendar");
@@ -43,6 +52,19 @@ public class CalendarRepository: ICalendarServices
             return "Invalid indicator names";
 
         return await Helper.HttpRequesterClass.HttpRequester($"/calendar/indicator/{string.Join(",", indicators)}");
+    }
+
+
+    public async Task<CalendarEvent> Create(List<CalendarEvent> calendarEvents)
+    {
+        if (calendarEvents == null || !calendarEvents.Any())
+            throw new ArgumentException("Event list cannot be null or empty.");
+
+        await _context.CalendarEvents.AddRangeAsync(calendarEvents);
+        await _context.SaveChangesAsync();
+
+        // Return the first created event (or you can change this to return the list)
+        return calendarEvents.First();
     }
 
 

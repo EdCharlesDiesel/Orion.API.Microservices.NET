@@ -1,12 +1,15 @@
+using System.ComponentModel.DataAnnotations;
 using MediatR;
 using Orion.Services.StockAnalyzer.API.DTO;
 namespace Orion.Services.StockAnalyzer.API.Requests;
 
 public class UpdateCalendarEventRequest : IRequest<CalendarEventDto?>
 {
+    [Key]
+    
     public Guid Id { get; set; }
-    public int CalendarId { get; set; }
-    public int Importance { get; set; }
+    public string CalendarId { get; set; }
+    public string Importance { get; set; }
     public string Country { get; set; }
     public string Category { get; set; }
     public string Event { get; set; }

@@ -123,14 +123,6 @@
               "target": "Package",
               "version": "[2.0.6, )"
             },
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.5.0, )"
-            },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[11.1.0, )"
-            },
             "Microsoft.AspNetCore.Authentication.Negotiate": {
               "target": "Package",
               "version": "[9.0.7, )"

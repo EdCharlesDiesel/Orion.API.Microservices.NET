@@ -22,6 +22,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Core\Orion.Core.StockAnalyzer\Orion.StockAnalyzer.Core.csproj" />
+      <ProjectReference Include="..\..\Services\StockAnalyzer\StockAnalyzer.API\Orion.Services.StockAnalyzer.API.csproj" />
     </ItemGroup>
 
     <ItemGroup>
