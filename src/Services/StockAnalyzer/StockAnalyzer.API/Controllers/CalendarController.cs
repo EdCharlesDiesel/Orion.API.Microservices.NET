@@ -1,5 +1,7 @@
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Services.StockAnalyzer.API.Repositories;
+using Orion.StockAnalyzer.Core.Domain;
 
 namespace Orion.Services.StockAnalyzer.API.Controllers
 {
@@ -19,8 +21,27 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
         
         public async Task<IActionResult> GetAllEvents()
         {
-            var result = await _service.GetCalendarEvents();
-            return Ok(result);
+            string result = await _service.GetCalendarEvents();
+
+            List<CalendarEvent>? calendarEvents;
+            try
+            {
+                calendarEvents = JsonSerializer.Deserialize<List<CalendarEvent>>(result, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+
+                if (calendarEvents == null || !calendarEvents.Any())
+                    return BadRequest("No calendar events found in the JSON.");
+            }
+            catch (JsonException ex)
+            {
+                return BadRequest($"JSON deserialization error: {ex.Message}");
+            }
+
+            var createdEvent = await _service.Create(calendarEvents);
+
+            return Ok(createdEvent);
         }
 
         // GET: api/calendar/daterange?startDate=2025-07-01&endDate=2025-07-31

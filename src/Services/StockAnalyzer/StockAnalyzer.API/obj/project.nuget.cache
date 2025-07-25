@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UoiNaT8/SPU=",
+  "dgSpecHash": "W1Xo5qeENP8=",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
   "expectedPackageFiles": [
@@ -15,9 +15,8 @@
     "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.swagger\\5.29.0\\fastendpoints.swagger.5.29.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\9.0.7\\microsoft.aspnetcore.authentication.negotiate.9.0.7.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\9.0.7\\microsoft.aspnetcore.connections.abstractions.9.0.7.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
@@ -153,18 +152,6 @@
       "warningLevel": 1,
       "filePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
       "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.5.0 was resolved.",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
-      "libraryId": "MediatR",
       "targetGraphs": [
         "net9.0"
       ]

@@ -4,8 +4,8 @@ namespace Orion.StockAnalyzer.Core.Domain;
 
 public class CalendarEvent: Entity
 {
-    public int CalendarId { get; set; }
-    public int Importance { get; set; }
+    public string CalendarId { get; set; }
+    public string Importance { get; set; }
     public string Country { get; set; }
     public string Category { get; set; }
     public string Event { get; set; }

@@ -1,7 +1,5 @@
 
 
-using FastEndpoints;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Orion.Services.StockAnalyzer.API.Data;
 using Orion.Services.StockAnalyzer.API.Mappings;
@@ -24,10 +22,13 @@ builder.Services.AddDbContext<StockAnalyzerContext>(options =>
 builder.Services.AddScoped<ILatestModelRepository, LatestModelRepository>();
 builder.Services.AddScoped<CalendarRepository>();
 builder.Services.AddAutoMapper(typeof(CalendarEventProfile));
-builder.Services.AddMediatR(typeof(Program));
+// builder.Services.AddMediatR(cfg =>
+// {
+//     cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
+// });
 
 
-builder.Services.AddFastEndpoints();
+
 
 // ✅ Add HTTP client support if needed
 builder.Services.AddHttpClient(); // Or named client if needed
@@ -40,7 +41,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-app.UseFastEndpoints();
+
 // ✅ Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
