@@ -1,6 +1,8 @@
+using Orion.StockAnalyzer.Core.BaseClasses;
+
 namespace Orion.StockAnalyzer.Core.Domain;
 
-public class EMU
+public class EMU :Entity
 {
     public List<Country> MemberStates { get; set; } = new List<Country>();
     public EuropeanCentralBank ECB { get; set; } = new EuropeanCentralBank();

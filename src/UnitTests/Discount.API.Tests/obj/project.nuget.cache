@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "s9vyRP2AbJc=",
-  "success": false,
+  "dgSpecHash": "u9+23U7iV9s=",
+  "success": true,
   "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Discount.API.Tests\\Orion.Services.Discount.API.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
@@ -139,15 +139,13 @@
   ],
   "logs": [
     {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj'. Check that the project reference is valid and that the project file exists.",
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
       "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Discount.API.Tests\\Orion.Services.Discount.API.Tests.csproj",
+      "warningLevel": 1,
       "filePath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Discount.API.Tests\\Orion.Services.Discount.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.API.Microservices.NET\\Orion.Discount.Core\\Orion.Discount.Core.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
+      "targetGraphs": []
     }
   ]
 }

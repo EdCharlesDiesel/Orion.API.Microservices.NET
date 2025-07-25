@@ -1,6 +1,8 @@
-﻿namespace Orion.StockAnalyzer.Core.Domain
+﻿using Orion.StockAnalyzer.Core.BaseClasses;
+
+namespace Orion.StockAnalyzer.Core.Domain
 {
-    public class StockPrice
+    public class StockPrice:Entity
     {
         public string Ticker  { get; set; }
         public DateTime TradeDate  { get; set; }

@@ -16,6 +16,7 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
         }
 
         [HttpGet]
+        
         public async Task<IActionResult> GetAllEvents()
         {
             var result = await _service.GetCalendarEvents();

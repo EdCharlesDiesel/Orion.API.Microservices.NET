@@ -215,9 +215,6 @@
             "projectReferences": {
               "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj": {
                 "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj"
-              },
-              "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj": {
-                "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj"
               }
             }
           }
