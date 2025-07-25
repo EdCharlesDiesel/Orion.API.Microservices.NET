@@ -25,6 +25,8 @@ builder.Services.AddScoped<ILatestModelRepository, LatestModelRepository>();
 builder.Services.AddScoped<CalendarRepository>();
 builder.Services.AddAutoMapper(typeof(CalendarEventProfile));
 builder.Services.AddMediatR(typeof(Program));
+
+
 builder.Services.AddFastEndpoints();
 
 // ✅ Add HTTP client support if needed
