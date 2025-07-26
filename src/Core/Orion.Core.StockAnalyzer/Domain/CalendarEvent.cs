@@ -4,7 +4,7 @@ namespace Orion.StockAnalyzer.Core.Domain;
 
 public class CalendarEvent: Entity
 {
-    public int CalendarId { get; set; }
+    public string CalendarId { get; set; }
     public int Importance { get; set; }
     public string Country { get; set; }
     public string Category { get; set; }
@@ -23,9 +23,7 @@ public class CalendarEvent: Entity
     public string Ticker { get; set; }
     public string Symbol { get; set; }
     public string Reference { get; set; }
-    
     public DateTime? LastUpdate { get; set; }
-    
     public DateTime? Date { get; set; }
     
     public DateTime? ReferenceDate { get; set; }

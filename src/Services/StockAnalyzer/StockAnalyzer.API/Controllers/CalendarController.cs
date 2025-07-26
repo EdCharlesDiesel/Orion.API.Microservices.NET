@@ -1,5 +1,8 @@
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Services.StockAnalyzer.API.Repositories;
+using Orion.Services.StockAnalyzer.API.Services;
+using Orion.StockAnalyzer.Core.Domain;
 
 namespace Orion.Services.StockAnalyzer.API.Controllers
 {
@@ -7,7 +10,6 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
     [Route("api/[controller]")]
     public class CalendarController : ControllerBase
     {
-        
         private readonly ICalendarServices _service;
 
         public CalendarController(CalendarRepository service)
@@ -18,7 +20,26 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllEvents()
         {
-            var result = await _service.GetCalendarEvents();
+            string result = await _service.GetCalendarEvents();
+
+            List<CalendarEvent>? calendarEvents;
+            try
+            {
+                calendarEvents = JsonSerializer.Deserialize<List<CalendarEvent>>(result, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+
+                if (calendarEvents == null || !calendarEvents.Any())
+                    return BadRequest("No calendar events found in the JSON.");
+            }
+            catch (JsonException ex)
+            {
+                return BadRequest($"JSON deserialization error: {ex.Message}");
+            }
+
+            await _service.Create(calendarEvents);
+
             return Ok(result);
         }
 

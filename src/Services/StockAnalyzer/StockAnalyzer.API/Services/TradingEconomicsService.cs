@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Orion.Services.StockAnalyzer.API.Services;
 
-public class TradingEconomicsService
+public abstract class TradingEconomicsService
 {
     private readonly HttpClient _httpClient;
     private readonly string _apiKey = "guest:guest";

@@ -1,6 +1,8 @@
+using Orion.StockAnalyzer.Core.BaseClasses;
+
 namespace Orion.StockAnalyzer.Core.Domain;
 
-public class EuropeanCentralBank
+public class EuropeanCentralBank:Entity
 {
     public double InflationRate { get; set; }
     public double GDPGrowth { get; set; }

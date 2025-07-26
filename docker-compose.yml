@@ -1,32 +1,26 @@
-version: '3.9'
+version: '3.8'
 
 services:
-  api:
-    build: .
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: healthdb
+      POSTGRES_USER: healthuser
+      POSTGRES_PASSWORD: healthpass
     ports:
-      - "8080:80"
-    depends_on:
-      - postgres
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  healthcheck-api:
+    build:
+      context: ./HealthCheck.API
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    networks:
-      - healthnet
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
 
-#  postgres:
-#    image: postgres:15
-#    environment:
-#      POSTGRES_DB: healthdb
-#      POSTGRES_USER: postgres
-#      POSTGRES_PASSWORD: $ta99Ath0
-#    ports:
-#      - "5432:5432"
-#    networks:
-#      - healthnet
-#    volumes:
-#      - pgdata:/var/lib/postgresql/data
-#
-#volumes:
-#  pgdata:
-#
-#networks:
-#  healthnet:
+volumes:
+  pgdata:

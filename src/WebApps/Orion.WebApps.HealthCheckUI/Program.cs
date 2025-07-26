@@ -5,10 +5,11 @@ builder.Services.AddHealthChecks()
     .AddNpgSql(builder.Configuration.GetConnectionString("DefaultConnection"), name: "postgresql");
 
 // Add HealthChecks UI with PostgreSQL storage
-builder.Services.AddHealthChecksUI(opt =>
+builder.Services.AddHealthChecksUI(options =>
     {
-        opt.SetEvaluationTimeInSeconds(10); // frequency
-        opt.AddHealthCheckEndpoint("API", "/health");
+        options.SetEvaluationTimeInSeconds(10); // frequency
+        options.AddHealthCheckEndpoint("API", "/health");
+        options.AddHealthCheckEndpoint("Self", "/healthz");
     })
     .AddPostgreSqlStorage(builder.Configuration.GetConnectionString("DefaultConnection"));
 
