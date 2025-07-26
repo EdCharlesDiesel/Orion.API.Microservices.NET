@@ -1,6 +1,8 @@
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using Orion.Services.StockAnalyzer.API.Repositories;
+using Orion.Services.StockAnalyzer.API.Services;
 using Orion.StockAnalyzer.Core.Domain;
 using Orion.WebApps.Web.Helper;
 
@@ -10,14 +12,16 @@ public class CalendarController : Controller
 {
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly ApiSettings _apiSettings;
+    private readonly ICalendarServices _iCalendarServices;
 
     // In-memory store (simulate a database)
     private static List<CalendarEvent> _calendarEvents = new();
 
-    public CalendarController(IHttpClientFactory httpClientFactory, IOptions<ApiSettings> apiOptions)
+    public CalendarController(IHttpClientFactory httpClientFactory, IOptions<ApiSettings> apiOptions, ICalendarServices iCalendarServices)
     {
         _httpClientFactory = httpClientFactory;
         _apiSettings = apiOptions.Value;
+        _iCalendarServices = iCalendarServices;
     }
 
     // GET: /Calendar
@@ -29,6 +33,8 @@ public class CalendarController : Controller
         {
             var events = await client.GetFromJsonAsync<List<CalendarEvent>>(_apiSettings.CalendarApiUrl);
             _calendarEvents = events ?? new List<CalendarEvent>();
+            _iCalendarServices.Create(events);
+            
             return View(_calendarEvents);
         }
         catch (HttpRequestException ex)

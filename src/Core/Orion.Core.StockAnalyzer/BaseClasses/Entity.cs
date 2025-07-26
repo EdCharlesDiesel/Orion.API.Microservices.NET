@@ -6,13 +6,12 @@ namespace Orion.StockAnalyzer.Core.BaseClasses
     {
         [Key]
         [Required]
-        public Guid Id  { get; set; }
+        public Guid Id  { get; set; } = Guid.NewGuid();
         [Required]
-        public DateTime CreatedDate  { get; set; }
-        
+        public DateTime CreatedDate  { get; set; } = DateTime.UtcNow;
+        [Required]
+        public string CreateBy  { get; set; } = "System";
         public DateTime ModifiedDate  { get; set; }
-        [Required]
-        public string CreateBy  { get; set; }
-        public string ModifiedBy  { get; set; }
+        public string ModifiedBy  { get; set; } ="System";
     }
 }

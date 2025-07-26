@@ -20,32 +20,33 @@ public class UpdateHandler : IRequestHandler<UpdateCalendarEventRequest, Calenda
 
     public async Task<CalendarEventDto?> Handle(UpdateCalendarEventRequest request, CancellationToken cancellationToken)
     {
-        var CalendarEvent = await _db.CalendarEvents.FindAsync([request.Id]);
-        if (CalendarEvent is null) return null;
-        
-        CalendarEvent.CalendarId= request.CalendarId;
-        CalendarEvent.Importance= request.Importance;
-        CalendarEvent.Country= request.Country;
-        CalendarEvent.Category= request.Category;
-        CalendarEvent.Event= request.Event;
-        CalendarEvent.Source= request.Source;
-        CalendarEvent.SourceURL= request.SourceURL;
-        CalendarEvent.Actual= request.Actual;
-        CalendarEvent.Previous= request.Previous;
-        CalendarEvent.Forecast= request.Forecast;
-        CalendarEvent.TEForecast= request.TEForecast;
-        CalendarEvent.URL= request.URL;
-        CalendarEvent.DateSpan= request.DateSpan;
-        CalendarEvent.Revised= request.Revised;
-        CalendarEvent.Currency= request.Currency;
-        CalendarEvent.Unit= request.Unit;
-        CalendarEvent.Ticker= request.Ticker;
-        CalendarEvent.Symbol= request.Symbol;
-        CalendarEvent.Reference= request.Reference;
-
-
-        await _db.SaveChangesAsync();
-        return _mapper.Map<CalendarEventDto>(CalendarEvent);
+        throw new NotImplementedException();
+        // var CalendarEvent = await _db.CalendarEvents.FindAsync([request.Id]);
+        // if (CalendarEvent is null) return null;
+        //
+        // CalendarEvent.CalendarId= request.CalendarId;
+        // CalendarEvent.Importance= request.Importance;
+        // CalendarEvent.Country= request.Country;
+        // CalendarEvent.Category= request.Category;
+        // CalendarEvent.Event= request.Event;
+        // CalendarEvent.Source= request.Source;
+        // CalendarEvent.SourceURL= request.SourceURL;
+        // CalendarEvent.Actual= request.Actual;
+        // CalendarEvent.Previous= request.Previous;
+        // CalendarEvent.Forecast= request.Forecast;
+        // CalendarEvent.TEForecast= request.TEForecast;
+        // CalendarEvent.URL= request.URL;
+        // CalendarEvent.DateSpan= request.DateSpan;
+        // CalendarEvent.Revised= request.Revised;
+        // CalendarEvent.Currency= request.Currency;
+        // CalendarEvent.Unit= request.Unit;
+        // CalendarEvent.Ticker= request.Ticker;
+        // CalendarEvent.Symbol= request.Symbol;
+        // CalendarEvent.Reference= request.Reference;
+        //
+        //
+        // await _db.SaveChangesAsync();
+        // return _mapper.Map<CalendarEventDto>(CalendarEvent);
     }
 }
 

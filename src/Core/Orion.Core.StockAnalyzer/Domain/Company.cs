@@ -1,6 +1,8 @@
-﻿namespace Orion.StockAnalyzer.Core.Domain
+﻿using Orion.StockAnalyzer.Core.BaseClasses;
+
+namespace Orion.StockAnalyzer.Core.Domain
 {
-    public class Company
+    public class Company:Entity
     {
         public string Symbol { get; set; } = null!;
         public string CompanyName { get; set; }= null!;

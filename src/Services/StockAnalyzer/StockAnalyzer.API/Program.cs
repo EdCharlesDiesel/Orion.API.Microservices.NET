@@ -1,8 +1,6 @@
-
-
-using FastEndpoints;
-using MediatR;
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using Orion.Services.StockAnalyzer.API.Data;
 using Orion.Services.StockAnalyzer.API.Mappings;
 using Orion.Services.StockAnalyzer.API.Repositories;
@@ -24,8 +22,6 @@ builder.Services.AddDbContext<StockAnalyzerContext>(options =>
 builder.Services.AddScoped<ILatestModelRepository, LatestModelRepository>();
 builder.Services.AddScoped<CalendarRepository>();
 builder.Services.AddAutoMapper(typeof(CalendarEventProfile));
-builder.Services.AddMediatR(typeof(Program));
-builder.Services.AddFastEndpoints();
 
 // ✅ Add HTTP client support if needed
 builder.Services.AddHttpClient(); // Or named client if needed
@@ -35,10 +31,65 @@ builder.Services.AddControllers();
 
 // ✅ Swagger configuration
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Orion StockAnalyzer API",
+        Version = "v1",
+        Description = "An API for economic events and stock analysis.",
+        Contact = new OpenApiContact
+        {
+            Name = "Khotso Mokhethi",
+            Email = "Mokhetkc@hotmail.com", // Replace with your actual email
+            Url = new Uri("https://github.com/EdCharlesDiesel")
+        },
+        License = new OpenApiLicense
+        {
+            Name = "MIT License",
+            Url = new Uri("https://opensource.org/licenses/MIT")
+        }
+    });
+
+    // Optional: Include XML comments (if you enable them in .csproj)
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    if (File.Exists(xmlPath))
+    {
+        options.IncludeXmlComments(xmlPath);
+    }
+
+    // Optional: Add JWT bearer auth support if you're using authentication
+    /*
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Enter 'Bearer' followed by your token"
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+    */
+});
 
 var app = builder.Build();
-app.UseFastEndpoints();
+
 // ✅ Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
