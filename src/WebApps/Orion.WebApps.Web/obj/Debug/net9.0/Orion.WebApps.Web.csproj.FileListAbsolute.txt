@@ -478,3 +478,4 @@ C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.DirectoryServices.Protocols.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.pdb
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.xml

@@ -130,6 +130,133 @@ namespace Orion.Services.StockAnalyzer.API.Data.Migrations
 
                     b.ToTable("CalendarEvents");
                 });
+
+            modelBuilder.Entity("Orion.StockAnalyzer.Core.Domain.ComtradeCategories", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
+                    b.Property<string>("CreateBy")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("ModifiedBy")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ParentId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PrettyName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ComtradeCategories");
+                });
+
+            modelBuilder.Entity("Orion.StockAnalyzer.Core.Domain.Forecast", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("CreateBy")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime?>("ForecastLastUpdate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<double?>("ForecastValue1")
+                        .HasColumnType("double precision");
+
+                    b.Property<double?>("ForecastValue1Q")
+                        .HasColumnType("double precision");
+
+                    b.Property<double?>("ForecastValue2")
+                        .HasColumnType("double precision");
+
+                    b.Property<double?>("ForecastValue2Q")
+                        .HasColumnType("double precision");
+
+                    b.Property<double?>("ForecastValue3")
+                        .HasColumnType("double precision");
+
+                    b.Property<double?>("ForecastValue3Q")
+                        .HasColumnType("double precision");
+
+                    b.Property<double?>("ForecastValue4Q")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("Frequency")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("HistoricalDataSymbol")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<double?>("LatestValue")
+                        .HasColumnType("double precision");
+
+                    b.Property<DateTime?>("LatestValueDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("ModifiedBy")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime?>("Q1_Date")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime?>("Q2_Date")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime?>("Q3_Date")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime?>("Q4_Date")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Forecast");
+                });
 #pragma warning restore 612, 618
         }
     }

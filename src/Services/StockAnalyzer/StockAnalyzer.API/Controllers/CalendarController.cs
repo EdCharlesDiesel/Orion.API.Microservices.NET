@@ -1,6 +1,5 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.StockAnalyzer.API.Repositories;
 using Orion.Services.StockAnalyzer.API.Services;
 using Orion.StockAnalyzer.Core.Domain;
 
@@ -12,11 +11,14 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
     {
         private readonly ICalendarServices _service;
 
-        public CalendarController(CalendarRepository service)
+        public CalendarController(ICalendarServices service)
         {
             _service = service;
         }
 
+        /// <summary>
+        /// Get all comtrade categories
+        /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetAllEvents()
         {

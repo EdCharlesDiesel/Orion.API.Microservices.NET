@@ -19,8 +19,10 @@ builder.Services.AddDbContext<StockAnalyzerContext>(options =>
     options.UseNpgsql(connectionString));
 
 // ✅ Register application services
-builder.Services.AddScoped<ILatestModelRepository, LatestModelRepository>();
-builder.Services.AddScoped<CalendarRepository>();
+
+builder.Services.AddScoped<ICalendarServices,CalendarRepository>();
+builder.Services.AddScoped<IComtradeServices, ComtradeRepository>();
+builder.Services.AddScoped<IForecastServices, ForecastRepository>();
 builder.Services.AddAutoMapper(typeof(CalendarEventProfile));
 
 // ✅ Add HTTP client support if needed
