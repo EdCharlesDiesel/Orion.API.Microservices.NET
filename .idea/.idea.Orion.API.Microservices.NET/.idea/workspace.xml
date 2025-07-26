@@ -44,45 +44,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/BaseClasses/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/BaseClasses/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/Domain/CalendarEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/Domain/CalendarEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/ref/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/ref/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/refint/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/refint/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/CalendarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/CalendarController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/Migrations/StockAnalyzerContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/Migrations/StockAnalyzerContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Features/CalendarEvent/Update.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Features/CalendarEvent/Update.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Repositories/CalendarRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Repositories/CalendarRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/ICalendarServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/ICalendarServices.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/TradingEconomicsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/TradingEconomicsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/ref/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/ref/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/refint/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/refint/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/Controllers/CalendarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/Controllers/CalendarController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/dotnet.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/dotnet.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +172,7 @@
     "Publish to IIS.Publish Orion.WebApps.WebASP to IIS.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#12 on Feature/DEV-02-StockAnalyzer",
+    "git-widget-placeholder": "Feature/DEV-02-StockAnalyzer",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -1474,6 +1436,7 @@
       <workItem from="1753189290611" duration="3230000" />
       <workItem from="1753210278843" duration="484000" />
       <workItem from="1753289167030" duration="14630000" />
+      <workItem from="1753529544155" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Still,&#10;Working on fixing the Dockerfile">
       <option name="closed" value="true" />

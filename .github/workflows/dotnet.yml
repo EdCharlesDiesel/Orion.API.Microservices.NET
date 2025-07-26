@@ -45,12 +45,7 @@ jobs:
       - name: Add .NET tools to PATH
         run: echo "${HOME}/.dotnet/tools" >> $GITHUB_PATH
 
-      - name: Generate HTML coverage report
-        run: |
-          reportgenerator \
-            -reports:"TestResults/**/*.cobertura.xml" \
-            -targetdir:"coverage-report" \
-            -reporttypes:Html
+
 
       - name: Upload coverage report artifact
         uses: actions/upload-artifact@v4
