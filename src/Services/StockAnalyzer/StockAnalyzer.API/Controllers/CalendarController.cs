@@ -1,6 +1,7 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Services.StockAnalyzer.API.Repositories;
+using Orion.Services.StockAnalyzer.API.Services;
 using Orion.StockAnalyzer.Core.Domain;
 
 namespace Orion.Services.StockAnalyzer.API.Controllers
@@ -9,7 +10,6 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
     [Route("api/[controller]")]
     public class CalendarController : ControllerBase
     {
-        
         private readonly ICalendarServices _service;
 
         public CalendarController(CalendarRepository service)
@@ -18,7 +18,6 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
         }
 
         [HttpGet]
-        
         public async Task<IActionResult> GetAllEvents()
         {
             string result = await _service.GetCalendarEvents();
@@ -39,9 +38,9 @@ namespace Orion.Services.StockAnalyzer.API.Controllers
                 return BadRequest($"JSON deserialization error: {ex.Message}");
             }
 
-            var createdEvent = await _service.Create(calendarEvents);
+            await _service.Create(calendarEvents);
 
-            return Ok(createdEvent);
+            return Ok(result);
         }
 
         // GET: api/calendar/daterange?startDate=2025-07-01&endDate=2025-07-31

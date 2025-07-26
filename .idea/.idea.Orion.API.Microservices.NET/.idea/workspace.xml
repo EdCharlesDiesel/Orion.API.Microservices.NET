@@ -43,7 +43,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="" />
+    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/BaseClasses/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/BaseClasses/Entity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/Domain/CalendarEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/Domain/CalendarEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/ref/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/ref/Orion.StockAnalyzer.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/refint/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/refint/Orion.StockAnalyzer.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/CalendarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/CalendarController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/Migrations/StockAnalyzerContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/Migrations/StockAnalyzerContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Features/CalendarEvent/Update.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Features/CalendarEvent/Update.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Repositories/CalendarRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Repositories/CalendarRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/ICalendarServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/ICalendarServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/TradingEconomicsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/TradingEconomicsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/ref/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/ref/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/refint/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/refint/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/Controllers/CalendarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/Controllers/CalendarController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +163,7 @@
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -164,7 +204,7 @@
     "Docker.docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.orion.webapps.healthcheck: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.orion.webapps.web: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Debug",
     "HTTP Request.Users | #1.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Publish to IIS.Publish Orion.WebApps.WebASP to IIS.executor": "Run",
@@ -191,7 +231,7 @@
       <force-push-target remote-path="origin" branch="Feature/DEV-02-StockAnalyzer" />
     </force-push-targets>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: IIS Express">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -1604,69 +1644,17 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/Controllers/CalendarController.cs</url>
-          <line>28</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\Controllers\CalendarController.cs" containingFunctionPresentation="Method 'Index'">
-            <startOffsets>
-              <option value="930" />
-            </startOffsets>
-            <endOffsets>
-              <option value="977" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Repositories/CalendarRepository.cs</url>
-          <line>59</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\Repositories\CalendarRepository.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="2214" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2266" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/Controllers/CalendarController.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\Controllers\CalendarController.cs" containingFunctionPresentation="Constructor 'CalendarController'">
-            <startOffsets>
-              <option value="802" />
-            </startOffsets>
-            <endOffsets>
-              <option value="841" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/CalendarController.cs</url>
-          <line>25</line>
+          <line>40</line>
           <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\Controllers\CalendarController.cs" containingFunctionPresentation="Method 'GetAllEvents'">
             <startOffsets>
-              <option value="665" />
+              <option value="1293" />
             </startOffsets>
             <endOffsets>
-              <option value="701" />
+              <option value="1331" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/CalendarController.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\Controllers\CalendarController.cs" containingFunctionPresentation="Method 'GetAllEvents'">
-            <startOffsets>
-              <option value="600" />
-            </startOffsets>
-            <endOffsets>
-              <option value="651" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

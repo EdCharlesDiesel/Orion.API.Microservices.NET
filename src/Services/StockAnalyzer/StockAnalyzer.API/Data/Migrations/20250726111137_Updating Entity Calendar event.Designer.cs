@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Orion.Services.StockAnalyzer.API.Data;
@@ -11,9 +12,11 @@ using Orion.Services.StockAnalyzer.API.Data;
 namespace Orion.Services.StockAnalyzer.API.Data.Migrations
 {
     [DbContext(typeof(StockAnalyzerContext))]
-    partial class StockAnalyzerContextModelSnapshot : ModelSnapshot
+    [Migration("20250726111137_Updating Entity Calendar event")]
+    partial class UpdatingEntityCalendarevent
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

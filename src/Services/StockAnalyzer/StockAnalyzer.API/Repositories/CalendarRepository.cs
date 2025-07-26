@@ -1,4 +1,5 @@
 using Orion.Services.StockAnalyzer.API.Data;
+using Orion.Services.StockAnalyzer.API.Services;
 using Orion.StockAnalyzer.Core.Domain;
 
 namespace Orion.Services.StockAnalyzer.API.Repositories;

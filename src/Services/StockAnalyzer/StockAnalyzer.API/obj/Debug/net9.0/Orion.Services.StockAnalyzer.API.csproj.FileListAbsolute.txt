@@ -195,3 +195,5 @@ C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\ob
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\Orion.Services.StockAnalyzer.API.pdb
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\Orion.Services.StockAnalyzer.API.genruntimeconfig.cache
 C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\ref\Orion.Services.StockAnalyzer.API.dll
+C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.xml
+C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\obj\Debug\net9.0\Orion.Services.StockAnalyzer.API.xml

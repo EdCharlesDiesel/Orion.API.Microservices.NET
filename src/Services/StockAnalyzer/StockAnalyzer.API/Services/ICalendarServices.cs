@@ -1,6 +1,6 @@
 using Orion.StockAnalyzer.Core.Domain;
 
-namespace Orion.Services.StockAnalyzer.API.Repositories;
+namespace Orion.Services.StockAnalyzer.API.Services;
 
 public interface ICalendarServices
 {

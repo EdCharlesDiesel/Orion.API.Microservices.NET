@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Orion.Services.StockAnalyzer.API.Repositories;
+using Orion.Services.StockAnalyzer.API.Services;
 using Orion.StockAnalyzer.Core.Domain;
 using Orion.WebApps.Web.Helper;
 
