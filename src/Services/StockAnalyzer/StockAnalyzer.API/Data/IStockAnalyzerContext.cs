@@ -1,10 +1,13 @@
-﻿using Orion.StockAnalyzer.Core.Domain;
+﻿using Microsoft.EntityFrameworkCore;
+using Orion.StockAnalyzer.Core.Domain;
 
 namespace Orion.Services.StockAnalyzer.API.Data
 {
     public interface IStockAnalyzerContext
     {
-        IEnumerable<LatestModel> LatestModels { get; }
+        DbSet<CalendarEvent> CalendarEvents { get; set; }
+        DbSet<ComtradeCategories> ComtradeCategories  { get; set; }
+        DbSet<Forecast> Forecast  { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

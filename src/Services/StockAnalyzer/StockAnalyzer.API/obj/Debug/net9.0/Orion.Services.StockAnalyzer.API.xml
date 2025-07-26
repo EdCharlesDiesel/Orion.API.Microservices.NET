@@ -4,30 +4,25 @@
         <name>Orion.Services.StockAnalyzer.API</name>
     </assembly>
     <members>
-        <member name="M:Orion.Services.StockAnalyzer.API.Controllers.ComtradeController.GetComCategories">
+        <member name="M:Orion.Services.StockAnalyzer.API.Controllers.CalendarController.GetAllEvents">
             <summary>
             Get all comtrade categories
             </summary>
         </member>
+        <member name="M:Orion.Services.StockAnalyzer.API.Controllers.ComtradeController.GetComCategories">
+            <summary>Get all comtrade categories</summary>
+        </member>
         <member name="M:Orion.Services.StockAnalyzer.API.Controllers.ComtradeController.GetComCountries">
-            <summary>
-            Get all comtrade countries
-            </summary>
+            <summary>Get all comtrade countries</summary>
         </member>
         <member name="M:Orion.Services.StockAnalyzer.API.Controllers.ComtradeController.GetComCountryPage(System.String,System.Int32)">
-            <summary>
-            Get comtrade by country and page
-            </summary>
+            <summary>Get comtrade by country and page</summary>
         </member>
         <member name="M:Orion.Services.StockAnalyzer.API.Controllers.ComtradeController.GetComBetweenCountries(System.String,System.String,System.Int32)">
-            <summary>
-            Get comtrade between two countries with pagination
-            </summary>
+            <summary>Get comtrade between two countries with pagination</summary>
         </member>
         <member name="M:Orion.Services.StockAnalyzer.API.Controllers.ComtradeController.GetComHistorical(System.String)">
-            <summary>
-            Get historical comtrade data by symbol
-            </summary>
+            <summary>Get historical comtrade data by symbol</summary>
         </member>
         <member name="M:Orion.Services.StockAnalyzer.API.Controllers.EarningsController.GetEarnings">
             <summary>
@@ -77,6 +72,11 @@
             <param name="startDate">Start date</param>
             <param name="endDate">End date</param>
             <returns>A task that will be resolved in a string with the request result</returns>
+        </member>
+        <member name="M:Orion.Services.StockAnalyzer.API.Controllers.ForecastController.GetAllForecasts">
+            <summary>
+            Get all comtrade categories
+            </summary>
         </member>
         <member name="M:Orion.Services.StockAnalyzer.API.Controllers.LatestController.getLatestUpdates">
             <summary>
@@ -140,6 +140,18 @@
             <inheritdoc />
         </member>
         <member name="M:Orion.Services.StockAnalyzer.API.Data.Migrations.UpdatingEntityCalendarevent.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Orion.Services.StockAnalyzer.API.Data.Migrations.AddingForecastendpoint">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.StockAnalyzer.API.Data.Migrations.AddingForecastendpoint.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.StockAnalyzer.API.Data.Migrations.AddingForecastendpoint.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.StockAnalyzer.API.Data.Migrations.AddingForecastendpoint.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
         <member name="F:Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass._clientKey">
