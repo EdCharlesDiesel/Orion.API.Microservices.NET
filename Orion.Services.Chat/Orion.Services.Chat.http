@@ -1,6 +1,0 @@
-@Orion.Services.Chat_HostAddress = http://localhost:5192
-
-GET {{Orion.Services.Chat_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

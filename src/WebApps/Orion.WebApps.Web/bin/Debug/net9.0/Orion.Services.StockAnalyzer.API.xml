@@ -73,6 +73,11 @@
             <param name="endDate">End date</param>
             <returns>A task that will be resolved in a string with the request result</returns>
         </member>
+        <member name="M:Orion.Services.StockAnalyzer.API.Controllers.ForecastController.GetAllForecasts">
+            <summary>
+            Get all comtrade categories
+            </summary>
+        </member>
         <member name="M:Orion.Services.StockAnalyzer.API.Controllers.LatestController.getLatestUpdates">
             <summary>
             Get the latest news from trading economics
@@ -135,6 +140,18 @@
             <inheritdoc />
         </member>
         <member name="M:Orion.Services.StockAnalyzer.API.Data.Migrations.UpdatingEntityCalendarevent.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Orion.Services.StockAnalyzer.API.Data.Migrations.AddingForecastendpoint">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.StockAnalyzer.API.Data.Migrations.AddingForecastendpoint.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.StockAnalyzer.API.Data.Migrations.AddingForecastendpoint.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.StockAnalyzer.API.Data.Migrations.AddingForecastendpoint.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
         <member name="F:Orion.Services.StockAnalyzer.API.Helper.HttpRequesterClass._clientKey">
