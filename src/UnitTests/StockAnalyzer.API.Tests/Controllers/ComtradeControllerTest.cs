@@ -2,10 +2,10 @@ using JetBrains.Annotations;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Orion.Services.StockAnalyzer.API.Controllers;
-using Orion.Services.StockAnalyzer.API.Services;
+using Orion.Services.TradingEconomics.API.Services;
 using Xunit;
 
-namespace Orion.Services.StockAnalyzer.API.Tests.Controllers;
+namespace Orion.Services.TradingEconomics.API.Tests.Controllers;
 
 [TestSubject(typeof(ComtradeController))]
 public class ComtradeControllerTest

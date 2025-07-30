@@ -31,9 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orion.Services.Catalog.API"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orion.Services.CompetitionScorecard.API", "src\Services\CompetitionScorecard\CompetitionScorecard.API\Orion.Services.CompetitionScorecard.API.csproj", "{FC68B7D6-3AF6-4AC7-B6F9-8BC90F82D1DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orion.Services.TradingEcomomics.API", "src\Services\StockAnalyzer\StockAnalyzer.API\Orion.Services.TradingEcomomics.API.csproj", "{814B99C9-7C60-4451-914D-AE3CD918E278}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StockAnalyzer", "StockAnalyzer", "{FFBB6A7B-FD31-4A7C-ADE6-A36E005B381B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TradingEconomics", "TradingEconomics", "{FFBB6A7B-FD31-4A7C-ADE6-A36E005B381B}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AB352D60-68B8-428E-AC98-EC44F6CF6436}"
 EndProject
@@ -47,7 +45,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Services.Catalog.API.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Services.Discount.API.Tests", "src\UnitTests\Discount.API.Tests\Orion.Services.Discount.API.Tests.csproj", "{DE9D1CF0-6211-4D5D-A252-99BADDCE8752}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Services.StockAnalyzer.API.Tests", "src\UnitTests\StockAnalyzer.API.Tests\Orion.Services.StockAnalyzer.API.Tests.csproj", "{4BBC93EE-9774-4FCA-8277-3E97E18C3ACC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Services.TradingEconomics.API.Tests", "src\UnitTests\StockAnalyzer.API.Tests\Orion.Services.TradingEconomics.API.Tests.csproj", "{4BBC93EE-9774-4FCA-8277-3E97E18C3ACC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Services.Discount.API", "src\Services\Discount\Discount.API\Orion.Services.Discount.API.csproj", "{35397D76-69DE-404A-82CE-346862997851}"
 EndProject
@@ -62,6 +60,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Core.TradingEconomics", "src\Core\Orion.Core.TradingEconomics\Orion.Core.TradingEconomics.csproj", "{71992A43-3931-4A82-BFF0-CE6136DCB75A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Core.Chat", "src\Core\Orion.Core.Chat\Orion.Core.Chat.csproj", "{C93E0102-239F-40AE-B966-02FCD1140984}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserProfile", "UserProfile", "{8CE13BED-3166-4CDB-80A4-9ED0926DB07D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Core.Catalog", "src\Core\Orion.Core.Catalog\Orion.Core.Catalog.csproj", "{8C626642-7694-4696-89BD-5AA47F27D304}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Services.TradingEconomics.API", "src\Services\Orion.Services.TradingEconomics\Orion.Services.TradingEconomics.API\Orion.Services.TradingEconomics.API.csproj", "{89C2F8A7-98FC-4425-90B7-6D7679D07DFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Services.UserProfile.API", "src\Services\Orion.Services.UserProfile\Orion.Services.UserProfile.API\Orion.Services.UserProfile.API.csproj", "{80787CFF-EAFC-4E12-A0AB-CD668973DD69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Core.UserProfile", "src\Core\Orion.Core.UserProfile\Orion.Core.UserProfile.csproj", "{A4D9A0E4-119A-446A-B09E-667B48C9B5DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,10 +105,6 @@ Global
 		{FC68B7D6-3AF6-4AC7-B6F9-8BC90F82D1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC68B7D6-3AF6-4AC7-B6F9-8BC90F82D1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC68B7D6-3AF6-4AC7-B6F9-8BC90F82D1DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{814B99C9-7C60-4451-914D-AE3CD918E278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{814B99C9-7C60-4451-914D-AE3CD918E278}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{814B99C9-7C60-4451-914D-AE3CD918E278}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{814B99C9-7C60-4451-914D-AE3CD918E278}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AB352D60-68B8-428E-AC98-EC44F6CF6436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AB352D60-68B8-428E-AC98-EC44F6CF6436}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB352D60-68B8-428E-AC98-EC44F6CF6436}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -145,6 +149,22 @@ Global
 		{C93E0102-239F-40AE-B966-02FCD1140984}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C93E0102-239F-40AE-B966-02FCD1140984}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C93E0102-239F-40AE-B966-02FCD1140984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C626642-7694-4696-89BD-5AA47F27D304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C626642-7694-4696-89BD-5AA47F27D304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C626642-7694-4696-89BD-5AA47F27D304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C626642-7694-4696-89BD-5AA47F27D304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C2F8A7-98FC-4425-90B7-6D7679D07DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C2F8A7-98FC-4425-90B7-6D7679D07DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C2F8A7-98FC-4425-90B7-6D7679D07DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C2F8A7-98FC-4425-90B7-6D7679D07DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80787CFF-EAFC-4E12-A0AB-CD668973DD69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80787CFF-EAFC-4E12-A0AB-CD668973DD69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80787CFF-EAFC-4E12-A0AB-CD668973DD69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80787CFF-EAFC-4E12-A0AB-CD668973DD69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D9A0E4-119A-446A-B09E-667B48C9B5DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D9A0E4-119A-446A-B09E-667B48C9B5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D9A0E4-119A-446A-B09E-667B48C9B5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D9A0E4-119A-446A-B09E-667B48C9B5DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -159,7 +179,6 @@ Global
 		{4E4FF2C4-FF4D-4FEC-BFCC-3A74FC547B80} = {AEC869FD-AA6E-4415-9F87-F1E368D50FB9}
 		{AB1409C5-F703-4073-B884-78F822874DB6} = {6FB067AD-8FC3-4A3A-858C-2E5ED7A9A0E4}
 		{FC68B7D6-3AF6-4AC7-B6F9-8BC90F82D1DE} = {7DD19B34-DB34-442F-99BF-B711D411D406}
-		{814B99C9-7C60-4451-914D-AE3CD918E278} = {FFBB6A7B-FD31-4A7C-ADE6-A36E005B381B}
 		{FFBB6A7B-FD31-4A7C-ADE6-A36E005B381B} = {9EB5AA97-4ABD-4608-8EBE-06BF0CC8D23D}
 		{DCF35B87-D367-4AC8-B21C-52A76E82412A} = {6121C024-0524-4801-9794-B10A3F126F23}
 		{F5D20112-5F63-453E-B326-D815C3A0B3B7} = {5151D664-65D8-45F0-B6D4-B6AE172FAFEE}
@@ -173,6 +192,11 @@ Global
 		{61EE6B6B-3A72-4D9F-8756-228AB8C5D64F} = {140ADC86-9CEA-4F81-B05E-09EEEFE98F6A}
 		{71992A43-3931-4A82-BFF0-CE6136DCB75A} = {6121C024-0524-4801-9794-B10A3F126F23}
 		{C93E0102-239F-40AE-B966-02FCD1140984} = {6121C024-0524-4801-9794-B10A3F126F23}
+		{8CE13BED-3166-4CDB-80A4-9ED0926DB07D} = {9EB5AA97-4ABD-4608-8EBE-06BF0CC8D23D}
+		{8C626642-7694-4696-89BD-5AA47F27D304} = {6121C024-0524-4801-9794-B10A3F126F23}
+		{89C2F8A7-98FC-4425-90B7-6D7679D07DFA} = {FFBB6A7B-FD31-4A7C-ADE6-A36E005B381B}
+		{80787CFF-EAFC-4E12-A0AB-CD668973DD69} = {8CE13BED-3166-4CDB-80A4-9ED0926DB07D}
+		{A4D9A0E4-119A-446A-B09E-667B48C9B5DD} = {6121C024-0524-4801-9794-B10A3F126F23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFC31B86-B732-491F-9E63-995F435D6ED6}

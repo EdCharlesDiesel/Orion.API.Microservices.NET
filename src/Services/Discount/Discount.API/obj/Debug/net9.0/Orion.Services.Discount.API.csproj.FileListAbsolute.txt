@@ -35,5 +35,5 @@ C:\x\Orion.API.Microservices.NET\src\Services\Discount\Discount.API\obj\Debug\ne
 C:\x\Orion.API.Microservices.NET\src\Services\Discount\Discount.API\obj\Debug\net9.0\Orion.Services.Discount.API.pdb
 C:\x\Orion.API.Microservices.NET\src\Services\Discount\Discount.API\obj\Debug\net9.0\Orion.Services.Discount.API.genruntimeconfig.cache
 C:\x\Orion.API.Microservices.NET\src\Services\Discount\Discount.API\obj\Debug\net9.0\ref\Orion.Services.Discount.API.dll
-C:\x\Orion.API.Microservices.NET\src\Services\Discount\Discount.API\bin\Debug\net9.0\Orion.Discount.Core.dll
-C:\x\Orion.API.Microservices.NET\src\Services\Discount\Discount.API\bin\Debug\net9.0\Orion.Discount.Core.pdb
+C:\x\Orion.API.Microservices.NET\src\Services\Discount\Discount.API\bin\Debug\net9.0\Orion.Core.Discount.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Discount\Discount.API\bin\Debug\net9.0\Orion.Core.Discount.pdb

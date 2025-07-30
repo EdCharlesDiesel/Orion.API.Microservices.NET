@@ -1,7 +1,8 @@
 ﻿using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.Catalog.API.Entities;
+using Orion.Core.Catalog.Domain;
 using Orion.Services.Catalog.API.Repositories;
+using Orion.Services.Catalog.API.Services;
 
 namespace Orion.Services.Catalog.API.Controllers
 {
@@ -11,12 +12,12 @@ namespace Orion.Services.Catalog.API.Controllers
     public class CatalogController : ControllerBase
     {
 
-        private readonly IProductRepository _repository;
+        private readonly IProductServices _services;
        // private readonly ILogger<CatalogController> _logger;
 
-        public CatalogController(IProductRepository repository )
+        public CatalogController(IProductServices services )
         {
-            _repository = repository ?? throw new ArgumentNullException(nameof(repository));
+            _services = services ?? throw new ArgumentNullException(nameof(services));
          //   _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
@@ -25,7 +26,7 @@ namespace Orion.Services.Catalog.API.Controllers
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            var products = await _repository.GetProducts();
+            var products = await _services.GetProducts();
             return Ok(products);
         }
 
@@ -35,7 +36,7 @@ namespace Orion.Services.Catalog.API.Controllers
         [ProducesResponseType(typeof(Product), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<Product>> GetProductById(string id)
         {
-            var product = await _repository.GetProduct(id);
+            var product = await _services.GetProduct(id);
             return Ok(product);
         }
 
@@ -44,7 +45,7 @@ namespace Orion.Services.Catalog.API.Controllers
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetProductByCategory(string category)
         {
-            var products = await _repository.GetProductByCategory(category);
+            var products = await _services.GetProductByCategory(category);
             return Ok(products);
         }
 
@@ -52,7 +53,7 @@ namespace Orion.Services.Catalog.API.Controllers
         [ProducesResponseType(typeof(Product), (int)HttpStatusCode.Created)]
         public async Task<ActionResult<Product>> CreateProduct([FromBody] Product product)
         {
-            await _repository.CreateProduct(product);
+            await _services.CreateProduct(product);
 
             return CreatedAtRoute("GetProduct", new { id = product.Id }, product);
         }
@@ -61,14 +62,14 @@ namespace Orion.Services.Catalog.API.Controllers
         [ProducesResponseType(typeof(Product), (int)HttpStatusCode.NoContent)]
         public async Task<IActionResult> UpdateProduct([FromBody] Product product)
         {
-            return Ok(await _repository.UpdateProduct(product));
+            return Ok(await _services.UpdateProduct(product));
         }
 
         [HttpDelete("{id:length(24)}", Name = "DeleteProduct")]
         [ProducesResponseType(typeof(Product), (int)HttpStatusCode.NoContent)]
         public async Task<IActionResult> DeleteProductById(string id)
         {
-            return Ok(await _repository.DeleteProduct(id));
+            return Ok(await _services.DeleteProduct(id));
         }
     }
 

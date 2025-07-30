@@ -4991,7 +4991,17 @@
           }
         }
       },
-      "Orion.Services.TradingEcomomics.API/1.0.0": {
+      "Orion.Core.TradingEconomics/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
+        }
+      },
+      "Orion.Services.TradingEconomics.API/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
@@ -5004,13 +5014,14 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Orion.Core.TradingEconomics": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
-          "bin/placeholder/Orion.Services.TradingEcomomics.API.dll": {}
+          "bin/placeholder/Orion.Services.TradingEconomics.API.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Orion.Services.TradingEcomomics.API.dll": {}
+          "bin/placeholder/Orion.Services.TradingEconomics.API.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -14287,10 +14298,15 @@
         "yamldotnet.nuspec"
       ]
     },
-    "Orion.Services.TradingEcomomics.API/1.0.0": {
+    "Orion.Core.TradingEconomics/1.0.0": {
       "type": "project",
-      "path": "../../Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.TradingEcomomics.API.csproj",
-      "msbuildProject": "../../Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.TradingEcomomics.API.csproj"
+      "path": "../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj",
+      "msbuildProject": "../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj"
+    },
+    "Orion.Services.TradingEconomics.API/1.0.0": {
+      "type": "project",
+      "path": "../../Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.TradingEconomics.API.csproj",
+      "msbuildProject": "../../Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.TradingEconomics.API.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -14304,7 +14320,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 9.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
-      "Orion.Services.TradingEcomomics.API >= 1.0.0"
+      "Orion.Services.TradingEconomics.API >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -14332,8 +14348,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEcomomics.API.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEcomomics.API.csproj"
+            "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj"
+            },
+            "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj"
             }
           }
         }

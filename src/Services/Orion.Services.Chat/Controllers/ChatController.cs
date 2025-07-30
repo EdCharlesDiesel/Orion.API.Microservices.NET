@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using OpenAI.Chat;
 using Orion.Core.Chat.Domain;
 
+
 namespace Orion.Services.Chat.Controllers;
 
 [Authorize]

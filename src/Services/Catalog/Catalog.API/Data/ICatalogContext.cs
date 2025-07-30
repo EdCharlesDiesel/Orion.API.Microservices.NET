@@ -1,10 +1,13 @@
-﻿using MongoDB.Driver;
-using Orion.Services.Catalog.API.Entities;
+﻿
+using Orion.Core.Catalog.Domain;
+
 
 namespace Orion.Services.Catalog.API.Data
 {
     public interface ICatalogContext
     {
-        IMongoCollection<Product> Products { get; }
+        DbSet<Product> Products { get; set; }
+
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

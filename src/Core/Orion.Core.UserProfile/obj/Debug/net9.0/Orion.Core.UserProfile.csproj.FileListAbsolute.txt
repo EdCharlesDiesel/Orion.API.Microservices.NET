@@ -1,0 +1,12 @@
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\bin\Debug\net9.0\Orion.Core.UserProfile.deps.json
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\bin\Debug\net9.0\Orion.Core.UserProfile.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\bin\Debug\net9.0\Orion.Core.UserProfile.pdb
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\obj\Debug\net9.0\Orion.Core.UserProfile.GeneratedMSBuildEditorConfig.editorconfig
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\obj\Debug\net9.0\Orion.Core.UserProfile.AssemblyInfoInputs.cache
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\obj\Debug\net9.0\Orion.Core.UserProfile.AssemblyInfo.cs
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\obj\Debug\net9.0\Orion.Core.UserProfile.csproj.CoreCompileInputs.cache
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\obj\Debug\net9.0\Orion.Core.UserProfile.sourcelink.json
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\obj\Debug\net9.0\Orion.Core.UserProfile.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\obj\Debug\net9.0\refint\Orion.Core.UserProfile.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\obj\Debug\net9.0\Orion.Core.UserProfile.pdb
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.UserProfile\obj\Debug\net9.0\ref\Orion.Core.UserProfile.dll

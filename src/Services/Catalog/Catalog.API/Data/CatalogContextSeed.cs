@@ -1,5 +1,6 @@
-﻿using MongoDB.Driver;
-using Orion.Services.Catalog.API.Entities;
+﻿
+
+using Orion.Core.Catalog.Domain;
 
 namespace Orion.Services.Catalog.API.Data
 {

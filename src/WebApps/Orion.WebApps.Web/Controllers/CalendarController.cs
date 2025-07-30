@@ -2,8 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Orion.Core.TradingEconomics.Domain;
-using Orion.Services.StockAnalyzer.API.Repositories;
-using Orion.Services.StockAnalyzer.API.Services;
+using Orion.Services.TradingEconomics.API.Services;
 using Orion.WebApps.Web.Helper;
 
 namespace Orion.WebApps.Web.Controllers;

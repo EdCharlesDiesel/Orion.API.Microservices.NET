@@ -15,4 +15,15 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\..\..\..\.dockerignore">
+      <Link>.dockerignore</Link>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Orion.Core.Catalog\Orion.Core.Catalog.csproj" />
+    <ProjectReference Include="..\..\..\Core\Orion.Core.Catalog\Orion.Core.Catalog.csproj" />
+  </ItemGroup>
+
 </Project>

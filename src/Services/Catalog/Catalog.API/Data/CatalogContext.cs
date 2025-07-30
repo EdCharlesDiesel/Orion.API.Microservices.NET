@@ -1,18 +1,15 @@
-﻿using MongoDB.Driver;
-using Orion.Services.Catalog.API.Entities;
+﻿
+
+using Orion.Core.Catalog.Domain;
 
 namespace Orion.Services.Catalog.API.Data
 {
     public class CatalogContext : ICatalogContext
     {
-        public CatalogContext(IConfiguration configuration)
+        public DbSet<Product> Products { get; set; }
+        public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
-            var client = new MongoClient(configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
-            var database = client.GetDatabase(configuration.GetValue<string>("DatabaseSettings:DatabaseName"));
-
-            Products = database.GetCollection<Product>(configuration.GetValue<string>("DatabaseSettings:CollectionName"));
-            CatalogContextSeed.SeedData(Products);
+            throw new NotImplementedException();
         }
-        public IMongoCollection<Product> Products  {get ;}
     }
 }

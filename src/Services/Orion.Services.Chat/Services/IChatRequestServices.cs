@@ -3,7 +3,7 @@ using Orion.Core.Chat.Domain;
 
 namespace Orion.Services.Chat.Services;
 
-public interface ICalendarServices
+public interface IChatRequestServices
 {
     Task<string> GetChatRequests();
     Task<string> GetChatRequestsByDate(DateTime startDate, DateTime endDate);

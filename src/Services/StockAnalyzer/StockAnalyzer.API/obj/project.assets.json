@@ -2562,6 +2562,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Orion.Core.TradingEconomics/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
+        }
       }
     }
   },
@@ -8010,6 +8020,11 @@
         "yamldotnet.15.1.4.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
+    },
+    "Orion.Core.TradingEconomics/1.0.0": {
+      "type": "project",
+      "path": "../../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj",
+      "msbuildProject": "../../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8025,6 +8040,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
+      "Orion.Core.TradingEconomics >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -8034,9 +8050,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEcomomics.API.csproj",
-      "projectName": "Orion.Services.TradingEcomomics.API",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEcomomics.API.csproj",
+      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj",
+      "projectName": "Orion.Services.TradingEconomics.API",
+      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
       "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\obj\\",
       "projectStyle": "PackageReference",
@@ -8052,7 +8068,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

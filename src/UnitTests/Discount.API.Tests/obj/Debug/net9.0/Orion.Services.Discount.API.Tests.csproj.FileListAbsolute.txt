@@ -222,9 +222,7 @@ C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9.0\Orion.Discount.Core.dll
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9.0\Orion.Services.Discount.API.dll
-C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9.0\Orion.Discount.Core.pdb
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9.0\Orion.Services.Discount.API.pdb
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\obj\Debug\net9.0\Orion.Services.Discount.API.Tests.csproj.AssemblyReference.cache
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\obj\Debug\net9.0\Orion.Services.Discount.API.Tests.GeneratedMSBuildEditorConfig.editorconfig
@@ -238,3 +236,5 @@ C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\obj\Debug\net9
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\obj\Debug\net9.0\Orion.Services.Discount.API.Tests.pdb
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\obj\Debug\net9.0\Orion.Services.Discount.API.Tests.genruntimeconfig.cache
 C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\obj\Debug\net9.0\ref\Orion.Services.Discount.API.Tests.dll
+C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9.0\Orion.Core.Discount.dll
+C:\x\Orion.API.Microservices.NET\src\UnitTests\Discount.API.Tests\bin\Debug\net9.0\Orion.Core.Discount.pdb

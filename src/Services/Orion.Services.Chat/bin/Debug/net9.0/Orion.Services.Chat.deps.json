@@ -15,7 +15,7 @@
           "Microsoft.AspNetCore.Authentication.Negotiate": "9.0.7",
           "Microsoft.AspNetCore.OpenApi": "9.0.7",
           "Microsoft.EntityFrameworkCore": "9.0.7",
-          "Orion.Chat.Core": "1.0.0"
+          "Orion.Core.Chat": "1.0.0"
         },
         "runtime": {
           "Orion.Services.Chat.dll": {}
@@ -450,9 +450,9 @@
           }
         }
       },
-      "Orion.Chat.Core/1.0.0": {
+      "Orion.Core.Chat/1.0.0": {
         "runtime": {
-          "Orion.Chat.Core.dll": {
+          "Orion.Core.Chat.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -746,7 +746,7 @@
       "path": "system.security.cryptography.protecteddata/4.5.0",
       "hashPath": "system.security.cryptography.protecteddata.4.5.0.nupkg.sha512"
     },
-    "Orion.Chat.Core/1.0.0": {
+    "Orion.Core.Chat/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

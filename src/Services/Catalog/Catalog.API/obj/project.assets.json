@@ -303,6 +303,16 @@
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {}
         }
+      },
+      "Orion.Core.Catalog/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Catalog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Catalog.dll": {}
+        }
       }
     }
   },
@@ -1103,12 +1113,18 @@
         "zstdsharp.port.0.7.3.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "Orion.Core.Catalog/1.0.0": {
+      "type": "project",
+      "path": "../../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj",
+      "msbuildProject": "../../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "MongoDB.Driver >= 3.4.0",
+      "Orion.Core.Catalog >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -1136,7 +1152,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\x\\Orion.API.Microservices.NET\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj"
+            },
+            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

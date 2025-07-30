@@ -11,7 +11,7 @@
           "Dapper": "2.1.66",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql": "7.0.4",
-          "Orion.Discount.Core": "1.0.0",
+          "Orion.Core.Discount": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -86,9 +86,9 @@
           }
         }
       },
-      "Orion.Discount.Core/1.0.0": {
+      "Orion.Core.Discount/1.0.0": {
         "runtime": {
-          "Orion.Discount.Core.dll": {
+          "Orion.Core.Discount.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -172,7 +172,7 @@
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
     },
-    "Orion.Discount.Core/1.0.0": {
+    "Orion.Core.Discount/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

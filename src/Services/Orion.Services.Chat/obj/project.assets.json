@@ -681,6 +681,16 @@
             "rid": "win"
           }
         }
+      },
+      "Orion.Core.Chat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Chat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Chat.dll": {}
+        }
       }
     }
   },
@@ -1657,6 +1667,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Orion.Core.Chat/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1667,7 +1682,8 @@
       "Azure.Identity >= 1.14.2",
       "Microsoft.AspNetCore.Authentication.Negotiate >= 9.0.7",
       "Microsoft.AspNetCore.OpenApi >= 9.0.7",
-      "Microsoft.EntityFrameworkCore >= 9.0.7"
+      "Microsoft.EntityFrameworkCore >= 9.0.7",
+      "Orion.Core.Chat >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1694,7 +1710,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

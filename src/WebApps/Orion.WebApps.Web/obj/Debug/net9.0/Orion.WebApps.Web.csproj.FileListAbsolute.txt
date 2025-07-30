@@ -141,8 +141,6 @@ C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.StockAnalyzer.Core.dll
-C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.StockAnalyzer.Core.pdb
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.csproj.AssemblyReference.cache
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\obj\Debug\net9.0\rpswa.dswa.cache.json
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.GeneratedMSBuildEditorConfig.editorconfig
@@ -439,10 +437,6 @@ C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.deps.json
-C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.runtimeconfig.json
-C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.staticwebassets.endpoints.json
-C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.exe
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\AutoMapper.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\FastEndpoints.dll
@@ -476,6 +470,12 @@ C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\linux\lib\net9.0\System.DirectoryServices.Protocols.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\osx\lib\net9.0\System.DirectoryServices.Protocols.dll
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.DirectoryServices.Protocols.dll
-C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.dll
-C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.pdb
-C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.StockAnalyzer.API.xml
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.TradingEconomics.API.deps.json
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.TradingEconomics.API.runtimeconfig.json
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.TradingEconomics.API.staticwebassets.endpoints.json
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.TradingEconomics.API.exe
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Core.TradingEconomics.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.TradingEconomics.API.dll
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.TradingEconomics.API.pdb
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.TradingEconomics.API.xml
+C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Core.TradingEconomics.pdb

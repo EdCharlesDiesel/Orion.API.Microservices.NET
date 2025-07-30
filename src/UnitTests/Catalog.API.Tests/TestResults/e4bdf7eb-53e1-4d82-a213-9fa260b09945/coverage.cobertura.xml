@@ -88,7 +88,7 @@
             <line number="51" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductRepository" filename="Repositories\ProductRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Orion.Services.Catalog.API.Repositories.ProductServices" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name=".ctor" signature="(Orion.Services.Catalog.API.Data.ICatalogContext)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -114,7 +114,7 @@
             <line number="15" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductRepository/&lt;CreateProduct&gt;d__6" filename="Repositories\ProductRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;CreateProduct&gt;d__6" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -130,7 +130,7 @@
             <line number="55" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductRepository/&lt;DeleteProduct&gt;d__8" filename="Repositories\ProductRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;DeleteProduct&gt;d__8" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -164,7 +164,7 @@
             <line number="77" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductRepository/&lt;GetProduct&gt;d__3" filename="Repositories\ProductRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;GetProduct&gt;d__3" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -186,7 +186,7 @@
             <line number="30" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductRepository/&lt;GetProductByCategory&gt;d__5" filename="Repositories\ProductRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;GetProductByCategory&gt;d__5" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -210,7 +210,7 @@
             <line number="50" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductRepository/&lt;GetProductByName&gt;d__4" filename="Repositories\ProductRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;GetProductByName&gt;d__4" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -234,7 +234,7 @@
             <line number="40" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductRepository/&lt;GetProducts&gt;d__2" filename="Repositories\ProductRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;GetProducts&gt;d__2" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -256,7 +256,7 @@
             <line number="23" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductRepository/&lt;UpdateProduct&gt;d__7" filename="Repositories\ProductRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;UpdateProduct&gt;d__7" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -534,7 +534,7 @@
         </class>
         <class name="Orion.Services.Catalog.API.Controllers.CatalogController" filename="Controllers\CatalogController.cs" line-rate="1" branch-rate="0.5" complexity="2">
           <methods>
-            <method name=".ctor" signature="(Orion.Services.Catalog.API.Repositories.IProductRepository)" line-rate="1" branch-rate="0.5" complexity="2">
+            <method name=".ctor" signature="(Orion.Services.Catalog.API.Repositories.IProductServices)" line-rate="1" branch-rate="0.5" complexity="2">
               <lines>
                 <line number="17" hits="2" branch="False" />
                 <line number="18" hits="2" branch="False" />

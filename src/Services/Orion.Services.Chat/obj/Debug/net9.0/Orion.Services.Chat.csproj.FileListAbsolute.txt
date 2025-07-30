@@ -46,8 +46,6 @@ C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\bin\Debug\net9
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\bin\Debug\net9.0\runtimes\osx\lib\net9.0\System.DirectoryServices.Protocols.dll
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.DirectoryServices.Protocols.dll
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\bin\Debug\net9.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\bin\Debug\net9.0\Orion.Chat.Core.dll
-C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\bin\Debug\net9.0\Orion.Chat.Core.pdb
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\obj\Debug\net9.0\Orion.Services.Chat.csproj.AssemblyReference.cache
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\obj\Debug\net9.0\rpswa.dswa.cache.json
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\obj\Debug\net9.0\Orion.Services.Chat.GeneratedMSBuildEditorConfig.editorconfig
@@ -71,3 +69,5 @@ C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\obj\Debug\net9
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\obj\Debug\net9.0\Orion.Services.Chat.pdb
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\obj\Debug\net9.0\Orion.Services.Chat.genruntimeconfig.cache
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\obj\Debug\net9.0\ref\Orion.Services.Chat.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\bin\Debug\net9.0\Orion.Core.Chat.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Chat\bin\Debug\net9.0\Orion.Core.Chat.pdb
