@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Orion.Services.Catalog.API.props" />
-</Project>
