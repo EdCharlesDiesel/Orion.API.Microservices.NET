@@ -1,6 +1,6 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.StockAnalyzer.API.ActionFilters;
+using Orion.Services.TradingEcomomics.API.ActionFilters;
 
 namespace Orion.Services.StockAnalyzer.API.Controllers
 {

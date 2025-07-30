@@ -1,4 +1,4 @@
-using Orion.Chat.Core.Domain;
+using Orion.Core.Chat.Domain;
 using Orion.Services.Chat.Data;
 using Orion.Services.Chat.Helper;
 

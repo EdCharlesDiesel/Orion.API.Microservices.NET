@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Orion.Discount.Core\Orion.Discount.Core.csproj" />
+    <ProjectReference Include="..\..\Core\Orion.Core.Discount\Orion.Core.Discount.csproj" />
     <ProjectReference Include="..\..\Services\Discount\Discount.API\Orion.Services.Discount.API.csproj" />
   </ItemGroup>
 

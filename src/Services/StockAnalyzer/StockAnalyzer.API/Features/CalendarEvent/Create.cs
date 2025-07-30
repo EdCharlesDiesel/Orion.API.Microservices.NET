@@ -25,7 +25,7 @@ namespace Orion.Services.StockAnalyzer.API.Features.CalendarEvent;
 
      public async Task<CalendarEventDto> Handle(CreateCalendarEventRequest request, CancellationToken cancellationToken)
      {
-         var CalendarEvent = _mapper.Map<Orion.StockAnalyzer.Core.Domain.CalendarEvent>(request);
+         var CalendarEvent = _mapper.Map<Core.TradingEconomics.Domain.CalendarEvent>(request);
          CalendarEvent.Id = Guid.NewGuid();
 
          _db.CalendarEvents.Add(CalendarEvent);

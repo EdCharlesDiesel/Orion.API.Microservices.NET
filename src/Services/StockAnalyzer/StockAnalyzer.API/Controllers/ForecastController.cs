@@ -1,7 +1,7 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
+using Orion.Core.TradingEconomics.Domain;
 using Orion.Services.StockAnalyzer.API.Services;
-using Orion.StockAnalyzer.Core.Domain;
 
 namespace Orion.Services.StockAnalyzer.API.Controllers;
 

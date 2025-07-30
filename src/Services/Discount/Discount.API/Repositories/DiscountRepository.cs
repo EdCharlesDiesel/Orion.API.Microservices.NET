@@ -1,6 +1,6 @@
 ﻿using Dapper;
 using Npgsql;
-using Orion.Discount.Core;
+using Orion.Core.Discount;
 
 
 namespace Orion.Services.Discount.API.Repositories

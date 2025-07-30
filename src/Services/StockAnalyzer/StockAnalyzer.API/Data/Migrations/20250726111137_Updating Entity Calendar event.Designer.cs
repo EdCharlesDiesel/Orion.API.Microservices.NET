@@ -25,7 +25,7 @@ namespace Orion.Services.StockAnalyzer.API.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Orion.StockAnalyzer.Core.Domain.CalendarEvent", b =>
+            modelBuilder.Entity("Orion.Core.TradingEconomics.Domain.CalendarEvent", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

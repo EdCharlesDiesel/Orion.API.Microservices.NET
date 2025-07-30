@@ -225,7 +225,7 @@ namespace Orion.WebApps.Web.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Orion.StockAnalyzer.Core.Domain.LatestModel", b =>
+            modelBuilder.Entity("Orion.Core.TradingEconomics.Domain.LatestModel", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

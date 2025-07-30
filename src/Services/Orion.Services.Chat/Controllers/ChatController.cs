@@ -3,7 +3,7 @@ using Azure.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OpenAI.Chat;
-using Orion.Chat.Core.Domain;
+using Orion.Core.Chat.Domain;
 
 namespace Orion.Services.Chat.Controllers;
 
@@ -31,20 +31,21 @@ public class ChatControllerController : ControllerBase
         {
           try
             {
-                var chatClient = _projectClient.GetChatCompletionsClient(_modelDeployment);
-
-                var response = await chatClient.GetChatCompletionsAsync(
-                    new ChatCompletionsOptions
-                    {
-                        Messages =
-                        {
-                            new ChatMessage(ChatRole.System, "You are an assistant."),
-                            new ChatMessage(ChatRole.User, request.Message)
-                        }
-                    });
-
-                var result = response.Value.Choices.FirstOrDefault()?.Message.Content;
-                return Ok(new { reply = result });
+                throw new NotImplementedException();
+                // var chatClient = _projectClient.GetChatCompletionsClient(_modelDeployment);
+                //
+                // var response = await chatClient.GetChatCompletionsAsync(
+                //     new ChatCompletionsOptions
+                //     {
+                //         Messages =
+                //         {
+                //             new ChatMessage(ChatRole.System, "You are an assistant."),
+                //             new ChatMessage(ChatRole.User, request.Message)
+                //         }
+                //     });
+                //
+                // var result = response.Value.Choices.FirstOrDefault()?.Message.Content;
+                // return Ok(new { reply = result });
             }
             catch (Exception ex)
             {

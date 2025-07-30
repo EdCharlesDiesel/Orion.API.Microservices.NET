@@ -2449,14 +2449,14 @@
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "Orion.Discount.Core/1.0.0": {
+      "Orion.Core.Discount/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
-          "bin/placeholder/Orion.Discount.Core.dll": {}
+          "bin/placeholder/Orion.Core.Discount.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Orion.Discount.Core.dll": {}
+          "bin/placeholder/Orion.Core.Discount.dll": {}
         }
       },
       "Orion.Services.Discount.API/1.0.0": {
@@ -2466,7 +2466,7 @@
           "Dapper": "2.1.66",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql": "7.0.4",
-          "Orion.Discount.Core": "1.0.0",
+          "Orion.Core.Discount": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
@@ -7537,10 +7537,10 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "Orion.Discount.Core/1.0.0": {
+    "Orion.Core.Discount/1.0.0": {
       "type": "project",
-      "path": "../../Core/Orion.Discount.Core/Orion.Discount.Core.csproj",
-      "msbuildProject": "../../Core/Orion.Discount.Core/Orion.Discount.Core.csproj"
+      "path": "../../Core/Orion.Core.Discount/Orion.Core.Discount.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Discount/Orion.Core.Discount.csproj"
     },
     "Orion.Services.Discount.API/1.0.0": {
       "type": "project",
@@ -7553,7 +7553,7 @@
       "Microsoft.AspNetCore.Mvc.Core >= 2.3.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "Moq >= 4.20.69",
-      "Orion.Discount.Core >= 1.0.0",
+      "Orion.Core.Discount >= 1.0.0",
       "Orion.Services.Discount.API >= 1.0.0",
       "coverlet.collector >= 3.2.0",
       "xunit >= 2.4.2",
@@ -7585,8 +7585,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj"
+            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj"
             },
             "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Discount\\Discount.API\\Orion.Services.Discount.API.csproj": {
               "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Discount\\Discount.API\\Orion.Services.Discount.API.csproj"
@@ -7658,5 +7658,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Services\StockAnalyzer\StockAnalyzer.API\Orion.Services.StockAnalyzer.API.csproj" />
+    <ProjectReference Include="..\..\Services\StockAnalyzer\StockAnalyzer.API\Orion.Services.TradingEcomomics.API.csproj" />
   </ItemGroup>
 
 </Project>

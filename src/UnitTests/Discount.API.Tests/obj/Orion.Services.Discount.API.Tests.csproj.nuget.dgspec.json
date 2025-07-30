@@ -4,14 +4,14 @@
     "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Discount.API.Tests\\Orion.Services.Discount.API.Tests.csproj": {}
   },
   "projects": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
+    "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj",
-        "projectName": "Orion.Discount.Core",
-        "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj",
+        "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj",
+        "projectName": "Orion.Core.Discount",
+        "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\obj\\",
+        "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -85,8 +85,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
-                "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj"
+              "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {
+                "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj"
               }
             }
           }
@@ -169,8 +169,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj": {
-                "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Discount.Core\\Orion.Discount.Core.csproj"
+              "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {
+                "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj"
               },
               "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Discount\\Discount.API\\Orion.Services.Discount.API.csproj": {
                 "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Discount\\Discount.API\\Orion.Services.Discount.API.csproj"

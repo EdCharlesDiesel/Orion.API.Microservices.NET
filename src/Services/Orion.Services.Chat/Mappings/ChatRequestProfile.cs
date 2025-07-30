@@ -1,5 +1,5 @@
 using AutoMapper;
-using Orion.Chat.Core.Domain;
+using Orion.Core.Chat.Domain;
 using Orion.Services.Chat.DTO;
 
 namespace Orion.Services.Chat.Mappings;

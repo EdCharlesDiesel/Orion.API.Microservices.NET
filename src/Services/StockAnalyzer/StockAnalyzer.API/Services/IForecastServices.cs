@@ -1,4 +1,5 @@
-using Orion.StockAnalyzer.Core.Domain;
+using Orion.Core.TradingEconomics.Domain;
+
 namespace Orion.Services.StockAnalyzer.API.Services;
 public interface IForecastServices
 {

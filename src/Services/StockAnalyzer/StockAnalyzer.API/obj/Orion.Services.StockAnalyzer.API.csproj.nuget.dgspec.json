@@ -67,7 +67,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
-        "projectName": "Orion.Services.StockAnalyzer.API",
+        "projectName": "Orion.Services.TradingEcomomics.API",
         "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
         "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\obj\\",

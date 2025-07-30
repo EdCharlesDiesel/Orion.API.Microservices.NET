@@ -25,7 +25,7 @@ namespace Orion.Services.StockAnalyzer.API.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Orion.StockAnalyzer.Core.Domain.CalendarEvent", b =>
+            modelBuilder.Entity("Orion.Core.TradingEconomics.Domain.CalendarEvent", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -134,7 +134,7 @@ namespace Orion.Services.StockAnalyzer.API.Data.Migrations
                     b.ToTable("CalendarEvents");
                 });
 
-            modelBuilder.Entity("Orion.StockAnalyzer.Core.Domain.ComtradeCategories", b =>
+            modelBuilder.Entity("Orion.Core.TradingEconomics.Domain.ComtradeCategories", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("text");
@@ -170,7 +170,7 @@ namespace Orion.Services.StockAnalyzer.API.Data.Migrations
                     b.ToTable("ComtradeCategories");
                 });
 
-            modelBuilder.Entity("Orion.StockAnalyzer.Core.Domain.Forecast", b =>
+            modelBuilder.Entity("Orion.Core.TradingEconomics.Domain.Forecast", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

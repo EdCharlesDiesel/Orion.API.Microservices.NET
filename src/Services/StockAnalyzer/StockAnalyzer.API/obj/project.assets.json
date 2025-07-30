@@ -2562,16 +2562,6 @@
             "related": ".xml"
           }
         }
-      },
-      "Orion.StockAnalyzer.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.StockAnalyzer.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.StockAnalyzer.Core.dll": {}
-        }
       }
     }
   },
@@ -8020,11 +8010,6 @@
         "yamldotnet.15.1.4.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
-    },
-    "Orion.StockAnalyzer.Core/1.0.0": {
-      "type": "project",
-      "path": "../../../Core/Orion.Core.StockAnalyzer/Orion.StockAnalyzer.Core.csproj",
-      "msbuildProject": "../../../Core/Orion.Core.StockAnalyzer/Orion.StockAnalyzer.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8040,7 +8025,6 @@
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
-      "Orion.StockAnalyzer.Core >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -8050,9 +8034,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
-      "projectName": "Orion.Services.StockAnalyzer.API",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
+      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEcomomics.API.csproj",
+      "projectName": "Orion.Services.TradingEcomomics.API",
+      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEcomomics.API.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
       "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\obj\\",
       "projectStyle": "PackageReference",
@@ -8068,11 +8052,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.StockAnalyzer\\Orion.StockAnalyzer.Core.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.StockAnalyzer\\Orion.StockAnalyzer.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -8177,6 +8157,12 @@
       "targetGraphs": [
         "net9.0"
       ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

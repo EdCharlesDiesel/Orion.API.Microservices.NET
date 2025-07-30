@@ -681,16 +681,6 @@
             "rid": "win"
           }
         }
-      },
-      "Orion.Chat.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Chat.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Chat.Core.dll": {}
-        }
       }
     }
   },
@@ -1667,11 +1657,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "Orion.Chat.Core/1.0.0": {
-      "type": "project",
-      "path": "../../Core/Orion.Chat.Core/Orion.Chat.Core.csproj",
-      "msbuildProject": "../../Core/Orion.Chat.Core/Orion.Chat.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1682,8 +1667,7 @@
       "Azure.Identity >= 1.14.2",
       "Microsoft.AspNetCore.Authentication.Negotiate >= 9.0.7",
       "Microsoft.AspNetCore.OpenApi >= 9.0.7",
-      "Microsoft.EntityFrameworkCore >= 9.0.7",
-      "Orion.Chat.Core >= 1.0.0"
+      "Microsoft.EntityFrameworkCore >= 9.0.7"
     ]
   },
   "packageFolders": {
@@ -1710,11 +1694,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Chat.Core\\Orion.Chat.Core.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Chat.Core\\Orion.Chat.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1784,5 +1764,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

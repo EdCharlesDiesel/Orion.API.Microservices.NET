@@ -1,0 +1,12 @@
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\bin\Debug\net9.0\Orion.Core.Chat.deps.json
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\bin\Debug\net9.0\Orion.Core.Chat.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\bin\Debug\net9.0\Orion.Core.Chat.pdb
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\obj\Debug\net9.0\Orion.Core.Chat.GeneratedMSBuildEditorConfig.editorconfig
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\obj\Debug\net9.0\Orion.Core.Chat.AssemblyInfoInputs.cache
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\obj\Debug\net9.0\Orion.Core.Chat.AssemblyInfo.cs
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\obj\Debug\net9.0\Orion.Core.Chat.csproj.CoreCompileInputs.cache
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\obj\Debug\net9.0\Orion.Core.Chat.sourcelink.json
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\obj\Debug\net9.0\Orion.Core.Chat.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\obj\Debug\net9.0\refint\Orion.Core.Chat.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\obj\Debug\net9.0\Orion.Core.Chat.pdb
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Chat\obj\Debug\net9.0\ref\Orion.Core.Chat.dll
