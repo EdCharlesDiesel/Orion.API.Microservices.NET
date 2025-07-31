@@ -223,6 +223,15 @@
       "targetGraphs": [
         "net9.0"
       ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API.Tests\\Orion.Services.TradingEconomics.API.Tests.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\StockAnalyzer.API.Tests\\Orion.Services.TradingEconomics.API.Tests.csproj",
+      "targetGraphs": []
     }
   ]
 }

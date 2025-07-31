@@ -13,15 +13,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Configuration
 var configuration = builder.Configuration;
-string connectionString = configuration.GetConnectionString("DefaultConnection");
+var connectionString = configuration.GetConnectionString("DefaultConnection");
 
-//TODO: Fix this
-// ✅ Add EF Core with PostgreSQL
 builder.Services.AddDbContext<CatalogContext>(options =>
     options.UseNpgsql(connectionString));
 
 // ✅ Register application services
-
 builder.Services.AddScoped<IProductServices,ProductRepository>();
 builder.Services.AddAutoMapper(typeof(ProductProfile));
 
