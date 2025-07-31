@@ -10,3 +10,15 @@ C:\x\Orion.API.Microservices.NET\Orion.Core.Catalog\obj\Debug\net9.0\Orion.Core.
 C:\x\Orion.API.Microservices.NET\Orion.Core.Catalog\obj\Debug\net9.0\refint\Orion.Core.Catalog.dll
 C:\x\Orion.API.Microservices.NET\Orion.Core.Catalog\obj\Debug\net9.0\Orion.Core.Catalog.pdb
 C:\x\Orion.API.Microservices.NET\Orion.Core.Catalog\obj\Debug\net9.0\ref\Orion.Core.Catalog.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\bin\Debug\net9.0\Orion.Core.Catalog.deps.json
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\bin\Debug\net9.0\Orion.Core.Catalog.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\bin\Debug\net9.0\Orion.Core.Catalog.pdb
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\obj\Debug\net9.0\Orion.Core.Catalog.GeneratedMSBuildEditorConfig.editorconfig
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\obj\Debug\net9.0\Orion.Core.Catalog.AssemblyInfoInputs.cache
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\obj\Debug\net9.0\Orion.Core.Catalog.AssemblyInfo.cs
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\obj\Debug\net9.0\Orion.Core.Catalog.csproj.CoreCompileInputs.cache
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\obj\Debug\net9.0\Orion.Core.Catalog.sourcelink.json
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\obj\Debug\net9.0\Orion.Core.Catalog.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\obj\Debug\net9.0\refint\Orion.Core.Catalog.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\obj\Debug\net9.0\Orion.Core.Catalog.pdb
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.Catalog\obj\Debug\net9.0\ref\Orion.Core.Catalog.dll

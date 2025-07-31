@@ -1,8 +1,7 @@
-﻿
+﻿using Microsoft.EntityFrameworkCore;
 using Orion.Core.Catalog.Domain;
 
-
-namespace Orion.Services.Catalog_2.API.Data
+namespace Orion.Services.Catalog.API.Data
 {
     public interface ICatalogContext
     {

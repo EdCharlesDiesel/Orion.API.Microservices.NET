@@ -1,26 +1,22 @@
+using Microsoft.EntityFrameworkCore;
+using Orion.WebApps.HealthCheckUI.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Register PostgreSQL health check
-builder.Services.AddHealthChecks()
-    .AddNpgSql(builder.Configuration.GetConnectionString("DefaultConnection"), name: "postgresql");
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
-// Add HealthChecks UI with PostgreSQL storage
-builder.Services.AddHealthChecksUI(options =>
-    {
-        options.SetEvaluationTimeInSeconds(10); // frequency
-        options.AddHealthCheckEndpoint("API", "/health");
-        options.AddHealthCheckEndpoint("Self", "/healthz");
-    })
-    .AddPostgreSqlStorage(builder.Configuration.GetConnectionString("DefaultConnection"));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
-app.MapGet("/", () => "HealthCheck API");
+app.UseSwagger();
+app.UseSwaggerUI();
 
-app.MapHealthChecks("/health");
-app.MapHealthChecksUI(options =>
-{
-    options.UIPath = "/health-ui";
-});
+// app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
 
 app.Run();

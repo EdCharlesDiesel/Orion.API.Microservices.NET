@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "StockAnalyzer.API": {
+    "TradingEconomics.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
@@ -8,7 +8,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5187"
+      "applicationUrl": "http://localhost:9003"
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -23,7 +23,7 @@
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "environmentVariables": {
-        "ASPNETCORE_URLS": "http://localhost:5002:80"
+        "ASPNETCORE_URLS": "http://localhost:9003:9003"
       },
       "publishAllPorts": true
     }

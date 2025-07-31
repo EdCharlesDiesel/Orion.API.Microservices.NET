@@ -1,8 +1,8 @@
 ﻿using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Core.Catalog.Domain;
-using Orion.Services.Catalog.API.Repositories;
 using Orion.Services.Catalog.API.Services;
+
 
 namespace Orion.Services.Catalog.API.Controllers
 {

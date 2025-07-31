@@ -1,23 +1,14 @@
-﻿FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
-USER $APP_UID
+FROM mcr.microsoft.com/dotnet/aspnet:9.0-preview AS base
 WORKDIR /app
 EXPOSE 80
 
-
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
-ARG BUILD_CONFIGURATION=Release
+FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
 WORKDIR /src
-COPY ["src/WebApps/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj", "src/WebApps/Orion.WebApps.HealthCheckUI/"]
-RUN dotnet restore "src/WebApps/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj"
 COPY . .
-WORKDIR "/src/src/WebApps/Orion.WebApps.HealthCheckUI"
-RUN dotnet build "./Orion.WebApps.HealthCheckUI.csproj" -c $BUILD_CONFIGURATION -o /app/build
-
-FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Orion.WebApps.HealthCheckUI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet restore
+RUN dotnet publish -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Orion.WebApps.HealthCheckUI.dll"]
+COPY --from=build /app/publish .
+ENTRYPOINT ["dotnet", "HealthAnalyzer.dll"]

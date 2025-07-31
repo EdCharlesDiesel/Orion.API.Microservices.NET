@@ -1,15 +1,12 @@
 ﻿
 
+using Microsoft.EntityFrameworkCore;
 using Orion.Core.Catalog.Domain;
 
-namespace Orion.Services.Catalog_2.API.Data
+namespace Orion.Services.Catalog.API.Data
 {
-    public class CatalogContext : ICatalogContext
+    public class CatalogContext(DbContextOptions<CatalogContext> options) : DbContext(options)
     {
         public DbSet<Product> Products { get; set; }
-        public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

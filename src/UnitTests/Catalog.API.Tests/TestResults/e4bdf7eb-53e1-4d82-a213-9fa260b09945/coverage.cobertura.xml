@@ -4,9 +4,9 @@
     <source>C:\x\Orion.API.Microservices.NET\src\Services\Catalog\Catalog.API\</source>
   </sources>
   <packages>
-    <package name="Orion.Services.Catalog.API" line-rate="0.0621" branch-rate="0.0833" complexity="33">
+    <package name="Orion.Services.Catalog 2.API" line-rate="0.0621" branch-rate="0.0833" complexity="33">
       <classes>
-        <class name="Orion.Services.Catalog.API.Program" filename="Program.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Orion.Services.Catalog 2.API.Program" filename="Program.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="Main" signature="(System.String[])" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -88,9 +88,9 @@
             <line number="51" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductServices" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Orion.Services.Catalog 2.API.Repositories.ProductServices" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
-            <method name=".ctor" signature="(Orion.Services.Catalog.API.Data.ICatalogContext)" line-rate="0" branch-rate="0" complexity="2">
+            <method name=".ctor" signature="(Orion.Services.Catalog 2.API.Data.ICatalogContext)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
                 <line number="12" hits="0" branch="False" />
                 <line number="13" hits="0" branch="False" />
@@ -114,7 +114,7 @@
             <line number="15" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;CreateProduct&gt;d__6" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Repositories.ProductServices/&lt;CreateProduct&gt;d__6" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -130,7 +130,7 @@
             <line number="55" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;DeleteProduct&gt;d__8" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Orion.Services.Catalog 2.API.Repositories.ProductServices/&lt;DeleteProduct&gt;d__8" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -164,7 +164,7 @@
             <line number="77" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;GetProduct&gt;d__3" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Repositories.ProductServices/&lt;GetProduct&gt;d__3" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -186,7 +186,7 @@
             <line number="30" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;GetProductByCategory&gt;d__5" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Repositories.ProductServices/&lt;GetProductByCategory&gt;d__5" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -210,7 +210,7 @@
             <line number="50" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;GetProductByName&gt;d__4" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Repositories.ProductServices/&lt;GetProductByName&gt;d__4" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -234,7 +234,7 @@
             <line number="40" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;GetProducts&gt;d__2" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Repositories.ProductServices/&lt;GetProducts&gt;d__2" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -256,7 +256,7 @@
             <line number="23" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Repositories.ProductServices/&lt;UpdateProduct&gt;d__7" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Orion.Services.Catalog 2.API.Repositories.ProductServices/&lt;UpdateProduct&gt;d__7" filename="Repositories\ProductServices.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -288,7 +288,7 @@
             <line number="65" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Entities.Product" filename="Entities\Product.cs" line-rate="0" branch-rate="1" complexity="7">
+        <class name="Orion.Services.Catalog 2.API.Entities.Product" filename="Entities\Product.cs" line-rate="0" branch-rate="1" complexity="7">
           <methods>
             <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -336,7 +336,7 @@
             <line number="20" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Data.CatalogContext" filename="Data\CatalogContext.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="Orion.Services.Catalog 2.API.Data.CatalogContext" filename="Data\CatalogContext.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="get_Products" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -366,9 +366,9 @@
             <line number="15" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Data.CatalogContextSeed" filename="Data\CatalogContextSeed.cs" line-rate="0" branch-rate="0" complexity="3">
+        <class name="Orion.Services.Catalog 2.API.Data.CatalogContextSeed" filename="Data\CatalogContextSeed.cs" line-rate="0" branch-rate="0" complexity="3">
           <methods>
-            <method name="SeedData" signature="(MongoDB.Driver.IMongoCollection`1&lt;Orion.Services.Catalog.API.Entities.Product&gt;)" line-rate="0" branch-rate="0" complexity="2">
+            <method name="SeedData" signature="(MongoDB.Driver.IMongoCollection`1&lt;Orion.Services.Catalog 2.API.Entities.Product&gt;)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
                 <line number="9" hits="0" branch="False" />
                 <line number="10" hits="0" branch="False" />
@@ -532,9 +532,9 @@
             <line number="82" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Controllers.CatalogController" filename="Controllers\CatalogController.cs" line-rate="1" branch-rate="0.5" complexity="2">
+        <class name="Orion.Services.Catalog 2.API.Controllers.CatalogController" filename="Controllers\CatalogController.cs" line-rate="1" branch-rate="0.5" complexity="2">
           <methods>
-            <method name=".ctor" signature="(Orion.Services.Catalog.API.Repositories.IProductServices)" line-rate="1" branch-rate="0.5" complexity="2">
+            <method name=".ctor" signature="(Orion.Services.Catalog 2.API.Repositories.IProductServices)" line-rate="1" branch-rate="0.5" complexity="2">
               <lines>
                 <line number="17" hits="2" branch="False" />
                 <line number="18" hits="2" branch="False" />
@@ -558,7 +558,7 @@
             <line number="21" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Controllers.CatalogController/&lt;CreateProduct&gt;d__5" filename="Controllers\CatalogController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Controllers.CatalogController/&lt;CreateProduct&gt;d__5" filename="Controllers\CatalogController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -576,7 +576,7 @@
             <line number="58" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Controllers.CatalogController/&lt;DeleteProductById&gt;d__7" filename="Controllers\CatalogController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Controllers.CatalogController/&lt;DeleteProductById&gt;d__7" filename="Controllers\CatalogController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -592,7 +592,7 @@
             <line number="72" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Controllers.CatalogController/&lt;GetProductByCategory&gt;d__4" filename="Controllers\CatalogController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Controllers.CatalogController/&lt;GetProductByCategory&gt;d__4" filename="Controllers\CatalogController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -610,7 +610,7 @@
             <line number="49" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Controllers.CatalogController/&lt;GetProductById&gt;d__3" filename="Controllers\CatalogController.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Controllers.CatalogController/&lt;GetProductById&gt;d__3" filename="Controllers\CatalogController.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -628,7 +628,7 @@
             <line number="40" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Controllers.CatalogController/&lt;GetProducts&gt;d__2" filename="Controllers\CatalogController.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Controllers.CatalogController/&lt;GetProducts&gt;d__2" filename="Controllers\CatalogController.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -646,7 +646,7 @@
             <line number="30" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Orion.Services.Catalog.API.Controllers.CatalogController/&lt;UpdateProduct&gt;d__6" filename="Controllers\CatalogController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Orion.Services.Catalog 2.API.Controllers.CatalogController/&lt;UpdateProduct&gt;d__6" filename="Controllers\CatalogController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>

@@ -1,6 +1,6 @@
 ﻿using Orion.Core.Catalog.Domain;
 
-namespace Orion.Services.Catalog_2.API.Services
+namespace Orion.Services.Catalog.API.Services
 {
 
     public interface IProductServices:IRepository<Product>

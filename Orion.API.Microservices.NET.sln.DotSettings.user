@@ -22,11 +22,8 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0a727867_002Db656_002D445c_002Db902_002D7ef1b2bf1509/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from CalanderControllerUnitTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;ProjectFile&gt;69B62104-8836-433A-88FB-498B39A35694/d:Controllers/f:CalanderControllerUnitTests.cs&lt;/ProjectFile&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2a83acff_002D54be_002D4079_002D8b33_002Dcbaeaad16448/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAllEvents_ReturnsOk_WhenDeserializationSuccessful" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::4BBC93EE-9774-4FCA-8277-3E97E18C3ACC::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.CalendarControllerTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::4BBC93EE-9774-4FCA-8277-3E97E18C3ACC::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.ForecastControllerTest&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2a83acff_002D54be_002D4079_002D8b33_002Dcbaeaad16448/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllEvents_ReturnsOk_WhenDeserializationSuccessful" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=506be4a7_002D3741_002D42c3_002D819d_002De91bc8e220c2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;UnitTests&amp;gt;\&amp;lt;Orion.Services.Catalog.API.Tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;

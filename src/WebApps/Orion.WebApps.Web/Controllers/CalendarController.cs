@@ -7,33 +7,28 @@ using Orion.WebApps.Web.Helper;
 
 namespace Orion.WebApps.Web.Controllers;
 
-public class CalendarController : Controller
+public class CalendarController(
+    IHttpClientFactory httpClientFactory,
+    IOptions<ApiSettings> apiOptions,
+    ICalendarServices iCalendarServices)
+    : Controller
 {
-    private readonly IHttpClientFactory _httpClientFactory;
-    private readonly ApiSettings _apiSettings;
-    private readonly ICalendarServices _iCalendarServices;
+    private readonly ApiSettings _apiSettings = apiOptions.Value;
 
     // In-memory store (simulate a database)
     private static List<CalendarEvent> _calendarEvents = new();
 
-    public CalendarController(IHttpClientFactory httpClientFactory, IOptions<ApiSettings> apiOptions, ICalendarServices iCalendarServices)
-    {
-        _httpClientFactory = httpClientFactory;
-        _apiSettings = apiOptions.Value;
-        _iCalendarServices = iCalendarServices;
-    }
-
     // GET: /Calendar
     public async Task<IActionResult> Index()
     {
-        var client = _httpClientFactory.CreateClient();
+        var client = httpClientFactory.CreateClient();
 
         try
         {
             var events = await client.GetFromJsonAsync<List<CalendarEvent>>(_apiSettings.CalendarApiUrl);
             _calendarEvents = events ?? new List<CalendarEvent>();
-            _iCalendarServices.Create(events);
-            
+            if (events != null) await iCalendarServices.Create(events);
+
             return View(_calendarEvents);
         }
         catch (HttpRequestException ex)
@@ -46,7 +41,7 @@ public class CalendarController : Controller
     // GET: /Calendar/Details/{id}
     public async Task<IActionResult> Details(Guid id)
     {
-        var client = _httpClientFactory.CreateClient();
+        var client = httpClientFactory.CreateClient();
         var events = await client.GetFromJsonAsync<List<CalendarEvent>>(_apiSettings.CalendarApiUrl);
         var item = events?.FirstOrDefault(c => c.Id == id);
 

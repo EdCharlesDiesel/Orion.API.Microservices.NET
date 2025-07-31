@@ -38,7 +38,7 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Orion StockAnalyzer API",
+        Title = "Orion TradingEconomics API",
         Version = "v1",
         Description = "An API for economic events and stock analysis.",
         Contact = new OpenApiContact
