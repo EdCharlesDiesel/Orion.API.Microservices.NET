@@ -1,26 +1,93 @@
 version: '3.8'
 
 services:
+  
   postgres:
-    image: postgres:15
+    image: postgres:17
     environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: $ta99Ath0
       POSTGRES_DB: healthdb
-      POSTGRES_USER: healthuser
-      POSTGRES_PASSWORD: healthpass
     ports:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
 
-  healthcheck-api:
+  orion.external.paymentgateway:
+    image: orion.external.paymentgateway
     build:
-      context: ./HealthCheck.API
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "8080:8080"
-    depends_on:
-      - postgres
+      context: .
+      dockerfile: src/ApiGateways/External.PaymentGateway/Dockerfile
 
-volumes:
-  pgdata:
+  orion.ocelotapigw:
+    image: orion.ocelotapigw
+    build:
+      context: .
+      dockerfile: src/ApiGateways/OcelotApiGw/Dockerfile
+
+  orion.shopping.aggregator:
+    image: orion.shopping.aggregator
+    build:
+      context: .
+      dockerfile: src/ApiGateways/Shopping.Aggregator/Dockerfile
+
+  orion.services.basket.api:
+    image: orion.services.basket.api
+    build:
+      context: .
+      dockerfile: src/Services/Orion.Services.Basket/Orion.Services.Basket.API/Dockerfile
+
+  orion.services.catalog.api:
+    image: orion.services.catalog.api
+    build:
+      context: .
+      dockerfile: src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Dockerfile
+
+  orion.services.chat:
+    image: orion.services.chat
+    build:
+      context: .
+      dockerfile: src/Services/Orion.Services.Chat/Dockerfile
+
+  orion.services.competitionscorecard.api:
+    image: orion.services.competitionscorecard.api
+    build:
+      context: .
+      dockerfile: src/Services/Orion.Services.CompetitionScorecard/Orion.Services.CompetitionScorecard.API/Dockerfile
+
+  orion.services.discount.api:
+    image: orion.services.discount.api
+    build:
+      context: .
+      dockerfile: src/Services/Orion.Services.Discount/Orion.Services.Discount.API/Dockerfile
+
+  orion.services.order.api:
+    image: orion.services.order.api
+    build:
+      context: .
+      dockerfile: src/Services/Orion.Services.Order/Orion.Services.Order.API/Dockerfile
+
+  orion.services.tradingeconomics.api:
+    image: orion.services.tradingeconomics.api
+    build:
+      context: .
+      dockerfile: src/Services/Orion.Services.TradingEconomics/Orion.Services.TradingEconomics.API/Dockerfile
+
+  orion.services.userprofile.api:
+    image: orion.services.userprofile.api
+    build:
+      context: .
+      dockerfile: src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Dockerfile
+
+  orion.webapps.healthcheckui:
+    image: orion.webapps.healthcheckui
+    build:
+      context: .
+      dockerfile: src/WebApps/Orion.WebApps.HealthCheckUI/Dockerfile
+
+  orion.webapps.web:
+    image: orion.webapps.web
+    build:
+      context: .
+      dockerfile: src/WebApps/Orion.WebApps.Web/Dockerfile
+

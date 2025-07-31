@@ -1,10 +1,10 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Orion.Services.Catalog.API.Data;
-using Orion.Services.Catalog.API.Mappings;
 using Orion.Services.Catalog.API.Repositories;
 using Orion.Services.Catalog.API.Services;
+using Orion.Services.Order.API.Mappings;
+using Orion.Services.Product.API.Data;
 
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
@@ -13,14 +13,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Configuration
 var configuration = builder.Configuration;
-var connectionString = configuration.GetConnectionString("DefaultConnection");
+string connectionString = configuration.GetConnectionString("DefaultConnection");
 
+// ✅ Add EF Core with PostgreSQL
 builder.Services.AddDbContext<CatalogContext>(options =>
     options.UseNpgsql(connectionString));
 
 // ✅ Register application services
-builder.Services.AddScoped<IProductServices,ProductRepository>();
-builder.Services.AddAutoMapper(typeof(ProductProfile));
+
+builder.Services.AddScoped<ICatalogServices,CatalogRepository>();
+builder.Services.AddAutoMapper(typeof(CatalogProfile));
 
 // ✅ Add HTTP client support if needed
 builder.Services.AddHttpClient(); // Or named client if needed
@@ -36,7 +38,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Title = "Orion Catalog API",
         Version = "v1",
-        Description = "An API for orion stock analysis.",
+        Description = "An API for Catalog.",
         Contact = new OpenApiContact
         {
             Name = "Khotso Mokhethi",
@@ -47,7 +49,9 @@ builder.Services.AddSwaggerGen(options =>
         {
             Name = "MIT License",
             Url = new Uri("https://opensource.org/licenses/MIT")
-        }
+        },
+        
+        
     });
 
     // Optional: Include XML comments (if you enable them in .csproj)
@@ -59,7 +63,7 @@ builder.Services.AddSwaggerGen(options =>
     }
 
     // Optional: Add JWT bearer auth support if you're using authentication
-    /*
+    
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -84,7 +88,7 @@ builder.Services.AddSwaggerGen(options =>
             Array.Empty<string>()
         }
     });
-    */
+    
 });
 
 var app = builder.Build();

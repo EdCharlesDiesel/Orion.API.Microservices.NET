@@ -6,25 +6,22 @@ using Orion.Services.Basket.API.Mappings;
 using Orion.Services.Basket.API.Repositories;
 using Orion.Services.Basket.API.Services;
 
-
-
-
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
 
 var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Configuration
 var configuration = builder.Configuration;
-string connectionString = configuration.GetConnectionString("DefaultConnection");
+var connectionString = configuration.GetConnectionString("DefaultConnection");
 
-// ✅ Add EF Core with PostgreSQL
+// ✅ Add EF Core with PostgresSQL
 builder.Services.AddDbContext<BasketContext>(options =>
     options.UseNpgsql(connectionString));
 
 // ✅ Register application services
 
 builder.Services.AddScoped<IBasketServices,BasketRepository>();
-builder.Services.AddAutoMapper(typeof(BasketProfile));
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // ✅ Add HTTP client support if needed
 builder.Services.AddHttpClient(); // Or named client if needed
@@ -40,7 +37,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Title = "Orion Basket API",
         Version = "v1",
-        Description = "An API for economic events and stock analysis.",
+        Description = "An API for basket features for Orion.",
         Contact = new OpenApiContact
         {
             Name = "Khotso Mokhethi",

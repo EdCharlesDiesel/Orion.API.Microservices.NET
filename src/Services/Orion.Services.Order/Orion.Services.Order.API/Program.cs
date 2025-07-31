@@ -1,12 +1,10 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Orion.Services.Basket.API.Data;
-using Orion.Services.Basket.API.Mappings;
-using Orion.Services.Basket.API.Repositories;
-using Orion.Services.Basket.API.Services;
-
-
+using Orion.Services.Order.API.Data;
+using Orion.Services.Order.API.Mappings;
+using Orion.Services.Order.API.Repositories;
+using Orion.Services.Order.API.Services;
 
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
@@ -18,13 +16,13 @@ var configuration = builder.Configuration;
 string connectionString = configuration.GetConnectionString("DefaultConnection");
 
 // ✅ Add EF Core with PostgreSQL
-builder.Services.AddDbContext<BasketContext>(options =>
+builder.Services.AddDbContext<OrderContext>(options =>
     options.UseNpgsql(connectionString));
 
 // ✅ Register application services
 
-builder.Services.AddScoped<IBasketServices,BasketRepository>();
-builder.Services.AddAutoMapper(typeof(BasketProfile));
+builder.Services.AddScoped<IOrderServices,OrderRepository>();
+// builder.Services.AddAutoMapper(typeof(OrderProfile));
 
 // ✅ Add HTTP client support if needed
 builder.Services.AddHttpClient(); // Or named client if needed
@@ -38,9 +36,9 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Orion Basket API",
+        Title = "Orion Order API",
         Version = "v1",
-        Description = "An API for economic events and stock analysis.",
+        Description = "An API for ordering.",
         Contact = new OpenApiContact
         {
             Name = "Khotso Mokhethi",

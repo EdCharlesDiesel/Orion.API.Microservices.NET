@@ -98,3 +98,10 @@ C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecar
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\obj\Debug\net9.0\Orion.Services.CompetitionScorecard.API.pdb
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\obj\Debug\net9.0\Orion.Services.CompetitionScorecard.API.genruntimeconfig.cache
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\obj\Debug\net9.0\ref\Orion.Services.CompetitionScorecard.API.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\bin\Debug\net9.0\AutoMapper.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\bin\Debug\net9.0\Orion.Core.CompetitionScorecard.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.CompetitionScorecard\Orion.Services.CompetitionScorecard.API\bin\Debug\net9.0\Orion.Core.CompetitionScorecard.pdb

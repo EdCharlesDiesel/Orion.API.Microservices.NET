@@ -1,0 +1,12 @@
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\bin\Release\net9.0\Orion.Discount.Core.deps.json
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\bin\Release\net9.0\Orion.Discount.Core.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\bin\Release\net9.0\Orion.Discount.Core.pdb
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\obj\Release\net9.0\Orion.Discount.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\obj\Release\net9.0\Orion.Discount.Core.AssemblyInfoInputs.cache
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\obj\Release\net9.0\Orion.Discount.Core.AssemblyInfo.cs
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\obj\Release\net9.0\Orion.Discount.Core.csproj.CoreCompileInputs.cache
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\obj\Release\net9.0\Orion.Discount.Core.sourcelink.json
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\obj\Release\net9.0\Orion.Discount.Core.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\obj\Release\net9.0\refint\Orion.Discount.Core.dll
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\obj\Release\net9.0\Orion.Discount.Core.pdb
+C:\x\Orion.API.Microservices.NET\src\Core\Orion.Discount.Core\obj\Release\net9.0\ref\Orion.Discount.Core.dll

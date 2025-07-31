@@ -1,12 +1,14 @@
+using Orion.Services.Basket.API.DTO;
+
 namespace Orion.Services.Basket.API.Services;
 
 
     public interface IRepository<T> where T : class
     {
-        Task<IEnumerable<T>> GetAllAsync();
-        Task<T?> GetByIdAsync(object id);
-        Task AddAsync(T entity);
-        Task UpdateAsync(T entity);
-        Task DeleteAsync(object id);
+        Task<List<T>> GetAllAsync();
+        Task<Core.Basket.Domain.Basket?> GetByIdAsync(Guid id);
+        Task<BasketDto> AddAsync(BasketDto basket);
+        Task UpdateAsync(Core.Basket.Domain.Basket entity);
+        Task DeleteAsync(Guid id);
     }
 

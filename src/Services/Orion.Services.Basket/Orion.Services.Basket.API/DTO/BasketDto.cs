@@ -1,19 +1,12 @@
-namespace Orion.Services.TradingEconomics.API.DTO;
+using Orion.Core.Basket.Domain;
+
+namespace Orion.Services.Basket.API.DTO;
 
 public class BasketDto
 {
-    public string? FirstName { get; set; } = null;
-    public string? LastName  { get; set; } 
-
-    // public int IdNumber  { get; set; } 
-    public string? EmailAddress  { get; set; } 
-    public string? Password  { get; set; } 
-    // public string? Birthday  { get; set; } 
-    // public string? Role  { get; set; } 
-    // public string? Subscription  { get; set; } 
-    // public string? UserTypeId  { get; set; } 
-    // public string? IsLoggedIn  { get; set; } 
-    // public string? Nickname  { get; set; } 
-    // public Guid? Code  { get; set; } = Guid.NewGuid();
-    // public string? Image  { get; set; } 
+    public Guid UserId { get; set; } 
+    public List<BasketItem>? Items { get; set; } 
+    public decimal? TotalPrice { get; set; } 
+    public string? Currency { get; set; } 
+    public bool IsCheckedOut { get; set; } 
 }

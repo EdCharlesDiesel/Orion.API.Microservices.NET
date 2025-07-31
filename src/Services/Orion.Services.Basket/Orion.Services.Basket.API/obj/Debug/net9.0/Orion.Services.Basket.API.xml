@@ -4,9 +4,34 @@
         <name>Orion.Services.Basket.API</name>
     </assembly>
     <members>
-        <member name="M:Orion.Services.Basket.API.Controllers.BasketController.GetAllEvents">
+        <member name="M:Orion.Services.Basket.API.Controllers.BasketController.GetAllBaskets">
             <summary>
-            Get all comtrade categories
+            Get all baskets.
+            </summary>
+        </member>
+        <member name="M:Orion.Services.Basket.API.Controllers.BasketController.GetBasketById(System.Guid)">
+            <summary>
+            Get a basket by ID.
+            </summary>
+        </member>
+        <member name="M:Orion.Services.Basket.API.Controllers.BasketController.CreateBasket(Orion.Core.Basket.Domain.Basket)">
+            <summary>
+            Create a new basket.
+            </summary>
+        </member>
+        <member name="M:Orion.Services.Basket.API.Controllers.BasketController.UpdateBasket(System.Guid,Orion.Core.Basket.Domain.Basket)">
+            <summary>
+            Update an existing basket.
+            </summary>
+        </member>
+        <member name="M:Orion.Services.Basket.API.Controllers.BasketController.PatchBasket(System.Guid,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Orion.Core.Basket.Domain.Basket})">
+            <summary>
+            Partially update a basket (e.g. patch one or two fields).
+            </summary>
+        </member>
+        <member name="M:Orion.Services.Basket.API.Controllers.BasketController.DeleteBasket(System.Guid)">
+            <summary>
+            Delete a basket by ID.
             </summary>
         </member>
         <member name="T:Orion.Services.Basket.API.Data.Migrations.Initial">

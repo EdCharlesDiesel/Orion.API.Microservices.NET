@@ -201,3 +201,4 @@ C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Basket\Orion.Servic
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Basket\Orion.Services.Basket.API\obj\Debug\net9.0\Orion.Services.Basket.API.pdb
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Basket\Orion.Services.Basket.API\obj\Debug\net9.0\Orion.Services.Basket.API.genruntimeconfig.cache
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Basket\Orion.Services.Basket.API\obj\Debug\net9.0\ref\Orion.Services.Basket.API.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Basket\Orion.Services.Basket.API\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll

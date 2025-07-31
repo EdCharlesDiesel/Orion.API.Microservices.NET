@@ -7,6 +7,7 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AHealthCheckService_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F233627ef8932fd7b1a50ce57a57fd772f05ca4b7d23ba73165ed9964a4ea8f_003FHealthCheckService_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AHttpClient_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fc439425da351c75ac7d966a1cc8324b51a9c471865af79d2f2f3fcb65e392_003FHttpClient_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AJsonSerializer_002ERead_002EString_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F27c4858128168eda568c1334d70d5241efb9461e2a3209258a04deee5d9c367_003FJsonSerializer_002ERead_002EString_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AReturnsExtensions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F8af41436563a490388760e5ba9810f5f4c200_003Feb_003Fa2295655_003FReturnsExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AServiceCollection_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fd1e0b313578742df9fa24022a890f31b23908_003F8d_003Fca2874b6_003FServiceCollection_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AServiceCollection_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F595e4f2361fd31cb66c7e9303f46cf8f2fe77d96eea9d0e42c17cae783aa74_003FServiceCollection_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AServiceProvider_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F459bbf9fdb12446c978a3113a173b6d335928_003F55_003Fd7e61a9e_003FServiceProvider_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
@@ -16,11 +17,23 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AWebApplicationBuilder_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Feb83c0d558c84b998f640ddee4d6cfb01b918_003Fb2_003F7548c4f5_003FWebApplicationBuilder_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AWebApplication_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Ff16564c8c4b61e6ea398fe412680c6b795b266584ccf6a362aed712dc4d2b387_003FWebApplication_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:Boolean x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/ShowAdvancedOptions/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=24D3F7FC_002D66FC_002D4317_002D83DB_002DFDBAD0A5B2AB/@EntryIndexedValue">529CD237-D27B-4134-861C-9AF6F29C692F</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=61EE6B6B_002D3A72_002D4D9F_002D8756_002D228AB8C5D64F/@EntryIndexedValue">Orion.Services.Chat.API.Tests</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=814B99C9_002D7C60_002D4451_002D914D_002DAE3CD918E278/@EntryIndexedValue">4BBC93EE-9774-4FCA-8277-3E97E18C3ACC</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=84186A4B_002D6EF1_002D47A5_002D912B_002DA9D173E0C39C/@EntryIndexedValue">Orion.Services.Basket.API.Tests</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=AB1409C5_002DF703_002D4073_002DB884_002D78F822874DB6/@EntryIndexedValue">70E07A35-6A35-4343-9385-0D0CEB743491</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=xUnit/@EntryIndexedValue">33ff99d8-b1ad-4ed5-a4fd-376b97c2c841</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0a727867_002Db656_002D445c_002Db902_002D7ef1b2bf1509/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from CalanderControllerUnitTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;ProjectFile&gt;69B62104-8836-433A-88FB-498B39A35694/d:Controllers/f:CalanderControllerUnitTests.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=262f66ce_002D2fe8_002D4c32_002Da637_002Dc6a341860864/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Create_ReturnsCreatedAt" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.Create_ReturnsCreatedAt&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.Update_ReturnsBadRequest_WhenIdMismatch&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.Update_ReturnsOk_WhenValid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.Delete_ReturnsNoContent&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.GetProductById_ReturnsOk_WhenFound&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2a83acff_002D54be_002D4079_002D8b33_002Dcbaeaad16448/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllEvents_ReturnsOk_WhenDeserializationSuccessful" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
@@ -37,6 +50,11 @@
     &lt;Namespace&gt;Orion.Services.StockAnalyzer.API.Tests.Controllers&lt;/Namespace&gt;&#xD;
     &lt;Project Location="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API.Tests" Presentation="&amp;lt;Services&amp;gt;\&amp;lt;StockAnalyzer&amp;gt;\&amp;lt;Orion.Services.StockAnalyzer.API.Tests&amp;gt;" /&gt;&#xD;
   &lt;/And&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7c1fd528_002D9199_002D4221_002Dabb8_002De1fe30a3d9c1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ProductControllerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
 	

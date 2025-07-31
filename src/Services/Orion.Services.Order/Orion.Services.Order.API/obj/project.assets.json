@@ -2573,6 +2573,29 @@
           "bin/placeholder/Orion.Core.Basket.dll": {}
         }
       },
+      "Orion.Core.Catalog/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Catalog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Catalog.dll": {}
+        }
+      },
+      "Orion.Core.Order/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Orion.Core.Catalog": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Orion.Core.Order.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Order.dll": {}
+        }
+      },
       "Orion.Core.TradingEconomics/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -8046,6 +8069,16 @@
       "path": "../../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj",
       "msbuildProject": "../../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj"
     },
+    "Orion.Core.Catalog/1.0.0": {
+      "type": "project",
+      "path": "../../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj",
+      "msbuildProject": "../../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj"
+    },
+    "Orion.Core.Order/1.0.0": {
+      "type": "project",
+      "path": "../../../Core/Orion.Core.Order/Orion.Core.Order.csproj",
+      "msbuildProject": "../../../Core/Orion.Core.Order/Orion.Core.Order.csproj"
+    },
     "Orion.Core.TradingEconomics/1.0.0": {
       "type": "project",
       "path": "../../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj",
@@ -8071,6 +8104,7 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
       "Orion.Core.Basket >= 1.0.0",
+      "Orion.Core.Order >= 1.0.0",
       "Orion.Core.TradingEconomics >= 1.0.0",
       "Orion.Core.UserProfile >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -8103,6 +8137,9 @@
           "projectReferences": {
             "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj": {
               "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj"
+            },
+            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj": {
+              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj"
             },
             "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
               "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
@@ -8215,12 +8252,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

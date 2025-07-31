@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace Orion.Services.UserProfile.API.Helper
+namespace Orion.Services.Catalog.API.Helper
 {
     public static class HttpRequesterClass
     {

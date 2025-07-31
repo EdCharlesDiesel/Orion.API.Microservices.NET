@@ -49,4 +49,10 @@
     <ProjectReference Include="..\..\..\Core\Orion.Core.UserProfile\Orion.Core.UserProfile.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\..\..\..\.dockerignore">
+      <Link>.dockerignore</Link>
+    </Content>
+  </ItemGroup>
+
 </Project>

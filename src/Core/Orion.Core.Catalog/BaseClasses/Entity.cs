@@ -6,7 +6,7 @@ namespace Orion.Core.Catalog.BaseClasses
     {
         [Key]
         [Required]
-        public Guid Id  { get; set; } = Guid.NewGuid();
+        public Guid Id  { get; init; } = Guid.NewGuid();
         [Required]
         public DateTime CreatedDate  { get; set; } = DateTime.UtcNow;
         [Required]

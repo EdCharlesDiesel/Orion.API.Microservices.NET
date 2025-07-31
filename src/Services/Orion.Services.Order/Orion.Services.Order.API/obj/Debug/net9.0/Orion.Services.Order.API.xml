@@ -4,29 +4,50 @@
         <name>Orion.Services.Order.API</name>
     </assembly>
     <members>
-        <member name="M:Orion.Services.Basket.API.Controllers.BasketController.GetAllEvents">
+        <member name="M:Orion.Services.Order.API.Controllers.OrderController.GetAllOrders">
             <summary>
-            Get all comtrade categories
+            Get all orders.
             </summary>
         </member>
-        <member name="T:Orion.Services.Basket.API.Data.Migrations.Initial">
+        <member name="M:Orion.Services.Order.API.Controllers.OrderController.Create(Orion.Core.Order.Domain.Order)">
+            <summary>
+            Create's an order.
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orion.Services.Order.API.Controllers.OrderController.UpdateOrder(Orion.Core.Order.Domain.Order)">
+            <summary>
+            Update's an order.
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orion.Services.Order.API.Controllers.OrderController.UpdateOrder(System.Guid)">
+            <summary>
+            Delete's an order by id.
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Orion.Services.Order.API.Data.Migrations.Initial">
             <inheritdoc />
         </member>
-        <member name="M:Orion.Services.Basket.API.Data.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:Orion.Services.Order.API.Data.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:Orion.Services.Basket.API.Data.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:Orion.Services.Order.API.Data.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:Orion.Services.Basket.API.Data.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:Orion.Services.Order.API.Data.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
-        <member name="F:Orion.Services.Basket.API.Helper.HttpRequesterClass._clientKey">
+        <member name="F:Orion.Services.Order.API.Helper.HttpRequesterClass._clientKey">
             <summary>
             Store the client key to be used through the program
             </summary>
         </member>
-        <member name="M:Orion.Services.Basket.API.Helper.HttpRequesterClass.HttpRequester(System.String,System.String)">
+        <member name="M:Orion.Services.Order.API.Helper.HttpRequesterClass.HttpRequester(System.String,System.String)">
             <summary>
             Method to make HTTP calls to TradingEconomics API
             </summary>

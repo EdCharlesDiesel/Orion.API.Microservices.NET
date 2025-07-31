@@ -180,12 +180,16 @@ C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Servi
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.Basket.dll
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.Catalog.dll
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.Order.dll
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.TradingEconomics.dll
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.UserProfile.dll
-C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.Catalog.pdb
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.Basket.pdb
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.Order.pdb
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.TradingEconomics.pdb
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.UserProfile.pdb
+C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\bin\Debug\net9.0\Orion.Core.Catalog.pdb
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

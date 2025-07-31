@@ -1,12 +1,12 @@
-namespace Orion.Services.Basket.API.Services;
+namespace Orion.Services.Order.API.Services;
 
 
     public interface IRepository<T> where T : class
     {
-        Task<IEnumerable<T>> GetAllAsync();
+        Task<List<T>> GetAllAsync();
         Task<T?> GetByIdAsync(object id);
-        Task AddAsync(T entity);
-        Task UpdateAsync(T entity);
+        Task<Core.Order.Domain.Order> AddAsync(T entity);
+        Task<Core.Order.Domain.Order> UpdateAsync(T entity);
         Task DeleteAsync(object id);
     }
 
