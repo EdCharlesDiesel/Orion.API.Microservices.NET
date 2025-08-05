@@ -1,10 +1,10 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Orion.Services.Order.API.Data;
-using Orion.Services.Order.API.Mappings;
-using Orion.Services.Order.API.Repositories;
-using Orion.Services.Order.API.Services;
+using Orion.API.Order.API.Data;
+using Orion.API.Order.API.Repositories;
+using Orion.API.Order.API.Services;
+
 
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql

@@ -49,6 +49,7 @@
     <ProjectReference Include="..\..\..\Core\Orion.Core.Basket\Orion.Core.Basket.csproj" />
     <ProjectReference Include="..\..\..\Core\Orion.Core.TradingEconomics\Orion.Core.TradingEconomics.csproj" />
     <ProjectReference Include="..\..\..\Core\Orion.Core.UserProfile\Orion.Core.UserProfile.csproj" />
+    <ProjectReference Include="..\..\..\Orion.Services\Orion.Services.csproj" />
     <ProjectReference Include="..\..\Core\Orion.Core.Basket\Orion.Core.Basket.csproj" />
   </ItemGroup>
 
@@ -56,6 +57,10 @@
     <Content Include="..\..\..\..\.dockerignore">
       <Link>.dockerignore</Link>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
 using AutoMapper;
+using Orion.API.TradingEconomics.API.DTO;
 using Orion.Core.TradingEconomics.Domain;
-using Orion.Services.TradingEconomics.API.DTO;
 
-namespace Orion.Services.TradingEconomics.API.Mappings;
+namespace Orion.API.TradingEconomics.API.Mappings;
 
 public class CalendarEventProfile : Profile
 {

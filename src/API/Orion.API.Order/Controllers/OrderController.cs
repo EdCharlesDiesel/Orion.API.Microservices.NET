@@ -1,9 +1,8 @@
-using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.Order.API.DTO;
-using Orion.Services.Order.API.Services;
+using Orion.API.Order.API.Services;
 
-namespace Orion.Services.Order.API.Controllers
+
+namespace Orion.API.Order.API.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]

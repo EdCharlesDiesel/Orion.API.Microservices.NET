@@ -2562,59 +2562,6 @@
             "related": ".xml"
           }
         }
-      },
-      "Orion.Core.Basket/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Core.Basket.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.Basket.dll": {}
-        }
-      },
-      "Orion.Core.Catalog/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Core.Catalog.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.Catalog.dll": {}
-        }
-      },
-      "Orion.Core.Order/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Orion.Core.Catalog": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Orion.Core.Order.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.Order.dll": {}
-        }
-      },
-      "Orion.Core.TradingEconomics/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
-        }
-      },
-      "Orion.Core.UserProfile/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Core.UserProfile.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.UserProfile.dll": {}
-        }
       }
     }
   },
@@ -8063,37 +8010,16 @@
         "yamldotnet.15.1.4.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
-    },
-    "Orion.Core.Basket/1.0.0": {
-      "type": "project",
-      "path": "../../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj",
-      "msbuildProject": "../../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj"
-    },
-    "Orion.Core.Catalog/1.0.0": {
-      "type": "project",
-      "path": "../../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj",
-      "msbuildProject": "../../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj"
-    },
-    "Orion.Core.Order/1.0.0": {
-      "type": "project",
-      "path": "../../../Core/Orion.Core.Order/Orion.Core.Order.csproj",
-      "msbuildProject": "../../../Core/Orion.Core.Order/Orion.Core.Order.csproj"
-    },
-    "Orion.Core.TradingEconomics/1.0.0": {
-      "type": "project",
-      "path": "../../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj",
-      "msbuildProject": "../../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj"
-    },
-    "Orion.Core.UserProfile/1.0.0": {
-      "type": "project",
-      "path": "../../../Core/Orion.Core.UserProfile/Orion.Core.UserProfile.csproj",
-      "msbuildProject": "../../../Core/Orion.Core.UserProfile/Orion.Core.UserProfile.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "AutoMapper >= 15.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
+      "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
+      "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
+      "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
       "FastEndpoints >= 6.2.0",
       "FastEndpoints.MediatR >= 2.0.6",
       "Microsoft.AspNetCore.Authentication.Negotiate >= 9.0.7",
@@ -8103,10 +8029,6 @@
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
-      "Orion.Core.Basket >= 1.0.0",
-      "Orion.Core.Order >= 1.0.0",
-      "Orion.Core.TradingEconomics >= 1.0.0",
-      "Orion.Core.UserProfile >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -8116,11 +8038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Orion.Services.Order\\Orion.Services.Order.API\\Orion.Services.Order.API.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
       "projectName": "Orion.Services.TradingEconomics.API",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Orion.Services.Order\\Orion.Services.Order.API\\Orion.Services.Order.API.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Orion.Services.Order\\Orion.Services.Order.API\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8135,17 +8057,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj"
+            "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj"
             },
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj"
+            "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj"
             },
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
+            "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
             },
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj"
+            "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj"
             }
           }
         }
@@ -8252,6 +8174,48 @@
       "targetGraphs": [
         "net9.0"
       ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

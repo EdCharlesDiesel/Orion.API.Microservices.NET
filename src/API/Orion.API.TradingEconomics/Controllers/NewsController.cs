@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.TradingEconomics.API.Services;
+using Orion.API.TradingEconomics.API.Services;
 
-namespace Orion.Services.TradingEconomics.API.Controllers;
+namespace Orion.API.TradingEconomics.API.Controllers;
 [ApiController]
 [Route("api/[controller]")]
 public class NewsController : ControllerBase

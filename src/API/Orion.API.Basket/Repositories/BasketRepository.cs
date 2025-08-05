@@ -1,6 +1,7 @@
+using Orion.Services;
 using Orion.Services.Basket.API.Data;
 using Orion.Services.Basket.API.DTO;
-using Orion.Services.Basket.API.Services;
+using Orion.Services.Intefaces;
 
 namespace Orion.API.Basket.Repositories;
 
@@ -42,7 +43,7 @@ public class BasketRepository(BasketContext context) : IBasketServices
         return Task.FromResult<BasketDto?>(null);
     }
 
-    public async Task<BasketDto?> AddAsync(Core.Basket.Domain.Basket basket)
+    public async Task<Core.Basket.Domain.Basket?> AddAsync(Core.Basket.Domain.Basket basket)
     {
         if (basket == null)
             throw new ArgumentException("basket cannot be null or empty.");
@@ -67,7 +68,7 @@ public class BasketRepository(BasketContext context) : IBasketServices
         context.Baskets.Remove(basket);
     }
 
-    public async Task<List<BasketDto>?> BulkCreate(List<Core.Basket.Domain.Basket> baskets)
+    public async Task<List<Core.Basket.Domain.Basket>?> BulkCreate(List<Core.Basket.Domain.Basket> baskets)
     {
         await context.AddRangeAsync(baskets);
         if (baskets == null)

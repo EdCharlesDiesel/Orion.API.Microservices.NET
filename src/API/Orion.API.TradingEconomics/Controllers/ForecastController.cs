@@ -1,9 +1,9 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
+using Orion.API.TradingEconomics.API.Services;
 using Orion.Core.TradingEconomics.Domain;
-using Orion.Services.TradingEconomics.API.Services;
 
-namespace Orion.Services.StockAnalyzer.API.Controllers;
+namespace Orion.API.TradingEconomics.API.Controllers;
 
 
     [ApiController]

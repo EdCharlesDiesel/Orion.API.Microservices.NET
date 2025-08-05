@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-
-namespace Orion.Services.UserProfile.API.Data
+namespace Orion.API.UserProfile.API.Data
 {
     public interface IUserProfileContext
     {

@@ -1,9 +1,8 @@
+using Orion.API.CompetitionScorecard.Data;
 using Orion.Core.CompetitionScorecard.Domain;
-using Orion.Services.CompetitionScorecard.API.Data;
-using Orion.Services.CompetitionScorecard.API.Helper;
 using Orion.Services.CompetitionScorecard.API.Services;
 
-namespace Orion.Services.CompetitionScorecard.API.Repositories;
+namespace Orion.API.CompetitionScorecard.Repositories;
 
 public class CompetitionScorecardRepository(CompetitionScorecardContext context) : ICompetitionScorecardServices
 {

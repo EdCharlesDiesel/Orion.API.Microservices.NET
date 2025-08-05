@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Orion.Core.TradingEconomics.Domain;
 
-namespace Orion.Services.StockAnalyzer.API.Controllers;
+namespace Orion.API.TradingEconomics.API.Controllers;
 
 
     [ApiController]

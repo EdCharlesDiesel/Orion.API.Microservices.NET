@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Orion.Services.Chat.ActionFilters
+namespace Orion.API.Chat.ActionFilters
 {
     public class CheckClientKeyHeader : ActionFilterAttribute
     {

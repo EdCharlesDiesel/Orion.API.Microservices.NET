@@ -1,9 +1,9 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Orion.Services.Catalog.API.Repositories;
-using Orion.Services.Catalog.API.Services;
-using Orion.Services.Order.API.Mappings;
+using Orion.API.Catalog.Mappings;
+using Orion.API.Catalog.Repositories;
+using Orion.API.Catalog.Services;
 using Orion.Services.Product.API.Data;
 
 

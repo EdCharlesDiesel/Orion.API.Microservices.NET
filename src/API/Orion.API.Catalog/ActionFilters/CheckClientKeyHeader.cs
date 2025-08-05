@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Orion.Services.Catalog.API.ActionFilters
+namespace Orion.API.Catalog.ActionFilters
 {
     public class CheckClientKeyHeader : ActionFilterAttribute
     {

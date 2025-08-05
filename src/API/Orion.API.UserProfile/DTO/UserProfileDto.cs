@@ -1,4 +1,4 @@
-namespace Orion.Services.TradingEconomics.API.DTO;
+namespace Orion.API.UserProfile.API.DTO;
 
 public class UserProfileDto
 {

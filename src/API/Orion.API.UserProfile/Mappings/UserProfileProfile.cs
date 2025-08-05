@@ -1,8 +1,7 @@
 using AutoMapper;
-using Orion.Core.TradingEconomics.Domain;
-using Orion.Services.TradingEconomics.API.DTO;
+using Orion.API.UserProfile.API.DTO;
 
-namespace Orion.Services.UserProfile.API.Mappings;
+namespace Orion.API.UserProfile.API.Mappings;
 
 public class UserProfileProfile : Profile
 {

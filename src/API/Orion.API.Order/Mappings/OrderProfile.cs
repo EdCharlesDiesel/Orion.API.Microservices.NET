@@ -1,7 +1,7 @@
 using AutoMapper;
-using Orion.Services.Order.API.DTO;
+using Orion.API.Order.API.DTO;
 
-namespace Orion.Services.Order.API.Mappings;
+namespace Orion.API.Order.API.Mappings;
 
 public class OrderProfile : Profile
 {

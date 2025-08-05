@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Orion.Core.CompetitionScorecard.Domain;
 
-namespace Orion.Services.CompetitionScorecard.API.Data
+namespace Orion.API.CompetitionScorecard.Data
 {
     public interface ICompetitionScorecardContext
     {

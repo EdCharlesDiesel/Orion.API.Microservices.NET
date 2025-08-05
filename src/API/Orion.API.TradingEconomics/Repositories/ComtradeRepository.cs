@@ -1,7 +1,7 @@
-using Orion.Services.TradingEconomics.API.Helper;
-using Orion.Services.TradingEconomics.API.Services;
+using Orion.API.TradingEconomics.API.Services;
+using Orion.Helpers;
 
-namespace Orion.Services.TradingEconomics.API.Repositories;
+namespace Orion.API.TradingEconomics.API.Repositories;
 
 public class ComtradeRepository: IComtradeServices
 {

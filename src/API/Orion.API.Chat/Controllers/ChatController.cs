@@ -2,11 +2,9 @@ using Azure.AI.Projects;
 using Azure.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OpenAI.Chat;
 using Orion.Core.Chat.Domain;
 
-
-namespace Orion.Services.Chat.Controllers;
+namespace Orion.API.Chat.Controllers;
 
 [Authorize]
 [ApiController]

@@ -1,6 +1,6 @@
 ﻿using Npgsql;
 
-namespace Orion.Services.Discount.API.Extensions
+namespace Orion.API.Discount.Extensions
 {
     public static class HostExtensions
     {

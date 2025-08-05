@@ -1,4 +1,4 @@
-namespace Orion.Services.TradingEconomics.API.DTO;
+namespace Orion.API.TradingEconomics.API.DTO;
 
 public class CalendarEventDto
 {

@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Orion.Services.TradingEconomics.API.Services;
+using Orion.API.TradingEconomics.API.Services;
 
-namespace Orion.Services.TradingEconomics.API.Repositories;
+namespace Orion.API.TradingEconomics.API.Repositories;
 
 public class Repository<T>(DbContext context) : IRepository<T> where T : class
 {

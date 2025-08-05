@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Orion.Core.CompetitionScorecard.Domain;
 using Orion.Services.CompetitionScorecard.API.Services;
 
-namespace Orion.Services.CompetitionScorecard.API.Repositories;
+namespace Orion.API.CompetitionScorecard.Repositories;
 
 public class Repository<T>(DbContext context) : IRepository<T> where T : class
 {

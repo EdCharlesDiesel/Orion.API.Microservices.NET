@@ -1,8 +1,8 @@
 using AutoMapper;
+using Orion.API.CompetitionScorecard.DTO;
 using Orion.Core.CompetitionScorecard.Domain;
-using Orion.Services.TradingEconomics.API.DTO;
 
-namespace Orion.Services.CompetitionScorecard.API.Mappings;
+namespace Orion.API.CompetitionScorecard.Mappings;
 
 public class CouponProfile : Profile
 {

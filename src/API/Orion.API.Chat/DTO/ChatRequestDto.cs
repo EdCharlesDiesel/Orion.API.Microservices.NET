@@ -1,4 +1,4 @@
-namespace Orion.Services.Chat.DTO;
+namespace Orion.API.Chat.DTO;
 
 public class ChatRequestDto
 {

@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Orion.Services.UserProfile.API.Services;
 
 namespace Orion.Services.UserProfile.API.Repositories;
 

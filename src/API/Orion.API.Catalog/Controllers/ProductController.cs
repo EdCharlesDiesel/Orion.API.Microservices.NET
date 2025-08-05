@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.Catalog.API.Services;
+using Orion.API.Catalog.Services;
 
-namespace Orion.Services.Catalog.API.Controllers
+namespace Orion.API.Catalog.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]

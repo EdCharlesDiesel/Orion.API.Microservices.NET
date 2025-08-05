@@ -1,11 +1,9 @@
-using System.Text.Json;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.TradingEconomics.API.DTO;
-using Orion.Services.UserProfile.API.Services;
+using Orion.API.UserProfile.API.DTO;
+using Orion.API.UserProfile.API.Services;
 
-
-namespace Orion.Services.UserProfile.API.Controllers
+namespace Orion.API.UserProfile.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

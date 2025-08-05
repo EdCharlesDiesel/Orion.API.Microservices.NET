@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Orion.Services.Order.API.Data
+namespace Orion.API.Order.API.Data
 {
     public class OrderContext : DbContext, IOrderContext
     {

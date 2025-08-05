@@ -1,6 +1,6 @@
 ﻿
 
-namespace Orion.Services.TradingEconomics.API.Data
+namespace Orion.API.TradingEconomics.API.Data
 {
     public abstract class TradingEconomicsContextSeed
     {

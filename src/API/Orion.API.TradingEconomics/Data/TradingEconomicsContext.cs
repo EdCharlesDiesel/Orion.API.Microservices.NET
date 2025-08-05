@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Orion.Core.TradingEconomics.Domain;
 
-
-namespace Orion.Services.TradingEconomics.API.Data
+namespace Orion.API.TradingEconomics.API.Data
 {
     public class TradingEconomicsContext(DbContextOptions<TradingEconomicsContext> options) : DbContext(options), ITradingEconomicsContext
     {

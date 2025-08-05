@@ -1,7 +1,6 @@
-﻿using Orion.Core.Discount;
-using Orion.Core.Discount.Domain;
+﻿using Orion.Core.Discount.Domain;
 
-namespace Orion.Services.Discount.API.Repositories
+namespace Orion.API.Discount.Repositories
 {
     public interface IDiscountRepository
     {

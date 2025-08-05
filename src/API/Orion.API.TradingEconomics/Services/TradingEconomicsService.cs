@@ -1,7 +1,7 @@
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace Orion.Services.TradingEconomics.API.Services;
+namespace Orion.API.TradingEconomics.API.Services;
 
 public abstract class TradingEconomicsService
 {

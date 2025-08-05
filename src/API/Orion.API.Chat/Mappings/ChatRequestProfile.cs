@@ -1,8 +1,8 @@
 using AutoMapper;
+using Orion.API.Chat.DTO;
 using Orion.Core.Chat.Domain;
-using Orion.Services.Chat.DTO;
 
-namespace Orion.Services.Chat.Mappings;
+namespace Orion.API.Chat.Mappings;
 
 public class ChatRequestProfile : Profile
 {

@@ -1,10 +1,8 @@
-using Orion.Core.Basket.Domain;
-using Orion.Core.Order.Domain;
+using Orion.API.Order.API.Data;
+using Orion.API.Order.API.Services;
 using Orion.Services.Order.API.Services;
-using Orion.Services.Order.API.Data;
-using Orion.Services.Order.API.Helper;
 
-namespace Orion.Services.Order.API.Repositories;
+namespace Orion.API.Order.API.Repositories;
 
 public class OrderRepository(OrderContext context) : IOrderServices
 {
@@ -100,5 +98,10 @@ public class OrderRepository(OrderContext context) : IOrderServices
         context.Orders.Remove(order);
         await context.SaveChangesAsync();
 
+    }
+
+    public async Task<List<Core.Order.Domain.Order>> _task(List<Core.Order.Domain.Order> entity)
+    {
+        throw new NotImplementedException();
     }
 }

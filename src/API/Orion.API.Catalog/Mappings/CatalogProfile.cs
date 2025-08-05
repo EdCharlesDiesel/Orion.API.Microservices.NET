@@ -1,13 +1,14 @@
 using AutoMapper;
-using Orion.Services.Catalog.API.DTO;
+using Orion.API.Catalog.DTO;
+using Orion.Core.Catalog.Domain;
 
-namespace Orion.Services.Order.API.Mappings;
+namespace Orion.API.Catalog.Mappings;
 
 public class CatalogProfile : Profile
 {
 
         public CatalogProfile()
         {
-            CreateMap<Core.Order.Domain.Order, ProductDto>().ReverseMap();
+            CreateMap<Product, ProductDto>().ReverseMap();
         }
 }

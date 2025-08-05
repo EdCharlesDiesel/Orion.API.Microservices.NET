@@ -1,9 +1,7 @@
-using Orion.Core.TradingEconomics.Domain;
-using Orion.Services.UserProfile.API.Data;
-using Orion.Services.UserProfile.API.Helper;
-using Orion.Services.UserProfile.API.Services;
+using Orion.API.UserProfile.API.Data;
+using Orion.API.UserProfile.API.Services;
 
-namespace Orion.Services.UserProfile.API.Repositories;
+namespace Orion.API.UserProfile.API.Repositories;
 
 public class UserProfileRepository: IUserProfileServices
 {

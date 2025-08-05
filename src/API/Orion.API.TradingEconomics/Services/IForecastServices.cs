@@ -2,7 +2,7 @@
 
 using Orion.Core.TradingEconomics.Domain;
 
-namespace Orion.Services.TradingEconomics.API.Services;
+namespace Orion.API.TradingEconomics.API.Services;
 public interface IForecastServices
 {
     Task<string> GetForecasts();
