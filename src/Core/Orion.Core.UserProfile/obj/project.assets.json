@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
       "projectName": "Orion.Core.UserProfile",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
       "projectName": "Orion.Core.Order",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Order\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Order\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -51,8 +51,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj"
+            "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj"
             }
           }
         }

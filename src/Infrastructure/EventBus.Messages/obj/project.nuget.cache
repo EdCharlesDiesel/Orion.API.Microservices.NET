@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tNK1tnp2Swc=",
+  "dgSpecHash": "RncV1D+TBKM=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

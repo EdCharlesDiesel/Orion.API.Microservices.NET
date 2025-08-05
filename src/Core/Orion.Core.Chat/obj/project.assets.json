@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj",
       "projectName": "Orion.Core.Chat",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Chat\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Chat\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

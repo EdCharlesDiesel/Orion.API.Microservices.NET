@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj": {}
+    "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj": {}
   },
   "projects": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj": {
+    "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj",
+        "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj",
         "projectName": "Orion.Core.CompetitionScorecard",
-        "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj",
+        "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\obj\\",
+        "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

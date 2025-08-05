@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
       "projectName": "Orion.Core.Basket",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Basket\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Basket\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

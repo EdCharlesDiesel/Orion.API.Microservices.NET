@@ -1,4 +1,4 @@
-# Orion.API.Microservices.NET
+# Orion.Microservices.NET
 This is an API written in .NET 9.
 
 ## Services

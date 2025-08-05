@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a9GGZpUZuGw=",
+  "dgSpecHash": "2aoa0ou3/jo=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.CompetitionScorecard\\Orion.Core.CompetitionScorecard.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

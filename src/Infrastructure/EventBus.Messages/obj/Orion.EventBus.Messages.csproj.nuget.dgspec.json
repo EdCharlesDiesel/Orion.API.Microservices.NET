@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj": {}
+    "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj": {}
   },
   "projects": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj": {
+    "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj",
+        "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj",
         "projectName": "Orion.EventBus.Messages",
-        "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj",
+        "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\obj\\",
+        "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

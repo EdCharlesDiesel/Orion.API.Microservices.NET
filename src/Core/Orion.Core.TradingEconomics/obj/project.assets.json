@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
       "projectName": "Orion.Core.TradingEconomics",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

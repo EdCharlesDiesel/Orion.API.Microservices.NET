@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj": {}
+    "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj": {}
   },
   "projects": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj": {
+    "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj",
+        "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj",
         "projectName": "Orion.OcelotApiGw",
-        "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj",
+        "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\obj\\",
+        "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj": {
-                "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj"
+              "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj": {
+                "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj": {
+    "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj",
+        "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj",
         "projectName": "Orion.Common.Logging",
-        "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj",
+        "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\Common.Logging\\obj\\",
+        "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

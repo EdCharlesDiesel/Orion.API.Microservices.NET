@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B1uKJiflTLw=",
+  "dgSpecHash": "fV1LTVaj/EM=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

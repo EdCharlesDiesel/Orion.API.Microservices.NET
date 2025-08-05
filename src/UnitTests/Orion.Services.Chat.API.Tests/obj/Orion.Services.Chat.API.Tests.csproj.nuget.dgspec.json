@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\Orion.Services.Chat.API.Tests.csproj": {}
+    "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\Orion.Services.Chat.API.Tests.csproj": {}
   },
   "projects": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\Orion.Services.Chat.API.Tests.csproj": {
+    "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\Orion.Services.Chat.API.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\Orion.Services.Chat.API.Tests.csproj",
+        "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\Orion.Services.Chat.API.Tests.csproj",
         "projectName": "Orion.Services.Chat.API.Tests",
-        "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\Orion.Services.Chat.API.Tests.csproj",
+        "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\Orion.Services.Chat.API.Tests.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\obj\\",
+        "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Chat.API.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

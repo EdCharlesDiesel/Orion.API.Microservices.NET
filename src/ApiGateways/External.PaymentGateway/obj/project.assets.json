@@ -1004,11 +1004,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj",
       "projectName": "Orion.External.PaymentGateway",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1110,5 +1110,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

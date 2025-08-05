@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gjHNdkmSsfg=",
+  "dgSpecHash": "ENfxCEgwVIQ=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\elasticsearch.net\\7.8.1\\elasticsearch.net.7.8.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
@@ -110,5 +110,15 @@
     "C:\\Users\\PC\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {}
+    "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {}
   },
   "projects": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {
+    "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj",
+        "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj",
         "projectName": "Orion.Core.Discount",
-        "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj",
+        "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Discount\\obj\\",
+        "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Discount\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

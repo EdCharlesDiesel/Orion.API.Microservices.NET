@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4riqbxjd4a8=",
+  "dgSpecHash": "cJhfiHCYmbc=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
