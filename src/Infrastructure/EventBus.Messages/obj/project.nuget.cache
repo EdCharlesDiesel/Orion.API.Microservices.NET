@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dDIbJq+hrB13ZftJO95hJXlQo2woeov08coghzYMH/K/uX+lZWW8l62ziWli58Bmwsyg8mXJsWQxYYboCxEiMA==",
+  "dgSpecHash": "RncV1D+TBKM=",
   "success": true,
-  "projectFilePath": "C:\\x\\KhotsoCBookStore.Microservices.NET\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\EventBus.Messages\\Orion.EventBus.Messages.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

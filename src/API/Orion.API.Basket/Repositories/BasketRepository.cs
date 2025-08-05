@@ -1,11 +1,8 @@
-using Microsoft.AspNetCore.Http.HttpResults;
-using Orion.Core.TradingEconomics.Domain;
 using Orion.Services.Basket.API.Data;
 using Orion.Services.Basket.API.DTO;
-using Orion.Services.Basket.API.Helper;
 using Orion.Services.Basket.API.Services;
 
-namespace Orion.Services.Basket.API.Repositories;
+namespace Orion.API.Basket.Repositories;
 
 public class BasketRepository(BasketContext context) : IBasketServices
 {
@@ -20,35 +17,32 @@ public class BasketRepository(BasketContext context) : IBasketServices
         return baskets.First();
     }
 
-    public async Task<List<Core.Basket.Domain.Basket>> GetAllAsync()
+    public Task<List<Core.Basket.Domain.Basket>> GetAllAsync()
     {
         var baskets = context.Baskets.ToList();
         if (baskets == null)
             throw new ArgumentException("basket list cannot be null or empty.");
 
-        return baskets;
+        return Task.FromResult(baskets);
     }
     
 
     public async Task<Core.Basket.Domain.Basket?> GetByIdAsync(Guid id)
     {
         var baskets = context.Baskets.FindAsync(id);
-        if (baskets == null)
-            throw new ArgumentException("basket list cannot be null or empty.");
-
         return await baskets;
     }
 
-    public async Task<BasketDto> AddAsync(BasketDto basket)
+    public Task<BasketDto?> AddAsync(BasketDto basket)
     {
         if (basket == null)
             throw new ArgumentException("basket cannot be null or empty.");
         // await context.Baskets.AddAsync(basket);
         // await context.SaveChangesAsync();
-        return null;
+        return Task.FromResult<BasketDto?>(null);
     }
 
-    public async Task<BasketDto> AddAsync(Core.Basket.Domain.Basket basket)
+    public async Task<BasketDto?> AddAsync(Core.Basket.Domain.Basket basket)
     {
         if (basket == null)
             throw new ArgumentException("basket cannot be null or empty.");
@@ -73,7 +67,7 @@ public class BasketRepository(BasketContext context) : IBasketServices
         context.Baskets.Remove(basket);
     }
 
-    public async Task<List<BasketDto>> BulkCreate(List<Core.Basket.Domain.Basket> baskets)
+    public async Task<List<BasketDto>?> BulkCreate(List<Core.Basket.Domain.Basket> baskets)
     {
         await context.AddRangeAsync(baskets);
         if (baskets == null)

@@ -1,7 +1,7 @@
 using AutoMapper;
 using Orion.Services.Basket.API.DTO;
 
-namespace Orion.Services.Basket.API.Mappings;
+namespace Orion.API.Basket.Mappings;
 
 public class MappingProfile : Profile
 { public MappingProfile()

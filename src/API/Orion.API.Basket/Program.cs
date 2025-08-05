@@ -1,9 +1,9 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Orion.API.Basket.Mappings;
+using Orion.API.Basket.Repositories;
 using Orion.Services.Basket.API.Data;
-using Orion.Services.Basket.API.Mappings;
-using Orion.Services.Basket.API.Repositories;
 using Orion.Services.Basket.API.Services;
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql

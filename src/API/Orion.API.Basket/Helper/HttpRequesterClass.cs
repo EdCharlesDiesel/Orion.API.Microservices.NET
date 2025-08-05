@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace Orion.Services.Basket.API.Helper
+namespace Orion.API.Basket.Helper
 {
     public static class HttpRequesterClass
     {

@@ -1,11 +1,9 @@
 using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.Basket.API.DTO;
 using Orion.Services.Basket.API.Services;
 
-
-namespace Orion.Services.Basket.API.Controllers
+namespace Orion.API.Basket.Controllers
 { 
 [ApiController]
 [Route("api/[controller]")]
