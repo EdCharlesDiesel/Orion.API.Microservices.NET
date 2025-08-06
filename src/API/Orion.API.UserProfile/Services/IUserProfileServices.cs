@@ -1,3 +1,5 @@
+using Orion.API.TradingEconomics.API.Services;
+
 namespace Orion.API.UserProfile.API.Services;
 
 public interface IUserProfileServices:IRepository<OrionUserProfile.Domain.UserProfile>

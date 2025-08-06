@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.TradingEconomics.API.Helper;
+using Orion.Helpers;
+
 
 namespace Orion.API.TradingEconomics.API.Controllers;
 [ApiController]

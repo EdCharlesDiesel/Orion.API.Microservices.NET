@@ -1,5 +1,6 @@
 using Orion.API.UserProfile.API.Data;
 using Orion.API.UserProfile.API.Services;
+using Orion.Helpers;
 
 namespace Orion.API.UserProfile.API.Repositories;
 

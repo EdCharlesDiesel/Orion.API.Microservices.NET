@@ -1,5 +1,6 @@
 using JetBrains.Annotations;
-using Orion.Services.Basket.API.Controllers;
+using Orion.API.Basket.Controllers;
+
 using Xunit;
 
 namespace Orion.Services.Basket.API.Tests.Controllers;

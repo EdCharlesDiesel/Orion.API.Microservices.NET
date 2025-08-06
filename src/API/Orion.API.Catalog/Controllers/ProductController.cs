@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.Catalog.Services;
+using Orion.Services.Intefaces;
+
 
 namespace Orion.API.Catalog.Controllers
 {
@@ -41,11 +42,11 @@ namespace Orion.API.Catalog.Controllers
 
         /// <summary>Update a product.</summary>
         [HttpPut("{id:guid}")]
-        public async Task<IActionResult> Update(Guid id, [FromBody] Core.Catalog.Domain.Product product)
+        public async Task<IActionResult?> Update(Guid id, [FromBody] Core.Catalog.Domain.Product product)
         {
             if (id != product.Id) return BadRequest("Product ID mismatch.");
-            var result = await _service.UpdateAsync(product);
-            return Ok(result);
+          await _service.UpdateAsync(product);
+            return null;
         }
 
         /// <summary>Delete a product.</summary>

@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\API\Orion.API.Basket\Orion.API.Basket.csproj" />
     <ProjectReference Include="..\..\Services\Orion.Services.Basket\Orion.Services.Basket.API\Orion.Services.Basket.API.csproj" />
   </ItemGroup>
   

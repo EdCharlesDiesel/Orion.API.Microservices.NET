@@ -8,9 +8,11 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\src\API\Orion.API.Chat\Orion.API.Chat.csproj" />
       <ProjectReference Include="..\src\Core\Orion.Core.Basket\Orion.Core.Basket.csproj" />
       <ProjectReference Include="..\src\Core\Orion.Core.Catalog\Orion.Core.Catalog.csproj" />
       <ProjectReference Include="..\src\Core\Orion.Core.Chat\Orion.Core.Chat.csproj" />
+      <ProjectReference Include="..\src\Helpers\Orion.Helpers.csproj" />
     </ItemGroup>
 
     <ItemGroup>

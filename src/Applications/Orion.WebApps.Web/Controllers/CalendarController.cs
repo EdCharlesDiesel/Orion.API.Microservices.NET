@@ -1,8 +1,9 @@
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using Orion.API.TradingEconomics.API.Services;
 using Orion.Core.TradingEconomics.Domain;
-using Orion.Services.TradingEconomics.API.Services;
+
 using Orion.WebApps.Web.Helper;
 
 namespace Orion.WebApps.Web.Controllers;
@@ -27,7 +28,7 @@ public class CalendarController(
         {
             var events = await client.GetFromJsonAsync<List<CalendarEvent>>(_apiSettings.CalendarApiUrl);
             _calendarEvents = events ?? new List<CalendarEvent>();
-            if (events != null) await iCalendarServices.Create(events);
+            // if (events != null) await iCalendarServices.Create(events);
 
             return View(_calendarEvents);
         }

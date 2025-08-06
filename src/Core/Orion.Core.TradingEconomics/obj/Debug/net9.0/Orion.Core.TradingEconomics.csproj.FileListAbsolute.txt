@@ -22,3 +22,15 @@ C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\
 C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\refint\Orion.Core.TradingEconomics.dll
 C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\Orion.Core.TradingEconomics.pdb
 C:\x\Orion.API.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\ref\Orion.Core.TradingEconomics.dll
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\bin\Debug\net9.0\Orion.Core.TradingEconomics.deps.json
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\bin\Debug\net9.0\Orion.Core.TradingEconomics.dll
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\bin\Debug\net9.0\Orion.Core.TradingEconomics.pdb
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\Orion.Core.TradingEconomics.GeneratedMSBuildEditorConfig.editorconfig
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\Orion.Core.TradingEconomics.AssemblyInfoInputs.cache
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\Orion.Core.TradingEconomics.AssemblyInfo.cs
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\Orion.Core.TradingEconomics.csproj.CoreCompileInputs.cache
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\Orion.Core.TradingEconomics.sourcelink.json
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\Orion.Core.TradingEconomics.dll
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\refint\Orion.Core.TradingEconomics.dll
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\Orion.Core.TradingEconomics.pdb
+C:\x\Orion.Microservices.NET\src\Core\Orion.Core.TradingEconomics\obj\Debug\net9.0\ref\Orion.Core.TradingEconomics.dll

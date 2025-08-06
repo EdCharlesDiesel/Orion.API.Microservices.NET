@@ -51,6 +51,7 @@
     <ProjectReference Include="..\..\..\Core\Orion.Core.UserProfile\Orion.Core.UserProfile.csproj" />
     <ProjectReference Include="..\..\Core\Orion.Core.Order\Orion.Core.Order.csproj" />
     <ProjectReference Include="..\Orion.API.Catalog\Orion.API.Catalog.csproj" />
+    <ProjectReference Include="..\Orion.API.TradingEconomics\Orion.API.TradingEconomics.API.csproj" />
   </ItemGroup>
 
   <ItemGroup>

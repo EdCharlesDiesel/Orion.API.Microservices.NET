@@ -1,12 +1,12 @@
 using Orion.API.Order.API.Data;
 using Orion.API.Order.API.Services;
-using Orion.Services.Order.API.Services;
+
 
 namespace Orion.API.Order.API.Repositories;
 
 public class OrderRepository(OrderContext context) : IOrderServices
 {
-    public async Task<List<Core.Order.Domain.Order>> GetAllAsync()
+    public async Task<IEnumerable<Core.Order.Domain.Order>> GetAllAsync()
     {
         var orders =  context.Orders.ToList();
         if (orders == null || !orders.Any())
@@ -56,19 +56,16 @@ public class OrderRepository(OrderContext context) : IOrderServices
         return order;
     }
 
-    public async Task<Core.Order.Domain.Order> AddAsync(Core.Order.Domain.Order order)
+    public async Task AddAsync(Core.Order.Domain.Order order)
     {
         if (order == null)
             throw new ArgumentException("Order cannot be null or empty.");
 
         await context.Orders.AddAsync(order);
         await context.SaveChangesAsync();
-
-
-        return order;
     }
 
-    public async Task<Core.Order.Domain.Order> UpdateAsync(Core.Order.Domain.Order entity)
+    public async Task UpdateAsync(Core.Order.Domain.Order entity)
     {
         var order =  context.Orders.FirstOrDefault(x => x.Id == entity.Id);
         if (order == null)
@@ -76,7 +73,6 @@ public class OrderRepository(OrderContext context) : IOrderServices
 
         context.Orders.Update(order);
         await context.SaveChangesAsync();
-        return order;
     }
 
     public async Task DeleteAsync(object id)

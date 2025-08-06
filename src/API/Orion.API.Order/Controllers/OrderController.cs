@@ -28,8 +28,8 @@ namespace Orion.API.Order.API.Controllers
         public async Task<IActionResult> Create([FromQuery] Core.Order.Domain.Order order)
         {
             // var profileToDatabase = mapper.Map<Core.Order.Domain.Order>(profile);
-            var result = await service.AddAsync(order);
-            return Ok(result);
+            await service.AddAsync(order);
+            return Ok();
         }
 
         /// <summary>
@@ -40,8 +40,8 @@ namespace Orion.API.Order.API.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> UpdateOrder([FromQuery] Core.Order.Domain.Order order)
         {
-            var result = await service.UpdateAsync(order);
-            return Ok(result);
+             await service.UpdateAsync(order);
+            return Ok();
         }
 
         /// <summary>

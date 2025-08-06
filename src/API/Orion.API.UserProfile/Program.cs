@@ -5,8 +5,7 @@ using Orion.API.UserProfile.API.Data;
 using Orion.API.UserProfile.API.Mappings;
 using Orion.API.UserProfile.API.Repositories;
 using Orion.API.UserProfile.API.Services;
-using Orion.Services.UserProfile.API.Data;
-using Orion.Services.UserProfile.API.Repositories;
+
 
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql

@@ -26,7 +26,6 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="15.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-    <PackageReference Include="FastEndpoints" Version="6.2.0" />
     <PackageReference Include="FastEndpoints.MediatR" Version="2.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Negotiate" Version="9.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
@@ -49,6 +48,7 @@
     <ProjectReference Include="..\..\..\Core\Orion.Core.Order\Orion.Core.Order.csproj" />
     <ProjectReference Include="..\..\..\Core\Orion.Core.TradingEconomics\Orion.Core.TradingEconomics.csproj" />
     <ProjectReference Include="..\..\..\Core\Orion.Core.UserProfile\Orion.Core.UserProfile.csproj" />
+    <ProjectReference Include="..\..\..\Orion.Services\Orion.Services.csproj" />
     <ProjectReference Include="..\..\Core\Orion.Core.Catalog\Orion.Core.Catalog.csproj" />
   </ItemGroup>
 

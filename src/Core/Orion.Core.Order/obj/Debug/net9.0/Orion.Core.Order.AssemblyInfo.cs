@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Core.Order")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c297546f4f8da765f49a21229ced0c95bf696d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6e1f56da0e80be29b23f6bcf15ff58ab5864677")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Core.Order")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Core.Order")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
