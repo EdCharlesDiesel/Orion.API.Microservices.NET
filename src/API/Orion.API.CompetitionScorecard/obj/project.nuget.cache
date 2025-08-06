@@ -46,15 +46,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.CompetitionScorecard\\Orion.API.CompetitionScorecard.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.CompetitionScorecard\\Orion.API.CompetitionScorecard.csproj",
-      "targetGraphs": []
     }
   ]
 }
