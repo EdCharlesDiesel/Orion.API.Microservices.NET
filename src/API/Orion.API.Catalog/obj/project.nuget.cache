@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/4dUQOsL9Zs=",
+  "dgSpecHash": "5ZXwOsNF1mE=",
   "success": false,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Catalog\\Orion.API.Catalog.csproj",
   "expectedPackageFiles": [
@@ -199,6 +199,15 @@
       "targetGraphs": [
         "net9.0"
       ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Catalog\\Orion.API.Catalog.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Catalog\\Orion.API.Catalog.csproj",
+      "targetGraphs": []
     }
   ]
 }

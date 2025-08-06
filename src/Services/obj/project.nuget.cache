@@ -1,0 +1,85 @@
+{
+  "version": 2,
+  "dgSpecHash": "jOUa5/GIok0=",
+  "success": false,
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.7\\microsoft.entityframeworkcore.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.7\\microsoft.entityframeworkcore.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.7\\microsoft.entityframeworkcore.analyzers.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.7\\microsoft.extensions.caching.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.7\\microsoft.extensions.caching.memory.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.7\\microsoft.extensions.dependencyinjection.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.7\\microsoft.extensions.dependencyinjection.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.logging\\9.0.7\\microsoft.extensions.logging.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.7\\microsoft.extensions.logging.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.options\\9.0.7\\microsoft.extensions.options.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.7\\microsoft.extensions.primitives.9.0.7.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj",
+      "targetGraphs": []
+    }
+  ]
+}

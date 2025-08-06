@@ -2560,6 +2560,16 @@
           }
         }
       },
+      "Orion.Core.Basket/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Basket.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Basket.dll": {}
+        }
+      },
       "Orion.Core.Catalog/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -2568,6 +2578,32 @@
         },
         "runtime": {
           "bin/placeholder/Orion.Core.Catalog.dll": {}
+        }
+      },
+      "Orion.Core.Chat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Chat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Chat.dll": {}
+        }
+      },
+      "Orion.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Orion.Core.Basket": "1.0.0",
+          "Orion.Core.Catalog": "1.0.0",
+          "Orion.Core.Chat": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Orion.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Services.dll": {}
         }
       }
     }
@@ -8028,10 +8064,25 @@
         "yamldotnet.nuspec"
       ]
     },
+    "Orion.Core.Basket/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj"
+    },
     "Orion.Core.Catalog/1.0.0": {
       "type": "project",
       "path": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj",
       "msbuildProject": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj"
+    },
+    "Orion.Core.Chat/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj"
+    },
+    "Orion.Services/1.0.0": {
+      "type": "project",
+      "path": "../../../Orion.Services/Orion.Services.csproj",
+      "msbuildProject": "../../../Orion.Services/Orion.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8051,6 +8102,7 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
       "Orion.Core.Catalog >= 1.0.0",
+      "Orion.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -8090,6 +8142,9 @@
             },
             "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj"
+            },
+            "C:\\x\\Orion.Microservices.NET\\Orion.Services\\Orion.Services.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\Orion.Services\\Orion.Services.csproj"
             },
             "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj"
@@ -8231,6 +8286,12 @@
       "targetGraphs": [
         "net9.0"
       ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

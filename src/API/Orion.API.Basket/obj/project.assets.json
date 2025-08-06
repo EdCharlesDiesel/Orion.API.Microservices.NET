@@ -2213,6 +2213,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj": "1.0.0",
+          "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj": "1.0.0",
+          "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj": "1.0.0",
+          "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj": "1.0.0",
+          "C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Orion.Core.Basket": "1.0.0",
           "Orion.Core.Catalog": "1.0.0",
@@ -6162,8 +6167,8 @@
     },
     "Orion.Services/1.0.0": {
       "type": "project",
-      "path": "../../../Orion.Services/Orion.Services.csproj",
-      "msbuildProject": "../../../Orion.Services/Orion.Services.csproj"
+      "path": "../../Services/Orion.Services.csproj",
+      "msbuildProject": "../../Services/Orion.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6227,6 +6232,9 @@
             },
             "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj"
+            },
+            "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj"
             }
           }
         }
@@ -6361,6 +6369,51 @@
       "level": "Error",
       "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj'. Check that the project reference is valid and that the project file exists.",
       "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj",
       "targetGraphs": [
         "net9.0"
       ]

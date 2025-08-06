@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Orion.API.TradingEconomics.API.Services;
 using Orion.Core.TradingEconomics.Domain;
-
 using Orion.WebApps.Web.Helper;
 
 namespace Orion.WebApps.Web.Controllers;

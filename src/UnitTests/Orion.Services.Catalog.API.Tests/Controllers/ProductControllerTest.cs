@@ -4,8 +4,7 @@ using JetBrains.Annotations;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Orion.API.Catalog.Controllers;
-using Orion.Services.Catalog.API.Controllers;
-using Orion.Services.Catalog.API.Services;
+
 using Orion.Services.Intefaces;
 using Xunit;
 

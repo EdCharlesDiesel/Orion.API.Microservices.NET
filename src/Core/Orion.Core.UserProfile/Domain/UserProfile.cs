@@ -4,17 +4,17 @@ namespace OrionUserProfile.Domain;
 
 public class UserProfile: Entity
 {
-    public string? FirstName { get; set; } = null;
-    public string? Surname  { get; set; } 
-    // public int IdNumber  { get; set; } 
-    public string? EmailAddress  { get; set; } 
-    public string? Password  { get; set; } 
-    // public string? Birthday  { get; set; } 
-    // public string? Role  { get; set; } 
-    // public string? Subscription  { get; set; } 
-    // public string? UserTypeId  { get; set; } 
-    // public string? IsLoggedIn  { get; set; } 
-    // public string? Nickname  { get; set; } 
-    // public Guid? Code  { get; set; } = Guid.NewGuid();
-    // public string? Image  { get; set; } 
+    public string Username { get; set; } = default!;
+    public string Email { get; set; } = default!;
+    public string PasswordHash { get; set; } = default!;
+    public string Role { get; set; } = "User";
+    public string? FirstName { get; set; } = default!;
+    public string? LastName { get; set; } = default!;
+    public DateTime? DateOfBirth { get; set; } = default!;
+    public string? Subscription  { get; set; }  = default!;
+    public string? UserTypeId  { get; set; }  = default!;
+    public string? IsLoggedIn  { get; set; }  = default!;
+    public string? Nickname  { get; set; }  = default!;
+    public Guid? Code  { get; set; } = Guid.NewGuid();
+    public string? Image  { get; set; }  = default!;
 }

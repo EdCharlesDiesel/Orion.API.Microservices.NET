@@ -1,8 +1,9 @@
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using Orion.Services.StockAnalyzer.API.Controllers;
-using Orion.Services.TradingEconomics.API.Services;
+using Orion.API.TradingEconomics.API.Controllers;
+using Orion.API.TradingEconomics.API.Services;
+
 using Xunit;
 
 namespace Orion.Services.TradingEconomics.API.Tests.Controllers;

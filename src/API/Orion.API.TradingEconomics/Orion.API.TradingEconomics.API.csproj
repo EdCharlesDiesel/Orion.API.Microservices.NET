@@ -45,7 +45,9 @@
   </ItemGroup>
 
   <ItemGroup>
+
     <ProjectReference Include="..\..\Core\Orion.Core.TradingEconomics\Orion.Core.TradingEconomics.csproj" />
+
     <ProjectReference Include="..\..\Helpers\Orion.Helpers.csproj" />
   </ItemGroup>
 

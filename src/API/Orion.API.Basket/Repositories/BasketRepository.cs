@@ -52,12 +52,13 @@ public class BasketRepository(BasketContext context) : IBasketServices
         return null;
     }
 
-    public async Task UpdateAsync(Core.Basket.Domain.Basket basket)
+    public async Task<Core.Basket.Domain.Basket> UpdateAsync(Core.Basket.Domain.Basket basket)
     {
         if (basket == null)
             throw new ArgumentException("basket cannot be null or empty.");
         context.Baskets.Update(basket);
         await context.SaveChangesAsync();
+        return basket;
     }
 
     public async Task DeleteAsync(Guid id)

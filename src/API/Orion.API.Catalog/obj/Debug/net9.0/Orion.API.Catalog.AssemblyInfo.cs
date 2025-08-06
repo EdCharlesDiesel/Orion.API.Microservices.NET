@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.API.Catalog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6e1f56da0e80be29b23f6bcf15ff58ab5864677")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4978ee45b5ecfee7b781c0a75baecd96673dca12")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.API.Catalog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.API.Catalog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

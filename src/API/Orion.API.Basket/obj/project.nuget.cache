@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZcP3Tfe44wM=",
+  "dgSpecHash": "b3YdtK1y8aE=",
   "success": false,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
   "expectedPackageFiles": [
@@ -161,6 +161,61 @@
       "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
       "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
       "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj",
       "targetGraphs": [
         "net9.0"
       ]

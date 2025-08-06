@@ -28,16 +28,13 @@
       ]
     },
     {
-      "code": "NU1903",
+      "code": "NU1900",
       "level": "Warning",
-      "message": "Package 'Npgsql' 7.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
       "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Discount\\Orion.API.Discount.csproj",
       "warningLevel": 1,
       "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Discount\\Orion.API.Discount.csproj",
-      "libraryId": "Npgsql",
-      "targetGraphs": [
-        "net9.0"
-      ]
+      "targetGraphs": []
     }
   ]
 }

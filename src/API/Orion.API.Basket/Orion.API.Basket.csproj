@@ -51,6 +51,7 @@
     <ProjectReference Include="..\..\..\Core\Orion.Core.UserProfile\Orion.Core.UserProfile.csproj" />
     <ProjectReference Include="..\..\..\Orion.Services\Orion.Services.csproj" />
     <ProjectReference Include="..\..\Core\Orion.Core.Basket\Orion.Core.Basket.csproj" />
+    <ProjectReference Include="..\..\Services\Orion.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

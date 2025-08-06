@@ -479,3 +479,17 @@ C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.TradingEconomics.API.pdb
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Services.TradingEconomics.API.xml
 C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.Web\bin\Debug\net9.0\Orion.Core.TradingEconomics.pdb
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.dll
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\refint\Orion.WebApps.Web.dll
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.pdb
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.csproj.AssemblyReference.cache
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.AssemblyInfoInputs.cache
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.AssemblyInfo.cs
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.csproj.CoreCompileInputs.cache
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.RazorAssemblyInfo.cache
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.RazorAssemblyInfo.cs
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\obj\Debug\net9.0\Orion.WebApps.Web.sourcelink.json

@@ -5001,6 +5001,16 @@
           "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
         }
       },
+      "Orion.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Helpers.dll": {}
+        }
+      },
       "Orion.Services.TradingEconomics.API/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -5014,6 +5024,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Orion.Helpers": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
@@ -14302,6 +14313,11 @@
       "path": "../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj",
       "msbuildProject": "../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj"
     },
+    "Orion.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../../Helpers/Orion.Helpers.csproj",
+      "msbuildProject": "../../Helpers/Orion.Helpers.csproj"
+    },
     "Orion.Services.TradingEconomics.API/1.0.0": {
       "type": "project",
       "path": "../../API/Orion.API.TradingEconomics/Orion.API.TradingEconomics.API.csproj",
@@ -14310,8 +14326,6 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj",
-      "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 9.0.7",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.7",
       "Microsoft.AspNetCore.Identity.UI >= 9.0.7",
@@ -14355,12 +14369,6 @@
             },
             "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj"
             }
           }
         }
@@ -14453,22 +14461,10 @@
       ]
     },
     {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }
