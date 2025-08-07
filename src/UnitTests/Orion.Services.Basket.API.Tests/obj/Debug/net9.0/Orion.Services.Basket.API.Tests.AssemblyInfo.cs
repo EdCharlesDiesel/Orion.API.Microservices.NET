@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Services.Basket.API.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44483bc6d9c9740c862cc512e8b091fff27a2cc9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41d6f1b0c896b8f3918bd70e07e5d945b0abe68c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Services.Basket.API.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Services.Basket.API.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

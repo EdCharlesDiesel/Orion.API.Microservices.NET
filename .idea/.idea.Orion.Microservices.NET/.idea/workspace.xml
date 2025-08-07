@@ -37,6 +37,7 @@
     <projectFile profileName="IIS Express">src/Applications/Orion.WebApps.StockAnalyzer.Web/Orion.WebApps.StockAnalyzer.Web.csproj</projectFile>
     <projectFile profileName="Orion.StockAnalyzer.Web">src/Applications/Orion.WebApps.StockAnalyzer.Web/Orion.WebApps.StockAnalyzer.Web.csproj</projectFile>
     <projectFile kind="Docker">src/Applications/Orion.WebApps.Web/Orion.WebApps.Web.csproj</projectFile>
+    <projectFile>src/Helpers/Orion.Helpers.csproj</projectFile>
     <projectFile kind="Docker">src/Services/Catalog/Catalog.API/Orion.Services.Catalog.API.csproj</projectFile>
     <projectFile profileName="Catalog.API">src/Services/Catalog/Catalog.API/Orion.Services.Catalog.API.csproj</projectFile>
     <projectFile profileName="IIS Express">src/Services/Catalog/Catalog.API/Orion.Services.Catalog.API.csproj</projectFile>
@@ -3172,14 +3173,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/Controllers/CalendarController.cs</url>
           <line>27</line>
-          <properties documentPath="C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\Controllers\CalendarController.cs" containingFunctionPresentation="Method 'Index'">
-            <startOffsets>
-              <option value="746" />
-            </startOffsets>
-            <endOffsets>
-              <option value="839" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\Controllers\CalendarController.cs" containingFunctionPresentation="Method 'Index'" />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
