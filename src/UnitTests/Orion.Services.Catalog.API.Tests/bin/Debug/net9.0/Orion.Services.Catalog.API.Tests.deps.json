@@ -17,7 +17,7 @@
           "coverlet.collector": "6.0.0",
           "xunit": "2.5.0",
           "xunit.runner.visualstudio": "2.5.0",
-          "Orion.Services.Catalog.API": "1.0.0.0"
+          "Orion.API.Catalog": "1.0.0.0"
         },
         "runtime": {
           "Orion.Services.Catalog.API.Tests.dll": {}
@@ -95,33 +95,30 @@
         }
       },
       "coverlet.collector/6.0.0": {},
-      "FastEndpoints/6.2.0": {
+      "FastEndpoints/5.29.0": {
         "dependencies": {
-          "FastEndpoints.Attributes": "6.2.0",
-          "FastEndpoints.Messaging.Core": "6.2.0",
-          "FluentValidation": "12.0.0"
+          "FastEndpoints.Attributes": "5.29.0",
+          "FastEndpoints.Messaging.Core": "5.29.0",
+          "FluentValidation": "11.9.2"
         },
         "runtime": {
-          "lib/net9.0/FastEndpoints.dll": {
-            "assemblyVersion": "6.2.0.0",
-            "fileVersion": "6.2.0.0"
+          "lib/net8.0/FastEndpoints.dll": {
+            "assemblyVersion": "5.29.0.0",
+            "fileVersion": "5.29.0.0"
           }
         }
       },
-      "FastEndpoints.Attributes/6.2.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "9.0.7"
-        },
+      "FastEndpoints.Attributes/5.29.0": {
         "runtime": {
           "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
-            "assemblyVersion": "6.2.0.0",
-            "fileVersion": "6.2.0.0"
+            "assemblyVersion": "5.29.0.0",
+            "fileVersion": "5.29.0.0"
           }
         }
       },
       "FastEndpoints.MediatR/2.0.6": {
         "dependencies": {
-          "FastEndpoints": "6.2.0",
+          "FastEndpoints": "5.29.0",
           "FastEndpoints.Swagger": "5.29.0",
           "MediatR": "12.4.1"
         },
@@ -132,17 +129,17 @@
           }
         }
       },
-      "FastEndpoints.Messaging.Core/6.2.0": {
+      "FastEndpoints.Messaging.Core/5.29.0": {
         "runtime": {
           "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
-            "assemblyVersion": "6.2.0.0",
-            "fileVersion": "6.2.0.0"
+            "assemblyVersion": "5.29.0.0",
+            "fileVersion": "5.29.0.0"
           }
         }
       },
       "FastEndpoints.Swagger/5.29.0": {
         "dependencies": {
-          "FastEndpoints": "6.2.0",
+          "FastEndpoints": "5.29.0",
           "NSwag.AspNetCore": "14.1.0"
         },
         "runtime": {
@@ -160,11 +157,11 @@
           }
         }
       },
-      "FluentValidation/12.0.0": {
+      "FluentValidation/11.9.2": {
         "runtime": {
           "lib/net8.0/FluentValidation.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.0.0"
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.9.2.0"
           }
         }
       },
@@ -2155,44 +2152,9 @@
           }
         }
       },
-      "Orion.Core.Basket/1.0.0": {
-        "runtime": {
-          "Orion.Core.Basket.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Orion.Core.Catalog/1.0.0": {
         "runtime": {
           "Orion.Core.Catalog.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.Order/1.0.0": {
-        "dependencies": {
-          "Orion.Core.Catalog": "1.0.0"
-        },
-        "runtime": {
-          "Orion.Core.Order.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.TradingEconomics/1.0.0": {
-        "runtime": {
-          "Orion.Core.TradingEconomics.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.UserProfile/1.0.0": {
-        "runtime": {
-          "Orion.Core.UserProfile.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -2202,29 +2164,25 @@
         "dependencies": {
           "AutoMapper": "15.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "FastEndpoints": "6.2.0",
           "FastEndpoints.MediatR": "2.0.6",
           "Microsoft.AspNetCore.Authentication.Negotiate": "9.0.7",
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
-          "Orion.Core.Basket": "1.0.0",
-          "Orion.Core.Order": "1.0.0",
-          "Orion.Core.TradingEconomics": "1.0.0",
-          "Orion.Core.UserProfile": "1.0.0",
+          "Orion.Core.Catalog": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
-          "Orion.Services.Catalog.API.dll": {
+          "Orion.API.Catalog.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "Orion.Services.Catalog.API/1.0.0.0": {
+      "Orion.API.Catalog/1.0.0.0": {
         "runtime": {
-          "Orion.Services.Catalog.API.dll": {
+          "Orion.API.Catalog.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -2280,19 +2238,19 @@
       "path": "coverlet.collector/6.0.0",
       "hashPath": "coverlet.collector.6.0.0.nupkg.sha512"
     },
-    "FastEndpoints/6.2.0": {
+    "FastEndpoints/5.29.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KhWPR4sGhuj6/qBksmAIR60zQtVDYMR/HWSKqtZhDUN/gnhJpq9/9nCpKw7Cssq8rbw68AmVBFzLKWsfAe4dZQ==",
-      "path": "fastendpoints/6.2.0",
-      "hashPath": "fastendpoints.6.2.0.nupkg.sha512"
+      "sha512": "sha512-WVWSX5NiUWcffbfqmCYnoek6cP/SV27zwL7IKktLFIOj3or3ibdZMx7iC0iazbhxhZi8RZw266pChrItUruPMA==",
+      "path": "fastendpoints/5.29.0",
+      "hashPath": "fastendpoints.5.29.0.nupkg.sha512"
     },
-    "FastEndpoints.Attributes/6.2.0": {
+    "FastEndpoints.Attributes/5.29.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Z2tWmd7tA8cVuHl6WsHZVIhdI2Dy++SddEgswoefpoZjOFMtkORKIOYpGec/MyaMqQpCRm/zgWfXjFvZrm/Oag==",
-      "path": "fastendpoints.attributes/6.2.0",
-      "hashPath": "fastendpoints.attributes.6.2.0.nupkg.sha512"
+      "sha512": "sha512-7OKv+/qk1/rgeyI8RdW5NvUc3p1n90NnekRRDBmWU6r/5MVacchte/jGBEXxqmKyjBASEdD7eBN5Tr07MhancA==",
+      "path": "fastendpoints.attributes/5.29.0",
+      "hashPath": "fastendpoints.attributes.5.29.0.nupkg.sha512"
     },
     "FastEndpoints.MediatR/2.0.6": {
       "type": "package",
@@ -2301,12 +2259,12 @@
       "path": "fastendpoints.mediatr/2.0.6",
       "hashPath": "fastendpoints.mediatr.2.0.6.nupkg.sha512"
     },
-    "FastEndpoints.Messaging.Core/6.2.0": {
+    "FastEndpoints.Messaging.Core/5.29.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ycdbVd1IedyVFUpthcVa6NEJ4J1/JjEFHdfVEsBtO4Qts5IBQuqcirbyx7GoogCwqrgQapru5sZ/9Dns/cLPkA==",
-      "path": "fastendpoints.messaging.core/6.2.0",
-      "hashPath": "fastendpoints.messaging.core.6.2.0.nupkg.sha512"
+      "sha512": "sha512-I+oKbh4yYO4b31kP/9DM6yDX9aX+RDPqewuN6uloeoG2lIB7dpp7qCiojbKfueX7iJz5fksRtK7FFlF/2BlYfA==",
+      "path": "fastendpoints.messaging.core/5.29.0",
+      "hashPath": "fastendpoints.messaging.core.5.29.0.nupkg.sha512"
     },
     "FastEndpoints.Swagger/5.29.0": {
       "type": "package",
@@ -2322,12 +2280,12 @@
       "path": "fluentassertions/8.5.0",
       "hashPath": "fluentassertions.8.5.0.nupkg.sha512"
     },
-    "FluentValidation/12.0.0": {
+    "FluentValidation/11.9.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
-      "path": "fluentvalidation/12.0.0",
-      "hashPath": "fluentvalidation.12.0.0.nupkg.sha512"
+      "sha512": "sha512-XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg==",
+      "path": "fluentvalidation/11.9.2",
+      "hashPath": "fluentvalidation.11.9.2.nupkg.sha512"
     },
     "JetBrains.Annotations/2025.1.0-eap1": {
       "type": "package",
@@ -3645,27 +3603,7 @@
       "path": "yamldotnet/15.1.4",
       "hashPath": "yamldotnet.15.1.4.nupkg.sha512"
     },
-    "Orion.Core.Basket/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Orion.Core.Catalog/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.Order/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.TradingEconomics/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.UserProfile/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3675,7 +3613,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Orion.Services.Catalog.API/1.0.0.0": {
+    "Orion.API.Catalog/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -1,7 +1,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Orion.Services.Intefaces;
+using Orion.API.Basket.Services;
 
 
 namespace Orion.API.Basket.Controllers

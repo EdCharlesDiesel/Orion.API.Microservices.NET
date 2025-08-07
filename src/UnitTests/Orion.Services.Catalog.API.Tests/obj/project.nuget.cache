@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "pUmXo0SOjzY=",
-  "success": false,
+  "dgSpecHash": "a8Rp5VyyEbg=",
+  "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\15.0.1\\automapper.15.0.1.nupkg.sha512",
@@ -218,125 +218,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.Catalog\\Orion.Services.Catalog.API\\Orion.Services.Catalog.API.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.Catalog\\Orion.Services.Catalog.API\\Orion.Services.Catalog.API.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.Catalog.API.Tests\\Orion.Services.Catalog.API.Tests.csproj",
-      "targetGraphs": []
     }
   ]
 }

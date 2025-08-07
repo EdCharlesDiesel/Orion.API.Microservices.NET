@@ -1,7 +1,7 @@
+using Orion.API.Basket.Services;
 using Orion.Services;
 using Orion.Services.Basket.API.Data;
 using Orion.Services.Basket.API.DTO;
-using Orion.Services.Intefaces;
 
 namespace Orion.API.Basket.Repositories;
 

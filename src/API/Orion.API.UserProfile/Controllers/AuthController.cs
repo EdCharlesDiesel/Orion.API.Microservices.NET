@@ -9,10 +9,10 @@ namespace Orion.API.UserProfile.API.Controllers;
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
-    private readonly UserDbContext _context;
+    private readonly UserProfileContext _context;
     private readonly JwtService _jwtService;
 
-    public AuthController(UserDbContext context, JwtService jwtService)
+    public AuthController(UserProfileContext context, JwtService jwtService)
     {
         _context = context;
         _jwtService = jwtService;
@@ -21,7 +21,7 @@ public class AuthController : ControllerBase
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterUserRequest request)
     {
-        if (_context.Users.Any(u => u.Username == request.Username))
+        if (_context.UserProfiles.Any(u => u.Username == request.Username))
             return BadRequest("Username already exists.");
 
         var user = new OrionUserProfile.Domain.UserProfile
@@ -29,11 +29,11 @@ public class AuthController : ControllerBase
             Id = Guid.NewGuid(),
             Username = request.Username,
             Email = request.Email,
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
+            // PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
             Role = request.Role
         };
 
-        _context.Users.Add(user);
+        _context.UserProfiles.Add(user);
         await _context.SaveChangesAsync();
 
         return Ok("User registered successfully.");
@@ -42,9 +42,11 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public IActionResult Login(LoginRequest request)
     {
-        var user = _context.Users.SingleOrDefault(u => u.Username == request.Username);
-        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
-            return Unauthorized("Invalid credentials.");
+        var user = _context.UserProfiles.SingleOrDefault(u => u.Username == request.Username);
+        
+        //TODO: We need to fix this piece of code and 
+        // if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
+        //     return Unauthorized("Invalid credentials.");
 
         var token = _jwtService.GenerateToken(user);
         return Ok(new { token });

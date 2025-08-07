@@ -272,12 +272,6 @@
               },
               "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
                 "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
-              },
-              "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj": {
-                "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj"
-              },
-              "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj": {
-                "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj"
               }
             }
           }

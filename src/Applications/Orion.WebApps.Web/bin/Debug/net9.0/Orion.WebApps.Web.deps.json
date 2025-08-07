@@ -17,7 +17,9 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "9.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
-          "Orion.Services.TradingEconomics.API": "1.0.0"
+          "Orion.Core.TradingEconomics": "1.0.0",
+          "Orion.Services.TradingEconomics.API": "1.0.0",
+          "Orion.API.TradingEconomics.API": "1.0.0.0"
         },
         "runtime": {
           "Orion.WebApps.Web.dll": {}
@@ -3408,6 +3410,44 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Orion.Helpers/1.0.0": {
+        "runtime": {
+          "Orion.Helpers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Services.TradingEconomics.API/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "15.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "FastEndpoints": "6.2.0",
+          "FastEndpoints.MediatR": "2.0.6",
+          "Microsoft.AspNetCore.Authentication.Negotiate": "9.0.7",
+          "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Orion.Core.TradingEconomics": "1.0.0",
+          "Orion.Helpers": "1.0.0",
+          "Swashbuckle.AspNetCore": "6.5.0"
+        },
+        "runtime": {
+          "Orion.API.TradingEconomics.API.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.API.TradingEconomics.API/1.0.0.0": {
+        "runtime": {
+          "Orion.API.TradingEconomics.API.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -5351,6 +5391,21 @@
     },
     "Orion.Core.TradingEconomics/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Helpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Services.TradingEconomics.API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.API.TradingEconomics.API/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

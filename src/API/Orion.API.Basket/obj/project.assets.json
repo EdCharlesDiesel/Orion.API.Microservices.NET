@@ -2188,47 +2188,6 @@
         "runtime": {
           "bin/placeholder/Orion.Core.Basket.dll": {}
         }
-      },
-      "Orion.Core.Catalog/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Core.Catalog.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.Catalog.dll": {}
-        }
-      },
-      "Orion.Core.Chat/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Core.Chat.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.Chat.dll": {}
-        }
-      },
-      "Orion.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj": "1.0.0",
-          "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj": "1.0.0",
-          "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj": "1.0.0",
-          "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj": "1.0.0",
-          "C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.7",
-          "Orion.Core.Basket": "1.0.0",
-          "Orion.Core.Catalog": "1.0.0",
-          "Orion.Core.Chat": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Orion.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Services.dll": {}
-        }
       }
     }
   },
@@ -6154,30 +6113,12 @@
       "type": "project",
       "path": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj",
       "msbuildProject": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj"
-    },
-    "Orion.Core.Catalog/1.0.0": {
-      "type": "project",
-      "path": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj",
-      "msbuildProject": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj"
-    },
-    "Orion.Core.Chat/1.0.0": {
-      "type": "project",
-      "path": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj",
-      "msbuildProject": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj"
-    },
-    "Orion.Services/1.0.0": {
-      "type": "project",
-      "path": "../../Services/Orion.Services.csproj",
-      "msbuildProject": "../../Services/Orion.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "AutoMapper >= 15.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-      "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
-      "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
-      "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
       "FastEndpoints >= 6.2.0",
       "FastEndpoints.MediatR >= 2.0.6",
       "Microsoft.AspNetCore.Authentication.Negotiate >= 9.0.7",
@@ -6189,7 +6130,6 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
       "Orion.Core.Basket >= 1.0.0",
-      "Orion.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -6218,23 +6158,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\Orion.Services\\Orion.Services.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\Orion.Services\\Orion.Services.csproj"
-            },
             "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.csproj"
             }
           }
         }
@@ -6345,84 +6270,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Catalog\\Orion.Core.Catalog.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\src\\Helpers\\Orion.Helpers.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

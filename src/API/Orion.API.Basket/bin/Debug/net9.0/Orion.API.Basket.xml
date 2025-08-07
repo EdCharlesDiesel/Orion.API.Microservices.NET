@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Orion.API.Basket</name>
+    </assembly>
+    <members>
+        <member name="T:Orion.Services.Basket.API.Data.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.Basket.API.Data.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.Basket.API.Data.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.Basket.API.Data.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.API.Basket.Controllers.BasketController.GetAllBaskets">
+            <summary>
+            Get all baskets.
+            </summary>
+        </member>
+        <member name="M:Orion.API.Basket.Controllers.BasketController.GetBasketById(System.Guid)">
+            <summary>
+            Get a basket by ID.
+            </summary>
+        </member>
+        <member name="M:Orion.API.Basket.Controllers.BasketController.CreateBasket(Orion.Core.Basket.Domain.Basket)">
+            <summary>
+            Create a new basket.
+            </summary>
+        </member>
+        <member name="M:Orion.API.Basket.Controllers.BasketController.UpdateBasket(System.Guid,Orion.Core.Basket.Domain.Basket)">
+            <summary>
+            Update an existing basket.
+            </summary>
+        </member>
+        <member name="M:Orion.API.Basket.Controllers.BasketController.PatchBasket(System.Guid,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Orion.Core.Basket.Domain.Basket})">
+            <summary>
+            Partially update a basket (e.g. patch one or two fields).
+            </summary>
+        </member>
+        <member name="M:Orion.API.Basket.Controllers.BasketController.DeleteBasket(System.Guid)">
+            <summary>
+            Delete a basket by ID.
+            </summary>
+        </member>
+    </members>
+</doc>

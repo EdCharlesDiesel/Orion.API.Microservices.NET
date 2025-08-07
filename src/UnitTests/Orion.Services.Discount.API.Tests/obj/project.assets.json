@@ -2453,7 +2453,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": "1.0.0",
           "Dapper": "2.1.66",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql": "7.0.4",
@@ -7551,8 +7550,6 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "C:\\x\\Orion.Microservices.NET\\src\\Services\\Discount\\Discount.API\\Orion.Services.Discount.API.csproj",
-      "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.Discount\\Orion.Services.Discount.API\\Orion.Services.Discount.API.csproj",
       "Microsoft.AspNetCore.Mvc.Core >= 2.3.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "Moq >= 4.20.69",
@@ -7593,12 +7590,6 @@
             },
             "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Services\\Discount\\Discount.API\\Orion.Services.Discount.API.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Discount\\Discount.API\\Orion.Services.Discount.API.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.Discount\\Orion.Services.Discount.API\\Orion.Services.Discount.API.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.Discount\\Orion.Services.Discount.API\\Orion.Services.Discount.API.csproj"
             }
           }
         }
@@ -7667,40 +7658,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\Services\\Discount\\Discount.API\\Orion.Services.Discount.API.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Discount\\Discount.API\\Orion.Services.Discount.API.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.Discount\\Orion.Services.Discount.API\\Orion.Services.Discount.API.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.Discount\\Orion.Services.Discount.API\\Orion.Services.Discount.API.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  }
 }

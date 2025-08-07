@@ -26,8 +26,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\API\Orion.API.Discount\Orion.API.Discount.csproj" />
     <ProjectReference Include="..\..\Core\Orion.Core.Discount\Orion.Core.Discount.csproj" />
-    <ProjectReference Include="..\..\Services\Discount\Discount.API\Orion.Services.Discount.API.csproj" />
-    <ProjectReference Include="..\..\Services\Orion.Services.Discount\Orion.Services.Discount.API\Orion.Services.Discount.API.csproj" />
   </ItemGroup>
 
 </Project>

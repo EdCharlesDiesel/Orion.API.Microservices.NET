@@ -26,10 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Orion.Services\Orion.Services.csproj" />
     <ProjectReference Include="..\..\API\Orion.API.Catalog\Orion.API.Catalog.csproj" />
-    <ProjectReference Include="..\..\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\Orion.Services.Catalog.API.csproj" />
-    <ProjectReference Include="..\..\Services\Orion.Services.csproj" />
   </ItemGroup>
 
 </Project>

@@ -13,7 +13,7 @@
           "Orion.Services.TradingEconomics.API": "1.0.0",
           "xunit": "2.4.2",
           "xunit.runner.visualstudio": "2.4.5",
-          "Orion.Services.Basket.API": "1.0.0.0"
+          "Orion.API.Basket": "1.0.0.0"
         },
         "runtime": {
           "Orion.Services.Basket.API.Tests.dll": {}
@@ -1946,22 +1946,6 @@
           }
         }
       },
-      "Orion.Core.TradingEconomics/1.0.0": {
-        "runtime": {
-          "Orion.Core.TradingEconomics.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.UserProfile/1.0.0": {
-        "runtime": {
-          "Orion.Core.UserProfile.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Orion.Services.TradingEconomics.API/1.0.0": {
         "dependencies": {
           "AutoMapper": "15.0.1",
@@ -1975,20 +1959,18 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Orion.Core.Basket": "1.0.0",
-          "Orion.Core.TradingEconomics": "1.0.0",
-          "Orion.Core.UserProfile": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
-          "Orion.Services.Basket.API.dll": {
+          "Orion.API.Basket.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "Orion.Services.Basket.API/1.0.0.0": {
+      "Orion.API.Basket/1.0.0.0": {
         "runtime": {
-          "Orion.Services.Basket.API.dll": {
+          "Orion.API.Basket.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -3232,22 +3214,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Orion.Core.TradingEconomics/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.UserProfile/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Orion.Services.TradingEconomics.API/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Orion.Services.Basket.API/1.0.0.0": {
+    "Orion.API.Basket/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -10,9 +10,9 @@ namespace Orion.API.UserProfile.API.Controllers;
 [Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    private readonly UserDbContext _context;
+    private readonly UserProfileContext _context;
 
-    public UserController(UserDbContext context)
+    public UserController(UserProfileContext context)
     {
         _context = context;
     }
@@ -24,7 +24,7 @@ public class UserController : ControllerBase
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
         if (userId == null) return Unauthorized();
 
-        var user = _context.Users.Find(Guid.Parse(userId));
+        var user = _context.UserProfiles.Find(Guid.Parse(userId));
         if (user == null) return NotFound();
 
         return Ok(new
@@ -43,6 +43,6 @@ public class UserController : ControllerBase
     [HttpGet("all")]
     public IActionResult GetAllUsers()
     {
-        return Ok(_context.Users.ToList());
+        return Ok(_context.UserProfiles.ToList());
     }
 }

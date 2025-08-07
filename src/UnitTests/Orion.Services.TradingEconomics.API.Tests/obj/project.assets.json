@@ -10757,8 +10757,6 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj",
-      "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj",
       "JetBrains.Annotations >= 2025.1.0-eap1",
       "Microsoft.AspNetCore.Mvc.Core >= 2.3.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
@@ -10801,12 +10799,6 @@
             },
             "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj"
             }
           }
         }
@@ -10894,30 +10886,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Orion.Services.TradingEconomics\\Orion.Services.TradingEconomics.API\\Orion.Services.TradingEconomics.API.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.TradingEconomics.API.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }
