@@ -18,7 +18,8 @@
           "coverlet.collector": "3.2.0",
           "xunit": "2.4.2",
           "xunit.runner.visualstudio": "2.4.5",
-          "Orion.API.TradingEconomics.API": "1.0.0.0"
+          "Orion.API.TradingEconomics": "1.0.0.0",
+          "Orion.Repository": "1.0.0.0"
         },
         "runtime": {
           "Orion.Services.TradingEconomics.API.Tests.dll": {}
@@ -2206,9 +2207,68 @@
           }
         }
       },
+      "Orion.Core.Basket/1.0.0": {
+        "runtime": {
+          "Orion.Core.Basket.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Core.Catalog/1.0.0": {
+        "runtime": {
+          "Orion.Core.Catalog.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Core.Chat/1.0.0": {
+        "runtime": {
+          "Orion.Core.Chat.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Core.CompetitionScorecard/1.0.0": {
+        "runtime": {
+          "Orion.Core.CompetitionScorecard.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Core.Discount/1.0.0": {
+        "runtime": {
+          "Orion.Core.Discount.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Core.Orders/1.0.0": {
+        "dependencies": {
+          "Orion.Core.Catalog": "1.0.0"
+        },
+        "runtime": {
+          "Orion.Core.Orders.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Orion.Core.TradingEconomics/1.0.0": {
         "runtime": {
           "Orion.Core.TradingEconomics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Core.UserProfile/1.0.0": {
+        "runtime": {
+          "Orion.Core.UserProfile.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -2233,20 +2293,35 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Orion.Core.Basket": "1.0.0",
+          "Orion.Core.Catalog": "1.0.0",
+          "Orion.Core.Chat": "1.0.0",
+          "Orion.Core.CompetitionScorecard": "1.0.0",
+          "Orion.Core.Discount": "1.0.0",
+          "Orion.Core.Orders": "1.0.0",
           "Orion.Core.TradingEconomics": "1.0.0",
+          "Orion.Core.UserProfile": "1.0.0",
           "Orion.Helpers": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
-          "Orion.API.TradingEconomics.API.dll": {
+          "Orion.Repository.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "Orion.API.TradingEconomics.API/1.0.0.0": {
+      "Orion.API.TradingEconomics/1.0.0.0": {
         "runtime": {
-          "Orion.API.TradingEconomics.API.dll": {
+          "Orion.API.TradingEconomics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Repository/1.0.0.0": {
+        "runtime": {
+          "Orion.Repository.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -3702,7 +3777,42 @@
       "path": "yamldotnet/15.1.4",
       "hashPath": "yamldotnet.15.1.4.nupkg.sha512"
     },
+    "Orion.Core.Basket/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Core.Catalog/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Core.Chat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Core.CompetitionScorecard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Core.Discount/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Core.Orders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Orion.Core.TradingEconomics/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Core.UserProfile/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3717,7 +3827,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Orion.API.TradingEconomics.API/1.0.0.0": {
+    "Orion.API.TradingEconomics/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Repository/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

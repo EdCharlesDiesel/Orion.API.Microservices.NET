@@ -1,29 +1,22 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.TradingEconomics.API.Services;
 using Orion.Core.TradingEconomics.Domain;
+using Orion.Repository.Services.TradingEconomics;
 
-namespace Orion.API.TradingEconomics.API.Controllers;
+namespace Orion.API.TradingEconomics.Controllers;
 
 
     [ApiController]
     [Route("api/[controller]")]
-    public class ForecastController : ControllerBase
+    public class ForecastController(IForecastServices service) : ControllerBase
     {
-        private readonly IForecastServices _service;
-
-        public ForecastController(IForecastServices service)
-        {
-            _service = service;
-        }
-
         /// <summary>
         /// Get all comtrade categories
         /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetAllForecasts()
         {
-            var result = await _service.GetForecasts();
+            var result = await service.GetForecasts();
 
             List<Forecast>? forecasts;
             try
@@ -41,7 +34,7 @@ namespace Orion.API.TradingEconomics.API.Controllers;
                 return BadRequest($"JSON deserialization error: {ex.Message}");
             }
 
-            await _service.Create(forecasts);
+            await service.Create(forecasts);
 
             return Ok(result);
         }
@@ -50,7 +43,7 @@ namespace Orion.API.TradingEconomics.API.Controllers;
         [HttpGet("daterange")]
         public async Task<IActionResult> GetEventsByDate([FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
         {
-            var result = await _service.GetForecastsByDate(startDate, endDate);
+            var result = await service.GetForecastsByDate(startDate, endDate);
             return Ok(result);
         }
 
@@ -58,7 +51,7 @@ namespace Orion.API.TradingEconomics.API.Controllers;
         [HttpGet("countries")]
         public async Task<IActionResult> GetEventsByCountries([FromQuery] string[] names)
         {
-            var result = await _service.GetForecastsByCountries(names);
+            var result = await service.GetForecastsByCountries(names);
             return Ok(result);
         }
 
@@ -66,7 +59,7 @@ namespace Orion.API.TradingEconomics.API.Controllers;
         [HttpGet("countriesdaterange")]
         public async Task<IActionResult> GetEventsByCountriesAndDates([FromQuery] DateTime startDate, [FromQuery] DateTime endDate, [FromQuery] string[] names)
         {
-            var result = await _service.GetForecastsByCountriesAndDates(startDate, endDate, names);
+            var result = await service.GetForecastsByCountriesAndDates(startDate, endDate, names);
             return Ok(result);
         }
 
@@ -74,7 +67,7 @@ namespace Orion.API.TradingEconomics.API.Controllers;
         [HttpGet("indicators")]
         public async Task<IActionResult> GetEventsByIndicators([FromQuery] string[] names)
         {
-            var result = await _service.GetForecastsByIndicator(names);
+            var result = await service.GetForecastsByIndicator(names);
             return Ok(result);
         }
 

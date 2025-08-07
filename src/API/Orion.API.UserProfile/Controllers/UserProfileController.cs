@@ -1,9 +1,9 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.UserProfile.API.DTO;
-using Orion.API.UserProfile.API.Services;
+using Orion.API.UserProfile.DTO;
+using Orion.Repository.Services;
 
-namespace Orion.API.UserProfile.API.Controllers
+namespace Orion.API.UserProfile.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -32,7 +32,7 @@ namespace Orion.API.UserProfile.API.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> Create([FromQuery] UserProfileDto profile)
         {
-            var profileToDatabase = _mapper.Map<OrionUserProfile.Domain.UserProfile>(profile);
+            var profileToDatabase = _mapper.Map<Core.UserProfile.Domain.UserProfile>(profile);
             var result = await _service.Create(profileToDatabase);
             return Ok(result);
         }

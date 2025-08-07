@@ -1,6 +1,6 @@
 using OrionUserProfile.BaseClasses;
 
-namespace OrionUserProfile.Domain;
+namespace Orion.Core.UserProfile.Domain;
 
 public class UserProfile: Entity
 {

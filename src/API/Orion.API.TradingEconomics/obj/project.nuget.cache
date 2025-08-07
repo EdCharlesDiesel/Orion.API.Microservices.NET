@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8xXxgOWmtfk=",
+  "dgSpecHash": "55jZWWuu5uw=",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.API.csproj",
   "expectedPackageFiles": [
@@ -155,6 +155,15 @@
       "targetGraphs": [
         "net9.0"
       ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.API.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.API.csproj",
+      "targetGraphs": []
     }
   ]
 }

@@ -1,4 +1,4 @@
-namespace Orion.API.UserProfile.API.DTO;
+namespace Orion.API.UserProfile.DTO;
 
 public class UserProfileDto
 {

@@ -51,7 +51,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Core.Basket", "src\Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{E207DDD0-7946-4AC3-8695-FAAD4FCE412D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Core.Order", "src\Core\Orion.Core.Order\Orion.Core.Order.csproj", "{29E49CDE-6903-4744-BE86-2D063430182C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Core.Orders", "src\Core\Orion.Core.Orders\Orion.Core.Orders.csproj", "{29E49CDE-6903-4744-BE86-2D063430182C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{DB1399ED-EA0A-4F63-AC3E-3B8FA5E37579}"
 EndProject
@@ -91,11 +91,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.CompetitionScorec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.Discount", "src\API\Orion.API.Discount\Orion.API.Discount.csproj", "{89322728-960F-4D0C-A153-7163F4DAAB8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.Order.API", "src\API\Orion.API.Order\Orion.API.Order.API.csproj", "{3C32A173-BA76-4FAA-9022-B7575DDD4EAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.Order", "src\API\Orion.API.Order\Orion.API.Order.csproj", "{3C32A173-BA76-4FAA-9022-B7575DDD4EAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.TradingEconomics.API", "src\API\Orion.API.TradingEconomics\Orion.API.TradingEconomics.API.csproj", "{9B57E108-1255-4F09-844F-C5675C77065B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.TradingEconomics", "src\API\Orion.API.TradingEconomics\Orion.API.TradingEconomics.csproj", "{9B57E108-1255-4F09-844F-C5675C77065B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.UserProfile.API", "src\API\Orion.API.UserProfile\Orion.API.UserProfile.API.csproj", "{209C48D0-AD97-4B83-88BB-7BF5F76C9065}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.UserProfile", "src\API\Orion.API.UserProfile\Orion.API.UserProfile.csproj", "{209C48D0-AD97-4B83-88BB-7BF5F76C9065}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E0F6E86E-E0B5-4F97-9531-62860D42BDB3}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{EF31D04C-C69F-4477-8B60-8CE6DF8F8CA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Repository", "src\Repository\Orion.Repository\Orion.Repository.csproj", "{CA45F2BB-7E66-4318-9FD9-FBBB801654B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.CompetitionScorecard.Tests", "src\API\Orion.API.CompetitionScorecard.Tests\Orion.API.CompetitionScorecard.Tests.csproj", "{C1C85E77-4247-4DC3-847F-0C6A11F73E0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{8115FF69-70F5-408F-BE75-3CA782BD07C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -227,6 +240,14 @@ Global
 		{209C48D0-AD97-4B83-88BB-7BF5F76C9065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{209C48D0-AD97-4B83-88BB-7BF5F76C9065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{209C48D0-AD97-4B83-88BB-7BF5F76C9065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA45F2BB-7E66-4318-9FD9-FBBB801654B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA45F2BB-7E66-4318-9FD9-FBBB801654B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA45F2BB-7E66-4318-9FD9-FBBB801654B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA45F2BB-7E66-4318-9FD9-FBBB801654B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1C85E77-4247-4DC3-847F-0C6A11F73E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1C85E77-4247-4DC3-847F-0C6A11F73E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1C85E77-4247-4DC3-847F-0C6A11F73E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1C85E77-4247-4DC3-847F-0C6A11F73E0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -271,6 +292,9 @@ Global
 		{3C32A173-BA76-4FAA-9022-B7575DDD4EAD} = {DB1399ED-EA0A-4F63-AC3E-3B8FA5E37579}
 		{9B57E108-1255-4F09-844F-C5675C77065B} = {FFBB6A7B-FD31-4A7C-ADE6-A36E005B381B}
 		{209C48D0-AD97-4B83-88BB-7BF5F76C9065} = {8CE13BED-3166-4CDB-80A4-9ED0926DB07D}
+		{CA45F2BB-7E66-4318-9FD9-FBBB801654B5} = {EF31D04C-C69F-4477-8B60-8CE6DF8F8CA8}
+		{C1C85E77-4247-4DC3-847F-0C6A11F73E0B} = {AA3F4F55-B094-4862-92CA-0DDA806D7587}
+		{8115FF69-70F5-408F-BE75-3CA782BD07C7} = {4411C048-C4A6-44FF-A49F-C867333BD484}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFC31B86-B732-491F-9E63-995F435D6ED6}

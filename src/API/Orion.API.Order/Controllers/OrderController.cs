@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.Order.API.Services;
+using Orion.Repository.Services.Orion;
 
-
-namespace Orion.API.Order.API.Controllers
+namespace Orion.API.Order.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
@@ -25,7 +24,7 @@ namespace Orion.API.Order.API.Controllers
         /// <param name="order"></param>
         /// <returns></returns>
         [HttpPost("creat")]
-        public async Task<IActionResult> Create([FromQuery] Core.Order.Domain.Order order)
+        public async Task<IActionResult> Create([FromQuery] Core.Orders.Domain.Order order)
         {
             // var profileToDatabase = mapper.Map<Core.Order.Domain.Order>(profile);
             await service.AddAsync(order);
@@ -38,7 +37,7 @@ namespace Orion.API.Order.API.Controllers
         /// <param name="order"></param>
         /// <returns></returns>
         [HttpPut("update")]
-        public async Task<IActionResult> UpdateOrder([FromQuery] Core.Order.Domain.Order order)
+        public async Task<IActionResult> UpdateOrder([FromQuery] Core.Orders.Domain.Order order)
         {
              await service.UpdateAsync(order);
             return Ok();

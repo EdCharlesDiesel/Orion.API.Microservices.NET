@@ -2562,6 +2562,26 @@
             "related": ".xml"
           }
         }
+      },
+      "Orion.Core.UserProfile/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.UserProfile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.UserProfile.dll": {}
+        }
+      },
+      "Orion.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Helpers.dll": {}
+        }
       }
     }
   },
@@ -8010,14 +8030,22 @@
         "yamldotnet.15.1.4.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
+    },
+    "Orion.Core.UserProfile/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.UserProfile/Orion.Core.UserProfile.csproj",
+      "msbuildProject": "../../Core/Orion.Core.UserProfile/Orion.Core.UserProfile.csproj"
+    },
+    "Orion.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../../Helpers/Orion.Helpers.csproj",
+      "msbuildProject": "../../Helpers/Orion.Helpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "AutoMapper >= 15.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-      "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
-      "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
       "FastEndpoints >= 6.2.0",
       "FastEndpoints.MediatR >= 2.0.6",
       "Microsoft.AspNetCore.Authentication.Negotiate >= 9.0.7",
@@ -8027,6 +8055,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
+      "Orion.Core.UserProfile >= 1.0.0",
+      "Orion.Helpers >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -8049,17 +8079,18 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
+            "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj"
             },
-            "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj"
+            "C:\\x\\Orion.Microservices.NET\\src\\Helpers\\Orion.Helpers.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Helpers\\Orion.Helpers.csproj"
             }
           }
         }
@@ -8168,22 +8199,10 @@
       ]
     },
     {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.Discount.Repositories;
 using Orion.Core.Discount.Domain;
+using Orion.Repository.Services.Orion;
 
 namespace Orion.API.Discount.Controllers
 {

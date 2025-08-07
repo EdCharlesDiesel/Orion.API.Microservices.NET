@@ -21,7 +21,8 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Orion.Core.Basket": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.5.0"
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "Orion.Repositories": "1.0.0.0"
         },
         "runtime": {
           "Orion.API.Basket.dll": {}
@@ -1401,6 +1402,30 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Orion.Repositories/1.0.0.0": {
+        "runtime": {
+          "Orion.Repositories.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Core.TradingEconomics/1.0.0.0": {
+        "runtime": {
+          "Orion.Core.TradingEconomics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Orion.Helpers/1.0.0.0": {
+        "runtime": {
+          "Orion.Helpers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -2210,6 +2235,21 @@
     },
     "Orion.Core.Basket/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Repositories/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Core.TradingEconomics/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Orion.Helpers/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

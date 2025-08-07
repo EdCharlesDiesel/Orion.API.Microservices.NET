@@ -1,10 +1,8 @@
-using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Orion.API.Discount.Controllers;
-using Orion.API.Discount.Repositories;
-
+using Orion.Repository.Services.Orion;
 using Xunit;
 
 namespace Orion.Services.Discount.API.Tests

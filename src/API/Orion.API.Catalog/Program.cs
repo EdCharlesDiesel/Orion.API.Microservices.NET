@@ -1,24 +1,20 @@
 using System.Reflection;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Orion.API.Catalog.Mappings;
-using Orion.API.Catalog.Repositories;
-using Orion.API.Catalog.Services;
-using Orion.Services.Product.API.Data;
-
-
+using Orion.Repository.Repositories.Orion;
+using Orion.Repository.Services.Orion;
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
 
 var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Configuration
-var configuration = builder.Configuration;
-string connectionString = configuration.GetConnectionString("DefaultConnection");
+// var configuration = builder.Configuration;
+// string connectionString = configuration.GetConnectionString("DefaultConnection");
 
 // ✅ Add EF Core with PostgreSQL
-builder.Services.AddDbContext<CatalogContext>(options =>
-    options.UseNpgsql(connectionString));
+// builder.Services.AddDbContext<CatalogContext>(options =>
+//     options.UseNpgsql(connectionString));
 
 // ✅ Register application services
 

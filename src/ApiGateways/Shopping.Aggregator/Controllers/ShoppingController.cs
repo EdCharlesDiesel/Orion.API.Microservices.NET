@@ -10,14 +10,14 @@ namespace Orion.Shopping.Aggregator.Controllers
     [ApiController]
     [Route("api/v1/[controller]")]
     public class ShoppingController(
-        ICatalogService catalogService,
-        IBasketService basketService,
-        IOrderService orderService)
+        ICatalogAggregatorService catalogService,
+        IBasketAggregatorService basketService,
+        IOrderAggregatorService orderService)
         : ControllerBase
     {
-        private readonly ICatalogService _catalogService = catalogService ?? throw new ArgumentNullException(nameof(catalogService));
-        private readonly IBasketService _basketService = basketService ?? throw new ArgumentNullException(nameof(basketService));
-        private readonly IOrderService _orderService = orderService ?? throw new ArgumentNullException(nameof(orderService));
+        private readonly ICatalogAggregatorService _catalogService = catalogService ?? throw new ArgumentNullException(nameof(catalogService));
+        private readonly IBasketAggregatorService _basketService = basketService ?? throw new ArgumentNullException(nameof(basketService));
+        private readonly IOrderAggregatorService _orderService = orderService ?? throw new ArgumentNullException(nameof(orderService));
 
         [HttpGet("{userName}", Name = "GetShopping")]
         [ProducesResponseType(typeof(ShoppingModel), (int)HttpStatusCode.OK)]

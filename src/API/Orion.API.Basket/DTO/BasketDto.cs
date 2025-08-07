@@ -1,6 +1,6 @@
 using Orion.Core.Basket.Domain;
 
-namespace Orion.Services.Basket.API.DTO;
+namespace Orion.API.Basket.DTO;
 
 public class BasketDto
 {

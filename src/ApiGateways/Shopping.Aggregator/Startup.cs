@@ -26,19 +26,19 @@ namespace Orion.Shopping.Aggregator
         {
             services.AddTransient<LoggingDelegatingHandler>();
 
-            services.AddHttpClient<ICatalogService, CatalogService>(c =>
+            services.AddHttpClient<ICatalogAggregatorService, CatalogAggregatorService>(c =>
                 c.BaseAddress = new Uri(Configuration["ApiSettings:CatalogUrl"] ?? throw new InvalidOperationException()))
                 .AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy())
                 .AddPolicyHandler(GetCircuitBreakerPolicy());
 
-            services.AddHttpClient<IBasketService, BasketService>(c =>
+            services.AddHttpClient<IBasketAggregatorService, BasketAggregatorService>(c =>
                 c.BaseAddress = new Uri(Configuration["ApiSettings:BasketUrl"] ?? throw new InvalidOperationException()))
                 .AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy())
                 .AddPolicyHandler(GetCircuitBreakerPolicy());
 
-            services.AddHttpClient<IOrderService, OrderService>(c =>
+            services.AddHttpClient<IOrderAggregatorService, OrderAggregatorService>(c =>
                 c.BaseAddress = new Uri(Configuration["ApiSettings:OrderingUrl"] ?? throw new InvalidOperationException()))
                 .AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy())

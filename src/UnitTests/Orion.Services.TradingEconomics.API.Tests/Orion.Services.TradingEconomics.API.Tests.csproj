@@ -27,8 +27,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\API\Orion.API.TradingEconomics\Orion.API.TradingEconomics.API.csproj" />
+    <ProjectReference Include="..\..\API\Orion.API.TradingEconomics\Orion.API.TradingEconomics.csproj" />
     <ProjectReference Include="..\..\Core\Orion.Core.TradingEconomics\Orion.Core.TradingEconomics.csproj" />
+    <ProjectReference Include="..\..\Repository\Orion.Repositories\Orion.Repositories.csproj" />
+    <ProjectReference Include="..\..\Repository\Orion.Repository\Orion.Repository.csproj" />
   </ItemGroup>
 
 </Project>

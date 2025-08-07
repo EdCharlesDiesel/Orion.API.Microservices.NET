@@ -11,10 +11,10 @@
     "External.PaymentGateway": {
       "commandName": "Project",
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:5004",
+      "applicationUrl": "https://localhost:9005",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
-  }
 }
+

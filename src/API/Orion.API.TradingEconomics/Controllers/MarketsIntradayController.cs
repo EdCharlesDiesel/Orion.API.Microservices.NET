@@ -1,27 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.TradingEconomics.API.Services;
+using Orion.Repository.Repositories.TradingEconomics;
 
-namespace Orion.API.TradingEconomics.API.Controllers;
+namespace Orion.API.TradingEconomics.Controllers;
 [ApiController]
 [Route("api/[controller]")]
 
-public class MarketsIntradayController : ControllerBase
-
+public class MarketsIntradayController(TradingEconomicsService service) : ControllerBase
 {
-        private readonly TradingEconomicsService _service;
-
-        public MarketsIntradayController(TradingEconomicsService service)
-        {
-            _service = service;
-        }
-
-        /// <summary>
+    /// <summary>
         /// Get intraday prices for a single market symbol.
         /// </summary>
         [HttpGet("intraday/{symbol}")]
         public async Task<IActionResult> GetIntradaySymbol(string symbol)
         {
-            var result = await _service.GetIntradaySymbolAsync(symbol);
+            var result = await service.GetIntradaySymbolAsync(symbol);
             return Ok(result);
         }
 
@@ -31,7 +23,7 @@ public class MarketsIntradayController : ControllerBase
         [HttpGet("intraday-datehour")]
         public async Task<IActionResult> GetIntradayDateHour([FromQuery] string symbol, [FromQuery] DateTime startDate)
         {
-            var result = await _service.GetIntradayDateHourAsync(symbol, startDate);
+            var result = await service.GetIntradayDateHourAsync(symbol, startDate);
             return Ok(result);
         }
 
@@ -41,7 +33,7 @@ public class MarketsIntradayController : ControllerBase
         [HttpGet("intraday-dates")]
         public async Task<IActionResult> GetIntradaySymbolDates([FromQuery] string symbol, [FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
         {
-            var result = await _service.GetIntradaySymbolDatesAsync(symbol, startDate, endDate);
+            var result = await service.GetIntradaySymbolDatesAsync(symbol, startDate, endDate);
             return Ok(result);
         }
     }

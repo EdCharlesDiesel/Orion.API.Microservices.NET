@@ -1,11 +1,9 @@
 using System.Reflection;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Orion.API.Basket.Mappings;
-using Orion.API.Basket.Repositories;
-using Orion.API.Basket.Services;
-using Orion.Services;
-using Orion.Services.Basket.API.Data;
+using Orion.Repositories;
+using Orion.Repositories.Repositories;
+using Orion.Repositories.Services;
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
 
@@ -16,13 +14,13 @@ var configuration = builder.Configuration;
 var connectionString = configuration.GetConnectionString("DefaultConnection");
 
 // ✅ Add EF Core with PostgresSQL
-builder.Services.AddDbContext<BasketContext>(options =>
-    options.UseNpgsql(connectionString));
+// builder.Services.AddDbContext<BasketContext>(options =>
+//     options.UseNpgsql(connectionString));
 
 // ✅ Register application services
-
-builder.Services.AddScoped<IBasketServices,BasketRepository>();
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+//
+// builder.Services.AddScoped<service_>();
+// builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // ✅ Add HTTP client support if needed
 builder.Services.AddHttpClient(); // Or named client if needed

@@ -100,20 +100,20 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
-      "FastEndpoints/5.29.0": {
+      "FastEndpoints/6.2.0": {
         "type": "package",
         "dependencies": {
-          "FastEndpoints.Attributes": "5.29.0",
-          "FastEndpoints.Messaging.Core": "5.29.0",
-          "FluentValidation": "11.9.2"
+          "FastEndpoints.Attributes": "6.2.0",
+          "FastEndpoints.Messaging.Core": "6.2.0",
+          "FluentValidation": "12.0.0"
         },
         "compile": {
-          "lib/net8.0/FastEndpoints.dll": {
+          "lib/net9.0/FastEndpoints.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/FastEndpoints.dll": {
+          "lib/net9.0/FastEndpoints.dll": {
             "related": ".xml"
           }
         },
@@ -121,8 +121,11 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "FastEndpoints.Attributes/5.29.0": {
+      "FastEndpoints.Attributes/6.2.0": {
         "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
         "compile": {
           "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
             "related": ".xml"
@@ -148,7 +151,7 @@
           "lib/net8.0/FastEndpoints.MediatR.dll": {}
         }
       },
-      "FastEndpoints.Messaging.Core/5.29.0": {
+      "FastEndpoints.Messaging.Core/6.2.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
@@ -191,7 +194,7 @@
           }
         }
       },
-      "FluentValidation/11.9.2": {
+      "FluentValidation/12.0.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/FluentValidation.dll": {
@@ -3673,6 +3676,16 @@
           }
         }
       },
+      "Orion.Core.Basket/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Basket.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Basket.dll": {}
+        }
+      },
       "Orion.Core.Catalog/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -3683,19 +3696,101 @@
           "bin/placeholder/Orion.Core.Catalog.dll": {}
         }
       },
+      "Orion.Core.Chat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Chat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Chat.dll": {}
+        }
+      },
+      "Orion.Core.CompetitionScorecard/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.CompetitionScorecard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.CompetitionScorecard.dll": {}
+        }
+      },
+      "Orion.Core.Discount/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Discount.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Discount.dll": {}
+        }
+      },
+      "Orion.Core.Orders/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Orion.Core.Catalog": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Orion.Core.Orders.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Orders.dll": {}
+        }
+      },
+      "Orion.Core.TradingEconomics/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
+        }
+      },
+      "Orion.Core.UserProfile/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.UserProfile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.UserProfile.dll": {}
+        }
+      },
+      "Orion.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Helpers.dll": {}
+        }
+      },
       "Orion.Services.TradingEconomics.API/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AutoMapper": "15.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "FastEndpoints": "6.2.0",
           "FastEndpoints.MediatR": "2.0.6",
           "Microsoft.AspNetCore.Authentication.Negotiate": "9.0.7",
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Orion.Core.Basket": "1.0.0",
           "Orion.Core.Catalog": "1.0.0",
+          "Orion.Core.Chat": "1.0.0",
+          "Orion.Core.CompetitionScorecard": "1.0.0",
+          "Orion.Core.Discount": "1.0.0",
+          "Orion.Core.Orders": "1.0.0",
+          "Orion.Core.TradingEconomics": "1.0.0",
+          "Orion.Core.UserProfile": "1.0.0",
+          "Orion.Helpers": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
@@ -3860,33 +3955,33 @@
         "coverlet.collector.nuspec"
       ]
     },
-    "FastEndpoints/5.29.0": {
-      "sha512": "WVWSX5NiUWcffbfqmCYnoek6cP/SV27zwL7IKktLFIOj3or3ibdZMx7iC0iazbhxhZi8RZw266pChrItUruPMA==",
+    "FastEndpoints/6.2.0": {
+      "sha512": "KhWPR4sGhuj6/qBksmAIR60zQtVDYMR/HWSKqtZhDUN/gnhJpq9/9nCpKw7Cssq8rbw68AmVBFzLKWsfAe4dZQ==",
       "type": "package",
-      "path": "fastendpoints/5.29.0",
+      "path": "fastendpoints/6.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "fastendpoints.5.29.0.nupkg.sha512",
+        "fastendpoints.6.2.0.nupkg.sha512",
         "fastendpoints.nuspec",
         "icon.png",
-        "lib/net6.0/FastEndpoints.dll",
-        "lib/net6.0/FastEndpoints.xml",
-        "lib/net7.0/FastEndpoints.dll",
-        "lib/net7.0/FastEndpoints.xml",
+        "lib/net10.0/FastEndpoints.dll",
+        "lib/net10.0/FastEndpoints.xml",
         "lib/net8.0/FastEndpoints.dll",
-        "lib/net8.0/FastEndpoints.xml"
+        "lib/net8.0/FastEndpoints.xml",
+        "lib/net9.0/FastEndpoints.dll",
+        "lib/net9.0/FastEndpoints.xml"
       ]
     },
-    "FastEndpoints.Attributes/5.29.0": {
-      "sha512": "7OKv+/qk1/rgeyI8RdW5NvUc3p1n90NnekRRDBmWU6r/5MVacchte/jGBEXxqmKyjBASEdD7eBN5Tr07MhancA==",
+    "FastEndpoints.Attributes/6.2.0": {
+      "sha512": "Z2tWmd7tA8cVuHl6WsHZVIhdI2Dy++SddEgswoefpoZjOFMtkORKIOYpGec/MyaMqQpCRm/zgWfXjFvZrm/Oag==",
       "type": "package",
-      "path": "fastendpoints.attributes/5.29.0",
+      "path": "fastendpoints.attributes/6.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fastendpoints.attributes.5.29.0.nupkg.sha512",
+        "fastendpoints.attributes.6.2.0.nupkg.sha512",
         "fastendpoints.attributes.nuspec",
         "icon.png",
         "lib/netstandard2.0/FastEndpoints.Attributes.dll",
@@ -3906,14 +4001,14 @@
         "lib/net8.0/FastEndpoints.MediatR.dll"
       ]
     },
-    "FastEndpoints.Messaging.Core/5.29.0": {
-      "sha512": "I+oKbh4yYO4b31kP/9DM6yDX9aX+RDPqewuN6uloeoG2lIB7dpp7qCiojbKfueX7iJz5fksRtK7FFlF/2BlYfA==",
+    "FastEndpoints.Messaging.Core/6.2.0": {
+      "sha512": "ycdbVd1IedyVFUpthcVa6NEJ4J1/JjEFHdfVEsBtO4Qts5IBQuqcirbyx7GoogCwqrgQapru5sZ/9Dns/cLPkA==",
       "type": "package",
-      "path": "fastendpoints.messaging.core/5.29.0",
+      "path": "fastendpoints.messaging.core/6.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fastendpoints.messaging.core.5.29.0.nupkg.sha512",
+        "fastendpoints.messaging.core.6.2.0.nupkg.sha512",
         "fastendpoints.messaging.core.nuspec",
         "icon.png",
         "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll",
@@ -3963,29 +4058,19 @@
         "lib/netstandard2.1/FluentAssertions.xml"
       ]
     },
-    "FluentValidation/11.9.2": {
-      "sha512": "XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg==",
+    "FluentValidation/12.0.0": {
+      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
       "type": "package",
-      "path": "fluentvalidation/11.9.2",
+      "path": "fluentvalidation/12.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "fluent-validation-icon.png",
-        "fluentvalidation.11.9.2.nupkg.sha512",
+        "fluentvalidation.12.0.0.nupkg.sha512",
         "fluentvalidation.nuspec",
-        "lib/net5.0/FluentValidation.dll",
-        "lib/net5.0/FluentValidation.xml",
-        "lib/net6.0/FluentValidation.dll",
-        "lib/net6.0/FluentValidation.xml",
-        "lib/net7.0/FluentValidation.dll",
-        "lib/net7.0/FluentValidation.xml",
         "lib/net8.0/FluentValidation.dll",
-        "lib/net8.0/FluentValidation.xml",
-        "lib/netstandard2.0/FluentValidation.dll",
-        "lib/netstandard2.0/FluentValidation.xml",
-        "lib/netstandard2.1/FluentValidation.dll",
-        "lib/netstandard2.1/FluentValidation.xml"
+        "lib/net8.0/FluentValidation.xml"
       ]
     },
     "JetBrains.Annotations/2025.1.0-eap1": {
@@ -10440,15 +10525,55 @@
         "yamldotnet.nuspec"
       ]
     },
+    "Orion.Core.Basket/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj"
+    },
     "Orion.Core.Catalog/1.0.0": {
       "type": "project",
       "path": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj",
       "msbuildProject": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj"
     },
+    "Orion.Core.Chat/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj"
+    },
+    "Orion.Core.CompetitionScorecard/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.CompetitionScorecard/Orion.Core.CompetitionScorecard.csproj",
+      "msbuildProject": "../../Core/Orion.Core.CompetitionScorecard/Orion.Core.CompetitionScorecard.csproj"
+    },
+    "Orion.Core.Discount/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Discount/Orion.Core.Discount.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Discount/Orion.Core.Discount.csproj"
+    },
+    "Orion.Core.Orders/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Orders/Orion.Core.Orders.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Orders/Orion.Core.Orders.csproj"
+    },
+    "Orion.Core.TradingEconomics/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj",
+      "msbuildProject": "../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj"
+    },
+    "Orion.Core.UserProfile/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.UserProfile/Orion.Core.UserProfile.csproj",
+      "msbuildProject": "../../Core/Orion.Core.UserProfile/Orion.Core.UserProfile.csproj"
+    },
+    "Orion.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../../Helpers/Orion.Helpers.csproj",
+      "msbuildProject": "../../Helpers/Orion.Helpers.csproj"
+    },
     "Orion.Services.TradingEconomics.API/1.0.0": {
       "type": "project",
-      "path": "../../API/Orion.API.Catalog/Orion.API.Catalog.csproj",
-      "msbuildProject": "../../API/Orion.API.Catalog/Orion.API.Catalog.csproj"
+      "path": "../../Repository/Orion.Repository/Orion.Repository.csproj",
+      "msbuildProject": "../../Repository/Orion.Repository/Orion.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10483,6 +10608,7 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10491,6 +10617,12 @@
           "projectReferences": {
             "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Catalog\\Orion.API.Catalog.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Catalog\\Orion.API.Catalog.csproj"
+            },
+            "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj"
+            },
+            "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj"
             }
           }
         }

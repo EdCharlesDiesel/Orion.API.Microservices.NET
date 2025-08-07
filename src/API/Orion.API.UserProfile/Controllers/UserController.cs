@@ -1,20 +1,20 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.UserProfile.API.Data;
-using Orion.API.UserProfile.API.Models;
+using Orion.API.UserProfile.Models;
+using Orion.API.UserProfile.Data;
 
-namespace Orion.API.UserProfile.API.Controllers;
+namespace Orion.API.UserProfile.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    private readonly UserProfileContext _context;
+    private readonly UserProfileDbContext _dbContext;
 
-    public UserController(UserProfileContext context)
+    public UserController(UserProfileDbContext dbContext)
     {
-        _context = context;
+        _dbContext = dbContext;
     }
 
     [Authorize]
@@ -24,7 +24,7 @@ public class UserController : ControllerBase
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
         if (userId == null) return Unauthorized();
 
-        var user = _context.UserProfiles.Find(Guid.Parse(userId));
+        var user = _dbContext.UserProfiles.Find(Guid.Parse(userId));
         if (user == null) return NotFound();
 
         return Ok(new
@@ -43,6 +43,6 @@ public class UserController : ControllerBase
     [HttpGet("all")]
     public IActionResult GetAllUsers()
     {
-        return Ok(_context.UserProfiles.ToList());
+        return Ok(_dbContext.UserProfiles.ToList());
     }
 }

@@ -3779,6 +3779,69 @@
           }
         }
       },
+      "Orion.Core.Basket/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Basket.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Basket.dll": {}
+        }
+      },
+      "Orion.Core.Catalog/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Catalog.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Catalog.dll": {}
+        }
+      },
+      "Orion.Core.Chat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Chat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Chat.dll": {}
+        }
+      },
+      "Orion.Core.CompetitionScorecard/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.CompetitionScorecard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.CompetitionScorecard.dll": {}
+        }
+      },
+      "Orion.Core.Discount/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.Discount.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Discount.dll": {}
+        }
+      },
+      "Orion.Core.Orders/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Orion.Core.Catalog": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Orion.Core.Orders.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.Orders.dll": {}
+        }
+      },
       "Orion.Core.TradingEconomics/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -3787,6 +3850,16 @@
         },
         "runtime": {
           "bin/placeholder/Orion.Core.TradingEconomics.dll": {}
+        }
+      },
+      "Orion.Core.UserProfile/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Orion.Core.UserProfile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.Core.UserProfile.dll": {}
         }
       },
       "Orion.Helpers/1.0.0": {
@@ -3812,7 +3885,14 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Orion.Core.Basket": "1.0.0",
+          "Orion.Core.Catalog": "1.0.0",
+          "Orion.Core.Chat": "1.0.0",
+          "Orion.Core.CompetitionScorecard": "1.0.0",
+          "Orion.Core.Discount": "1.0.0",
+          "Orion.Core.Orders": "1.0.0",
           "Orion.Core.TradingEconomics": "1.0.0",
+          "Orion.Core.UserProfile": "1.0.0",
           "Orion.Helpers": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -10739,10 +10819,45 @@
         "yamldotnet.nuspec"
       ]
     },
+    "Orion.Core.Basket/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj"
+    },
+    "Orion.Core.Catalog/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj"
+    },
+    "Orion.Core.Chat/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj"
+    },
+    "Orion.Core.CompetitionScorecard/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.CompetitionScorecard/Orion.Core.CompetitionScorecard.csproj",
+      "msbuildProject": "../../Core/Orion.Core.CompetitionScorecard/Orion.Core.CompetitionScorecard.csproj"
+    },
+    "Orion.Core.Discount/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Discount/Orion.Core.Discount.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Discount/Orion.Core.Discount.csproj"
+    },
+    "Orion.Core.Orders/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.Orders/Orion.Core.Orders.csproj",
+      "msbuildProject": "../../Core/Orion.Core.Orders/Orion.Core.Orders.csproj"
+    },
     "Orion.Core.TradingEconomics/1.0.0": {
       "type": "project",
       "path": "../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj",
       "msbuildProject": "../../Core/Orion.Core.TradingEconomics/Orion.Core.TradingEconomics.csproj"
+    },
+    "Orion.Core.UserProfile/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Orion.Core.UserProfile/Orion.Core.UserProfile.csproj",
+      "msbuildProject": "../../Core/Orion.Core.UserProfile/Orion.Core.UserProfile.csproj"
     },
     "Orion.Helpers/1.0.0": {
       "type": "project",
@@ -10751,8 +10866,8 @@
     },
     "Orion.Services.TradingEconomics.API/1.0.0": {
       "type": "project",
-      "path": "../../API/Orion.API.TradingEconomics/Orion.API.TradingEconomics.API.csproj",
-      "msbuildProject": "../../API/Orion.API.TradingEconomics/Orion.API.TradingEconomics.API.csproj"
+      "path": "../../Repository/Orion.Repository/Orion.Repository.csproj",
+      "msbuildProject": "../../Repository/Orion.Repository/Orion.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10788,17 +10903,24 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.API.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.API.csproj"
+            "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.csproj"
             },
             "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
+            },
+            "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj"
+            },
+            "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj"
             }
           }
         }

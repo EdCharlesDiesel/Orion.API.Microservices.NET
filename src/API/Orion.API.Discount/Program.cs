@@ -1,5 +1,5 @@
 using Orion.API.Discount.Extensions;
-using Orion.API.Discount.Repositories;
+using Orion.Repository.Repositories.Orion;
 
 namespace Orion.API.Discount
 {
@@ -15,7 +15,7 @@ namespace Orion.API.Discount
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
+            builder.Services.AddScoped<DiscountRepository>();
 
             var app = builder.Build();
            

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.TradingEconomics.API.Services;
+using Orion.Repository.Services.TradingEconomics;
 
-namespace Orion.API.TradingEconomics.API.Controllers;
+namespace Orion.API.TradingEconomics.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

@@ -45,6 +45,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Orion.Core.Catalog\Orion.Core.Catalog.csproj" />
+    <ProjectReference Include="..\..\Repository\Orion.Repository\Orion.Repository.csproj" />
   </ItemGroup>
 
   <ItemGroup>

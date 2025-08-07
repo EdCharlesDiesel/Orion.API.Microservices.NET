@@ -1,37 +1,29 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.TradingEconomics.API.Services;
+using Orion.Repository.Repositories.TradingEconomics;
 
-namespace Orion.API.TradingEconomics.API.Controllers;
+namespace Orion.API.TradingEconomics.Controllers;
 [ApiController]
 [Route("api/[controller]")]
-public class NewsController : ControllerBase
+public class NewsController(TradingEconomicsService service) : ControllerBase
 {
-    private readonly TradingEconomicsService _service;
-
-    public NewsController(TradingEconomicsService service)
-    {
-        _service = service;
-    }
-
     [HttpGet("latest")]
     public async Task<IActionResult> GetLatestNews()
     {
-        var result = await _service.GetLatestNewsAsync();
+        var result = await service.GetLatestNewsAsync();
         return Ok(result);
     }
 
     [HttpGet("by-country")]
     public async Task<IActionResult> GetNewsByCountry([FromQuery] string[] countries)
     {
-        var result = await _service.GetNewsByCountryAsync(countries);
+        var result = await service.GetNewsByCountryAsync(countries);
         return Ok(result);
     }
 
     [HttpGet("by-indicator")]
     public async Task<IActionResult> GetNewsByIndicator([FromQuery] string[] indicators)
     {
-        var result = await _service.GetNewsByIndicatorAsync(indicators);
+        var result = await service.GetNewsByIndicatorAsync(indicators);
         return Ok(result);
     }
-        
 }

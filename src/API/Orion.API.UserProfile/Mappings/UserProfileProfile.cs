@@ -1,13 +1,13 @@
 using AutoMapper;
-using Orion.API.UserProfile.API.DTO;
+using Orion.API.UserProfile.DTO;
 
-namespace Orion.API.UserProfile.API.Mappings;
+namespace Orion.API.UserProfile.Mappings;
 
 public class UserProfileProfile : Profile
 {
 
         public UserProfileProfile()
         {
-            CreateMap<OrionUserProfile.Domain.UserProfile, UserProfileDto>().ReverseMap();
+            CreateMap<Core.UserProfile.Domain.UserProfile, UserProfileDto>().ReverseMap();
         }
 }

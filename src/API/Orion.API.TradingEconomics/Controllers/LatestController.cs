@@ -3,8 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Orion.Helpers;
 using Orion.Services.TradingEcomomics.API.ActionFilters;
 
-
-namespace Orion.API.TradingEconomics.API.Controllers
+namespace Orion.API.TradingEconomics.Controllers
 {
     [ApiController]
     [Route("[controller]")]

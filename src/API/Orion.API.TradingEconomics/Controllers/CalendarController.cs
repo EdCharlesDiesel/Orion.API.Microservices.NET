@@ -1,9 +1,10 @@
-using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.TradingEconomics.API.Services;
+using Orion.Repository.Services.TradingEconomics;
+using System.Text.Json;
 using Orion.Core.TradingEconomics.Domain;
 
-namespace Orion.API.TradingEconomics.API.Controllers
+
+namespace Orion.API.TradingEconomics.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -17,7 +18,7 @@ namespace Orion.API.TradingEconomics.API.Controllers
         }
 
         /// <summary>
-        /// Get all comtrade categories
+        /// Get all calendar events
         /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetAllEvents()
@@ -41,11 +42,12 @@ namespace Orion.API.TradingEconomics.API.Controllers
             }
 
             await _service.Create(calendarEvents);
-
             return Ok(result);
         }
 
-        // GET: api/calendar/daterange?startDate=2025-07-01&endDate=2025-07-31
+        /// <summary>
+        /// Get calendar events by date range
+        /// </summary>
         [HttpGet("daterange")]
         public async Task<IActionResult> GetEventsByDate([FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
         {
@@ -53,7 +55,9 @@ namespace Orion.API.TradingEconomics.API.Controllers
             return Ok(result);
         }
 
-        // GET: api/calendar/countries?names=South Africa,USA
+        /// <summary>
+        /// Get calendar events by country names
+        /// </summary>
         [HttpGet("countries")]
         public async Task<IActionResult> GetEventsByCountries([FromQuery] string[] names)
         {
@@ -61,23 +65,27 @@ namespace Orion.API.TradingEconomics.API.Controllers
             return Ok(result);
         }
 
-        // GET: api/calendar/countriesdaterange?startDate=2025-07-01&endDate=2025-07-31&names=USA,Germany
+        /// <summary>
+        /// Get calendar events by countries and date range
+        /// </summary>
         [HttpGet("countriesdaterange")]
-        public async Task<IActionResult> GetEventsByCountriesAndDates([FromQuery] DateTime startDate, [FromQuery] DateTime endDate, [FromQuery] string[] names)
+        public async Task<IActionResult> GetEventsByCountriesAndDates(
+            [FromQuery] DateTime startDate,
+            [FromQuery] DateTime endDate,
+            [FromQuery] string[] names)
         {
             var result = await _service.GetCalendarEventsByCountriesAndDates(startDate, endDate, names);
             return Ok(result);
         }
 
-        // GET: api/calendar/indicators?names=GDP,Inflation
+        /// <summary>
+        /// Get calendar events by indicator names
+        /// </summary>
         [HttpGet("indicators")]
         public async Task<IActionResult> GetEventsByIndicators([FromQuery] string[] names)
         {
-            var result = await _service.GetCalendarEventsByIndicator(names);
+            var result = await _service.GetCalendarEventsByIndicators(names);
             return Ok(result);
         }
-
     }
-
-
 }

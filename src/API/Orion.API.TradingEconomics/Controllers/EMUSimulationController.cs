@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Orion.Core.TradingEconomics.Domain;
 
-namespace Orion.API.TradingEconomics.API.Controllers;
+namespace Orion.API.TradingEconomics.Controllers;
 
 
     [ApiController]

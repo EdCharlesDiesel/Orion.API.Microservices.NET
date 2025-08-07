@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Orion.Helpers;
 
-
-namespace Orion.API.TradingEconomics.API.Controllers;
+namespace Orion.API.TradingEconomics.Controllers;
 [ApiController]
 [Route("api/[controller]")]
 public class EarningsController : ControllerBase

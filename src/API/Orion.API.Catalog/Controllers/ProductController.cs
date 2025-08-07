@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.Catalog.Services;
-
+using Orion.Repository.Services.Orion;
 
 
 namespace Orion.API.Catalog.Controllers
@@ -37,7 +36,8 @@ namespace Orion.API.Catalog.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Core.Catalog.Domain.Product product)
         {
-            var result = await _service.AddAsync(product);
+            var result =  _service.AddAsync(product);
+            var id =  result.Id;
             return CreatedAtAction(nameof(GetProductById), new { id = result.Id }, result);
         }
 

@@ -1,4 +1,4 @@
-namespace Orion.API.UserProfile.API.Models;
+namespace Orion.API.UserProfile.Models;
 
 public class LoginRequest
 {

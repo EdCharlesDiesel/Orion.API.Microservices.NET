@@ -1,0 +1,7 @@
+﻿services:
+  orion.api.userprofiles:
+    image: orion.api.userprofiles
+    build:
+      context: .
+      dockerfile: Orion.API.UserProfiles/Dockerfile
+

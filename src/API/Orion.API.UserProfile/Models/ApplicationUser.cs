@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace Orion.API.UserProfile.API.Models
+namespace Orion.API.UserProfile.Models
 {
     public class ApplicationUser : IdentityUser
     {

@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "UserProfile.API": {
+    "Orion.API.Basket": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
@@ -8,16 +8,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:9000"
-    },
-    "Docker": {
-      "commandName": "Docker",
-      "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
-      "environmentVariables": {
-        "ASPNETCORE_URLS": "http://localhost:9000:9000"
-      },
-      "publishAllPorts": true
-    }
+      "applicationUrl": "http://localhost:9005"
+    }   
   }
 }

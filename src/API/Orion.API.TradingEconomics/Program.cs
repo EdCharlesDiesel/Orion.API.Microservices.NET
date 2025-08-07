@@ -1,10 +1,8 @@
 using System.Reflection;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Orion.API.TradingEconomics.API.Data;
-using Orion.API.TradingEconomics.API.Mappings;
-using Orion.API.TradingEconomics.API.Repositories;
-using Orion.API.TradingEconomics.API.Services;
+using Orion.API.TradingEconomics.Mappings;
+using Orion.Repository.Repositories.TradingEconomics;
+using Orion.Repository.Services.TradingEconomics;
 
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
@@ -12,16 +10,16 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes
 var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Configuration
-var configuration = builder.Configuration;
-string connectionString = configuration.GetConnectionString("DefaultConnection");
-
-// ✅ Add EF Core with PostgreSQL
-builder.Services.AddDbContext<TradingEconomicsContext>(options =>
-    options.UseNpgsql(connectionString));
+// var configuration = builder.Configuration;
+// string connectionString = configuration.GetConnectionString("DefaultConnection");
+//
+// // ✅ Add EF Core with PostgreSQL
+// builder.Services.AddDbContext<TradingEconomicsContext>(options =>
+//     options.UseNpgsql(connectionString));
 
 // ✅ Register application services
 
-builder.Services.AddScoped<ICalendarServices,CalendarRepository>();
+builder.Services.AddScoped<CalendarRepository>();
 builder.Services.AddScoped<IComtradeServices, ComtradeRepository>();
 builder.Services.AddScoped<IForecastServices, ForecastRepository>();
 builder.Services.AddAutoMapper(typeof(CalendarEventProfile));

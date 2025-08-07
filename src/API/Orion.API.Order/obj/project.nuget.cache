@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "M76GT2iZdt0=",
-  "success": false,
+  "dgSpecHash": "HNV2xK/5SCI=",
+  "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\15.0.1\\automapper.15.0.1.nupkg.sha512",
@@ -152,50 +152,6 @@
       "warningLevel": 1,
       "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
       "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "libraryId": "C:\\x\\Orion.Microservices.NET\\Core\\Orion.Core.UserProfile\\Orion.Core.UserProfile.csproj",
       "targetGraphs": [
         "net9.0"
       ]

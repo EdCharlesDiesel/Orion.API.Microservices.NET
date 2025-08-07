@@ -2,10 +2,9 @@ using System.Text.Json;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using Orion.API.TradingEconomics.API.Controllers;
-using Orion.API.TradingEconomics.API.Services;
+using Orion.API.TradingEconomics.Controllers;
 using Orion.Core.TradingEconomics.Domain;
-
+using Orion.Repository.Services.TradingEconomics;
 using Shouldly;
 using Xunit;
 

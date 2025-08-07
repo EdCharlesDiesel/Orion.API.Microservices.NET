@@ -1,4 +1,4 @@
-namespace Orion.API.Order.API.DTO;
+namespace Orion.API.Order.DTO;
 
 public class OrderDto
 {

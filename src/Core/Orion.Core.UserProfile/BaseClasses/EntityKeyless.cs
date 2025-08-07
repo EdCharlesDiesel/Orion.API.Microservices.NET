@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace OrionUserProfile.BaseClasses;
+namespace Orion.Core.UserProfile.BaseClasses;
 
 public class EntityKeyless
 {

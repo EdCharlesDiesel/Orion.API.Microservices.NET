@@ -1,10 +1,6 @@
 using System.Reflection;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Orion.API.Order.API.Data;
-using Orion.API.Order.API.Repositories;
-using Orion.API.Order.API.Services;
-
+using Orion.Repository.Repositories.Orion;
 
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
@@ -12,16 +8,16 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes
 var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Configuration
-var configuration = builder.Configuration;
-string connectionString = configuration.GetConnectionString("DefaultConnection");
-
-// ✅ Add EF Core with PostgreSQL
-builder.Services.AddDbContext<OrderContext>(options =>
-    options.UseNpgsql(connectionString));
+// var configuration = builder.Configuration;
+// string connectionString = configuration.GetConnectionString("DefaultConnection");
+//
+// // ✅ Add EF Core with PostgreSQL
+// builder.Services.AddDbContext<OrderContext>(options =>
+//     options.UseNpgsql(connectionString));
 
 // ✅ Register application services
 
-builder.Services.AddScoped<IOrderServices,OrderRepository>();
+builder.Services.AddScoped<OrderRepository>();
 // builder.Services.AddAutoMapper(typeof(OrderProfile));
 
 // ✅ Add HTTP client support if needed

@@ -1,13 +1,13 @@
 using AutoMapper;
-using Orion.API.Order.API.DTO;
+using Orion.API.Order.DTO;
 
-namespace Orion.API.Order.API.Mappings;
+namespace Orion.API.Order.Mappings;
 
 public class OrderProfile : Profile
 {
 
         public OrderProfile()
         {
-            CreateMap<Core.Order.Domain.Order, OrderDto>().ReverseMap();
+            CreateMap<Core.Orders.Domain.Order, OrderDto>().ReverseMap();
         }
 }
