@@ -28,7 +28,6 @@
 
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Core\Orion.Core.Chat\Orion.Core.Chat.csproj" />
       <ProjectReference Include="..\..\Helpers\Orion.Helpers.csproj" />
     </ItemGroup>
 

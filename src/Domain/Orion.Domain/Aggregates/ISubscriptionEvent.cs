@@ -1,0 +1,13 @@
+using Orion.Domain.Tools;
+
+namespace Orion.Domain.Aggregates
+{
+    public enum SubscriptionEventType {Deleted}
+    public interface ISubscriptionEvent: IEntity<long>, IBaseEntity
+    {
+        SubscriptionEventType Type { get; }
+        int SubscriptionId { get;}
+        long? OldVersion { get;}
+        long? NewVersion { get;}
+    }
+}

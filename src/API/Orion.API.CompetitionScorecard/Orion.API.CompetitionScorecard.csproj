@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Orion.Core.CompetitionScorecard\Orion.Core.CompetitionScorecard.csproj" />
     <ProjectReference Include="..\..\Repository\Orion.Repository\Orion.Repository.csproj" />
   </ItemGroup>
 

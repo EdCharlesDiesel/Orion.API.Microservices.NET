@@ -1,3 +1,0 @@
-C:\x\Orion.API.Microservices.NET\out\Orion.Discount.Core.dll
-C:\x\Orion.API.Microservices.NET\out\Orion.Discount.Core.deps.json
-C:\x\Orion.API.Microservices.NET\out\Orion.Discount.Core.pdb

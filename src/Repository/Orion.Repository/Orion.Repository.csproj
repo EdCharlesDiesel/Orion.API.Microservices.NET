@@ -46,21 +46,7 @@
 
   <ItemGroup>
 
-    <ProjectReference Include="..\..\Core\Orion.Core.Basket\Orion.Core.Basket.csproj" />
-
-    <ProjectReference Include="..\..\Core\Orion.Core.Catalog\Orion.Core.Catalog.csproj" />
-
-    <ProjectReference Include="..\..\Core\Orion.Core.Chat\Orion.Core.Chat.csproj" />
-
-    <ProjectReference Include="..\..\Core\Orion.Core.CompetitionScorecard\Orion.Core.CompetitionScorecard.csproj" />
-
-    <ProjectReference Include="..\..\Core\Orion.Core.Discount\Orion.Core.Discount.csproj" />
-
-    <ProjectReference Include="..\..\Core\Orion.Core.Orders\Orion.Core.Orders.csproj" />
-
-    <ProjectReference Include="..\..\Core\Orion.Core.TradingEconomics\Orion.Core.TradingEconomics.csproj" />
-
-    <ProjectReference Include="..\..\Core\Orion.Core.UserProfile\Orion.Core.UserProfile.csproj" />
+    <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.csproj" />
 
     <ProjectReference Include="..\..\Helpers\Orion.Helpers.csproj" />
   </ItemGroup>
@@ -69,6 +55,12 @@
     <Content Include="..\..\..\..\.dockerignore">
       <Link>.dockerignore</Link>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\TradingEconomics\" />
+    <Folder Include="Services\Orion\" />
+    <Folder Include="Services\TradingEconomics\" />
   </ItemGroup>
 
 </Project>

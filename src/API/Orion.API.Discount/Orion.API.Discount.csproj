@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Orion.Core.Discount\Orion.Core.Discount.csproj" />
     <ProjectReference Include="..\..\Repository\Orion.Repository\Orion.Repository.csproj" />
   </ItemGroup>
 
