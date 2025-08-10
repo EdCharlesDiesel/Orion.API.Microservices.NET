@@ -1,3 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Orion.DataAccess.Models;
+using Orion.Domain.IRepositories;
+
 namespace Orion.DataAccess.Repositories;
 
 public class BasketRepository(OrionDbContext context) : IBasketServices

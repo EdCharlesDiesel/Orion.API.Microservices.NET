@@ -1,7 +1,6 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Orion.API.UserProfile.DTO;
-using Orion.Repository.Services;
 
 namespace Orion.API.UserProfile.Controllers
 {

@@ -7,13 +7,8 @@ using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Models
 {
-    public class Category: Entity<int>, ICategory
+    public sealed class Category: Entity<int>, ICategory
     {
-        //public Category()
-        //{
-        //  this.Products = new List<Product>();
-        //}       
-
         public void FullUpdate(ICategory o)
         {
             if (IsTransient())
@@ -27,25 +22,21 @@ namespace Orion.DataAccess.Models
 
         [Required, MinLength(2, ErrorMessage = "Minimum length is 2"),MaxLength(30, ErrorMessage  = "Maximum length is 128")]
         [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Only allowed letters")]
-        public string CategoryName { get; set; }
+        public string CategoryName { get; private set; }
 
-        public string Description { get; set; }
+        public string Description { get; private set; }
 
-        public byte[] Picture { get; set; }
+        public byte[] Picture { get; private set; }
 
-        //public virtual List<Product> Products { get; set; }  
-        
-        private DateTime _createDate = DateTime.Now;
+        public List<Product> Products { get; set; } = new();
 
-        public DateTime CreateDate { get => _createDate; set => _createDate = value; }
+        public DateTime CreateDate { get; set; } = DateTime.Now;
 
         public DateTime? UpdateDate { get; set; }
 
         public DateTime? DeleteDate { get; set; }
 
-        private Status _status = Status.Active;
-        
-        public Status Status { get => _status; set => _status = value; }
+        public Status Status { get; set; } = Status.Active;
     }       
 }
 

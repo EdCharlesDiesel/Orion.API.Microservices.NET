@@ -1,125 +1,122 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Orion.Domain.Aggregates;
 using ORION.Domain.Aggregates;
 using Orion.Domain.Enums;
 using Orion.Domain.Tools;
 using Orion.Domain.Utility;
 
 
-namespace Orion.DataAccess.Models
+namespace Orion.DataAccess.Models;
+
+/// <summary>
+/// Business Owner of the database. 
+/// </summary>
+[Table("BusinessOwner")]
+public abstract class BusinessOwner(string businessCity, string businessProvince) : Entity<int>, IBusinessOwner, IValidatableObject,
 {
-    // FIXME BusinessOwner
-    public class BusinessOwner: Entity<int>,  IBusinessOwner,IValidatableObject
+    public void FullUpdate(IBusinessOwner o)IBaseEntity
     {
-      
-        public void FullUpdate(IBusinessOwner o)
+        if (IsTransient())
         {
-            if (IsTransient())
-            {
-                Id = o.Id;
-            }
-            FirstName = o.FirstName;
-            LastName = o.LastName;
-            ImageFilename = o.ImageFilename;
-            BirthDate = o.BirthDate;
-            BusinessDate = o.BusinessDate;
-            BirthCity = o.BirthCity;
-            BirthProvince = o.BirthProvince;
-            DaysInOffice = o.DaysInOffice;
-            CreateDate = o.CreateDate;
-            UpdateDate = o.UpdateDate;
-            DeleteDate = o.DeleteDate;
-            Status = o.Status;
+            Id = o.Id;
         }
-        public string FirstName { get; set; }
+        FirstName = o.FirstName;
+        LastName = o.LastName;
+        ImageFilename = o.ImageFilename;
+        BirthDate = o.BirthDate;
+        BusinessDate = o.BusinessDate;
+        BirthCity = o.BirthCity;
+        BirthProvince = o.BirthProvince;
+        DaysInOffice = o.DaysInOffice;
+        CreateDate = o.CreateDate;
+        UpdateDate = o.UpdateDate;
+        DeleteDate = o.DeleteDate;
+        Status = o.Status;
+    }
+    public string FirstName { get; set; }
 
-        [Display(Name = "Last Name")]
-        [Required]
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
+    [Display(Name = "Last Name")]
+    [Required]
+    [DisplayFormat(ConvertEmptyStringToNull = false)]
         
-        public string LastName { get; set; }
+    public string LastName { get; set; }
 
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
-        public string ImageFilename { get; set; }
+    [DisplayFormat(ConvertEmptyStringToNull = false)]
+    public string ImageFilename { get; set; }
         
 
-        [Display(Name = "Date of Birth")]
-        [DateTimePropertyCompareValidator(
-            DateTimeCompareTypeEnum.LessThan, nameof(BusinessDate))]
-        [DisplayFormat(DataFormatString = "{0:d}")]
+    [Display(Name = "Date of Birth")]
+    [DateTimePropertyCompareValidator(
+        DateTimeCompareTypeEnum.LessThan, nameof(BusinessDate))]
+    [DisplayFormat(DataFormatString = "{0:d}")]
         
-        public DateTime BirthDate { get; set; }
+    public DateTime BirthDate { get; set; }
 
-        [Display(Name = "Date of Business")]
-        [DateTimePropertyCompareValidatorAttribute(
-            DateTimeCompareTypeEnum.GreaterThan, nameof(BirthDate))]
-        [DisplayFormat(DataFormatString = "{0:d}")]
+    [Display(Name = "Date of Business")]
+    [DisplayFormat(DataFormatString = "{0:d}")]
         
-        public DateTime BusinessDate { get; set; }
+    public DateTime BusinessDate { get; set; }
 
-        [Display(Name = "Birth City")]
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
+    [Display(Name = "Birth City")]
+    [DisplayFormat(ConvertEmptyStringToNull = false)]
         
-        public string BirthCity { get; set; }
+    public string BirthCity { get; private set; }
 
-        [Display(Name = "Birth Province")]
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
+    [Display(Name = "Birth Province")]
+    [DisplayFormat(ConvertEmptyStringToNull = false)]
         
-        public string BirthProvince { get; set; }
+    public string BirthProvince { get; private set; }
 
-        [Display(Name = "Business City")]
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
-        public string BusinessCity { get; set; }
+    [Display(Name = "Business City")]
+    [DisplayFormat(ConvertEmptyStringToNull = false)]
+    public string BusinessCity { get; set; } = businessCity;
 
-        
-        [Display(Name = "Business Province")]
-        [DisplayFormat(ConvertEmptyStringToNull = false)]
-        public string BusinessProvince { get; set; }
 
-        
-        [Display(Name = "Days In Office")]
-        public int DaysInOffice { get; set; }
-        
-        private DateTime _createDate = DateTime.Now;
-        
-        public DateTime CreateDate { get => _createDate; set => _createDate = value; }
+    [Display(Name = "Business Province")]
+    [DisplayFormat(ConvertEmptyStringToNull = false)]
+    public string BusinessProvince { get; set; } = businessProvince;
 
-        public DateTime? UpdateDate { get; set; }
 
-        public DateTime? DeleteDate { get; set; }
+    [Display(Name = "Days In Office")]
+    public int DaysInOffice { get; private set; }
 
-        private Status _status = Status.Active;
-        
-        public Status Status { get => _status; set => _status = value; }
+    public DateTime CreateDate { get; set; } = DateTime.Now;
 
-        public List<Term> Terms { get; private set; }
+    public DateTime? UpdateDate { get; set; }
 
-        public void AddTerm(string role, DateTime startDate, DateTime endDate, int number)
+    public DateTime? DeleteDate { get; set; }
+
+    public Status Status { get; set; } = Status.Active;
+
+    public List<Term> Terms { get; private set; }
+
+    public void AddTerm(string role, DateTime startDate, DateTime endDate, int number)
+    {
+        Terms.Add(new Term()
         {
-            Terms.Add(new Term()
-            {
-                Role = role,
-                StartOfTerm = startDate,
-                EndOfTerm = endDate,
-                NumberOfTerms = number
-            });
+            Role = role,
+            StartOfTerm = startDate,
+            EndOfTerm = endDate,
+            NumberOfTerms = number
+        });
+    }
+
+    public IEnumerable<ValidationResult> Validate(
+        ValidationContext validationContext)
+    {
+        if (Terms.Count == 0)
+        {
+            yield return
+                new ValidationResult("BusinessOwner has no terms.");
         }
 
-        public IEnumerable<ValidationResult> Validate(
-            ValidationContext validationContext)
+        if (Terms.Count > 2)
         {
-            if (Terms.Count == 0)
-            {
-                yield return
-                    new ValidationResult("BusinessOwner has no terms.");
-            }
-
-            if (Terms.Count > 2)
-            {
-                yield return
-                    new ValidationResult("BusinessOwner cannot have more than 2 terms.");
-            }
+            yield return
+                new ValidationResult("BusinessOwner cannot have more than 2 terms.");
         }
     }
 }

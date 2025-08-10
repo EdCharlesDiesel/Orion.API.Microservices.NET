@@ -52,10 +52,4 @@
     </Content>
   </ItemGroup>
 
-
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Repository\Orion.Repository\Orion.Repository.csproj" />
-  </ItemGroup>
-
 </Project>

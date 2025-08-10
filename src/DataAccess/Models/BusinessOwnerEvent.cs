@@ -6,9 +6,9 @@ using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Models
 {
-    public class BusinessOwnerEvent: Entity<long>, IBusinessOwnerEvent
+    public class BusinessOwnerEvent(BusinessOwnerEventType type) : Entity<long>, IBusinessOwnerEvent
     {
-        public BusinessOwnerEventType Type { get; set; }
+        public BusinessOwnerEventType Type { get; set; } = type;
         public int BusinessOwnerId { get; set; }
         public decimal NewPrice { get; set; }
         public long? OldVersion { get; set; }

@@ -1,8 +1,15 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using Orion.Domain.Aggregates;
+using Orion.Domain.Enums;
 
 namespace Orion.DataAccess.Models;
 
-public class CalendarEvent
+/// <summary>
+/// Current basket of the database. 
+/// </summary>
+[Table("CalendarEvent")]
+public abstract class CalendarEvent: IBaseEntity
 {
     public string CalendarId { get; set; }
     public int Importance { get; set; }
@@ -10,12 +17,12 @@ public class CalendarEvent
     public string Category { get; set; }
     public string Event { get; set; }
     public string Source { get; set; }
-    public string SourceURL { get; set; }
+    public string SourceUrl { get; set; }
     public string Actual { get; set; }
     public string Previous { get; set; }
     public string Forecast { get; set; }
-    public string TEForecast { get; set; }
-    public string URL { get; set; }
+    public string TeForecast { get; set; }
+    public string Url { get; set; }
     public string DateSpan { get; set; }
     public string Revised { get; set; }
     public string Currency { get; set; }
@@ -25,6 +32,10 @@ public class CalendarEvent
     public string Reference { get; set; }
     public DateTime? LastUpdate { get; set; }
     public DateTime? Date { get; set; }
-    
     public DateTime? ReferenceDate { get; set; }
+    public Guid Id { get; set; }
+    public DateTime CreateDate { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public DateTime? DeleteDate { get; set; }
+    public Status Status { get; set; }
 }

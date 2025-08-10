@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.Repository.Services.Orion;
+using Orion.Domain.IRepositories;
 
 
 namespace Orion.API.Catalog.Controllers

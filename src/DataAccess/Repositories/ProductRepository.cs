@@ -3,77 +3,80 @@ using Orion.Domain.IRepositories;
 using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Net.Http.Headers;
+using Orion.DataAccess.Models;
+using Orion.Domain.Events;
 using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        //private OrionDbContext context;
-        //public ProductRepository(OrionDbContext context)
-        //{
-        //    this.context = context;
-        //}
-        //public IUnitOfWork UnitOfWork => context;
+        private OrionDbContext context;
+        public ProductRepository(OrionDbContext context)
+        {
+            this.context = context;
+        }
+        public IUnitOfWork UnitOfWork => context;
 
-        //public async Task<IProduct> Get(int id)
-        //{
-        //    //return await context.Products.Where(m => m.Id == id)
-        //    //    .FirstOrDefaultAsync();
-        //    throw new NotImplementedException();
-        //}
+        public async Task<IProduct> Get(int id)
+        {
+            return await context.Products.Where(m => m.Id == id)
+                .FirstOrDefaultAsync();
+            throw new NotImplementedException();
+        }
 
-        //public async Task<IProduct> Delete(int id)
-        //{
-        //    //var model = await Get(id);
-        //    //if (model == null) return null;
-        //    //context.Products.Remove(model as Product);
-        //    //model.AddDomainEvent(
-        //    //    new ProductDeleteEvent(
-        //    //        model.Id, (model as Product).EntityVersion));
-        //    //return model;
-        //    throw new NotImplementedException();
-        //}
+        public async Task<IProduct> Delete(int id)
+        {
+            var model = await Get(id);
+            if (model == null) return null;
+            context.Products.Remove(model as Product);
+            model.AddDomainEvent(
+                new ProductDeleteEvent(
+                    model.Id, (model as Product).EntityVersion));
+            return model;
+       
+        }
 
-        //public IProduct New()
-        //{
-        //    throw new NotImplementedException();
-        //    //var model = new Product() {EntityVersion=1 };
-        //    //context.Products.Add(model);
-        //    //return model;
-        //}
+        public IProduct New()
+        {
+            var model = new Product() {EntityVersion=1 };
+            context.Products.Add(model);
+            return model;
+        }
 
-        // public async Task<bool> UploadFile(MultipartReader reader,MultipartSection? section)
-        // {
-        //     while (section != null)
-        //     {
-        //         var hasContentDispositionHeader = ContentDispositionHeaderValue.TryParse(
-        //          section.ContentDisposition, out var contentDisposition
-        //         );
+         public async Task<bool> UploadFile(MultipartReader reader,MultipartSection? section)
+         {
+             while (section != null)
+             {
+                 var hasContentDispositionHeader = ContentDispositionHeaderValue.TryParse(
+                  section.ContentDisposition, out var contentDisposition
+                 );
 
-        //         if (hasContentDispositionHeader)
-        //         {
-        //             if (contentDisposition.DispositionType.Equals("form-data") &&
-        //             (!string.IsNullOrEmpty(contentDisposition.FileName.Value) ||
-        //             !string.IsNullOrEmpty(contentDisposition.FileNameStar.Value)))
-        //             {
-        //                 string filePath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "UploadedFiles"));
-        //                 byte[] fileArray;
-        //                 using (var memoryStream = new MemoryStream())
-        //                 {
-        //                     await section.Body.CopyToAsync(memoryStream);
-        //                     fileArray = memoryStream.ToArray();
-        //                 }
-        //                 using (var fileStream = System.IO.File.Create(Path.Combine(filePath, contentDisposition.FileName.Value)))
-        //                 {
-        //                     await fileStream.WriteAsync(fileArray);
-        //                 }
-        //             }
-        //         }
-        //         section = await reader.ReadNextSectionAsync();
-        //     }
-        //     return true;
-        // }
+                 if (hasContentDispositionHeader)
+                 {
+                     if (contentDisposition.DispositionType.Equals("form-data") &&
+                     (!string.IsNullOrEmpty(contentDisposition.FileName.Value) ||
+                     !string.IsNullOrEmpty(contentDisposition.FileNameStar.Value)))
+                     {
+                         string filePath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "UploadedFiles"));
+                         byte[] fileArray;
+                         using (var memoryStream = new MemoryStream())
+                         {
+                             await section.Body.CopyToAsync(memoryStream);
+                             fileArray = memoryStream.ToArray();
+                         }
+                         using (var fileStream = System.IO.File.Create(Path.Combine(filePath, contentDisposition.FileName.Value)))
+                         {
+                             await fileStream.WriteAsync(fileArray);
+                         }
+                     }
+                 }
+                 section = await reader.ReadNextSectionAsync();
+             }
+             return true;
+         }
         public IUnitOfWork UnitOfWork => throw new NotImplementedException();
 
         public Task<IProduct> Delete(int id)

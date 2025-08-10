@@ -1,3 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Orion.DataAccess.Models;
+
 namespace Orion.DataAccess.Repositories;
 
 public class CompetitionScorecardRepository(OrionDbContext context) : IRepository<CompetitionMatch>

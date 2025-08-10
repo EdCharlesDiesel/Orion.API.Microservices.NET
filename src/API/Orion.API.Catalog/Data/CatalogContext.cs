@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Orion.Services.Catalog.API.Data;
+using Orion.DataAccess.Models;
 
-namespace Orion.Services.Product.API.Data
+namespace Orion.API.Catalog.Data
 {
     public class CatalogContext(DbContextOptions<CatalogContext> options) : DbContext(options), ICatalogContext
     {
-        public DbSet<Core.Catalog.Domain.Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
