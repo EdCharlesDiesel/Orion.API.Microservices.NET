@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Orion.Admin.Models.Orders;
 
 namespace ORION.Admin.Models.Orders
 {

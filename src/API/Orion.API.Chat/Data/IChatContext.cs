@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Orion.Core.Chat.Domain;
+using Orion.DataAccess.Entities;
 
 namespace Orion.API.Chat.Data
 {

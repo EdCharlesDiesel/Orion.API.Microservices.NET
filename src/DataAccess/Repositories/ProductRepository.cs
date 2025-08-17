@@ -4,8 +4,11 @@ using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net.Http.Headers;
-using Orion.DataAccess.Models;
+using Microsoft.EntityFrameworkCore;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
 using Orion.Domain.Events;
 using Orion.Domain.Tools;
 
@@ -13,16 +16,16 @@ namespace Orion.DataAccess.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        private OrionDbContext context;
+        private readonly OrionDbContext _context;
         public ProductRepository(OrionDbContext context)
         {
-            this.context = context;
+            this._context = context;
         }
-        public IUnitOfWork UnitOfWork => context;
+        public IUnitOfWork UnitOfWork => _context;
 
         public async Task<IProduct> Get(int id)
         {
-            return await context.Products.Where(m => m.Id == id)
+            return await _context.Products.Where(m => m.Id == id)
                 .FirstOrDefaultAsync();
             throw new NotImplementedException();
         }
@@ -31,7 +34,7 @@ namespace Orion.DataAccess.Repositories
         {
             var model = await Get(id);
             if (model == null) return null;
-            context.Products.Remove(model as Product);
+            _context.Products.Remove(model as Product);
             model.AddDomainEvent(
                 new ProductDeleteEvent(
                     model.Id, (model as Product).EntityVersion));
@@ -42,7 +45,7 @@ namespace Orion.DataAccess.Repositories
         public IProduct New()
         {
             var model = new Product() {EntityVersion=1 };
-            context.Products.Add(model);
+            _context.Products.Add(model);
             return model;
         }
 

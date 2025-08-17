@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Entities;
 
 namespace Orion.Admin.Models.Account
 {
@@ -15,9 +15,13 @@ namespace Orion.Admin.Models.Account
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        public MasterUserEditViewModel() { }
+        public MasterUserEditViewModel(string userName, string password)
+        {
+            UserName = userName;
+            Password = password;
+        }
 
-        public MasterUserEditViewModel(MasterUser appUser)
+        public MasterUserEditViewModel(MasterUser appUser, string userName, string password)
         {
             UserName = appUser.UserName;
             Password = appUser.PasswordHash;

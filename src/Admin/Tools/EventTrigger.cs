@@ -1,17 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using ORION.Domain.Tools;
-
-namespace DDD.ApplicationLayer
+﻿namespace Orion.Admin.Tools
 {
-    public class EventTrigger<T>
+    public class EventTrigger<T>(IEnumerable<IEventHandler<T>> handlers)
         where T : IEventNotification
     {
-        private IEnumerable<IEventHandler<T>> handlers;
-        public EventTrigger(IEnumerable<IEventHandler<T>> handlers)
-        {
-            this.handlers = handlers;
-        }
         public async Task Trigger(T ev)
         {
             foreach (var handler in handlers)

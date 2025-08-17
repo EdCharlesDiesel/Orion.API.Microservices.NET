@@ -1,7 +1,4 @@
-﻿using System.Threading.Tasks;
-using ORION.Domain.Tools;
-
-namespace DDD.ApplicationLayer
+﻿namespace Orion.Admin.Tools
 {
     public interface IEventHandler
     {

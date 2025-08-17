@@ -1,19 +1,32 @@
-
-using ORION.Domain.Aggregates;
-using ORION.Domain.DTOs;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using Orion.Domain.Aggregates;
+using Orion.Domain.DTOs;
 
-namespace ORION.Admin.Models.Employees
+namespace Orion.Admin.Models.Employees
 {
     public class EmployeeFullEditViewModel: IEmployeeFullEditDto
     {
-        public EmployeeFullEditViewModel() { }
-        public EmployeeFullEditViewModel(IEmployee o)
+        public EmployeeFullEditViewModel(string lastName, string firstName, string title, string titleOfCourtesy, string address, string city, string region, string postalCode, string country, string homePhone, string extension, byte[] photo, string notes, string photoPath)
         {
+            LastName = lastName;
+            FirstName = firstName;
+            Title = title;
+            TitleOfCourtesy = titleOfCourtesy;
+            Address = address;
+            City = city;
+            Region = region;
+            PostalCode = postalCode;
+            Country = country;
+            HomePhone = homePhone;
+            Extension = extension;
+            Photo = photo;
+            Notes = notes;
+            PhotoPath = photoPath;
+        }
+        public EmployeeFullEditViewModel(IEmployee o, string lastName, string firstName, string title, string titleOfCourtesy, string address, string city, string region, string postalCode, string country, string homePhone, string extension, byte[] photo, string notes, string photoPath)
+        {
+            Extension = extension;
+            Notes = notes;
             Id = o.Id;
             LastName = o.LastName;
             FirstName = o.FirstName;

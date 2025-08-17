@@ -7,3 +7,7 @@ public interface IChatRequestServices:IRepository<ChatRequest>
 {
     Task<string> GetChatRequests();
 }
+
+public class ChatRequest
+{
+}

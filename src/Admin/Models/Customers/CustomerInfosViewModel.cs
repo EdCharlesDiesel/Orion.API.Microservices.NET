@@ -4,41 +4,52 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ORION.Admin.Models.Customers
+namespace Orion.Admin.Models.Customers
 {
-    public class CustomerInfosViewModel
+    public abstract class CustomerInfosViewModel(
+        int id,
+        string companyName,
+        string contactName,
+        string contactTitle,
+        string address,
+        string city,
+        string region,
+        string postalCode,
+        string country,
+        string phone,
+        string fax)
     {
-        public int Id { get; set; }
-        
-
-        public string CompanyName { get; set; }
+        public int Id { get; set; } = id;
 
 
-        public string ContactName { get; set; }
+        public string CompanyName { get; set; } = companyName;
 
 
-         public string ContactTitle { get;set;  }
+        public string ContactName { get; set; } = contactName;
 
 
-        public string Address { get;set;  }
+        public string ContactTitle { get;set;  } = contactTitle;
 
 
-        public string City { get;set;  }
+        public string Address { get;set;  } = address;
 
 
-        public string Region { get;set;  }
+        public string City { get;set;  } = city;
 
 
-        public string PostalCode { get; set; }
+        public string Region { get;set;  } = region;
 
 
-        public string Country { get;set;  }
+        public string PostalCode { get; set; } = postalCode;
 
 
-        public string Phone { get; set; }
+        public string Country { get;set;  } = country;
 
 
-        public string Fax { get;set;  }
+        public string Phone { get; set; } = phone;
+
+
+        public string Fax { get;set;  } = fax;
 
         //FIXME Fix tostring method
         // public override string ToString()

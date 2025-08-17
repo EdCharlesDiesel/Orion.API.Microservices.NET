@@ -1,11 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ORION.DataAccess.Contexts;
-using ORION.Admin.Models.Products;
+﻿using ORION.Admin.Models.Products;
+using Orion.DataAccess.Data;
 
-namespace ORION.Admin.Queries
+namespace Orion.Admin.Queries
 {
     public class ProductsListQuery:IProductsListQuery
     {
@@ -16,20 +12,19 @@ namespace ORION.Admin.Queries
         }
         public async Task<IEnumerable<ProductInfosViewModel>> GetAllProducts()
         {
-            throw new NotImplementedException();
-            //return await context.Products.Select(m => new ProductInfosViewModel
-            //{
-            //    StartValidityDate = m.StartValidityDate,
-            //    EndValidityDate = m.EndValidityDate,
-            //    ProductName = m.ProductName,
-            //    DurationInDays = m.DurationInDays,
-            //    Id = m.Id,
-            //    Image= m.Image,
-            //    UnitPrice = m.UnitPrice,
-            //    CategoryId = m.CategoryId
-            //})
-            //    .OrderByDescending(m=> m.EndValidityDate)
-            //    .ToListAsync();
+            return await context.Products.Select(m => new ProductInfosViewModel
+            {
+                StartValidityDate = m.StartValidityDate,
+                EndValidityDate = m.EndValidityDate,
+                ProductName = m.ProductName,
+                DurationInDays = m.DurationInDays,
+                Id = m.Id,
+                Image= m.Image,
+                UnitPrice = m.UnitPrice,
+                CategoryId = m.CategoryId
+            })
+                .OrderByDescending(m=> m.EndValidityDate)
+                .ToListAsync();
         }
     }
 }

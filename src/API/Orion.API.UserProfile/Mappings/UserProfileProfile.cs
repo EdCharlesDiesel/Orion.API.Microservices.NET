@@ -8,6 +8,6 @@ public class UserProfileProfile : Profile
 
         public UserProfileProfile()
         {
-            CreateMap<Core.UserProfile.Domain.UserProfile, UserProfileDto>().ReverseMap();
+            CreateMap<Domain.IRepositories.UserProfile, UserProfileDto>().ReverseMap();
         }
 }

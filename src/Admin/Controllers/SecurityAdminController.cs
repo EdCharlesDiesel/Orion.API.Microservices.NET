@@ -1,21 +1,21 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Orion.Admin.Models;
-using Orion.DataAccess.Contexts;
-using Orion.DataAccess.Models;
-using Orion.DataAccess.Services;
 using System.Security.Claims;
+using Orion.Admin.Areas.API;
+using ORION.Admin.Models;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
 
 namespace Orion.Admin.Controllers
 {
     public class SecurityAdminController : Controller
     {
-        private UserManager<MasterUser> _UserManager;
-        private IBusinessOwnerService _BusinessOwnerService;
-        private RoleManager<IdentityRole> _RoleManager;
-        private OrionDbContext _Context;
-        private ISubscriptionService _SubscriptionService;
+        private readonly UserManager<MasterUser> _userManager;
+        private readonly IBusinessOwnerService _businessOwnerService;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private OrionDbContext _context;
+        private readonly ISubscriptionService _SubscriptionService;
 
         public SecurityAdminController(UserManager<MasterUser> userManager, 
             RoleManager<IdentityRole> roleManager, IBusinessOwnerService businessOwnerService,
@@ -36,10 +36,10 @@ namespace Orion.Admin.Controllers
                 throw new ArgumentNullException(nameof(userManager), $"{nameof(userManager)} is null.");
             }
 
-            _UserManager = userManager;
-            _BusinessOwnerService = businessOwnerService;
-            _RoleManager = roleManager;
-            _Context = dbContext;
+            _userManager = userManager;
+            _businessOwnerService = businessOwnerService;
+            _roleManager = roleManager;
+            _context = dbContext;
             _SubscriptionService = subscriptionService;
         }
 
@@ -48,9 +48,9 @@ namespace Orion.Admin.Controllers
             var model = new SecurityAdminAction();
 
             model.BusinessOwners =
-                AdaptToSelectListItems(_BusinessOwnerService.GetBusinessOwners());
+                AdaptToSelectListItems(_businessOwnerService.GetBusinessOwners());
 
-            model.Roles = AdaptToSelectListItems(_RoleManager.Roles.ToList());
+            model.Roles = AdaptToSelectListItems(_roleManager.Roles.ToList());
 
             // FIXME This needs fixing
            // model.Users = AdaptToSelectListItems(_UserManager.Users.OrderBy(x => x.UserName).ToList());
@@ -59,14 +59,14 @@ namespace Orion.Admin.Controllers
 
             model.Permissions.Add(new SelectListItem()
             {
-                Value = SecurityConstants.PermissionName_Edit,
-                Text = SecurityConstants.PermissionName_Edit
+                Value = SecurityConstants.PermissionNameEdit,
+                Text = SecurityConstants.PermissionNameEdit
             });
 
             model.Permissions.Add(new SelectListItem()
             {
-                Value = SecurityConstants.PermissionName_View,
-                Text = SecurityConstants.PermissionName_View
+                Value = SecurityConstants.PermissionNameView,
+                Text = SecurityConstants.PermissionNameView
             });
 
             model.Claims = GetAllClaims();
@@ -75,57 +75,62 @@ namespace Orion.Admin.Controllers
 
             model.SubscriptionTypes.Add(new SelectListItem()
             {
-                Value = SecurityConstants.SubscriptionType_Basic,
-                Text = SecurityConstants.SubscriptionType_Basic
+                Value = SecurityConstants.SubscriptionTypeBasic,
+                Text = SecurityConstants.SubscriptionTypeBasic
             });
 
             model.SubscriptionTypes.Add(new SelectListItem()
             {
-                Value = SecurityConstants.SubscriptionType_Ultimate,
-                Text = SecurityConstants.SubscriptionType_Ultimate
+                Value = SecurityConstants.SubscriptionTypeUltimate,
+                Text = SecurityConstants.SubscriptionTypeUltimate
             });
 
             return View(model);
         }
+
+        private List<SelectListItem> AdaptToSelectListItems(IEnumerable<BusinessOwner> getBusinessOwners)
+        {
+            throw new NotImplementedException();
+        }
+
         private List<ClaimViewModel> GetAllClaims()
         {
 
-            throw new NotImplementedException();
-            //var users = (from temp in _Context.Users
-            //             select temp);
+            var users = (from temp in _Context.Users
+                         select temp);
 
-            //Dictionary<string, string> usersDictionary = new Dictionary<string, string>();
+            Dictionary<string, string> usersDictionary = new Dictionary<string, string>();
 
-            //foreach(var usr in users)
-            //{
-            //    usersDictionary.Add(usr.Id.ToString(), usr.UserName);
-            //}
+            foreach(var usr in users)
+            {
+                usersDictionary.Add(usr.Id.ToString(), usr.UserName);
+            }
 
-            //Dictionary<string, string> businessOwnersDictionary = new Dictionary<string, string>();
+            Dictionary<string, string> businessOwnersDictionary = new Dictionary<string, string>();
 
-            //foreach (var businessOwner in _BusinessOwnerService.GetBusinessOwners())
-            //{
-            //    businessOwnersDictionary.Add(businessOwner.Id.ToString(),
-            //        String.Format("{0} {1}", businessOwner.FirstName, businessOwner.LastName)
-            //        );
-            //}
+            foreach (var businessOwner in _BusinessOwnerService.GetBusinessOwners())
+            {
+                businessOwnersDictionary.Add(businessOwner.Id.ToString(),
+                    String.Format("{0} {1}", businessOwner.FirstName, businessOwner.LastName)
+                    );
+            }
 
-            //var claims = (
-            //    from temp in _Context.UserClaims
-            //    select temp
-            //    );
+            var claims = (
+                from temp in _Context.UserClaims
+                select temp
+                );
 
-            //List<ClaimViewModel> returnValues = new List<ClaimViewModel>();
+            List<ClaimViewModel> returnValues = new List<ClaimViewModel>();
 
-            //foreach (var claim in claims)
-            //{
-            //    var temp = new ClaimViewModel(claim.Id.ToString(), usersDictionary[claim.UserId.ToString()],
-            //        claim.ClaimType, businessOwnersDictionary[claim.ClaimValue]);
+            foreach (var claim in claims)
+            {
+                var temp = new ClaimViewModel(claim.Id.ToString(), usersDictionary[claim.UserId.ToString()],
+                    claim.ClaimType, businessOwnersDictionary[claim.ClaimValue]);
 
-            //    returnValues.Add(temp);
-            //}
+                returnValues.Add(temp);
+            }
 
-            //return returnValues;
+            return returnValues;
         }
 
         [HttpPost]
@@ -135,10 +140,10 @@ namespace Orion.Admin.Controllers
                 securityAdminAction.RoleId != null &&
                 securityAdminAction.UserId != null)
             {
-                var role = await _RoleManager.FindByIdAsync(securityAdminAction.RoleId);
-                var user = await _UserManager.FindByIdAsync(securityAdminAction.UserId);
+                var role = await _roleManager.FindByIdAsync(securityAdminAction.RoleId);
+                var user = await _userManager.FindByIdAsync(securityAdminAction.UserId);
 
-                await _UserManager.AddToRoleAsync(user, role.Name);
+                await _userManager.AddToRoleAsync(user, role.Name);
             }
 
             return RedirectToAction("Index");
@@ -151,10 +156,10 @@ namespace Orion.Admin.Controllers
                 securityAdminAction.RoleId != null &&
                 securityAdminAction.UserId != null)
             {
-                var role = await _RoleManager.FindByIdAsync(securityAdminAction.RoleId);
-                var user = await _UserManager.FindByIdAsync(securityAdminAction.UserId);
+                var role = await _roleManager.FindByIdAsync(securityAdminAction.RoleId);
+                var user = await _userManager.FindByIdAsync(securityAdminAction.UserId);
 
-                await _UserManager.RemoveFromRoleAsync(user, role.Name);
+                await _userManager.RemoveFromRoleAsync(user, role.Name);
             }
 
             return RedirectToAction("Index");
@@ -191,7 +196,7 @@ namespace Orion.Admin.Controllers
 
         private string GetSelectedUsername(SecurityAdminAction securityAdminAction)
         {
-            var allUsers = _UserManager.Users.ToList();
+            var allUsers = _userManager.Users.ToList();
 
             var username = (from temp in allUsers
                             where temp.Id.ToString() == securityAdminAction.UserId
@@ -262,13 +267,13 @@ namespace Orion.Admin.Controllers
                 securityAdminAction.BusinessOwnerId != null &&
                 securityAdminAction.UserId != null)
             {
-                var user = await _UserManager.FindByIdAsync(securityAdminAction.UserId);
+                var user = await _userManager.FindByIdAsync(securityAdminAction.UserId);
 
                 var claim = new Claim(
                     securityAdminAction.Permission,
                     securityAdminAction.BusinessOwnerId);
 
-                var claims = await _UserManager.GetClaimsAsync(user);
+                var claims = await _userManager.GetClaimsAsync(user);
 
                 /*
                 var removeThisClaim = (
@@ -283,7 +288,7 @@ namespace Orion.Admin.Controllers
                 }
                 */
 
-                await _UserManager.AddClaimAsync(user, claim);
+                await _userManager.AddClaimAsync(user, claim);
             }
 
             return RedirectToAction("Index");
@@ -291,19 +296,18 @@ namespace Orion.Admin.Controllers
 
         public ActionResult RemovePermission(int id)
         {
-            //var removeThis = (from temp in _Context.UserClaims
-            //                  where temp.Id == id
-            //                  select temp).FirstOrDefault();
+            var removeThis = (from temp in _Context.UserClaims
+                              where temp.Id == id
+                              select temp).FirstOrDefault();
 
-            //if (removeThis != null)
-            //{
-            //    _Context.UserClaims.Remove(removeThis);
-            //    _Context.SaveChanges();
-            //}
+            if (removeThis != null)
+            {
+                _Context.UserClaims.Remove(removeThis);
+                _Context.SaveChanges();
+            }
 
-            //return RedirectToAction("Index");
+            return RedirectToAction("Index");
 
-            throw new NotImplementedException();
         }
 
         [HttpPost]
@@ -313,9 +317,9 @@ namespace Orion.Admin.Controllers
                 securityAdminAction.BusinessOwnerId != null &&
                 securityAdminAction.UserId != null)
             {
-                var user = await _UserManager.FindByIdAsync(securityAdminAction.UserId);
+                var user = await _userManager.FindByIdAsync(securityAdminAction.UserId);
 
-                var claims = await _UserManager.GetClaimsAsync(user);
+                var claims = await _userManager.GetClaimsAsync(user);
 
                 var removeThisClaim = (
                     from temp in claims
@@ -325,11 +329,16 @@ namespace Orion.Admin.Controllers
 
                 if (removeThisClaim != null)
                 {
-                    await _UserManager.RemoveClaimAsync(user, removeThisClaim);
+                    await _userManager.RemoveClaimAsync(user, removeThisClaim);
                 }
             }
 
             return RedirectToAction("Index");
         }
+    }
+
+    public interface ISubscriptionService
+    {
+        void AddSubscription(string getSelectedUsername, string subscriptionType);
     }
 }

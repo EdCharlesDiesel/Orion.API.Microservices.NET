@@ -8,3 +8,7 @@ public interface IBasketServices:IRepository<Basket>
 {
     Task<List<Basket>?> BulkCreate(List<Basket>  baskets);
 }
+
+public class Basket
+{
+}

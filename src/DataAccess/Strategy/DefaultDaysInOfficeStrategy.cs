@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Entities;
 
 
 namespace Orion.DataAccess.Strategy
@@ -11,7 +11,7 @@ namespace Orion.DataAccess.Strategy
         public int GetDaysInOffice(IEnumerable<Term> terms)
         {
             var enumerable = terms as Term[] ?? terms.ToArray();
-            if (terms == null || !enumerable.Any())
+            if (!enumerable.Any())
             {
                 return 0;
             }

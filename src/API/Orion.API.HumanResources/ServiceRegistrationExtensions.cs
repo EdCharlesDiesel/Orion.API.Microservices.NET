@@ -8,7 +8,7 @@ namespace Orion.API.HumanResources
     {
         public static IServiceCollection RegisterBusinessServices(
             this IServiceC
-                ollection services)
+                collection services)
         {
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IPromotionService, PromotionService>();

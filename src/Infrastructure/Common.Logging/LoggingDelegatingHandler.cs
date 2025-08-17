@@ -7,15 +7,8 @@ using System.Threading.Tasks;
 
 namespace Orion.Common.Logging
 {
-    public class LoggingDelegatingHandler : DelegatingHandler
+    public class LoggingDelegatingHandler(ILogger<LoggingDelegatingHandler> logger) : DelegatingHandler
     {
-        private readonly ILogger<LoggingDelegatingHandler> logger;
-
-        public LoggingDelegatingHandler(ILogger<LoggingDelegatingHandler> logger)
-        {
-            this.logger = logger;
-        }
-
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
             try
@@ -26,12 +19,12 @@ namespace Orion.Common.Logging
 
                 if (response.IsSuccessStatusCode)
                 {
-                    logger.LogInformation("Received a success response from {Url}", response.RequestMessage.RequestUri);
+                    logger.LogInformation("Received a success response from {Url}", response.RequestMessage?.RequestUri);
                 }
                 else
                 {
                     logger.LogWarning("Received a non-success status code {StatusCode} from {Url}",
-                        (int)response.StatusCode, response.RequestMessage.RequestUri);
+                        (int)response.StatusCode, response.RequestMessage?.RequestUri);
                 }
 
                 return response;
@@ -39,13 +32,19 @@ namespace Orion.Common.Logging
             catch (HttpRequestException ex) 
                 when (ex.InnerException is SocketException se && se.SocketErrorCode == SocketError.ConnectionRefused)
             {
-                var hostWithPort = request.RequestUri.IsDefaultPort
-                    ? request.RequestUri.DnsSafeHost
-                    : $"{request.RequestUri.DnsSafeHost}:{request.RequestUri.Port}";
+                if (request.RequestUri != null)
+                {
+                    if (request.RequestUri != null)
+                    {
+                        var hostWithPort = request.RequestUri != null && request.RequestUri.IsDefaultPort
+                            ? request.RequestUri.DnsSafeHost
+                            : $"{request.RequestUri?.DnsSafeHost}:{request.RequestUri.Port}";
 
-                logger.LogCritical(ex, "Unable to connect to {Host}. Please check the " +
-                                        "configuration to ensure the correct URL for the service " +
-                                        "has been configured.", hostWithPort);
+                        logger.LogCritical(ex, "Unable to connect to {Host}. Please check the " +
+                                               "configuration to ensure the correct URL for the service " +
+                                               "has been configured.", hostWithPort);
+                    }
+                }
             }
 
             return new HttpResponseMessage(HttpStatusCode.BadGateway)

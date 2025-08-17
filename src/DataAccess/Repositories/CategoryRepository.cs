@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Orion.DataAccess.Models;
 using Orion.Domain.Aggregates;
 using Orion.Domain.IRepositories;
 using Orion.Domain.Tools;

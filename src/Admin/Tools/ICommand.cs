@@ -1,5 +1,5 @@
 ﻿
-namespace DDD.ApplicationLayer
+namespace Orion.Admin.Tools
 {
     public interface ICommand
     {

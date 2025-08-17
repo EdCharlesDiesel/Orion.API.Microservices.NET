@@ -1,10 +1,9 @@
-﻿using DDD.ApplicationLayer;
-using ORION.Domain.Aggregates;
-using ORION.Domain.Events;
-using ORION.Domain.IRepositories;
-using System.Threading.Tasks;
+﻿using Orion.Admin.Tools;
+using Orion.Domain.Aggregates;
+using Orion.Domain.Events;
+using Orion.Domain.IRepositories;
 
-namespace ORION.Admin.Handlers
+namespace Orion.Admin.Handlers
 {
     public class ProductDeleteEventHandler :
         IEventHandler<ProductDeleteEvent>

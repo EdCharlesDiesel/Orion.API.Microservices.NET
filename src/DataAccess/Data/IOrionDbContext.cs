@@ -1,10 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Orion.Core.Basket.Domain;
-using Orion.Core.Catalog.Domain;
-using Orion.Core.Chat.Domain;
-using Orion.Core.CompetitionScorecard.Domain;
-using Orion.Core.Discount.Domain;
-using Orion.Core.TradingEconomics.Domain;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Orion.DataAccess.Entities;
 
 namespace Orion.DataAccess.Data
 {
@@ -18,12 +15,9 @@ namespace Orion.DataAccess.Data
         DbSet<ChatRequest> ChatRequests  { get; set; }
         DbSet<Coupon> Coupons  { get; set; }
         DbSet<CompetitionMatch> CompetitionMatches  { get; set; }
-        DbSet<Orion.DataAccess.Models.AwbuildVersion> AwbuildVersions  { get; set; }
+        DbSet<AwbuildVersion> AwbuildVersions  { get; set; }
         
         // DbSet<Orion.Core.Orders.Domain.Order> Orders  { get; set; }
-        
-        
-        
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

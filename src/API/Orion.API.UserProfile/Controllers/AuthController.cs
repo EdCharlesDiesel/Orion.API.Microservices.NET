@@ -1,23 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Orion.API.UserProfile.Data;
 using Orion.API.UserProfile.Models;
-using Orion.Repository.Services;
+
 
 namespace Orion.API.UserProfile.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class AuthController : ControllerBase
+public class AuthController(UserProfileDbContext dbContext, JwtService jwtService) : ControllerBase
 {
-    private readonly UserProfileDbContext _dbContext;
-    private readonly JwtService _jwtService;
+    private readonly JwtService _jwtService = jwtService;
 
-    public AuthController(UserProfileDbContext dbContext, JwtService jwtService)
-    {
-        _dbContext = dbContext;
-        _jwtService = jwtService;
-    }
-    
     //TODO: This needs to be fixed.
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterUserRequest request)
@@ -35,7 +28,7 @@ public class AuthController : ControllerBase
         // };
         //
         // _dbContext.UserProfiles.Add(user);
-        await _dbContext.SaveChangesAsync();
+        await dbContext.SaveChangesAsync();
 
         return Ok("User registered successfully.");
     }

@@ -1,17 +1,17 @@
 using System.Xml.Linq;
 using Microsoft.AspNetCore.Identity;
-using Orion.DataAccess.Services;
-using Orion.DataAccess.Contexts;
-using Orion.DataAccess.Models;
-using Orion.Admin.TestData;
+using Orion.Admin.Areas.API;
+using ORION.Admin.TestData;
 using Orion.DataAccess;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
 
 namespace Orion.Admin.Controllers
 {
     public class TestDataUtility : ITestDataUtility
     {
-        private IBusinessOwnerService _Service;
-        private OrionDbContext _DbContext;
+        private IBusinessOwnerService _service;
+        private OrionDbContext _dbContext;
         private UserManager<IdentityUser> _UserManager;
         private RoleManager<IdentityRole> _RoleManager;
 
@@ -23,14 +23,14 @@ namespace Orion.Admin.Controllers
             if (service == null)
                 throw new ArgumentNullException("service", "service is null.");
 
-            _Service = service;
+            _service = service;
 
             if (dbContext == null)
             {
                 throw new ArgumentNullException("dbContext", "Argument cannot be null.");
             }
 
-            _DbContext = dbContext;
+            _dbContext = dbContext;
 
             _UserManager = userManager;
             _RoleManager = roleManager;
@@ -44,16 +44,16 @@ namespace Orion.Admin.Controllers
 
             DeleteAll();
 
-            allBusinessOwners.ForEach(x => _Service.Save(x));
+            allBusinessOwners.ForEach(x => _service.Save(x));
 
             await InitializeSecurity();
         }
 
         public async Task VerifyDatabaseIsPopulated()
         {
-            _DbContext.Database.EnsureCreated();
+            _dbContext.Database.EnsureCreated();
 
-            var businessOwners = _Service.GetBusinessOwners();
+            var businessOwners = _service.GetBusinessOwners();
 
             if (businessOwners == null || businessOwners.Count == 0)
             {
@@ -157,11 +157,11 @@ namespace Orion.Admin.Controllers
 
         private void DeleteAll()
         {
-            var allBusinessOwners = _Service.GetBusinessOwners();
+            var allBusinessOwners = _service.GetBusinessOwners();
 
             foreach (var item in allBusinessOwners)
             {
-                _Service.DeleteBusinessOwnerById(item.Id);
+                _service.DeleteBusinessOwnerById(item.Id);
             }
         }
         private async Task InitializeSecurity()
@@ -170,15 +170,15 @@ namespace Orion.Admin.Controllers
             await DeleteAllUsers();
 
             // create the roles
-            await _RoleManager.CreateAsync(new IdentityRole(SecurityConstants.RoleName_Admin));
-            await _RoleManager.CreateAsync(new IdentityRole(SecurityConstants.RoleName_User));
+            await _RoleManager.CreateAsync(new IdentityRole(SecurityConstants.RoleNameAdmin));
+            await _RoleManager.CreateAsync(new IdentityRole(SecurityConstants.RoleNameUser));
 
             // create users
-            var admin = await CreateUser(SecurityConstants.Username_Admin);
-            var user1 = await CreateUser(SecurityConstants.Username_User1);
-            var user2 = await CreateUser(SecurityConstants.Username_User2);
-            var user3 = await CreateUser(SecurityConstants.Username_Subscriber1);
-            var user4 = await CreateUser(SecurityConstants.Username_Subscriber2);
+            var admin = await CreateUser(SecurityConstants.UsernameAdmin);
+            var user1 = await CreateUser(SecurityConstants.UsernameUser1);
+            var user2 = await CreateUser(SecurityConstants.UsernameUser2);
+            var user3 = await CreateUser(SecurityConstants.UsernameSubscriber1);
+            var user4 = await CreateUser(SecurityConstants.UsernameSubscriber2);
         }
 
         private async Task<IdentityUser> CreateUser(string username)

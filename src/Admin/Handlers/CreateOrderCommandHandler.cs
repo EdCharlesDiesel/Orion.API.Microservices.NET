@@ -1,9 +1,8 @@
-﻿using DDD.ApplicationLayer;
-using ORION.Domain.IRepositories;
-using ORION.Admin.Commands;
-using System.Threading.Tasks;
+﻿using Orion.Admin.Commands;
+using Orion.Admin.Tools;
+using Orion.Domain.IRepositories;
 
-namespace ORION.Admin.Handlers
+namespace Orion.Admin.Handlers
 {
     public class CreateOrderCommandHandler : ICommandHandler<CreateOrderCommand>
     {

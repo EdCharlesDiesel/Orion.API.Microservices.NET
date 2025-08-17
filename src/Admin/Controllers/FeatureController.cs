@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Orion.DataAccess.Contexts;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
 
 namespace Orion.Admin.Controllers
 {
@@ -67,7 +66,7 @@ namespace Orion.Admin.Controllers
             {
                 return new BadRequestResult();
             }
-            Feature feature = _Context.Features.Find(id);
+            var feature = _Context.Features.Find(id);
             if (feature == null)
             {
                 return NotFound();

@@ -1,9 +1,8 @@
-﻿using DDD.ApplicationLayer;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿
 using ORION.Admin.Models.Products;
+using Orion.Admin.Tools;
 
-namespace ORION.Admin.Queries
+namespace Orion.Admin.Queries
 {
     public interface IProductsListQuery: IQuery
     {

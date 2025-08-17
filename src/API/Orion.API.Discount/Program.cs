@@ -1,4 +1,5 @@
 using Orion.API.Discount.Extensions;
+using Orion.DataAccess.Repositories;
 
 namespace Orion.API.Discount
 {

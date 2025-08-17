@@ -1,15 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace ORION.Admin.Models
+namespace Orion.Admin.Models
 {
     public class SearchResultRow
     {
-        public SearchResultRow()
+        public SearchResultRow(string firstName, string lastName)
         {
-            
+            FirstName = firstName;
+            LastName = lastName;
         }
 
         public int Id { get; set; }

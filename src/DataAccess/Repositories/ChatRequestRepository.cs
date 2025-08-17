@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
 
 namespace Orion.DataAccess.Repositories;
 public class ChatRequestRepository(OrionDbContext context) : IChatRequestServices

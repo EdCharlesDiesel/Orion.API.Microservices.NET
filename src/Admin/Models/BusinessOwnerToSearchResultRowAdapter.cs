@@ -1,6 +1,7 @@
-using ORION.DataAccess.Models;
+using ORION.Admin.Models;
+using Orion.DataAccess.Entities;
 
-namespace ORION.Admin.Models
+namespace Orion.Admin.Models
 {
     public class BusinessOwnerToSearchResultRowAdapter
     {

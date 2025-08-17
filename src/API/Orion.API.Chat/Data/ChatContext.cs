@@ -1,16 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Orion.Core.Chat.Domain;
+using Orion.DataAccess.Entities;
 
 namespace Orion.API.Chat.Data
 {
-    public class ChatRequestContext : DbContext
+    public class ChatRequestContext(DbContextOptions<ChatRequestContext> options) : DbContext(options)
     {
-        public ChatRequestContext(DbContextOptions<ChatRequestContext> options)
-            : base(options) { }
-        
-
         public DbSet<ChatRequest> ChatRequests { get; set; }
-
 
         public async Task SaveChangesAsync()
         {

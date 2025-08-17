@@ -1,6 +1,6 @@
 using AutoMapper;
 using Orion.API.CompetitionScorecard.DTO;
-using Orion.Core.CompetitionScorecard.Domain;
+using Orion.DataAccess.Entities;
 
 namespace Orion.API.CompetitionScorecard.Mappings;
 

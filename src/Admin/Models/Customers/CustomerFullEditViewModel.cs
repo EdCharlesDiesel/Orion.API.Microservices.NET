@@ -1,9 +1,9 @@
-using ORION.Domain.Aggregates;
-using ORION.Domain.DTOs;
-using System;
 using System.ComponentModel.DataAnnotations;
+using Orion.Domain.Aggregates;
+using Orion.Domain.DTOs;
+
 //TODO Fix this
-namespace ORION.Admin.Models.Customers
+namespace Orion.Admin.Models.Customers
 {
     public class CustomerFullEditViewModel: ICustomerFullEditDto
     {

@@ -1,14 +1,11 @@
-﻿using DDD.ApplicationLayer;
+﻿using Orion.Admin.Tools;
 using Orion.Domain.DTOs;
+
 
 namespace Orion.Admin.Commands
 {
-    public class UpdateEmployeeCommand: ICommand
+    public class UpdateEmployeeCommand(IEmployeeFullEditDto updates) : ICommand
     {
-        public UpdateEmployeeCommand(IEmployeeFullEditDto updates)
-        {
-            Updates = updates;
-        }
-        public IEmployeeFullEditDto Updates { get; private set; }
+        public IEmployeeFullEditDto Updates { get; private set; } = updates;
     }
 }

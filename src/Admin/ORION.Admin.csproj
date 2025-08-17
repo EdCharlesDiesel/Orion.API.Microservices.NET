@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>    
+    <ProjectReference Include="..\DataAccess\Orion.DataAccess.csproj" />    
+    <ProjectReference Include="..\Domain\Orion.Domain\Orion.Domain.csproj" />    
     <ProjectReference Include="..\ORION.DataAccess\ORION.DataAccess.csproj" />
     <ProjectReference Include="..\ORION.Domain\ORION.Domain.csproj" />
   </ItemGroup>

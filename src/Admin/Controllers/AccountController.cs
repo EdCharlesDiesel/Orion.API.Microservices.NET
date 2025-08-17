@@ -3,26 +3,17 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Models.Account;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Entities;
 
 namespace Orion.Admin.Controllers
 {
     // [Authorize]
-    public class AccountController : Controller
+    public class AccountController(
+        UserManager<MasterUser> userManager,
+        SignInManager<MasterUser> signInManager,
+        IPasswordHasher<MasterUser> passwordHasher)
+        : Controller
     {
-        private readonly UserManager<MasterUser> _userManager;
-        private readonly SignInManager<MasterUser> _singInManager;
-        private IPasswordHasher<MasterUser> _passwordHasher;
-
-        public AccountController(UserManager<MasterUser> userManager,
-                                 SignInManager<MasterUser> signInManager,
-                                 IPasswordHasher<MasterUser> passwordHasher)
-        {
-            _userManager = userManager;
-            _singInManager = signInManager;
-            _passwordHasher = passwordHasher;
-        }
-
         [AllowAnonymous]
         public IActionResult Register() => View();
 
@@ -33,7 +24,7 @@ namespace Orion.Admin.Controllers
             {
                 MasterUser appUser = new MasterUser { UserName = user.UserName, Email = user.EmailAddress };
 
-                IdentityResult result = await _userManager.CreateAsync(appUser, user.Password);
+                IdentityResult result = await userManager.CreateAsync(appUser, user.Password);
 
                 if (result.Succeeded)
                 {
@@ -64,11 +55,11 @@ namespace Orion.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var appUser = await _userManager.FindByNameAsync(login.UserName);
+                var appUser = await userManager.FindByNameAsync(login.UserName);
 
                 if (appUser != null)
                 {
-                    Microsoft.AspNetCore.Identity.SignInResult signInResult = await _singInManager.PasswordSignInAsync(appUser.UserName, login.Password, false, false);
+                    Microsoft.AspNetCore.Identity.SignInResult signInResult = await signInManager.PasswordSignInAsync(appUser.UserName, login.Password, false, false);
 
                     if (signInResult.Succeeded)
                     {
@@ -84,14 +75,14 @@ namespace Orion.Admin.Controllers
 
         public async Task<IActionResult> LogOut()
         {
-            await _singInManager.SignOutAsync();
+            await signInManager.SignOutAsync();
 
             return RedirectToAction("LogIn");
         }
 
         public async Task<IActionResult> Edit()
         {
-            MasterUser appUser = await _userManager.FindByNameAsync(User.Identity.Name);
+            MasterUser appUser = await userManager.FindByNameAsync(User.Identity.Name);
 
             MasterUserEditViewModel userEdit = new MasterUserEditViewModel(appUser);
 
@@ -103,22 +94,22 @@ namespace Orion.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                MasterUser appUser = await _userManager.FindByNameAsync(User.Identity.Name);
+                MasterUser appUser = await userManager.FindByNameAsync(User.Identity?.Name);
 
                 appUser.UserName = userEdit.UserName;
-                if (userEdit.Password != null)
-                {
-                    appUser.PasswordHash = _passwordHasher.HashPassword(appUser, userEdit.Password);
-                }
+                if (appUser != null) appUser.PasswordHash = passwordHasher.HashPassword(appUser, userEdit.Password);
 
-                IdentityResult ıdentityResult = await _userManager.UpdateAsync(appUser);
-                if (ıdentityResult.Succeeded)
+                if (appUser != null)
                 {
-                    TempData["Success"] = "Your information has been edited..!";
-                }
-                else
-                {
-                    TempData["Warning"] = "Your information has been wrong..!";
+                    IdentityResult ıdentityResult = await userManager.UpdateAsync(appUser);
+                    if (ıdentityResult.Succeeded)
+                    {
+                        TempData["Success"] = "Your information has been edited..!";
+                    }
+                    else
+                    {
+                        TempData["Warning"] = "Your information has been wrong..!";
+                    }
                 }
             }
 

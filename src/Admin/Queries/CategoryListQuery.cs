@@ -1,19 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using ORION.DataAccess.Contexts;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Orion.DataAccess.Data;
 
-namespace ORION.Admin.Queries
+namespace Orion.Admin.Queries
 {
-    public class CategoryListQuery : ICategoryListQuery
+    public class CategoryListQuery(OrionDbContext context) : ICategoryListQuery
     {
-        OrionDbContext context;
-        public CategoryListQuery(OrionDbContext context)
-        {
-            this.context = context;
-        }
         public async Task<IEnumerable<SelectListItem>> AllCategories()
         {
             return (await context.Categories.Select(m => new

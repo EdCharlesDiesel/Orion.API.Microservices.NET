@@ -1,18 +1,19 @@
 using System;
 using System.Security.Claims;
+using Orion.Admin;
 
 namespace ORION.Admin.Security
 {
     public class DefaultUserAuthorizationStrategy : IUserAuthorizationStrategy
     {
-        private SecurityUtility _SecurityUtility;
+        private readonly SecurityUtility _securityUtility;
 
         public DefaultUserAuthorizationStrategy(
             IUserClaimsPrincipalProvider provider)
         {
             ClaimsPrincipal principal = provider.GetUser();
 
-            _SecurityUtility =
+            _securityUtility =
                 new SecurityUtility(principal.Identity, principal);
         }
         public bool IsAuthorizedForSearch
@@ -25,7 +26,7 @@ namespace ORION.Admin.Security
                 }
                 else
                 {
-                    return _SecurityUtility.HasClaim(
+                    return _securityUtility.HasClaim(
                         SecurityConstants.Claim_SubscriptionType);
                 }
             }
@@ -33,7 +34,7 @@ namespace ORION.Admin.Security
 
         private bool IsAdministrator()
         {
-            return _SecurityUtility.IsInRole(
+            return _securityUtility.IsInRole(
                 SecurityConstants.RoleName_Admin);
         }
 
@@ -49,7 +50,7 @@ namespace ORION.Admin.Security
                 }
                 else
                 {
-                    return _SecurityUtility.HasClaim(
+                    return _securityUtility.HasClaim(
                         SecurityConstants.Claim_SubscriptionType, 
                         SecurityConstants.SubscriptionType_Ultimate);
                 }

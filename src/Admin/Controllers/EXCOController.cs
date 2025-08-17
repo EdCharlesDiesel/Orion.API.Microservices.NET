@@ -1,18 +1,14 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Models;
+using ORION.Admin.Models;
 
 namespace Orion.Admin.Controllers
 {
 
-    public class EXCOController : Controller
+    public class ExcoController(ILogger<ExcoController> logger) : Controller
     {
-        private readonly ILogger<EXCOController> _logger;
-
-        public EXCOController(ILogger<EXCOController> logger)
-        {
-            _logger = logger;
-        }
+        private readonly ILogger<ExcoController> _logger = logger;
 
         public IActionResult Index()
         {

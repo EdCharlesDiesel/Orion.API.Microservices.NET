@@ -10,3 +10,7 @@ public interface IUserProfileServices:IRepository<UserProfile>
     Task<string> GetUserProfilesByIndicator(params string[] indicators);
     Task<UserProfile> Create(UserProfile userProfile);
 }
+
+public class UserProfile
+{
+}

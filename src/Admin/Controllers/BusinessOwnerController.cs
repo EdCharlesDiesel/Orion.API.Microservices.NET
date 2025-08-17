@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Orion.Admin.Areas.API;
+using Orion.DataAccess.Entities;
 using Orion.Domain.Utility;
-using Orion.DataAccess.Models;
-using Orion.DataAccess.Services;
 using Orion.Domain.Constants;
 
 
@@ -12,10 +12,10 @@ namespace Orion.Admin.Controllers
     // [Authorize(Roles = SecurityConstants.RoleName_Admin)]
     public class BusinessOwnerController : Controller
     {
-        private const int ID_FOR_CREATE_NEW_BUSINESSOWNER = 0;
-        private IBusinessOwnerService _BusinessOwnerService;
-        private IValidatorStrategy<BusinessOwner> _Validator;
-        private ITestDataUtility _TestDataUtility;
+        private const int IdForCreateNewBusinessowner = 0;
+        private IBusinessOwnerService _businessOwnerService;
+        private IValidatorStrategy<BusinessOwner> _validator;
+        private readonly ITestDataUtility _testDataUtility;
 
         public BusinessOwnerController(IBusinessOwnerService businessOwnerService,
             IValidatorStrategy<BusinessOwner> validator,
@@ -27,18 +27,18 @@ namespace Orion.Admin.Controllers
 
             if (validator == null)
             {
-                throw new ArgumentNullException("validator", "Argument cannot be null.");
+                throw new ArgumentNullException(nameof(validator), "Argument cannot be null.");
             }
 
-            _Validator = validator;
-            _BusinessOwnerService = businessOwnerService;
-            _TestDataUtility = testDataUtility;
+            _validator = validator;
+            _businessOwnerService = businessOwnerService;
+            _testDataUtility = testDataUtility;
         }
 
         [AllowAnonymous]
         public ActionResult Index()
         {
-            var businessOwners = _BusinessOwnerService.GetBusinessOwners();
+            var businessOwners = _businessOwnerService.GetBusinessOwners();
 
             return View(businessOwners);
         }
@@ -53,7 +53,7 @@ namespace Orion.Admin.Controllers
                 return new BadRequestResult();
             }
 
-            var businessOwner = _BusinessOwnerService.GetBusinessOwnerById(id.Value);
+            var businessOwner = _businessOwnerService.GetBusinessOwnerById(id.Value);
 
             if (businessOwner == null)
             {
@@ -72,7 +72,7 @@ namespace Orion.Admin.Controllers
                 return new BadRequestResult();
             }
 
-            var businessOwner = _BusinessOwnerService.Search(
+            var businessOwner = _businessOwnerService.Search(
                 first, last).FirstOrDefault();
 
             if (businessOwner == null)
@@ -85,11 +85,11 @@ namespace Orion.Admin.Controllers
 
         public ActionResult Create()
         {
-            return RedirectToAction("Edit", new { id = ID_FOR_CREATE_NEW_BUSINESSOWNER });
+            return RedirectToAction("Edit", new { id = IdForCreateNewBusinessowner });
         }
 
         // [Authorize(Roles = SecurityConstants.RoleName_Admin)]
-        [Authorize(Policy = SecurityConstants.PolicyName_EditBusinessOwner)]
+        [Authorize(Policy = SecurityConstants.PolicyNameEditBusinessOwner)]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -99,7 +99,7 @@ namespace Orion.Admin.Controllers
 
             BusinessOwner businessOwner;
 
-            if (id.Value == ID_FOR_CREATE_NEW_BUSINESSOWNER)
+            if (id.Value == IdForCreateNewBusinessowner)
             {
                 // create new
                 businessOwner = new BusinessOwner();
@@ -109,7 +109,7 @@ namespace Orion.Admin.Controllers
             }
             else
             {
-                businessOwner = _BusinessOwnerService.GetBusinessOwnerById(id.Value);
+                businessOwner = _businessOwnerService.GetBusinessOwnerById(id.Value);
             }
 
             if (businessOwner == null)
@@ -123,21 +123,21 @@ namespace Orion.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         // [Authorize(Roles = SecurityConstants.RoleName_Admin)]
-        [Authorize(Policy = SecurityConstants.PolicyName_EditBusinessOwner)]
+        [Authorize(Policy = SecurityConstants.PolicyNameEditBusinessOwner)]
         public ActionResult Edit(BusinessOwner businessOwner)
         {
-            if (_Validator.IsValid(businessOwner) == true)
+            if (_validator.IsValid(businessOwner) == true)
             {
                 bool isCreateNew = false;
 
-                if (businessOwner.Id == ID_FOR_CREATE_NEW_BUSINESSOWNER)
+                if (businessOwner.Id == IdForCreateNewBusinessowner)
                 {
                     isCreateNew = true;
                 }
                 else
                 {
                     BusinessOwner toValue =
-                        _BusinessOwnerService.GetBusinessOwnerById(businessOwner.Id);
+                        _businessOwnerService.GetBusinessOwnerById(businessOwner.Id);
 
                     if (toValue == null)
                     {
@@ -146,7 +146,7 @@ namespace Orion.Admin.Controllers
                     }
                 }
 
-                _BusinessOwnerService.Save(businessOwner);
+                _businessOwnerService.Save(businessOwner);
 
                 if (isCreateNew == true)
                 {
@@ -164,7 +164,7 @@ namespace Orion.Admin.Controllers
         //[AllowAnonymous]
         public async Task<ActionResult> ResetDatabase()
         {
-            await _TestDataUtility.CreateBusinessOwnerTestData();
+            await _testDataUtility.CreateBusinessOwnerTestData();
 
             return RedirectToAction("Index");
         }
@@ -172,7 +172,7 @@ namespace Orion.Admin.Controllers
         //[AllowAnonymous]
         public ActionResult VerifyDatabaseIsPopulated()
         {
-            _TestDataUtility.VerifyDatabaseIsPopulated();
+            _testDataUtility.VerifyDatabaseIsPopulated();
 
             return RedirectToAction("Index");
         }

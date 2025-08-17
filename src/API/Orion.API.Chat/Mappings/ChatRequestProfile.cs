@@ -1,6 +1,6 @@
 using AutoMapper;
 using Orion.API.Chat.DTO;
-using Orion.Core.Chat.Domain;
+using Orion.DataAccess.Entities;
 
 namespace Orion.API.Chat.Mappings;
 

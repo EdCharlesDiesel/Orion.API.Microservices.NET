@@ -1,11 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ORION.DataAccess.Contexts;
-using ORION.Admin.Models.Orders;
+﻿using Orion.Admin.Models.Orders;
+using Orion.DataAccess.Data;
 
-namespace ORION.Admin.Queries
+namespace Orion.Admin.Queries
 {
     public class OrdersListQuery:IOrdersListQuery
     {

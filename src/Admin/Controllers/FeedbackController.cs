@@ -1,9 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
-using Orion.DataAccess.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Orion.DataAccess.AllFeatures;
 
 namespace Orion.Admin.Controllers
 {

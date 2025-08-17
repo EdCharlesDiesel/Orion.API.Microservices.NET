@@ -5,19 +5,11 @@ using Orion.Domain.Enums;
 
 namespace Orion.Domain.Utility
 {
-    public class DateTimePropertyCompareValidatorAttribute
+    public class DateTimePropertyCompareValidatorAttribute(
+        DateTimeCompareTypeEnum compareType,
+        string otherPropertyName)
         : ValidationAttribute
     {
-        private readonly DateTimeCompareTypeEnum _compareType;
-        private readonly string _otherPropertyName;
-
-        public DateTimePropertyCompareValidatorAttribute(
-            DateTimeCompareTypeEnum compareType,
-            string otherPropertyName)
-        {
-            _compareType = compareType;
-            _otherPropertyName = otherPropertyName;
-        }
         protected override ValidationResult IsValid(
             object value,
             ValidationContext validationContext)
@@ -52,7 +44,7 @@ namespace Orion.Domain.Utility
             object otherValue = null;
 
             PropertyInfo otherPropertyInfo =
-                validationContext.ObjectType.GetProperty(_otherPropertyName);
+                validationContext.ObjectType.GetProperty(otherPropertyName);
 
             if (otherPropertyInfo == null)
             {
@@ -83,7 +75,7 @@ namespace Orion.Domain.Utility
                 }
             }
 
-            if (_compareType == DateTimeCompareTypeEnum.GreaterThan)
+            if (compareType == DateTimeCompareTypeEnum.GreaterThan)
             {
                 if (valueAsDateTime == default(DateTime) ||
                     valueAsDateTime > otherValueAsDateTime)
@@ -96,7 +88,7 @@ namespace Orion.Domain.Utility
                         String.Format(
                             "{0} should be greater than {1}.",
                             validationContext.DisplayName,
-                            _otherPropertyName));
+                            otherPropertyName));
                 }
             }
             else
@@ -112,7 +104,7 @@ namespace Orion.Domain.Utility
                         String.Format(
                             "{0} should be less than {1}.",
                             validationContext.DisplayName,
-                            _otherPropertyName));
+                            otherPropertyName));
                 }
             }
         }

@@ -1,12 +1,15 @@
 using System.ComponentModel.DataAnnotations;
+using Orion.Admin.Models;
 
 
-namespace ORION.Admin.Models
+namespace Orion.Admin.Models
 {
     public class SearchViewModel
     {
-        public SearchViewModel()
+        public SearchViewModel(string birthProvince, string businessProvince)
         {
+            BirthProvince = birthProvince;
+            BusinessProvince = businessProvince;
             Results = new List<SearchResultRow>();
             FirstName = String.Empty;
             LastName = String.Empty;

@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Orion.Repository.Services;
 
 namespace Orion.Domain.IRepositories;
 public interface ICalendarServices:IRepository<CalendarEvent>
@@ -13,4 +12,8 @@ public interface ICalendarServices:IRepository<CalendarEvent>
     Task<string> GetCalendarEventsByIndicator(params string[] indicators);
     Task<CalendarEvent> Create(List<CalendarEvent> calendarEvents);
     Task<CalendarEvent?> GetCalendarEventsByIndicators(string[] names);
+}
+
+public class CalendarEvent
+{
 }

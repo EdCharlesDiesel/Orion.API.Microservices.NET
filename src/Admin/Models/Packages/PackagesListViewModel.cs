@@ -1,12 +1,13 @@
-// using System;
-// using System.Collections.Generic;
-// using System.Linq;
-// using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Orion.Admin.Models.Packages;
 
-// namespace ORION.Admin.Models.Packages
-// {
-//     public class PackagesListViewModel
-//     {
-//         public IEnumerable<PackageInfosViewModel> Items { get; set; }
-//     }
-// }
+namespace Orion.Admin.Models.Packages
+{
+    public class PackagesListViewModel
+    {
+        public IEnumerable<PackageInfosViewModel> Items { get; set; }
+    }
+}

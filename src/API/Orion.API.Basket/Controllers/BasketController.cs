@@ -6,33 +6,28 @@ namespace Orion.API.Basket.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class BasketController : ControllerBase
+    public class BasketController(IBasketService service) : ControllerBase
     {
-        private readonly IBasketService _service;
-
-        public BasketController(IBasketService service)
-        {
-            _service = service;
-        }
+        private readonly IBasketService _service = service;
 
         /// <summary>
         /// Get all baskets.
         /// </summary>
         [HttpGet]
-        public async Task<IActionResult> GetAllBaskets()
+        public Task<IActionResult> GetAllBaskets()
         {
-            var result = service.GetAll();
-            return Ok(result);
+            var result = _service.GetAll();
+            return Task.FromResult<IActionResult>(Ok(result));
         }
 
         /// <summary>
         /// Create a new basket.
         /// </summary>
         [HttpPost]
-        public async Task<IActionResult> CreateBasket([FromBody] Core.Basket.Domain.Basket basket)
+        public async Task<IActionResult> CreateBasket([FromBody] DataAccess.Entities.Basket basket)
         {
             // var dto = mapper.Map<BasketDto>(basket);
-            var result = service.CreateBasketAll(basket);
+            var result = _service.CreateBasketAll(basket);
             return CreatedAtAction(nameof(GetBasketById), new { id = result.Id }, result);
         }
 
@@ -56,7 +51,7 @@ namespace Orion.API.Basket.Controllers
         /// Update an existing basket.
         /// </summary>
         [HttpPut("{id:guid}")]
-        public async Task<IActionResult> UpdateBasket(Guid id, [FromBody] Core.Basket.Domain.Basket basket)
+        public async Task<IActionResult> UpdateBasket(Guid id, [FromBody] DataAccess.Entities.Basket basket)
         {
             throw new NotImplementedException();
             // if (id != basket.Id)
@@ -72,7 +67,7 @@ namespace Orion.API.Basket.Controllers
         /// </summary>
         [HttpPatch("{id:guid}")]
         public async Task<IActionResult> PatchBasket(Guid id,
-            [FromBody] JsonPatchDocument<Core.Basket.Domain.Basket> patchDoc)
+            [FromBody] JsonPatchDocument<DataAccess.Entities.Basket> patchDoc)
         {
             throw new NotImplementedException();
             // if (patchDoc == null) return BadRequest();
@@ -98,5 +93,11 @@ namespace Orion.API.Basket.Controllers
             // await service.DeleteAsync(id);
             // return NoContent();
         }
+    }
+
+    public interface IBasketService
+    {
+        object? GetAll();
+        object? CreateBasketAll(DataAccess.Entities.Basket basket);
     }
 }

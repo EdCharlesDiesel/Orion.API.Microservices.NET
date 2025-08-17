@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using Orion.Domain.Aggregates;
 using Orion.Domain.IRepositories;
 using System.Threading.Tasks;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
+using Orion.Domain.Events;
 using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Repositories

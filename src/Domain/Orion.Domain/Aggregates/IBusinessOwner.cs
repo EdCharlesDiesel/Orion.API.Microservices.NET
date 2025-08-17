@@ -21,7 +21,6 @@ namespace ORION.Domain.Aggregates
         string BirthCity { get;}
 
         string BirthProvince { get;}
-        
 
         string BusinessCity { get;}
 

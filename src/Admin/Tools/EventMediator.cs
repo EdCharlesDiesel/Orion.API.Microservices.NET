@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ORION.Domain.Tools;
-
-namespace DDD.ApplicationLayer
+﻿namespace Orion.Admin.Tools
 {
-    public class EventMediator : IEventMediator
+    public class EventMediator(IServiceProvider services) : IEventMediator
     {
-        IServiceProvider services;
-        public EventMediator(IServiceProvider services)
-        {
-            this.services = services;
-        }
         public async Task TriggerEvents(IEnumerable<IEventNotification> events)
         {
             if (events == null) return;

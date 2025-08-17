@@ -4,7 +4,7 @@ services:
     image: postgres:16
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: $ta99Ath0
+      POSTGRES_PASSWORD: postgres
       POSTGRES_DB: healthdb
     ports:
       - "5432:5432"

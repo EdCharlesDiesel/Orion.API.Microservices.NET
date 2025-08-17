@@ -1,14 +1,10 @@
-﻿using DDD.ApplicationLayer;
+﻿using Orion.Admin.Tools;
 using Orion.Domain.DTOs;
 
 namespace Orion.Admin.Commands
 {
-    public class CreateProductCommand: ICommand
+    public class CreateProductCommand(IProductFullEditDto values) : ICommand
     {
-        public CreateProductCommand(IProductFullEditDto values)
-        {
-            Values = values;
-        }
-        public IProductFullEditDto Values { get; private set; }
+        public IProductFullEditDto Values { get; private set; } = values;
     }
 }

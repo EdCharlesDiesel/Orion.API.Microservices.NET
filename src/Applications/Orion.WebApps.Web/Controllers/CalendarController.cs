@@ -1,7 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Entities;
 using Orion.Domain.IRepositories;
 using Orion.WebApps.Web.Helper;
 

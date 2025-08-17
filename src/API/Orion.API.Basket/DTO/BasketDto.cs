@@ -1,4 +1,4 @@
-using Orion.Core.Basket.Domain;
+using Orion.DataAccess.Entities;
 
 namespace Orion.API.Basket.DTO;
 

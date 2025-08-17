@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
+﻿using System;
 using System.Linq;
 using System.Security.Claims;
 using System.Security.Principal;
+using Microsoft.AspNetCore.Http;
 
 namespace ORION.Admin.Security
 {

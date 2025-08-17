@@ -12,3 +12,7 @@ public interface IForecastServices
     Task<string> GetForecastsByIndicator(params string[] indicators);
     Task<Forecast> Create(List<Forecast> forecasts);
 }
+
+public class Forecast
+{
+}

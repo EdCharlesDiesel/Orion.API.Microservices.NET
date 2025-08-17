@@ -1,21 +1,13 @@
-using System.Collections.Generic;
-using System.Linq;
+
+
 using System.Security.Claims;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using ORION.DataAccess.Services;
+using Orion.Admin;
 
 namespace ORION.Admin.Security
 {
-    public class PopulateSubscriptionClaimsMiddleware : IMiddleware
+    public class PopulateSubscriptionClaimsMiddleware(ISubscriptionService subscriptionServiceInstance) : IMiddleware
     {
-        private ISubscriptionService _SubscriptionService;
-
-        public PopulateSubscriptionClaimsMiddleware(
-            ISubscriptionService subscriptionServiceInstance)
-        {
-            _SubscriptionService = subscriptionServiceInstance;
-        }
+        private ISubscriptionService _subscriptionService = subscriptionServiceInstance;
 
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
@@ -30,7 +22,7 @@ namespace ORION.Admin.Security
                 var username = usernameClaim.Value;
                 
                 var subscriptionType =
-                    _SubscriptionService.GetSubscriptionType(
+                    _subscriptionService.GetSubscriptionType(
                         username);                
 
                 if (subscriptionType != null)

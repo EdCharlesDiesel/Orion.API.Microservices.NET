@@ -90,7 +90,9 @@
     &lt;Project Location="C:\x\Orion.API.Microservices.NET\src\UnitTests\StockAnalyzer.API.Tests" Presentation="&amp;lt;UnitTests&amp;gt;\&amp;lt;Orion.Services.StockAnalyzer.API.Tests&amp;gt;" /&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=7d310c2f_002Db486_002D4c0f_002D9601_002D3ea5c9314155_0023Orion_002EAPI_002EBasket/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Admin_002FOrion_002EAdmin_002FTestData_002FTestDataResource/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
+	
 	
 	
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=ocelotapigw/@EntryIndexedValue">True</s:Boolean>

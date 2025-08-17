@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace DDD.ApplicationLayer
+﻿namespace Orion.Admin.Tools
 {
     public interface ICommandHandler
     {

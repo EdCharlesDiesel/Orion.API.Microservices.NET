@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Microsoft.Extensions.DependencyInjection;
+﻿using System.Reflection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using ORION.Domain.Tools;
+using Orion.Domain.Tools;
 
-namespace DDD.ApplicationLayer
+namespace Orion.Admin.Tools
 {
-    public static class EventDIExtensions
+    public static class EventDiExtensions
     {
         public static IServiceCollection AddEventHandler<T, H>
             (this IServiceCollection services)
@@ -28,7 +24,7 @@ namespace DDD.ApplicationLayer
         public static IServiceCollection AddAllEventHandlers
             (this IServiceCollection service, Assembly assembly)
         {
-            var method=typeof(EventDIExtensions).GetMethod("AddEventHandler",
+            var method=typeof(EventDiExtensions).GetMethod("AddEventHandler",
                 BindingFlags.Static | BindingFlags.Public);
 
             var handlers=assembly.GetTypes()

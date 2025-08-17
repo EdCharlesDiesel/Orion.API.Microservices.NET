@@ -1,11 +1,6 @@
-
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ORION.Admin.Controllers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace ORION.Admin.Models
+namespace Orion.Admin.Models
 {
     public class SecurityAdminAction
     {

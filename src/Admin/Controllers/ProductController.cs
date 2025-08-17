@@ -1,18 +1,15 @@
-﻿using DDD.ApplicationLayer;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Commands;
-using Orion.Admin.Models.Products;
-using Orion.Admin.Queries;
 using Orion.Domain.IRepositories;
-using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.Net.Http.Headers;
-using System.IO;
 using System.IO.Compression;
+using ORION.Admin.Models.Products;
+using ORION.Admin.Queries;
+using Orion.Admin.Tools;
 
 namespace Orion.Admin.Controllers
 {
-  //  [Authorize(Roles= "Admins")]
+    [Authorize(Roles= "Admins")]
     public class ProductController : Controller
     {
         [HttpGet]
@@ -66,10 +63,10 @@ namespace Orion.Admin.Controllers
 
         public static Stream DecompressWithBrotli(Stream toDecompress)
         {
-            MemoryStream decompressedStream = new MemoryStream();
+            var decompressedStream = new MemoryStream();
             using (BrotliStream decompressionStream = new BrotliStream(toDecompress, CompressionMode.Decompress))
             {
-            decompressionStream.CopyTo(decompressedStream);
+                decompressionStream.CopyTo(decompressedStream);
             }
             decompressedStream.Position = 0;
             return decompressedStream;

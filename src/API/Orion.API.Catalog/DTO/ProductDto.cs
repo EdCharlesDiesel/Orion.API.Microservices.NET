@@ -1,6 +1,6 @@
 
 
-using Orion.Core.Catalog.Domain;
+
 
 namespace Orion.API.Catalog.DTO;
 

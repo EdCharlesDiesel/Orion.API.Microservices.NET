@@ -1,7 +1,9 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
 using Orion.API.Catalog.Mappings;
-using Orion.Repository.Services.Orion;
+using Orion.DataAccess.Repositories;
+using Orion.Domain.IRepositories;
+
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
 

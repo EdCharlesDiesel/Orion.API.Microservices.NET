@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace ORION.Admin.Models.Customers
+namespace Orion.Admin.Models.Customers
 {
     public class CustomersListViewModel
     {

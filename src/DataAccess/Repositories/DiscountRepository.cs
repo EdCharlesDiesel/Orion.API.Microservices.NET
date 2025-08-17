@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Entities;
 using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Repositories

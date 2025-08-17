@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Orion.Domain.Tools
 {
-    public interface IEntity<TK>
+    public interface IEntity<out TK>
         where TK : IEquatable<TK>
     {
         TK Id { get; }

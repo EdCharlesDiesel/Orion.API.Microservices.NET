@@ -1,8 +1,8 @@
 
 
-namespace ORION.Admin.Models.Employees
+namespace Orion.Admin.Models.Employees
 {
-    public class EmployeeInfosViewModel
+    public abstract class EmployeeInfosViewModel
     {
         public int Id { get; set; }
         public string LastName { get; set; }

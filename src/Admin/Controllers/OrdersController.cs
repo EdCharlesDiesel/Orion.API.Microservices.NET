@@ -1,14 +1,15 @@
-﻿using DDD.ApplicationLayer;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Commands;
-using Orion.Admin.Models.Orders;
-using Orion.Admin.Queries;
+using ORION.Admin.Models.Orders;
+using ORION.Admin.Queries;
+using Orion.Admin.Tools;
 using Orion.Domain.IRepositories;
+
 
 namespace Orion.Admin.Controllers
 {
-  //  [Authorize(Roles= "Admins")]
+   [Authorize(Roles= "Admins")]
     public class OrdersController : Controller
     {
         [HttpGet]

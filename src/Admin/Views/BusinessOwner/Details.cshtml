@@ -1,5 +1,5 @@
-﻿@inject ORION.Admin.Security.IUserAuthorizationStrategy _UserAuthorizationStrategy
-@model  ORION.DataAccess.Models.BusinessOwner
+﻿@inject ORION.Admin.Security.IUserAuthorizationStrategy UserAuthorizationStrategy
+@model  Orion.DataAccess.Entities.BusinessOwner
 
 @{
     ViewBag.Title = "Details";
@@ -11,7 +11,7 @@
     <h4>Business Owner</h4>
     <hr />
 
-    @if (_UserAuthorizationStrategy.IsAuthorizedForImages == true)
+    @if (UserAuthorizationStrategy.IsAuthorizedForImages == true)
     {
         <img src="~/Images/@Model.ImageFilename" />
     }

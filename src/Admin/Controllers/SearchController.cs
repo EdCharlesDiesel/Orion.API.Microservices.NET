@@ -1,39 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Orion.Admin.Areas.API;
 using Orion.Admin.Models;
-using Orion.DataAccess.Interfaces;
-using Orion.DataAccess.Models;
-using Orion.DataAccess.Services;
+using ORION.Admin.Models;
+using Orion.DataAccess.AllFeatures;
+using Orion.DataAccess.Entities;
 
 namespace Orion.Admin.Controllers
 {
     public class SearchController : Controller
     {
-        private IBusinessOwnerService _Service;
-        private IFeatureManager _FeatureManager;
+        private readonly IBusinessOwnerService _service;
+        private readonly IFeatureManager _featureManager;
 
         public SearchController(IBusinessOwnerService service, 
             IFeatureManager featureManager)
         {
-            if (service == null)
-                throw new ArgumentNullException("service", "service is null.");
-            if (featureManager == null)
-                throw new ArgumentNullException("featureManager", "featureManager is null.");
-
-            _Service = service;
-            _FeatureManager = featureManager;
+            _service = service ?? throw new ArgumentNullException("service", "service is null.");
+            _featureManager = featureManager ?? throw new ArgumentNullException("featureManager", "featureManager is null.");
         }
 
         // GET: Search
         public ActionResult Index()
         {
-            if (_FeatureManager.Search == false)
+            if (_featureManager.Search == false)
             {
                 return NotFound();
             }
 
             var model = new SearchViewModel();
 
-            if (_FeatureManager.SearchByBirthBusinessProvince == true)
+            if (_featureManager.SearchByBirthBusinessProvince == true)
             {
                 return View("IndexProvinceSearch", model);
             }
@@ -51,7 +47,7 @@ namespace Orion.Admin.Controllers
                 throw new InvalidOperationException("Argument cannot be null.");
             }
 
-            if (_FeatureManager.Search == false)
+            if (_featureManager.Search == false)
             {
                 return NotFound();
             }
@@ -60,15 +56,15 @@ namespace Orion.Admin.Controllers
 
             IList<BusinessOwner>? results = null;
 
-            if (_FeatureManager.SearchByBirthBusinessProvince == true)
+            if (_featureManager.SearchByBirthBusinessProvince == true)
             {
-                results = _Service.Search(
+                results = _service.Search(
                     model.FirstName, model.LastName,
                     model.BirthProvince, model.BusinessProvince);
             }
             else
             {
-                results = _Service.Search(
+                results = _service.Search(
                     model.FirstName, model.LastName);
             }
 
@@ -82,7 +78,7 @@ namespace Orion.Admin.Controllers
                 Adapt(results, modelToReturn.Results);
             }
 
-            if (_FeatureManager.SearchByBirthBusinessProvince == true)
+            if (_featureManager.SearchByBirthBusinessProvince == true)
             {
                 return View("IndexProvinceSearch", modelToReturn);
             }

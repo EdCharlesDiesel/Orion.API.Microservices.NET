@@ -32,7 +32,7 @@ namespace Orion.Helpers.LinkedList
         }
     }
 
-    public abstract class LinkedList
+    public abstract partial class LinkedList
     {
         public int value;
         public LinkedList next;

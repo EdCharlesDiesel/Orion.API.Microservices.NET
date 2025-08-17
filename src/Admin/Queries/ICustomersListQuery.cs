@@ -1,5 +1,5 @@
-﻿using DDD.ApplicationLayer;
-using ORION.Admin.Models.Customers;
+﻿using Orion.Admin.Models.Customers;
+using Orion.Admin.Tools;
 
 namespace ORION.Admin.Queries
 {

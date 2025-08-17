@@ -1,7 +1,7 @@
-﻿using DDD.ApplicationLayer;
-using ORION.Admin.Models.Orders;
+﻿using Orion.Admin.Models.Orders;
+using Orion.Admin.Tools;
 
-namespace ORION.Admin.Queries
+namespace Orion.Admin.Queries
 {
     public interface IOrdersListQuery: IQuery
     {

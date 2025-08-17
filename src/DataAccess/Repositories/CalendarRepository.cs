@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
 
 namespace Orion.DataAccess.Repositories;
 
@@ -45,8 +46,8 @@ public class CalendarRepository : Repository<CalendarEvent>
         if (startDate == default || endDate == default || countries.Any(string.IsNullOrWhiteSpace))
             return "Invalid input";
 
-        string textStartDate = startDate.ToString("yyyy-MM-dd");
-        string textEndDate = endDate.ToString("yyyy-MM-dd");
+        var textStartDate = startDate.ToString("yyyy-MM-dd");
+        var textEndDate = endDate.ToString("yyyy-MM-dd");
 
         return await HttpRequesterClass.HttpRequester(
             $"/calendar/country/{string.Join(",", countries)}/{textStartDate}/{textEndDate}");

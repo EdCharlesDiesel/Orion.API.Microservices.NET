@@ -2,8 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Orion.DataAccess.Models;
+using Microsoft.EntityFrameworkCore;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
 using Orion.Domain.IRepositories;
+using Product = Orion.Domain.IRepositories.Product;
 
 namespace Orion.DataAccess.Repositories;
 public class CatalogRepository(OrionDbContext context) : ICatalogServices
@@ -16,6 +19,22 @@ public class CatalogRepository(OrionDbContext context) : ICatalogServices
 
         return await products;
     }
+
+    async Task IRepository<Product>.GetByIdAsync(Guid id)
+    {
+        await GetByIdAsync(id);
+    }
+
+    async Task IRepository<Product>.AddAsync(Product entity)
+    {
+        await AddAsync(entity);
+    }
+
+    async Task IRepository<Product>.UpdateAsync(Product entity)
+    {
+        await UpdateAsync(entity);
+    }
+
     public async Task<List<Core.Catalog.Domain.Product>> CreateProducts(List<Core.Catalog.Domain.Product> products)
     {
         if (products == null)
@@ -39,6 +58,11 @@ public class CatalogRepository(OrionDbContext context) : ICatalogServices
         return products.First();
     }
 
+
+    async Task<IEnumerable<Product>> IRepository<Product>.GetAllAsync()
+    {
+        return await GetAllAsync();
+    }
 
     public async Task<Core.Catalog.Domain.Product?> GetByIdAsync(Guid id)
     {
@@ -77,8 +101,13 @@ public class CatalogRepository(OrionDbContext context) : ICatalogServices
         context.Products.Remove(product);
         await context.SaveChangesAsync();
     }
-    
-    public async Task BulkCreate(List<Core.Catalog.Domain.Product> products)
+
+    public async Task BulkCreate(List<Product> entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task BulkCreate(List<Product> products)
     {
         if (products == null)
             throw new ArgumentException("Products cannot be null or empty.");

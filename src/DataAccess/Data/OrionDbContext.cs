@@ -1,10 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Orion.Core.Basket.Domain;
-using Orion.Core.Catalog.Domain;
-using Orion.Core.Chat.Domain;
-using Orion.Core.CompetitionScorecard.Domain;
-using Orion.Core.Discount.Domain;
-using Orion.Core.TradingEconomics.Domain;
+using Orion.DataAccess.Entities;
 
 namespace Orion.DataAccess.Data
 {
@@ -18,7 +13,12 @@ namespace Orion.DataAccess.Data
         public DbSet<ChatRequest> ChatRequests { get; set; }
         public DbSet<Coupon> Coupons { get; set; }
         public DbSet<CompetitionMatch> CompetitionMatches { get; set; }
-        public DbSet<Orion.DataAccess.Models.AwbuildVersion> AwbuildVersions  { get; set; }
+        public DbSet<AwbuildVersion> AwbuildVersions  { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Feature> Features { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
 
         #region Commented code might use it to seed dummy data.
 

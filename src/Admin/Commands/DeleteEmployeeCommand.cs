@@ -1,13 +1,9 @@
-﻿using DDD.ApplicationLayer;
+﻿using Orion.Admin.Tools;
 
 namespace Orion.Admin.Commands
 {
-    public class DeleteEmployeeCommand: ICommand
+    public class DeleteEmployeeCommand(int id) : ICommand
     {
-        public DeleteEmployeeCommand(int id)
-        {
-            EmployeeId = id;
-        }
-        public int EmployeeId { get; private set; }
+        public int EmployeeId { get; private set; } = id;
     }
 }

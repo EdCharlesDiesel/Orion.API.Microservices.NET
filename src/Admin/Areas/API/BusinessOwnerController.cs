@@ -1,31 +1,34 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using Orion.DataAccess.Entities;
 
 
 namespace Orion.Admin.Areas.API
 {
     [Route("api/[controller]")]
-    public class BusinessOwnerController : ControllerBase
+    public class BusinessOwnerController(IBusinessOwnerService service) : ControllerBase
     {
-        private IBusinessOwnerService _Service;
-
-        public BusinessOwnerController(IBusinessOwnerService service)
-        {
-            _Service = service;
-        }
-
         // GET: api/BusinessOwner
         [HttpGet]
         public IEnumerable<BusinessOwner> Get()
         {
-            return _Service.GetBusinessOwners();
+            return service.GetBusinessOwners();
         }
 
         // GET: api/BusinessOwner/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id:int}", Name = "Get")]
         public BusinessOwner Get(int id)
         {
-            return _Service.GetBusinessOwnerById(id);
+            return service.GetBusinessOwnerById(id);
         }
+    }
+
+    public interface IBusinessOwnerService
+    {
+        IEnumerable<BusinessOwner> GetBusinessOwners();
+        BusinessOwner GetBusinessOwnerById(int id);
+        object Search(string first, string last);
+        void Save(BusinessOwner businessOwner);
+        void DeleteBusinessOwnerById(int itemId);
     }
 }

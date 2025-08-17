@@ -1,15 +1,11 @@
-﻿using DDD.ApplicationLayer;
+﻿using Orion.Admin.Tools;
 using Orion.Domain.DTOs;
 
 
 namespace Orion.Admin.Commands
 {
-    public class UpdateCustomerCommand: ICommand
+    public class UpdateCustomerCommand(ICustomerFullEditDto updates) : ICommand
     {
-        public UpdateCustomerCommand(ICustomerFullEditDto updates)
-        {
-            Updates = updates;
-        }
-        public ICustomerFullEditDto Updates { get; private set; }
+        public ICustomerFullEditDto Updates { get; private set; } = updates;
     }
 }

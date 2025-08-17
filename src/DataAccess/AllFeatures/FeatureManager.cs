@@ -1,164 +1,137 @@
-﻿namespace Orion.DataAccess.AllFeatures
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.Data.SqlClient;
+using Orion.DataAccess.Entities;
+using Orion.Domain.IRepositories;
+
+namespace Orion.DataAccess.AllFeatures
 {
     public class FeatureManager : IFeatureManager
     {
-        //private IUsernameProvider _UsernameProvider;
+        private IUsernameProvider _usernameProvider;
 
-        //public FeatureManager(IFeatureRepository repository, IUsernameProvider usernameProvider)
-        //{
-        //    if (usernameProvider == null)
-        //        throw new ArgumentNullException(nameof(usernameProvider), $"{nameof(usernameProvider)} is null.");
-        //    if (repository == null)
-        //    {
-        //        throw new ArgumentNullException("repository", "Argument cannot be null.");
-        //    }
+        public FeatureManager(IFeatureRepository repository, IUsernameProvider usernameProvider)
+        {
+            if (usernameProvider == null)
+                throw new ArgumentNullException(nameof(usernameProvider), $"{nameof(usernameProvider)} is null.");
+            if (repository == null)
+            {
+                throw new ArgumentNullException(nameof(repository), "Argument cannot be null.");
+            }
 
-        //    _UsernameProvider = usernameProvider;
+            _usernameProvider = usernameProvider;
 
-        //    Initialize(repository);
-        //}
+            Initialize(repository);
+        }
         
-        //private FeatureManager(IList<Feature> features)
-        //{ 
-        //    if (features == null)
-        //        throw new ArgumentNullException("features", "features is null.");
+        private FeatureManager(IList<Feature> features)
+        { 
+            if (features == null)
+                throw new ArgumentNullException("features", "features is null.");
 
-        //    Initialize(features);
-        //}
+            Initialize(features);
+        }
 
-        //private Dictionary<string, bool> _FeatureConfigurations;
+        private Dictionary<string, bool> _featureConfigurations;
 
-        //public Dictionary<string, bool> FeatureConfigurations
-        //{
-        //    get
-        //    {
-        //        if (_FeatureConfigurations == null)
-        //        {
-        //            _FeatureConfigurations = new Dictionary<string, bool>();
-        //        }
+        private Dictionary<string, bool> FeatureConfigurations
+        {
+            get
+            {
+                if (_featureConfigurations == null)
+                {
+                    _featureConfigurations = new Dictionary<string, bool>();
+                }
 
-        //        return _FeatureConfigurations;
-        //    }
-        //}
+                return _featureConfigurations;
+            }
+        }
 
-        //private void Initialize(IList<Feature> features)
-        //{
-        //    foreach (var feature in features)
-        //    {
-        //        if (FeatureConfigurations.ContainsKey(feature.FeatureName) == true)
-        //        {
-        //            FeatureConfigurations.Remove(feature.FeatureName);
-        //        }
+        private void Initialize(IList<Feature> features)
+        {
+            foreach (var feature in features)
+            {
+                FeatureConfigurations.Remove(feature.FeatureName);
 
-        //        FeatureConfigurations.Add(feature.FeatureName, feature.IsEnabled);
-        //    }
-        //}
+                FeatureConfigurations.Add(feature.FeatureName, feature.IsEnabled);
+            }
+        }
 
-        //private bool IsEnabled(string featureName, bool defaultValue)
-        //{
-        //    if (FeatureConfigurations.ContainsKey(featureName) == true)
-        //    {
-        //        return FeatureConfigurations[featureName];
-        //    }
-        //    else
-        //    {
-        //        return defaultValue;
-        //    }
-        //}
+        private bool IsEnabled(string featureName, bool defaultValue)
+        {
+            return FeatureConfigurations.ContainsKey(featureName) == true ? FeatureConfigurations[featureName] : defaultValue;
+        }
 
-        //public bool CustomerSatisfaction
-        //{
-        //    get
-        //    {
-        //        return IsEnabled("CustomerSatisfaction", false);
-        //    }
-        //}
+        public bool CustomerSatisfaction
+        {
+            get => IsEnabled("CustomerSatisfaction", false);
+            set => throw new NotImplementedException();
+        }
 
-        //public bool FeatureUsageLogging
-        //{
-        //    get
-        //    {
-        //        return IsEnabled("FeatureUsageLogging", false);
-        //    }
-        //}
+        public bool FeatureUsageLogging => IsEnabled("FeatureUsageLogging", false);
 
-        //public bool PerformanceCounters
-        //{
-        //    get
-        //    {
-        //        return IsEnabled("PerformanceCounters", false);
-        //    }
-        //}
+        public bool PerformanceCounters => IsEnabled("PerformanceCounters", false);
 
-        //public bool Search
-        //{
-        //    get
-        //    {
-        //        return IsEnabled("Search", true);
-        //    }
-        //}
+        public bool Search
+        {
+            get => IsEnabled("Search", true);
+            set => throw new NotImplementedException();
+        }
 
-        //public bool SearchByBirthBusinessProvince
-        //{
-        //    get
-        //    {
-        //        return IsEnabled("SearchByBirthBusinessProvince", false);
-        //    }
-        //}
+        public bool SearchByBirthBusinessProvince
+        {
+            get => IsEnabled("SearchByBirthBusinessProvince", false);
+            set => throw new NotImplementedException();
+        }
 
-  
 
-        //private void Initialize(IFeatureRepository repository)
-        //{
-        //    string username = _UsernameProvider.GetUsername();
+        private void Initialize(IFeatureRepository repository)
+        {
+            string username = _usernameProvider.GetUsername();
 
-        //    Initialize(repository, username);
-        //}
+            Initialize(repository, username);
+        }
 
-        //private void Initialize(IFeatureRepository repository, string username)
-        //{
-        //    try
-        //    {
-        //        var features = repository.GetByUsername(username);
+        private static void Initialize(IFeatureRepository repository, string username)
+        {
+            try
+            {
+                var features = repository.GetByUsername(username);
                 
-        //     // FIXME Needs fixing will attend later
-        //    //     if (String.IsNullOrWhiteSpace(username) == false)
-        //    //     {
-        //    //         var featuresForThisUser =
-        //    //             (
-        //    //             from temp in features
-        //    //             where String.IsNullOrWhiteSpace(temp.Username) == false
-        //    //             select temp
-        //    //             ).ToList();
+             // FIXME Needs fixing will attend later
+            //     if (String.IsNullOrWhiteSpace(username) == false)
+            //     {
+            //         var featuresForThisUser =
+            //             (
+            //             from temp in features
+            //             where String.IsNullOrWhiteSpace(temp.Username) == false
+            //             select temp
+            //             ).ToList();
 
-        //    //         foreach (var userSpecificFeature in featuresForThisUser)
-        //    //         {
-        //    //             // if there's a user-specific feature config, remove the non-user-specific feature
-        //    //             RemoveGenericUserFeatureConfiguration(features, userSpecificFeature);
-        //    //         }
-        //    //     }
-        //    //    Initialize(features);
-        //    }
-        //    catch (SqlException)
-        //    {
-        //        Console.WriteLine("FeatureManager got a SqlException.");
-        //    }
-        //}
+            //         foreach (var userSpecificFeature in featuresForThisUser)
+            //         {
+            //             // if there's a user-specific feature config, remove the non-user-specific feature
+            //             RemoveGenericUserFeatureConfiguration(features, userSpecificFeature);
+            //         }
+            //     }
+            //    Initialize(features);
+            }
+            catch (SqlException)
+            {
+                Console.WriteLine("FeatureManager got a SqlException.");
+            }
+        }
+    }
 
-        //private void RemoveGenericUserFeatureConfiguration(IList<Feature> features, Feature userSpecificFeature)
-        //{
-        //    var match = (from temp in features
-        //                 where temp.FeatureName == userSpecificFeature.FeatureName && temp.Username == String.Empty
-        //                 select temp).FirstOrDefault();
-
-        //    if (match != null)
-        //    {
-        //        features.Remove(match);
-        //    }
-        //}
+    public interface IUsernameProvider
+    {
+        string GetUsername();
     }
 
     public interface IFeatureManager
     {
+        bool CustomerSatisfaction { get; set; }
+        bool Search { get; set; }
+        bool SearchByBirthBusinessProvince { get; set; }
     }
 }

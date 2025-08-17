@@ -1,16 +1,22 @@
 using ORION.Domain.Aggregates;
 using ORION.Domain.DTOs;
 using System.ComponentModel.DataAnnotations;
+using Orion.Domain.Aggregates;
+using Orion.Domain.DTOs;
 
-namespace ORION.Admin.Models.Products
+namespace Orion.Admin.Models.Products
 {
     public class ProductFullEditViewModel: IProductFullEditDto
     {
-        public ProductFullEditViewModel()
+        public ProductFullEditViewModel(string productName, string description, string image, byte[] coverImage)
         {
+            ProductName = productName;
+            Description = description;
+            Image = image;
+            CoverImage = coverImage;
         }
 
-        public ProductFullEditViewModel(IProduct o)
+        public ProductFullEditViewModel(IProduct o, string productName, string description, string image, byte[] coverImage)
         {
             Id = o.Id;
             CategoryId = o.CategoryId;

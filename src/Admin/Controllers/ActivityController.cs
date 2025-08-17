@@ -1,19 +1,15 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Models;
+using ORION.Admin.Models;
 
 namespace Orion.Admin.Controllers
 {
 
     // ToDo: Add commands and event handlers
-    public class ActivityController : Controller
+    public class ActivityController(ILogger<ActivityController> logger) : Controller
     {
-        private readonly ILogger<ActivityController> _logger;
-
-        public ActivityController(ILogger<ActivityController> logger)
-        {
-            _logger = logger;
-        }
+        private readonly ILogger<ActivityController> _logger = logger;
 
         public IActionResult Index()
         {

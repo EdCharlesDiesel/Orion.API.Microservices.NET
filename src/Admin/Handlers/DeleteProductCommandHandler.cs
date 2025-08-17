@@ -1,10 +1,9 @@
-﻿using DDD.ApplicationLayer;
-using ORION.Domain.IRepositories;
-using ORION.Admin.Commands;
-using System.Threading.Tasks;
-using ORION.Domain.Tools;
+﻿using Orion.Admin.Commands;
+using Orion.Admin.Tools;
+using Orion.Domain.IRepositories;
+using Orion.Domain.Tools;
 
-namespace ORION.Admin.Handlers
+namespace Orion.Admin.Handlers
 {
     public class DeleteProductCommandHandler : ICommandHandler<DeleteProductCommand>
     {

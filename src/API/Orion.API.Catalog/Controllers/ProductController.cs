@@ -27,14 +27,14 @@ namespace Orion.API.Catalog.Controllers
         [HttpGet("{id:guid}")]
         public async Task<IActionResult> GetProductById(Guid id)
         {
-            var result = await _service.GetByIdAsync(id);
+            object? result = await _service.GetByIdAsync(id);
             if (result == null) return NotFound();
             return Ok(result);
         }
 
         /// <summary>Create a product.</summary>
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Core.Catalog.Domain.Product product)
+        public async Task<IActionResult> Create([FromBody] Product product)
         {
             var result =  _service.AddAsync(product);
             var id =  result.Id;
@@ -43,7 +43,7 @@ namespace Orion.API.Catalog.Controllers
 
         /// <summary>Update a product.</summary>
         [HttpPut("{id:guid}")]
-        public async Task<IActionResult?> Update(Guid id, [FromBody] Core.Catalog.Domain.Product product)
+        public async Task<IActionResult?> Update(Guid id, [FromBody] Product product)
         {
             if (id != product.Id) return BadRequest("Product ID mismatch.");
           await _service.UpdateAsync(product);

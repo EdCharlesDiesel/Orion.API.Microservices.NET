@@ -1,9 +1,7 @@
-﻿using DDD.ApplicationLayer;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Orion.Admin.Tools;
 
-namespace ORION.Admin.Queries
+namespace Orion.Admin.Queries
 {
     public interface ICategoryListQuery: IQuery
     {

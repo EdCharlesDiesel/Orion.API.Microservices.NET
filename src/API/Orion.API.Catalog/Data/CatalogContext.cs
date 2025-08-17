@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Entities;
 
 namespace Orion.API.Catalog.Data
 {

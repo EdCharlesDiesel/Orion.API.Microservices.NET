@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace ORION.Admin.Models
+namespace Orion.Admin.Models
 {
     public class ClaimViewModel
     {

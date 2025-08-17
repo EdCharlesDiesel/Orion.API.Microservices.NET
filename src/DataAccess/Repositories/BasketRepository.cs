@@ -1,14 +1,18 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using Orion.DataAccess.Models;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
 using Orion.Domain.IRepositories;
+using Orion.Domain.Tools;
+using Basket = Orion.Domain.IRepositories.Basket;
 
 namespace Orion.DataAccess.Repositories;
 
 public class BasketRepository(OrionDbContext context) : IBasketServices
 {
-    public async Task<Core.Basket.Domain.Basket> Create(List<Core.Basket.Domain.Basket> baskets)
+    public async Task<Basket> Create(List<Basket> baskets)
     {
         if (baskets == null)
             throw new ArgumentException("basket list cannot be null or empty.");
@@ -29,15 +33,84 @@ public class BasketRepository(OrionDbContext context) : IBasketServices
         return baskets.ToList();
         
     }
-    
 
-    public async Task<Core.Basket.Domain.Basket?> GetByIdAsync(Guid id)
+    async Task IRepository.GetByIdAsync(Guid id)
+    {
+        await GetByIdAsync(id);
+    }
+
+    public async Task AddAsync(Basket entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    async Task IRepository.GetAllAsync()
+    {
+        await GetAllAsync();
+    }
+
+    async Task IRepository.GetByIdAsync(Guid id)
+    {
+        await GetByIdAsync(id);
+    }
+
+    public async Task AddAsync(Basket entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    async Task IRepository.GetAllAsync()
+    {
+        await GetAllAsync();
+    }
+
+    async Task IRepository.GetByIdAsync(Guid id)
+    {
+        await GetByIdAsync(id);
+    }
+
+    public async Task AddAsync(Basket entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    async Task IRepository.GetAllAsync()
+    {
+        await GetAllAsync();
+    }
+
+    async Task IRepository.GetByIdAsync(Guid id)
+    {
+        await GetByIdAsync(id);
+    }
+
+    public async Task AddAsync(Basket entity)
+    {
+        throw new NotImplementedException();
+    }
+
+
+    async Task IRepository.GetAllAsync()
+    {
+        await GetAllAsync();
+    }
+
+    async Task IRepository.GetAllAsync()
+    {
+        await GetAllAsync();
+    }
+
+    public async Task<Basket?> GetByIdAsync(Guid id)
     {
         var baskets = context.Baskets.FindAsync(id);
         return await baskets;
     }
 
-  
+    private async Task AddAsync(Basket entity)
+    {
+        throw new NotImplementedException();
+    }
+
 
     public async Task AddAsync(Basket basket)
     {
@@ -47,13 +120,30 @@ public class BasketRepository(OrionDbContext context) : IBasketServices
         await context.SaveChangesAsync();
     }
 
-    public async Task UpdateAsync(Core.Basket.Domain.Basket basket)
+    public async Task UpdateAsync(Basket basket)
     {
         if (basket == null)
             throw new ArgumentException("basket cannot be null or empty.");
         context.Baskets.Update(basket);
         await context.SaveChangesAsync();
        
+    }
+
+    public async Task UpdateAsync(Basket entity)
+    {
+        throw new NotImplementedException();
+    }
+
+
+
+    public async Task UpdateAsync(Basket entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task UpdateAsync(Basket entity)
+    {
+        throw new NotImplementedException();
     }
 
     public async Task DeleteAsync(Guid id)
@@ -64,7 +154,27 @@ public class BasketRepository(OrionDbContext context) : IBasketServices
         context.Baskets.Remove(basket);
     }
 
-    public async Task<List<Core.Basket.Domain.Basket>?> BulkCreate(List<Core.Basket.Domain.Basket> baskets)
+    public async Task BulkCreate(List baskets)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task BulkCreate(List baskets)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task BulkCreate(List baskets)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task BulkCreate(List baskets)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<List<Basket>?> BulkCreate(List<Basket> baskets)
     {
         await context.AddRangeAsync(baskets);
         if (baskets == null)
@@ -73,7 +183,7 @@ public class BasketRepository(OrionDbContext context) : IBasketServices
         return null;
     }
 
-    public async Task<List<Core.Basket.Domain.Basket>> BulkCreate(Core.Basket.Domain.Basket baskets)
+    public async Task<List< Basket>> BulkCreate(Basket baskets)
     {
         if (baskets == null)
             throw new ArgumentException("basket cannot be null or empty.");

@@ -1,6 +1,7 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
 using Orion.API.UserProfile.Mappings;
+using Orion.Domain.IRepositories;
 using Orion.Repository.Repositories;
 using Orion.Repository.Services;
 
@@ -112,3 +113,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public class UserProfileRepository
+{
+}

@@ -1,7 +1,7 @@
-﻿using DDD.ApplicationLayer;
-using ORION.Admin.Models.Employees;
+﻿using Orion.Admin.Models.Employees;
+using Orion.Admin.Tools;
 
-namespace ORION.Admin.Queries
+namespace Orion.Admin.Queries
 {
     public interface IEmployeesListQuery: IQuery
     {

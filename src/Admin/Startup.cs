@@ -1,33 +1,20 @@
-using Orion.DataAccess.Extensions;
-using DDD.ApplicationLayer;
-using Microsoft.AspNetCore.Localization;
 using System.Globalization;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
-using Orion.DataAccess.Models;
-using Orion.DataAccess.Contexts;
-using Orion.Domain.IRepositories;
-using Orion.Domain.Utility;
-using Orion.DataAccess.Interfaces;
-using Orion.DataAccess.Services;
-using Microsoft.Identity.Client;
-using Orion.DataAccess.SqlServer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Orion.Admin.Controllers;
-using Orion.Admin.Security;
-using Orion.DataAccess.Strategy;
+using ORION.Admin.Security;
+using Orion.Admin.Tools;
 using Orion.DataAccess.AllFeatures;
+using Orion.DataAccess.Data;
+using Orion.DataAccess.Entities;
+using Orion.DataAccess.Strategy;
 
 namespace Orion.Admin
 {
-    public class Startup
+    public class Startup(IConfiguration configuration)
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; } = configuration;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -66,7 +53,7 @@ namespace Orion.Admin
             
             services.AddAuthorization(options =>
             {
-                options.AddPolicy(SecurityConstants.PolicyName_EditBusinessOwner,
+                options.AddPolicy(SecurityConstants.PolicyNameEditBusinessOwner,
                                   policy => policy.Requirements.Add(
                                       new EditBusinessOwnerRequirement()));
             });

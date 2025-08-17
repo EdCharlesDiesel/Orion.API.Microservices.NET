@@ -1,10 +1,8 @@
-﻿using System.Diagnostics;
-using DDD.ApplicationLayer;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Commands;
-using Orion.Admin.Models;
-using Orion.Admin.Models.Employees;
-using Orion.Admin.Queries;
+using ORION.Admin.Models.Employees;
+using ORION.Admin.Queries;
+using Orion.Admin.Tools;
 using Orion.Domain.IRepositories;
 
 namespace Orion.Admin.Controllers
