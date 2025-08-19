@@ -10,12 +10,11 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Orion.Web-8a7e046b-4a5f-4dd0-9fa6-bd92e7b5bd7b")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.WebApps.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0dbd5d9ea9165aa87f7153ebe55fde40fb33e07")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+670053469e5f83c6f47eb4d358430779ef1b84e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.WebApps.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.WebApps.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

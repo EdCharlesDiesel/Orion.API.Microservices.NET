@@ -104,7 +104,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.Basket", "src\API
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Admin", "src\Admin\Orion.Admin.csproj", "{0CF64A6E-61E0-4DBB-B8B7-2013DDBFA6E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.DataAccess.Progres", "src\DataAccess\Orion.DataAccess.Progres\Orion.DataAccess.Progres.csproj", "{54148E17-6308-4CB0-9652-1CFCD4DA6AFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.DataAccess.Postgres", "src\DataAccess\Orion.DataAccess.Postgres\Orion.DataAccess.Postgres.csproj", "{FAC0F9F0-97C2-45E3-A52F-481A00D1AF36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -224,10 +224,10 @@ Global
 		{0CF64A6E-61E0-4DBB-B8B7-2013DDBFA6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF64A6E-61E0-4DBB-B8B7-2013DDBFA6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF64A6E-61E0-4DBB-B8B7-2013DDBFA6E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54148E17-6308-4CB0-9652-1CFCD4DA6AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54148E17-6308-4CB0-9652-1CFCD4DA6AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54148E17-6308-4CB0-9652-1CFCD4DA6AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54148E17-6308-4CB0-9652-1CFCD4DA6AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC0F9F0-97C2-45E3-A52F-481A00D1AF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC0F9F0-97C2-45E3-A52F-481A00D1AF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC0F9F0-97C2-45E3-A52F-481A00D1AF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC0F9F0-97C2-45E3-A52F-481A00D1AF36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -271,7 +271,7 @@ Global
 		{BE557BB9-B671-47E9-B38E-EF747F44EAD0} = {C81AA78C-ABB9-4EAB-BDD4-2038A6A5F904}
 		{8BA416D6-44A7-476A-9160-C20F35A6E835} = {E207DDD0-7946-4AC3-8695-FAAD4FCE412D}
 		{0CF64A6E-61E0-4DBB-B8B7-2013DDBFA6E7} = {12CE92B3-B016-47B1-9F3A-B40E7E4827B3}
-		{54148E17-6308-4CB0-9652-1CFCD4DA6AFD} = {E92855C7-3E03-4F60-B210-3DE18021B457}
+		{FAC0F9F0-97C2-45E3-A52F-481A00D1AF36} = {E92855C7-3E03-4F60-B210-3DE18021B457}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFC31B86-B732-491F-9E63-995F435D6ED6}
