@@ -1,5 +1,3 @@
-
-
 using System.Security.Claims;
 using Orion.Admin;
 
@@ -13,7 +11,7 @@ namespace ORION.Admin.Security
         {
             if (context.User != null &&
                 context.User.HasClaim(
-                    c => c.Type == ClaimTypes.Name) == true)
+                    c => c.Type == ClaimTypes.Name))
             {
                 var usernameClaim = 
                     context.User.Claims.Where(
@@ -38,7 +36,7 @@ namespace ORION.Admin.Security
 
                     var identity = new ClaimsIdentity(claims);
 
-                    context.User = new System.Security.Claims.ClaimsPrincipal(identity);
+                    context.User = new ClaimsPrincipal(identity);
                 }
             }
                         

@@ -1,9 +1,8 @@
-﻿using Orion.Domain.Aggregates;
-using Orion.Domain.IRepositories;
-using System.Threading.Tasks;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using Orion.Domain.Tools;
+using System.Threading.Tasks;
+using Orion.Domain.Aggregates;
+using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Repositories
 {
@@ -41,23 +40,13 @@ namespace Orion.DataAccess.Repositories
         //    //context.Employees.Add(model);
         //    //return model;
         //}
-        public IUnitOfWork UnitOfWork { get; }
-        public Task<IEmployee> Get(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEmployee New()
-        {
-            throw new NotImplementedException();
-        }
 
         public async Task<IEnumerable<IEmployee>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public async Task<IEmployee> GetByIdAsync(Guid id)
+        public async Task GetByIdAsync(Guid id)
         {
             throw new NotImplementedException();
         }
@@ -73,6 +62,16 @@ namespace Orion.DataAccess.Repositories
         }
 
         public async Task DeleteAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<IEmployee> Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEmployee New()
         {
             throw new NotImplementedException();
         }

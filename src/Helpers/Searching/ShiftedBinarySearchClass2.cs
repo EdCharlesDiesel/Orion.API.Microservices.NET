@@ -20,7 +20,8 @@
                 {
                     return middle;
                 }
-                else if (leftNum <= potentialMatch)
+
+                if (leftNum <= potentialMatch)
                 {
                     if (target < potentialMatch && target >= leftNum)
                     {

@@ -8,13 +8,13 @@ namespace Orion.Helpers.Tests.Binary_Trees
         public void Test1()
         {
             FlattenBinaryTreeClass.BinaryTree root = new FlattenBinaryTreeClass.BinaryTree(1);
-            insert(root, new int[] { 2, 3, 4, 5, 6 });
+            insert(root, new[] { 2, 3, 4, 5, 6 });
             root.left.right.left = new FlattenBinaryTreeClass.BinaryTree(7);
             root.left.right.right = new FlattenBinaryTreeClass.BinaryTree(8);
             FlattenBinaryTreeClass.BinaryTree leftMostNode = FlattenBinaryTreeClass.FlattenBinaryTree(root);
             List<int> leftToRightToLeft = this.leftToRightToLeft(leftMostNode);
             List<int> expected =
-              new List<int>() { 4, 2, 7, 5, 8, 1, 6, 3, 3, 6, 1, 8, 5, 7, 2, 4 };
+              new List<int> { 4, 2, 7, 5, 8, 1, 6, 3, 3, 6, 1, 8, 5, 7, 2, 4 };
             Assert.True(expected.SequenceEqual(leftToRightToLeft));
         }
 

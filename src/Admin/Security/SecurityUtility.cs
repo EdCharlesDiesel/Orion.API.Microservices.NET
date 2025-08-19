@@ -1,8 +1,5 @@
-﻿using System;
-using System.Linq;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using System.Security.Principal;
-using Microsoft.AspNetCore.Http;
 
 namespace ORION.Admin.Security
 {
@@ -28,10 +25,8 @@ namespace ORION.Admin.Security
             {
                 return false;
             }
-            else
-            {
-                return _Principal.IsInRole(role);
-            }
+
+            return _Principal.IsInRole(role);
         }
 
         public bool IsAuthorized(string permissionName, int id)
@@ -40,17 +35,13 @@ namespace ORION.Admin.Security
             {
                 return false;
             }
-            else
+
+            if (IsAuthorized(SecurityConstants.RoleName_Admin))
             {
-                if (IsAuthorized(SecurityConstants.RoleName_Admin) == true)
-                {
-                    return true;
-                }
-                else
-                {
-                    return _Identity.HasClaim(permissionName, id.ToString());
-                }
+                return true;
             }
+
+            return _Identity.HasClaim(permissionName, id.ToString());
         }
 
         public bool IsAuthorized(string roleName)
@@ -59,10 +50,8 @@ namespace ORION.Admin.Security
             {
                 return false;
             }
-            else
-            {
-                return _Identity.HasClaim(ClaimTypes.Role, roleName);
-            }
+
+            return _Identity.HasClaim(ClaimTypes.Role, roleName);
         }
 
         public bool HasClaim(string claimType, string claimValue)
@@ -71,10 +60,8 @@ namespace ORION.Admin.Security
             {
                 return false;
             }
-            else
-            {
-                return _Identity.HasClaim(claimType, claimValue);
-            }
+
+            return _Identity.HasClaim(claimType, claimValue);
         }
 
         public bool HasClaim(string claimType)
@@ -83,10 +70,8 @@ namespace ORION.Admin.Security
             {
                 return false;
             }
-            else
-            {
-                return _Identity.HasClaim(c => c.Type == claimType);
-            }
+
+            return _Identity.HasClaim(c => c.Type == claimType);
         }
     }
 }

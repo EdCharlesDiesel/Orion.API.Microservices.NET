@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Orion.Domain.Utility
+﻿namespace Orion.Domain.Utility
 {
     public interface IValidatorStrategy<T>
     {

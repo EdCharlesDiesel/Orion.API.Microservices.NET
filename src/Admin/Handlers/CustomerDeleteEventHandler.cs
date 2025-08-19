@@ -1,8 +1,4 @@
-﻿using DDD.ApplicationLayer;
-using ORION.Domain.Aggregates;
-using ORION.Domain.IRepositories;
-using System.Threading.Tasks;
-using Orion.Admin.Tools;
+﻿using Orion.Admin.Tools;
 using Orion.Domain.Aggregates;
 using Orion.Domain.IRepositories;
 

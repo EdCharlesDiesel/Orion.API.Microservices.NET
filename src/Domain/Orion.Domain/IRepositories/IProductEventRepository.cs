@@ -1,7 +1,6 @@
-﻿using Orion.Domain.Aggregates;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Orion.Domain.Tools;
+using Orion.Domain.Aggregates;
 
 namespace Orion.Domain.IRepositories
 {

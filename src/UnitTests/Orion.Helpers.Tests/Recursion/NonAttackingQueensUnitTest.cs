@@ -1,7 +1,5 @@
 
 
-using ORION.Core.Recursion;
-
 namespace NonAttackingQueens.Tests
 {
     public class NonAttackingQueensUnitTest

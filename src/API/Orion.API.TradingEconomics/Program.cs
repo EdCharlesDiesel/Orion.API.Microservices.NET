@@ -1,9 +1,6 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
 using Orion.API.TradingEconomics.Mappings;
-using Orion.Repository.Repositories.TradingEconomics;
-using Orion.Repository.Services.TradingEconomics;
-
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
 

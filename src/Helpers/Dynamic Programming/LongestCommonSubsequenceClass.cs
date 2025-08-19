@@ -31,7 +31,7 @@
             public OrgChart(char name)
             {
                 this.name = name;
-                this.directReports = new List<OrgChart>();
+                directReports = new List<OrgChart>();
             }
             // This method is for testing only.
             public void addDirectReports(OrgChart[] directReports)

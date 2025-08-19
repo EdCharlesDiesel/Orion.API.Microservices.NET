@@ -17,7 +17,7 @@
                     {
                         if (indices.Length ==0 || indices[1] - indices[0] < endingIndex -startingIndex)
                         {
-                            indices= new int[] {startingIndex,endingIndex};
+                            indices= new[] {startingIndex,endingIndex};
                         }
                     }
                 }

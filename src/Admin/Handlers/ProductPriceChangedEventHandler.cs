@@ -1,9 +1,4 @@
-﻿using DDD.ApplicationLayer;
-using ORION.Admin.Domain.Aggregates;
-using ORION.Admin.Domain.Events;
-using ORION.Admin.Domain.IRepositories;
-using System.Threading.Tasks;
-using Orion.Admin.Tools;
+﻿using Orion.Admin.Tools;
 
 namespace Orion.Admin.Handlers
 {

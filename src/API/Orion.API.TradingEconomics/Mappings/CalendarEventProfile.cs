@@ -1,6 +1,5 @@
 using AutoMapper;
 using Orion.API.TradingEconomics.DTO;
-using Orion.Core.TradingEconomics.Domain;
 
 namespace Orion.API.TradingEconomics.Mappings;
 

@@ -10,7 +10,7 @@ namespace Orion.Helpers.Tests.Graph
             int[] expected = { -24, 2, 3, 5, 6, 35 };
             Assert.True(compare(
               LongestIncreasingSubsequenceClass.LongestIncreasingSubsequence(
-                new int[] { 5, 7, -24, 12, 10, 2, 3, 12, 5, 6, 35 }
+                new[] { 5, 7, -24, 12, 10, 2, 3, 12, 5, 6, 35 }
               ),
               expected
             ));

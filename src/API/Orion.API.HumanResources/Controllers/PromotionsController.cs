@@ -30,14 +30,12 @@ namespace Orion.API.HumanResources.Controllers
 
             if (await _promotionService.PromoteCalendarAsync(CalendarToPromote))
             {
-                return Ok(new PromotionResultDto() 
-                            { EmployeeId = CalendarToPromote.Id, 
+                return Ok(new PromotionResultDto
+                { EmployeeId = CalendarToPromote.Id, 
                              JobLevel = CalendarToPromote.JobLevel });
             }
-            else
-            {
-                return BadRequest("Employee not eligible for promotion.");
-            }              
+
+            return BadRequest("Employee not eligible for promotion.");
         }
     }
 }

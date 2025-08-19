@@ -49,7 +49,8 @@
                 {
                     return RIGHT;
                 }
-                else if (coord2.x < coord1.x)
+
+                if (coord2.x < coord1.x)
                 {
                     return LEFT;
                 }
@@ -60,7 +61,8 @@
                 {
                     return UP;
                 }
-                else if (coord2.y < coord1.y)
+
+                if (coord2.y < coord1.y)
                 {
                     return DOWN;
                 }
@@ -90,17 +92,15 @@
                 bool rectangleFound = coordsTable[coordstring][LEFT].Contains(origin);
                 return rectangleFound ? 1 : 0;
             }
-            else
+
+            int rectangleCount = 0;
+            string nextDirection = getNextClockwiseDirection(direction);
+            foreach (Point nextCoord in coordsTable[coordstring][direction])
             {
-                int rectangleCount = 0;
-                string nextDirection = getNextClockwiseDirection(direction);
-                foreach (Point nextCoord in coordsTable[coordstring][direction])
-                {
-                    rectangleCount += clockwiseCountRectangles(nextCoord, coordsTable,
+                rectangleCount += clockwiseCountRectangles(nextCoord, coordsTable,
                     nextDirection, origin);
-                }
-                return rectangleCount;
             }
+            return rectangleCount;
         }
         public static string getNextClockwiseDirection(string direction)
         {
@@ -111,7 +111,7 @@
         }
         public static string coordTostring(Point coord)
         {
-            return coord.x.ToString() + "-" + coord.y.ToString();
+            return coord.x + "-" + coord.y;
         }
     }
     public class Point
@@ -125,7 +125,7 @@
         }
         public bool equals(object a)
         {
-            return this.x == ((Point)a).x && this.y == ((Point)a).y;
+            return x == ((Point)a).x && y == ((Point)a).y;
         }
     }
 }

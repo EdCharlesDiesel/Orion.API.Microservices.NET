@@ -7,19 +7,19 @@ namespace ProductSum.Tests
         [Fact]
         public  void TestCase1()
         {
-            List<object> test = new List<object>()
+            List<object> test = new List<object>
             {
                 1,
                 2,
-                new List<object>()
+                new List<object>
                 {
                     7,-1
                 },
                 3,
-                 new List<object>()
+                 new List<object>
                  {
                      6,
-                     new List<object>()
+                     new List<object>
                      {
                          -13,8
                      },

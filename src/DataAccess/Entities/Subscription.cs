@@ -10,7 +10,7 @@ namespace Orion.DataAccess.Entities
         
         public void FullUpdate(ISubscription o)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
         public string Username { get; set; }
 

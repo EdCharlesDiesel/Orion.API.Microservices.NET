@@ -22,9 +22,9 @@ namespace Orion.Helpers.Strings
                 for (int lenOfX = 1; lenOfX < str.Length; lenOfX++)
                 {
                     double lenOfY =
-                    ((double)str.Length - (double)lenOfX *
+                    (str.Length - lenOfX *
                     (double)counts['x']) /
-                    (double)counts['y'];
+                    counts['y'];
                     if (lenOfY <= 0 || lenOfY % 1 != 0)
                     {
                         continue;
@@ -35,7 +35,7 @@ namespace Orion.Helpers.Strings
                     string potentialMatch = buildPotentialMatch(newPattern, x, y);
                     if (str.Equals(potentialMatch))
                     {
-                        return didSwitch ? new string[] { y, x } : new string[] {x,y};
+                        return didSwitch ? new[] { y, x } : new[] {x,y};
                     }
                 }
             }
@@ -48,7 +48,7 @@ namespace Orion.Helpers.Strings
                     string potentialMatch = buildPotentialMatch(newPattern, x, "");
                     if (str.Equals(potentialMatch))
                     {
-                        return didSwitch ? new string[] { "", x } : new string[] {x,""};
+                        return didSwitch ? new[] { "", x } : new[] {x,""};
                     }
                 }
             }

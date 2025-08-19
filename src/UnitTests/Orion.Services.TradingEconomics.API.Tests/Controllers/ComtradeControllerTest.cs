@@ -1,8 +1,6 @@
 using JetBrains.Annotations;
 using Moq;
 using Orion.API.TradingEconomics.Controllers;
-
-using Orion.Repository.Services.TradingEconomics;
 using Xunit;
 
 namespace Orion.Services.TradingEconomics.API.Tests.Controllers;

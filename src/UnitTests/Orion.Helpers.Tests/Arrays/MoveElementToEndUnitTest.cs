@@ -8,17 +8,17 @@ namespace Orion.Helpers.Tests.Arrays
          [Fact]
         public void Test1()
         {
-            List<int> array = new List<int>(){
+            List<int> array = new List<int> {
                 2, 1, 2, 2, 2, 3, 4, 2
             };
 
             int toMove = 2;
 
-            List<int> expectedStart = new List<int>(){
+            List<int> expectedStart = new List<int> {
                 1, 3, 4
             };
 
-            List<int> expectedEnd = new List<int>(){
+            List<int> expectedEnd = new List<int> {
                 2, 2, 2, 2, 2
             };
 

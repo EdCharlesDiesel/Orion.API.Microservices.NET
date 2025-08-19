@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Areas.API;
 using Orion.Admin.Models;
-using ORION.Admin.Models;
 using Orion.DataAccess.AllFeatures;
 using Orion.DataAccess.Entities;
 
@@ -29,14 +28,12 @@ namespace Orion.Admin.Controllers
 
             var model = new SearchViewModel();
 
-            if (_featureManager.SearchByBirthBusinessProvince == true)
+            if (_featureManager.SearchByBirthBusinessProvince)
             {
                 return View("IndexProvinceSearch", model);
             }
-            else
-            {
-                return View(model);
-            }            
+
+            return View(model);
         }
 
         [HttpPost]
@@ -56,7 +53,7 @@ namespace Orion.Admin.Controllers
 
             IList<BusinessOwner>? results = null;
 
-            if (_featureManager.SearchByBirthBusinessProvince == true)
+            if (_featureManager.SearchByBirthBusinessProvince)
             {
                 results = _service.Search(
                     model.FirstName, model.LastName,
@@ -78,14 +75,12 @@ namespace Orion.Admin.Controllers
                 Adapt(results, modelToReturn.Results);
             }
 
-            if (_featureManager.SearchByBirthBusinessProvince == true)
+            if (_featureManager.SearchByBirthBusinessProvince)
             {
                 return View("IndexProvinceSearch", modelToReturn);
             }
-            else
-            {
-                return View(modelToReturn);
-            }
+
+            return View(modelToReturn);
         }
 
         private void Adapt(IList<BusinessOwner> fromValues, List<SearchResultRow> toValues)

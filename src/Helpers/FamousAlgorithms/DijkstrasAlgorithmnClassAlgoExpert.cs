@@ -83,7 +83,7 @@
                 }
             }
 
-            return new int[] { currentMinDistance, vertex };
+            return new[] { currentMinDistance, vertex };
         }
     }
 }

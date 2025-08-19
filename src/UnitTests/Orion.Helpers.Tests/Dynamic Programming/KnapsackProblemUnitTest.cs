@@ -8,7 +8,7 @@ namespace Orion.Helpers.Tests.Dynamic_Programming
         public void Test1()
         {
             int[,] input = { { 1, 2 }, { 4, 3 }, { 5, 6 }, { 6, 7 } };
-            Tuple<int, int[]> expected = Tuple.Create(10, new int[] { 1, 3 });
+            Tuple<int, int[]> expected = Tuple.Create(10, new[] { 1, 3 });
             Assert.True(Compare(KnapsackProblemClass.KnapsackProblem(input, 10), expected));
         }
 

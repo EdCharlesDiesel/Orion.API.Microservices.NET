@@ -8,10 +8,10 @@ namespace Orion.Helpers.Tests.Binary_Trees
         public void Test1()
         {
             TestBinaryTree tree = new TestBinaryTree(1);
-            tree.insert(new int[] { 2, 3, 4, 5, 6, 7, 8, 9 }, 0);
+            tree.insert(new[] { 2, 3, 4, 5, 6, 7, 8, 9 }, 0);
             InvertBinaryTreeClass.InvertBinaryTree(tree);
             InvertedBinaryTree invertedTree = new InvertedBinaryTree(1);
-            invertedTree.insert(new int[] { 2, 3, 4, 5, 6, 7, 8, 9 }, 0);
+            invertedTree.insert(new[] { 2, 3, 4, 5, 6, 7, 8, 9 }, 0);
             Assert.True(compareBT(tree, invertedTree));
         }
 

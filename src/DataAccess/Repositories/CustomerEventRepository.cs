@@ -1,6 +1,7 @@
 ﻿
 
 
+using Orion.Domain.Aggregates;
 using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Repositories
@@ -44,5 +45,9 @@ namespace Orion.DataAccess.Repositories
         //    context.CustomerEvents.Add(model);
         //    return model;
         //}
+        public void New(CustomerEventType deleted, object evCustomerId, object evOldVersion)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

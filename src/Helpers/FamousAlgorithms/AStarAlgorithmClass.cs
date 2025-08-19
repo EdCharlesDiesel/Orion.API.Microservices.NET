@@ -160,7 +160,7 @@
         public Node cameFrom;
         public Node(int row, int col, int value)
         {
-            id = row.ToString() + '-' + col.ToString();
+            id = row.ToString() + '-' + col;
             this.row = row;
             this.col = col;
             this.value = value;
@@ -168,7 +168,7 @@
             estimatedDistanceToEnd = int.MaxValue;
             cameFrom = null;
         }
-    };
+    }
 
     public class MinHeap
     {

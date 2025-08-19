@@ -9,7 +9,8 @@
             {
                 return 0;
             }
-            else if (array.Length == 1)
+
+            if (array.Length == 1)
             {
                 return array[0];
             }

@@ -19,14 +19,11 @@ namespace Orion.Helpers.Tests.Binary_Search_Tree
             List<int> preOrder = new List<int> { 10, 5, 2, 1, 5, 15, 22 };
             List<int> postOrder = new List<int> { 1, 2, 5, 5, 22, 15, 10 };
 
-            Assert.True(Enumerable.SequenceEqual(
-              BTSTaversalClass.InOrderTraverse(root, new List<int>()), inOrder
+            Assert.True(BTSTaversalClass.InOrderTraverse(root, new List<int>()).SequenceEqual(inOrder
             ));
-            Assert.True(Enumerable.SequenceEqual(
-              BTSTaversalClass.PreOrderTraverse(root, new List<int>()), preOrder
+            Assert.True(BTSTaversalClass.PreOrderTraverse(root, new List<int>()).SequenceEqual(preOrder
             ));
-            Assert.True(Enumerable.SequenceEqual(
-              BTSTaversalClass.PostOrderTraverse(root, new List<int>()), postOrder
+            Assert.True(BTSTaversalClass.PostOrderTraverse(root, new List<int>()).SequenceEqual(postOrder
             ));
         }
     }

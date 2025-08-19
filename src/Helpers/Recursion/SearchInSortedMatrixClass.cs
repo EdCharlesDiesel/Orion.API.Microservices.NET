@@ -19,10 +19,10 @@
                 }
                 else
                 {
-                    return new int[] { row, col };
+                    return new[] { row, col };
                 }
             }
-            return new int[] { -1, -1 };
+            return new[] { -1, -1 };
         }
     }
 }

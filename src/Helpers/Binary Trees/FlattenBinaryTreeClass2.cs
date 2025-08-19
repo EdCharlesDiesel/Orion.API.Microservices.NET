@@ -33,7 +33,7 @@
                 connectNodes(node, leftAndRightMostNodes[0]);
                 rightMost = leftAndRightMostNodes[1];
             }
-            return new BinaryTree[] { leftMost, rightMost };
+            return new[] { leftMost, rightMost };
         }
         public static void connectNodes(BinaryTree left, BinaryTree right)
         {
@@ -51,8 +51,8 @@
         public class BinaryTree
         {
             public int value;
-            public BinaryTree left = null;
-            public BinaryTree right = null;
+            public BinaryTree left;
+            public BinaryTree right;
             public BinaryTree(int value)
             {
                 this.value = value;

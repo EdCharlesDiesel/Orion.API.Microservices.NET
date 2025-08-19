@@ -214,11 +214,9 @@ namespace Orion.API.HumanResources.Business
             {
                 return employee.AttendedCourses.Count * 100;
             }
-            else
-            {
-                return employee.YearsInService
-                    * employee.AttendedCourses.Count * 100;
-            }
+
+            return employee.YearsInService
+                   * employee.AttendedCourses.Count * 100;
         }
     }
 }

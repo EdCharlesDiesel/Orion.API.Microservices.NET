@@ -1,6 +1,5 @@
 using AutoMapper;
 using Orion.API.Catalog.DTO;
-using Orion.DataAccess.Entities;
 
 namespace Orion.API.Catalog.Mappings;
 

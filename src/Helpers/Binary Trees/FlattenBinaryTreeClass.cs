@@ -28,8 +28,8 @@
         public class BinaryTree
         {
             public int value;
-            public BinaryTree left = null;
-            public BinaryTree right = null;
+            public BinaryTree left;
+            public BinaryTree right;
             public BinaryTree(int value)
             {
                 this.value = value;

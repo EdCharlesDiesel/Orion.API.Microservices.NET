@@ -1,10 +1,9 @@
-﻿using Orion.Domain.Aggregates;
-using Orion.Domain.IRepositories;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Orion.Domain.Aggregates;
+using Orion.Domain.IRepositories;
 using Orion.Domain.Tools;
-
 
 namespace Orion.DataAccess.Repositories
 {
@@ -48,23 +47,47 @@ namespace Orion.DataAccess.Repositories
         //    context.ProductEvents.Add(model);
         //    return model;
         //}
-        public IUnitOfWork UnitOfWork { get; }
-        public Task<IEnumerable<IProductEvent>> GetFirstN(int n)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IProductEvent New(ProductEventType type, int id, long oldVersion, long? newVersion = null, decimal unitPrice = 0)
-        {
-            throw new NotImplementedException();
-        }
-
+        // public IUnitOfWork UnitOfWork { get; }
+        // public Task<IEnumerable<IProductEvent>> GetFirstN(int n)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public IProductEvent New(ProductEventType type, int id, long oldVersion, long? newVersion = null, decimal unitPrice = 0)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task<IEnumerable<IProductEvent>> GetAllAsync()
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task<IProductEvent> GetByIdAsync(Guid id)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task AddAsync(IProductEvent entity)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task UpdateAsync(IProductEvent entity)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task DeleteAsync(Guid id)
+        // {
+        //     throw new NotImplementedException();
+        // }
         public async Task<IEnumerable<IProductEvent>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public async Task<IProductEvent> GetByIdAsync(Guid id)
+        public async Task GetByIdAsync(Guid id)
         {
             throw new NotImplementedException();
         }
@@ -80,6 +103,16 @@ namespace Orion.DataAccess.Repositories
         }
 
         public async Task DeleteAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<IProductEvent>> GetFirstN(int n)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IProductEvent New(ProductEventType type, int id, long oldVersion, long? newVersion = null, decimal unitPrice = 0)
         {
             throw new NotImplementedException();
         }

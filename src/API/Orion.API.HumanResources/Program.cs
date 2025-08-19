@@ -1,5 +1,3 @@
-using ORION.HumanResources;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

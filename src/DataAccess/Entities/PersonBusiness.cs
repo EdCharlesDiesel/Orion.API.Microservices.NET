@@ -9,12 +9,7 @@ namespace Orion.DataAccess.Entities
 {
     public class PersonBusiness: Entity<int>, IPersonBusiness
     {
-        public PersonBusiness()
-        {
-
-        }
-
-         public void FullUpdate(IPersonBusiness o)
+        public void FullUpdate(IPersonBusiness o)
         {
             if (IsTransient())
             {

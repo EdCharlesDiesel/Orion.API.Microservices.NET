@@ -42,7 +42,8 @@
                 {
                     return array[rightIdx];
                 }
-                else if (rightIdx < position)
+
+                if (rightIdx < position)
                 {
                     startIdx = rightIdx + 1;
                 }

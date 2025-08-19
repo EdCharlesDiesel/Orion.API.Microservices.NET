@@ -19,10 +19,10 @@
         public class LinkedList
         {
             public int Value;
-            public LinkedList Next = null;
+            public LinkedList Next;
             public LinkedList(int value)
             {
-                this.Value = value;
+                Value = value;
             }
         }
     }

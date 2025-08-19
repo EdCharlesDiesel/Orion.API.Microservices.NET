@@ -40,7 +40,7 @@
         public LinkedListClass2(int value)
         {
             this.value = value;
-            this.next = null!;
+            next = null!;
         }
     }
 }

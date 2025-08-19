@@ -7,13 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System;
-using System.Reflection;
-
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.API.HumanResources")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fba1307eb74a88273a99a806a0dbd877a6270e6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+538a879dd3ce4fdfdfb2626b4d191d5c7ab96440")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.API.HumanResources")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.API.HumanResources")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

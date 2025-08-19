@@ -9,12 +9,13 @@ namespace Orion.Helpers.Tests.Famous_Algorithmns
         {
             int start = 0;
             int[][][] edges = {
-                  new int[][] { new int[] { 1, 7 } },
-                  new int[][] {
-                    new int[] { 2, 6 }, new int[] { 3, 20 }, new int[] { 4, 3 }
+                  new[] { new[] { 1, 7 } },
+                  new[]
+                  {
+                    new[] { 2, 6 }, new[] { 3, 20 }, new[] { 4, 3 }
                   },
-                  new int[][] { new int[] { 3, 14 } },
-                  new int[][] { new int[] { 4, 2 } },
+                  new[] { new[] { 3, 14 } },
+                  new[] { new[] { 4, 2 } },
                   new int[][] {},
                   new int[][] {}
                 };

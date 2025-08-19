@@ -54,26 +54,21 @@
                 {
                     return false;
                 }
-                else
-                {
-                    return left.Contains(value);
-                }
+
+                return left.Contains(value);
             }
-            else if (value > this.value)
+
+            if (value > this.value)
             {
                 if (right == null)
                 {
                     return false;
                 }
-                else
-                {
-                    return right.Contains(value);
-                }
+
+                return right.Contains(value);
             }
-            else
-            {
-                return true;
-            }
+
+            return true;
         }
         // Average: O(log(n)) time | O(log(n)) space
         // Worst: O(n) time | O(n) space
@@ -119,10 +114,7 @@
                         left = right.left;
                         right = right.right;
                     }
-                    else
-                    {
-                        // This is a single-node tree; do nothing.
-                    }
+                    // This is a single-node tree; do nothing.
                 }
                 else if (parent.left == this)
                 {
@@ -139,12 +131,10 @@
         {
             if (left == null)
             {
-                return this.value;
+                return value;
             }
-            else
-            {
-                return left.getMinValue();
-            }
+
+            return left.getMinValue();
         }
     }
 }

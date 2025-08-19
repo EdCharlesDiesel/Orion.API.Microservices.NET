@@ -10,8 +10,8 @@
             public BinaryTree(int value)
             {
                 this.value = value;
-                this.left = null;
-                this.right = null;
+                left = null;
+                right = null;
             }
         }
         public static List<int> BranchSums(BinaryTree root)
@@ -29,7 +29,6 @@
             if (node.left == null && node.right == null)
             {
                 sums.Add(newRunningSum);
-                return;
             }
         }
     }

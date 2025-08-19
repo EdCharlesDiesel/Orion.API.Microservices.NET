@@ -59,7 +59,7 @@ namespace Orion.DataAccess.AllFeatures
 
         private bool IsEnabled(string featureName, bool defaultValue)
         {
-            return FeatureConfigurations.ContainsKey(featureName) == true ? FeatureConfigurations[featureName] : defaultValue;
+            return FeatureConfigurations.ContainsKey(featureName) ? FeatureConfigurations[featureName] : defaultValue;
         }
 
         public bool CustomerSatisfaction

@@ -13,7 +13,7 @@ namespace Orion.Domain.Tools
         public virtual TK Id { get;  set; }
         public bool IsTransient()
         {
-            return Object.Equals(Id, default(TK));
+            return Equals(Id, default(TK));
             
         }
         public override bool Equals(object obj)
@@ -25,10 +25,10 @@ namespace Orion.Domain.Tools
         public bool Equals(IEntity<TK> other)
         {
             if (other == null || 
-                other.IsTransient() || this.IsTransient())
+                other.IsTransient() || IsTransient())
                 return false;
 
-            return Object.Equals(Id, other.Id);
+            return Equals(Id, other.Id);
         }
 
         int? _requestedHashCode;
@@ -40,15 +40,14 @@ namespace Orion.Domain.Tools
                     _requestedHashCode = HashCode.Combine(Id);
                 return _requestedHashCode.Value;
             }
-            else
-                return base.GetHashCode();
+
+            return base.GetHashCode();
         }
         public static bool operator ==(Entity<TK> left, Entity<TK> right)
         {
-            if (Object.Equals(left, null))
-                return (Object.Equals(right, null));
-            else
-                return left.Equals(right);
+            if (Equals(left, null))
+                return (Equals(right, null));
+            return left.Equals(right);
         }
         public static bool operator !=(Entity<TK> left, Entity<TK> right)
         {

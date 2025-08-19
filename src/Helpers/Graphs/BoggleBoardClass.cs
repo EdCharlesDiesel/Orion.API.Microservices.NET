@@ -31,35 +31,35 @@
             List<int[]> neighbors = new List<int[]>();
             if (i > 0 && j > 0)
             {
-                neighbors.Add(new int[] { i - 1, j - 1 });
+                neighbors.Add(new[] { i - 1, j - 1 });
             }
             if (i > 0 && j < board.GetLength(1) - 1)
             {
-                neighbors.Add(new int[] { i - 1, j + 1 });
+                neighbors.Add(new[] { i - 1, j + 1 });
             }
             if (i < board.GetLength(0) - 1 && j < board.GetLength(1) - 1)
             {
-                neighbors.Add(new int[] { i + 1, j + 1 });
+                neighbors.Add(new[] { i + 1, j + 1 });
             }
             if (i < board.GetLength(0) - 1 && j > 0)
             {
-                neighbors.Add(new int[] { i + 1, j - 1 });
+                neighbors.Add(new[] { i + 1, j - 1 });
             }
             if (i > 0)
             {
-                neighbors.Add(new int[] { i - 1, j });
+                neighbors.Add(new[] { i - 1, j });
             }
             if (i < board.GetLength(0) - 1)
             {
-                neighbors.Add(new int[] { i + 1, j });
+                neighbors.Add(new[] { i + 1, j });
             }
             if (j > 0)
             {
-                neighbors.Add(new int[] { i, j - 1 });
+                neighbors.Add(new[] { i, j - 1 });
             }
             if (j < board.GetLength(1) - 1)
             {
-                neighbors.Add(new int[] { i, j + 1 });
+                neighbors.Add(new[] { i, j + 1 });
             }
             return neighbors;
         }
@@ -77,12 +77,12 @@
         public char endSymbol;
         public Trie()
         {
-            this.root = new TrieNode();
-            this.endSymbol = '*';
+            root = new TrieNode();
+            endSymbol = '*';
         }
         public void Add(string str)
         {
-            TrieNode node = this.root;
+            TrieNode node = root;
             for (int i = 0; i < str.Length; i++)
             {
                 char letter = str[i];
@@ -93,7 +93,7 @@
                 }
                 node = node.children[letter];
             }
-            node.children[this.endSymbol] = null;
+            node.children[endSymbol] = null;
             node.word = str;
         }
     }

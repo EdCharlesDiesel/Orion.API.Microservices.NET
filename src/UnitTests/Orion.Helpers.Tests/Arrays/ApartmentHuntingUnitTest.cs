@@ -35,7 +35,7 @@ namespace Orion.Helpers.Tests.Arrays
             blocks[4]["school"] = true;
             blocks[4]["store"] = true;
 
-            string[] reqs = new string[] { "gym", "school", "store" };
+            string[] reqs = new[] { "gym", "school", "store" };
             Assert.True(ApartmentHuntingClass.ApartmentHunting(blocks, reqs) == 3);
             Assert.True(ApartmentHuntingClass2.ApartmentHunting(blocks, reqs) == 3);
         }

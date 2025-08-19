@@ -18,7 +18,7 @@
             }
             if (minOutOfOrder == Int32.MaxValue)
             {
-                return new int[] { -1, -1 };
+                return new[] { -1, -1 };
             }
             int subarrayLeftIdx = 0;
             while (minOutOfOrder >= array[subarrayLeftIdx])
@@ -30,7 +30,7 @@
             {
                 subarrayRightIdx--;
             }
-            return new int[] { subarrayLeftIdx, subarrayRightIdx };
+            return new[] { subarrayLeftIdx, subarrayRightIdx };
         }
         public static bool isOutOfOrder(int i, int num, int[] array)
         {

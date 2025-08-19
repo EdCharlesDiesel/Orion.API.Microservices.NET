@@ -1,5 +1,3 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-
 namespace RemoveDuplicatesFromLinkedList.Tests
 {
     public class UnitTest1

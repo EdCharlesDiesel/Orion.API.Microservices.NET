@@ -48,7 +48,7 @@
             public OrgChart(char name)
             {
                 this.name = name;
-                this.directReports = new List<OrgChart>();
+                directReports = new List<OrgChart>();
             }
 
             public void addDirectReports(OrgChart[] directReports)
@@ -68,7 +68,7 @@
             public OrgInfo(OrgChart lowerCommonManager, int numImportReport)
             {
                 this.lowerCommonManager = lowerCommonManager;
-                this.numImportantReports = numImportReport;
+                numImportantReports = numImportReport;
             }
         }
     }    

@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Orion.Domain.IRepositories;
 
@@ -25,6 +26,6 @@ public class HttpRequesterClass
 {
     public static async Task<string> HttpRequester(string comtradeCountries)
     {
-        throw new System.NotImplementedException();
+        throw new NotImplementedException();
     }
 }

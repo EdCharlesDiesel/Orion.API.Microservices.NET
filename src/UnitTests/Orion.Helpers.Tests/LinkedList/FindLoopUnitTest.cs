@@ -1,5 +1,3 @@
-using ORION.Core.LinkedList;
-
 namespace FindLoop.Tests
 {
     public class UnitTest1
@@ -8,7 +6,7 @@ namespace FindLoop.Tests
         public void Test1()
         {
             TestLinkedList test = new TestLinkedList(0);
-            test.addMany(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            test.addMany(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
             test.getNthNode(10).next = test.getNthNode(5);
             Assert.True(FindLoopClass.FindLoop(test) == test.getNthNode(5));
         }

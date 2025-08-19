@@ -49,28 +49,13 @@ namespace Orion.DataAccess.Repositories
         //{
         //    throw new System.NotImplementedException();
         //}
-        public IUnitOfWork UnitOfWork { get; }
-        public Task<ICustomer> Get(int id)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public ICustomer New()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Task Delete(int customerId)
-        {
-            throw new System.NotImplementedException();
-        }
 
         public async Task<IEnumerable<ICustomer>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public async Task<ICustomer> GetByIdAsync(Guid id)
+        public async Task GetByIdAsync(Guid id)
         {
             throw new NotImplementedException();
         }
@@ -86,6 +71,21 @@ namespace Orion.DataAccess.Repositories
         }
 
         public async Task DeleteAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<ICustomer> Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICustomer New()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task Delete(int customerId)
         {
             throw new NotImplementedException();
         }

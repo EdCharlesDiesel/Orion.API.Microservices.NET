@@ -1,5 +1,3 @@
-using ORION.Core.Searching;
-
 namespace FindThreeLargestNumbers.Tests
 {
     public class UnitTest1
@@ -10,7 +8,7 @@ namespace FindThreeLargestNumbers.Tests
             int[] expected = { 18, 141, 541 };
             Assert.True(compare(
               FindThreeLargestNumbersClass.FindThreeLargestNumbers(
-                new int[] { 141, 1, 17, -7, -17, -27, 18, 541, 8, 7, 7 }
+                new[] { 141, 1, 17, -7, -17, -27, 18, 541, 8, 7, 7 }
               ),
               expected
             ));

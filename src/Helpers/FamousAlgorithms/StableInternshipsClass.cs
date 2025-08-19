@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ORION.Core.FamousAlgorithms
+﻿namespace ORION.Core.FamousAlgorithms
 {
     /// <summary>
     /// A Company has 
@@ -66,7 +64,7 @@ namespace ORION.Core.FamousAlgorithms
 
             foreach (var chosenIntern in chosenInterns)
             {
-                matches[index] = new int[] { chosenIntern.Value, chosenIntern.Key };
+                matches[index] = new[] { chosenIntern.Value, chosenIntern.Key };
                 index++;
             }
             return matches;

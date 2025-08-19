@@ -1,5 +1,3 @@
-using ORION.Core.Sorting;
-
 namespace MergeSort.Tests
 {
     public class UnitTest1

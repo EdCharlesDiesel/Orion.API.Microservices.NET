@@ -14,7 +14,7 @@
         public static bool hasSquareOfZeroes(List<List<int>> matrix, int r1, int c1, int r2, int c2, Dictionary<string, bool> cache)
         {
             if (r1 >= r2 || c1 >= c2) return false;
-            string key = r1.ToString() + '-' + c1.ToString() + '-' + r2.ToString() + '-' + c2.ToString();
+            string key = r1.ToString() + '-' + c1 + '-' + r2 + '-' + c2;
 
             if (cache.ContainsKey(key)) return cache[key];
             cache[key] = 

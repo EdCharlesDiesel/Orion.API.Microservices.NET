@@ -13,14 +13,12 @@ namespace Orion.DataAccess
             {
                 return null;
             }
-            else
-            {
-                var result = (from temp in parent.Elements()
-                              where temp.Name.LocalName == name
-                              select temp);
 
-                return result;
-            }
+            var result = (from temp in parent.Elements()
+                where temp.Name.LocalName == name
+                select temp);
+
+            return result;
         }
 
         public static XElement ElementByLocalName(this XElement parent, string name)
@@ -29,14 +27,12 @@ namespace Orion.DataAccess
             {
                 return null;
             }
-            else
-            {
-                var result = (from temp in parent.Elements()
-                              where temp.Name.LocalName == name
-                              select temp).FirstOrDefault();
 
-                return result;
-            }
+            var result = (from temp in parent.Elements()
+                where temp.Name.LocalName == name
+                select temp).FirstOrDefault();
+
+            return result;
         }
 
         public static XElement ElementByLocalNameAndAttributeValue(this XElement parent,
@@ -48,7 +44,7 @@ namespace Orion.DataAccess
 
             var match = (from temp in matchingElementsByName
                          where
-                         temp.HasAttributes == true &&
+                         temp.HasAttributes &&
                          temp.AttributeValue(attributeName) == attributeValue
                          select temp).FirstOrDefault();
 
@@ -69,10 +65,8 @@ namespace Orion.DataAccess
             {
                 return null;
             }
-            else
-            {
-                return child.Value;
-            }
+
+            return child.Value;
         }
 
         public static void SetElementValueByLocalName(this XElement parent, string childElement, string value)
@@ -81,7 +75,6 @@ namespace Orion.DataAccess
 
             if (child == null)
             {
-                return;
             }
             else
             {
@@ -95,18 +88,18 @@ namespace Orion.DataAccess
             {
                 return String.Empty;
             }
-            else if (parent.HasAttributes == false)
+
+            if (parent.HasAttributes == false)
             {
                 return String.Empty;
             }
-            else if (parent.Attribute(attributeName) == null)
+
+            if (parent.Attribute(attributeName) == null)
             {
                 return String.Empty;
             }
-            else
-            {
-                return parent.Attribute(attributeName).Value;
-            }
+
+            return parent.Attribute(attributeName).Value;
         }
     }
 }

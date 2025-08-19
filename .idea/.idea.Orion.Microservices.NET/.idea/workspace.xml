@@ -105,156 +105,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Helpers/LinkedList/LRUCache.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.Microservices.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orion.Microservices.NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/obj/Debug/net9.0/Orion.API.Basket.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Basket/obj/Debug/net9.0/Orion.API.Basket.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/obj/Debug/net9.0/Orion.API.Basket.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Basket/obj/Debug/net9.0/Orion.API.Basket.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Catalog/obj/Debug/net9.0/Orion.API.Catalog.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Catalog/obj/Debug/net9.0/Orion.API.Catalog.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Catalog/obj/Debug/net9.0/Orion.API.Catalog.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Catalog/obj/Debug/net9.0/Orion.API.Catalog.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Chat/obj/Debug/net9.0/Orion.API.Chat.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Chat/obj/Debug/net9.0/Orion.API.Chat.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Chat/obj/Debug/net9.0/Orion.API.Chat.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Chat/obj/Debug/net9.0/Orion.API.Chat.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Chat/obj/Debug/net9.0/Orion.API.Chat.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Chat/obj/Debug/net9.0/Orion.API.Chat.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard.Tests/obj/Debug/net9.0/Orion.API.CompetitionScorecard.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard.Tests/obj/Debug/net9.0/Orion.API.CompetitionScorecard.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard.Tests/obj/Debug/net9.0/Orion.API.CompetitionScorecard.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard.Tests/obj/Debug/net9.0/Orion.API.CompetitionScorecard.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard.Tests/obj/Debug/net9.0/Orion.API.CompetitionScorecard.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard.Tests/obj/Debug/net9.0/Orion.API.CompetitionScorecard.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard/obj/Debug/net9.0/Orion.API.CompetitionScorecard.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard/obj/Debug/net9.0/Orion.API.CompetitionScorecard.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard/obj/Debug/net9.0/Orion.API.CompetitionScorecard.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard/obj/Debug/net9.0/Orion.API.CompetitionScorecard.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard/obj/Debug/net9.0/Orion.API.CompetitionScorecard.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.CompetitionScorecard/obj/Debug/net9.0/Orion.API.CompetitionScorecard.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Discount/obj/Debug/net9.0/Orion.API.Discount.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Discount/obj/Debug/net9.0/Orion.API.Discount.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Discount/obj/Debug/net9.0/Orion.API.Discount.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Discount/obj/Debug/net9.0/Orion.API.Discount.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/obj/Debug/net8.0/Orion.API.HumanResources.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/obj/Debug/net8.0/Orion.API.HumanResources.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/obj/Debug/net8.0/Orion.API.HumanResources.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/obj/Debug/net8.0/Orion.API.HumanResources.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Order/obj/Debug/net9.0/Orion.API.Order.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Order/obj/Debug/net9.0/Orion.API.Order.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Order/obj/Debug/net9.0/Orion.API.Order.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Order/obj/Debug/net9.0/Orion.API.Order.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.TradingEconomics/obj/Debug/net9.0/Orion.API.TradingEconomics.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.TradingEconomics/obj/Debug/net9.0/Orion.API.TradingEconomics.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.TradingEconomics/obj/Debug/net9.0/Orion.API.TradingEconomics.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.TradingEconomics/obj/Debug/net9.0/Orion.API.TradingEconomics.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.TradingEconomics/obj/Debug/net9.0/Orion.API.TradingEconomics.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.TradingEconomics/obj/Debug/net9.0/Orion.API.TradingEconomics.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.UserProfile/obj/Debug/net9.0/Orion.API.UserProfile.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.UserProfile/obj/Debug/net9.0/Orion.API.UserProfile.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.UserProfile/obj/Debug/net9.0/Orion.API.UserProfile.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.UserProfile/obj/Debug/net9.0/Orion.API.UserProfile.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin/obj/Debug/net9.0/ORION.Admin.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/obj/Debug/net9.0/ORION.Admin.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin/obj/Debug/net9.0/ORION.Admin.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/obj/Debug/net9.0/ORION.Admin.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/obj/Debug/net8.0/ORION.DataAccess.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/obj/Debug/net8.0/ORION.DataAccess.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/obj/Debug/net8.0/ORION.DataAccess.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/obj/Debug/net8.0/ORION.DataAccess.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Orion.Domain/obj/Debug/net8.0/ORION.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Orion.Domain/obj/Debug/net8.0/ORION.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Orion.Domain/obj/Debug/net8.0/ORION.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Orion.Domain/obj/Debug/net8.0/ORION.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/Dynamic Programming/LongestCommonSubsequenceClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Dynamic Programming/LongestCommonSubsequenceClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/LinkedList/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/obj/Debug/net9.0/Orion.Helpers.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/obj/Debug/net9.0/Orion.Helpers.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/obj/Debug/net9.0/Orion.Helpers.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/obj/Debug/net9.0/Orion.Helpers.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/ApartmentHuntingUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/ApartmentHuntingUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/ArrayOfProductsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/ArrayOfProductsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/BestSeatUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/BestSeatUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/EvaluateExpressionTreeUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/EvaluateExpressionTreeUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/FirstDuplicateValueUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/FirstDuplicateValueUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/FourNumberSumUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/FourNumberSumUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/IndexEqualsValueUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/IndexEqualsValueUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/KnightConnectionUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/KnightConnectionUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/LargestRangeUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/LargestRangeUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/LongestPeakUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/LongestPeakUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/LongestSubarrayWithSumUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/LongestSubarrayWithSumUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MajorityElementUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MajorityElementUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MedianOfTwoSortedArraysUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MedianOfTwoSortedArraysUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MergeOverlappingIntervalsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MergeOverlappingIntervalsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MinRewardsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MinRewardsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MissingNumbersUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MissingNumbersUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MonotonicArrayUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MonotonicArrayUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MoveElementToEndUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/MoveElementToEndUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/NonConstructibleChangeUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/NonConstructibleChangeUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/PrintMatrixClassTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/PrintMatrixClassTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/ReverseWordsInStringUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/ReverseWordsInStringUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SmallestDifferenceUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SmallestDifferenceUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SpiralTraverseUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SpiralTraverseUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SubarraySortUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SubarraySortUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SweetAndSavoryUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SweetAndSavoryUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/ThreeNumberSumUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/ThreeNumberSumUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/TournamentWinnerUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/TournamentWinnerUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/BTSTaversalUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/BTSTaversalUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/FindClosestValueInBstUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/FindClosestValueInBstUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/MinHeightBSTUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/MinHeightBSTUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/SameBSTsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/SameBSTsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/ValidateBSTUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Search Tree/ValidateBSTUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/BranchSumsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/BranchSumsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/FlattenBinaryTreeUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/FlattenBinaryTreeUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/InvertBinaryTreeUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/InvertBinaryTreeUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/IterativeInOrderTraversalUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/IterativeInOrderTraversalUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/MaxPathSumUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/MaxPathSumUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/NodeDepthsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/NodeDepthsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/RightSiblingTreeUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Binary Trees/RightSiblingTreeUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/DiskStackingUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/DiskStackingUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/KnapsackProblemUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/KnapsackProblemUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/LevenshteinDistance.UnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/LevenshteinDistance.UnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/LongestCommonSubsequenceUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/LongestCommonSubsequenceUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/MaxSubsetSumNoAdjacentUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/MaxSubsetSumNoAdjacentUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/MaxSumIncreasingSubsequenceUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/MaxSumIncreasingSubsequenceUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/MinNumberOfCoinsForChangeUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/MinNumberOfCoinsForChangeUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/MinNumberOfJumpsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/MinNumberOfJumpsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/NumberOfWaysToMakeChangeUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/NumberOfWaysToMakeChangeUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/NumbersInPiUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/NumbersInPiUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/WaterAreaUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Dynamic Programming/WaterAreaUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/AStarAlgorithmUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/AStarAlgorithmUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/DijkstrasAlgorithmnUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/DijkstrasAlgorithmnUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/KadanesAlgorithmUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/KadanesAlgorithmUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/Knuth–Morris–PrattUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/Knuth–Morris–PrattUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/KruskalsAlgorithmUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/KruskalsAlgorithmUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/TopologicalSortUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/TopologicalSortUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/UnionFindClassUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Famous Algorithmns/UnionFindClassUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/AirportConnectionsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/AirportConnectionsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/BoggleBoardUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/BoggleBoardUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/DepthFirstSearchUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/DepthFirstSearchUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/LongestIncreasingSubsequenceUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/LongestIncreasingSubsequenceUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/LongestStringChainUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/LongestStringChainUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/MaxProfitWithKTransactionsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/MaxProfitWithKTransactionsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/PalindromePartitioningMinCutsUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/PalindromePartitioningMinCutsUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/RectangleManiaUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/RectangleManiaUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/RiverSizesUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/RiverSizesUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/SingleCycleCheckUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/SingleCycleCheckUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/SquareOfZeroesUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/SquareOfZeroesUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/YoungestCommonAncestorUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Graph/YoungestCommonAncestorUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/ClassPhotosUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/ClassPhotosUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/MinimumWaitingTimeUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/MinimumWaitingTimeUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/OptimalFreelancingUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/OptimalFreelancingUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/TandemBicycleUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/TandemBicycleUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/TaskAssignmentUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/TaskAssignmentUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/ValidStartingCityUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/GreedyAlgorithmns/ValidStartingCityUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Heaps/ContinuousMedianUnitTest.cs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Heaps/ContinuousMedianUnitTest.cs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Heaps/MergeSortedArraysUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Heaps/MergeSortedArraysUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Heaps/MinHeapConstructionUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Heaps/MinHeapConstructionUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Orion.Helpers.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Orion.Helpers.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/Debug/net8.0/Orion.Helpers.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/Debug/net8.0/Orion.Helpers.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/Debug/net8.0/Orion.Helpers.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/Debug/net8.0/Orion.Helpers.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-    </list>
+    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -359,82 +210,82 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Orion.API.Basket.executor": "Debug",
-    ".NET Launch Settings Profile.Orion.API.Catalog: .Catalog.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.Chat: http.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.CompetitionScorecard: CompetitionScorecard.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.Discount: Discount.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.Order.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.TradingEconomics.API: TradingEconomics.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.UserProfile.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Blazor.Web: http.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Basket.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Catalog.API: .Catalog.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Catalog.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Discount.API: Discount.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Order.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: Docker.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: IIS Express.executor": "Debug",
-    ".NET Launch Settings Profile.Orion.Services.TradingEcomomics.API: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.TradingEconomics.API: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.TradingEconomics.API: TradingEconomics.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.UserProfile.API: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.UserProfile.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Web: http (1).executor": "Run",
-    ".NET Launch Settings Profile.Orion.Web: http.executor": "Run",
-    ".NET Launch Settings Profile.Orion.WebApps.HealthCheck.executor": "Run",
-    ".NET Launch Settings Profile.Orion.WebApps.HealthCheckUI: http.executor": "Run",
-    ".NET Launch Settings Profile.Orion.WebApps.Web: http (1).executor": "Run",
-    ".NET Launch Settings Profile.Orion.WebApps.Web: http.executor": "Debug",
-    ".NET Launch Settings Profile.Orion.WebApps.WebASP: AspnetRunBasics.executor": "Run",
-    ".NET Launch Settings Profile.Users: http.executor": "Debug",
-    ".NET Project.Services\\Catalog\\Orion.Services.Catalog.API.executor": "Run",
-    ".NET Project.WebApps\\Orion.Blazor.Web.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Docker.AspnetRunBasics/Dockerfile.executor": "Run",
-    "Docker.Catalog.API/Dockerfile.executor": "Run",
-    "Docker.Orion.Blazor.Web/Dockerfile.executor": "Run",
-    "Docker.Orion.Web/Dockerfile (1).executor": "Run",
-    "Docker.Orion.WebApps.HealthCheck/Dockerfile.executor": "Run",
-    "Docker.Orion.WebApps.Web/Dockerfile.executor": "Run",
-    "Docker.StockAnalyzer.API/Dockerfile.executor": "Run",
-    "Docker.Users/Dockerfile.executor": "Debug",
-    "Docker.docker-compose.override.yml: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.external.paymentgateway: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.ocelotapigw: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.services.basket.api: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.services.competitionscorecard.api: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.services.stockanalyzer.api-1: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.shopping.aggregator: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.webapps.healthcheck: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.webapps.healthcheckui: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.webapps.web: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "HTTP Request.Users | #1.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Publish to IIS.Publish Orion.WebApps.WebASP to IIS.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Feature/DEV-04-Services",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Orion.API.Basket.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.Catalog: .Catalog.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.Chat: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.CompetitionScorecard: CompetitionScorecard.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.Discount: Discount.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.Order.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.TradingEconomics.API: TradingEconomics.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.UserProfile.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Blazor.Web: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Basket.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Catalog.API: .Catalog.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Catalog.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Discount.API: Discount.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Order.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: Docker.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: IIS Express.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.TradingEcomomics.API: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.TradingEconomics.API: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.TradingEconomics.API: TradingEconomics.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.UserProfile.API: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.UserProfile.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Web: http (1).executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Web: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.HealthCheck.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.HealthCheckUI: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.Web: http (1).executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.Web: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.WebASP: AspnetRunBasics.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Users: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Services\\Catalog\\Orion.Services.Catalog.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.WebApps\\Orion.Blazor.Web.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.AspnetRunBasics/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Catalog.API/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Orion.Blazor.Web/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Orion.Web/Dockerfile (1).executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Orion.WebApps.HealthCheck/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Orion.WebApps.Web/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.StockAnalyzer.API/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Users/Dockerfile.executor&quot;: &quot;Debug&quot;,
+    &quot;Docker.docker-compose.override.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.external.paymentgateway: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.ocelotapigw: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.services.basket.api: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.services.competitionscorecard.api: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.services.stockanalyzer.api-1: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.shopping.aggregator: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.webapps.healthcheck: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.webapps.healthcheckui: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.webapps.web: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Users | #1.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Publish to IIS.Publish Orion.WebApps.WebASP to IIS.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature/DEV-04-Services&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="Feature/DEV-02-StockAnalyzer" />
@@ -2939,6 +2790,7 @@
       <workItem from="1755500248803" duration="11120000" />
       <workItem from="1755532359560" duration="4028000" />
       <workItem from="1755595485884" duration="33000" />
+      <workItem from="1755611307614" duration="1341000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Still,&#10;Working on fixing the Dockerfile">
       <option name="closed" value="true" />

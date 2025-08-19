@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Commands;
-using ORION.Admin.Models.Employees;
-using ORION.Admin.Queries;
 using Orion.Admin.Tools;
 using Orion.Domain.IRepositories;
 
@@ -32,10 +30,10 @@ namespace Orion.Admin.Controllers
             if (ModelState.IsValid) { 
                 await command.HandleAsync(new CreateEmployeeCommand(vm));
                 return RedirectToAction(
-                    nameof(EmployeesController.Index));
+                    nameof(Index));
             }
-            else
-                return View("Edit", vm);
+
+            return View("Edit", vm);
         }
         [HttpGet]
         public async Task<IActionResult> Edit(
@@ -43,10 +41,10 @@ namespace Orion.Admin.Controllers
             [FromServices] IEmployeeRepository repo)
         {
             if (id == 0) return RedirectToAction(
-                nameof(EmployeesController.Index));
+                nameof(Index));
             var aggregate = await repo.Get(id);
             if (aggregate == null) return RedirectToAction(
-                nameof(EmployeesController.Index));
+                nameof(Index));
             var vm = new EmployeeFullEditViewModel(aggregate);
             return View(vm);
         }
@@ -59,10 +57,10 @@ namespace Orion.Admin.Controllers
             {
                 await command.HandleAsync(new UpdateEmployeeCommand(vm));
                 return RedirectToAction(
-                    nameof(EmployeesController.Index));
+                    nameof(Index));
             }
-            else
-                return View(vm);
+
+            return View(vm);
         }
 
         [HttpGet]
@@ -76,7 +74,7 @@ namespace Orion.Admin.Controllers
                 
             }
             return RedirectToAction(
-                    nameof(EmployeesController.Index));
+                    nameof(Index));
         }
     }
 }

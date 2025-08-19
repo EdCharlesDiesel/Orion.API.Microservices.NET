@@ -5,7 +5,7 @@ namespace Orion.Helpers.Tests.Arrays
         [Fact]
         public void Test1()
         {
-            var input = new int[] { 4, 2, -1, -1, 3 };
+            var input = new[] { 4, 2, -1, -1, 3 };
             var expected = true;
             var actual = new ZeroSumSubarrayClass().ZeroSumSubarray(input);
             Assert.True(expected == actual);

@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-
 namespace Permutations.Tests
 {
     public class PermutationsUnitTests
@@ -10,7 +7,7 @@ namespace Permutations.Tests
         [Fact]
         public void Test1()
         {
-            List<int> input = new List<int>()
+            List<int> input = new List<int>
             {
                 1, 2, 3, 4
             };

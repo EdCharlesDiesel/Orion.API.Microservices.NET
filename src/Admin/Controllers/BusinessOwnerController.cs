@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Areas.API;
 using Orion.DataAccess.Entities;
-using Orion.Domain.Utility;
 using Orion.Domain.Constants;
-
+using Orion.Domain.Utility;
 
 namespace Orion.Admin.Controllers
 {
@@ -66,8 +65,8 @@ namespace Orion.Admin.Controllers
         [Route("/businessOwner/{last:alpha}/{first:alpha}")]
         public ActionResult Details(string last, string first)
         {
-            if (String.IsNullOrWhiteSpace(last) == true ||
-                String.IsNullOrWhiteSpace(first) == true)
+            if (String.IsNullOrWhiteSpace(last) ||
+                String.IsNullOrWhiteSpace(first))
             {
                 return new BadRequestResult();
             }
@@ -126,7 +125,7 @@ namespace Orion.Admin.Controllers
         [Authorize(Policy = SecurityConstants.PolicyNameEditBusinessOwner)]
         public ActionResult Edit(BusinessOwner businessOwner)
         {
-            if (_validator.IsValid(businessOwner) == true)
+            if (_validator.IsValid(businessOwner))
             {
                 bool isCreateNew = false;
 
@@ -148,7 +147,7 @@ namespace Orion.Admin.Controllers
 
                 _businessOwnerService.Save(businessOwner);
 
-                if (isCreateNew == true)
+                if (isCreateNew)
                 {
                     RedirectToAction("Edit", new { id = businessOwner.Id });
                 }

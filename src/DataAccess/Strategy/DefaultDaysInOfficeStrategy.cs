@@ -1,8 +1,7 @@
 using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using Orion.DataAccess.Entities;
-
 
 namespace Orion.DataAccess.Strategy
 {
@@ -15,19 +14,17 @@ namespace Orion.DataAccess.Strategy
             {
                 return 0;
             }
-            else
+
+            int totalDays = 0;
+
+            foreach (var term in enumerable)
             {
-                int totalDays = 0;
+                var diff = term.EndOfTerm - term.StartOfTerm;
 
-                foreach (var term in enumerable)
-                {
-                    var diff = term.EndOfTerm - term.StartOfTerm;
-
-                    totalDays += Convert.ToInt32(diff.TotalDays);
-                }
-
-                return totalDays;
+                totalDays += Convert.ToInt32(diff.TotalDays);
             }
+
+            return totalDays;
         }
     }
 }

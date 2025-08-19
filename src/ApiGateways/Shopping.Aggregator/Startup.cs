@@ -1,3 +1,5 @@
+using System;
+using System.Net.Http;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -8,12 +10,10 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Orion.Common.Logging;
+using Orion.Shopping.Aggregator.Services;
 using Polly;
 using Polly.Extensions.Http;
 using Serilog;
-using System;
-using System.Net.Http;
-using Orion.Shopping.Aggregator.Services;
 
 namespace Orion.Shopping.Aggregator
 {
@@ -73,7 +73,7 @@ namespace Orion.Shopping.Aggregator
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
+                endpoints.MapHealthChecks("/hc", new HealthCheckOptions
                 {
                     Predicate = _ => true,
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse

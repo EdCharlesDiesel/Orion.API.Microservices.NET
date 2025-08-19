@@ -8,16 +8,16 @@ namespace Orion.Helpers.Tests.Dynamic_Programming
         public void Test1()
         {
             List<int[]> input = new List<int[]>();
-            input.Add(new int[] { 2, 1, 2 });
-            input.Add(new int[] { 3, 2, 3 });
-            input.Add(new int[] { 2, 2, 8 });
-            input.Add(new int[] { 2, 3, 4 });
-            input.Add(new int[] { 2, 2, 1 });
-            input.Add(new int[] { 4, 4, 5 });
+            input.Add(new[] { 2, 1, 2 });
+            input.Add(new[] { 3, 2, 3 });
+            input.Add(new[] { 2, 2, 8 });
+            input.Add(new[] { 2, 3, 4 });
+            input.Add(new[] { 2, 2, 1 });
+            input.Add(new[] { 4, 4, 5 });
             List<int[]> expected = new List<int[]>();
-            expected.Add(new int[] { 2, 1, 2 });
-            expected.Add(new int[] { 3, 2, 3 });
-            expected.Add(new int[] { 4, 4, 5 });
+            expected.Add(new[] { 2, 1, 2 });
+            expected.Add(new[] { 3, 2, 3 });
+            expected.Add(new[] { 4, 4, 5 });
             Assert.True(compare(DiskStackingClass.DiskStacking(input), expected));
         }
 

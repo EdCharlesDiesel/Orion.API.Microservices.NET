@@ -1,9 +1,6 @@
 
 
 
-using ORION.Core.Recursion;
-
-
 namespace LowestCommonManagerTests
 {
     public class LowestCommonManagerUnitTest
@@ -23,13 +20,13 @@ namespace LowestCommonManagerTests
         public void TestCase1()
         {
             var orgCharts = getOrgCharts();
-            orgCharts['A'].addDirectReports(new LowestCommonManagerClass.OrgChart[] {orgCharts['B'],
+            orgCharts['A'].addDirectReports(new[] {orgCharts['B'],
                                                                 orgCharts['C']});
-            orgCharts['B'].addDirectReports(new LowestCommonManagerClass.OrgChart[] {orgCharts['D'],
+            orgCharts['B'].addDirectReports(new[] {orgCharts['D'],
                                                                 orgCharts['E']});
-            orgCharts['C'].addDirectReports(new LowestCommonManagerClass.OrgChart[] {orgCharts['F'],
+            orgCharts['C'].addDirectReports(new[] {orgCharts['F'],
                                                                 orgCharts['G']});
-            orgCharts['D'].addDirectReports(new LowestCommonManagerClass.OrgChart[] {orgCharts['H'],
+            orgCharts['D'].addDirectReports(new[] {orgCharts['H'],
                                                                 orgCharts['I']});
             LowestCommonManagerClass.OrgChart lcm = LowestCommonManagerClass.GetLowestCommonManager(orgCharts['A'],
                 orgCharts['E'],

@@ -38,40 +38,40 @@ namespace Orion.DataAccess.Repositories
         //    context.Categories.Add(model);
         //    return model;
         //}
-        public IUnitOfWork UnitOfWork { get; }
-        public Task<ICategory> Get(int id)
+
+        public async Task<IEnumerable<ICategory>> GetAllAsync()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
+        }
+
+        public async Task GetByIdAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task AddAsync(ICategory entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task UpdateAsync(ICategory entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task DeleteAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<ICategory> Get(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public ICategory New()
         {
-            throw new System.NotImplementedException();
-        }
-
-        public Task<IEnumerable<ICategory>> GetAllAsync()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Task<ICategory?> GetByIdAsync(Guid id)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Task AddAsync(ICategory entity)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Task UpdateAsync(ICategory entity)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Task DeleteAsync(Guid id)
-        {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

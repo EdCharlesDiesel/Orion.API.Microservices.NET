@@ -11,23 +11,25 @@ namespace Orion.Helpers.Tests.Famous_Algorithmns
             int startCol = 1;
             int endRow = 4;
             int endCol = 3;
-            int[][] graph = new int[][] {
-                  new int[] { 0, 0, 0, 0, 0 },
-                  new int[] { 0, 1, 1, 1, 0 },
-                  new int[] { 0, 0, 0, 0, 0 },
-                  new int[] { 1, 0, 1, 1, 1 },
-                  new int[] { 0, 0, 0, 0, 0 },
+            int[][] graph = new[]
+            {
+                  new[] { 0, 0, 0, 0, 0 },
+                  new[] { 0, 1, 1, 1, 0 },
+                  new[] { 0, 0, 0, 0, 0 },
+                  new[] { 1, 0, 1, 1, 1 },
+                  new[] { 0, 0, 0, 0, 0 },
                 };
-            int[][] expected = new int[][] {
-                  new int[] { 0, 1 },
-                  new int[] { 0, 0 },
-                  new int[] { 1, 0 },
-                  new int[] { 2, 0 },
-                  new int[] { 2, 1 },
-                  new int[] { 3, 1 },
-                  new int[] { 4, 1 },
-                  new int[] { 4, 2 },
-                  new int[] { 4, 3 }
+            int[][] expected = new[]
+            {
+                  new[] { 0, 1 },
+                  new[] { 0, 0 },
+                  new[] { 1, 0 },
+                  new[] { 2, 0 },
+                  new[] { 2, 1 },
+                  new[] { 3, 1 },
+                  new[] { 4, 1 },
+                  new[] { 4, 2 },
+                  new[] { 4, 3 }
                 };
             var actual =
               new AStarAlgorithmClass().AStarAlgorithm(startRow, startCol, endRow, endCol, graph);

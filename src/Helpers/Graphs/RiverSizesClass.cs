@@ -25,7 +25,7 @@
         {
             int currentRiverSize = 0;
             List<int[]> nodesToExplore = new List<int[]>();
-            nodesToExplore.Add(new int[] { i, j });
+            nodesToExplore.Add(new[] { i, j });
             while (nodesToExplore.Count != 0)
             {
                 int[] currentNode = nodesToExplore[nodesToExplore.Count - 1];
@@ -60,22 +60,22 @@
             List<int[]> unvisitedNeighbors = new List<int[]>();
             if (i > 0 && !visited[i - 1, j])
             {
-                unvisitedNeighbors.Add(new int[] {i - 1, j
+                unvisitedNeighbors.Add(new[] {i - 1, j
                     });
             }
 
             if (i < matrix.GetLength(0) - 1 && !visited[i + 1, j])
             {
-                unvisitedNeighbors.Add(new int[] { i + 1, j });
+                unvisitedNeighbors.Add(new[] { i + 1, j });
             }
             if (j > 0 && !visited[i, j - 1])
             {
-                unvisitedNeighbors.Add(new int[] { i, j - 1 });
+                unvisitedNeighbors.Add(new[] { i, j - 1 });
             }
 
             if (j < matrix.GetLength(1) - 1 && !visited[i, j + 1])
             {
-                unvisitedNeighbors.Add(new int[] { i, j + 1 });
+                unvisitedNeighbors.Add(new[] { i, j + 1 });
             }
             return unvisitedNeighbors;
         }

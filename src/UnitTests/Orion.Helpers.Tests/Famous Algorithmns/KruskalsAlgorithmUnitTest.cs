@@ -7,11 +7,13 @@ namespace Orion.Helpers.Tests.Famous_Algorithmns
         [Fact]
         public void Test1()
         {
-            var input = new int[][][] {
-              new int[][] { new int[] { 1, 1 } }, new int[][] { new int[] { 0, 1 } }
+            var input = new[]
+            {
+              new[] { new[] { 1, 1 } }, new[] { new[] { 0, 1 } }
             };
-            var expected = new int[][][] {
-              new int[][] { new int[] { 1, 1 } }, new int[][] { new int[] { 0, 1 } }
+            var expected = new[]
+            {
+              new[] { new[] { 1, 1 } }, new[] { new[] { 0, 1 } }
             };
             var actual = new KruskalsAlgorithmClass().KruskalsAlgorithm(input);
             Assert.True(jaggedArrayDeepEqual(expected, actual));

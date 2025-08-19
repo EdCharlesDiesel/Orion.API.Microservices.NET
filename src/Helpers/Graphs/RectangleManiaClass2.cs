@@ -65,31 +65,29 @@
                 }
                 return 0;
             }
-            else
+
+            int rectangleCount = 0;
+            if (direction == UP)
             {
-                int rectangleCount = 0;
-                if (direction == UP)
+                List<Point> relevantCoords = coordsTable["x"][coord1.x];
+                foreach (Point coord2 in relevantCoords)
                 {
-                    List<Point> relevantCoords = coordsTable["x"][coord1.x];
-                    foreach (Point coord2 in relevantCoords)
-                    {
-                        bool isAbove = coord2.y > coord1.y;
-                        if (isAbove) rectangleCount += clockwiseCountRectangles(
+                    bool isAbove = coord2.y > coord1.y;
+                    if (isAbove) rectangleCount += clockwiseCountRectangles(
                         coord2, coordsTable, RIGHT, lowerLeftY);
-                    }
                 }
-                else if (direction == RIGHT)
-                {
-                    List<Point> relevantCoords = coordsTable["y"][coord1.y];
-                    foreach (Point coord2 in relevantCoords)
-                    {
-                        bool isRight = coord2.x > coord1.x;
-                        if (isRight) rectangleCount += clockwiseCountRectangles(
-                        coord2, coordsTable, DOWN, lowerLeftY);
-                    }
-                }
-                return rectangleCount;
             }
+            else if (direction == RIGHT)
+            {
+                List<Point> relevantCoords = coordsTable["y"][coord1.y];
+                foreach (Point coord2 in relevantCoords)
+                {
+                    bool isRight = coord2.x > coord1.x;
+                    if (isRight) rectangleCount += clockwiseCountRectangles(
+                        coord2, coordsTable, DOWN, lowerLeftY);
+                }
+            }
+            return rectangleCount;
         }
       
     }

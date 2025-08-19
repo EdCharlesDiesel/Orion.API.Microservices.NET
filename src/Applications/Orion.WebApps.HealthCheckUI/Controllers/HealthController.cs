@@ -32,6 +32,6 @@ public class HealthController : ControllerBase
             .Where(r => r.BMI > 25 || r.HeartRate > 100)
             .ToListAsync();
 
-        return Ok(new { Count = risky.Count, RiskyProfiles = risky });
+        return Ok(new { risky.Count, RiskyProfiles = risky });
     }
 }

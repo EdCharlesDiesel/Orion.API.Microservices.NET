@@ -11,7 +11,7 @@ namespace Orion.Helpers.Tests.Graph
      new[] { "abde", "abc", "abd", "abcde", "ade", "ae", "1abde", "abcdef" }
    );
             List<string> expected =
-              new List<string>() { "abcdef", "abcde", "abde", "ade", "ae" };
+              new List<string> { "abcdef", "abcde", "abde", "ade", "ae" };
             Assert.True(LongestStringChainClass.longeststringChain(strings).SequenceEqual(expected)
             );
         }

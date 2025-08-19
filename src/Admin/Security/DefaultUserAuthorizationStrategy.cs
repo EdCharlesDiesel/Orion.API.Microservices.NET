@@ -1,4 +1,3 @@
-using System;
 using System.Security.Claims;
 using Orion.Admin;
 
@@ -20,15 +19,13 @@ namespace ORION.Admin.Security
         {
             get
             {
-                if (IsAdministrator() == true)
+                if (IsAdministrator())
                 {
                     return true;
                 }
-                else
-                {
-                    return _securityUtility.HasClaim(
-                        SecurityConstants.Claim_SubscriptionType);
-                }
+
+                return _securityUtility.HasClaim(
+                    SecurityConstants.Claim_SubscriptionType);
             }
         }
 
@@ -44,16 +41,14 @@ namespace ORION.Admin.Security
         {
             get
             {
-                if (IsAdministrator() == true)
+                if (IsAdministrator())
                 {
                     return true;
                 }
-                else
-                {
-                    return _securityUtility.HasClaim(
-                        SecurityConstants.Claim_SubscriptionType, 
-                        SecurityConstants.SubscriptionType_Ultimate);
-                }
+
+                return _securityUtility.HasClaim(
+                    SecurityConstants.Claim_SubscriptionType, 
+                    SecurityConstants.SubscriptionType_Ultimate);
             }
         }
 

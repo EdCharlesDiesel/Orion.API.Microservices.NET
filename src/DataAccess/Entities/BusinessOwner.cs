@@ -93,7 +93,7 @@ namespace Orion.DataAccess.Entities
 
         public void AddTerm(string role, DateTime startDate, DateTime endDate, int number)
         {
-            Terms.Add(new Term()
+            Terms.Add(new Term
             {
                 Role = role,
                 StartOfTerm = startDate,

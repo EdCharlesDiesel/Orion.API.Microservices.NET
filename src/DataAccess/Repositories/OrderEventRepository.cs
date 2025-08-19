@@ -1,10 +1,9 @@
-﻿using Orion.Domain.Aggregates;
-using Orion.Domain.IRepositories;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Orion.Domain.Aggregates;
+using Orion.Domain.IRepositories;
 using Orion.Domain.Tools;
-
 
 namespace Orion.DataAccess.Repositories
 {
@@ -52,24 +51,48 @@ namespace Orion.DataAccess.Repositories
         //{
         //    throw new NotImplementedException();
         //}
-        public IUnitOfWork UnitOfWork => throw new NotImplementedException();
-
-        public Task<IOrderEvent> Get(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IOrderEvent New(OrderEventType deleted)
-        {
-            throw new NotImplementedException();
-        }
-
+        // public IUnitOfWork UnitOfWork => throw new NotImplementedException();
+        //
+        // public Task<IOrderEvent> Get(int id)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public IOrderEvent New(OrderEventType deleted)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task<IEnumerable<IOrderEvent>> GetAllAsync()
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task<IOrderEvent> GetByIdAsync(Guid id)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task AddAsync(IOrderEvent entity)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task UpdateAsync(IOrderEvent entity)
+        // {
+        //     throw new NotImplementedException();
+        // }
+        //
+        // public async Task DeleteAsync(Guid id)
+        // {
+        //     throw new NotImplementedException();
+        // }
         public async Task<IEnumerable<IOrderEvent>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public async Task<IOrderEvent> GetByIdAsync(Guid id)
+        public async Task GetByIdAsync(Guid id)
         {
             throw new NotImplementedException();
         }
@@ -85,6 +108,16 @@ namespace Orion.DataAccess.Repositories
         }
 
         public async Task DeleteAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<IOrderEvent> Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IOrderEvent New(OrderEventType deleted)
         {
             throw new NotImplementedException();
         }

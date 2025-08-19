@@ -10,7 +10,7 @@ namespace Orion.DataAccess.Entities
         public string _PlayerName
         {
             get { return PlayerName; }
-            set { PlayerName = this.FirstName + ' ' + this.LastName; }
+            set { PlayerName = FirstName + ' ' + LastName; }
         }
 
         [Key]

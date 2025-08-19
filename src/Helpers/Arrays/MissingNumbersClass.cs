@@ -9,7 +9,7 @@
             {
                 includedNums.Add(number);
             }
-            int[] solution = new int[] {-1,-1};
+            int[] solution = new[] {-1,-1};
             for (int num = 1; num < numbers.Length + 3; num++)
             {
                 if (!includedNums.Contains(num))

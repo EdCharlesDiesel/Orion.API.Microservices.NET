@@ -1,6 +1,7 @@
 ﻿
+@using Orion.Admin.Queries
 @model Orion.Admin.Models.Products.ProductFullEditViewModel
-@inject Orion.Admin.Queries.ICategoryListQuery categoriesQuery
+@inject ICategoryListQuery categoriesQuery
 @{
     ViewData["Title"] = "Create/Edit product";
     var allCategories = await categoriesQuery.AllCategories();

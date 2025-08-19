@@ -9,7 +9,7 @@ namespace Orion.Helpers.Tests.Dynamic_Programming
         {
             int[] input = { 10, 70, 20, 30, 50, 11, 30 };
             Tuple<int, int[]> expected =
-              Tuple.Create(110, new int[] { 10, 20, 30, 50 });
+              Tuple.Create(110, new[] { 10, 20, 30, 50 });
             Assert.True(
               Compare(MaxSumIncreasingSubsequenceClass.MaxSumIncreasingSubsequence(input), expected)
             );

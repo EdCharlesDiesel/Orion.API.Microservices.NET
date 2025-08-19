@@ -34,7 +34,7 @@ namespace Orion.Helpers.Tests.Graph
             trees.Add(a, new Program.AncestralTree(a));
         }
 
-        trees['A'].AddAsAncestor(new Program.AncestralTree[] {
+        trees['A'].AddAsAncestor(new[] {
       trees['B'], trees['C'], trees['D'], trees['E'], trees['F']
     });
         return trees;

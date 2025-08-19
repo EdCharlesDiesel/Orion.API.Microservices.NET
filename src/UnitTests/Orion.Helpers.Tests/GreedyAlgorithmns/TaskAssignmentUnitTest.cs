@@ -19,7 +19,7 @@ namespace Orion.Helpers.Tests.GreedyAlgorithmns
             var actual = new TaskAssignmentClass().TaskAssignment(k, tasks);
             for (var i = 0; i < expected.Count; i++)
             {
-                Assert.True(Enumerable.SequenceEqual(expected[i], actual[i]));
+                Assert.True(expected[i].SequenceEqual(actual[i]));
             }
         }
     }

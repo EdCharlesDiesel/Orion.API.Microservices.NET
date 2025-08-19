@@ -1,5 +1,5 @@
-﻿using Orion.Domain.Enums;
-using System;
+﻿using System;
+using Orion.Domain.Enums;
 
 namespace Orion.Domain.Aggregates
 {

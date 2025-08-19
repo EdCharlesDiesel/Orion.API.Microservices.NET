@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Sinks.Elasticsearch;
-using System;
 
 namespace Orion.Common.Logging
 {

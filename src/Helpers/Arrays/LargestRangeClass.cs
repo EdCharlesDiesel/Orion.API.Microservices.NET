@@ -40,7 +40,7 @@
                 if (currentLength > longestLength)
                 {
                     longestLength = currentLength;
-                    bestRange = new int[] { left + 1, right - 1 };
+                    bestRange = new[] { left + 1, right - 1 };
                 }
             }
             return bestRange;

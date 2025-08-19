@@ -15,11 +15,13 @@ public class EvaluateExpressionTreeClass
         if (tree.value ==-1) 
         {
             return leftValue + rightValue;
-        }else if (tree.value == -2) 
+        }
+        if (tree.value == -2) 
         {
             return leftValue - rightValue;
         }
-        else if (tree.value == -3) 
+
+        if (tree.value == -3) 
         {
             return leftValue / rightValue;
         }

@@ -1,8 +1,5 @@
-using Microsoft.AspNetCore.Mvc;
-using Orion.Repository.Services.TradingEconomics;
 using System.Text.Json;
-using Orion.Core.TradingEconomics.Domain;
-
+using Microsoft.AspNetCore.Mvc;
 
 namespace Orion.API.TradingEconomics.Controllers
 {

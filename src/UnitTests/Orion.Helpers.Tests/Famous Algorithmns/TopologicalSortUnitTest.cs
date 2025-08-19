@@ -7,13 +7,13 @@ namespace Orion.Helpers.Tests.Famous_Algorithmns
         [Fact]
         public void Test1()
         {
-            List<int> jobs = new List<int>() { 1, 2, 3, 4 };
+            List<int> jobs = new List<int> { 1, 2, 3, 4 };
             int[,] depsArray =
-              new int[,] { { 1, 2 }, { 1, 3 }, { 3, 2 }, { 4, 2 }, { 4, 3 } };
+              new[,] { { 1, 2 }, { 1, 3 }, { 3, 2 }, { 4, 2 }, { 4, 3 } };
             List<int[]> deps = new List<int[]>();
             fillDeps(depsArray, deps);
             List<int> order = TopologicalSortClass.TopologicalSort(jobs, deps);
-            Assert.True(isValidTopologicalOrder(order, jobs, deps) == true);
+            Assert.True(isValidTopologicalOrder(order, jobs, deps));
         }
 
         void fillDeps(int[,] depsArray, List<int[]> deps)

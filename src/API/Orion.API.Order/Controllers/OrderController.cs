@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.Repository.Services.Orion;
 
 namespace Orion.API.Order.Controllers
 {

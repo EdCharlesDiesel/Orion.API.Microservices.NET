@@ -15,7 +15,7 @@ namespace Orion.Helpers.Searching
                 int mid = (l + r) / 2;
                 if (key == A[mid])
                     return mid;
-                else if (key < A[mid])
+                if (key < A[mid])
                     r = mid - 1;
                 else if (key > A[mid])
                     l = mid + 1;
@@ -41,14 +41,13 @@ namespace Orion.Helpers.Searching
             if (target == potentialMatch) 
             { 
                 return middle;
-            }else if (target< potentialMatch)
+            }
+            if (target< potentialMatch)
             {
                 return BinarySearchSolutionOne(array, target, left, middle -1);
             }
-            else
-            {
-                return BinarySearchSolutionOne(array, target, middle + 1, right);    
-            }
+
+            return BinarySearchSolutionOne(array, target, middle + 1, right);
         }
 
         #endregion

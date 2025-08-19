@@ -7,9 +7,9 @@
         public int length;
         public ContinuousMedianClass(Func<int, int, bool> func, List<int> array)
         {
-            this.heap = buildHeap(array);
-            this.comparisonFunc = func;
-            this.length = heap.Count;
+            heap = buildHeap(array);
+            comparisonFunc = func;
+            length = heap.Count;
         }
         public int peek()
         {
@@ -17,25 +17,25 @@
         }
         public int remove()
         {
-            this.swap(0, heap.Count - 1);
+            swap(0, heap.Count - 1);
             int valueToRemove = heap[heap.Count - 1];
-            this.heap.RemoveAt(heap.Count - 1);
-            this.length -= 1;
-            this.siftDown(0, heap.Count - 1, heap);
+            heap.RemoveAt(heap.Count - 1);
+            length -= 1;
+            siftDown(0, heap.Count - 1, heap);
             return valueToRemove;
         }
         public void Insert(int value)
         {
-            this.heap.Add(value);
-            this.length += 1;
-            this.siftUp(heap.Count - 1, heap);
+            heap.Add(value);
+            length += 1;
+            siftUp(heap.Count - 1, heap);
         }
         public List<int> buildHeap(List<int> array)
         {
             int firstParentIdx = (array.Count - 2) / 2;
             for (int currentIdx = firstParentIdx; currentIdx >= 0; currentIdx--)
             {
-                this.siftDown(currentIdx, array.Count - 1, array);
+                siftDown(currentIdx, array.Count - 1, array);
             }
             return array;
         }
@@ -93,9 +93,9 @@
         }
         public void swap(int i, int j)
         {
-            int temp = this.heap[j];
-            this.heap[j] = this.heap[i];
-            this.heap[i] = temp;
+            int temp = heap[j];
+            heap[j] = heap[i];
+            heap[i] = temp;
         }
     }
 }
