@@ -1,6 +1,6 @@
-using ORION.Core.Heaps;
+using Orion.Helpers.Heaps;
 
-namespace ORION.Core.Tests.Heaps
+namespace Orion.Helpers.Tests.Heaps
 {
     public class MergeSortedArraysUnitTest
     {

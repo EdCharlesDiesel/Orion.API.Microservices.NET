@@ -1,8 +1,8 @@
-using ORION.Core.DynamicProgramming;
+using Orion.Helpers.Dynamic_Programming;
 
-namespace MaxSumIncreasingSubsequence.Tests
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
-    public class UnitTest1
+    public class MaxSumIncreasingSubsequenceClassUnitTest
     {
         [Fact]
         public void Test1()
@@ -11,11 +11,11 @@ namespace MaxSumIncreasingSubsequence.Tests
             Tuple<int, int[]> expected =
               Tuple.Create(110, new int[] { 10, 20, 30, 50 });
             Assert.True(
-              compare(MaxSumIncreasingSubsequenceClass.MaxSumIncreasingSubsequence(input), expected)
+              Compare(MaxSumIncreasingSubsequenceClass.MaxSumIncreasingSubsequence(input), expected)
             );
         }
 
-        private static bool compare(List<List<int>> arr1, Tuple<int, int[]> arr2)
+        private static bool Compare(List<List<int>> arr1, Tuple<int, int[]> arr2)
         {
             if (arr1[0][0] != arr2.Item1)
             {

@@ -1,8 +1,8 @@
-using ORION.Core.GreadyAlgorithmns;
+using Orion.Helpers.GreedyAlgorithmns;
 
-namespace TandemBicycle.Tests;
+namespace Orion.Helpers.Tests.GreedyAlgorithmns;
 
-public class UnitTest1
+public class TandemBicycleUnitTest
 {
     [Fact]
     public void Test1()

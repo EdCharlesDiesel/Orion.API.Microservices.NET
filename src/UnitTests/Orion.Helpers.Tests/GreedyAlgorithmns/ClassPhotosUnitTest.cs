@@ -1,7 +1,6 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using ORION.Core.GreadyAlgorithmns;
+using Orion.Helpers.GreedyAlgorithmns;
 
-namespace ClassPhotos.Tests
+namespace Orion.Helpers.Tests.GreedyAlgorithmns
 {
     public class UnitTest1
     {

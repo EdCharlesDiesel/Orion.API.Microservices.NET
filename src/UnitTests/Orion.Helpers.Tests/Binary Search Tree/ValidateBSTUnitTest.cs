@@ -1,6 +1,6 @@
 namespace Orion.Helpers.Tests.Binary_Search_Tree
 {
-    public class BSTUnitTest
+    public class BstUnitTest
     {
         [Fact(Skip ="Sort later")]
         public void Test1()

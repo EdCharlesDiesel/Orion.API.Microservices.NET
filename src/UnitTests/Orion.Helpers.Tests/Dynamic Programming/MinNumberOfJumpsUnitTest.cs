@@ -1,8 +1,8 @@
-using ORION.Core.LinkedList;
+using Orion.Helpers.LinkedList;
 
-namespace MinNumberOfJumps.Tests
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
-    public class UnitTest1
+    public class MinNumberOfJumpsClassUnitTest
     {
         [Fact]
         public void Test1()

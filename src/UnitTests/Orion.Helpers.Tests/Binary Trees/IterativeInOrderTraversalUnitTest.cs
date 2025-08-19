@@ -1,6 +1,9 @@
+using Microsoft.VisualBasic.CompilerServices;
+using Orion.Helpers.Binary_Trees;
+
 namespace Orion.Helpers.Tests.Binary_Trees
 {
-    public class UnitTest1
+    public partial class UnitTest1
     {
         [Fact]
         public void Test1()

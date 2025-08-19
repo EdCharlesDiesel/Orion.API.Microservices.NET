@@ -1,6 +1,8 @@
-namespace SquareOfZeroes.Tests
+using Microsoft.VisualBasic.CompilerServices;
+
+namespace Orion.Helpers.Tests.Graph
 {
-    public class UnitTest1
+    public class SquareOfZeroesUnitTest
     {
         [Fact(Skip ="Fix later")]
         public void Test1()
@@ -12,7 +14,7 @@ namespace SquareOfZeroes.Tests
             test.Add(new List<int>() { 0, 0, 0, 1, 0, 1 });
             test.Add(new List<int>() { 0, 1, 1, 1, 0, 1 });
             test.Add(new List<int>() { 0, 0, 0, 0, 0, 1 });
-          //  Utils.AssertTrue(Program.SquareOfZeroes(test));
+            Utils.AssertTrue(Program.SquareOfZeroes(test));
         }
     }
 }

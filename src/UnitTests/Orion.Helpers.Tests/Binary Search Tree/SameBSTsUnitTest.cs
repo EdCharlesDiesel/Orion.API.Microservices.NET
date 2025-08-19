@@ -1,6 +1,8 @@
+using Orion.Helpers.Binary_Search_Tree;
+
 namespace Orion.Helpers.Tests.Binary_Search_Tree
 {
-    public class SameBSTsClassUnitTest
+    public class SameBsTsClassUnitTest
     {
         [Fact]
         public void Test1()

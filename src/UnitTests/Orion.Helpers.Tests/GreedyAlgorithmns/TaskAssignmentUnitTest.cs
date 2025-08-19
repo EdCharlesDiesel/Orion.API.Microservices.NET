@@ -1,8 +1,8 @@
-using ORION.Core.GreadyAlgorithmns;
+using Orion.Helpers.GreedyAlgorithmns;
 
-namespace TaskAssignment.Tests
+namespace Orion.Helpers.Tests.GreedyAlgorithmns
 {
-    public class UnitTest1
+    public class TaskAssignmentUnitTest
     {
         [Fact(Skip = "Failing unit test")]
         public void Test1()

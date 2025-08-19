@@ -1,18 +1,18 @@
-using ORION.Core.DynamicProgramming;
+using Orion.Helpers.Dynamic_Programming;
 
-namespace KnapsackProblem.Tests
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
-    public class UnitTest1
+    public class KnapsackProblemClassUnitTest
     {
         [Fact]
         public void Test1()
         {
             int[,] input = { { 1, 2 }, { 4, 3 }, { 5, 6 }, { 6, 7 } };
             Tuple<int, int[]> expected = Tuple.Create(10, new int[] { 1, 3 });
-            Assert.True(compare(KnapsackProblemClass.KnapsackProblem(input, 10), expected));
+            Assert.True(Compare(KnapsackProblemClass.KnapsackProblem(input, 10), expected));
         }
 
-        private static bool compare(List<List<int>> arr1, Tuple<int, int[]> arr2)
+        private static bool Compare(List<List<int>> arr1, Tuple<int, int[]> arr2)
         {
             if (arr1[0][0] != arr2.Item1)
             {

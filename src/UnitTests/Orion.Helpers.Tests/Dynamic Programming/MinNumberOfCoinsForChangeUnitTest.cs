@@ -1,12 +1,14 @@
-namespace MinNumberOfCoinsForChange.Tests
+using Microsoft.VisualBasic.CompilerServices;
+
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
-    public class UnitTest1
+    public class MinNumberOfCoinsForChangeUnitTest
     {
         [Fact(Skip = "Fix this")    ]
         public void Test1()
         {
-            //int[] input = { 1, 5, 10 };
-            //Utils.AssertTrue(Program.MinNumberOfCoinsForChange(7, input) == 3);
+            int[] input = { 1, 5, 10 };
+            Utils.AssertTrue(Program.MinNumberOfCoinsForChange(7, input) == 3);
         }
     }
 }

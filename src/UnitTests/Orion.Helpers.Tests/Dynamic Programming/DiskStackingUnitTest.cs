@@ -1,6 +1,6 @@
-using ORION.Core.DynamicProgramming;
+using Orion.Helpers.Dynamic_Programming;
 
-namespace DiskStacking.Tests
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
     public class UnitTest1
     {

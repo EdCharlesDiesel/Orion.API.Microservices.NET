@@ -1,8 +1,8 @@
-using ORION.Core.DynamicProgramming;
+using Orion.Helpers.Dynamic_Programming;
 
-namespace WaterArea.Tests
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
-    public class UnitTest1
+    public class WaterAreaClassUnitTest
     {
         [Fact]
         public void Test1()

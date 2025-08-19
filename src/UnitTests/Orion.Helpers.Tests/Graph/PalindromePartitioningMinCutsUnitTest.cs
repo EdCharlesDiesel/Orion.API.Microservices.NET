@@ -1,8 +1,8 @@
-using ORION.Core.Graphs;
+using Orion.Helpers.Graphs;
 
-namespace PalindromePartitioningMinCuts.Tests
+namespace Orion.Helpers.Tests.Graph
 {
-    public class UnitTest1
+    public class PalindromePartitioningMinCutsClassUnitTest
     {
         [Fact]
         public void Test1()

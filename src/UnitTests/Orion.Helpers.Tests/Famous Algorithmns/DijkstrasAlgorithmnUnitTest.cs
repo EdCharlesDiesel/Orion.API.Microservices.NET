@@ -1,7 +1,6 @@
-using ORION.Core.FamousAlgorithms;
-using Xunit;
+using Orion.Helpers.FamousAlgorithms;
 
-namespace ORION.Core.Tests
+namespace Orion.Helpers.Tests.Famous_Algorithmns
 {
     public class DijkstrasAlgorithmnUnitTest
     {

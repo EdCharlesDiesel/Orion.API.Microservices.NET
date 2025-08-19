@@ -1,9 +1,8 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using ORION.Core.GreadyAlgorithmns;
+using Orion.Helpers.GreedyAlgorithmns;
 
-namespace OptimalFreelancing.Tests
+namespace Orion.Helpers.Tests.GreedyAlgorithmns
 {
-    public class UnitTest1
+    public class OptimalFreelancingClassUnitTest
     {
         [Fact]
         public void Test1()

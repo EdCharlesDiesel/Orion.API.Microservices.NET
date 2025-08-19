@@ -1,6 +1,6 @@
-using ORION.Core.FamousAlgorithms;
+using Orion.Helpers.FamousAlgorithms;
 
-namespace ORION.Core.Tests
+namespace Orion.Helpers.Tests.Famous_Algorithmns
 {
     public class UnitTest1
     {

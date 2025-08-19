@@ -1,6 +1,8 @@
-namespace MaxSubsetSumNoAdjacent.Tests
+using Orion.Helpers.Dynamic_Programming;
+
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
-    public class UnitTest1
+    public class MaxSubsetSumNoAdjacentClassUnitTest
     {
         [Fact]
         public void Test1()

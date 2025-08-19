@@ -1,17 +1,19 @@
-namespace LongestCommonSubsequence.Tests
+using Orion.Helpers.Dynamic_Programming;
+
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
-    public class UnitTest1
+    public class LongestCommonSubsequenceClassUnitTest
     {
         [Fact(Skip ="Fix this")]
         public void Test1()
         {
-            //char[] expected = { 'X', 'Y', 'Z', 'W' };
-            //Assert.True(
-            //  compare(LongestCommonSubsequenceClass.LongestCommonSubsequence("ZXVVYZW", "XKYKZPW"), expected)
-            //);
+            char[] expected = { 'X', 'Y', 'Z', 'W' };
+            Assert.True(
+              Compare(LongestCommonSubsequenceClass.LongestCommonSubsequence("ZXVVYZW", "XKYKZPW"), expected)
+            );
         }
 
-        private static bool compare(List<char> arr1, char[] arr2)
+        private static bool Compare(List<char> arr1, char[] arr2)
         {
             if (arr1.Count != arr2.Length)
             {

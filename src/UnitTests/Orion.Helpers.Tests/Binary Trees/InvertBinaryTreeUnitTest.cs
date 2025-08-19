@@ -1,3 +1,5 @@
+using Orion.Helpers.Binary_Trees;
+
 namespace Orion.Helpers.Tests.Binary_Trees
 {
     public class InvertBinaryTreeClassUnitTest

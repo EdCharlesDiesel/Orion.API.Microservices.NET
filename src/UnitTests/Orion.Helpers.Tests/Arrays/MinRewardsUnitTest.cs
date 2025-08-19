@@ -1,3 +1,5 @@
+using Orion.Helpers.Arrays;
+
 namespace Orion.Helpers.Tests.Arrays
 {
     public class MinRewardsClassUnitTest

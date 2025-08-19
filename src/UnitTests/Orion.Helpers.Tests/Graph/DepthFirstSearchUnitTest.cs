@@ -1,9 +1,8 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using ORION.Core.Graphs;
+using Orion.Helpers.Graphs;
 
-namespace DepthFirstSearch.Tests
+namespace Orion.Helpers.Tests.Graph
 {
-    public class UnitTest1
+    public class DepthFirstSearchClassUnitTest
     {
         [Fact]
         public void Test1()

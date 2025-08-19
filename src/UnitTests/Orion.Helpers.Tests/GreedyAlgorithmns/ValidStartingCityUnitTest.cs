@@ -1,8 +1,8 @@
-using ORION.Core.GreadyAlgorithmns;
+using Orion.Helpers.GreedyAlgorithmns;
 
-namespace ValidStartingCity.Tests
+namespace Orion.Helpers.Tests.GreedyAlgorithmns
 {
-    public class UnitTest1
+    public class ValidStartingCityClassUnitTest
     {
         [Fact]
         public void Test1()

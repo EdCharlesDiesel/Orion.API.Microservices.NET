@@ -1,4 +1,4 @@
-namespace RightSiblingTree.Tests
+namespace Orion.Helpers.Tests.Binary_Trees
 {
     public class UnitTest1
     {

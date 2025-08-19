@@ -1,8 +1,8 @@
-using ORION.Core.DynamicProgramming;
+using Orion.Helpers.Dynamic_Programming;
 
-namespace NumbersInPi.Tests
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
-    public class UnitTest1
+    public class NumbersInPiClassUnitTest
     {
         string PI = "3141592653589793238462643383279";
         [Fact]

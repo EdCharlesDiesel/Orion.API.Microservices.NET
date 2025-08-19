@@ -1,8 +1,8 @@
-using ORION.Core.Graphs;
+using Orion.Helpers.Graphs;
 
-namespace LongestStringChain.Tests
+namespace Orion.Helpers.Tests.Graph
 {
-    public class UnitTest1
+    public class LongestStringChainClassUnitTest
     {
         [Fact]
         public void Test1()

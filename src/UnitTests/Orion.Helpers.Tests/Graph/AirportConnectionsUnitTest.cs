@@ -1,4 +1,4 @@
-namespace AirportConnections.Tests
+namespace Orion.Helpers.Tests.Graph
 {
     public class UnitTest1
     {

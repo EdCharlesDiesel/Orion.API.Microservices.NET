@@ -1,4 +1,4 @@
-namespace ORION.Core.Tests.Heaps
+namespace Orion.Helpers.Tests.Heaps
 {
     public class UnitTest1
     {

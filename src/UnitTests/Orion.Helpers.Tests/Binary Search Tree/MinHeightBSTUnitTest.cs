@@ -1,6 +1,8 @@
+using Microsoft.VisualBasic.CompilerServices;
+
 namespace Orion.Helpers.Tests.Binary_Search_Tree
 {
-    public class validateBstUnitTest1
+    public class ValidateBstUnitTest1
     {
         [Fact(Skip ="Fix this")]
         public void Test1()

@@ -1,8 +1,8 @@
-using ORION.Core.DynamicProgramming;
+using Orion.Helpers.Dynamic_Programming;
 
-namespace NumberOfWaysToMakeChange.Tests
+namespace Orion.Helpers.Tests.Dynamic_Programming
 {
-    public class UnitTest1
+    public class NumberOfWaysToMakeChangeClassUnitTest
     {
         [Fact]
         public void Test1()

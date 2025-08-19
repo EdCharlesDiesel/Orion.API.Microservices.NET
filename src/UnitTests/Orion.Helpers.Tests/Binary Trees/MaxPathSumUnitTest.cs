@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.CompilerServices;
+
 namespace Orion.Helpers.Tests.Binary_Trees
 {
     public class MaxPathSumUnitTest
