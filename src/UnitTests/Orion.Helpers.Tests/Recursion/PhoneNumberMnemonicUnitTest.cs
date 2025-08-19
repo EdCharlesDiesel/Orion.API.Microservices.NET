@@ -10,7 +10,7 @@ namespace PhoneNumberMnemonic.Tests
         public void Test1()
         {
             string phoneNumber = "1905";
-            string[] expectedValues = new string[] {
+            string[] expectedValues = new[] {
             "1w0j",
             "1w0k",
             "1w0l",

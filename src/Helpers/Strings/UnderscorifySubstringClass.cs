@@ -17,7 +17,7 @@
                 int nextIdx = str.IndexOf(substring, startIdx);
                 if (nextIdx != -1)
                 {
-                    locations.Add(new int[] { nextIdx, nextIdx + substring.Length });
+                    locations.Add(new[] { nextIdx, nextIdx + substring.Length });
                     startIdx = nextIdx + 1;
                 }
                 else

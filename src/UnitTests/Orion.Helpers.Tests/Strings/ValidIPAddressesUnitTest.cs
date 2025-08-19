@@ -1,5 +1,3 @@
-using ORION.Core.Strings;
-
 namespace ValidIPAddresses.Tests
 {
     public class UnitTest1
@@ -21,7 +19,7 @@ namespace ValidIPAddresses.Tests
             expected.Add("192.1.68.0");
             expected.Add("192.16.8.0");
             var actual = new ValidIPAddressesClass().ValidIPAddresses(input);
-            Assert.True(Enumerable.SequenceEqual(expected, actual));
+            Assert.True(expected.SequenceEqual(actual));
         }
     }
 }

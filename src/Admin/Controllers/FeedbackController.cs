@@ -1,5 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Orion.DataAccess.AllFeatures;
 
 namespace Orion.Admin.Controllers
@@ -22,7 +21,7 @@ namespace Orion.Admin.Controllers
 
         public JsonResult SubmitFeedback(string id)
         {
-            if (_FeatureManager.CustomerSatisfaction == true)
+            if (_FeatureManager.CustomerSatisfaction)
             {
                 //FIX ME loggin
            //     _Logger.LogCustomerSatisfaction(id);

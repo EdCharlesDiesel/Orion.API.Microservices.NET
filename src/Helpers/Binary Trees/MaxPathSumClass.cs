@@ -12,7 +12,7 @@
         {
             if (tree == null)
             {
-                return new List<int>(){
+                return new List<int> {
                     0, 0
                     };
             }
@@ -30,7 +30,7 @@
             );
             int maxPathSum = Math.Max(leftMaxPathSum, Math.Max(rightMaxPathSum,
             maxSumAsRootNode));
-            return new List<int>(){
+            return new List<int> {
             maxSumAsBranch, maxPathSum
             };
         }

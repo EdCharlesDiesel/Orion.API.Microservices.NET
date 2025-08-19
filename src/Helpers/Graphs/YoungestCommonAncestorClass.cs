@@ -16,11 +16,9 @@
                 return backtrackAncestralTree(descendantOne, descendantTwo,
                 depthOne - depthTwo);
             }
-            else
-            {
-                return backtrackAncestralTree(descendantTwo, descendantOne,
+
+            return backtrackAncestralTree(descendantTwo, descendantOne,
                 depthTwo - depthOne);
-            }
         }
 
         public static int getDescendantDepth(AncestralTree descendant, AncestralTree topAncestor)
@@ -59,7 +57,7 @@
             public AncestralTree(char name)
             {
                 this.name = name;
-                this.ancestor = null;
+                ancestor = null;
             }
             // This method is for testing only.
             public void AddAsAncestor(AncestralTree[] descendants)

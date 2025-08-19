@@ -45,8 +45,8 @@ namespace Orion.Helpers.Tests.Binary_Trees
         public void Test1()
         {
             TestBinaryTree tree = new TestBinaryTree(1).Insert(
-                new List<int>() { 2, 3, 4, 5, 6, 7, 8, 9, 10 });
-            List<int> expected = new List<int>() { 15, 16, 18, 10, 11 };
+                new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+            List<int> expected = new List<int> { 15, 16, 18, 10, 11 };
             Assert.True(BranchSumsClass.BranchSums(tree).SequenceEqual(expected));
         }
     }

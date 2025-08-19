@@ -1,8 +1,6 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.UserProfile.Models;
-using Orion.API.UserProfile.Data;
 
 namespace Orion.API.UserProfile.Controllers;
 

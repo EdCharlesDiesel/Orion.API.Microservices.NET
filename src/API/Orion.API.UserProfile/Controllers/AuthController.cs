@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.UserProfile.Data;
 using Orion.API.UserProfile.Models;
-
 
 namespace Orion.API.UserProfile.Controllers;
 

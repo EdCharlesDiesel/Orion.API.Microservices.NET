@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Orion.Domain.Tools;
 
 namespace Orion.Domain.Aggregates

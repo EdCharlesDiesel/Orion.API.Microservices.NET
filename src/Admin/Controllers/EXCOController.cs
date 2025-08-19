@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Models;
-using ORION.Admin.Models;
 
 namespace Orion.Admin.Controllers
 {

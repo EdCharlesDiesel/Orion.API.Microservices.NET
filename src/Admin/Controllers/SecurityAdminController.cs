@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Security.Claims;
 using Orion.Admin.Areas.API;
-using ORION.Admin.Models;
 using Orion.DataAccess.Data;
 using Orion.DataAccess.Entities;
 
@@ -57,13 +56,13 @@ namespace Orion.Admin.Controllers
 
             model.Permissions = new List<SelectListItem>();
 
-            model.Permissions.Add(new SelectListItem()
+            model.Permissions.Add(new SelectListItem
             {
                 Value = SecurityConstants.PermissionNameEdit,
                 Text = SecurityConstants.PermissionNameEdit
             });
 
-            model.Permissions.Add(new SelectListItem()
+            model.Permissions.Add(new SelectListItem
             {
                 Value = SecurityConstants.PermissionNameView,
                 Text = SecurityConstants.PermissionNameView
@@ -73,13 +72,13 @@ namespace Orion.Admin.Controllers
 
             model.SubscriptionTypes = new List<SelectListItem>();
 
-            model.SubscriptionTypes.Add(new SelectListItem()
+            model.SubscriptionTypes.Add(new SelectListItem
             {
                 Value = SecurityConstants.SubscriptionTypeBasic,
                 Text = SecurityConstants.SubscriptionTypeBasic
             });
 
-            model.SubscriptionTypes.Add(new SelectListItem()
+            model.SubscriptionTypes.Add(new SelectListItem
             {
                 Value = SecurityConstants.SubscriptionTypeUltimate,
                 Text = SecurityConstants.SubscriptionTypeUltimate
@@ -206,10 +205,8 @@ namespace Orion.Admin.Controllers
             {
                 return username.UserName;
             }
-            else
-            {
-                return securityAdminAction.UserId;
-            }
+
+            return securityAdminAction.UserId;
         }
 
         private List<SelectListItem> AdaptToSelectListItems(List<IdentityRole> fromValues)
@@ -218,7 +215,7 @@ namespace Orion.Admin.Controllers
 
             foreach (var fromValue in fromValues)
             {
-                toValues.Add(new SelectListItem()
+                toValues.Add(new SelectListItem
                 {
                     Value = fromValue.Id,
                     Text = fromValue.Name
@@ -234,7 +231,7 @@ namespace Orion.Admin.Controllers
 
             foreach (var fromValue in fromValues.OrderBy(x => x.LastName))
             {
-                toValues.Add(new SelectListItem()
+                toValues.Add(new SelectListItem
                 {
                     Value = fromValue.Id.ToString(),
                     Text = String.Format("{0}, {1}", fromValue.LastName, fromValue.FirstName)
@@ -250,7 +247,7 @@ namespace Orion.Admin.Controllers
 
             foreach (var fromValue in fromValues)
             {
-                toValues.Add(new SelectListItem()
+                toValues.Add(new SelectListItem
                 {
                     Value = fromValue.Id,
                     Text = fromValue.UserName

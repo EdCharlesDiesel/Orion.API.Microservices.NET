@@ -5,7 +5,7 @@ namespace Orion.Helpers.Tests.Strings
         [Fact(Skip ="Failing Unit Test")]
         public void Test1()
         {
-            var input = new string[] { "desserts", "stressed", "hello" };
+            var input = new[] { "desserts", "stressed", "hello" };
             List<List<string>> expected = new List<List<string>>();
             List<string> pair = new List<string> { "desserts", "stressed" };
             expected.Add(pair);
@@ -13,7 +13,7 @@ namespace Orion.Helpers.Tests.Strings
             Assert.True(expected.Count == actual.Count);
             for (var i = 0; i < expected.Count; i++)
             {
-                Assert.True(Enumerable.SequenceEqual(expected[i], actual[i]));
+                Assert.True(expected[i].SequenceEqual(actual[i]));
             }
         }
     }

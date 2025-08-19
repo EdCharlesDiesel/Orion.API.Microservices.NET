@@ -1,6 +1,5 @@
-using System;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace ORION.Admin.Security
 {
@@ -12,7 +11,7 @@ namespace ORION.Admin.Security
             EditBusinessOwnerRequirement requirement)
         {
             if (context.Resource is 
-                Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext mvcContext)
+                AuthorizationFilterContext mvcContext)
             {
                 if (mvcContext.RouteData.Values.ContainsKey("id") == false)
                 {
@@ -24,7 +23,7 @@ namespace ORION.Admin.Security
 
                     var utility = new SecurityUtility(context.User.Identity, context.User);
 
-                    if (utility.IsAuthorized(SecurityConstants.PermissionName_Edit, id) == true)
+                    if (utility.IsAuthorized(SecurityConstants.PermissionName_Edit, id))
                     {
                         context.Succeed(requirement);
                     }

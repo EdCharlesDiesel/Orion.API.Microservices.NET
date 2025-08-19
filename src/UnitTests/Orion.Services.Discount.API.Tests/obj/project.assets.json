@@ -3692,8 +3692,6 @@
           "Dapper": "2.1.66",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql": "7.0.4",
-          "Orion.Core.Discount": "1.0.0",
-          "Orion.Services.TradingEconomics.API": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
@@ -10621,8 +10619,8 @@
     },
     "Orion.Services.TradingEconomics.API/1.0.0": {
       "type": "project",
-      "path": "../../Repository/Orion.Repository/Orion.Repository.csproj",
-      "msbuildProject": "../../Repository/Orion.Repository/Orion.Repository.csproj"
+      "path": "../../Repository/Orion.Repositories/Orion.Repositories.csproj",
+      "msbuildProject": "../../Repository/Orion.Repositories/Orion.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10631,7 +10629,6 @@
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "Moq >= 4.20.69",
       "Orion.API.Discount >= 1.0.0",
-      "Orion.Core.Discount >= 1.0.0",
       "Orion.Services.TradingEconomics.API >= 1.0.0",
       "coverlet.collector >= 3.2.0",
       "xunit >= 2.4.2",
@@ -10667,14 +10664,8 @@
             "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Discount\\Orion.API.Discount.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Discount\\Orion.API.Discount.csproj"
             },
-            "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Discount\\Orion.Core.Discount.csproj"
-            },
             "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj"
             }
           }
         }
@@ -10754,12 +10745,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

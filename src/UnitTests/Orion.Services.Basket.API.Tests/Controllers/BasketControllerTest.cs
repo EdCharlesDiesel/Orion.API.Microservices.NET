@@ -1,5 +1,3 @@
-
-
 using JetBrains.Annotations;
 using Orion.API.Basket.Controllers;
 using Xunit;

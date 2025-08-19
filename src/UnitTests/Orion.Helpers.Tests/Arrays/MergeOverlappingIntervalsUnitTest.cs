@@ -7,19 +7,21 @@ namespace Orion.Helpers.Tests.Arrays
         [Fact]
         public void Test1()
         {
-            int[][] intervals = new int[][] {
-              new int[] { 1, 2 },
-              new int[] { 3, 5 },
-              new int[] { 4, 7 },
-              new int[] { 6, 8 },
-              new int[] { 9, 10 },
+            int[][] intervals = new[]
+            {
+              new[] { 1, 2 },
+              new[] { 3, 5 },
+              new[] { 4, 7 },
+              new[] { 6, 8 },
+              new[] { 9, 10 },
             };
 
 
-            int[][] expected = new int[][] {
-              new int[] { 1, 2 },
-              new int[] { 3, 8 },
-              new int[] { 9, 10 },
+            int[][] expected = new[]
+            {
+              new[] { 1, 2 },
+              new[] { 3, 8 },
+              new[] { 9, 10 },
             };
 
             int[][] actual = new MergeOverlappingIntervalsClass().MergeOverlappingIntervals(intervals);

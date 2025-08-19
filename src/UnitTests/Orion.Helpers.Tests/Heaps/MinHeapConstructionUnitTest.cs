@@ -12,8 +12,7 @@ namespace Orion.Helpers.Tests.Heaps
     }
 }
 
-Program.MinHeap minHeap = new Program.MinHeap(new List<int>(
-   ) { 48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41 });
+Program.MinHeap minHeap = new Program.MinHeap(new List<int> { 48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41 });
 minHeap.Insert(76);
 Utils.AssertTrue(isMinHeapPropertySatisfied(minHeap.heap));
 Utils.AssertTrue(minHeap.Peek() == -5);

@@ -17,7 +17,7 @@
                 }
                 if (longest[1] - longest[0] < i + 1 - startIdx)
                 {
-                    longest = new int[] { startIdx, i + 1 };
+                    longest = new[] { startIdx, i + 1 };
                 }
                 lastSeen[c] = i;
             }

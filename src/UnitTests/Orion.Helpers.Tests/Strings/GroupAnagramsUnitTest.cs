@@ -5,12 +5,12 @@ namespace Orion.Helpers.Tests.Strings
         [Fact]
         public void Test1()
         {
-            List<string> words = new List<string>() { "yo", "act", "flop", "tac", "foo", "cat", "oy", "olfp" };
+            List<string> words = new List<string> { "yo", "act", "flop", "tac", "foo", "cat", "oy", "olfp" };
             List<List<string>> expected = new List<List<string>>();
-            expected.Add(new List<string>() { "yo", "oy" });
-            expected.Add(new List<string>() { "flop", "olfp" });
-            expected.Add(new List<string>() { "act", "tac", "cat" });
-            expected.Add(new List<string>() { "foo" });
+            expected.Add(new List<string> { "yo", "oy" });
+            expected.Add(new List<string> { "flop", "olfp" });
+            expected.Add(new List<string> { "act", "tac", "cat" });
+            expected.Add(new List<string> { "foo" });
             List<List<string>> output = GroupAnagramsClass.groupAnagrams(words);
             foreach (List<string> innerList in output)
             {

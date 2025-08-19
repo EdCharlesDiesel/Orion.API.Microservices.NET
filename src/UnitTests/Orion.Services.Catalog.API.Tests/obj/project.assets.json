@@ -10572,8 +10572,8 @@
     },
     "Orion.Services.TradingEconomics.API/1.0.0": {
       "type": "project",
-      "path": "../../Repository/Orion.Repository/Orion.Repository.csproj",
-      "msbuildProject": "../../Repository/Orion.Repository/Orion.Repository.csproj"
+      "path": "../../Repository/Orion.Repositories/Orion.Repositories.csproj",
+      "msbuildProject": "../../Repository/Orion.Repositories/Orion.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10620,9 +10620,6 @@
             },
             "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj"
             }
           }
         }
@@ -10710,12 +10707,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

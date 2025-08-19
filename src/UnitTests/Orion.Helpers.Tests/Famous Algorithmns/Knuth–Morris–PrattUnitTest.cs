@@ -10,7 +10,7 @@ namespace Orion.Helpers.Tests.Famous_Algorithmns
         public void Test1()
         {
             Assert.True(
-                  KnuthMorrisPrattClass.KnuthMorrisPrattAlgorithm("aefoaefcdaefcdaed", "aefcdaed") == true
+                  KnuthMorrisPrattClass.KnuthMorrisPrattAlgorithm("aefoaefcdaefcdaed", "aefcdaed")
                 );
         }
     }

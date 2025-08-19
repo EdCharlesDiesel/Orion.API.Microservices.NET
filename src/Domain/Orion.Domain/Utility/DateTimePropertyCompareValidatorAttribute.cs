@@ -30,7 +30,7 @@ namespace Orion.Domain.Utility
             {
                 var valueAsString = value.ToString();
 
-                if (String.IsNullOrWhiteSpace(valueAsString) == true)
+                if (String.IsNullOrWhiteSpace(valueAsString))
                 {
                     return new ValidationResult("Value cannot be blank.");
                 }
@@ -51,10 +51,8 @@ namespace Orion.Domain.Utility
 
                 return new ValidationResult("Invalid property name for other property.");
             }
-            else
-            {
-                otherValue = otherPropertyInfo.GetValue(validationContext.ObjectInstance);
-            }
+
+            otherValue = otherPropertyInfo.GetValue(validationContext.ObjectInstance);
 
             if (otherValue == null)
             {
@@ -82,31 +80,25 @@ namespace Orion.Domain.Utility
                 {
                     return ValidationResult.Success;
                 }
-                else
-                {
-                    return new ValidationResult(
-                        String.Format(
-                            "{0} should be greater than {1}.",
-                            validationContext.DisplayName,
-                            otherPropertyName));
-                }
+
+                return new ValidationResult(
+                    String.Format(
+                        "{0} should be greater than {1}.",
+                        validationContext.DisplayName,
+                        otherPropertyName));
             }
-            else
+
+            if (otherValueAsDateTime == default(DateTime) ||
+                valueAsDateTime < otherValueAsDateTime)
             {
-                if (otherValueAsDateTime == default(DateTime) ||
-                    valueAsDateTime < otherValueAsDateTime)
-                {
-                    return ValidationResult.Success;
-                }
-                else
-                {
-                    return new ValidationResult(
-                        String.Format(
-                            "{0} should be less than {1}.",
-                            validationContext.DisplayName,
-                            otherPropertyName));
-                }
+                return ValidationResult.Success;
             }
+
+            return new ValidationResult(
+                String.Format(
+                    "{0} should be less than {1}.",
+                    validationContext.DisplayName,
+                    otherPropertyName));
         }
 
     }

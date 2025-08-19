@@ -2562,29 +2562,6 @@
             "related": ".xml"
           }
         }
-      },
-      "Orion.Core.Catalog/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Core.Catalog.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.Catalog.dll": {}
-        }
-      },
-      "Orion.Core.Order/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Orion.Core.Catalog": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Orion.Core.Order.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.Order.dll": {}
-        }
       }
     }
   },
@@ -8033,16 +8010,6 @@
         "yamldotnet.15.1.4.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
-    },
-    "Orion.Core.Catalog/1.0.0": {
-      "type": "project",
-      "path": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj",
-      "msbuildProject": "../../Core/Orion.Core.Catalog/Orion.Core.Catalog.csproj"
-    },
-    "Orion.Core.Order/1.0.0": {
-      "type": "project",
-      "path": "../../Core/Orion.Core.Order/Orion.Core.Order.csproj",
-      "msbuildProject": "../../Core/Orion.Core.Order/Orion.Core.Order.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8058,7 +8025,6 @@
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
-      "Orion.Core.Order >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -8068,9 +8034,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.csproj",
       "projectName": "Orion.Services.TradingEconomics.API",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
       "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\obj\\",
       "projectStyle": "PackageReference",
@@ -8087,11 +8053,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Order\\Orion.Core.Order.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -8196,12 +8158,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

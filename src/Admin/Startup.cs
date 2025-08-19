@@ -66,9 +66,9 @@ namespace Orion.Admin
             services.AddDbLayer(Configuration.GetConnectionString("Orion_Default_Windows_ConnectionString"),
                 "Orion_MainDb");
 
-            services.AddAllQueries(this.GetType().Assembly);
-            services.AddAllCommandHandlers(this.GetType().Assembly);
-            services.AddAllEventHandlers(this.GetType().Assembly);
+            services.AddAllQueries(GetType().Assembly);
+            services.AddAllCommandHandlers(GetType().Assembly);
+            services.AddAllEventHandlers(GetType().Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

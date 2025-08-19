@@ -8,7 +8,7 @@ namespace Orion.Helpers.Tests.Binary_Trees
         public void Test1()
         {
             TestBinaryTree test = new TestBinaryTree(1);
-            test.insert(new int[] { 2, 3, 4, 5, 6, 7 }, 0);
+            test.insert(new[] { 2, 3, 4, 5, 6, 7 }, 0);
             Utils.AssertTrue(Program.MaxPathSum(test) == 18);
         }
 

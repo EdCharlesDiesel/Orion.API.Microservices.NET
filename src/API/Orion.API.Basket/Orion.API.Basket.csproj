@@ -47,7 +47,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Orion.Core.Basket\Orion.Core.Basket.csproj" />
-    <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.csproj" />
   </ItemGroup>
 
   <ItemGroup>

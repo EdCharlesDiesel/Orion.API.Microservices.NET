@@ -1,14 +1,10 @@
 ﻿namespace Orion.Helpers.LinkedList
 {
-
-    using System;
-    using System.Collections.Generic;
-
     public class LRUCache
     {
         public Dictionary<string, DoublyLinkedListNode> cache = new Dictionary<string, DoublyLinkedListNode>();
         public int maxSize;
-        public int currentSize = 0;
+        public int currentSize;
         public DoublyLinkedList listOfMostRecent = new DoublyLinkedList();
 
         public LRUCache(int maxSize)
@@ -72,7 +68,7 @@
 
         private void ReplaceKey(string key, int value)
         {
-            if (!this.cache.ContainsKey(key))
+            if (!cache.ContainsKey(key))
             {
                 return;
             }
@@ -97,8 +93,8 @@
     {
         public string key;
         public int value;
-        public DoublyLinkedListNode prev = null;
-        public DoublyLinkedListNode next = null;
+        public DoublyLinkedListNode prev;
+        public DoublyLinkedListNode next;
 
         public DoublyLinkedListNode(string key, int value)
         {
@@ -125,14 +121,13 @@
 
     public class DoublyLinkedList
     {
-        public DoublyLinkedListNode head = null;
-        public DoublyLinkedListNode tail = null;
+        public DoublyLinkedListNode head;
+        public DoublyLinkedListNode tail;
 
         public void SetHeadTo(DoublyLinkedListNode node)
         {
             if (head == node)
             {
-                return;
             }
             else if (head == null)
             {

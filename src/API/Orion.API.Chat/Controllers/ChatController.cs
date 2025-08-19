@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Orion.DataAccess.Entities;
 
-
 namespace Orion.API.Chat.Controllers;
 
 [Authorize]

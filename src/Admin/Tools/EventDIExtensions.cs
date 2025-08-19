@@ -38,7 +38,7 @@ namespace Orion.Admin.Tools
                 if(handlerInterface != null)
                 {
                     var eventType = handlerInterface.GetGenericArguments()[0];
-                    method.MakeGenericMethod(new Type[] { eventType, handler })
+                    method.MakeGenericMethod(eventType, handler)
                         .Invoke(null, new object[] { service });
                 }
             }

@@ -5,3 +5,15 @@
       context: .
       dockerfile: Orion.API.UserProfiles/Dockerfile
 
+  orion.access.postgres:
+    image: orion.access.postgres
+    build:
+      context: .
+      dockerfile: Orion.Access.Postgres/Dockerfile
+
+  webapplication1:
+    image: webapplication1
+    build:
+      context: .
+      dockerfile: WebApplication1/Dockerfile
+

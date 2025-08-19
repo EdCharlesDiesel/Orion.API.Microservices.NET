@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Orion.Admin.Models.Customers
 {
     public class CustomersListViewModel

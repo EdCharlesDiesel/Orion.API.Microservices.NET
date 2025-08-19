@@ -1,5 +1,3 @@
-using ORION.Core.Searching;
-
 namespace Quickselect.Tests
 {
     public class UnitTest1
@@ -8,7 +6,7 @@ namespace Quickselect.Tests
         public void Test1()
         {
             Assert.True(
-              QuickselectClass.Quickselect(new int[] { 8, 5, 2, 9, 7, 6, 3 }, 3) == 5
+              QuickselectClass.Quickselect(new[] { 8, 5, 2, 9, 7, 6, 3 }, 3) == 5
             );
         }
     }

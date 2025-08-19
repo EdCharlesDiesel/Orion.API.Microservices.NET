@@ -5,7 +5,7 @@
 /// </summary>
 //[PrimaryKey("BusinessEntityId", "RateChangeDate")]
 [Table("EmployeePayHistory", Schema = "HumanResources")]
-public partial class EmployeePayHistory
+public class EmployeePayHistory
 {
     /// <summary>
     /// Employee identification number. Foreign key to Employee.BusinessEntityID.

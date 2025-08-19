@@ -30,7 +30,7 @@ namespace Orion.API.Discount.Extensions
                     command.CommandText = "DROP TABLE IF EXISTS Coupon";
                     command.ExecuteNonQuery();
 
-                    command.CommandText = $@"CREATE TABLE Coupon(Id SERIAL PRIMARY KEY, 
+                    command.CommandText = @"CREATE TABLE Coupon(Id SERIAL PRIMARY KEY, 
                                                                 ProductName VARCHAR(24) NOT NULL,
                                                                 Description TEXT,
                                                                 Amount INT)";
@@ -51,7 +51,7 @@ namespace Orion.API.Discount.Extensions
                     if (retryForAvailability < 50)
                     {
                         retryForAvailability++;
-                        System.Threading.Thread.Sleep(2000);
+                        Thread.Sleep(2000);
                         MigrateDatabase<TContext>(host, retryForAvailability);
                     }
                 }

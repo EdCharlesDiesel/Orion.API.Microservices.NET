@@ -1,6 +1,4 @@
-using System;
 using System.Security.Claims;
-using Microsoft.AspNetCore.Http;
 
 namespace ORION.Admin.Security
 {
@@ -26,10 +24,8 @@ namespace ORION.Admin.Security
             {
                 return context.User;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
     }
 }

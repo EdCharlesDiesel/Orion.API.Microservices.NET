@@ -10866,8 +10866,8 @@
     },
     "Orion.Services.TradingEconomics.API/1.0.0": {
       "type": "project",
-      "path": "../../Repository/Orion.Repository/Orion.Repository.csproj",
-      "msbuildProject": "../../Repository/Orion.Repository/Orion.Repository.csproj"
+      "path": "../../Repository/Orion.Repositories/Orion.Repositories.csproj",
+      "msbuildProject": "../../Repository/Orion.Repositories/Orion.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10876,7 +10876,6 @@
       "Microsoft.AspNetCore.Mvc.Core >= 2.3.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "Moq >= 4.20.69",
-      "Orion.Core.TradingEconomics >= 1.0.0",
       "Orion.Services.TradingEconomics.API >= 1.0.0",
       "Shouldly >= 4.3.0",
       "coverlet.collector >= 3.2.0",
@@ -10913,14 +10912,8 @@
             "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.csproj"
             },
-            "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.TradingEconomics\\Orion.Core.TradingEconomics.csproj"
-            },
             "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj"
-            },
-            "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repository\\Orion.Repository.csproj"
             }
           }
         }

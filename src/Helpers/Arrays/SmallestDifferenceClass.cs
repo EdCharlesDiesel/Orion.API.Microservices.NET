@@ -38,13 +38,13 @@
                 }
                 else
                 {
-                    return new int[] { firstNumber, secondNumber };
+                    return new[] { firstNumber, secondNumber };
                 }
 
                 if (smallest > current)
                 {
                     smallest = current;
-                    smallestpair = new int[] { firstNumber,secondNumber};
+                    smallestpair = new[] { firstNumber,secondNumber};
                 }
             }
             return smallestpair;

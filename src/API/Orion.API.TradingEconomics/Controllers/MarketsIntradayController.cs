@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.Repository.Repositories.TradingEconomics;
 
 namespace Orion.API.TradingEconomics.Controllers;
 [ApiController]

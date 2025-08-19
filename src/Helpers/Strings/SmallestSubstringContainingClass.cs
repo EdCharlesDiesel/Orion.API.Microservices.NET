@@ -22,7 +22,7 @@
         public static List<int> getSubstringBounds(string str, Dictionary<char,
         int> targetCharCounts)
         {
-            List<int> substringBounds = new List<int>(){
+            List<int> substringBounds = new List<int> {
                             0, Int32.MaxValue
                         };
             Dictionary<char, int> substringCharCounts = new Dictionary<char, int>();
@@ -72,12 +72,12 @@
         }
         public static List<int> getCloserBounds(int idx1, int idx2, int idx3, int idx4)
         {
-            return idx2 - idx1 < idx4 - idx3 ? new List<int>()
-            {
+            return idx2 - idx1 < idx4 - idx3 ? new List<int>
+                {
                 idx1, idx2
             }
 
-            : new List<int>(){
+            : new List<int> {
                 idx3, idx4
             };
         }

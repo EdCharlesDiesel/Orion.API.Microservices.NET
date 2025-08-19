@@ -31,20 +31,20 @@ namespace Orion.Admin.Controllers
             if (ModelState.IsValid) { 
                 await command.HandleAsync(new CreateCustomerCommand(vm));
                 return RedirectToAction(
-                    nameof(CustomersController.Index));
+                    nameof(Index));
             }
-            else
-                return View("Edit", vm);
+
+            return View("Edit", vm);
         }
 
         [HttpGet]
         public async Task<IActionResult> Edit(int id,[FromServices] ICustomerRepository repo)
         {
             if (id == 0) return RedirectToAction(
-                nameof(CustomersController.Index));
+                nameof(Index));
             var aggregate = await repo.Get(id);
             if (aggregate == null) return RedirectToAction(
-                nameof(CustomersController.Index));
+                nameof(Index));
             var vm = new CustomerFullEditViewModel(aggregate);
             return View(vm);
         }
@@ -58,10 +58,10 @@ namespace Orion.Admin.Controllers
             {
                 await command.HandleAsync(new UpdateCustomerCommand(vm));
                 return RedirectToAction(
-                    nameof(CustomersController.Index));
+                    nameof(Index));
             }
-            else
-                return View(vm);
+
+            return View(vm);
         }
 
         [HttpGet]
@@ -73,7 +73,7 @@ namespace Orion.Admin.Controllers
                 
             }
             return RedirectToAction(
-                    nameof(CustomersController.Index));
+                    nameof(Index));
         }
     }
 }

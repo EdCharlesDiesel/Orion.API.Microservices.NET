@@ -8,7 +8,7 @@ namespace Orion.Helpers.Tests.Dynamic_Programming
         [Fact]
         public void Test1()
         {
-            string[] numbers = new string[] {
+            string[] numbers = new[] {
       "314159265358979323846",
       "26433",
       "8",

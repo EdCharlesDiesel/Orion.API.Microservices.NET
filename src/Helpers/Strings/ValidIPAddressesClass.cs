@@ -29,23 +29,23 @@ namespace Orion.Helpers.Strings
         public List<string> ValidIPAddresses(string input)
         {
             List<string> ipAddressesFound = new List<string>();
-            for (int i = 1; i < Math.Min((int)input.Length, 4); i++)
+            for (int i = 1; i < Math.Min(input.Length, 4); i++)
             {
-                string[] currentIpAddressPart = new string[] { "", "", "", "" };
+                string[] currentIpAddressPart = new[] { "", "", "", "" };
                 currentIpAddressPart[0] = input.Substring(0, i - 0);
                 if (!ValidPart(currentIpAddressPart[0]))
                 {
                     continue;
                 }
 
-                for (int j = i + 1; j < i + Math.Min((int)input.Length - 1, 4); j++)
+                for (int j = i + 1; j < i + Math.Min(input.Length - 1, 4); j++)
                 {
                     currentIpAddressPart[1] = input.Substring(i, j - i);
                     if (!ValidPart(currentIpAddressPart[1]))
                     {
                         continue;
                     }
-                    for (int k = j + 1; k < j + Math.Min((int)input.Length - j, 4); k++)
+                    for (int k = j + 1; k < j + Math.Min(input.Length - j, 4); k++)
                     {
                         currentIpAddressPart[2] = input.Substring(j, k - j);
                         currentIpAddressPart[3] = input.Substring(k);

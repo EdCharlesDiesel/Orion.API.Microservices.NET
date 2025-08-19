@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Orion.Admin.Areas.API;
 using ORION.Admin.TestData;
 using Orion.DataAccess;
+using Orion.DataAccess.AllFeatures;
 using Orion.DataAccess.Data;
 using Orion.DataAccess.Entities;
 
@@ -85,11 +86,8 @@ namespace Orion.Admin.Controllers
                         groverCleveland = currentBusinessOwner;
                         returnValue.Add(currentBusinessOwner);
                     }
-                    else
-                    {
-                        //FIXME Please fix this
-                      //  groverCleveland.Terms.Add(currentBusinessOwner.Terms[0]);
-                    }
+                    //FIXME Please fix this
+                    //  groverCleveland.Terms.Add(currentBusinessOwner.Terms[0]);
                 }
                 else
                 {
@@ -131,28 +129,24 @@ namespace Orion.Admin.Controllers
         {
             DateTime temp;
 
-            if (DateTime.TryParse(fromValue, out temp) == true)
+            if (DateTime.TryParse(fromValue, out temp))
             {
                 return temp;
             }
-            else
-            {
-                return default(DateTime);
-            }
+
+            return default(DateTime);
         }
 
         private int SafeToInt32(string fromValue)
         {
             int temp;
 
-            if (Int32.TryParse(fromValue, out temp) == true)
+            if (Int32.TryParse(fromValue, out temp))
             {
                 return temp;
             }
-            else
-            {
-                return default(int);
-            }
+
+            return default(int);
         }
 
         private void DeleteAll()
@@ -193,12 +187,10 @@ namespace Orion.Admin.Controllers
 
             if (result.Succeeded == false)
             {
-                throw new InvalidOperationException("Error while creating user." + Environment.NewLine + result.Errors.ToString());
+                throw new InvalidOperationException("Error while creating user." + Environment.NewLine + result.Errors);
             }
-            else
-            {
-                Console.WriteLine();
-            }
+
+            Console.WriteLine();
 
             return user;
         }

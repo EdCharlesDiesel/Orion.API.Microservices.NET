@@ -1,5 +1,3 @@
-using ORION.Core.Searching;
-
 namespace SearchForRange.Tests
 {
     public class UnitTest1
@@ -9,7 +7,7 @@ namespace SearchForRange.Tests
         {
             int[] expected = { 4, 9 };
             int[] output = SearchForRangeClass.SearchForRange(
-              new int[] { 0, 1, 21, 33, 45, 45, 45, 45, 45, 45, 61, 71, 73 }, 45
+              new[] { 0, 1, 21, 33, 45, 45, 45, 45, 45, 45, 61, 71, 73 }, 45
             );
             Assert.True(compare(output, expected));
         }

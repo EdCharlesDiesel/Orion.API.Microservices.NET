@@ -1,5 +1,3 @@
-using System;
-
 namespace Orion.Domain.DTOs
 {
     public interface ICustomerFullEditDto

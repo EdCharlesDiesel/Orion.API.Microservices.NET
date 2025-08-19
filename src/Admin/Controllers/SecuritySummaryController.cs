@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
+﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Orion.Admin.Controllers
 {
@@ -7,7 +7,7 @@ namespace Orion.Admin.Controllers
     {
         public IActionResult Index()
         {
-            var principal = User as ClaimsPrincipal;
+            var principal = User;
 
             var identity = User.Identity;
 
@@ -17,10 +17,8 @@ namespace Orion.Admin.Controllers
             {
                 return View(new List<Claim>());
             }
-            else
-            {
-                return View(claimsIdentityInstance.Claims.ToList());
-            }
+
+            return View(claimsIdentityInstance.Claims.ToList());
         }
     }
 }

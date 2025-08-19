@@ -1,7 +1,3 @@
-
-using ORION.Core.LinkedList;
-using System.Linq;
-
 namespace MiddleNode.Tests
 {
     public class UnitTest1
@@ -19,7 +15,7 @@ namespace MiddleNode.Tests
 
             List<int> expected = new List<int> {2, 3};
             var actual = new MiddleNodeClass().MiddleNode(linkedList);
-            Assert.True(Enumerable.SequenceEqual(expected, toList(actual)));
+            Assert.True(expected.SequenceEqual(toList(actual)));
         }
 
         private List<int> toList(MiddleNodeClass.LinkedList linkedList)

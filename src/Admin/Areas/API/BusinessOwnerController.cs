@@ -1,7 +1,5 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Orion.DataAccess.Entities;
-
 
 namespace Orion.Admin.Areas.API
 {

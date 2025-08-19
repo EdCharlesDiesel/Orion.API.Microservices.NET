@@ -1,6 +1,6 @@
-﻿using Orion.External.PaymentGateway.Model;
+﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using System;
+using Orion.External.PaymentGateway.Model;
 
 namespace Orion.External.PaymentGateway.Controllers
 {

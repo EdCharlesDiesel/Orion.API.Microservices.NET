@@ -18,7 +18,7 @@ namespace Orion.Helpers.Tests.Heaps
             var actual = MergeSortedArraysClass.MergeSortedArrays(arrays);
             var expected =
               new List<int> { -124, -1, 0, 1, 3, 5, 6, 9, 12, 20, 21, 81, 121, 150 };
-            Assert.True(Enumerable.SequenceEqual(expected, actual));
+            Assert.True(expected.SequenceEqual(actual));
         }
     }
 }

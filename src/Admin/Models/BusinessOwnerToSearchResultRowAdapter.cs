@@ -1,4 +1,3 @@
-using ORION.Admin.Models;
 using Orion.DataAccess.Entities;
 
 namespace Orion.Admin.Models

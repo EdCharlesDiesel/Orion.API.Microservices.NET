@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Commands;
-using ORION.Admin.Models.Orders;
-using ORION.Admin.Queries;
 using Orion.Admin.Tools;
 using Orion.Domain.IRepositories;
-
 
 namespace Orion.Admin.Controllers
 {
@@ -33,10 +30,10 @@ namespace Orion.Admin.Controllers
             if (ModelState.IsValid) { 
                 await command.HandleAsync(new CreateOrderCommand(vm));
                 return RedirectToAction(
-                    nameof(OrdersController.Index));
+                    nameof(Index));
             }
-            else
-                return View("Edit", vm);
+
+            return View("Edit", vm);
         }
         [HttpGet]
         public async Task<IActionResult> Edit(
@@ -44,10 +41,10 @@ namespace Orion.Admin.Controllers
             [FromServices] IOrderRepository repo)
         {
             if (id == 0) return RedirectToAction(
-                nameof(OrdersController.Index));
+                nameof(Index));
             var aggregate = await repo.Get(id);
             if (aggregate == null) return RedirectToAction(
-                nameof(OrdersController.Index));
+                nameof(Index));
             var vm = new OrderFullEditViewModel(aggregate);
             return View(vm);
         }
@@ -60,10 +57,10 @@ namespace Orion.Admin.Controllers
             {
                 await command.HandleAsync(new UpdateOrderCommand(vm));
                 return RedirectToAction(
-                    nameof(OrdersController.Index));
+                    nameof(Index));
             }
-            else
-                return View(vm);
+
+            return View(vm);
         }
 
         [HttpGet]
@@ -77,7 +74,7 @@ namespace Orion.Admin.Controllers
                 
             }
             return RedirectToAction(
-                    nameof(OrdersController.Index));
+                    nameof(Index));
         }
     }
 }

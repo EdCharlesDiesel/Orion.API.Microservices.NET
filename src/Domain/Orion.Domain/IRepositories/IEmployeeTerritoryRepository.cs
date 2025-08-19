@@ -1,6 +1,5 @@
-﻿using Orion.Domain.Aggregates;
-using System.Threading.Tasks;
-using Orion.Domain.Tools;
+﻿using System.Threading.Tasks;
+using Orion.Domain.Aggregates;
 
 namespace Orion.Domain.IRepositories
 {

@@ -13,9 +13,9 @@ namespace Orion.Helpers.Tests.Binary_Search_Tree
             Utils.AssertTrue(validateBst(tree));
             Utils.AssertEquals(4, getTreeHeight(tree));
 
-            var inOrder = inOrderTraverse(tree, new List<int> { });
+            var inOrder = inOrderTraverse(tree, new List<int>());
             var expected = new List<int> { 1, 2, 5, 7, 10, 13, 14, 15, 22 };
-            Utils.AssertTrue(Enumerable.SequenceEqual(inOrder, expected));
+            Utils.AssertTrue(inOrder.SequenceEqual(expected));
         }
 
         static bool validateBst(Program.BST tree)

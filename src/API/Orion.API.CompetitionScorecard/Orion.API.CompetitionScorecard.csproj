@@ -29,7 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.csproj" />
     <ProjectReference Include="..\..\Domain\Orion.Domain\Orion.Domain.csproj" />
   </ItemGroup>
 

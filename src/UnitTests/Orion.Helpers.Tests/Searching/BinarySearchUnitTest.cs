@@ -1,5 +1,3 @@
-using Xunit;
-
 namespace BinarySearch.Tests;
 
 public class BinarySearchUnitTest

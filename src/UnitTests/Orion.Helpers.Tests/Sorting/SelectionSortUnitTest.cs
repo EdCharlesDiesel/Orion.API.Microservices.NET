@@ -1,5 +1,3 @@
-using ORION.Core.Sorting;
-
 namespace SelectionSort.Tests
 {
     public class UnitTest1

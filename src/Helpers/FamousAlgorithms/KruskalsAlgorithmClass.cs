@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace ORION.Core.FamousAlgorithms
+﻿namespace ORION.Core.FamousAlgorithms
 {
     /// <summary>
     /// You're given a list of edges representing a weighted,
@@ -65,8 +61,8 @@ namespace ORION.Core.FamousAlgorithms
                 int vertext2Root = find(edge[1], parents);
                 if (vertext1Root != vertext2Root)
                 {
-                    mst[edge[0]].Add(new int[] { edge[1], edge[2] });
-                    mst[edge[1]].Add(new int[] { edge[0], edge[2] });
+                    mst[edge[0]].Add(new[] { edge[1], edge[2] });
+                    mst[edge[1]].Add(new[] { edge[0], edge[2] });
                     Union(vertext1Root, vertext2Root, parents, ranks);
                 }
             }

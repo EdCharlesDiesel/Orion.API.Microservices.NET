@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
+    "net9.0": {
       "coverlet.collector/6.0.0": {
         "type": "package",
         "build": {
@@ -1709,14 +1709,14 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "ORION.Core/1.0.0": {
+      "Orion.Helpers/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
-          "bin/placeholder/ORION.Core.dll": {}
+          "bin/placeholder/Orion.Helpers.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ORION.Core.dll": {}
+          "bin/placeholder/Orion.Helpers.dll": {}
         }
       }
     }
@@ -5508,56 +5508,49 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "ORION.Core/1.0.0": {
+    "Orion.Helpers/1.0.0": {
       "type": "project",
-      "path": "../ORION.Core/ORION.Core.csproj",
-      "msbuildProject": "../ORION.Core/ORION.Core.csproj"
+      "path": "../../Helpers/Orion.Helpers.csproj",
+      "msbuildProject": "../../Helpers/Orion.Helpers.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
+    "net9.0": [
       "Microsoft.NET.Test.Sdk >= 17.8.0",
-      "ORION.Core >= 1.0.0",
+      "Orion.Helpers >= 1.0.0",
       "coverlet.collector >= 6.0.0",
       "xunit >= 2.5.3",
       "xunit.runner.visualstudio >= 2.5.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\ORION.API\\ORION.Core.Tests\\ORION.Core.Tests.csproj",
-      "projectName": "ORION.Core.Tests",
-      "projectPath": "C:\\x\\ORION.API\\ORION.Core.Tests\\ORION.Core.Tests.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\ORION.API\\ORION.Core.Tests\\obj\\",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Helpers.Tests\\Orion.Helpers.Tests.csproj",
+      "projectName": "Orion.Helpers.Tests",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Helpers.Tests\\Orion.Helpers.Tests.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Helpers.Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net9.0"
       ],
       "sources": {
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://contoso.com/packages/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\ORION.API\\ORION.Core\\ORION.Core.csproj": {
-              "projectPath": "C:\\x\\ORION.API\\ORION.Core\\ORION.Core.csproj"
+            "C:\\x\\Orion.Microservices.NET\\src\\Helpers\\Orion.Helpers.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Helpers\\Orion.Helpers.csproj"
             }
           }
         }
@@ -5571,11 +5564,12 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net9.0": {
+        "targetAlias": "net9.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -5610,7 +5604,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

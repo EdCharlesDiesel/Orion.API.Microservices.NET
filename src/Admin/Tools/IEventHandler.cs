@@ -1,4 +1,6 @@
-﻿namespace Orion.Admin.Tools
+﻿using Orion.Domain.Tools;
+
+namespace Orion.Admin.Tools
 {
     public interface IEventHandler
     {

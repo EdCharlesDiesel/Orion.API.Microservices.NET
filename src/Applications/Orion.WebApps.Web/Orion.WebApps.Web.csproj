@@ -28,7 +28,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\API\Orion.API.TradingEconomics\Orion.API.TradingEconomics.csproj" />
-      <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.csproj" />
       <ProjectReference Include="..\..\Domain\Orion.Domain\Orion.Domain.csproj" />
     </ItemGroup>
 

@@ -1,9 +1,9 @@
-﻿
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Models.Account;
 using Orion.DataAccess.Entities;
+using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
 namespace Orion.Admin.Controllers
 {
@@ -30,12 +30,10 @@ namespace Orion.Admin.Controllers
                 {
                     return RedirectToAction("Login");
                 }
-                else
+
+                foreach (IdentityError error in result.Errors)
                 {
-                    foreach (IdentityError error in result.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
+                    ModelState.AddModelError("", error.Description);
                 }
             }
 
@@ -59,7 +57,7 @@ namespace Orion.Admin.Controllers
 
                 if (appUser != null)
                 {
-                    Microsoft.AspNetCore.Identity.SignInResult signInResult = await signInManager.PasswordSignInAsync(appUser.UserName, login.Password, false, false);
+                    SignInResult signInResult = await signInManager.PasswordSignInAsync(appUser.UserName, login.Password, false, false);
 
                     if (signInResult.Succeeded)
                     {

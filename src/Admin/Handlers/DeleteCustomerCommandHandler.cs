@@ -1,15 +1,11 @@
-﻿using ORION.Domain.IRepositories;
-using ORION.Admin.Commands;
-using System.Threading.Tasks;
-using Orion.Admin.Commands;
+﻿using Orion.Admin.Commands;
 using Orion.Admin.Tools;
 using Orion.Domain.IRepositories;
 using Orion.Domain.Tools;
 
-
 namespace Orion.Admin.Handlers
 {
-    DeleteCustomerCommandHandler : ICommandHandler<DeleteCustomerCommand>
+    ICommandHandler<DeleteCustomerCommand>
     public class DeleteCustomerCommandHandler : ICommandHandler<DeleteCustomerCommand>
     {
         ICustomerRepository repo;

@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Orion.Domain.Tools;
 
 namespace Orion.Domain.IRepositories
 {

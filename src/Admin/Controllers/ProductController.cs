@@ -1,11 +1,10 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using System.IO.Compression;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Commands;
-using Orion.Domain.IRepositories;
-using System.IO.Compression;
 using ORION.Admin.Models.Products;
-using ORION.Admin.Queries;
 using Orion.Admin.Tools;
+using Orion.Domain.IRepositories;
 
 namespace Orion.Admin.Controllers
 {
@@ -55,10 +54,10 @@ namespace Orion.Admin.Controllers
                 
                 await command.HandleAsync(new CreateProductCommand(vm));
                 return RedirectToAction(
-                    nameof(ProductController.Index));
+                    nameof(Index));
             }
-            else
-                return View("Edit", vm);
+
+            return View("Edit", vm);
         }
 
         public static Stream DecompressWithBrotli(Stream toDecompress)
@@ -77,10 +76,10 @@ namespace Orion.Admin.Controllers
             [FromServices] IProductRepository repo)
         {
             if (id == 0) return RedirectToAction(
-                nameof(ProductController.Index));
+                nameof(Index));
             var aggregate = await repo.Get(id);
             if (aggregate == null) return RedirectToAction(
-                nameof(ProductController.Index));
+                nameof(Index));
             var vm = new ProductFullEditViewModel(aggregate);
             return View(vm);
         }
@@ -93,10 +92,10 @@ namespace Orion.Admin.Controllers
             {
                 await command.HandleAsync(new UpdateProductCommand(vm));
                 return RedirectToAction(
-                    nameof(ProductController.Index));
+                    nameof(Index));
             }
-            else
-                return View(vm);
+
+            return View(vm);
         }
 
         [HttpGet]
@@ -110,7 +109,7 @@ namespace Orion.Admin.Controllers
                 
             }
             return RedirectToAction(
-                    nameof(ProductController.Index));
+                    nameof(Index));
         }
 
          [HttpPost]

@@ -7,7 +7,7 @@ namespace Orion.Helpers.Tests.Graph
         [Fact]
         public void Test1()
         {
-           Assert.True(SingleCycleCheckClass.HasSingleCycle(new int[] { 2, 3, 1, -4, -4, 2 }));
+           Assert.True(SingleCycleCheckClass.HasSingleCycle(new[] { 2, 3, 1, -4, -4, 2 }));
         }
     }
 }

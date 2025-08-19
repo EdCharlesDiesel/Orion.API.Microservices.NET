@@ -1,49 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "6V7evZyyvuI=",
+  "dgSpecHash": "+n1C3LGE/cU=",
   "success": true,
-  "projectFilePath": "C:\\x\\ORION.API\\ORION.Domain\\ORION.Domain.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Domain\\Orion.Domain\\Orion.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.18\\microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.18\\microsoft.windowsdesktop.app.ref.8.0.18.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.18\\microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\x\\ORION.API\\ORION.Domain\\ORION.Domain.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\x\\ORION.API\\ORION.Domain\\ORION.Domain.csproj",
-      "libraryId": "Microsoft.AspNetCore.Http.Features",
-      "targetGraphs": []
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "message": "ORION.Domain depends on Microsoft.AspNetCore.Http.Features (>= 2.2.0) but Microsoft.AspNetCore.Http.Features 2.2.0 was not found. Microsoft.AspNetCore.Http.Features 2.3.0 was resolved instead.",
-      "projectPath": "C:\\x\\ORION.API\\ORION.Domain\\ORION.Domain.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\x\\ORION.API\\ORION.Domain\\ORION.Domain.csproj",
-      "libraryId": "Microsoft.AspNetCore.Http.Features",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\x\\ORION.API\\ORION.Domain\\ORION.Domain.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\x\\ORION.API\\ORION.Domain\\ORION.Domain.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

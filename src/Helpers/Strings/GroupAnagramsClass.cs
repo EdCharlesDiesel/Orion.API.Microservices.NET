@@ -30,7 +30,7 @@
                     continue;
                 }
                 result.Add(currentAnagramGroup);
-                currentAnagramGroup = new List<string>(){word};
+                currentAnagramGroup = new List<string> {word};
                 currentAnagram = sortedWord;
             }
             result.Add(currentAnagramGroup);

@@ -31,14 +31,13 @@
             {
                 return FindClosestValueInBst(tree.left, target, closest);
             }
-            else if (target > tree.value && tree.right != null)
+
+            if (target > tree.value && tree.right != null)
             {
                 return FindClosestValueInBst(tree.right, target, closest);
             }
-            else
-            {
-                return (int)closest;
-            }
+
+            return (int)closest;
         }
         public class Bst
         {

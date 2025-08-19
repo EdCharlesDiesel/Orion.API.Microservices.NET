@@ -1,6 +1,3 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using ORION.Core.Searching;
-
 namespace OptimalAssemblyLine.Tests
 {
     public class UnitTest1
@@ -8,7 +5,7 @@ namespace OptimalAssemblyLine.Tests
         [Fact(Skip = "Failing unit test")]
         public void Test1()
         {
-            int[] stepDurations = new int[] { 15, 15, 30, 30, 45 };
+            int[] stepDurations = new[] { 15, 15, 30, 30, 45 };
             int numStations = 3;
             int actual = new OptimalAssemblyLineClass().OptimalAssemblyLine(stepDurations, numStations);
             int expected = 60;

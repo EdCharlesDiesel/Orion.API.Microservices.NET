@@ -23,28 +23,23 @@ namespace Orion.Helpers.Searching
             {
                 return middle;
             }
-            else if (leftNum <= potentialMatch)
+
+            if (leftNum <= potentialMatch)
             {
                 if (target < potentialMatch && target >= leftNum)
                 {
                     return ShiftedBinarySearch(array, target, left, middle - 1);
                 }
-                else
-                {
-                    return ShiftedBinarySearch(array, target, middle + 1, right);
-                }
+
+                return ShiftedBinarySearch(array, target, middle + 1, right);
             }
-            else
+
+            if (target > potentialMatch && target <= rightNum)
             {
-                if (target > potentialMatch && target <= rightNum)
-                {
-                    return ShiftedBinarySearch(array, target, middle + 1, right);
-                }
-                else
-                {
-                    return ShiftedBinarySearch(array, target, left, middle - 1);
-                }
+                return ShiftedBinarySearch(array, target, middle + 1, right);
             }
+
+            return ShiftedBinarySearch(array, target, left, middle - 1);
         }
     }
 }

@@ -5,7 +5,7 @@
 /// </summary>
 [Table("Department", Schema = "HumanResources")]
 [Index("Name", Name = "AK_Department_Name", IsUnique = true)]
-public partial class Department
+public class Department
 {
     /// <summary>
     /// Primary key for Department records.

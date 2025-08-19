@@ -682,16 +682,6 @@
           }
         }
       },
-      "Orion.Core.Chat/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Core.Chat.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.Chat.dll": {}
-        }
-      },
       "Orion.Helpers/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1678,11 +1668,6 @@
         "version.txt"
       ]
     },
-    "Orion.Core.Chat/1.0.0": {
-      "type": "project",
-      "path": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj",
-      "msbuildProject": "../../Core/Orion.Core.Chat/Orion.Core.Chat.csproj"
-    },
     "Orion.Helpers/1.0.0": {
       "type": "project",
       "path": "../../Helpers/Orion.Helpers.csproj",
@@ -1698,7 +1683,6 @@
       "Microsoft.AspNetCore.Authentication.Negotiate >= 9.0.7",
       "Microsoft.AspNetCore.OpenApi >= 9.0.7",
       "Microsoft.EntityFrameworkCore >= 9.0.7",
-      "Orion.Core.Chat >= 1.0.0",
       "Orion.Helpers >= 1.0.0"
     ]
   },
@@ -1728,9 +1712,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Chat\\Orion.Core.Chat.csproj"
-            },
             "C:\\x\\Orion.Microservices.NET\\src\\Helpers\\Orion.Helpers.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Helpers\\Orion.Helpers.csproj"
             }

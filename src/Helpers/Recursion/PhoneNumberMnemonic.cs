@@ -27,16 +27,16 @@
     {
         public static Dictionary<char, string[]> DIGIT_LETTERS = new Dictionary<char, string[]>
         {
-            {'0', new string[]{"0"}},
-            {'1', new string[]{"1"}},
-            {'2', new string[]{"a","b","c"}},
-            {'3', new string[]{"d","e","f"}},
-            {'4', new string[]{"g","h","i"}},
-            {'5', new string[]{"j","k","l"}},
-            {'6', new string[]{"m","n","o"}},
-            {'7', new string[]{"p","q","r","s"}},
-            {'8', new string[]{"t","u","v"}},
-            {'9', new string[]{"w","x","y","z"}}
+            {'0', new[]{"0"}},
+            {'1', new[]{"1"}},
+            {'2', new[]{"a","b","c"}},
+            {'3', new[]{"d","e","f"}},
+            {'4', new[]{"g","h","i"}},
+            {'5', new[]{"j","k","l"}},
+            {'6', new[]{"m","n","o"}},
+            {'7', new[]{"p","q","r","s"}},
+            {'8', new[]{"t","u","v"}},
+            {'9', new[]{"w","x","y","z"}}
         }; 
 
         // O(4^n*n) time | O(4^n*n) space - where

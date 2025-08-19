@@ -27,7 +27,7 @@
                     var secondNum = array[j];
                     if (firstNum + secondNum == targetSum)
                     {
-                        return new int[] { firstNum, secondNum };
+                        return new[] { firstNum, secondNum };
                     }
                 }
             }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace Orion.Admin.Models
+﻿namespace Orion.Admin.Models
 {
     public class ClaimViewModel
     {

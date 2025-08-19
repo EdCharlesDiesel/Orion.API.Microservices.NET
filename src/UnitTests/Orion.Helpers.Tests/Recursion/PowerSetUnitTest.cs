@@ -1,6 +1,4 @@
 
-using System.Collections.Generic;
-
 namespace PowerSet.Tests
 {
     public class PowerSetUnitTest

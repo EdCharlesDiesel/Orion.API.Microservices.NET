@@ -52,7 +52,7 @@
 
         private string createHashableKey(int low, int high)
         {
-            return low.ToString() +":" + high.ToString();
+            return low +":" + high;
         }
     }
 }

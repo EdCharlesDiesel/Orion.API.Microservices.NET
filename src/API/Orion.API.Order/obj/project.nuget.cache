@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HNV2xK/5SCI=",
+  "dgSpecHash": "mZu/JWv9rac=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\15.0.1\\automapper.15.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -148,22 +148,13 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 15.0.1 was resolved.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.API.csproj",
-      "targetGraphs": []
     }
   ]
 }

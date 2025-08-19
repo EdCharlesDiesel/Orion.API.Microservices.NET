@@ -33,10 +33,8 @@
                             finalRange[0] = mid;
                             return;
                         }
-                        else
-                        {
-                            right = mid - 1;
-                        }
+
+                        right = mid - 1;
                     }
                     else
                     {
@@ -45,10 +43,8 @@
                             finalRange[1] = mid;
                             return;
                         }
-                        else
-                        {
-                            left = mid + 1;
-                        }
+
+                        left = mid + 1;
                     }
                 }
             }

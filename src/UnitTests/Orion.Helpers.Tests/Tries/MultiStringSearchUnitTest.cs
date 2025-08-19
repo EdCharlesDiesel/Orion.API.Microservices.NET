@@ -8,7 +8,7 @@ namespace Orion.Helpers.Tests.Tries
             bool[] expected = { true, false, true, true, false, true, false };
             List<bool> output = MultiStringSearch.MultistringSearchClass.MultistringSearch(
               "this is a big string",
-              new string[] { "this", "yo", "is", "a", "bigger", "string", "kappa" }
+              new[] { "this", "yo", "is", "a", "bigger", "string", "kappa" }
             );
             Assert.True(compare(output, expected));
         }

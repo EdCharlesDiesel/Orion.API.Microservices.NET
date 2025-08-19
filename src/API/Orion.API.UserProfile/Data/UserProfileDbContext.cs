@@ -1,7 +1,5 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Orion.API.UserProfile.Models;
-
 
 namespace Orion.API.UserProfile.Data
 {

@@ -22,8 +22,4 @@
     </Content>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.csproj" />
-  </ItemGroup>
-
 </Project>

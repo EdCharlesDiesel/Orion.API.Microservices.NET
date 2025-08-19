@@ -44,7 +44,7 @@
         }
         public static string coordTostring(Point coord)
         {
-            return coord.x.ToString() + "-" + coord.y.ToString();
+            return coord.x + "-" + coord.y;
         }
  
     }

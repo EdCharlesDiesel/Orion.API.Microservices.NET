@@ -13,10 +13,8 @@ namespace Orion.Domain.Utility
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+
+            return false;
         }
 
         private IList<ValidationResult> Validate(T model)

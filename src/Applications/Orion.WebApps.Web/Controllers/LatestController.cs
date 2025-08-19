@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Orion.WebApps.Web.Helper;
 
-
 namespace Orion.WebApps.Web.Controllers
 {
     [Route("[controller]")]
