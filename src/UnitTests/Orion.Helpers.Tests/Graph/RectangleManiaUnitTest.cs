@@ -1,6 +1,8 @@
+using Microsoft.VisualBasic.CompilerServices;
+
 namespace Orion.Helpers.Tests.Graph
 {
-    public class UnitTest1
+    public partial class UnitTest1
     {
         [Fact(Skip ="Fix later")]
         public void Test1()

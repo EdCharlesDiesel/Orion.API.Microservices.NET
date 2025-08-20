@@ -1,4 +1,6 @@
-namespace MiddleNode.Tests
+using Orion.Helpers.LinkedList;
+
+namespace Orion.Helpers.Tests.LinkedList
 {
     public class UnitTest1
     {

@@ -27,7 +27,18 @@
                 currentNode = nextNode;
             }
         }
-    
+
+        public class BinaryTree
+        {
+            public BinaryTree left;
+            public BinaryTree right;
+            public BinaryTree parent;
+
+            public BinaryTree(int i)
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 
     public class BinaryTree

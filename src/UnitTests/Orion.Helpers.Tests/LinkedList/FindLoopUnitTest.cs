@@ -1,4 +1,6 @@
-namespace FindLoop.Tests
+using Orion.Helpers.LinkedList;
+
+namespace Orion.Helpers.Tests.LinkedList
 {
     public class UnitTest1
     {
@@ -6,9 +8,9 @@ namespace FindLoop.Tests
         public void Test1()
         {
             TestLinkedList test = new TestLinkedList(0);
-            test.addMany(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
-            test.getNthNode(10).next = test.getNthNode(5);
-            Assert.True(FindLoopClass.FindLoop(test) == test.getNthNode(5));
+            test.AddMany(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            test.GetNthNode(10).next = test.GetNthNode(5);
+            Assert.True(FindLoopClass.FindLoop(test) == test.GetNthNode(5));
         }
     }
 
@@ -16,7 +18,7 @@ namespace FindLoop.Tests
     {
         public TestLinkedList(int value) : base(value) { }
 
-        public void addMany(int[] values)
+        public void AddMany(int[] values)
         {
             FindLoopClass.LinkedList current = this;
             while (current.next != null)
@@ -30,7 +32,7 @@ namespace FindLoop.Tests
             }
         }
 
-        public FindLoopClass.LinkedList getNthNode(int n)
+        public FindLoopClass.LinkedList GetNthNode(int n)
         {
             int counter = 1;
             FindLoopClass.LinkedList current = this;

@@ -1,3 +1,5 @@
+using Orion.Helpers.Binary_Trees;
+
 namespace Orion.Helpers.Tests.Binary_Trees
 {
     public class AllKindsOfNodeDepthsUnitTest
@@ -16,6 +18,17 @@ namespace Orion.Helpers.Tests.Binary_Trees
             root.right.right = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(7);
             var actual = AllKindsOfNodeDepthsClass.AllKindsOfNodeDepths(root);
             Assert.Equal(26, actual);
+        }
+    }
+
+    public abstract class AllKindsOfNodeDepths
+    {
+        public class AllKindsOfNodeDepthsClassBinaryTree : Helpers.Binary_Trees.AllKindsOfNodeDepthsClassBinaryTree
+        {
+            public AllKindsOfNodeDepthsClassBinaryTree(int i) : base()
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }

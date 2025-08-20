@@ -4,16 +4,14 @@ namespace Orion.Helpers.Tests.Binary_Trees
 {
     public partial class UnitTest1
     {
-        public class TestBinaryTree : BranchSumsClass.BinaryTree
+        public class TestBinaryTree(int value) : BranchSumsClass.BinaryTree(value)
         {
-            public TestBinaryTree(int value) : base(value) { }
-
             public TestBinaryTree Insert(List<int> values)
             {
                 return Insert(values, 0);
             }
 
-            public TestBinaryTree Insert(List<int> values, int i)
+            private TestBinaryTree Insert(List<int> values, int i)
             {
                 if (i >= values.Count) return null;
 

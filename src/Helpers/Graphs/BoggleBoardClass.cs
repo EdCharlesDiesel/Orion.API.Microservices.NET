@@ -63,7 +63,11 @@
             }
             return neighbors;
         }
-       
+
+        public static List<string> BoggleBoard(char[,] board, string[] words)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class TrieNode

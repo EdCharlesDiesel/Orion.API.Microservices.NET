@@ -1,4 +1,4 @@
-namespace LRUCache.Tests
+namespace Orion.Helpers.Tests.LinkedList
 {
     public class UnitTest1
     {

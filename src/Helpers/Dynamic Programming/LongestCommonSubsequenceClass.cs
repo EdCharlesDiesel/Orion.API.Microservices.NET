@@ -53,7 +53,7 @@
             }
         }
 
-        public static object LongestCommonSubsequence(string zxvvyzw, string xkykzpw)
+        public static List<char> LongestCommonSubsequence(string zxvvyzw, string xkykzpw)
         {
             throw new NotImplementedException();
         }

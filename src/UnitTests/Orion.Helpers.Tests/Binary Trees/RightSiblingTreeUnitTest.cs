@@ -1,6 +1,6 @@
 namespace Orion.Helpers.Tests.Binary_Trees
 {
-    public class UnitTest1
+    public partial class UnitTest1
     {
         [Fact(Skip = "Fix later")   ]
         public void Test1()
