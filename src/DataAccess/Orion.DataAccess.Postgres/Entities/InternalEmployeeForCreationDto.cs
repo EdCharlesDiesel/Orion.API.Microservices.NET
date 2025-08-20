@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class CalendarForCreationDto
     {

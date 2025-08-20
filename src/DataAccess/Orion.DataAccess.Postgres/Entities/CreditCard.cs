@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using Orion.DataAccess.Postgres.Entities;
+﻿using Orion.Domain.Tools;
 
-
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class CreditCard
+    public class CreditCard:Entity<Guid>
     {
         public int CreditCardId { get; set; }
         public string CardType { get; set; }

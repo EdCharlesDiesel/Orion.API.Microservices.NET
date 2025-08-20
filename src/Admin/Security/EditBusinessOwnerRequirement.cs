@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 
-namespace ORION.Admin.Security
+namespace Orion.Admin.Security
 {
     public class EditBusinessOwnerRequirement : IAuthorizationRequirement
     {

@@ -1,10 +1,8 @@
-using System;
-using System.Collections.Generic;
-using Orion.DataAccess.Postgres.Entities;
+using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities;
+namespace Orion.DataAccess.Postgres.Entities;
 
-public class EMU 
+public class EMU :Entity<Guid>
 {
     public List<Country> MemberStates { get; set; } = new List<Country>();
     public EuropeanCentralBank ECB { get; set; } = new EuropeanCentralBank();

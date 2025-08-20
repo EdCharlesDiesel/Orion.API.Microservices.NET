@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 
-
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class SalesPerson
     {
+        [Key]
         public int SalesPersonId { get; set; }
         public int? TerritoryId { get; set; }
         public decimal? SalesQuota { get; set; }
@@ -22,5 +21,6 @@ namespace Orion.DataAccess.Entities
         public ICollection<SalesPersonQuotaHistory> SalesPersonQuotaHistory { get; set; } = new HashSet<SalesPersonQuotaHistory>();
         public ICollection<SalesTerritoryHistory> SalesTerritoryHistory { get; set; } = new HashSet<SalesTerritoryHistory>();
         public ICollection<Store> Store { get; set; } = new HashSet<Store>();
+        public int? BusinessEntityId { get; set; }
     }
 }

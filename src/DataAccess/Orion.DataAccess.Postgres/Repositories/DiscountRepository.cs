@@ -1,4 +1,5 @@
-﻿using Orion.Domain.IRepositories;
+﻿using Orion.DataAccess.Postgres.Entities;
+using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Postgres.Repositories
 {
@@ -93,12 +94,27 @@ namespace Orion.DataAccess.Postgres.Repositories
             throw new NotImplementedException();
         }
 
+        async Task IRepository.GetAllAsync()
+        {
+            await GetAllAsync();
+        }
+
         public async Task GetByIdAsync(Guid id)
         {
             throw new NotImplementedException();
         }
 
         public async Task AddAsync(Coupon entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task AddAsync(Coupon entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task UpdateAsync(Coupon entity)
         {
             throw new NotImplementedException();
         }
@@ -121,6 +137,21 @@ namespace Orion.DataAccess.Postgres.Repositories
         public async Task<bool> CreateDiscount(Coupon coupon)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<bool> CreateDiscount(Coupon coupon)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<bool> UpdateDiscount(Coupon coupon)
+        {
+            throw new NotImplementedException();
+        }
+
+        async Task IDiscountRepository.GetDiscount(string productName)
+        {
+            await GetDiscount(productName);
         }
 
         public async Task<bool> UpdateDiscount(Coupon coupon)

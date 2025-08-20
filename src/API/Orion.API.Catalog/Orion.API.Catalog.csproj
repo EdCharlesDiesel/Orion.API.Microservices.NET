@@ -44,6 +44,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.Postgres\Orion.DataAccess.Postgres.csproj" />
     <ProjectReference Include="..\..\Domain\Orion.Domain\Orion.Domain.csproj" />
   </ItemGroup>
 

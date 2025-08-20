@@ -9,18 +9,18 @@
             {
                 return 0;
             }
-            int[] evenProfits = new int[prices.Length];
-            int[] oddProfits = new int[prices.Length];
-            for (int i = 0; i < prices.Length; i++)
+            var evenProfits = new int[prices.Length];
+            var oddProfits = new int[prices.Length];
+            for (var i = 0; i < prices.Length; i++)
             {
                 evenProfits[i] = 0;
                 oddProfits[i] = 0;
             }
             for (int t = 1; t < k + 1; t++)
             {
-                int maxThusFar = Int32.MinValue;
-                int[] currentProfits = new int[prices.Length];
-                int[] previousProfits = new int[prices.Length];
+                var maxThusFar = int.MinValue;
+                int[] currentProfits;
+                int[] previousProfits;
                 if (t % 2 == 1)
                 {
                     currentProfits = oddProfits;
@@ -31,7 +31,7 @@
                     currentProfits = evenProfits;
                     previousProfits = oddProfits;
                 }
-                for (int d = 1; d < prices.Length; d++)
+                for (var d = 1; d < prices.Length; d++)
                 {
                     maxThusFar =
                     Math.Max(maxThusFar,

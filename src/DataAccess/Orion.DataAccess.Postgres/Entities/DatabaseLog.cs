@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class DatabaseLog
+    public class DatabaseLog:Entity<Guid>
     {
         public int DatabaseLogId { get; set; }
         public DateTime PostTime { get; set; }

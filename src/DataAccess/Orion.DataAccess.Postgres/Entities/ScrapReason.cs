@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using Orion.DataAccess.Postgres.Entities;
+﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class ScrapReason
+    public class ScrapReason: Entity<Guid>
     {
         public short ScrapReasonId { get; set; }
         public string Name { get; set; }

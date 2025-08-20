@@ -46,10 +46,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Orion.Core.Basket\Orion.Core.Basket.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="..\..\..\..\.dockerignore">
       <Link>.dockerignore</Link>
     </Content>

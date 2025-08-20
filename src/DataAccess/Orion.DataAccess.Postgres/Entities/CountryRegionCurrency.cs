@@ -1,7 +1,8 @@
-﻿using System;
-namespace Orion.DataAccess.Entities
+﻿using Orion.Domain.Tools;
+
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class CountryRegionCurrency
+    public class CountryRegionCurrency:Entity<Guid>
     {
         public string CountryRegionCode { get; set; }
         public string CurrencyCode { get; set; }

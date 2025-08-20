@@ -23,7 +23,7 @@ namespace Orion.API.Basket.Controllers
         /// Create a new basket.
         /// </summary>
         [HttpPost]
-        public async Task<IActionResult> CreateBasket([FromBody] DataAccess.Entities.Basket basket)
+        public async Task<IActionResult> CreateBasket([FromBody] Basket basket)
         {
             // var dto = mapper.Map<BasketDto>(basket);
             var result = _service.CreateBasketAll(basket);

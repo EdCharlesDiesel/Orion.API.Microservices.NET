@@ -1,5 +1,5 @@
 using Orion.API.Discount.Extensions;
-using Orion.DataAccess.Repositories;
+using Orion.DataAccess.Postgres.Repositories;
 
 namespace Orion.API.Discount
 {

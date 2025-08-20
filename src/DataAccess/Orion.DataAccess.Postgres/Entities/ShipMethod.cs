@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class ShipMethod
     {
+        [Key]
         public int ShipMethodId { get; set; }
         public string Name { get; set; }
         public decimal ShipBase { get; set; }

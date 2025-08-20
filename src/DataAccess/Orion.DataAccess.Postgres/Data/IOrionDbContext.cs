@@ -1,4 +1,4 @@
-﻿using Orion.DataAccess.Entities;
+﻿using Microsoft.EntityFrameworkCore;
 using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.DataAccess.Postgres.Data

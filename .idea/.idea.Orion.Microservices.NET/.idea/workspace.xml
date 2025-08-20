@@ -16,6 +16,8 @@
     <projectFile>Orion.Services/Orion.Services.csproj</projectFile>
     <projectFile profileName="https">Orion.Web/Orion.Web.csproj</projectFile>
     <projectFile profileName="http">WebApplication1/WebApplication1.csproj</projectFile>
+    <projectFile profileName="http">_Main_/_Main_.csproj</projectFile>
+    <projectFile profileName="https">_Main_/_Main_.csproj</projectFile>
     <projectFile kind="DockerCompose">docker-compose.dcproj</projectFile>
     <projectFile kind="Docker">src/API/Orion.API.Basket/Orion.API.Basket.csproj</projectFile>
     <projectFile profileName="Orion.API.Basket">src/API/Orion.API.Basket/Orion.API.Basket.csproj</projectFile>
@@ -112,46 +114,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Admin/obj/Debug/net9.0/ORION.Admin.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/obj/Debug/net9.0/ORION.Admin.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin/obj/Debug/net9.0/ORION.Admin.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/obj/Debug/net9.0/ORION.Admin.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Orion.DataAccess.Postgres/obj/Debug/net9.0/Orion.DataAccess.Postgres.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Orion.DataAccess.Postgres/obj/Debug/net9.0/Orion.DataAccess.Postgres.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Orion.DataAccess.Postgres/obj/Debug/net9.0/Orion.DataAccess.Postgres.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Orion.DataAccess.Postgres/obj/Debug/net9.0/Orion.DataAccess.Postgres.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Orion.Domain/obj/Debug/net8.0/ORION.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Orion.Domain/obj/Debug/net8.0/ORION.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Orion.Domain/obj/Debug/net8.0/ORION.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Orion.Domain/obj/Debug/net8.0/ORION.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/obj/Debug/net9.0/Orion.Helpers.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/obj/Debug/net9.0/Orion.Helpers.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/obj/Debug/net9.0/Orion.Helpers.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/obj/Debug/net9.0/Orion.Helpers.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/FourNumberSumUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/FourNumberSumUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SortedSquaredArrayUnitTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/Arrays/SortedSquaredArrayUnitTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/Debug/net9.0/Orion.Helpers.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/Debug/net9.0/Orion.Helpers.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/Debug/net9.0/Orion.Helpers.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Helpers.Tests/obj/Debug/net9.0/Orion.Helpers.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-    </list>
+    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -215,7 +178,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35d6e78970da402f83e2e6d9a1f690921de910/f5/57eda8d1/DefaultControllerPropertyActivator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/363c1765261146f1a68840a2d3ce7e39291438/49/ec75ab29/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/459bbf9fdb12446c978a3113a173b6d335928/55/d7e61a9e/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7fb9fd23948c42bc845b4910017fd35ebdc0/49/8fa93072/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8af41436563a490388760e5ba9810f5f4c200/eb/a2295655/ReturnsExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b95edcc1c50e44ebbf7efbbca83c493ee8e928/fe/731e74a0/IEquatable`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d1e0b313578742df9fa24022a890f31b23908/8d/ca2874b6/ServiceCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfd1ea552bf4465d9ea069108dd8571226ac20/d7/14709e5f/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eb83c0d558c84b998f640ddee4d6cfb01b918/b2/7548c4f5/WebApplicationBuilder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -233,7 +198,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c794baab3518d05f8546334d672798d62c10be97c2de99a62b39b885a637/TaskContinuation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f16564c8c4b61e6ea398fe412680c6b795b266584ccf6a362aed712dc4d2b387/WebApplication.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Api/Orion.API.Basket/Controllers/BasketController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/DataAccess/Orion.DataAccess.Progres/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -254,82 +218,82 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Orion.API.Basket.executor": "Debug",
-    ".NET Launch Settings Profile.Orion.API.Catalog: .Catalog.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.Chat: http.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.CompetitionScorecard: CompetitionScorecard.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.Discount: Discount.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.Order.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.TradingEconomics.API: TradingEconomics.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.API.UserProfile.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Blazor.Web: http.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Basket.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Catalog.API: .Catalog.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Catalog.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Discount.API: Discount.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.Order.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: Docker.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: IIS Express.executor": "Debug",
-    ".NET Launch Settings Profile.Orion.Services.TradingEcomomics.API: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.TradingEconomics.API: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.TradingEconomics.API: TradingEconomics.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.UserProfile.API: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Services.UserProfile.API: UserProfile.API.executor": "Run",
-    ".NET Launch Settings Profile.Orion.Web: http (1).executor": "Run",
-    ".NET Launch Settings Profile.Orion.Web: http.executor": "Run",
-    ".NET Launch Settings Profile.Orion.WebApps.HealthCheck.executor": "Run",
-    ".NET Launch Settings Profile.Orion.WebApps.HealthCheckUI: http.executor": "Run",
-    ".NET Launch Settings Profile.Orion.WebApps.Web: http (1).executor": "Run",
-    ".NET Launch Settings Profile.Orion.WebApps.Web: http.executor": "Debug",
-    ".NET Launch Settings Profile.Orion.WebApps.WebASP: AspnetRunBasics.executor": "Run",
-    ".NET Launch Settings Profile.Users: http.executor": "Debug",
-    ".NET Project.Services\\Catalog\\Orion.Services.Catalog.API.executor": "Run",
-    ".NET Project.WebApps\\Orion.Blazor.Web.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Docker.AspnetRunBasics/Dockerfile.executor": "Run",
-    "Docker.Catalog.API/Dockerfile.executor": "Run",
-    "Docker.Orion.Blazor.Web/Dockerfile.executor": "Run",
-    "Docker.Orion.Web/Dockerfile (1).executor": "Run",
-    "Docker.Orion.WebApps.HealthCheck/Dockerfile.executor": "Run",
-    "Docker.Orion.WebApps.Web/Dockerfile.executor": "Run",
-    "Docker.StockAnalyzer.API/Dockerfile.executor": "Run",
-    "Docker.Users/Dockerfile.executor": "Debug",
-    "Docker.docker-compose.override.yml: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.external.paymentgateway: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.ocelotapigw: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.services.basket.api: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.services.competitionscorecard.api: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.services.stockanalyzer.api-1: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.shopping.aggregator: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.webapps.healthcheck: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.webapps.healthcheckui: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.orion.webapps.web: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "HTTP Request.Users | #1.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Publish to IIS.Publish Orion.WebApps.WebASP to IIS.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Feature/DEV-05-Data-Access",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Orion.API.Basket.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.Catalog: .Catalog.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.Chat: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.CompetitionScorecard: CompetitionScorecard.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.Discount: Discount.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.Order.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.TradingEconomics.API: TradingEconomics.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.API.UserProfile.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Blazor.Web: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Basket.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Catalog.API: .Catalog.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Catalog.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Discount.API: Discount.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Order.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: Docker.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: IIS Express.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.TradingEcomomics.API: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.TradingEconomics.API: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.TradingEconomics.API: TradingEconomics.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.UserProfile.API: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.UserProfile.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Web: http (1).executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Web: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.HealthCheck.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.HealthCheckUI: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.Web: http (1).executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.Web: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.Orion.WebApps.WebASP: AspnetRunBasics.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Users: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Services\\Catalog\\Orion.Services.Catalog.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.WebApps\\Orion.Blazor.Web.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.AspnetRunBasics/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Catalog.API/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Orion.Blazor.Web/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Orion.Web/Dockerfile (1).executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Orion.WebApps.HealthCheck/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Orion.WebApps.Web/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.StockAnalyzer.API/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Users/Dockerfile.executor&quot;: &quot;Debug&quot;,
+    &quot;Docker.docker-compose.override.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.external.paymentgateway: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.ocelotapigw: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.services.basket.api: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.services.competitionscorecard.api: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.services.stockanalyzer.api-1: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.shopping.aggregator: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.webapps.healthcheck: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.webapps.healthcheckui: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.webapps.web: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Users | #1.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Publish to IIS.Publish Orion.WebApps.WebASP to IIS.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#20 on Feature/DEV-05-Data-Access&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="Feature/DEV-02-StockAnalyzer" />
@@ -1870,6 +1834,36 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="_Main_: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/_Main_/_Main_.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="_Main_: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/_Main_/_Main_.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="MauiApp1" type="UwpProject" factoryName="UWP">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/MauiApp1/MauiApp1.csproj" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -2676,6 +2670,27 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="_Main_/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="_main__main_" />
+          <option name="containerName" value="_main__main_" />
+          <option name="contextFolderPath" value="C:\x\Orion.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="_Main_/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -2784,6 +2799,8 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile._Main_: http" />
+      <item itemvalue=".NET Launch Settings Profile._Main_: https" />
       <item itemvalue=".NET Launch Settings Profile.Orion.DataAccess.Postgres: http" />
       <item itemvalue=".NET Launch Settings Profile.Orion.DataAccess.Progres: http" />
       <item itemvalue=".NET Launch Settings Profile.WebApplication1: http" />
@@ -2859,6 +2876,7 @@
       <item itemvalue=".NET Project.Orion.Services.Discount.API" />
       <item itemvalue=".NET Project.Orion.Services.Chat" />
       <item itemvalue=".NET Project.Orion.Web" />
+      <item itemvalue="Docker._Main_/Dockerfile" />
       <item itemvalue="Docker.Orion.DataAccess.Postgres/Dockerfile" />
       <item itemvalue="Docker.Orion.DataAccess.Progres/Dockerfile (1)" />
       <item itemvalue="Docker.Orion.Access.Postgres/Dockerfile" />
@@ -2984,7 +3002,9 @@
       <workItem from="1755637728556" duration="163000" />
       <workItem from="1755637926717" duration="11000" />
       <workItem from="1755637984310" duration="585000" />
-      <workItem from="1755705760919" duration="355000" />
+      <workItem from="1755705760919" duration="5849000" />
+      <workItem from="1755713107139" duration="997000" />
+      <workItem from="1755761700526" duration="8096000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Still,&#10;Working on fixing the Dockerfile">
       <option name="closed" value="true" />
@@ -3209,13 +3229,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/Controllers/CalendarController.cs</url>
-          <line>25</line>
+          <line>26</line>
           <properties documentPath="C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\Controllers\CalendarController.cs" containingFunctionPresentation="Method 'Index'">
             <startOffsets>
-              <option value="690" />
+              <option value="732" />
             </startOffsets>
             <endOffsets>
-              <option value="783" />
+              <option value="825" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="39" />
@@ -3244,6 +3264,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Helpers/Graphs/MaxProfitWithKTransactionsClass2.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\x\Orion.Microservices.NET\src\Helpers\Graphs\MaxProfitWithKTransactionsClass2.cs" containingFunctionPresentation="Method 'MaxProfitWithKTransactions'">
+            <startOffsets>
+              <option value="717" />
+            </startOffsets>
+            <endOffsets>
+              <option value="739" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Helpers/Graphs/YoungestCommonAncestorClass.cs</url>
+          <line>50</line>
+          <properties documentPath="C:\x\Orion.Microservices.NET\src\Helpers\Graphs\YoungestCommonAncestorClass.cs" containingFunctionPresentation="Method 'BacktrackAncestralTree'">
+            <startOffsets>
+              <option value="1715" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1716" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/UnitTests/Orion.Helpers.UnitTests/Arrays/SortedSquaredArrayUnitTest.cs</url>
+          <line>14</line>
+          <properties documentPath="C:\x\Orion.Microservices.NET\src\UnitTests\Orion.Helpers.UnitTests\Arrays\SortedSquaredArrayUnitTest.cs" containingFunctionPresentation="Method 'Test1'">
+            <startOffsets>
+              <option value="447" />
+            </startOffsets>
+            <endOffsets>
+              <option value="485" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

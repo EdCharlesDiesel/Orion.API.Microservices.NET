@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class Shift
     {
+        [Key]
         public byte ShiftId { get; set; }
         public string Name { get; set; }
         public DateTime StartTime { get; set; }

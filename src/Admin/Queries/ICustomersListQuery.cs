@@ -1,7 +1,7 @@
 ﻿using Orion.Admin.Models.Customers;
 using Orion.Admin.Tools;
 
-namespace ORION.Admin.Queries
+namespace Orion.Admin.Queries
 {
     public interface ICustomersListQuery: IQuery
     {

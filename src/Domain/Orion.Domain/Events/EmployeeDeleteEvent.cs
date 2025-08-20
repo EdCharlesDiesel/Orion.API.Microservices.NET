@@ -1,6 +1,6 @@
 using Orion.Domain.Tools;
 
-namespace Orion.Admin.Handlers
+namespace Orion.Domain.Events
 {
     public class EmployeeDeleteEvent: IEventNotification
     {

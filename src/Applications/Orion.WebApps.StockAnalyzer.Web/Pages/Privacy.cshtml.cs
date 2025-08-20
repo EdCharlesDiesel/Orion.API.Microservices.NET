@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Orion.StockAnalyzer.Web.Pages
+namespace Orion.WebApps.StockAnalyzer.Web.Pages
 {
     public class PrivacyModel : PageModel
     {

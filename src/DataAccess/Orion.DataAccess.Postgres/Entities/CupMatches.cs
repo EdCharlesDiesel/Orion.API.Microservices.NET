@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class CupMatches
+    public class CupMatches:Entity<Guid>
     {
 
         public string PlayerOne { get; set; }

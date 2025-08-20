@@ -1,6 +1,6 @@
 ﻿namespace Orion.Helpers.Graphs
 {
-    public class DepthFirstSearchClass
+    public abstract class DepthFirstSearchClass
     {
         public class Node
         {

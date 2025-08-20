@@ -1,7 +1,6 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
 using Orion.API.Catalog.Mappings;
-using Orion.DataAccess.Repositories;
 using Orion.Domain.IRepositories;
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
@@ -18,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Register application services
 
-builder.Services.AddScoped<ICatalogServices,CatalogRepository>();
+// builder.Services.AddScoped<ICatalogServices,CatalogRepository>();
 builder.Services.AddAutoMapper(typeof(CatalogProfile));
 
 // ✅ Add HTTP client support if needed

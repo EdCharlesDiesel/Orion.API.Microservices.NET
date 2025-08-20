@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using Orion.DataAccess.Postgres.Entities;
 using Orion.Domain.IRepositories;
 using Orion.WebApps.Web.Helper;
 

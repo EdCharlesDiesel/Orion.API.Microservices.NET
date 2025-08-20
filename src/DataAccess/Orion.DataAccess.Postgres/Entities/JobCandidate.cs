@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Orion.DataAccess.Entities
+﻿namespace Orion.DataAccess.Postgres.Entities
 {
     public class JobCandidate
     {

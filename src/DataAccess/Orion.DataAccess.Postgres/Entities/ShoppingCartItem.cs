@@ -1,10 +1,10 @@
-﻿using System;
-using Orion.DataAccess.Postgres.Entities;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class ShoppingCartItem
     {
+        [Key]
         public int ShoppingCartItemId { get; set; }
         public string ShoppingCartId { get; set; }
         public int Quantity { get; set; }

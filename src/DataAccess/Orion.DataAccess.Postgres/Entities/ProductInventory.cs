@@ -1,9 +1,8 @@
-﻿using System;
-using Orion.DataAccess.Postgres.Entities;
+﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class ProductInventory
+    public class ProductInventory:Entity<Guid>
     {
         public int ProductId { get; set; }
         public short LocationId { get; set; }

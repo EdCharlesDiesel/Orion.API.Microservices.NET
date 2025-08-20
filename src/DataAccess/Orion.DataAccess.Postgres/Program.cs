@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
+using Orion.DataAccess.Postgres;
 using Orion.DataAccess.Postgres.Data;
 
 var builder = WebApplication.CreateSlimBuilder(args);
@@ -16,9 +17,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 // register DbContext with PostgreSQL
 builder.Services.AddDbContext<OrionDbContext>(options =>
-    options.UseNpgsql(connectionString));
-
-
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 app.MapGet("/", () => "Postgres is connected!");
 
@@ -40,9 +39,12 @@ todosApi.MapGet("/{id}", (int id) =>
 
 app.Run();
 
-public record Todo(int Id, string? Title, DateOnly? DueBy = null, bool IsComplete = false);
-
-[JsonSerializable(typeof(Todo[]))]
-internal partial class AppJsonSerializerContext : JsonSerializerContext
+namespace Orion.DataAccess.Postgres
 {
+    public record Todo(int Id, string? Title, DateOnly? DueBy = null, bool IsComplete = false);
+
+    [JsonSerializable(typeof(Todo[]))]
+    internal partial class AppJsonSerializerContext : JsonSerializerContext
+    {
+    }
 }

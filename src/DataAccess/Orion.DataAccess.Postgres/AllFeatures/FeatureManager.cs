@@ -1,4 +1,4 @@
-﻿using Orion.DataAccess.Entities;
+﻿using Orion.DataAccess.Postgres.Entities;
 using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Postgres.AllFeatures

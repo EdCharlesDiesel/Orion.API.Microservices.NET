@@ -1,6 +1,4 @@
-using Orion.Admin.Models.Orders;
-
-namespace ORION.Admin.Models.Orders
+namespace Orion.Admin.Models.Orders
 {
     public class OrdersListViewModel
     {

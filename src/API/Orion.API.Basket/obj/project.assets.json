@@ -2178,16 +2178,6 @@
             "related": ".xml"
           }
         }
-      },
-      "Orion.Core.Basket/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Orion.Core.Basket.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.Core.Basket.dll": {}
-        }
       }
     }
   },
@@ -6108,11 +6098,6 @@
         "yamldotnet.15.1.4.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
-    },
-    "Orion.Core.Basket/1.0.0": {
-      "type": "project",
-      "path": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj",
-      "msbuildProject": "../../Core/Orion.Core.Basket/Orion.Core.Basket.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6129,7 +6114,6 @@
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
-      "Orion.Core.Basket >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -6158,11 +6142,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.Basket\\Orion.Core.Basket.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -1,8 +1,8 @@
-using System;
+using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities;
+namespace Orion.DataAccess.Postgres.Entities;
 
-public class Forecast
+public class Forecast:Entity<Guid>
 {
     public string Country { get; set; }                // “Mexico”
     public string Category { get; set; }               // “Auto Exports”

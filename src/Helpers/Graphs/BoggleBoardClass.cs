@@ -1,6 +1,6 @@
 ﻿namespace Orion.Helpers.Graphs
 {
-    public class BoggleBoardClass
+    public abstract class BoggleBoardClass
     {
         public static void explore(int i, int j, char[,] board, TrieNode trieNode, bool[,] visited,HashSet<string> finalWords)
         {

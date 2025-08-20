@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Orion.DataAccess.Postgres.Entities;
 using Orion.Domain.Aggregates;
 using Orion.Domain.DTOs;
 using Orion.Domain.Enums;
 using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class Shipper: Entity<int>, IShipper
     {        

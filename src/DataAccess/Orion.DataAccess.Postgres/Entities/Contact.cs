@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using Orion.DataAccess.Postgres.Entities;
+﻿using Orion.Domain.Tools;
 
-
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class Contact
+    public class Contact:Entity<Guid>
     {
         public int ContactId { get; set; }
         public bool NameStyle { get; set; }

@@ -1,4 +1,4 @@
-namespace ORION.Admin.Models.Products
+namespace Orion.Admin.Models.Products
 {
     public class ProductInfosViewModel
     {

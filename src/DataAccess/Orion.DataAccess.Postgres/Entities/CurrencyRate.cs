@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class CurrencyRate
+    public class CurrencyRate:Entity<Guid>
     {
         public int CurrencyRateId { get; set; }
         public DateTime CurrencyRateDate { get; set; }

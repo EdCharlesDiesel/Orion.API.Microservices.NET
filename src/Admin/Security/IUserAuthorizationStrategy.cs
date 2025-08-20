@@ -1,4 +1,4 @@
-namespace ORION.Admin.Security
+namespace Orion.Admin.Security
 {
     public interface IUserAuthorizationStrategy
     {

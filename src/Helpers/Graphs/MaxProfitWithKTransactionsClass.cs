@@ -1,6 +1,8 @@
-﻿namespace Orion.Helpers.Graphs
+﻿using static System.Int32;
+
+namespace Orion.Helpers.Graphs
 {
-    public class MaxProfitWithKTransactionsClass
+    public abstract class MaxProfitWithKTransactionsClass
     {
         // O(nk) time | O(nk) space
         public static int MaxProfitWithKTransactions(int[] prices, int k)
@@ -9,11 +11,11 @@
             {
                 return 0;
             }
-            int[,] profits = new int[k + 1, prices.Length];
-            for (int t = 1; t < k + 1; t++)
+            var profits = new int[k + 1, prices.Length];
+            for (var t = 1; t < k + 1; t++)
             {
-                int maxThusFar = Int32.MinValue;
-                for (int d = 1; d < prices.Length; d++)
+                var maxThusFar = MinValue;
+                for (var d = 1; d < prices.Length; d++)
                 {
                     maxThusFar =
                     Math.Max(maxThusFar, profits[t - 1, d - 1] - prices[d - 1]);

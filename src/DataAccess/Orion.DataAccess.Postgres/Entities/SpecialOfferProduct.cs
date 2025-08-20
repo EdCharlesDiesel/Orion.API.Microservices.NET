@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using Orion.DataAccess.Postgres.Entities;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class SpecialOfferProduct
     {
+        [Key]
         public int SpecialOfferId { get; set; }
         public int ProductId { get; set; }
         public Guid Rowguid { get; set; }

@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using Orion.DataAccess.Postgres.Entities;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class StateProvince
     {
+        [Key]
         public int StateProvinceId { get; set; }
         public string StateProvinceCode { get; set; }
         public string CountryRegionCode { get; set; }

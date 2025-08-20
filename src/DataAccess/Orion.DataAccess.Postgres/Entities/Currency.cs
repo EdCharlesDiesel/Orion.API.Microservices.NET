@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class Currency
+    public class Currency:Entity<Guid>
     {
         public string CurrencyCode { get; set; }
         public string Name { get; set; }

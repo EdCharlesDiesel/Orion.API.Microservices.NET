@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using Orion.DataAccess.Postgres.Entities;
+﻿using System.ComponentModel.DataAnnotations;
 
-
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class PurchaseOrderHeader
     {
+        [Key]
         public int PurchaseOrderId { get; set; }
         public byte RevisionNumber { get; set; }
         public byte Status { get; set; }

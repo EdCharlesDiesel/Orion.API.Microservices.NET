@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Orion.Services.TradingEcomomics.API.ActionFilters
+namespace Orion.API.TradingEconomics.ActionFilters
 {
     public class CheckClientKeyHeader : ActionFilterAttribute
     {

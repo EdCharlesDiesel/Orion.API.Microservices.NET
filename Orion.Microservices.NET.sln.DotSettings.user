@@ -11,8 +11,10 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AExecutionContext_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F53b0d531c06faf86bf2ae111a9a2dbce4c52a9153feb9966ade60289c71bf52_003FExecutionContext_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AHealthCheckService_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F233627ef8932fd7b1a50ce57a57fd772f05ca4b7d23ba73165ed9964a4ea8f_003FHealthCheckService_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AHttpClient_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fc439425da351c75ac7d966a1cc8324b51a9c471865af79d2f2f3fcb65e392_003FHttpClient_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AIEquatable_00601_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fb95edcc1c50e44ebbf7efbbca83c493ee8e928_003Ffe_003F731e74a0_003FIEquatable_00601_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AIValidatableObject_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F2ead080904394d4a8c858cfdb4227e937d10_003F56_003Fd1e8c02d_003FIValidatableObject_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AJsonSerializer_002ERead_002EString_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F27c4858128168eda568c1334d70d5241efb9461e2a3209258a04deee5d9c367_003FJsonSerializer_002ERead_002EString_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AProgram_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F7fb9fd23948c42bc845b4910017fd35ebdc0_003F49_003F8fa93072_003FProgram_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AReturnsExtensions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F8af41436563a490388760e5ba9810f5f4c200_003Feb_003Fa2295655_003FReturnsExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AServiceCollection_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fd1e0b313578742df9fa24022a890f31b23908_003F8d_003Fca2874b6_003FServiceCollection_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AServiceCollection_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FUsers_003FPC_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F595e4f2361fd31cb66c7e9303f46cf8f2fe77d96eea9d0e42c17cae783aa74_003FServiceCollection_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
@@ -27,6 +29,7 @@
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:Boolean x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/ShowAdvancedOptions/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=24D3F7FC_002D66FC_002D4317_002D83DB_002DFDBAD0A5B2AB/@EntryIndexedValue">529CD237-D27B-4134-861C-9AF6F29C692F</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=291B1B14_002D0A03_002D4FF7_002DA8B6_002D2E7575F4AC07/@EntryIndexedValue">Orion.Domain.UnitTests</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=3E22D332_002DDA55_002D48A9_002DBB5E_002DDF4745A68E6A/@EntryIndexedValue">Orion.API.CompetitionScorecard.Tests</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=61EE6B6B_002D3A72_002D4D9F_002D8756_002D228AB8C5D64F/@EntryIndexedValue">Orion.Services.Chat.API.Tests</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=814B99C9_002D7C60_002D4451_002D914D_002DAE3CD918E278/@EntryIndexedValue">4BBC93EE-9774-4FCA-8277-3E97E18C3ACC</s:String>
@@ -52,6 +55,11 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2a83acff_002D54be_002D4079_002D8b33_002Dcbaeaad16448/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllEvents_ReturnsOk_WhenDeserializationSuccessful" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4e9f6004_002Db1cc_002D4572_002Dbd03_002D17b65818ce01/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RightSmallerThanUnitTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Binary_Search_Tree.RightSmallerThanUnitTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=506be4a7_002D3741_002D42c3_002D819d_002De91bc8e220c2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;UnitTests&amp;gt;\&amp;lt;Orion.Services.Catalog.API.Tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
@@ -84,6 +92,11 @@
     &lt;TestId&gt;xUnit::69B62104-8836-433A-88FB-498B39A35694::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.CalendarControllerTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=be749d6a_002D69a6_002D4b30_002D88a6_002D712c1179ed1d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="IsMonotonicClassTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.IsMonotonicClassTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c104ed0d_002D0c1c_002D4e68_002Da0a5_002D7faf4b175417/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalanderControllerUnitTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::69B62104-8836-433A-88FB-498B39A35694::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.CalanderControllerUnitTests&lt;/TestId&gt;&#xD;
@@ -97,6 +110,11 @@
     &lt;/TestAncestor&gt;&#xD;
     &lt;Project Location="C:\x\Orion.API.Microservices.NET\src\UnitTests\StockAnalyzer.API.Tests" Presentation="&amp;lt;UnitTests&amp;gt;\&amp;lt;Orion.Services.StockAnalyzer.API.Tests&amp;gt;" /&gt;&#xD;
   &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e31fea4b_002D2696_002D482d_002Da5f1_002D1c8bd472f607/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RightSmallerThanUnitTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Binary_Search_Tree.RightSmallerThanUnitTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Admin_002FOrion_002EAdmin_002FTestData_002FTestDataResource/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>

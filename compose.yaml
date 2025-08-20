@@ -17,3 +17,9 @@
       context: .
       dockerfile: WebApplication1/Dockerfile
 
+  _main__main_:
+    image: _main__main_
+    build:
+      context: .
+      dockerfile: _Main_/Dockerfile
+

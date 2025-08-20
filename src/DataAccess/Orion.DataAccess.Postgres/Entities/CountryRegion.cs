@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class CountryRegion
+    public class CountryRegion:Entity<Guid>
     {
         public string CountryRegionCode { get; set; }
         public string Name { get; set; }

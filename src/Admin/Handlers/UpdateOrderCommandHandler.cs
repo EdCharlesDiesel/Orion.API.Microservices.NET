@@ -1,6 +1,6 @@
 ﻿using Orion.Admin.Tools;
 
-namespace ORION.Admin.Handlers
+namespace Orion.Admin.Handlers
 {
     public class UpdateOrderCommandHandler : ICommandHandler<UpdateOrderCommand>
     {

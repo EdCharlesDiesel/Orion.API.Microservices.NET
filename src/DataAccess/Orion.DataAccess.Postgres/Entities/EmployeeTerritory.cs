@@ -2,7 +2,7 @@ using Orion.Domain.Aggregates;
 using Orion.Domain.Enums;
 using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Progres.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class EmployeeTerritory : Entity<int>, IEmployeeTerritory
     {

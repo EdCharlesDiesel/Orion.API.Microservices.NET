@@ -2,18 +2,20 @@
 { 
     public class RectangleManiaClass
     {
-        static string UP = "up";
-        static string RIGHT = "right";
-        static string DOWN = "down";
-        static string LEFT = "left";
+        private static readonly string Up = "up";
+        private static readonly string Right = "right";
+        private static readonly string Down = "down";
+
+        private static readonly string Left = "left";
         // O(n^2) time | O(n^2) space - where n is the number of coordinates
         public static int RectangleMania(Point[] coords)
         {
-            Dictionary<string, Dictionary<string, List<Point>>> coordsTable = getCoordsTable(
+            var coordsTable = GetCoordsTable(
             coords);
-            return getRectangleCount(coords, coordsTable);
+            return GetRectangleCount(coords, coordsTable);
         }
-        public static Dictionary<string, Dictionary<string, List<Point>>> getCoordsTable(
+
+        private static Dictionary<string, Dictionary<string, List<Point>>> GetCoordsTable(
         Point[] coords)
         {
             Dictionary<string, Dictionary<string,
@@ -24,108 +26,101 @@
             {
                 Dictionary<string, List<Point>> coord1Directions = new Dictionary<string,
                 List<Point>>();
-                coord1Directions.Add(UP, new List<Point>());
-                coord1Directions.Add(RIGHT, new List<Point>());
-                coord1Directions.Add(DOWN, new List<Point>());
-                coord1Directions.Add(LEFT, new List<Point>());
+                coord1Directions.Add(Up, new List<Point>());
+                coord1Directions.Add(Right, new List<Point>());
+                coord1Directions.Add(Down, new List<Point>());
+                coord1Directions.Add(Left, new List<Point>());
                 foreach (Point coord2 in coords)
                 {
-                    string coord2Direction = getCoordDirection(coord1, coord2);
+                    string coord2Direction = GetCoordDirection(coord1, coord2);
                     if (coord1Directions.ContainsKey(coord2Direction)) coord1Directions[
                     coord2Direction].Add(coord2);
                 }
-                string coord1string = coordTostring(coord1);
-                coordsTable.Add(coord1string, coord1Directions);
+                string coord1String = CoordTostring(coord1);
+                coordsTable.Add(coord1String, coord1Directions);
             }
             return coordsTable;
         }
 
 
-        public static string getCoordDirection(Point coord1, Point coord2)
+        private static string GetCoordDirection(Point coord1, Point coord2)
         {
-            if (coord2.y == coord1.y)
+            if (coord2.Y == coord1.Y)
             {
-                if (coord2.x > coord1.x)
+                if (coord2.X > coord1.X)
                 {
-                    return RIGHT;
+                    return Right;
                 }
 
-                if (coord2.x < coord1.x)
+                if (coord2.X < coord1.X)
                 {
-                    return LEFT;
+                    return Left;
                 }
             }
-            else if (coord2.x == coord1.x)
+            else if (coord2.X == coord1.X)
             {
-                if (coord2.y > coord1.y)
+                if (coord2.Y > coord1.Y)
                 {
-                    return UP;
+                    return Up;
                 }
 
-                if (coord2.y < coord1.y)
+                if (coord2.Y < coord1.Y)
                 {
-                    return DOWN;
+                    return Down;
                 }
             }
             return "";
         }
-        public static int getRectangleCount(Point[] coords, Dictionary<string, Dictionary<string,
+
+        private static int GetRectangleCount(Point[] coords, Dictionary<string, Dictionary<string,
         List<Point>>> coordsTable)
         {
-            int rectangleCount = 0;
-            foreach (Point coord in coords)
+            var rectangleCount = 0;
+            foreach (var coord in coords)
             {
-                rectangleCount += clockwiseCountRectangles(coord, coordsTable, UP, coord);
+                rectangleCount += ClockwiseCountRectangles(coord, coordsTable, Up, coord);
             }
             return rectangleCount;
         }
-        public static int clockwiseCountRectangles(
+
+        private static int ClockwiseCountRectangles(
         Point coord,
         Dictionary<string, Dictionary<string, List<Point>>> coordsTable,
         string direction,
         Point origin
         )
         {
-            string coordstring = coordTostring(coord);
-            if (direction == LEFT)
+            var coordstring = CoordTostring(coord);
+            if (direction == Left)
             {
-                bool rectangleFound = coordsTable[coordstring][LEFT].Contains(origin);
+                bool rectangleFound = coordsTable[coordstring][Left].Contains(origin);
                 return rectangleFound ? 1 : 0;
             }
 
-            int rectangleCount = 0;
-            string nextDirection = getNextClockwiseDirection(direction);
-            foreach (Point nextCoord in coordsTable[coordstring][direction])
+            var rectangleCount = 0;
+            var nextDirection = GetNextClockwiseDirection(direction);
+            foreach (var nextCoord in coordsTable[coordstring][direction])
             {
-                rectangleCount += clockwiseCountRectangles(nextCoord, coordsTable,
+                rectangleCount += ClockwiseCountRectangles(nextCoord, coordsTable,
                     nextDirection, origin);
             }
             return rectangleCount;
         }
-        public static string getNextClockwiseDirection(string direction)
+        public static string GetNextClockwiseDirection(string direction)
         {
-            if (direction == UP) return RIGHT;
-            if (direction == RIGHT) return DOWN;
-            if (direction == DOWN) return LEFT;
+            if (direction == Up) return Right;
+            if (direction == Right) return Down;
+            if (direction == Down) return Left;
             return "";
         }
-        public static string coordTostring(Point coord)
+        public static string CoordTostring(Point coord)
         {
-            return coord.x + "-" + coord.y;
+            return coord.X + "-" + coord.Y;
         }
     }
-    public class Point
+    public class Point(int x, int y)
     {
-        public int x;
-        public int y;
-        public Point(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-        public bool equals(object a)
-        {
-            return x == ((Point)a).x && y == ((Point)a).y;
-        }
+        public readonly int X = x;
+        public readonly int Y = y;
     }
 }

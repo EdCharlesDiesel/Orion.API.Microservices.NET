@@ -1,6 +1,4 @@
-﻿using Orion.DataAccess.Entities;
-
-namespace Orion.DataAccess.Postgres.Entities
+﻿namespace Orion.DataAccess.Postgres.Entities
 {
     public class BillOfMaterials
     {

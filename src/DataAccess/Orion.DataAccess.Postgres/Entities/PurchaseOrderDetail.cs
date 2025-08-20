@@ -1,10 +1,10 @@
-﻿using System;
-using Orion.DataAccess.Postgres.Entities;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class PurchaseOrderDetail
     {
+        [Key]
         public int PurchaseOrderId { get; set; }
         public int PurchaseOrderDetailId { get; set; }
         public DateTime DueDate { get; set; }

@@ -1,0 +1,7 @@
+C:\x\Orion.Microservices.NET\src\UnitTests\Orion.Helpers.UnitTests\bin\Debug\net9.0\CoverletSourceRootsMapping_Orion.Helpers.UnitTests
+C:\x\Orion.Microservices.NET\src\UnitTests\Orion.Helpers.UnitTests\obj\Debug\net9.0\Orion.Helpers.UnitTests.csproj.AssemblyReference.cache
+C:\x\Orion.Microservices.NET\src\UnitTests\Orion.Helpers.UnitTests\obj\Debug\net9.0\Orion.Helpers.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\x\Orion.Microservices.NET\src\UnitTests\Orion.Helpers.UnitTests\obj\Debug\net9.0\Orion.Helpers.UnitTests.AssemblyInfoInputs.cache
+C:\x\Orion.Microservices.NET\src\UnitTests\Orion.Helpers.UnitTests\obj\Debug\net9.0\Orion.Helpers.UnitTests.AssemblyInfo.cs
+C:\x\Orion.Microservices.NET\src\UnitTests\Orion.Helpers.UnitTests\obj\Debug\net9.0\Orion.Helpers.UnitTests.csproj.CoreCompileInputs.cache
+C:\x\Orion.Microservices.NET\src\UnitTests\Orion.Helpers.UnitTests\obj\Debug\net9.0\Orion.Helpers.UnitTests.sourcelink.json

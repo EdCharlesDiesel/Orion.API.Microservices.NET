@@ -1,8 +1,8 @@
-﻿using Orion.DataAccess.Entities;
+﻿using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities
 {
-    public abstract class ContactCreditCard
+    public abstract class ContactCreditCard:Entity<Guid>
     {
         public int ContactId { get; set; }
         public int CreditCardId { get; set; }

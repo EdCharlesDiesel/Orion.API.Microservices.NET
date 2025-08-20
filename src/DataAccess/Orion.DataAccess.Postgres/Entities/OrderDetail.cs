@@ -1,29 +1,11 @@
-using System;
 using System.ComponentModel.DataAnnotations;
-using Orion.DataAccess.Postgres.Entities;
-using Orion.Domain.Aggregates;
-using Orion.Domain.DTOs;
 using Orion.Domain.Enums;
 using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class OrderDetail: Entity<int>, IOrderDetail
+    public abstract class OrderDetail(Product product, Order order):Entity<Guid>
     {
-        public void FullUpdate(IOrderDetailFullEditDto o)
-        {
-            if (IsTransient())
-            {
-                Id = o.Id;
-                OrderId = o.OrderId;
-                ProductId= o.ProductId;
-            }
-
-            UnitPrice = o.UnitPrice;
-            Quantity = o.Quantity;
-            Discount = o.Discount;
-        }
-
 
         [Required(ErrorMessage = "Unit Price is required")]
         public decimal UnitPrice { get; set; }
@@ -37,10 +19,10 @@ namespace Orion.DataAccess.Entities
         public Single Discount { get; set; }
 
 
-        public Order Order { get; set; }
-        
+        public Order Order { get; set; } = order;
 
-        public Product Product { get; set; }
+
+        public Product Product { get; set; } = product;
 
         [ConcurrencyCheck]
         public long EntityVersion{ get; set; }
@@ -62,11 +44,6 @@ namespace Orion.DataAccess.Entities
         public DateTime? DeleteDate { get; set; }
 
         private Status _status = Status.Active;
-
-        public OrderDetail(Product product)
-        {
-            Product = product;
-        }
 
         public Status Status { get => _status; set => _status = value; }
     

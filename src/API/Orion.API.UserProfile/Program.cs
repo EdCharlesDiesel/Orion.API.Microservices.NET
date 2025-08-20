@@ -1,5 +1,6 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
+using Orion.API.UserProfile;
 using Orion.API.UserProfile.Mappings;
 using Orion.Domain.IRepositories;
 
@@ -111,6 +112,9 @@ app.MapControllers();
 
 app.Run();
 
-public class UserProfileRepository
+namespace Orion.API.UserProfile
 {
+    public class UserProfileRepository
+    {
+    }
 }

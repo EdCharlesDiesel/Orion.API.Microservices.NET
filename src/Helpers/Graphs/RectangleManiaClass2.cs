@@ -23,16 +23,16 @@
             coordsTable.Add("y", new Dictionary<int, List<Point>>());
             foreach (Point coord in coords)
             {
-                if (!coordsTable["x"].ContainsKey(coord.x))
+                if (!coordsTable["x"].ContainsKey(coord.X))
                 {
-                    coordsTable["x"].Add(coord.x, new List<Point>());
+                    coordsTable["x"].Add(coord.X, new List<Point>());
                 }
-                if (!coordsTable["y"].ContainsKey(coord.y))
+                if (!coordsTable["y"].ContainsKey(coord.Y))
                 {
-                    coordsTable["y"].Add(coord.y, new List<Point>());
+                    coordsTable["y"].Add(coord.Y, new List<Point>());
                 }
-                coordsTable["x"][coord.x].Add(coord);
-                coordsTable["y"][coord.y].Add(coord);
+                coordsTable["x"][coord.X].Add(coord);
+                coordsTable["y"][coord.Y].Add(coord);
             }
             return coordsTable;
         }
@@ -42,7 +42,7 @@
             int rectangleCount = 0;
             foreach (Point coord in coords)
             {
-                int lowerLeftY = coord.y;
+                int lowerLeftY = coord.Y;
                 rectangleCount += clockwiseCountRectangles(coord, coordsTable, UP,
                 lowerLeftY);
             }
@@ -57,10 +57,10 @@
         {
             if (direction == DOWN)
             {
-                List<Point> relevantCoords = coordsTable["x"][coord1.x];
+                List<Point> relevantCoords = coordsTable["x"][coord1.X];
                 foreach (Point coord2 in relevantCoords)
                 {
-                    int lowerRightY = coord2.y;
+                    int lowerRightY = coord2.Y;
                     if (lowerRightY == lowerLeftY) return 1;
                 }
                 return 0;
@@ -69,20 +69,20 @@
             int rectangleCount = 0;
             if (direction == UP)
             {
-                List<Point> relevantCoords = coordsTable["x"][coord1.x];
+                List<Point> relevantCoords = coordsTable["x"][coord1.X];
                 foreach (Point coord2 in relevantCoords)
                 {
-                    bool isAbove = coord2.y > coord1.y;
+                    bool isAbove = coord2.Y > coord1.Y;
                     if (isAbove) rectangleCount += clockwiseCountRectangles(
                         coord2, coordsTable, RIGHT, lowerLeftY);
                 }
             }
             else if (direction == RIGHT)
             {
-                List<Point> relevantCoords = coordsTable["y"][coord1.y];
+                List<Point> relevantCoords = coordsTable["y"][coord1.Y];
                 foreach (Point coord2 in relevantCoords)
                 {
-                    bool isRight = coord2.x > coord1.x;
+                    bool isRight = coord2.X > coord1.X;
                     if (isRight) rectangleCount += clockwiseCountRectangles(
                         coord2, coordsTable, DOWN, lowerLeftY);
                 }

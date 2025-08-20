@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Helpers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06536f02adb4d6ad05587125590957bd5483834c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abf743c4616c2d7bb5462d81e6557e2083b8c3ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Helpers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Helpers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

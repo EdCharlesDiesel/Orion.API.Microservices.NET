@@ -1,4 +1,4 @@
-﻿namespace ORION.Core.FamousAlgorithms
+﻿namespace Orion.Helpers.FamousAlgorithms
 {
     /// <summary>
     /// A Company has 

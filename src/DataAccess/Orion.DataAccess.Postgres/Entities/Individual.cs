@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class Individual
+    public class Individual:Entity<Guid>
     {
         public int CustomerId { get; set; }
         public int ContactId { get; set; }

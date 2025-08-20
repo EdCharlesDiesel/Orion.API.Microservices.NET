@@ -9,8 +9,5 @@ namespace Orion.Domain.IRepositories
         Task<bool> UpdateDiscount(Coupon coupon);
         Task<bool> DeleteDiscount(string productName);
     }
-
-    public class Coupon
-    {
-    }
+    
 }

@@ -1,4 +1,4 @@
-﻿namespace ORION.Core.FamousAlgorithms
+﻿namespace Orion.Helpers.FamousAlgorithms
 {
     /// <summary>
     /// You're given a list of edges representing a weighted,

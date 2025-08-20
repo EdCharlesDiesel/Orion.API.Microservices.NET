@@ -1,10 +1,10 @@
-﻿using System;
-using Orion.DataAccess.Postgres.Entities;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class ProductVendor
     {
+        [Key]
         public int ProductId { get; set; }
         public int VendorId { get; set; }
         public int AverageLeadTime { get; set; }

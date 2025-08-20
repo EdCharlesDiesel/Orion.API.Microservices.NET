@@ -1,6 +1,6 @@
 ﻿namespace Orion.Helpers.Graphs
 {
-    public class YoungestCommonAncestorClass
+    public abstract class YoungestCommonAncestorClass
     {
         // O(d) time | O(1) space - where d is the depth (height) of the ancestral tree
         public static AncestralTree GetYoungestCommonAncestor(
@@ -9,19 +9,19 @@
         AncestralTree descendantTwo
         )
         {
-            int depthOne = getDescendantDepth(descendantOne, topAncestor);
-            int depthTwo = getDescendantDepth(descendantTwo, topAncestor);
+            int depthOne = GetDescendantDepth(descendantOne, topAncestor);
+            int depthTwo = GetDescendantDepth(descendantTwo, topAncestor);
             if (depthOne > depthTwo)
             {
-                return backtrackAncestralTree(descendantOne, descendantTwo,
+                return BacktrackAncestralTree(descendantOne, descendantTwo,
                 depthOne - depthTwo);
             }
 
-            return backtrackAncestralTree(descendantTwo, descendantOne,
+            return BacktrackAncestralTree(descendantTwo, descendantOne,
                 depthTwo - depthOne);
         }
 
-        public static int getDescendantDepth(AncestralTree descendant, AncestralTree topAncestor)
+        public static int GetDescendantDepth(AncestralTree descendant, AncestralTree topAncestor)
         {
             int depth = 0;
             while (descendant != topAncestor)
@@ -32,7 +32,7 @@
             return depth;
         }
 
-        public static AncestralTree backtrackAncestralTree(
+        private static AncestralTree BacktrackAncestralTree(
             AncestralTree lowerDescendant,
             AncestralTree higherDescendant,
             int diff)
@@ -50,13 +50,15 @@
             return lowerDescendant;
         }
 
-        public class AncestralTree
+        public abstract class AncestralTree
         {
             public char name;
             public AncestralTree ancestor;
-            public AncestralTree(char name)
+
+            protected AncestralTree(char name, AncestralTree ancestor)
             {
                 this.name = name;
+                this.ancestor = ancestor;
                 ancestor = null;
             }
             // This method is for testing only.

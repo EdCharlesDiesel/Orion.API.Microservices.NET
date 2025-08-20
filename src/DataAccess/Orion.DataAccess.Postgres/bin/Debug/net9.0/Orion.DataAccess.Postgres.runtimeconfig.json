@@ -1,0 +1,26 @@
+{
+  "runtimeOptions": {
+    "tfm": "net9.0",
+    "frameworks": [
+      {
+        "name": "Microsoft.NETCore.App",
+        "version": "9.0.0"
+      },
+      {
+        "name": "Microsoft.AspNetCore.App",
+        "version": "9.0.0"
+      }
+    ],
+    "configProperties": {
+      "System.Diagnostics.Tracing.EventSource.IsSupported": true,
+      "System.GC.Server": true,
+      "System.GC.DynamicAdaptationMode": 1,
+      "System.Globalization.Invariant": true,
+      "System.Globalization.PredefinedCulturesOnly": true,
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,
+      "Microsoft.AspNetCore.SignalR.Hub.IsCustomAwaitableSupported": false,
+      "Microsoft.AspNetCore.Mvc.ApiExplorer.IsEnhancedModelMetadataSupported": false
+    }
+  }
+}

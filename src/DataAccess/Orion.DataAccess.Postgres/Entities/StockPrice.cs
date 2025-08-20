@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class StockPrice
+    public class StockPrice: Entity<Guid>
     {
         public string Ticker  { get; set; }
         public DateTime TradeDate  { get; set; }

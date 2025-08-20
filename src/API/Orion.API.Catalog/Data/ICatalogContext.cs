@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.API.Catalog.Data
 {

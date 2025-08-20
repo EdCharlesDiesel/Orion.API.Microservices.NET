@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Orion.DataAccess.Postgres.Entities;
-
-
-namespace Orion.DataAccess.Entities
+﻿namespace Orion.DataAccess.Postgres.Entities
 {
     public class ProductModel
     {

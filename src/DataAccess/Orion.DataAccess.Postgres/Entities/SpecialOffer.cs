@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 
-
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class SpecialOffer
     {
+        [Key]
         public int SpecialOfferId { get; set; }
         public string Description { get; set; }
         public decimal DiscountPct { get; set; }

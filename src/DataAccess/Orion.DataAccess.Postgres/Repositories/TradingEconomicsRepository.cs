@@ -1,10 +1,7 @@
-using System;
-using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Orion.DataAccess.Repositories;
+namespace Orion.DataAccess.Postgres.Repositories;
 public class TradingEconomicsService
 {
     private readonly HttpClient _httpClient;

@@ -5020,9 +5020,27 @@
           }
         }
       },
+      "Orion.DataAccess.Postgres/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Orion.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Orion.DataAccess.Postgres.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Orion.DataAccess.Postgres.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Orion.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.0",
@@ -5051,6 +5069,7 @@
         "dependencies": {
           "AutoMapper": "15.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj": "1.0.0",
           "FastEndpoints": "6.2.0",
           "FastEndpoints.MediatR": "2.0.6",
           "Microsoft.AspNetCore.Authentication.Negotiate": "9.0.7",
@@ -5059,7 +5078,6 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Orion.Helpers": "1.0.0",
-          "Orion.Services.TradingEconomics.API": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
@@ -14446,6 +14464,11 @@
         "yamldotnet.nuspec"
       ]
     },
+    "Orion.DataAccess.Postgres/1.0.0": {
+      "type": "project",
+      "path": "../../DataAccess/Orion.DataAccess.Postgres/Orion.DataAccess.Postgres.csproj",
+      "msbuildProject": "../../DataAccess/Orion.DataAccess.Postgres/Orion.DataAccess.Postgres.csproj"
+    },
     "Orion.Domain/1.0.0": {
       "type": "project",
       "path": "../../Domain/Orion.Domain/Orion.Domain.csproj",
@@ -14473,6 +14496,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 9.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
+      "Orion.DataAccess.Postgres >= 1.0.0",
       "Orion.Domain >= 1.0.0",
       "Orion.Services.TradingEconomics.API >= 1.0.0"
     ]
@@ -14505,6 +14529,9 @@
           "projectReferences": {
             "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.TradingEconomics\\Orion.API.TradingEconomics.csproj"
+            },
+            "C:\\x\\Orion.Microservices.NET\\src\\DataAccess\\Orion.DataAccess.Postgres\\Orion.DataAccess.Postgres.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\DataAccess\\Orion.DataAccess.Postgres\\Orion.DataAccess.Postgres.csproj"
             },
             "C:\\x\\Orion.Microservices.NET\\src\\Domain\\Orion.Domain\\Orion.Domain.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Domain\\Orion.Domain\\Orion.Domain.csproj"
@@ -14600,13 +14627,19 @@
       ]
     },
     {
-      "code": "NU1108",
+      "code": "NU1104",
       "level": "Error",
-      "message": "Cycle detected. \r\n  Orion.WebApps.Web -> Orion.Services.TradingEconomics.API -> Orion.Services.TradingEconomics.API.",
-      "libraryId": "Orion.Services.TradingEconomics.API",
+      "message": "Unable to find project 'C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\x\\Orion.Microservices.NET\\src\\Repository\\Orion.Repositories\\Orion.Repositories.csproj",
       "targetGraphs": [
         "net9.0"
       ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

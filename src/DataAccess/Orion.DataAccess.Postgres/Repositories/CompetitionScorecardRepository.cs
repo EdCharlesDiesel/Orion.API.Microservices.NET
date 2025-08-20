@@ -1,4 +1,3 @@
-using Orion.DataAccess.Entities;
 using Orion.DataAccess.Postgres.Data;
 using Orion.DataAccess.Postgres.Entities;
 

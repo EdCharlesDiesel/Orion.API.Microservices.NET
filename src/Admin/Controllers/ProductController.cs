@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Commands;
-using ORION.Admin.Models.Products;
+using Orion.Admin.Models.Products;
 using Orion.Admin.Tools;
 using Orion.Domain.IRepositories;
 

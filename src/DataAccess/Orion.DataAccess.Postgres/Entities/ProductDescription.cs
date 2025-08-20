@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-
-namespace Orion.DataAccess.Entities
+﻿namespace Orion.DataAccess.Postgres.Entities
 {
     public class ProductDescription
     {

@@ -1,4 +1,4 @@
-﻿using ORION.Admin.Models.Products;
+﻿using Orion.Admin.Models.Products;
 using Orion.DataAccess.Data;
 
 namespace Orion.Admin.Queries

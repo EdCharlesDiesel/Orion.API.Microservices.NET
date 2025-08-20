@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Orion.Admin.Controllers;
-using ORION.Admin.Security;
+using Orion.Admin.Security;
 using Orion.Admin.Tools;
 using Orion.DataAccess.AllFeatures;
 using Orion.DataAccess.Data;

@@ -1,9 +1,8 @@
-﻿using System;
+﻿using Orion.Domain.Tools;
 
-
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class EmployeeDepartmentHistory
+    public class EmployeeDepartmentHistory:Entity<Guid>
     {
         public int EmployeeId { get; set; }
         public short DepartmentId { get; set; }

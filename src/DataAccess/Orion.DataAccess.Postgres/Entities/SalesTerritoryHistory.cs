@@ -1,9 +1,10 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class SalesTerritoryHistory
     {
+        [Key]
         public int SalesPersonId { get; set; }
         public int TerritoryId { get; set; }
         public DateTime StartDate { get; set; }
@@ -14,4 +15,6 @@ namespace Orion.DataAccess.Entities
         public SalesPerson SalesPerson { get; set; }
         public SalesTerritory Territory { get; set; }
     }
+
+
 }

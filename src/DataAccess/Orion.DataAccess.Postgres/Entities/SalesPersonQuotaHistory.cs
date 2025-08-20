@@ -1,9 +1,10 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class SalesPersonQuotaHistory
     {
+        [Key]
         public int SalesPersonId { get; set; }
         public DateTime QuotaDate { get; set; }
         public decimal SalesQuota { get; set; }

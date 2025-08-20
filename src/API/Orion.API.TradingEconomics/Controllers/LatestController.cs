@@ -1,7 +1,7 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using Orion.API.TradingEconomics.ActionFilters;
 using Orion.Helpers;
-using Orion.Services.TradingEcomomics.API.ActionFilters;
 
 namespace Orion.API.TradingEconomics.Controllers
 {

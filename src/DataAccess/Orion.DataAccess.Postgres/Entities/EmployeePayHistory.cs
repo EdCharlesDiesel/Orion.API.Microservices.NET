@@ -1,9 +1,10 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class EmployeePayHistory
     {
+        [Key]
         public int EmployeeId { get; set; }
         public DateTime RateChangeDate { get; set; }
         public decimal Rate { get; set; }

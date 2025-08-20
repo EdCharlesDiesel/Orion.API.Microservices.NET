@@ -1,12 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Orion.Domain.Aggregates;
-using Orion.Domain.Enums;
-using Orion.Domain.Tools;
-
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
      // TODO: Investigate and add other fields which we will use wwhen we register, IMasterUser
     // public class MasterUser: IdentityUser<int>,IEntity<int>   

@@ -1,21 +1,23 @@
-﻿namespace Orion.Helpers.Graphs
+﻿using static System.Int32;
+
+namespace Orion.Helpers.Graphs
 {
-    public class PalindromePartitioningMinCutsClass
+    public abstract class PalindromePartitioningMinCutsClass
     {
         // O(n^3) time | O(n^2) space
         public static int PalindromePartitioningMinCuts(string str)
         {
-            bool[,] palindromes = new bool[str.Length, str.Length];
-            for (int i = 0; i < str.Length; i++)
+            var palindromes = new bool[str.Length, str.Length];
+            for (var i = 0; i < str.Length; i++)
             {
-                for (int j = i; j < str.Length; j++)
+                for (var j = i; j < str.Length; j++)
                 {
                     palindromes[i, j] = IsPalindrome(str.Substring(i, j + 1 - i));
                 }
             }
-            int[] cuts = new int[str.Length];
-            Array.Fill(cuts, Int32.MaxValue);
-            for (int i = 0; i < str.Length; i++)
+            var cuts = new int[str.Length];
+            Array.Fill(cuts, MaxValue);
+            for (var i = 0; i < str.Length; i++)
             {
                 if (palindromes[0, i])
                 {
@@ -24,7 +26,7 @@
                 else
                 {
                     cuts[i] = cuts[i - 1] + 1;
-                    for (int j = 1; j < i; j++)
+                    for (var j = 1; j < i; j++)
                     {
                         if (palindromes[j, i] && cuts[j - 1] + 1 < cuts[i])
                         {
@@ -35,10 +37,11 @@
             }
             return cuts[str.Length - 1];
         }
-        public static bool IsPalindrome(string str)
+
+        private static bool IsPalindrome(string str)
         {
-            int leftIdx = 0;
-            int rightIdx = str.Length - 1;
+            var leftIdx = 0;
+            var rightIdx = str.Length - 1;
             while (leftIdx < rightIdx)
             {
                 if (str[leftIdx] != str[rightIdx])

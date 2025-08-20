@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using Orion.Domain.IRepositories;
 
 namespace Orion.API.Discount.Controllers
 {

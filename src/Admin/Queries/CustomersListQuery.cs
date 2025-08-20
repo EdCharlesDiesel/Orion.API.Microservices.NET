@@ -1,5 +1,4 @@
 ﻿using Orion.Admin.Models.Customers;
-using ORION.Admin.Queries;
 using Orion.DataAccess.Data;
 
 namespace Orion.Admin.Queries

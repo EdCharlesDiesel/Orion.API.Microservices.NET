@@ -1,24 +1,16 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Orion.DataAccess.Postgres.Entities;
 using Orion.Domain.Aggregates;
 using Orion.Domain.Enums;
 using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class Region: Entity<int>, IRegion
     {
         public void FullUpdate(IRegion o)
         {
-            if (IsTransient())
-            {
-                Id = o.Id;
-            }
-            RegionDescription = o.RegionDescription;
+            throw new NotImplementedException();
         }
-
 
         [MaxLength(50)]
         [Required(ErrorMessage = "Region Description is required")]

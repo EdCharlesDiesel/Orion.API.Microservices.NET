@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
 using System.Security.Principal;
 
-namespace ORION.Admin.Security
+namespace Orion.Admin.Security
 {
     public class SecurityUtility
     {

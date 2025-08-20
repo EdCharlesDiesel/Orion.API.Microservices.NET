@@ -1,7 +1,6 @@
 using System.Security.Claims;
-using Orion.Admin;
 
-namespace ORION.Admin.Security
+namespace Orion.Admin.Security
 {
     public class DefaultUserAuthorizationStrategy : IUserAuthorizationStrategy
     {

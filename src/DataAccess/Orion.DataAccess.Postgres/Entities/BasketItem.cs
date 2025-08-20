@@ -2,13 +2,14 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Orion.Domain.Aggregates;
 using Orion.Domain.Enums;
+using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities;
 /// <summary>
 /// Current basket of the database. 
 /// </summary>
 [Table("BasketItem")]
-public abstract class BasketItem(string? productName) : IBaseEntity
+public abstract class BasketItem(string? productName) : Entity<Guid>
 {
     public string? ProductName { get; set; } = productName;
     private int Quantity { get; set; } = 0;

@@ -1,6 +1,6 @@
 using System.Security.Claims;
 
-namespace ORION.Admin.Security
+namespace Orion.Admin.Security
 {
     public class HttpContextUserClaimsPrincipalProvider : IUserClaimsPrincipalProvider
     {

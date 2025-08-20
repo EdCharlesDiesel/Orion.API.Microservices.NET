@@ -26,10 +26,10 @@
                 foreach (Point coord2 in coords)
                 {
                     if (!isInUpperRight(coord1, coord2)) continue;
-                    string upperCoordstring = coordTostring(new Point(coord1.x,
-                    coord2.y));
-                    string rightCoordstring = coordTostring(new Point(coord2.x,
-                    coord1.y));
+                    string upperCoordstring = coordTostring(new Point(coord1.X,
+                    coord2.Y));
+                    string rightCoordstring = coordTostring(new Point(coord2.X,
+                    coord1.Y));
                     if (
                     coordsTable.Contains(upperCoordstring) &&
                     coordsTable.Contains(rightCoordstring)
@@ -40,11 +40,11 @@
         }
         public static bool isInUpperRight(Point coord1, Point coord2)
         {
-            return coord2.x > coord1.x && coord2.y > coord1.y;
+            return coord2.X > coord1.X && coord2.Y > coord1.Y;
         }
         public static string coordTostring(Point coord)
         {
-            return coord.x + "-" + coord.y;
+            return coord.X + "-" + coord.Y;
         }
  
     }

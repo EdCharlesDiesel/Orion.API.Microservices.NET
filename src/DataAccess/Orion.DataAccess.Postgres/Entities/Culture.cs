@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Orion.Domain.Tools;
 
-
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class Culture
+    public class Culture:Entity<Guid>
     {
         public string CultureId { get; set; }
         public string Name { get; set; }

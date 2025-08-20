@@ -1,7 +1,9 @@
 ﻿
 
-namespace Orion.DataAccess.Entities;
-public class Coupon
+using Orion.Domain.Tools;
+
+namespace Orion.DataAccess.Postgres.Entities;
+public class Coupon:Entity<Guid>
 {
 
     public string ProductName { get; set; }

@@ -1,6 +1,4 @@
-﻿using Orion.DataAccess.Entities;
-
-namespace Orion.DataAccess.Postgres.Entities
+﻿namespace Orion.DataAccess.Postgres.Entities
 {
     public abstract class Product
     {
@@ -48,5 +46,6 @@ namespace Orion.DataAccess.Postgres.Entities
         public ICollection<SpecialOfferProduct> SpecialOfferProduct { get; set; } = new HashSet<SpecialOfferProduct>();
         public ICollection<TransactionHistory> TransactionHistory { get; set; } = new HashSet<TransactionHistory>();
         public ICollection<WorkOrder> WorkOrder { get; set; } = new HashSet<WorkOrder>();
+        public IEnumerable<BillOfMaterials>? BillOfMaterialsAssembly { get; set; }
     }
 }

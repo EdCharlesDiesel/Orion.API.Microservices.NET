@@ -7,23 +7,30 @@ namespace Orion.Helpers.Binary_Trees
     // the Binary Tree and h is the height of the Binary Tree
     public class NodeDepthsClass
     {  
-        //public static int NodeDepths(BinaryTree root)
-        //{
-        //    int sumOfDepths = 0;
-        //    Stack<Level> stack = new Stack<Level>();
-        //    stack.Push(new Level(root, 0));
-        //    while (stack.Count > 0)
-        //    {
-        //        Level top = stack.Pop();
-        //        BinaryTree node = top.root;
-        //        int depth = top.depth;
-        //        if (node == null) continue;
-        //        sumOfDepths += depth;
-        //        stack.Push(new Level(node.left, depth + 1));
-        //        stack.Push(new Level(node.right, depth + 1));
-        //    }
-        //    return sumOfDepths;
-        //}
+        public static int NodeDepths(BinaryTree root)
+        {
+            int sumOfDepths = 0;
+            Stack<Level> stack = new Stack<Level>();
+            stack.Push(new Level(root, 0));
+            while (stack.Count > 0)
+            {
+                Level top = stack.Pop();
+                BinaryTree node = top.root;
+                int depth = top.depth;
+                if (node == null) continue;
+                sumOfDepths += depth;
+                stack.Push(new Level(node.left, depth + 1));
+                stack.Push(new Level(node.right, depth + 1));
+            }
+            return sumOfDepths;
+        }
+        public class BinaryTree
+        {
+            public BinaryTree(int i)
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 
     //public class Level

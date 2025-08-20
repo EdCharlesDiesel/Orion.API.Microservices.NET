@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace ORION.Admin.Security
+namespace Orion.Admin.Security
 {
     public class EditBusinessOwnerHandler :
         AuthorizationHandler<EditBusinessOwnerRequirement>
