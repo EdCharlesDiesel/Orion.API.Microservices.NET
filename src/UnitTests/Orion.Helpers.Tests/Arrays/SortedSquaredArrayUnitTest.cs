@@ -16,4 +16,11 @@ namespace Orion.Helpers.Tests.Arrays
             }
         }
     }
+
+    public class SortedSquaredArray
+    {
+        public class SortedSquaredArrayClass
+        {
+        }
+    }
 }

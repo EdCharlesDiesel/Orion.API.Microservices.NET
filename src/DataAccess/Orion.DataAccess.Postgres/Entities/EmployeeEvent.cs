@@ -1,9 +1,8 @@
-using System;
-using Orion.Domain.Aggregates;
 using Orion.Domain.Enums;
+using Orion.Domain.IRepositories;
 using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
 
     public class EmployeeEvent: Entity<long>, IEmployeeEvent
@@ -21,5 +20,9 @@ namespace Orion.DataAccess.Entities
         // TODO investigate
 
         // int IEntity<int>.Id;
+    }
+
+    public class EmployeeEventType
+    {
     }
 }

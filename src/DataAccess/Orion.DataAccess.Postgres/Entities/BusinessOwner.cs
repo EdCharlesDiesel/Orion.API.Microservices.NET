@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Orion.DataAccess.Progres.Entities;
-using ORION.Domain.Aggregates;
+using Orion.Domain.Aggregates;
 using Orion.Domain.Enums;
 using Orion.Domain.Tools;
 using Orion.Domain.Utility;

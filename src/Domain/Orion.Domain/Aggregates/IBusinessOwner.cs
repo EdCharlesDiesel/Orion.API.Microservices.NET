@@ -1,8 +1,7 @@
 using System;
-using Orion.Domain.Aggregates;
 using Orion.Domain.Tools;
 
-namespace ORION.Domain.Aggregates
+namespace Orion.Domain.Aggregates
 {
     public interface IBusinessOwner: IEntity<int>, IBaseEntity
     {

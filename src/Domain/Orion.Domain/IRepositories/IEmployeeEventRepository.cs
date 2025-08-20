@@ -8,4 +8,8 @@ namespace Orion.Domain.IRepositories
         Task<IEmployeeEvent> Get(int id);
         IEmployeeEvent New();
     }
+
+    public interface IEmployeeEvent
+    {
+    }
 }

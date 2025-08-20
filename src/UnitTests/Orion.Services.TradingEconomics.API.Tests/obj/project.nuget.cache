@@ -1,7 +1,7 @@
 {
   "version": 2,
   "dgSpecHash": "X/ZteSi1pGc=",
-  "success": true,
+  "success": false,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.TradingEconomics.API.Tests\\Orion.Services.TradingEconomics.API.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\15.0.1\\automapper.15.0.1.nupkg.sha512",
@@ -10,8 +10,6 @@
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\diffengine\\11.3.0\\diffengine.11.3.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\emptyfiles\\4.4.0\\emptyfiles.4.4.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\fastendpoints\\6.2.0\\fastendpoints.6.2.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.attributes\\6.2.0\\fastendpoints.attributes.6.2.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.mediatr\\2.0.6\\fastendpoints.mediatr.2.0.6.nupkg.sha512",
@@ -119,7 +117,6 @@
     "C:\\Users\\PC\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\shouldly\\4.3.0\\shouldly.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
@@ -127,7 +124,6 @@
     "C:\\Users\\PC\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
@@ -152,7 +148,6 @@
     "C:\\Users\\PC\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.management\\6.0.1\\system.management.6.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
@@ -213,6 +208,16 @@
   ],
   "logs": [
     {
+      "code": "NU1801",
+      "level": "Warning",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.TradingEconomics.API.Tests\\Orion.Services.TradingEconomics.API.Tests.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.TradingEconomics.API.Tests\\Orion.Services.TradingEconomics.API.Tests.csproj",
+      "libraryId": "Shouldly",
+      "targetGraphs": []
+    },
+    {
       "code": "NU1608",
       "level": "Warning",
       "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 15.0.1 was resolved.",
@@ -223,6 +228,26 @@
       "targetGraphs": [
         "net9.0"
       ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Shouldly. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, nuget.org",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.TradingEconomics.API.Tests\\Orion.Services.TradingEconomics.API.Tests.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.TradingEconomics.API.Tests\\Orion.Services.TradingEconomics.API.Tests.csproj",
+      "libraryId": "Shouldly",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.TradingEconomics.API.Tests\\Orion.Services.TradingEconomics.API.Tests.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Orion.Services.TradingEconomics.API.Tests\\Orion.Services.TradingEconomics.API.Tests.csproj",
+      "targetGraphs": []
     }
   ]
 }

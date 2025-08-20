@@ -1,6 +1,5 @@
 ﻿using Orion.DataAccess.Entities;
 using Orion.DataAccess.Postgres.Entities;
-using Orion.DataAccess.Progres.Entities;
 
 namespace Orion.DataAccess.Postgres.Data
 {

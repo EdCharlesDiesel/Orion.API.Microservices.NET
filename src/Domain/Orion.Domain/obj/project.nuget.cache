@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+n1C3LGE/cU=",
+  "dgSpecHash": "PLZEOBqATpg=",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Domain\\Orion.Domain\\Orion.Domain.csproj",
   "expectedPackageFiles": [
@@ -10,10 +10,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.18\\microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.18\\microsoft.windowsdesktop.app.ref.8.0.18.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.18\\microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512"
+    "C:\\Users\\PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

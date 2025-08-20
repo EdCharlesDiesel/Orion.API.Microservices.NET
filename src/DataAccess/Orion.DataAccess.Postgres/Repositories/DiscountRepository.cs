@@ -2,7 +2,7 @@
 
 namespace Orion.DataAccess.Postgres.Repositories
 {
-    public class DiscountRepository(DbContext context) : IDiscountRepository
+    public class DiscountRepository() : IDiscountRepository
     {
         // public async Task<Coupon> GetDiscount(string productName)
         // {

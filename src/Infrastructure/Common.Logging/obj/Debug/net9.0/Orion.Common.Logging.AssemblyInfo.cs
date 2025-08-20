@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Common.Logging")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+670053469e5f83c6f47eb4d358430779ef1b84e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03deb0d5cf26ba822336985546ffcea26b0cf84a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Common.Logging")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Common.Logging")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

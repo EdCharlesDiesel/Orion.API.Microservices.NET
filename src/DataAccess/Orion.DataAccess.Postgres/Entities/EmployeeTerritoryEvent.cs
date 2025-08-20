@@ -1,9 +1,8 @@
-using System;
-using Orion.Domain.Aggregates;
 using Orion.Domain.Enums;
+using Orion.Domain.IRepositories;
 using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Entities
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class EmployeeTerritoryEvent :Entity<long>, IEmployeeTerritoryEvent
     {    
@@ -23,6 +22,10 @@ namespace Orion.DataAccess.Entities
         public DateTime? DeleteDate { get; set; }
 
         public Status Status { get; set; }
+    }
+
+    public abstract class EmployeeTerritoryEventType
+    {
     }
 }
     

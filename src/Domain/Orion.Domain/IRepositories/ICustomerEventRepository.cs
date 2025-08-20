@@ -6,4 +6,8 @@ namespace Orion.Domain.IRepositories
     {
         void New(CustomerEventType deleted, object evCustomerId, object evOldVersion);
     }
+
+    public class CustomerEventType
+    {
+    }
 }

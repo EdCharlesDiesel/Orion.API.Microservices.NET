@@ -46,11 +46,11 @@ namespace Orion.Helpers.Tests.Arrays
             return true;
         }
     }
-}
 
 
 
-[Test]
+
+[Fact]
 public void TestCase1()
 {
     List<int[]> output =
@@ -60,4 +60,4 @@ public void TestCase1()
     quadruplets.Add(new[] { 7, 6, 1, 2 });
     Utils.AssertTrue(quadruplets.Count == output.Count);
     Utils.AssertTrue(this.compare(quadruplets, output));
-}
+}}

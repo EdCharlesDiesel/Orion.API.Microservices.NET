@@ -3,12 +3,13 @@ using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 
+
 namespace Orion.Domain.Extensions
 {
     // FIXME IForm Download package
     public class FileExtensionAttribute: ValidationAttribute
     {
-        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
         {
             var file = value as IFormFile;
 

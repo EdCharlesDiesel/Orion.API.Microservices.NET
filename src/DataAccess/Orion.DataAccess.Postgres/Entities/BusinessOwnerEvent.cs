@@ -16,4 +16,12 @@ namespace Orion.DataAccess.Postgres.Entities
         public DateTime? DeleteDate { get; set; }
         public Status Status { get; set; }
     }
+
+    public interface IBusinessOwnerEvent
+    {
+    }
+
+    public class BusinessOwnerEventType
+    {
+    }
 }

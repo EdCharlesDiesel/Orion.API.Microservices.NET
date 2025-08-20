@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Orion.Domain.Aggregates;
 
 namespace Orion.Domain.IRepositories
 {
@@ -7,5 +6,9 @@ namespace Orion.Domain.IRepositories
     {
         Task<IEmployeeTerritoryEvent> Get(int id);
         IEmployeeTerritoryEvent New();
+    }
+
+    public interface IEmployeeTerritoryEvent
+    {
     }
 }

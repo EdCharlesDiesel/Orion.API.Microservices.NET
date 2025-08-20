@@ -5,6 +5,7 @@ namespace Orion.DataAccess.Postgres.Repositories;
 
 public class BasketRepository(OrionDbContext context) : IBasketServices
 {
+    private IBasketServices _basketServicesImplementation;
     // public async Task<Basket> Create(List<Basket> baskets)
     // {
     //     if (baskets == null)
@@ -184,63 +185,34 @@ public class BasketRepository(OrionDbContext context) : IBasketServices
     //     // await context.SaveChangesAsync();
     //     return null!;
     // }
+
     public async Task<IEnumerable<Basket>> GetAllAsync()
     {
-        throw new NotImplementedException();
-    }
-
-    public Task GetByIdAsync(Guid id)
-    {
-        throw new NotImplementedException();
+        return await _basketServicesImplementation.GetAllAsync();
     }
 
     public async Task GetByIdAsync(Guid id)
     {
-        throw new NotImplementedException();
-    }
-
-    Task<IEnumerable<T>> IRepository<Basket>.GetAllAsync()
-    {
-        throw new NotImplementedException();
+        await _basketServicesImplementation.GetByIdAsync(id);
     }
 
     public async Task AddAsync(Basket entity)
     {
-        throw new NotImplementedException();
-    }
-
-    Task IRepository<Basket>.UpdateAsync(Basket entity)
-    {
-        return UpdateAsync(entity);
-    }
-
-    public Task<List<Basket>?> BulkCreate(List<Basket> baskets)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteAsync(Guid id)
-    {
-        throw new NotImplementedException();
-    }
-
-    Task IRepository<Basket>.AddAsync(Basket entity)
-    {
-        return AddAsync(entity);
+        await _basketServicesImplementation.AddAsync(entity);
     }
 
     public async Task UpdateAsync(Basket entity)
     {
-        throw new NotImplementedException();
+        await _basketServicesImplementation.UpdateAsync(entity);
     }
 
     public async Task DeleteAsync(Guid id)
     {
-        throw new NotImplementedException();
+        await _basketServicesImplementation.DeleteAsync(id);
     }
 
-    public async Task<List<Basket>> BulkCreate(List<Basket> baskets)
+    public async Task<List<Basket>?> BulkCreate(List<Basket> baskets)
     {
-        throw new NotImplementedException();
+        return await _basketServicesImplementation.BulkCreate(baskets);
     }
 }

@@ -23,6 +23,14 @@ namespace Orion.DataAccess.Postgres.Entities
         public Status Status { get; set; }
 
       //  int IEntity<int>.Id;
-    }       
+    }
+
+    public class CategoryEventType
+    {
+    }
+
+    public interface ICategoryEvent
+    {
+    }
 }
 
