@@ -1,6 +1,6 @@
 namespace Orion.Helpers.Tests.Graph
 {
-    public class UnitTest1
+    public partial class UnitTest1
     {
         List<string> AIRPORTS = new List<string> {
                     "BGI","CDG","DEL","DOH",
@@ -35,7 +35,15 @@ namespace Orion.Helpers.Tests.Graph
             routes.Add(new List<string> { "SFO", "SAN" });
             routes.Add(new List<string> { "SFO", "DSM" });
             routes.Add(new List<string> { "SAN", "EYW" });
-           // Assert.True(AirportConnectionsClass.AirportConnections(AIRPORTS, routes, STARTING_AIRPORT) == 3);
+           Assert.True(AirportConnectionsClass.AirportConnections(AIRPORTS, routes, STARTING_AIRPORT) == 3);
+        }
+    }
+
+    public abstract class AirportConnectionsClass
+    {
+        public static int AirportConnections(List<string> airports, List<List<string>> routes, string startingAirport)
+        {
+            throw new NotImplementedException();
         }
     }
 }

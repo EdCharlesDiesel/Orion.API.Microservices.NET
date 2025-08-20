@@ -23,7 +23,7 @@
         /// 
 
         #region Solution One        
-        public static int NumberofBinaryTreeTopologies(int n)
+        public int NumberofBinaryTreeTopologies(int n)
         {
             if (n == 0) return 1;
 

@@ -9,7 +9,7 @@ namespace Orion.Helpers.Tests.Arrays
         public void Test1()
         {
             List<int[]> output =
-              FourNumberSumClass.FourNumberSum(new[] { 7, 6, 4, -1, 1, 2 }, 16);
+                FourNumberSumClass.FourNumberSum(new[] { 7, 6, 4, -1, 1, 2 }, 16);
             List<int[]> quadruplets = new List<int[]>();
             quadruplets.Add(new[] { 7, 6, 4, -1 });
             quadruplets.Add(new[] { 7, 6, 1, 2 });
@@ -23,10 +23,12 @@ namespace Orion.Helpers.Tests.Arrays
             {
                 Array.Sort(quad);
             }
+
             foreach (int[] quad in quads1)
             {
                 Array.Sort(quad);
             }
+
             foreach (int[] quad2 in quads2)
             {
                 bool found = false;
@@ -38,26 +40,30 @@ namespace Orion.Helpers.Tests.Arrays
                         break;
                     }
                 }
+
                 if (found == false)
                 {
                     return false;
                 }
             }
+
             return true;
         }
+
+
+
+
+
+        [Fact]
+        public void TestCase1()
+        {
+            List<int[]> output =
+                Program.FourNumberSum(new[] { 7, 6, 4, -1, 1, 2 }, 16);
+            List<int[]> quadruplets = new List<int[]>();
+            quadruplets.Add(new[] { 7, 6, 4, -1 });
+            quadruplets.Add(new[] { 7, 6, 1, 2 });
+            Utils.AssertTrue(quadruplets.Count == output.Count);
+            Utils.AssertTrue(this.compare(quadruplets, output));
+        }
     }
-
-
-
-
-[Fact]
-public void TestCase1()
-{
-    List<int[]> output =
-      Program.FourNumberSum(new[] { 7, 6, 4, -1, 1, 2 }, 16);
-    List<int[]> quadruplets = new List<int[]>();
-    quadruplets.Add(new[] { 7, 6, 4, -1 });
-    quadruplets.Add(new[] { 7, 6, 1, 2 });
-    Utils.AssertTrue(quadruplets.Count == output.Count);
-    Utils.AssertTrue(this.compare(quadruplets, output));
-}}
+}

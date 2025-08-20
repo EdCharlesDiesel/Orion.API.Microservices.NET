@@ -23,6 +23,11 @@ namespace Orion.Helpers.Tests.Graph
               Program.GetYoungestCommonAncestor(trees['A'], trees['E'], trees['I']);
             Utils.AssertTrue(yca == trees['B']);
         }
+
+        private object getNewTrees()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public Dictionary<char, Program.AncestralTree> getNewTrees()

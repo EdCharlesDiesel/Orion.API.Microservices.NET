@@ -1,9 +1,9 @@
-namespace Permutations.Tests
+using Orion.Helpers.Recursion;
+
+namespace Orion.Helpers.Tests.Recursion
 {
     public class PermutationsUnitTests
     {
-    
-
         [Fact]
         public void Test1()
         {
@@ -12,14 +12,12 @@ namespace Permutations.Tests
                 1, 2, 3, 4
             };
 
-            //List<List<int>> permutations = Permutations.GetPermutations(input);
+            List<List<int>> permutations = Permutations.GetPermutations(input);
 
-            //Assert.IsTrue(Contains(permutations, new List<int>()
-            //{
-            //    1,2,3,4
-            //}));
-
-
+            Assert.True(Contains(permutations, new List<int>()
+            {
+                1,2,3,4
+            }));
         }
 
         public bool Contains(List<List<int>> arrayOne,List<int> arrayTwo)

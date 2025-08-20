@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pU3kcWfZQ40=",
+  "dgSpecHash": "c+J9LnjaFr0=",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.CompetitionScorecard.Tests\\Orion.API.CompetitionScorecard.Tests.csproj",
   "expectedPackageFiles": [
@@ -121,15 +121,5 @@
     "C:\\Users\\PC\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.CompetitionScorecard.Tests\\Orion.API.CompetitionScorecard.Tests.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.CompetitionScorecard.Tests\\Orion.API.CompetitionScorecard.Tests.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

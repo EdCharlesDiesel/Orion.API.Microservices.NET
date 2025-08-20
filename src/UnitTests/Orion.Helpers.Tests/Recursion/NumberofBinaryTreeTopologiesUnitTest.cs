@@ -1,20 +1,15 @@
-namespace NumberofBinaryTreeTopologies.Tests
+using Orion.Helpers.Recursion;
+
+namespace Orion.Helpers.Tests.Recursion
 {
-    public class Tests
+    public partial class Tests
     { 
-        //[Test]
-        //public void TestCaseSolutionOne()
-        //{
-        //    var numberofBinaryTreeTopologiesClass = new NumberofBinaryTreeTopologiesClass();
+        [Fact]
+        public void TestCaseSolutionOne()
+        {
+            var numberofBinaryTreeTopologiesClass = new NumberofBinaryTreeTopologiesClass();
        
-        //    //Assert.True(numberofBinaryTreeTopologiesClass.NumberofBinaryTreeTopologies(3) == 5);
-        //}
-
-        //public void TestCaseSolutionTwo()
-        //{
-        //    var numberofBinaryTreeTopologiesClass = new NumberofBinaryTreeTopologiesClass();
-
-        //    //Assert.True(numberofBinaryTreeTopologiesClass.NumberofBinaryTreeTopologies(3) == 5);
-        //}
+            Assert.True(numberofBinaryTreeTopologiesClass.NumberofBinaryTreeTopologies(3) == 5);
+        }
     }
 }

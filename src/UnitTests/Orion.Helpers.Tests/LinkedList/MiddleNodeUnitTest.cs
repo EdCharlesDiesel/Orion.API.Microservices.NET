@@ -1,6 +1,8 @@
-namespace MiddleNode.Tests
+using Orion.Helpers.LinkedList;
+
+namespace Orion.Helpers.Tests.LinkedList
 {
-    public class UnitTest1
+    public partial class UnitTest1
     {
         [Fact(Skip = "This Unit test is failing do not know why")]
         public void Test1()

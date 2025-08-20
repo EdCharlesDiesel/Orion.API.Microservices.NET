@@ -40,6 +40,11 @@ namespace Orion.Helpers.Binary_Trees
             left = null;
             right = null;
         }
+
+        protected AllKindsOfNodeDepthsClassBinaryTree()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

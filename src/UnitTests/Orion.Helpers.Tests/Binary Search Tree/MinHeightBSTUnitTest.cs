@@ -1,71 +1,65 @@
-using Microsoft.VisualBasic.CompilerServices;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Xunit;
 
 namespace Orion.Helpers.Tests.Binary_Search_Tree
 {
     public class ValidateBstUnitTest1
     {
-        [Fact(Skip ="Fix this")]
+        [Fact] // removed Skip so it actually runs
         public void Test1()
         {
             var array = new List<int> { 1, 2, 5, 7, 10, 13, 14, 15, 22 };
             var tree = Program.MinHeightBst(array);
 
-            Utils.AssertTrue(validateBst(tree));
-            Utils.AssertEquals(4, getTreeHeight(tree));
+            Assert.True(ValidateBst(tree));
+            Assert.Equal(4, GetTreeHeight(tree));
 
-            var inOrder = inOrderTraverse(tree, new List<int>());
+            var inOrder = InOrderTraverse(tree, new List<int>());
             var expected = new List<int> { 1, 2, 5, 7, 10, 13, 14, 15, 22 };
-            Utils.AssertTrue(inOrder.SequenceEqual(expected));
+            Assert.True(inOrder.SequenceEqual(expected));
         }
 
-        static bool validateBst(Program.BST tree)
-        {
-            return validateBst(tree, Int32.MinValue, Int32.MaxValue);
-        }
+        static bool ValidateBst(Program.BST tree) =>
+            ValidateBst(tree, int.MinValue, int.MaxValue);
 
-        static bool validateBst(Program.BST tree, int minValue, int maxValue)
+        static bool ValidateBst(Program.BST tree, int minValue, int maxValue)
         {
             if (tree.value < minValue || tree.value >= maxValue)
-            {
                 return false;
-            }
-            if (tree.left != null && !validateBst(tree.left, minValue, tree.value))
-            {
+
+            if (tree.left != null && !ValidateBst(tree.left, minValue, tree.value))
                 return false;
-            }
-            if (tree.right != null && !validateBst(tree.right, tree.value, maxValue))
-            {
+
+            if (tree.right != null && !ValidateBst(tree.right, tree.value, maxValue))
                 return false;
-            }
+
             return true;
         }
 
-        static List<int> inOrderTraverse(Program.BST tree, List<int> array)
+        static List<int> InOrderTraverse(Program.BST tree, List<int> array)
         {
             if (tree.left != null)
-            {
-                inOrderTraverse(tree.left, array);
-            }
+                InOrderTraverse(tree.left, array);
+
             array.Add(tree.value);
+
             if (tree.right != null)
-            {
-                inOrderTraverse(tree.right, array);
-            }
+                InOrderTraverse(tree.right, array);
+
             return array;
         }
 
-        static int getTreeHeight(Program.BST tree)
-        {
-            return getTreeHeight(tree, 0);
-        }
+        static int GetTreeHeight(Program.BST tree) =>
+            GetTreeHeight(tree, 0);
 
-        static int getTreeHeight(Program.BST tree, int height)
+        static int GetTreeHeight(Program.BST tree, int height)
         {
             if (tree == null) return height;
-            int leftTreeHeight = getTreeHeight(tree.left, height + 1);
-            int rightTreeHeight = getTreeHeight(tree.right, height + 1);
+            int leftTreeHeight = GetTreeHeight(tree.left, height + 1);
+            int rightTreeHeight = GetTreeHeight(tree.right, height + 1);
             return Math.Max(leftTreeHeight, rightTreeHeight);
         }
     }
-    
 }

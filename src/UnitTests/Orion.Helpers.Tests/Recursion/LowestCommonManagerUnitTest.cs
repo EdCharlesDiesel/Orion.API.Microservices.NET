@@ -1,7 +1,9 @@
 
 
 
-namespace LowestCommonManagerTests
+using Orion.Helpers.Recursion;
+
+namespace Orion.Helpers.Tests.Recursion
 {
     public class LowestCommonManagerUnitTest
     {

@@ -36,6 +36,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0a727867_002Db656_002D445c_002Db902_002D7ef1b2bf1509/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from CalanderControllerUnitTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;ProjectFile&gt;69B62104-8836-433A-88FB-498B39A35694/d:Controllers/f:CalanderControllerUnitTests.cs&lt;/ProjectFile&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0e850763_002D3ad9_002D47e2_002Dabf7_002D140feecd01a3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PermutationsUnitTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.Tests.Recursion.PermutationsUnitTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=262f66ce_002D2fe8_002D4c32_002Da637_002Dc6a341860864/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Create_ReturnsCreatedAt" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.Create_ReturnsCreatedAt&lt;/TestId&gt;&#xD;
