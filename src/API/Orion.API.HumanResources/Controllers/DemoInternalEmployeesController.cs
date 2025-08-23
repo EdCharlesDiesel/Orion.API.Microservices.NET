@@ -1,4 +1,6 @@
-﻿using Orion.API.HumanResources.Business;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Orion.API.HumanResources.Business;
 using Orion.API.HumanResources.Models;
 
 namespace Orion.API.HumanResources.Controllers

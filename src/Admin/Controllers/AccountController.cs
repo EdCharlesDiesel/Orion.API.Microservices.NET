@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Models.Account;
-using Orion.DataAccess.Entities;
 using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
 namespace Orion.Admin.Controllers
@@ -115,5 +114,12 @@ namespace Orion.Admin.Controllers
 
 
         }
+    }
+
+    public class MasterUser
+    {
+        public string UserName { get; set; }
+        public string PasswordHash { get; set; }
+        public string Email { get; set; }
     }
 }

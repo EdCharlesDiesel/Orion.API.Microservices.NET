@@ -11,7 +11,7 @@ namespace Orion.DataAccess.Postgres.Entities
     /// Business Owner of the database. 
     /// </summary>
     [Table("BusinessOwner")]
-    public abstract class BusinessOwner(string businessCity, string businessProvince) : Entity<int>, IBusinessOwner, IValidatableObject
+    public class BusinessOwner(string businessCity, string businessProvince) : Entity<int>, IBusinessOwner, IValidatableObject
     {
         public void FullUpdate(IBusinessOwner o)
         {

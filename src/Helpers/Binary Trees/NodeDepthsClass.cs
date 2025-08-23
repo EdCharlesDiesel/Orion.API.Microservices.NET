@@ -1,11 +1,13 @@
 ﻿
 
+using Elasticsearch.Net;
+
 namespace Orion.Helpers.Binary_Trees
 {
     // Average case: when the tree is balanced
     // O(n) time | O(h) space - where n is the number of nodes in
     // the Binary Tree and h is the height of the Binary Tree
-    public class NodeDepthsClass
+    public abstract class NodeDepthsClass
     {  
         public static int NodeDepths(BinaryTree root)
         {
@@ -26,6 +28,8 @@ namespace Orion.Helpers.Binary_Trees
         }
         public class BinaryTree
         {
+            public object left;
+
             public BinaryTree(int i)
             {
                 throw new NotImplementedException();

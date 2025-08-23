@@ -1,4 +1,6 @@
-﻿using Orion.API.HumanResources.Models;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http.Features;
+using Orion.API.HumanResources.Models;
 
 namespace Orion.API.HumanResources.MapperProfiles
 {

@@ -1,5 +1,7 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
+using Orion.DataAccess.Postgres.Entities;
+using Orion.Domain.IRepositories;
 
 namespace Orion.API.TradingEconomics.Controllers
 {
@@ -84,5 +86,15 @@ namespace Orion.API.TradingEconomics.Controllers
             var result = await _service.GetCalendarEventsByIndicators(names);
             return Ok(result);
         }
+    }
+
+    public interface ICalendarServices
+    {
+        Task Create(List<CalendarEvent> calendarEvents);
+        Task<object?> GetCalendarEventsByIndicators(string[] names);
+        Task<object?> GetCalendarEventsByCountriesAndDates(DateTime startDate, DateTime endDate, string[] names);
+        Task<object?> GetCalendarEventsByDate(DateTime startDate, DateTime endDate);
+        Task<object?> GetCalendarEventsByCountries(string[] names);
+        Task<string> GetCalendarEvents();
     }
 }

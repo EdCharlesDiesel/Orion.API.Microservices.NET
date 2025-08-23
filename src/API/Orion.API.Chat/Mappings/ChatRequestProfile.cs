@@ -1,6 +1,6 @@
 using AutoMapper;
 using Orion.API.Chat.DTO;
-using Orion.DataAccess.Entities;
+using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.API.Chat.Mappings;
 

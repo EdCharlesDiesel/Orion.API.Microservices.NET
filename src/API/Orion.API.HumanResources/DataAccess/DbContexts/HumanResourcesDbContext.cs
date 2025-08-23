@@ -1,4 +1,5 @@
-﻿using Orion.API.HumanResources.DataAccess.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Orion.API.HumanResources.DataAccess.Entities;
 
 namespace Orion.API.HumanResources.DataAccess.DbContexts
 {

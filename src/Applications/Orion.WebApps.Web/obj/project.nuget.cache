@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DhqaXx+99+U=",
+  "dgSpecHash": "39MevSTbtHE=",
   "success": false,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Applications\\Orion.WebApps.Web\\Orion.WebApps.Web.csproj",
   "expectedPackageFiles": [
@@ -8,12 +8,13 @@
     "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\fastendpoints\\6.2.0\\fastendpoints.6.2.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.attributes\\6.2.0\\fastendpoints.attributes.6.2.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\elasticsearch.net\\7.8.1\\elasticsearch.net.7.8.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\fastendpoints\\5.29.0\\fastendpoints.5.29.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.attributes\\5.29.0\\fastendpoints.attributes.5.29.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.mediatr\\2.0.6\\fastendpoints.mediatr.2.0.6.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.messaging.core\\6.2.0\\fastendpoints.messaging.core.6.2.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.messaging.core\\5.29.0\\fastendpoints.messaging.core.5.29.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.swagger\\5.29.0\\fastendpoints.swagger.5.29.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
@@ -91,7 +92,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\4.8.0\\microsoft.codeanalysis.scripting.common.4.8.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.8.0\\microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.codeanalysis.workspaces.msbuild\\4.8.0\\microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.6\\microsoft.data.sqlclient.5.1.6.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.7\\microsoft.data.sqlite.core.9.0.7.nupkg.sha512",
@@ -196,7 +197,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
@@ -218,7 +219,6 @@
     "C:\\Users\\PC\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.directoryservices.protocols\\9.0.7\\system.directoryservices.protocols.9.0.7.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.formats.asn1\\9.0.7\\system.formats.asn1.9.0.7.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.globalization.calendars\\4.3.0\\system.globalization.calendars.4.3.0.nupkg.sha512",
@@ -306,15 +306,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Applications\\Orion.WebApps.Web\\Orion.WebApps.Web.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\Applications\\Orion.WebApps.Web\\Orion.WebApps.Web.csproj",
-      "targetGraphs": []
     }
   ]
 }

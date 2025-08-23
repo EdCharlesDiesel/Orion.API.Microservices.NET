@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Orion.Domain.IRepositories;
 
 namespace Orion.API.Order.Controllers
 {
@@ -23,7 +24,7 @@ namespace Orion.API.Order.Controllers
         /// <param name="order"></param>
         /// <returns></returns>
         [HttpPost("creat")]
-        public async Task<IActionResult> Create([FromQuery] Core.Orders.Domain.Order order)
+        public async Task<IActionResult> Create([FromQuery] FastEndpoints.Order order)
         {
             // var profileToDatabase = mapper.Map<Core.Order.Domain.Order>(profile);
             await service.AddAsync(order);

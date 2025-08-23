@@ -10,6 +10,7 @@ namespace Orion.DataAccess.Postgres.Entities;
 [Table("CalendarEvent")]
 public abstract class CalendarEvent: IBaseEntity
 {
+    public object SourceURL;
     public string CalendarId { get; set; }
     public int Importance { get; set; }
     public string Country { get; set; }

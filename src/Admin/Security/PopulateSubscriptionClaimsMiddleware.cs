@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using Orion.Admin.Controllers;
 
 namespace Orion.Admin.Security
 {

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Orion.DataAccess.Entities;
+using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.Admin.Areas.API
 {
@@ -28,5 +28,6 @@ namespace Orion.Admin.Areas.API
         object Search(string first, string last);
         void Save(BusinessOwner businessOwner);
         void DeleteBusinessOwnerById(int itemId);
+        IList<BusinessOwner>? Search(string modelFirstName, string modelLastName, string modelBirthProvince, string modelBusinessProvince);
     }
 }

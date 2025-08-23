@@ -1,8 +1,12 @@
-﻿namespace Orion.API.HumanResources.ActionFilters;
+﻿using System.Web.Http.Results;
+using Microsoft.AspNetCore.Mvc.Filters;
+using ActionFilterAttribute = System.Web.Http.Filters.ActionFilterAttribute;
+
+namespace Orion.API.HumanResources.ActionFilters;
 
 public class CheckShowStatisticsHeader : ActionFilterAttribute
 { 
-    public override void OnActionExecuting(ActionExecutingContext context)
+    public void OnActionExecuting(ActionExecutingContext context)
     {
         // if the ShowStatistics header is missing or set to false, 
         // a BadRequest must be returned.

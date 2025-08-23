@@ -1,22 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Orion.Admin.Areas.API;
 using Orion.Admin.Models;
-using Orion.DataAccess.AllFeatures;
-using Orion.DataAccess.Entities;
+using Orion.DataAccess.Postgres.AllFeatures;
+using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.Admin.Controllers
 {
-    public class SearchController : Controller
+    public class SearchController(
+        IBusinessOwnerService service,
+        IFeatureManager featureManager)
+        : Controller
     {
-        private readonly IBusinessOwnerService _service;
-        private readonly IFeatureManager _featureManager;
-
-        public SearchController(IBusinessOwnerService service, 
-            IFeatureManager featureManager)
-        {
-            _service = service ?? throw new ArgumentNullException("service", "service is null.");
-            _featureManager = featureManager ?? throw new ArgumentNullException("featureManager", "featureManager is null.");
-        }
+        private readonly IBusinessOwnerService _service = service ?? throw new ArgumentNullException("service", "service is null.");
+        private readonly IFeatureManager _featureManager = featureManager ?? throw new ArgumentNullException("featureManager", "featureManager is null.");
 
         // GET: Search
         public ActionResult Index()

@@ -1,4 +1,5 @@
-using Orion.DataAccess.Entities;
+
+using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.API.Basket.DTO;
 

@@ -114,7 +114,7 @@ app.Run();
 
 namespace Orion.API.UserProfile
 {
-    public class UserProfileRepository
+    public class UserProfileRepository : IUserProfileServices
     {
     }
 }

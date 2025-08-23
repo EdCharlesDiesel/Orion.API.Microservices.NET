@@ -1,4 +1,7 @@
-﻿namespace Orion.API.HumanResources.DataAccess.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Orion.API.HumanResources.DataAccess.Entities;
 
 /// <summary>
 /// Lookup table containing the departments within the Adventure Works Cycles company.

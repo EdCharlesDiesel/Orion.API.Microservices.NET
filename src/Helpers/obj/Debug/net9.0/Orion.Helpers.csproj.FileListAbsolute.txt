@@ -13,3 +13,4 @@ C:\x\Orion.Microservices.NET\src\Helpers\obj\Debug\net9.0\refint\Orion.Helpers.d
 C:\x\Orion.Microservices.NET\src\Helpers\obj\Debug\net9.0\Orion.Helpers.pdb
 C:\x\Orion.Microservices.NET\src\Helpers\obj\Debug\net9.0\Orion.Helpers.genruntimeconfig.cache
 C:\x\Orion.Microservices.NET\src\Helpers\obj\Debug\net9.0\ref\Orion.Helpers.dll
+C:\x\Orion.Microservices.NET\src\Helpers\obj\Debug\net9.0\Orion.Helpers.csproj.AssemblyReference.cache

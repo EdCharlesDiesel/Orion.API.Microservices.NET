@@ -8,6 +8,6 @@ public class OrderProfile : Profile
 
         public OrderProfile()
         {
-            CreateMap<Core.Orders.Domain.Order, OrderDto>().ReverseMap();
+            CreateMap<Order, OrderDto>().ReverseMap();
         }
 }

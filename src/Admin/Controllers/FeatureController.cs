@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Orion.DataAccess.Data;
-using Orion.DataAccess.Entities;
+
+using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.Admin.Controllers
 {

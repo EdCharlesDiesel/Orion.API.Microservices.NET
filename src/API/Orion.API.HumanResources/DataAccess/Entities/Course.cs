@@ -1,4 +1,7 @@
-﻿namespace Orion.API.HumanResources.DataAccess.Entities
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Orion.API.HumanResources.DataAccess.Entities
 {
     public class Course
     {

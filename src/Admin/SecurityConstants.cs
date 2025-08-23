@@ -2,6 +2,8 @@
 {
     public static class SecurityConstants
     {
+        public static string Claim_SubscriptionType;
+        public static string RoleName_Admin;
         public const string RoleNameAdmin = "BusinessOwners.Admin";
         public const string RoleNameUser = "BusinessOwners.User";
         public const string PermissionNameView = "BusinessOwner.View";

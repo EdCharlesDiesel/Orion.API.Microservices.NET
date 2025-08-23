@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Orion.DataAccess.Entities;
+using Orion.Admin.Controllers;
+
 
 namespace Orion.Admin.Models.Account
 {
@@ -25,6 +26,11 @@ namespace Orion.Admin.Models.Account
         {
             UserName = appUser.UserName;
             Password = appUser.PasswordHash;
+        }
+
+        public MasterUserEditViewModel(MasterUser? userName)
+        {
+            throw new NotImplementedException();
         }
     }
 }

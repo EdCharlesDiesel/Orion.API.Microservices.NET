@@ -1,5 +1,6 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
+using Orion.Domain.IRepositories;
 
 namespace Orion.API.TradingEconomics.Controllers;
 

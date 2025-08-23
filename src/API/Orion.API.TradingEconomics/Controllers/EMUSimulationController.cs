@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.API.TradingEconomics.Controllers;
 

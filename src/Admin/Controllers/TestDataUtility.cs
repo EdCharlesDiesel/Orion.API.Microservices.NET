@@ -2,10 +2,9 @@ using System.Xml.Linq;
 using Microsoft.AspNetCore.Identity;
 using Orion.Admin.Areas.API;
 using Orion.Admin.TestData;
-using Orion.DataAccess;
-using Orion.DataAccess.AllFeatures;
-using Orion.DataAccess.Data;
-using Orion.DataAccess.Entities;
+using Orion.DataAccess.Postgres.AllFeatures;
+using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.Admin.Controllers
 {
@@ -52,7 +51,7 @@ namespace Orion.Admin.Controllers
 
         public async Task VerifyDatabaseIsPopulated()
         {
-            _dbContext.Database.EnsureCreated();
+            _dbContext.Database.GetHashCode();
 
             var businessOwners = _service.GetBusinessOwners();
 

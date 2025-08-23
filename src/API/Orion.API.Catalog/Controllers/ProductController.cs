@@ -25,10 +25,10 @@ namespace Orion.API.Catalog.Controllers
         /// <summary>Get a product by ID.</summary>
         [HttpGet("{id:guid}")]
         public async Task<IActionResult> GetProductById(Guid id)
-        {
-            object? result = await _service.GetByIdAsync(id);
-            if (result == null) return NotFound();
-            return Ok(result);
+        {     throw new NotImplementedException();
+            // object? result = await _service.GetByIdAsync(id);
+            // if (result == null) return NotFound();
+            // return Ok(result);
         }
 
         /// <summary>Create a product.</summary>

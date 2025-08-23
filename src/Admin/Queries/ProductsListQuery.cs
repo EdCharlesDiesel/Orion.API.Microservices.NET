@@ -1,5 +1,6 @@
 ﻿using Orion.Admin.Models.Products;
 using Orion.DataAccess.Data;
+using Orion.DataAccess.Postgres.Data;
 
 namespace Orion.Admin.Queries
 {

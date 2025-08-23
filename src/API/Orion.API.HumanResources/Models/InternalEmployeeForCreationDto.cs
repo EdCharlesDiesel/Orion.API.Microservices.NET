@@ -1,4 +1,6 @@
-﻿namespace Orion.API.HumanResources.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Orion.API.HumanResources.Models
 {
     public class CalendarForCreationDto
     {

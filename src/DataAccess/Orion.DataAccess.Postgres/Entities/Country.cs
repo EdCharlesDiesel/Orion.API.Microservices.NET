@@ -1,12 +1,13 @@
 namespace Orion.DataAccess.Postgres.Entities;
 
-public abstract class Country
+public class Country
 {
 
         public string Name { get; set; }
         public double BudgetDeficit { get; set; } // % of GDP
         public double DebtToGdp { get; set; } // % of GDP
         public bool NeedsMonetaryFlexibility { get; set; }
+        public int DebtToGDP { get; set; }
 
         public void TakeCorrectiveAction()
         {

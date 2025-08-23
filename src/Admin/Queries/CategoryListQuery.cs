@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using Orion.DataAccess.Data;
+using Orion.DataAccess.Postgres.Data;
 
 namespace Orion.Admin.Queries
 {

@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Orion.Admin.Areas.API;
-using Orion.DataAccess.Data;
-using Orion.DataAccess.Entities;
+using Orion.Admin.Models;
+using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.Entities;
+
 
 namespace Orion.Admin.Controllers
 {
@@ -337,5 +339,6 @@ namespace Orion.Admin.Controllers
     public interface ISubscriptionService
     {
         void AddSubscription(string getSelectedUsername, string subscriptionType);
+        string GetSubscriptionType(string username);
     }
 }

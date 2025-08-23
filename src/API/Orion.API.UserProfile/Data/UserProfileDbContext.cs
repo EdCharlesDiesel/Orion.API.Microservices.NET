@@ -3,12 +3,6 @@ using Orion.API.UserProfile.Models;
 
 namespace Orion.API.UserProfile.Data
 {
-    public class UserProfileDbContext(DbContextOptions<UserProfileDbContext> options) : DbContext(options), IUserProfileDbContext
-    {
-        public DbSet<UserProfile> UserProfiles { get; set; }
-        
-        
-    }
 
     public class UserProfileDbContext : IdentityDbContext<ApplicationUser>, IUserProfileDbContext
     {
@@ -17,7 +11,7 @@ namespace Orion.API.UserProfile.Data
         {
         }
     
-        public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<Domain.IRepositories.UserProfile> UserProfiles { get; set; }
     
         public async Task SaveChangesAsync()
         {

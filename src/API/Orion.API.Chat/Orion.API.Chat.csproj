@@ -11,7 +11,7 @@
         <PackageReference Include="AutoMapper" Version="15.0.1" />
         <PackageReference Include="Azure.AI.Agents.Persistent" Version="1.1.0" />
         <PackageReference Include="Azure.AI.Projects" Version="1.0.0-beta.10" />
-        <PackageReference Include="Azure.Identity" Version="1.14.2" />
+        <PackageReference Include="Azure.Identity" Version="1.15.0" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.Negotiate" Version="9.0.7" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
@@ -23,12 +23,32 @@
       <Content Include="..\..\..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+      <Content Remove="Data\**" />
     </ItemGroup>
 
 
 
     <ItemGroup>
+      <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.Postgres\Orion.DataAccess.Postgres.csproj" />
       <ProjectReference Include="..\..\Helpers\Orion.Helpers.csproj" />
+    </ItemGroup>
+
+
+
+    <ItemGroup>
+      <Compile Remove="Data\**" />
+    </ItemGroup>
+
+
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Data\**" />
+    </ItemGroup>
+
+
+
+    <ItemGroup>
+      <None Remove="Data\**" />
     </ItemGroup>
 
 </Project>
