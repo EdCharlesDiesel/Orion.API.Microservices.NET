@@ -2,6 +2,8 @@
 {
     public static class SecurityConstants
     {
+        public static string PermissionName_Edit;
+        public static string SubscriptionType_Ultimate;
         public static string Claim_SubscriptionType;
         public static string RoleName_Admin;
         public const string RoleNameAdmin = "BusinessOwners.Admin";

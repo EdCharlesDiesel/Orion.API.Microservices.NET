@@ -1,3 +1,5 @@
+using Orion.Helpers.Strings;
+
 namespace Orion.Helpers.UnitTests.Strings
 {
     public class LongestSubstringWithoutDuplicationClassUnitTest
@@ -5,8 +7,8 @@ namespace Orion.Helpers.UnitTests.Strings
         [Fact]
         public void Test1()
         {
-            Assert.True(LongestSubstringWithoutDuplicationClass.LongestSubstringWithoutDuplication("clementisacap")
-                    .Equals("mentisac"));
+            Assert.Equal(LongestSubstringWithoutDuplicationClass.LongestSubstringWithoutDuplication("clementisacap")
+, "mentisac");
         }
     }
 }

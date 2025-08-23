@@ -1,3 +1,5 @@
+using Orion.Helpers.Searching;
+
 namespace Orion.Helpers.UnitTests.Searching
 {
     public class UnitTest1

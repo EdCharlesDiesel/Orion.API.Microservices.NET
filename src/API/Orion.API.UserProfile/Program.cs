@@ -112,9 +112,55 @@ app.MapControllers();
 
 app.Run();
 
-namespace Orion.API.UserProfile
+public class UserProfileRepository : IUserProfileServices
 {
-    public class UserProfileRepository : IUserProfileServices
+    public async Task<IEnumerable<UserProfile>> GetAllAsync()
     {
+        throw new NotImplementedException();
+    }
+
+    public async Task GetByIdAsync(Guid id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task AddAsync(UserProfile entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task UpdateAsync(UserProfile entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task DeleteAsync(Guid id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<string> GetUserProfilesByDate(DateTime startDate, DateTime endDate)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<string> GetUserProfilesByCountries(params string[] countries)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<string> GetUserProfilesByCountriesAndDates(DateTime startDate, DateTime endDate, params string[] countries)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<string> GetUserProfilesByIndicator(params string[] indicators)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<UserProfile> Create(UserProfile userProfile)
+    {
+        throw new NotImplementedException();
     }
 }

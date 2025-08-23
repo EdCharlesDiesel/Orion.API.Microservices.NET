@@ -3,9 +3,10 @@ using Orion.Admin.Tools;
 using Orion.Domain.IRepositories;
 using Orion.Domain.Tools;
 
+ICommandHandler<DeleteCustomerCommand>
+
 namespace Orion.Admin.Handlers
 {
-    ICommandHandler<DeleteCustomerCommand>
     public class DeleteCustomerCommandHandler : ICommandHandler<DeleteCustomerCommand>
     {
         ICustomerRepository repo;

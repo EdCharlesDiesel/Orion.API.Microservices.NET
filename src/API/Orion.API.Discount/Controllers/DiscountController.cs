@@ -46,4 +46,12 @@ namespace Orion.API.Discount.Controllers
             return Ok(await _repository.DeleteDiscount(productName));
         }
     }
+
+    public interface IDiscountRepository
+    {
+        Task<object?> GetDiscount(string productName);
+        Task<object?> UpdateDiscount(Coupon coupon);
+        Task<object?> DeleteDiscount(string productName);
+        Task CreateDiscount(Coupon coupon);
+    }
 }

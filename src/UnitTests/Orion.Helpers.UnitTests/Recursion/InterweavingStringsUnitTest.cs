@@ -4,7 +4,7 @@ using Orion.Helpers.Recursion;
 
 namespace Orion.Helpers.UnitTests.Recursion
 {
-    public partial class Tests
+    public partial class InterweavingStringsTests
     {
         [Fact]
         public void TestCase1()

@@ -8,7 +8,7 @@ namespace Orion.Helpers.UnitTests.Binary_Search_Tree
         public void Test1()
         {
             var array = new List<int> { 1, 2, 5, 7, 10, 13, 14, 15, 22 };
-            var tree = _Go__.MinHeightBst(array);
+            _Go__.BST tree = _Go__.MinHeightBst(array);
 
             Assert.True(ValidateBst(tree));
             Assert.Equal(4, GetTreeHeight(tree));

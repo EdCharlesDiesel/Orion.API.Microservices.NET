@@ -1,15 +1,11 @@
 ﻿using Orion.Admin.Tools;
+using Orion.Domain.Tools;
 
 namespace Orion.Admin.Handlers
 {
-    public class PackagePriceChangedEventHandler :
+    public class PackagePriceChangedEventHandler(IPackageEventRepository repo) :
         IEventHandler<PackagePriceChangedEvent>
     {
-        IPackageEventRepository repo;
-        public PackagePriceChangedEventHandler(IPackageEventRepository repo)
-        {
-            this.repo = repo;
-        }
         public Task HandleAsync(PackagePriceChangedEvent ev)
         {
             repo.New(PackageEventType.CostChanged, ev.PackageId, ev.OldVersion, ev.NewVersion, ev.NewPrice);
@@ -17,12 +13,20 @@ namespace Orion.Admin.Handlers
         }
     }
 
+    public class PackagePriceChangedEvent : IEventNotification
+    {
+        public object PackageId { get; set; }
+        public object OldVersion { get; set; }
+        public object NewVersion { get; set; }
+        public object NewPrice { get; set; }
+    }
+
     public class PackageEventType
     {
         public static object CostChanged { get; set; }
     }
 
-    internal interface IPackageEventRepository
+    public interface IPackageEventRepository
     {
         void New(object costChanged, object packageId, object oldVersion, object newVersion, object newPrice);
     }

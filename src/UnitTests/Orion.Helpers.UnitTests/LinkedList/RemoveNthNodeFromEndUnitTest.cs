@@ -1,4 +1,6 @@
+using _Main_;
 using Microsoft.VisualBasic.CompilerServices;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 
 namespace Orion.Helpers.UnitTests.LinkedList
 {
@@ -18,7 +20,7 @@ public void TestCase1()
     TestLinkedList test = new TestLinkedList(0);
     test.addMany(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
     int[] expected = { 0, 1, 2, 3, 4, 5, 7, 8, 9 };
-    Program.RemoveKthNodeFromEnd(test, 4);
+    _Go__.RemoveKthNodeFromEnd(test, 4);
     Utils.AssertTrue(Compare(test.getNodesInArray(), expected));
 }
 

@@ -18,4 +18,20 @@
 		</PackageReference>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Remove="DataAccess\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Remove="DataAccess\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Remove="DataAccess\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="DataAccess\**" />
+	</ItemGroup>
+
 </Project>

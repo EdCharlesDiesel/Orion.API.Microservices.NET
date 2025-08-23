@@ -10,16 +10,16 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
         public void IterativeInorderTraversalClassTest1()
         {
             var root = new IterativeInorderTraversalClass.BinaryTree(1);
-            root.left = new Program.BinaryTree(2, root);
-            root.left.left = new Program.BinaryTree(4, root.left);
-            root.left.left.right = new Program.BinaryTree(9, root.left.left);
-            root.right = new Program.BinaryTree(3, root);
-            root.right.left = new Program.BinaryTree(6, root.right);
-            root.right.right = new Program.BinaryTree(7, root.right);
+            root.left = new IterativeInorderTraversalClass.BinaryTree(2, root);
+            root.left.left = new IterativeInorderTraversalClass.BinaryTree(4, root.left);
+            root.left.left.right = new _Go__.BinaryTree(9, root.left.left);
+            root.right = new _Go__.BinaryTree(3, root);
+            root.right.left = new _Go__.BinaryTree(6, root.right);
+            root.right.right = new _Go__.BinaryTree(7, root.right);
 
             testArray.Clear();
             _Go__.IterativeInOrderTraversal(root, testCallback);
-            Utils.AssertTrue(
+            Assert.True(
               Enumerable.SequenceEqual(testArray, new List<int> { 4, 9, 2, 1, 6, 3, 7 })
             );
         }

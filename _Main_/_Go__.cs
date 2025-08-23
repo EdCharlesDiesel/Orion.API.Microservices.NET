@@ -1,4 +1,5 @@
 using Orion.Helpers.Arrays;
+using Orion.Helpers.Binary_Trees;
 
 namespace _Main_;
 
@@ -16,7 +17,7 @@ public abstract class _Go__
         throw new NotImplementedException();
     }
 
-    public static object MinHeightBst(List<int> array)
+    public static BST MinHeightBst(List<int> array)
     {
         throw new NotImplementedException();
     }
@@ -51,6 +52,68 @@ public abstract class _Go__
     {
         throw new NotImplementedException();
     }
+
+    public static bool ValidateBst(BST root)
+    {
+        throw new NotImplementedException();
+    }
+
+    public static BinaryTree RightSiblingTree(BinaryTree root)
+    {
+        throw new NotImplementedException();
+    }
+
+    public static int NodeDepths(NodeDepthsClass.BinaryTree root)
+    {
+        throw new NotImplementedException();
+    }
+
+    public static int MinNumberOfCoinsForChange(int i, int[] input)
+    {
+        throw new NotImplementedException();
+    }
+
+    public static int RectangleMania(List<int[]> coords)
+    {
+        throw new NotImplementedException();
+    }
+
+    public static List<int> RiverSizes(int[,] input)
+    {
+        throw new NotImplementedException();
+    }
+
+    public static bool SquareOfZeroes(List<List<int>> test)
+    {
+        throw new NotImplementedException();
+    }
+
+    public class LinkedList
+    {
+        public LinkedList next;
+        public int value;
+        public int Value { get; set; }
+        public LinkedList Next { get; set; }
+    }
+
+    public static void RemoveKthNodeFromEnd(TestLinkedList test, int i)
+    {
+        throw new NotImplementedException();
+    }
+
+    public static LinkedList ReverseLinkedList(LinkedList test)
+    {
+        throw new NotImplementedException();
+    }
+
+    public static LinkedList ShiftLinkedList(LinkedList head, int i)
+    {
+        throw new NotImplementedException();
+    }
+}
+
+public class TestLinkedList
+{
 }
 
 public class TestBinaryTree

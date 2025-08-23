@@ -132,3 +132,8 @@ C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\
 C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\FastEndpoints.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\FastEndpoints.Attributes.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\FastEndpoints.Messaging.Core.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\FluentValidation.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\obj\Debug\net9.0\Orion.DataAccess.Postgres.MvcApplicationPartsAssemblyInfo.cs

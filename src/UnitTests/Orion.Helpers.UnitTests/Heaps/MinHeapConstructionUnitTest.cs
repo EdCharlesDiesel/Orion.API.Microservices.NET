@@ -1,3 +1,4 @@
+using _Main_;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace Orion.Helpers.UnitTests.Heaps
@@ -12,18 +13,18 @@ namespace Orion.Helpers.UnitTests.Heaps
     }
 }
 
-Program.MinHeap minHeap = new Program.MinHeap(new List<int> { 48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41 });
+_Go__.MinHeap minHeap = new _Go__.MinHeap(new List<int> { 48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41 });
 minHeap.Insert(76);
-Utils.AssertTrue(isMinHeapPropertySatisfied(minHeap.heap));
-Utils.AssertTrue(minHeap.Peek() == -5);
-Utils.AssertTrue(minHeap.Remove() == -5);
-Utils.AssertTrue(isMinHeapPropertySatisfied(minHeap.heap));
-Utils.AssertTrue(minHeap.Peek() == 2);
-Utils.AssertTrue(minHeap.Remove() == 2);
-Utils.AssertTrue(isMinHeapPropertySatisfied(minHeap.heap));
-Utils.AssertTrue(minHeap.Peek() == 6);
+Assert.True(isMinHeapPropertySatisfied(minHeap.heap));
+Assert.True(minHeap.Peek() == -5);
+Assert.True(minHeap.Remove() == -5);
+Assert.True(isMinHeapPropertySatisfied(minHeap.heap));
+Assert.True(minHeap.Peek() == 2);
+Assert.True(minHeap.Remove() == 2);
+Assert.True(isMinHeapPropertySatisfied(minHeap.heap));
+Assert.True(minHeap.Peek() == 6);
 minHeap.Insert(87);
-Utils.AssertTrue(isMinHeapPropertySatisfied(minHeap.heap));
+Assert.True(isMinHeapPropertySatisfied(minHeap.heap));
   }
 
   bool isMinHeapPropertySatisfied(List<int> array)

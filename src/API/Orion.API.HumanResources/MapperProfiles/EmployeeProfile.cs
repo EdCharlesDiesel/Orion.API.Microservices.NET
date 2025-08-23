@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Globalization;
+using AutoMapper;
 using Orion.API.HumanResources.DataAccess.Entities;
 using Orion.API.HumanResources.Models;
 

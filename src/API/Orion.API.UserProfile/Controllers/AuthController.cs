@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
+using Orion.API.UserProfile.Data;
 using Orion.API.UserProfile.Models;
+using Orion.DataAccess.Postgres.Data;
 
 namespace Orion.API.UserProfile.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class AuthController(UserProfileDbContext dbContext, JwtService jwtService) : ControllerBase
+public class AuthController(OrionDbContext dbContext, JwtService jwtService) : ControllerBase
 {
     private readonly JwtService _jwtService = jwtService;
 
@@ -45,4 +47,8 @@ public class AuthController(UserProfileDbContext dbContext, JwtService jwtServic
         // return Ok(new { token });
         throw new NotImplementedException();
     }
+}
+
+public class JwtService
+{
 }

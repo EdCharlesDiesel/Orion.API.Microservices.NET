@@ -1,6 +1,8 @@
+using Orion.Helpers.Sorting;
+
 namespace Orion.Helpers.UnitTests.Sorting
 {
-    public class UnitTest1
+    public class BubbleSortClassUnitTest
     {
         [Fact]
         public void Test1()

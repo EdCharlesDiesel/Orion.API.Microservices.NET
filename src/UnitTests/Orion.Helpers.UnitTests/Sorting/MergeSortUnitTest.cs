@@ -1,16 +1,18 @@
+using Orion.Helpers.Sorting;
+
 namespace Orion.Helpers.UnitTests.Sorting
 {
-    public class UnitTest1
+    public class MergeSortClassUnitTest
     {
         [Fact]
         public void Test1()
         {
             int[] expected = { 2, 3, 5, 5, 6, 8, 9 };
             int[] input = { 8, 5, 2, 9, 5, 6, 3 };
-            Assert.True(compare(MergeSortClass.MergeSort(input), expected));
+            Assert.True(Compare(MergeSortClass.MergeSort(input), expected));
         }
 
-        public bool compare(int[] arr1, int[] arr2)
+        private bool Compare(int[] arr1, int[] arr2)
         {
             if (arr1.Length != arr2.Length)
             {

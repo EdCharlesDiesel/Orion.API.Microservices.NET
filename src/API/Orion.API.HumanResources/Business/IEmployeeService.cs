@@ -1,5 +1,5 @@
-﻿using Orion.API.HumanResources.Business.EventArguments;
-using Orion.API.HumanResources.DataAccess.Entities;
+﻿using System.Globalization;
+using Orion.API.HumanResources.Business.EventArguments;
 
 namespace Orion.API.HumanResources.Business
 {
@@ -20,5 +20,9 @@ namespace Orion.API.HumanResources.Business
         Task GiveMinimumRaiseAsync(Calendar employee);
         Task GiveRaiseAsync(Calendar employee, int raise);
         void NotifyOfAbsence(Employee employee);
+    }
+
+    public class Course
+    {
     }
 }

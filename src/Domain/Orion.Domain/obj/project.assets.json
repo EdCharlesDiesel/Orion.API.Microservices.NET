@@ -2,6 +2,69 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "FastEndpoints/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "FastEndpoints.Attributes": "6.2.0",
+          "FastEndpoints.Messaging.Core": "6.2.0",
+          "FluentValidation": "12.0.0"
+        },
+        "compile": {
+          "lib/net9.0/FastEndpoints.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/FastEndpoints.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FastEndpoints.Attributes/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FastEndpoints.Messaging.Core/6.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Http.Features/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -47,21 +110,20 @@
           }
         }
       },
-      "Microsoft.Extensions.Primitives/2.2.0": {
+      "Microsoft.Extensions.Primitives/8.0.0": {
         "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.1",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
-        },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.ComponentModel.Annotations/5.0.0": {
@@ -76,32 +138,72 @@
             "related": ".xml"
           }
         }
-      },
-      "System.Memory/4.5.1": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
-        }
       }
     }
   },
   "libraries": {
+    "FastEndpoints/6.2.0": {
+      "sha512": "KhWPR4sGhuj6/qBksmAIR60zQtVDYMR/HWSKqtZhDUN/gnhJpq9/9nCpKw7Cssq8rbw68AmVBFzLKWsfAe4dZQ==",
+      "type": "package",
+      "path": "fastendpoints/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fastendpoints.6.2.0.nupkg.sha512",
+        "fastendpoints.nuspec",
+        "icon.png",
+        "lib/net10.0/FastEndpoints.dll",
+        "lib/net10.0/FastEndpoints.xml",
+        "lib/net8.0/FastEndpoints.dll",
+        "lib/net8.0/FastEndpoints.xml",
+        "lib/net9.0/FastEndpoints.dll",
+        "lib/net9.0/FastEndpoints.xml"
+      ]
+    },
+    "FastEndpoints.Attributes/6.2.0": {
+      "sha512": "Z2tWmd7tA8cVuHl6WsHZVIhdI2Dy++SddEgswoefpoZjOFMtkORKIOYpGec/MyaMqQpCRm/zgWfXjFvZrm/Oag==",
+      "type": "package",
+      "path": "fastendpoints.attributes/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fastendpoints.attributes.6.2.0.nupkg.sha512",
+        "fastendpoints.attributes.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/FastEndpoints.Attributes.dll",
+        "lib/netstandard2.0/FastEndpoints.Attributes.xml"
+      ]
+    },
+    "FastEndpoints.Messaging.Core/6.2.0": {
+      "sha512": "ycdbVd1IedyVFUpthcVa6NEJ4J1/JjEFHdfVEsBtO4Qts5IBQuqcirbyx7GoogCwqrgQapru5sZ/9Dns/cLPkA==",
+      "type": "package",
+      "path": "fastendpoints.messaging.core/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fastendpoints.messaging.core.6.2.0.nupkg.sha512",
+        "fastendpoints.messaging.core.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll",
+        "lib/netstandard2.1/FastEndpoints.Messaging.Core.xml"
+      ]
+    },
+    "FluentValidation/12.0.0": {
+      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "type": "package",
+      "path": "fluentvalidation/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.0.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Http.Features/2.2.0": {
       "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
       "type": "package",
@@ -159,17 +261,34 @@
         "version.txt"
       ]
     },
-    "Microsoft.Extensions.Primitives/2.2.0": {
-      "sha512": "azyQtqbm4fSaDzZHD/J+V6oWMFaf2tWP4WEGIYePLCMw3+b2RQdj9ybgbQyjCshcitQKQ4lEDOZjmSlTTrHxUg==",
+    "Microsoft.Extensions.Primitives/8.0.0": {
+      "sha512": "bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/2.2.0",
+      "path": "microsoft.extensions.primitives/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Primitives.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets",
+        "lib/net462/Microsoft.Extensions.Primitives.dll",
+        "lib/net462/Microsoft.Extensions.Primitives.xml",
+        "lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net6.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net7.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net7.0/Microsoft.Extensions.Primitives.xml",
+        "lib/net8.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net8.0/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.2.2.0.nupkg.sha512",
-        "microsoft.extensions.primitives.nuspec"
+        "microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.ComponentModel.Annotations/5.0.0": {
@@ -261,60 +380,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "System.Memory/4.5.1": {
-      "sha512": "sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
-      "type": "package",
-      "path": "system.memory/4.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "ref/netstandard1.1/System.Memory.dll",
-        "ref/netstandard1.1/System.Memory.xml",
-        "ref/netstandard2.0/System.Memory.dll",
-        "ref/netstandard2.0/System.Memory.xml",
-        "system.memory.4.5.1.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-      "sha512": "Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
-      "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "FastEndpoints >= 6.2.0",
       "Microsoft.AspNetCore.Http.Features >= 2.2.0",
       "Microsoft.Extensions.DependencyInjection >= 5.0.0",
       "System.ComponentModel.Annotations >= 5.0.0"
@@ -364,6 +434,10 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "FastEndpoints": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          },
           "Microsoft.AspNetCore.Http.Features": {
             "target": "Package",
             "version": "[2.2.0, )"

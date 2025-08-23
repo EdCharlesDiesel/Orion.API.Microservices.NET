@@ -1,3 +1,5 @@
+using Orion.Helpers.Tries;
+
 namespace Orion.Helpers.UnitTests.Tries
 {
     public class SuffixTrieConstructionClassUnitTest

@@ -1,7 +1,6 @@
-﻿using System.Net.Http.Headers;
+﻿using System.Globalization;
+using System.Net.Http.Headers;
 using System.Text.Json;
-using Orion.API.HumanResources.DataAccess.Entities;
-using Orion.API.HumanResources.DataAccess.Services;
 
 namespace Orion.API.HumanResources.Business
 {
@@ -66,6 +65,11 @@ namespace Orion.API.HumanResources.Business
             // return value
             return promotionEligibility == null ?
                 false : promotionEligibility.EligibleForPromotion;
+        }
+
+        public async Task<bool> PromoteCalendarAsync(Calendar employee)
+        {
+            throw new NotImplementedException();
         }
     }
 }

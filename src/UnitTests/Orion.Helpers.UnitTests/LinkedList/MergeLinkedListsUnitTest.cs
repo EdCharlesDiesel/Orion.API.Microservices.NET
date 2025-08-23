@@ -12,7 +12,7 @@ namespace Orion.Helpers.UnitTests.LinkedList
             TestLinkedList output =
               (TestLinkedList)Program.mergeLinkedLists(list1, list2);
             List<int> expectedNodes = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            Utils.AssertTrue(output.getNodesInArray().SequenceEqual(expectedNodes));
+            Assert.True(output.getNodesInArray().SequenceEqual(expectedNodes));
         }
     }
 

@@ -18,9 +18,9 @@
           "Microsoft.EntityFrameworkCore.Tools": "9.0.7",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
-          "Orion.Core.Catalog": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.5.0",
-          "Orion.Repository": "1.0.0.0"
+          "Orion.DataAccess.Postgres": "1.0.0",
+          "Orion.Domain": "1.0.0",
+          "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "Orion.API.Catalog.dll": {}
@@ -86,30 +86,33 @@
           }
         }
       },
-      "FastEndpoints/5.29.0": {
+      "FastEndpoints/6.2.0": {
         "dependencies": {
-          "FastEndpoints.Attributes": "5.29.0",
-          "FastEndpoints.Messaging.Core": "5.29.0",
-          "FluentValidation": "11.9.2"
+          "FastEndpoints.Attributes": "6.2.0",
+          "FastEndpoints.Messaging.Core": "6.2.0",
+          "FluentValidation": "12.0.0"
         },
         "runtime": {
-          "lib/net8.0/FastEndpoints.dll": {
-            "assemblyVersion": "5.29.0.0",
-            "fileVersion": "5.29.0.0"
+          "lib/net9.0/FastEndpoints.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
           }
         }
       },
-      "FastEndpoints.Attributes/5.29.0": {
+      "FastEndpoints.Attributes/6.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "9.0.7"
+        },
         "runtime": {
           "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
-            "assemblyVersion": "5.29.0.0",
-            "fileVersion": "5.29.0.0"
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
           }
         }
       },
       "FastEndpoints.MediatR/2.0.6": {
         "dependencies": {
-          "FastEndpoints": "5.29.0",
+          "FastEndpoints": "6.2.0",
           "FastEndpoints.Swagger": "5.29.0",
           "MediatR": "12.4.1"
         },
@@ -120,17 +123,17 @@
           }
         }
       },
-      "FastEndpoints.Messaging.Core/5.29.0": {
+      "FastEndpoints.Messaging.Core/6.2.0": {
         "runtime": {
           "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
-            "assemblyVersion": "5.29.0.0",
-            "fileVersion": "5.29.0.0"
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
           }
         }
       },
       "FastEndpoints.Swagger/5.29.0": {
         "dependencies": {
-          "FastEndpoints": "5.29.0",
+          "FastEndpoints": "6.2.0",
           "NSwag.AspNetCore": "14.1.0"
         },
         "runtime": {
@@ -140,11 +143,11 @@
           }
         }
       },
-      "FluentValidation/11.9.2": {
+      "FluentValidation/12.0.0": {
         "runtime": {
           "lib/net8.0/FluentValidation.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.9.2.0"
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
           }
         }
       },
@@ -196,6 +199,42 @@
         "runtime": {
           "lib/net9.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
             "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.725.31702"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.Internal/9.0.7": {
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.725.31702"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/9.0.7": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.Internal": "9.0.7"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.725.31702"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "9.0.7"
+        }
+      },
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.7": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.7",
+          "Microsoft.Extensions.Identity.Stores": "9.0.7"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
+            "assemblyVersion": "9.0.7.0",
             "fileVersion": "9.0.725.31702"
           }
         }
@@ -742,6 +781,32 @@
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0"
         }
       },
+      "Microsoft.Extensions.Identity.Core/9.0.7": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "9.0.7",
+          "Microsoft.Extensions.Logging": "9.0.7",
+          "Microsoft.Extensions.Options": "9.0.7"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Identity.Core.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.725.31702"
+          }
+        }
+      },
+      "Microsoft.Extensions.Identity.Stores/9.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "9.0.7",
+          "Microsoft.Extensions.Identity.Core": "9.0.7",
+          "Microsoft.Extensions.Logging": "9.0.7"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Identity.Stores.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.725.31702"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/9.0.7": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "9.0.7",
@@ -1148,6 +1213,7 @@
         }
       },
       "System.Collections.Immutable/7.0.0": {},
+      "System.ComponentModel.Annotations/5.0.0": {},
       "System.Composition/7.0.0": {
         "dependencies": {
           "System.Composition.AttributedModel": "7.0.0",
@@ -1599,81 +1665,29 @@
           }
         }
       },
-      "Orion.Core.Catalog/1.0.0": {
+      "Orion.DataAccess.Postgres/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.7",
+          "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Orion.Domain": "1.0.0"
+        },
         "runtime": {
-          "Orion.Core.Catalog.dll": {
+          "Orion.DataAccess.Postgres.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "Orion.Repository/1.0.0.0": {
+      "Orion.Domain/1.0.0": {
+        "dependencies": {
+          "FastEndpoints": "6.2.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection": "9.0.7",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "runtime": {
-          "Orion.Repository.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.UserProfile/1.0.0.0": {
-        "runtime": {
-          "Orion.Core.UserProfile.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.TradingEconomics/1.0.0.0": {
-        "runtime": {
-          "Orion.Core.TradingEconomics.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.Basket/1.0.0.0": {
-        "runtime": {
-          "Orion.Core.Basket.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.Chat/1.0.0.0": {
-        "runtime": {
-          "Orion.Core.Chat.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.CompetitionScorecard/1.0.0.0": {
-        "runtime": {
-          "Orion.Core.CompetitionScorecard.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.Discount/1.0.0.0": {
-        "runtime": {
-          "Orion.Core.Discount.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Core.Orders/1.0.0.0": {
-        "runtime": {
-          "Orion.Core.Orders.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Helpers/1.0.0.0": {
-        "runtime": {
-          "Orion.Helpers.dll": {
+          "Orion.Domain.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1715,19 +1729,19 @@
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
     },
-    "FastEndpoints/5.29.0": {
+    "FastEndpoints/6.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WVWSX5NiUWcffbfqmCYnoek6cP/SV27zwL7IKktLFIOj3or3ibdZMx7iC0iazbhxhZi8RZw266pChrItUruPMA==",
-      "path": "fastendpoints/5.29.0",
-      "hashPath": "fastendpoints.5.29.0.nupkg.sha512"
+      "sha512": "sha512-KhWPR4sGhuj6/qBksmAIR60zQtVDYMR/HWSKqtZhDUN/gnhJpq9/9nCpKw7Cssq8rbw68AmVBFzLKWsfAe4dZQ==",
+      "path": "fastendpoints/6.2.0",
+      "hashPath": "fastendpoints.6.2.0.nupkg.sha512"
     },
-    "FastEndpoints.Attributes/5.29.0": {
+    "FastEndpoints.Attributes/6.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7OKv+/qk1/rgeyI8RdW5NvUc3p1n90NnekRRDBmWU6r/5MVacchte/jGBEXxqmKyjBASEdD7eBN5Tr07MhancA==",
-      "path": "fastendpoints.attributes/5.29.0",
-      "hashPath": "fastendpoints.attributes.5.29.0.nupkg.sha512"
+      "sha512": "sha512-Z2tWmd7tA8cVuHl6WsHZVIhdI2Dy++SddEgswoefpoZjOFMtkORKIOYpGec/MyaMqQpCRm/zgWfXjFvZrm/Oag==",
+      "path": "fastendpoints.attributes/6.2.0",
+      "hashPath": "fastendpoints.attributes.6.2.0.nupkg.sha512"
     },
     "FastEndpoints.MediatR/2.0.6": {
       "type": "package",
@@ -1736,12 +1750,12 @@
       "path": "fastendpoints.mediatr/2.0.6",
       "hashPath": "fastendpoints.mediatr.2.0.6.nupkg.sha512"
     },
-    "FastEndpoints.Messaging.Core/5.29.0": {
+    "FastEndpoints.Messaging.Core/6.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-I+oKbh4yYO4b31kP/9DM6yDX9aX+RDPqewuN6uloeoG2lIB7dpp7qCiojbKfueX7iJz5fksRtK7FFlF/2BlYfA==",
-      "path": "fastendpoints.messaging.core/5.29.0",
-      "hashPath": "fastendpoints.messaging.core.5.29.0.nupkg.sha512"
+      "sha512": "sha512-ycdbVd1IedyVFUpthcVa6NEJ4J1/JjEFHdfVEsBtO4Qts5IBQuqcirbyx7GoogCwqrgQapru5sZ/9Dns/cLPkA==",
+      "path": "fastendpoints.messaging.core/6.2.0",
+      "hashPath": "fastendpoints.messaging.core.6.2.0.nupkg.sha512"
     },
     "FastEndpoints.Swagger/5.29.0": {
       "type": "package",
@@ -1750,12 +1764,12 @@
       "path": "fastendpoints.swagger/5.29.0",
       "hashPath": "fastendpoints.swagger.5.29.0.nupkg.sha512"
     },
-    "FluentValidation/11.9.2": {
+    "FluentValidation/12.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg==",
-      "path": "fluentvalidation/11.9.2",
-      "hashPath": "fluentvalidation.11.9.2.nupkg.sha512"
+      "sha512": "sha512-8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "path": "fluentvalidation/12.0.0",
+      "hashPath": "fluentvalidation.12.0.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1791,6 +1805,34 @@
       "sha512": "sha512-D/5amxI2QDtH4M0sll5o9LhlDS5KL6SJgxFYx3WBcSNNn24YZ8aIaJ28B9gHIeFK+8opB9v89BceYu++WuRVTQ==",
       "path": "microsoft.aspnetcore.connections.abstractions/9.0.7",
       "hashPath": "microsoft.aspnetcore.connections.abstractions.9.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.Internal/9.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5di3GKY/a9ceGAdVk78QFGMO55NrFRN1rnh4xNr7MHjOCOMhgcWkyv9051wkPUDfX+g2cNN6+ckHvNnlxUwc2A==",
+      "path": "microsoft.aspnetcore.cryptography.internal/9.0.7",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.9.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/9.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9ms7cTGHBzhCTfC8yIv9KfMrLKsRLg60jGsoZ/oEjoBXbqcEsXcjNtXqaOJCjpeltLDKoePrfSWzjhMUxTHHMA==",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/9.0.7",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.9.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tr4JHBgE/wN4Q/iQkWsi0oZXcaM7WFeZ1rpCUeTVka6az3DTtG0+RMuvZvPIq8U8vCANVuzqAcr+uUry4FUKrg==",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/9.0.7",
+      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.9.0.7.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
       "type": "package",
@@ -1994,6 +2036,20 @@
       "sha512": "sha512-TuRh62KcoOvaSDCbtHT8K0WYptZysYQHPRRNfOgqF7ZUtUL4O0WMV8RdxbtDFJDsg3jv9bgHwXbrgwTeI9+5uQ==",
       "path": "microsoft.extensions.fileproviders.embedded/8.0.0",
       "hashPath": "microsoft.extensions.fileproviders.embedded.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Identity.Core/9.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yFMK7yhLYbiwiiKOI/A1rReteRbO4vnN3SPNF5YpUHf6BvSMn5K1TDa7GVszJBH/VmxP0EAsHnSH05GEV0x3cg==",
+      "path": "microsoft.extensions.identity.core/9.0.7",
+      "hashPath": "microsoft.extensions.identity.core.9.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Identity.Stores/9.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mf04+xUV6HCeLROYHZeGSSSIbwXN2taLOcDpSKYO6BawqNOJoBSN9MaQ5vMNrlnH6BnXYPO8S4PuREftqXx5KA==",
+      "path": "microsoft.extensions.identity.stores/9.0.7",
+      "hashPath": "microsoft.extensions.identity.stores.9.0.7.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/9.0.7": {
       "type": "package",
@@ -2281,6 +2337,13 @@
       "sha512": "sha512-dQPcs0U1IKnBdRDBkrCTi1FoajSTBzLcVTpjO4MBCMC7f4pDOIPzgBoX8JjG7X6uZRJ8EBxsi8+DR1JuwjnzOQ==",
       "path": "system.collections.immutable/7.0.0",
       "hashPath": "system.collections.immutable.7.0.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
     },
     "System.Composition/7.0.0": {
       "type": "package",
@@ -2653,53 +2716,13 @@
       "path": "yamldotnet/15.1.4",
       "hashPath": "yamldotnet.15.1.4.nupkg.sha512"
     },
-    "Orion.Core.Catalog/1.0.0": {
+    "Orion.DataAccess.Postgres/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Orion.Repository/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.UserProfile/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.TradingEconomics/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.Basket/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.Chat/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.CompetitionScorecard/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.Discount/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Core.Orders/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Helpers/1.0.0.0": {
-      "type": "reference",
+    "Orion.Domain/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

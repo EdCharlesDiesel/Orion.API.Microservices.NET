@@ -100,6 +100,8 @@ namespace Orion.DataAccess.Postgres.Data
         public DbSet<Feature> Features { get; set; }
         public DbSet<Order> Orders { get; set; }
         public object Database { get; set; }
+        public object UserProfiles { get; set; }
+        public object Customers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

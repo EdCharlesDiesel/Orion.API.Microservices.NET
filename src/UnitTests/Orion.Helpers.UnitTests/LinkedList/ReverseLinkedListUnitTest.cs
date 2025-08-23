@@ -1,3 +1,5 @@
+using _Main_;
+
 namespace Orion.Helpers.UnitTests.LinkedList
 {
     public partial class UnitTest1
@@ -5,31 +7,30 @@ namespace Orion.Helpers.UnitTests.LinkedList
         [Fact(Skip = "Fix later")   ]
         public void Test1()
         {
-
-            public void TestCase1()
+            void TestCase1()
             {
-                Program.LinkedList test = newLinkedList(new int[] { 0, 1, 2, 3, 4, 5 });
-                List<int> result = toList(Program.ReverseLinkedList(test));
+                _Go__.LinkedList test = newLinkedList(new int[] { 0, 1, 2, 3, 4, 5 });
+                List<int> result = toList(_Go__.ReverseLinkedList(test));
                 int[] expected = new int[] { 5, 4, 3, 2, 1, 0 };
-                Utils.AssertTrue(arraysEqual(result, expected));
+                Assert.True(arraysEqual(result, expected));
             }
 
-            public Program.LinkedList newLinkedList(int[] values)
+            _Go__.LinkedList newLinkedList(int[] values)
             {
-                Program.LinkedList ll = new Program.LinkedList(values[0]);
-                Program.LinkedList current = ll;
+                _Go__.LinkedList ll = new _Go__.LinkedList(values[0]);
+                _Go__.LinkedList current = ll;
                 for (int i = 1; i < values.Length; i++)
                 {
-                    current.Next = new Program.LinkedList(values[i]);
+                    current.Next = new _Go__.LinkedList(values[i]);
                     current = current.Next;
                 }
                 return ll;
             }
 
-            public List<int> toList(Program.LinkedList ll)
+            List<int> toList(_Go__.LinkedList ll)
             {
                 List<int> arr = new List<int>();
-                Program.LinkedList current = ll;
+                _Go__.LinkedList current = ll;
                 while (current != null)
                 {
                     arr.Add(current.Value);
@@ -38,7 +39,7 @@ namespace Orion.Helpers.UnitTests.LinkedList
                 return arr;
             }
 
-            public bool arraysEqual(List<int> arr1, int[] arr2)
+            bool arraysEqual(List<int> arr1, int[] arr2)
             {
                 if (arr1.Count != arr2.Length) return false;
                 for (int i = 0; i < arr1.Count; i++)

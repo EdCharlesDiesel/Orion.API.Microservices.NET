@@ -2,7 +2,7 @@
 {
     public class ClassPhotosClass
     {
-        private bool ClassPhotos(List<int> redShirtHeights, List<int> blueShirtHeights)
+        public bool ClassPhotos(List<int> redShirtHeights, List<int> blueShirtHeights)
         {
             redShirtHeights.Sort((a, b) => b.CompareTo(a));
             blueShirtHeights.Sort((a, b) => b.CompareTo(a));

@@ -5,7 +5,7 @@
     /// </summary>
     public class MinimumWaitingTimeClass
     {
-        private int MinimumWaitingTime(int[] queries)
+        public int MinimumWaitingTime(int[] queries)
         {
             Array.Sort(queries);
             int totailWaitingTime = 0;

@@ -8,4 +8,5 @@ public interface IOrderServices
     //
     // Task CreateOrders(List<Core.Orders.Domain.Order> entity);
     Task<object?> GetAllAsync();
+
 }

@@ -13,4 +13,5 @@ public interface IUserProfileServices:IRepository<UserProfile>
 
 public class UserProfile
 {
+    public object Id { get; set; }
 }

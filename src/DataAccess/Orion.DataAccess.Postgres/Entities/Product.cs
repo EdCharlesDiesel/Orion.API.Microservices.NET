@@ -47,5 +47,6 @@
         public ICollection<TransactionHistory> TransactionHistory { get; set; } = new HashSet<TransactionHistory>();
         public ICollection<WorkOrder> WorkOrder { get; set; } = new HashSet<WorkOrder>();
         public IEnumerable<BillOfMaterials>? BillOfMaterialsAssembly { get; set; }
+        public string ProductName { get; set; }
     }
 }

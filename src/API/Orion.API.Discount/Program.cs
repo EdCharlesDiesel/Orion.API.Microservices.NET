@@ -35,4 +35,8 @@ namespace Orion.API.Discount
             app.Run();
         }
     }
+
+    public class DiscountRepository
+    {
+    }
 }

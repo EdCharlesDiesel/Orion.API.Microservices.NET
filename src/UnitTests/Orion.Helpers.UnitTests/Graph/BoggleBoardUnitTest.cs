@@ -5,7 +5,7 @@ namespace Orion.Helpers.UnitTests.Graph
     public partial class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void BoggleBoardClassTest()
         {
             char[,] board = {
                           { 't', 'h', 'i', 's', 'i', 's', 'a' },

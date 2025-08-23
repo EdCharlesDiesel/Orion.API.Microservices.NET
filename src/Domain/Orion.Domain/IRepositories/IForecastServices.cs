@@ -15,4 +15,6 @@ public interface IForecastServices
 
 public class Forecast
 {
+    public string CreateBy { get; set; }
+    public string Country { get; set; }
 }

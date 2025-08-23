@@ -13,7 +13,7 @@ namespace Orion.Helpers.UnitTests.Famous_Algorithmns
             List<int[]> deps = new List<int[]>();
             fillDeps(depsArray, deps);
             List<int> order = TopologicalSortClass.TopologicalSort(jobs, deps);
-            Assert.True(isValidTopologicalOrder(order, jobs, deps));
+            Assert.True(IsValidTopologicalOrder(order, jobs, deps));
         }
 
         void fillDeps(int[,] depsArray, List<int[]> deps)
@@ -29,7 +29,7 @@ namespace Orion.Helpers.UnitTests.Famous_Algorithmns
             }
         }
 
-        bool isValidTopologicalOrder(
+        private bool IsValidTopologicalOrder(
    List<int> order, List<int> jobs, List<int[]> deps
  )
         {
@@ -47,6 +47,14 @@ namespace Orion.Helpers.UnitTests.Famous_Algorithmns
                 if (!visited.ContainsKey(job)) return false;
             }
             return order.Count == jobs.Count;
+        }
+    }
+
+    public class TopologicalSortClass
+    {
+        public static List<int> TopologicalSort(List<int> jobs, List<int[]> deps)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -15,22 +15,34 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
 }
 
 
-_Go__.BinaryTree root = new Program.BinaryTree(1);
-insert(root, new int[] { 2, 3, 4, 5, 6, 7, 8, 9 });
-root.left.right.right = new Program.BinaryTree(10);
-root.right.left.left = new Program.BinaryTree(11);
-root.right.right.left = new Program.BinaryTree(12);
-root.right.right.right = new Program.BinaryTree(13);
-root.right.left.left.left = new Program.BinaryTree(14);
-_Go__.BinaryTree mutatedRoot = Program.RightSiblingTree(root);
-List<int> actual = getDfsOrder(mutatedRoot);
+_Go__.BinaryTree root = new _Go__.BinaryTree(1);
+Insert(root, new int[] { 2, 3, 4, 5, 6, 7, 8, 9 });
+
+void Insert(_Go__.BinaryTree binaryTree, int[] ints)
+{
+    throw new NotImplementedException();
+}
+
+root.left.right.right = new _Go__.BinaryTree(10);
+root.right.left.left = new _Go__.BinaryTree(11);
+root.right.right.left = new _Go__.BinaryTree(12);
+root.right.right.right = new _Go__.BinaryTree(13);
+root.right.left.left.left = new _Go__.BinaryTree(14);
+_Go__.BinaryTree mutatedRoot = _Go__.RightSiblingTree(root);
+List<int> actual = GetDfsOrder(mutatedRoot);
+
+List<int> GetDfsOrder(_Go__.BinaryTree binaryTree)
+{
+    throw new NotImplementedException();
+}
+
 var expected = new List<int> {
       1, 2, 4, 8, 9, 5, 6, 11, 14, 7, 12, 13, 3, 6, 11, 14, 7, 12, 13
     };
-Utils.AssertTrue(expected.SequenceEqual(actual));
+Assert.True(expected.SequenceEqual(actual));
   }
 
-  public void insert(_Go__.BinaryTree root, int[] values)
+  public void Insert(_Go__.BinaryTree root, int[] values)
 {
     insert(root, values, 0);
 }
@@ -42,7 +54,7 @@ Utils.AssertTrue(expected.SequenceEqual(actual));
           return;
       }
 
-      Queue<_Go__.BinaryTree> queue = new Queue<Program.BinaryTree>();
+      Queue<_Go__.BinaryTree> queue = new Queue<_Go__.BinaryTree>();
       queue.Enqueue(root);
       while (queue.Count > 0)
       {

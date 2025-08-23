@@ -1,4 +1,6 @@
 
+using Orion.Helpers.Recursion;
+
 namespace Orion.Helpers.UnitTests.Recursion
 {
     public class RevealMinesweeperUnitTests
@@ -31,7 +33,7 @@ namespace Orion.Helpers.UnitTests.Recursion
             {
                 for (int currColumn = 0; currColumn < expected[0].Length; currColumn++)
                 {
-                    Assert.True(expected[currRow][currColumn].Equals(actual[currRow][currColumn]));
+                    Assert.Equal(expected[currRow][currColumn], actual[currRow][currColumn]);
                 }
             }
         }

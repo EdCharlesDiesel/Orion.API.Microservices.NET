@@ -1,4 +1,5 @@
-﻿using Orion.API.HumanResources.Business.EventArguments;
+﻿using System.Globalization;
+using Orion.API.HumanResources.Business.EventArguments;
 using Orion.API.HumanResources.Business.Exceptions;
 using Orion.API.HumanResources.DataAccess.Entities;
 using Orion.API.HumanResources.DataAccess.Services;
@@ -218,5 +219,9 @@ namespace Orion.API.HumanResources.Business
             return employee.YearsInService
                    * employee.AttendedCourses.Count * 100;
         }
+    }
+
+    public interface IEmployeeManagementRepository
+    {
     }
 }

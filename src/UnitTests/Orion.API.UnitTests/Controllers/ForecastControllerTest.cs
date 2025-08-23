@@ -3,6 +3,8 @@ using JetBrains.Annotations;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Orion.API.TradingEconomics.Controllers;
+using Orion.Domain.IRepositories;
+using Shouldly;
 using Xunit;
 
 namespace Orion.API.UnitTests.Controllers;

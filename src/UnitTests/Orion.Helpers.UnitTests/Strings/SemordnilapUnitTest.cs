@@ -1,3 +1,5 @@
+using Orion.Helpers.Strings;
+
 namespace Orion.Helpers.UnitTests.Strings
 {
     public class USemordnilapClassnitTest 

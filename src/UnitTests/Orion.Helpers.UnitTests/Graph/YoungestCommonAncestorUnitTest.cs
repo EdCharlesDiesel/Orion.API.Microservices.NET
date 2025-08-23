@@ -35,11 +35,11 @@ namespace Orion.Helpers.UnitTests.Graph
 
     public Dictionary<char, _Go__.AncestralTree> GetNewTrees()
     {
-        var trees = new Dictionary<char, Program.AncestralTree>();
+        var trees = new Dictionary<char, _Go__.AncestralTree>();
         var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         foreach (char a in alphabet)
         {
-            trees.Add(a, new Program.AncestralTree(a));
+            trees.Add(a, new _Go__.AncestralTree(a));
         }
 
         trees['A'].AddAsAncestor(new[] {

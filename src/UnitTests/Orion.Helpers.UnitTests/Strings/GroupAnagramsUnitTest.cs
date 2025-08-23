@@ -1,6 +1,8 @@
+using Orion.Helpers.Strings;
+
 namespace Orion.Helpers.UnitTests.Strings
 {
-    public class compareUnitTest
+    public class CompareUnitTest
     {
         [Fact]
         public void Test1()

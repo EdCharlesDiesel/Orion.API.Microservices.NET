@@ -1,6 +1,8 @@
 ﻿
 
-using Orion.API.HumanResources.DataAccess.Entities;
+
+
+using System.Globalization;
 
 namespace Orion.API.HumanResources.Business
 {
@@ -45,5 +47,17 @@ namespace Orion.API.HumanResources.Business
             // create a new employee with default values 
             return new Calendar(firstName, lastName, 0, 2500, false, 1);
         }
+    }
+
+    public class ExternalEmployee : Employee
+    {
+        public ExternalEmployee(string firstName, string lastName, string company)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Employee
+    {
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MGy+NezQgEU=",
+  "dgSpecHash": "88SqOradRzE=",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,10 @@
     "C:\\Users\\PC\\.nuget\\packages\\azure.storage.blobs\\12.24.1\\azure.storage.blobs.12.24.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.storage.common\\12.23.0\\azure.storage.common.12.23.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\elasticsearch.net\\7.8.1\\elasticsearch.net.7.8.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\fastendpoints\\6.2.0\\fastendpoints.6.2.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.attributes\\6.2.0\\fastendpoints.attributes.6.2.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\fastendpoints.messaging.core\\6.2.0\\fastendpoints.messaging.core.6.2.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\9.0.7\\microsoft.aspnetcore.authentication.negotiate.9.0.7.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\9.0.7\\microsoft.aspnetcore.connections.abstractions.9.0.7.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.7\\microsoft.aspnetcore.cryptography.internal.9.0.7.nupkg.sha512",

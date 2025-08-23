@@ -1,3 +1,4 @@
+using _Main_;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace Orion.Helpers.UnitTests.Graph
@@ -17,7 +18,7 @@ namespace Orion.Helpers.UnitTests.Graph
               new[] { 3, 1 },
               new[] { 3, 0 }
             };
-            Utils.AssertTrue(Program.RectangleMania(coords) == 6);
+            Assert.True(_Go__.RectangleMania(coords) == 6);
         }
     }
 }

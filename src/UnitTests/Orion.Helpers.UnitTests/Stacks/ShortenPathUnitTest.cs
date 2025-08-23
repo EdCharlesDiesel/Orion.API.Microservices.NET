@@ -1,3 +1,5 @@
+using Orion.Helpers.Stacks;
+
 namespace Orion.Helpers.UnitTests.Stacks
 {
     public class ShortenPathClassUnitTest

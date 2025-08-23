@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Orion.DataAccess.Postgres.Data;
 
 namespace Orion.Admin.Queries

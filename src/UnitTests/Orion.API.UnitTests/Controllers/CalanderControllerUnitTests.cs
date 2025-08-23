@@ -2,6 +2,8 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Orion.API.TradingEconomics.Controllers;
+using Orion.DataAccess.Postgres.Entities;
+using Shouldly;
 using Xunit;
 
 namespace Orion.API.UnitTests.Controllers;

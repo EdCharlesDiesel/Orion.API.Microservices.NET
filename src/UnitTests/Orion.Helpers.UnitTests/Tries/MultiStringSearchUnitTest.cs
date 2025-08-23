@@ -29,4 +29,15 @@ namespace Orion.Helpers.UnitTests.Tries
             return true;
         }
     }
+
+    public class MultiStringSearch
+    {
+        public class MultistringSearchClass
+        {
+            public static List<bool> MultistringSearch(string thisIsABigString, string[] strings)
+            {
+                throw new NotImplementedException();
+            }
+        }
+    }
 }

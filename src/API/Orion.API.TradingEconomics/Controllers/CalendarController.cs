@@ -96,5 +96,6 @@ namespace Orion.API.TradingEconomics.Controllers
         Task<object?> GetCalendarEventsByDate(DateTime startDate, DateTime endDate);
         Task<object?> GetCalendarEventsByCountries(string[] names);
         Task<string> GetCalendarEvents();
+        void GetCalendarEventsByIndicator(string[] indicators);
     }
 }

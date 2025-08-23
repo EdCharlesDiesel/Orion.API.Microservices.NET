@@ -1,3 +1,5 @@
+using _Main_;
+
 namespace Orion.Helpers.UnitTests.Graph
 {
     public class RiverSizesUnitTest1
@@ -13,13 +15,13 @@ namespace Orion.Helpers.UnitTests.Graph
               { 1, 0, 1, 1, 0 },
             };
                     int[] expected = { 1, 2, 2, 2, 5 };
-                    List<int> output = Program.RiverSizes(input);
+                    List<int> output = _Go__.RiverSizes(input);
                     output.Sort();
-                    Utils.AssertTrue(compare(output, expected));
+                    Assert.True(Compare(output, expected));
                 }
         }
 
-        public static bool compare(List<int> arr1, int[] arr2)
+        public static bool Compare(List<int> arr1, int[] arr2)
         {
             if (arr1.Count != arr2.Length)
             {

@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using Moq;
 using Orion.API.TradingEconomics.Controllers;
+using Orion.Domain.IRepositories;
 using Xunit;
 
 namespace Orion.API.UnitTests.Controllers;

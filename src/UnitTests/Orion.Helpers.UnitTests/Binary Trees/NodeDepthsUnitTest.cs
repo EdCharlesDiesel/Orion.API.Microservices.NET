@@ -1,4 +1,6 @@
+using _Main_;
 using Microsoft.VisualBasic.CompilerServices;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Orion.Helpers.Binary_Trees;
 
 namespace Orion.Helpers.UnitTests.Binary_Trees
@@ -9,16 +11,16 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
         public void Test1()
         {
             var root = new NodeDepthsClass.BinaryTree(1);
-            root.left = new Program.BinaryTree(2);
-            root.left.left = new Program.BinaryTree(4);
-            root.left.left.left = new Program.BinaryTree(8);
-            root.left.left.right = new Program.BinaryTree(9);
-            root.left.right = new Program.BinaryTree(5);
-            root.right = new Program.BinaryTree(3);
-            root.right.left = new Program.BinaryTree(6);
-            root.right.right = new Program.BinaryTree(7);
-            int actual = Program.NodeDepths(root);
-            Utils.AssertEquals(16, actual);
+            root.left = new _Go__.BinaryTree(2);
+            root.left.left = new _Go__.BinaryTree(4);
+            root.left.left.left = new _Go__.BinaryTree(8);
+            root.left.left.right = new _Go__.BinaryTree(9);
+            root.left.right = new _Go__.BinaryTree(5);
+            root.right = new _Go__.BinaryTree(3);
+            root.right.left = new _Go__.BinaryTree(6);
+            root.right.right = new _Go__.BinaryTree(7);
+            int actual = _Go__.NodeDepths(root);
+            Assert.Equals(16, actual);
         }
     }
 }

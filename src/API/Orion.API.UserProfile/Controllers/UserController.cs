@@ -1,6 +1,8 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Orion.API.UserProfile.Data;
+using Orion.DataAccess.Postgres.Data;
 
 namespace Orion.API.UserProfile.Controllers;
 
@@ -8,9 +10,9 @@ namespace Orion.API.UserProfile.Controllers;
 [Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    private readonly UserProfileDbContext _dbContext;
+    private readonly OrionDbContext _dbContext;
 
-    public UserController(UserProfileDbContext dbContext)
+    public UserController(OrionDbContext dbContext)
     {
         _dbContext = dbContext;
     }

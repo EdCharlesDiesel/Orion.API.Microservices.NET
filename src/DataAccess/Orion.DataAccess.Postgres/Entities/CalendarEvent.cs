@@ -8,7 +8,7 @@ namespace Orion.DataAccess.Postgres.Entities;
 /// Current basket of the database. 
 /// </summary>
 [Table("CalendarEvent")]
-public abstract class CalendarEvent: IBaseEntity
+public class CalendarEvent: IBaseEntity
 {
     public object SourceURL;
     public string CalendarId { get; set; }
