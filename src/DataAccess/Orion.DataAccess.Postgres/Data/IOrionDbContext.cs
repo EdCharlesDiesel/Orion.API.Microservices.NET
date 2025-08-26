@@ -1,5 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+
+using Microsoft.EntityFrameworkCore;
 using Orion.DataAccess.Postgres.Entities;
+using Orion.DataAccess.Postgres.Entities.Common;
+using Orion.DataAccess.Postgres.Entities.ECommerce;
 
 namespace Orion.DataAccess.Postgres.Data
 {
@@ -7,7 +11,7 @@ namespace Orion.DataAccess.Postgres.Data
     {
         DbSet<Address> Address { get; set; }
         DbSet<AddressType> AddressType { get; set; }
-        DbSet<AwbuildVersion> AwbuildVersion { get; set; }
+        DbSet<AwBuildVersion> AwbuildVersion { get; set; }
         DbSet<BillOfMaterials> BillOfMaterials { get; set; }
         DbSet<Contact> Contact { get; set; }
         DbSet<ContactCreditCard> ContactCreditCard { get; set; }
@@ -83,9 +87,37 @@ namespace Orion.DataAccess.Postgres.Data
         DbSet<ChatRequest> ChatRequests  { get; set; }
         DbSet<Coupon> Coupons  { get; set; }
         DbSet<CompetitionMatch> CompetitionMatches  { get; set; }
-        DbSet<AwbuildVersion> AwbuildVersions  { get; set; }
+   
         
         // DbSet<Orion.Core.Orders.Domain.Order> Orders  { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
+    }
+
+    public class ContactCreditCard
+    {
+    }
+
+    public class CustomerAddress
+    {
+    }
+
+    public class StoreContact
+    {
+    }
+
+    public class VendorContact
+    {
+    }
+
+    public class VendorAddress
+    {
+    }
+
+    public class Individual
+    {
+    }
+
+    public class Contact
+    {
     }
 }

@@ -23,7 +23,7 @@ namespace Orion.API.Basket.Controllers
         /// Create a new basket.
         /// </summary>
         [HttpPost]
-        public async Task<IActionResult> CreateBasket([FromBody] DataAccess.Postgres.Entities.Basket basket)
+        public async Task<IActionResult> CreateBasket([FromBody] DataAccess.Postgres.Entities.Common.Basket basket)
         {
             throw new NotImplementedException();
             // var dto = mapper.Map<BasketDto>(basket);
@@ -51,7 +51,7 @@ namespace Orion.API.Basket.Controllers
         /// Update an existing basket.
         /// </summary>
         [HttpPut("{id:guid}")]
-        public async Task<IActionResult> UpdateBasket(Guid id, [FromBody] DataAccess.Postgres.Entities.Basket basket)
+        public async Task<IActionResult> UpdateBasket(Guid id, [FromBody] DataAccess.Postgres.Entities.Common.Basket basket)
         {
             throw new NotImplementedException();
             // if (id != basket.Id)
@@ -67,7 +67,7 @@ namespace Orion.API.Basket.Controllers
         /// </summary>
         [HttpPatch("{id:guid}")]
         public async Task<IActionResult> PatchBasket(Guid id,
-            [FromBody] JsonPatchDocument<DataAccess.Postgres.Entities.Basket> patchDoc)
+            [FromBody] JsonPatchDocument<DataAccess.Postgres.Entities.Common.Basket> patchDoc)
         {
             throw new NotImplementedException();
             // if (patchDoc == null) return BadRequest();
@@ -98,6 +98,6 @@ namespace Orion.API.Basket.Controllers
     public interface IBasketService
     {
         object? GetAll();
-        object? CreateBasketAll(DataAccess.Postgres.Entities.Basket basket);
+        object? CreateBasketAll(DataAccess.Postgres.Entities.Common.Basket basket);
     }
 }

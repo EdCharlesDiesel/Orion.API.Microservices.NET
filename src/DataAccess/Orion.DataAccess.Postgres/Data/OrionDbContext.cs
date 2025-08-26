@@ -1,23 +1,26 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿
+
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Orion.DataAccess.Postgres.Entities;
+using Orion.DataAccess.Postgres.Entities.Common;
+using Orion.DataAccess.Postgres.Entities.ECommerce;
 
 namespace Orion.DataAccess.Postgres.Data
 {
     // Inherit from IdentityDbContext instead of DbContext
-    public sealed class OrionDbContext 
-        : IdentityDbContext<IdentityUser, IdentityRole, string>, IOrionDbContext
+    public sealed class OrionDbContext(
+        DbContextOptions<OrionDbContext> options,
+        object database,
+        object userProfiles,
+        object customers)
+        : IdentityDbContext<IdentityUser, IdentityRole, string>(options), IOrionDbContext
     {
-        public OrionDbContext(DbContextOptions<OrionDbContext> options)
-            : base(options)
-        {
-        }
-
         // Your DbSets
         public DbSet<Address> Address { get; set; }
         public DbSet<AddressType> AddressType { get; set; }
-        public DbSet<AwbuildVersion> AwbuildVersion { get; set; }
+        public DbSet<AwBuildVersion> AwbuildVersion { get; set; }
         public DbSet<BillOfMaterials> BillOfMaterials { get; set; }
         public DbSet<Contact> Contact { get; set; }
         public DbSet<ContactCreditCard> ContactCreditCard { get; set; }
@@ -99,9 +102,9 @@ namespace Orion.DataAccess.Postgres.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Feature> Features { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public object Database { get; set; }
-        public object UserProfiles { get; set; }
-        public object Customers { get; set; }
+        public object Database { get; set; } = database;
+        public object UserProfiles { get; set; } = userProfiles;
+        public object Customers { get; set; } = customers;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

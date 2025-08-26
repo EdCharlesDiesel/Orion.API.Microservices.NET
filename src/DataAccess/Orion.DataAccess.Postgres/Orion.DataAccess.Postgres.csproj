@@ -30,7 +30,12 @@
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
       <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="9.0.8" />
+      <PackageReference Include="Microsoft.SqlServer.Types" Version="160.1000.6" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Entities\ECommerce\" />
     </ItemGroup>
 
 
