@@ -3466,11 +3466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
       "projectName": "Orion.WebApps.HealthCheckUI",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3479,6 +3479,7 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

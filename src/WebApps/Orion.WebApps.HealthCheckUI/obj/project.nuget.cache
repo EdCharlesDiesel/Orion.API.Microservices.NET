@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eB+ABJE6B7Y=",
+  "dgSpecHash": "hs7RC4OTjg4=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\aspnetcore.healthchecks.npgsql\\7.1.0\\aspnetcore.healthchecks.npgsql.7.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\aspnetcore.healthchecks.ui\\8.0.0\\aspnetcore.healthchecks.ui.8.0.0.nupkg.sha512",
@@ -80,9 +80,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "Orion.WebApps.HealthCheckUI depends on AspNetCore.HealthChecks.NpgSql (>= 7.0.4) but AspNetCore.HealthChecks.NpgSql 7.0.4 was not found. AspNetCore.HealthChecks.NpgSql 7.1.0 was resolved instead.",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
       "libraryId": "AspNetCore.HealthChecks.NpgSql",
       "targetGraphs": [
         "net9.0"
@@ -92,9 +92,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "Orion.WebApps.HealthCheckUI depends on AspNetCore.HealthChecks.UI (>= 7.0.4) but AspNetCore.HealthChecks.UI 7.0.4 was not found. AspNetCore.HealthChecks.UI 8.0.0 was resolved instead.",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
       "libraryId": "AspNetCore.HealthChecks.UI",
       "targetGraphs": [
         "net9.0"
@@ -104,9 +104,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "Orion.WebApps.HealthCheckUI depends on AspNetCore.HealthChecks.UI.PostgreSQL.Storage (>= 7.0.4) but AspNetCore.HealthChecks.UI.PostgreSQL.Storage 7.0.4 was not found. AspNetCore.HealthChecks.UI.PostgreSQL.Storage 8.0.0 was resolved instead.",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\x\\Orion.API.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\WebApps\\Orion.WebApps.HealthCheckUI\\Orion.WebApps.HealthCheckUI.csproj",
       "libraryId": "AspNetCore.HealthChecks.UI.PostgreSQL.Storage",
       "targetGraphs": [
         "net9.0"
