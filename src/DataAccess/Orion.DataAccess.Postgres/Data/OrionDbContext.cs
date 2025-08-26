@@ -133,18 +133,18 @@ namespace Orion.DataAccess.Postgres.Data
                     .OnDelete(DeleteBehavior.Restrict);
             });
 
-            modelBuilder.Entity<CurrencyRate>(entity =>
-            {
-                entity.HasOne(d => d.FromCurrencyCodeNavigation)
-                    .WithMany(p => p.CurrencyRateFromCurrencyCodeNavigation)
-                    .HasForeignKey(d => d.FromCurrencyCode)
-                    .OnDelete(DeleteBehavior.Restrict);
-
-                entity.HasOne(d => d.ToCurrencyCodeNavigation)
-                    .WithMany(p => p.CurrencyRateToCurrencyCodeNavigation)
-                    .HasForeignKey(d => d.ToCurrencyCode)
-                    .OnDelete(DeleteBehavior.Restrict);
-            });
+            // modelBuilder.Entity<CurrencyRate>(entity =>
+            // {
+            //     entity.HasOne(d => d.FromCurrencyCodeNavigation)
+            //         .WithMany(p => p.CurrencyRateFromCurrencyCodeNavigation)
+            //         .HasForeignKey(d => d.FromCurrencyCode)
+            //         .OnDelete(DeleteBehavior.Restrict);
+            //
+            //     entity.HasOne(d => d.ToCurrencyCodeNavigation)
+            //         .WithMany(p => p.CurrencyRateToCurrencyCodeNavigation)
+            //         .HasForeignKey(d => d.ToCurrencyCode)
+            //         .OnDelete(DeleteBehavior.Restrict);
+            // });
 
             modelBuilder.Entity<Product>(entity =>
             {
@@ -167,6 +167,19 @@ namespace Orion.DataAccess.Postgres.Data
                 .HasOne(e => e.SalesPerson)
                 .WithOne(sp => sp.SalesPersonNavigation)
                 .HasForeignKey<SalesPerson>(sp => sp.BusinessEntityId);
+            
+            modelBuilder.Entity<Currency>()
+                .HasKey(c => c.Id);
+
+            modelBuilder.Entity<Currency>()
+                .HasIndex(c => c.Code)
+                .IsUnique(); // ensure codes are unique if needed
+
+            // modelBuilder.Entity<CurrencyRate>()
+            //     .HasOne(cr => cr.FromCurrencyCodeNavigation)
+            //     .WithMany(c => c.CurrencyRateFromCurrencyCodeNavigation)
+            //     .HasForeignKey(cr => cr.FromCurrencyCode)
+            //     .HasPrincipalKey(c => c.Code); // <-- key fix
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

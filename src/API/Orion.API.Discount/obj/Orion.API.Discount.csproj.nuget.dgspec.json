@@ -52,17 +52,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.66, )"
-            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.22.1, )"
-            },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[7.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -142,10 +134,8 @@
               "version": "[9.0.7, )"
             },
             "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.7, )",
-              "autoReferenced": true
+              "version": "[9.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -158,10 +148,8 @@
               "version": "[9.0.7, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.7, )",
-              "autoReferenced": true
+              "version": "[9.0.8, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -182,7 +170,7 @@
           "downloadDependencies": [
             {
               "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[9.0.7, 9.0.7]"
+              "version": "[9.0.8, 9.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -238,13 +226,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "FastEndpoints": {
-              "target": "Package",
-              "version": "[6.2.0, )"
-            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",

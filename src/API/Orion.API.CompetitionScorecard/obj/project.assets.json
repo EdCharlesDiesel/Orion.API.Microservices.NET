@@ -20,69 +20,6 @@
           }
         }
       },
-      "FastEndpoints/6.2.0": {
-        "type": "package",
-        "dependencies": {
-          "FastEndpoints.Attributes": "6.2.0",
-          "FastEndpoints.Messaging.Core": "6.2.0",
-          "FluentValidation": "12.0.0"
-        },
-        "compile": {
-          "lib/net9.0/FastEndpoints.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/FastEndpoints.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "FastEndpoints.Attributes/6.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FastEndpoints.Messaging.Core/6.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FluentValidation/12.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/FluentValidation.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/FluentValidation.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -96,18 +33,19 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.2.0"
+          "Microsoft.Extensions.Primitives": "5.0.1",
+          "System.IO.Pipelines": "5.0.2"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
             "related": ".xml"
           }
         }
@@ -568,12 +506,24 @@
           }
         }
       },
+      "System.IO.Pipelines/5.0.2": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Orion.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "FastEndpoints": "6.2.0",
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.Extensions.DependencyInjection": "5.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
@@ -607,68 +557,6 @@
         "lib/netstandard2.0/AutoMapper.xml"
       ]
     },
-    "FastEndpoints/6.2.0": {
-      "sha512": "KhWPR4sGhuj6/qBksmAIR60zQtVDYMR/HWSKqtZhDUN/gnhJpq9/9nCpKw7Cssq8rbw68AmVBFzLKWsfAe4dZQ==",
-      "type": "package",
-      "path": "fastendpoints/6.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "fastendpoints.6.2.0.nupkg.sha512",
-        "fastendpoints.nuspec",
-        "icon.png",
-        "lib/net10.0/FastEndpoints.dll",
-        "lib/net10.0/FastEndpoints.xml",
-        "lib/net8.0/FastEndpoints.dll",
-        "lib/net8.0/FastEndpoints.xml",
-        "lib/net9.0/FastEndpoints.dll",
-        "lib/net9.0/FastEndpoints.xml"
-      ]
-    },
-    "FastEndpoints.Attributes/6.2.0": {
-      "sha512": "Z2tWmd7tA8cVuHl6WsHZVIhdI2Dy++SddEgswoefpoZjOFMtkORKIOYpGec/MyaMqQpCRm/zgWfXjFvZrm/Oag==",
-      "type": "package",
-      "path": "fastendpoints.attributes/6.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fastendpoints.attributes.6.2.0.nupkg.sha512",
-        "fastendpoints.attributes.nuspec",
-        "icon.png",
-        "lib/netstandard2.0/FastEndpoints.Attributes.dll",
-        "lib/netstandard2.0/FastEndpoints.Attributes.xml"
-      ]
-    },
-    "FastEndpoints.Messaging.Core/6.2.0": {
-      "sha512": "ycdbVd1IedyVFUpthcVa6NEJ4J1/JjEFHdfVEsBtO4Qts5IBQuqcirbyx7GoogCwqrgQapru5sZ/9Dns/cLPkA==",
-      "type": "package",
-      "path": "fastendpoints.messaging.core/6.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fastendpoints.messaging.core.6.2.0.nupkg.sha512",
-        "fastendpoints.messaging.core.nuspec",
-        "icon.png",
-        "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll",
-        "lib/netstandard2.1/FastEndpoints.Messaging.Core.xml"
-      ]
-    },
-    "FluentValidation/12.0.0": {
-      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
-      "type": "package",
-      "path": "fluentvalidation/12.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "fluent-validation-icon.png",
-        "fluentvalidation.12.0.0.nupkg.sha512",
-        "fluentvalidation.nuspec",
-        "lib/net8.0/FluentValidation.dll",
-        "lib/net8.0/FluentValidation.xml"
-      ]
-    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -685,16 +573,22 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.Http.Features/2.2.0": {
-      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "sha512": "3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
-        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
         "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
@@ -1664,6 +1558,32 @@
         "ref/xamarinwatchos10/_._",
         "system.componentmodel.annotations.5.0.0.nupkg.sha512",
         "system.componentmodel.annotations.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.IO.Pipelines/5.0.2": {
+      "sha512": "Iew+dfa6FFiyvWBdRmXApixRY1db+beyutpIck4SOSe0NLM8FD/7AD54MscqVLhvfSMLHO7KadjTRT7fqxOGTA==",
+      "type": "package",
+      "path": "system.io.pipelines/5.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.IO.Pipelines.dll",
+        "lib/net461/System.IO.Pipelines.xml",
+        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
+        "lib/netstandard1.3/System.IO.Pipelines.dll",
+        "lib/netstandard1.3/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
+        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.5.0.2.nupkg.sha512",
+        "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]

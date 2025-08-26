@@ -47,7 +47,7 @@
           "dependencies": {
             "Elasticsearch.Net": {
               "target": "Package",
-              "version": "[7.8.1, )"
+              "version": "[7.17.5, )"
             }
           },
           "imports": [

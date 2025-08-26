@@ -9,7 +9,7 @@
             Get all baskets.
             </summary>
         </member>
-        <member name="M:Orion.API.Basket.Controllers.BasketController.CreateBasket(Orion.Core.Basket.Domain.Basket)">
+        <member name="M:Orion.API.Basket.Controllers.BasketController.CreateBasket(Orion.DataAccess.Postgres.Entities.Basket)">
             <summary>
             Create a new basket.
             </summary>
@@ -19,12 +19,12 @@
             Get a basket by ID.
             </summary>
         </member>
-        <member name="M:Orion.API.Basket.Controllers.BasketController.UpdateBasket(System.Guid,Orion.Core.Basket.Domain.Basket)">
+        <member name="M:Orion.API.Basket.Controllers.BasketController.UpdateBasket(System.Guid,Orion.DataAccess.Postgres.Entities.Basket)">
             <summary>
             Update an existing basket.
             </summary>
         </member>
-        <member name="M:Orion.API.Basket.Controllers.BasketController.PatchBasket(System.Guid,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Orion.Core.Basket.Domain.Basket})">
+        <member name="M:Orion.API.Basket.Controllers.BasketController.PatchBasket(System.Guid,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Orion.DataAccess.Postgres.Entities.Basket})">
             <summary>
             Partially update a basket (e.g. patch one or two fields).
             </summary>

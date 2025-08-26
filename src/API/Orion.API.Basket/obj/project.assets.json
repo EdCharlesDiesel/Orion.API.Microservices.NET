@@ -78,20 +78,20 @@
           }
         }
       },
-      "FastEndpoints/6.2.0": {
+      "FastEndpoints/5.29.0": {
         "type": "package",
         "dependencies": {
-          "FastEndpoints.Attributes": "6.2.0",
-          "FastEndpoints.Messaging.Core": "6.2.0",
-          "FluentValidation": "12.0.0"
+          "FastEndpoints.Attributes": "5.29.0",
+          "FastEndpoints.Messaging.Core": "5.29.0",
+          "FluentValidation": "11.9.2"
         },
         "compile": {
-          "lib/net9.0/FastEndpoints.dll": {
+          "lib/net8.0/FastEndpoints.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/FastEndpoints.dll": {
+          "lib/net8.0/FastEndpoints.dll": {
             "related": ".xml"
           }
         },
@@ -99,11 +99,8 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "FastEndpoints.Attributes/6.2.0": {
+      "FastEndpoints.Attributes/5.29.0": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "8.0.0"
-        },
         "compile": {
           "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
             "related": ".xml"
@@ -129,7 +126,7 @@
           "lib/net8.0/FastEndpoints.MediatR.dll": {}
         }
       },
-      "FastEndpoints.Messaging.Core/6.2.0": {
+      "FastEndpoints.Messaging.Core/5.29.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
@@ -159,7 +156,7 @@
           }
         }
       },
-      "FluentValidation/12.0.0": {
+      "FluentValidation/11.9.2": {
         "type": "package",
         "compile": {
           "lib/net8.0/FluentValidation.dll": {
@@ -281,18 +278,19 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.2.0"
+          "Microsoft.Extensions.Primitives": "5.0.1",
+          "System.IO.Pipelines": "5.0.2"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
             "related": ".xml"
           }
         }
@@ -314,19 +312,19 @@
           }
         }
       },
-      "Microsoft.AspNetCore.JsonPatch/5.0.0": {
+      "Microsoft.AspNetCore.JsonPatch/9.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
-          "Newtonsoft.Json": "12.0.2"
+          "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
+          "lib/net9.0/Microsoft.AspNetCore.JsonPatch.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
+          "lib/net9.0/Microsoft.AspNetCore.JsonPatch.dll": {
             "related": ".xml"
           }
         }
@@ -744,6 +742,12 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "Microsoft.DotNet.ILCompiler/9.0.8": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
         }
       },
       "Microsoft.EntityFrameworkCore/9.0.7": {
@@ -1278,6 +1282,12 @@
           "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/9.0.8": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
         }
       },
       "Microsoft.OpenApi/1.2.3": {
@@ -1947,7 +1957,7 @@
       "System.IO.Pipelines/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/_._": {
+          "lib/net7.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
@@ -2295,7 +2305,9 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.7",
+          "Microsoft.DotNet.ILCompiler": "9.0.8",
           "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Microsoft.NET.ILLink.Tasks": "9.0.8",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Orion.Domain": "1.0.0"
         },
@@ -2313,7 +2325,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.Extensions.DependencyInjection": "5.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
@@ -2399,33 +2411,33 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "FastEndpoints/6.2.0": {
-      "sha512": "KhWPR4sGhuj6/qBksmAIR60zQtVDYMR/HWSKqtZhDUN/gnhJpq9/9nCpKw7Cssq8rbw68AmVBFzLKWsfAe4dZQ==",
+    "FastEndpoints/5.29.0": {
+      "sha512": "WVWSX5NiUWcffbfqmCYnoek6cP/SV27zwL7IKktLFIOj3or3ibdZMx7iC0iazbhxhZi8RZw266pChrItUruPMA==",
       "type": "package",
-      "path": "fastendpoints/6.2.0",
+      "path": "fastendpoints/5.29.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "fastendpoints.6.2.0.nupkg.sha512",
+        "fastendpoints.5.29.0.nupkg.sha512",
         "fastendpoints.nuspec",
         "icon.png",
-        "lib/net10.0/FastEndpoints.dll",
-        "lib/net10.0/FastEndpoints.xml",
+        "lib/net6.0/FastEndpoints.dll",
+        "lib/net6.0/FastEndpoints.xml",
+        "lib/net7.0/FastEndpoints.dll",
+        "lib/net7.0/FastEndpoints.xml",
         "lib/net8.0/FastEndpoints.dll",
-        "lib/net8.0/FastEndpoints.xml",
-        "lib/net9.0/FastEndpoints.dll",
-        "lib/net9.0/FastEndpoints.xml"
+        "lib/net8.0/FastEndpoints.xml"
       ]
     },
-    "FastEndpoints.Attributes/6.2.0": {
-      "sha512": "Z2tWmd7tA8cVuHl6WsHZVIhdI2Dy++SddEgswoefpoZjOFMtkORKIOYpGec/MyaMqQpCRm/zgWfXjFvZrm/Oag==",
+    "FastEndpoints.Attributes/5.29.0": {
+      "sha512": "7OKv+/qk1/rgeyI8RdW5NvUc3p1n90NnekRRDBmWU6r/5MVacchte/jGBEXxqmKyjBASEdD7eBN5Tr07MhancA==",
       "type": "package",
-      "path": "fastendpoints.attributes/6.2.0",
+      "path": "fastendpoints.attributes/5.29.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fastendpoints.attributes.6.2.0.nupkg.sha512",
+        "fastendpoints.attributes.5.29.0.nupkg.sha512",
         "fastendpoints.attributes.nuspec",
         "icon.png",
         "lib/netstandard2.0/FastEndpoints.Attributes.dll",
@@ -2445,14 +2457,14 @@
         "lib/net8.0/FastEndpoints.MediatR.dll"
       ]
     },
-    "FastEndpoints.Messaging.Core/6.2.0": {
-      "sha512": "ycdbVd1IedyVFUpthcVa6NEJ4J1/JjEFHdfVEsBtO4Qts5IBQuqcirbyx7GoogCwqrgQapru5sZ/9Dns/cLPkA==",
+    "FastEndpoints.Messaging.Core/5.29.0": {
+      "sha512": "I+oKbh4yYO4b31kP/9DM6yDX9aX+RDPqewuN6uloeoG2lIB7dpp7qCiojbKfueX7iJz5fksRtK7FFlF/2BlYfA==",
       "type": "package",
-      "path": "fastendpoints.messaging.core/6.2.0",
+      "path": "fastendpoints.messaging.core/5.29.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fastendpoints.messaging.core.6.2.0.nupkg.sha512",
+        "fastendpoints.messaging.core.5.29.0.nupkg.sha512",
         "fastendpoints.messaging.core.nuspec",
         "icon.png",
         "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll",
@@ -2477,19 +2489,29 @@
         "lib/net8.0/FastEndpoints.Swagger.xml"
       ]
     },
-    "FluentValidation/12.0.0": {
-      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+    "FluentValidation/11.9.2": {
+      "sha512": "XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg==",
       "type": "package",
-      "path": "fluentvalidation/12.0.0",
+      "path": "fluentvalidation/11.9.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "fluent-validation-icon.png",
-        "fluentvalidation.12.0.0.nupkg.sha512",
+        "fluentvalidation.11.9.2.nupkg.sha512",
         "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
         "lib/net8.0/FluentValidation.dll",
-        "lib/net8.0/FluentValidation.xml"
+        "lib/net8.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -2615,16 +2637,22 @@
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http.Features/2.2.0": {
-      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "sha512": "3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
-        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
         "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
@@ -2643,20 +2671,22 @@
         "microsoft.aspnetcore.identity.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.JsonPatch/5.0.0": {
-      "sha512": "oy/fvnBHpofNPskGcCrzZv1AhY36YHV0lyWy9NC5ye5eHvEJeJsSKjn2fNk/j1lXOuF13H9qrvZrA9zNkymy5Q==",
+    "Microsoft.AspNetCore.JsonPatch/9.0.8": {
+      "sha512": "p++nPq3tgo0LQ6y0+F4OQbifL5SNVaoIbzBzkvBrdtAX2mi+gBzRnmFcJqr1ATFTOx4xA55643dvj5sZlVOZpw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.jsonpatch/5.0.0",
+      "path": "microsoft.aspnetcore.jsonpatch/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.AspNetCore.JsonPatch.dll",
-        "lib/net461/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/net462/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net462/Microsoft.AspNetCore.JsonPatch.xml",
+        "lib/net9.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "lib/net9.0/Microsoft.AspNetCore.JsonPatch.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
-        "microsoft.aspnetcore.jsonpatch.5.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.9.0.8.nupkg.sha512",
         "microsoft.aspnetcore.jsonpatch.nuspec"
       ]
     },
@@ -3788,6 +3818,35 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
+    "Microsoft.DotNet.ILCompiler/9.0.8": {
+      "sha512": "cMwVh5hsxAhv+oMHQdgcXodt2kDpfviofBO4IXupSAHJW2vZOZOOIhvPWRGO6NeGcP8SR4OpSwktRqb0i79KFA==",
+      "type": "package",
+      "path": "microsoft.dotnet.ilcompiler/9.0.8",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/BuildFrameworkNativeObjects.proj",
+        "build/Microsoft.DotNet.ILCompiler.SingleEntry.targets",
+        "build/Microsoft.DotNet.ILCompiler.props",
+        "build/Microsoft.NETCore.Native.Publish.targets",
+        "build/Microsoft.NETCore.Native.Unix.targets",
+        "build/Microsoft.NETCore.Native.Windows.targets",
+        "build/Microsoft.NETCore.Native.targets",
+        "build/NativeAOT.natstepfilter",
+        "build/NativeAOT.natvis",
+        "build/WindowsAPIs.txt",
+        "build/findvcvarsall.bat",
+        "microsoft.dotnet.ilcompiler.9.0.8.nupkg.sha512",
+        "microsoft.dotnet.ilcompiler.nuspec",
+        "runtime.json",
+        "tools/netstandard/ILCompiler.Build.Tasks.deps.json",
+        "tools/netstandard/ILCompiler.Build.Tasks.dll"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/9.0.7": {
       "sha512": "PbD0q5ax15r91jD4TN7xbDCjldZSz4JfpYN4ZZjAkWeUyROkV92Ydg0O2/1keFA+2u3KPsDkJMmBKv2zQ06ZVg==",
       "type": "package",
@@ -4762,6 +4821,57 @@
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
         "microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.8": {
+      "sha512": "rd1CbIsMtVPtZNTIVD6Xydue//klYOOQIDpRgu3BHtv17AlpRs74/6QFbcYgMm/jL+naVU2T3OFLxVSLV5lQLQ==",
+      "type": "package",
+      "path": "microsoft.net.illink.tasks/9.0.8",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "Sdk/Sdk.props",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
+        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
+        "build/Microsoft.NET.ILLink.Analyzers.props",
+        "build/Microsoft.NET.ILLink.Tasks.props",
+        "build/Microsoft.NET.ILLink.targets",
+        "microsoft.net.illink.tasks.9.0.8.nupkg.sha512",
+        "microsoft.net.illink.tasks.nuspec",
+        "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/ILLink.Tasks.dll.config",
+        "tools/net472/Mono.Cecil.Mdb.dll",
+        "tools/net472/Mono.Cecil.Pdb.dll",
+        "tools/net472/Mono.Cecil.Rocks.dll",
+        "tools/net472/Mono.Cecil.dll",
+        "tools/net472/Sdk/Sdk.props",
+        "tools/net472/System.Buffers.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/System.Memory.dll",
+        "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net472/build/Microsoft.NET.ILLink.targets",
+        "tools/net9.0/ILLink.Tasks.deps.json",
+        "tools/net9.0/ILLink.Tasks.dll",
+        "tools/net9.0/Mono.Cecil.Mdb.dll",
+        "tools/net9.0/Mono.Cecil.Pdb.dll",
+        "tools/net9.0/Mono.Cecil.Rocks.dll",
+        "tools/net9.0/Mono.Cecil.dll",
+        "tools/net9.0/Sdk/Sdk.props",
+        "tools/net9.0/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net9.0/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net9.0/build/Microsoft.NET.ILLink.targets",
+        "tools/net9.0/illink.deps.json",
+        "tools/net9.0/illink.dll",
+        "tools/net9.0/illink.runtimeconfig.json",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.OpenApi/1.2.3": {
@@ -6453,10 +6563,9 @@
     "net9.0": [
       "AutoMapper >= 15.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
-      "FastEndpoints >= 6.2.0",
       "FastEndpoints.MediatR >= 2.0.6",
       "Microsoft.AspNetCore.Authentication.Negotiate >= 9.0.7",
-      "Microsoft.AspNetCore.JsonPatch >= 5.0.0",
+      "Microsoft.AspNetCore.JsonPatch >= 9.0.8",
       "Microsoft.EntityFrameworkCore >= 9.0.7",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.7",
@@ -6523,10 +6632,6 @@
             "target": "Package",
             "version": "[12.0.1, )"
           },
-          "FastEndpoints": {
-            "target": "Package",
-            "version": "[6.2.0, )"
-          },
           "FastEndpoints.MediatR": {
             "target": "Package",
             "version": "[2.0.6, )"
@@ -6537,7 +6642,7 @@
           },
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
-            "version": "[5.0.0, )"
+            "version": "[9.0.8, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

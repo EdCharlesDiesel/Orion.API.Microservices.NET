@@ -27,8 +27,9 @@ namespace Orion.API.Order.Controllers
         public async Task<IActionResult> Create([FromQuery] FastEndpoints.Order order)
         {
             // var profileToDatabase = mapper.Map<Core.Order.Domain.Order>(profile);
-            await service.AddAsync(order);
-            return Ok();
+            // await service.AddAsync(order);
+            // return Ok();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -37,10 +38,11 @@ namespace Orion.API.Order.Controllers
         /// <param name="order"></param>
         /// <returns></returns>
         [HttpPut("update")]
-        public async Task<IActionResult> UpdateOrder([FromQuery] Core.Orders.Domain.Order order)
+        public async Task<IActionResult> UpdateOrder([FromQuery] DataAccess.Postgres.Entities.Order order)
         {
-             await service.UpdateAsync(order);
-            return Ok();
+            //  await service.UpdateAsync(order);
+            // return Ok();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -51,8 +53,9 @@ namespace Orion.API.Order.Controllers
         [HttpDelete("delete")]
         public async Task<IActionResult> UpdateOrder(Guid orderId)
         {
-            await service.DeleteAsync(orderId);
-            return Ok();
+            // await service.DeleteAsync(orderId);
+            // return Ok();
+            throw new NotImplementedException();
         }
     }
 }

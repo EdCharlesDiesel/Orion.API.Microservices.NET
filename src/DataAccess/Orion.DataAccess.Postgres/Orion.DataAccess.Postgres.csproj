@@ -23,11 +23,13 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.7" />
+      <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="9.0.8" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="9.0.8" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
     </ItemGroup>
 

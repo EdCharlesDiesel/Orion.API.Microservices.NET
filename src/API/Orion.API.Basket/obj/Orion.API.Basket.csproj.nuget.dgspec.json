@@ -57,10 +57,6 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
-            "FastEndpoints": {
-              "target": "Package",
-              "version": "[6.2.0, )"
-            },
             "FastEndpoints.MediatR": {
               "target": "Package",
               "version": "[2.0.6, )"
@@ -71,7 +67,7 @@
             },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[9.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -179,10 +175,8 @@
               "version": "[9.0.7, )"
             },
             "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.7, )",
-              "autoReferenced": true
+              "version": "[9.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -195,10 +189,8 @@
               "version": "[9.0.7, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.7, )",
-              "autoReferenced": true
+              "version": "[9.0.8, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -219,7 +211,7 @@
           "downloadDependencies": [
             {
               "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[9.0.7, 9.0.7]"
+              "version": "[9.0.8, 9.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -277,7 +269,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",

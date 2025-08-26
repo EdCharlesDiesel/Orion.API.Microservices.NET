@@ -1,7 +1,10 @@
-﻿namespace Orion.DataAccess.Postgres.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class VendorAddress
     {
+        [Key]
         public int VendorId { get; set; }
         public int AddressId { get; set; }
         public int AddressTypeId { get; set; }

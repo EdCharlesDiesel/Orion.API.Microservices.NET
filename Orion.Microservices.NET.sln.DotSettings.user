@@ -118,6 +118,8 @@
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Admin_002FOrion_002EAdmin_002FTestData_002FTestDataResource/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=0cf64a6e_002D61e0_002D4dbb_002Db8b7_002D2013ddbfa6e7_0023Orion_002EAdmin/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=64eb3844_002D7b3e_002D4fe5_002Da95f_002Db35a4d0d0334_0023Orion_002EHelpers_002EUnitTests/@EntryIndexedValue">True</s:Boolean>
 	
 	
 	

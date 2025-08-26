@@ -1,7 +1,10 @@
-﻿namespace Orion.DataAccess.Postgres.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Orion.DataAccess.Postgres.Entities
 {
     public abstract class TransactionHistoryArchive
-    {
+    {        
+        [Key]
         public int TransactionId { get; set; }
         public int ProductId { get; set; }
         public int ReferenceOrderId { get; set; }

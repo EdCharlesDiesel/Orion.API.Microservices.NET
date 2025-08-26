@@ -10,26 +10,14 @@
         <member name="M:Orion.API.Catalog.Controllers.ProductController.GetProductById(System.Guid)">
             <summary>Get a product by ID.</summary>
         </member>
-        <member name="M:Orion.API.Catalog.Controllers.ProductController.Create(Orion.Core.Catalog.Domain.Product)">
+        <member name="M:Orion.API.Catalog.Controllers.ProductController.Create(Orion.Domain.IRepositories.Product)">
             <summary>Create a product.</summary>
         </member>
-        <member name="M:Orion.API.Catalog.Controllers.ProductController.Update(System.Guid,Orion.Core.Catalog.Domain.Product)">
+        <member name="M:Orion.API.Catalog.Controllers.ProductController.Update(System.Guid,Orion.Domain.IRepositories.Product)">
             <summary>Update a product.</summary>
         </member>
         <member name="M:Orion.API.Catalog.Controllers.ProductController.Delete(System.Guid)">
             <summary>Delete a product.</summary>
-        </member>
-        <member name="T:Orion.Services.Catalog.API.Data.Migrations.Initial">
-            <inheritdoc />
-        </member>
-        <member name="M:Orion.Services.Catalog.API.Data.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:Orion.Services.Catalog.API.Data.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <inheritdoc />
-        </member>
-        <member name="M:Orion.Services.Catalog.API.Data.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <inheritdoc />
         </member>
     </members>
 </doc>

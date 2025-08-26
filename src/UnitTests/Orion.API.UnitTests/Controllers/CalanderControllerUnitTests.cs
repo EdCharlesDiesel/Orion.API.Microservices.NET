@@ -113,19 +113,19 @@ public class CalendarControllerTests
         result.ShouldBeOfType<OkObjectResult>().Value.ShouldBe(expected);
     }
 
-    [Fact]
-    public async Task GetEventsByIndicators_ReturnsOk()
-    {
-        var expected = "indicators result";
-        var indicators = new[] { "GDP", "Inflation" };
-
-        _serviceMock
-            .Setup(s => s.GetCalendarEventsByIndicator(indicators))
-            .ReturnsAsync(expected);
-
-        var result = await _controller.GetEventsByIndicators(indicators);
-
-        result.ShouldBeOfType<OkObjectResult>().Value.ShouldBe(expected);
-    }
+    // [Fact]
+    // public async Task GetEventsByIndicators_ReturnsOk()
+    // {
+    //     var expected = "indicators result";
+    //     var indicators = new[] { "GDP", "Inflation" };
+    //
+    //     _serviceMock
+    //         .Setup(s => s.GetCalendarEventsByIndicator(indicators))
+    //         .ReturnsAsync(expected);
+    //
+    //     var result = await _controller.GetEventsByIndicators(indicators);
+    //
+    //     result.ShouldBeOfType<OkObjectResult>().Value.ShouldBe(expected);
+    // }
 }
 

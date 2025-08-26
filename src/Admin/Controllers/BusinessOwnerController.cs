@@ -51,14 +51,14 @@ namespace Orion.Admin.Controllers
         [Route("/businessOwner/{last:alpha}/{first:alpha}")]
         public IActionResult Details(string last, string first)
         {
-            if (string.IsNullOrWhiteSpace(last) || string.IsNullOrWhiteSpace(first))
-                return BadRequest();
-
-            var businessOwner = _businessOwnerService.Search(first, last).FirstOrDefault();
-            if (businessOwner == null)
-                return NotFound();
-
-            return View("Details", businessOwner);
+            // if (string.IsNullOrWhiteSpace(last) || string.IsNullOrWhiteSpace(first))
+            //     return BadRequest();
+            //
+            // var businessOwner = _businessOwnerService.Search(first, last).FirstOrDefault();
+            // if (businessOwner == null)
+            //     return NotFound();
+            //
+            // return View("Details", businessOwner);
         }
 
         public IActionResult Create()

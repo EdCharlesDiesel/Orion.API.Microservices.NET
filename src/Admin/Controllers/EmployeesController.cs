@@ -42,13 +42,13 @@ namespace Orion.Admin.Controllers
             int id,
             [FromServices] IEmployeeRepository repo)
         {
-            if (id == 0) return RedirectToAction(
-                nameof(Index));
-            var aggregate = await repo.Get(id);
-            if (aggregate == null) return RedirectToAction(
-                nameof(Index));
-            var vm = new EmployeeFullEditViewModel(aggregate);
-            return View(vm);
+            // if (id == 0) return RedirectToAction(
+            //     nameof(Index));
+            // var aggregate = await repo.Get(id);
+            // if (aggregate == null) return RedirectToAction(
+            //     nameof(Index));
+            // var vm = new EmployeeFullEditViewModel(aggregate);
+            // return View(vm);
         }
         [HttpPost]
         public async Task<IActionResult> Edit(

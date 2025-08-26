@@ -1,6 +1,8 @@
+using Orion.Domain.Tools;
+
 namespace Orion.DataAccess.Postgres.Entities;
 
-public class UserProfile
+public class UserProfile: Entity<Guid>
 {
     public string Username { get; set; } = default!;
     public string Email { get; set; } = default!;

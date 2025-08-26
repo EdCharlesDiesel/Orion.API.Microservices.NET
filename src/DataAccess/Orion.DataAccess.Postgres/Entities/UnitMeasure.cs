@@ -1,6 +1,8 @@
-﻿namespace Orion.DataAccess.Postgres.Entities
+﻿using Orion.Domain.Tools;
+
+namespace Orion.DataAccess.Postgres.Entities
 {
-    public class UnitMeasure
+    public class UnitMeasure:Entity<Guid>
     {
         public string UnitMeasureCode { get; set; }
         public string Name { get; set; }

@@ -8,11 +8,7 @@ C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Orion.Domain.UnitTests.dll
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Orion.Domain.UnitTests.pdb
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\JetBrains.Annotations.dll
-C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.AspNetCore.Http.Features.dll
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
-C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -105,3 +101,7 @@ C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\obj\Debug\net9.0\
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\obj\Debug\net9.0\Orion.Domain.UnitTests.pdb
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\obj\Debug\net9.0\Orion.Domain.UnitTests.genruntimeconfig.cache
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\obj\Debug\net9.0\ref\Orion.Domain.UnitTests.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.AspNetCore.Http.Features.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll

@@ -36,4 +36,12 @@ namespace Orion.Admin.Models.Packages
         [Display(Name = "destination")]
         public int DestinationId { get; set; }
     }
+
+    public interface IPackage
+    {
+    }
+
+    public class IPackageFullEditDTO
+    {
+    }
 }

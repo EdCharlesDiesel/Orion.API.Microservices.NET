@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.API.Chat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4de8df16ebfb5c7a830cad39354bfdd19bbeb03d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf615d91317bdf6b93b5743d17d88cc94c36ba39")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.API.Chat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.API.Chat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

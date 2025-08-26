@@ -86,33 +86,30 @@
           }
         }
       },
-      "FastEndpoints/6.2.0": {
+      "FastEndpoints/5.29.0": {
         "dependencies": {
-          "FastEndpoints.Attributes": "6.2.0",
-          "FastEndpoints.Messaging.Core": "6.2.0",
-          "FluentValidation": "12.0.0"
+          "FastEndpoints.Attributes": "5.29.0",
+          "FastEndpoints.Messaging.Core": "5.29.0",
+          "FluentValidation": "11.9.2"
         },
         "runtime": {
-          "lib/net9.0/FastEndpoints.dll": {
-            "assemblyVersion": "6.2.0.0",
-            "fileVersion": "6.2.0.0"
+          "lib/net8.0/FastEndpoints.dll": {
+            "assemblyVersion": "5.29.0.0",
+            "fileVersion": "5.29.0.0"
           }
         }
       },
-      "FastEndpoints.Attributes/6.2.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "9.0.7"
-        },
+      "FastEndpoints.Attributes/5.29.0": {
         "runtime": {
           "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
-            "assemblyVersion": "6.2.0.0",
-            "fileVersion": "6.2.0.0"
+            "assemblyVersion": "5.29.0.0",
+            "fileVersion": "5.29.0.0"
           }
         }
       },
       "FastEndpoints.MediatR/2.0.6": {
         "dependencies": {
-          "FastEndpoints": "6.2.0",
+          "FastEndpoints": "5.29.0",
           "FastEndpoints.Swagger": "5.29.0",
           "MediatR": "12.4.1"
         },
@@ -123,17 +120,17 @@
           }
         }
       },
-      "FastEndpoints.Messaging.Core/6.2.0": {
+      "FastEndpoints.Messaging.Core/5.29.0": {
         "runtime": {
           "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
-            "assemblyVersion": "6.2.0.0",
-            "fileVersion": "6.2.0.0"
+            "assemblyVersion": "5.29.0.0",
+            "fileVersion": "5.29.0.0"
           }
         }
       },
       "FastEndpoints.Swagger/5.29.0": {
         "dependencies": {
-          "FastEndpoints": "6.2.0",
+          "FastEndpoints": "5.29.0",
           "NSwag.AspNetCore": "14.1.0"
         },
         "runtime": {
@@ -143,11 +140,11 @@
           }
         }
       },
-      "FluentValidation/12.0.0": {
+      "FluentValidation/11.9.2": {
         "runtime": {
           "lib/net8.0/FluentValidation.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.0.0"
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.9.2.0"
           }
         }
       },
@@ -222,9 +219,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "9.0.7"
+          "Microsoft.Extensions.Primitives": "9.0.7",
+          "System.IO.Pipelines": "7.0.0"
         }
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.7": {
@@ -616,6 +614,7 @@
           }
         }
       },
+      "Microsoft.DotNet.ILCompiler/9.0.8": {},
       "Microsoft.EntityFrameworkCore/9.0.7": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "9.0.7",
@@ -940,6 +939,7 @@
           }
         }
       },
+      "Microsoft.NET.ILLink.Tasks/9.0.8": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.OpenApi/1.2.3": {
@@ -1668,7 +1668,9 @@
       "Orion.DataAccess.Postgres/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.7",
+          "Microsoft.DotNet.ILCompiler": "9.0.8",
           "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Microsoft.NET.ILLink.Tasks": "9.0.8",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Orion.Domain": "1.0.0"
         },
@@ -1681,8 +1683,7 @@
       },
       "Orion.Domain/1.0.0": {
         "dependencies": {
-          "FastEndpoints": "6.2.0",
-          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.Extensions.DependencyInjection": "9.0.7",
           "System.ComponentModel.Annotations": "5.0.0"
         },
@@ -1729,19 +1730,19 @@
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
     },
-    "FastEndpoints/6.2.0": {
+    "FastEndpoints/5.29.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KhWPR4sGhuj6/qBksmAIR60zQtVDYMR/HWSKqtZhDUN/gnhJpq9/9nCpKw7Cssq8rbw68AmVBFzLKWsfAe4dZQ==",
-      "path": "fastendpoints/6.2.0",
-      "hashPath": "fastendpoints.6.2.0.nupkg.sha512"
+      "sha512": "sha512-WVWSX5NiUWcffbfqmCYnoek6cP/SV27zwL7IKktLFIOj3or3ibdZMx7iC0iazbhxhZi8RZw266pChrItUruPMA==",
+      "path": "fastendpoints/5.29.0",
+      "hashPath": "fastendpoints.5.29.0.nupkg.sha512"
     },
-    "FastEndpoints.Attributes/6.2.0": {
+    "FastEndpoints.Attributes/5.29.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Z2tWmd7tA8cVuHl6WsHZVIhdI2Dy++SddEgswoefpoZjOFMtkORKIOYpGec/MyaMqQpCRm/zgWfXjFvZrm/Oag==",
-      "path": "fastendpoints.attributes/6.2.0",
-      "hashPath": "fastendpoints.attributes.6.2.0.nupkg.sha512"
+      "sha512": "sha512-7OKv+/qk1/rgeyI8RdW5NvUc3p1n90NnekRRDBmWU6r/5MVacchte/jGBEXxqmKyjBASEdD7eBN5Tr07MhancA==",
+      "path": "fastendpoints.attributes/5.29.0",
+      "hashPath": "fastendpoints.attributes.5.29.0.nupkg.sha512"
     },
     "FastEndpoints.MediatR/2.0.6": {
       "type": "package",
@@ -1750,12 +1751,12 @@
       "path": "fastendpoints.mediatr/2.0.6",
       "hashPath": "fastendpoints.mediatr.2.0.6.nupkg.sha512"
     },
-    "FastEndpoints.Messaging.Core/6.2.0": {
+    "FastEndpoints.Messaging.Core/5.29.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ycdbVd1IedyVFUpthcVa6NEJ4J1/JjEFHdfVEsBtO4Qts5IBQuqcirbyx7GoogCwqrgQapru5sZ/9Dns/cLPkA==",
-      "path": "fastendpoints.messaging.core/6.2.0",
-      "hashPath": "fastendpoints.messaging.core.6.2.0.nupkg.sha512"
+      "sha512": "sha512-I+oKbh4yYO4b31kP/9DM6yDX9aX+RDPqewuN6uloeoG2lIB7dpp7qCiojbKfueX7iJz5fksRtK7FFlF/2BlYfA==",
+      "path": "fastendpoints.messaging.core/5.29.0",
+      "hashPath": "fastendpoints.messaging.core.5.29.0.nupkg.sha512"
     },
     "FastEndpoints.Swagger/5.29.0": {
       "type": "package",
@@ -1764,12 +1765,12 @@
       "path": "fastendpoints.swagger/5.29.0",
       "hashPath": "fastendpoints.swagger.5.29.0.nupkg.sha512"
     },
-    "FluentValidation/12.0.0": {
+    "FluentValidation/11.9.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
-      "path": "fluentvalidation/12.0.0",
-      "hashPath": "fluentvalidation.12.0.0.nupkg.sha512"
+      "sha512": "sha512-XeHp9LvFvu1fsQ/NvDCymV02GOCB1nz7ZUhfpI3uMhCcHTkV1K5bMkv+Nc/kuNYyAsX5+5bcmUanIEMd5QN+Eg==",
+      "path": "fluentvalidation/11.9.2",
+      "hashPath": "fluentvalidation.11.9.2.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1820,12 +1821,12 @@
       "path": "microsoft.aspnetcore.cryptography.keyderivation/9.0.7",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.9.0.7.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
-      "path": "microsoft.aspnetcore.http.features/2.2.0",
-      "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
+      "sha512": "sha512-3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
+      "hashPath": "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.7": {
       "type": "package",
@@ -1917,6 +1918,13 @@
       "sha512": "sha512-wNGM5ZTQCa2blc9ikXQouybGiyMd6IHPVJvAlBEPtr6JepZEOYeDxGyprYvFVeOxlCXs7avridZQ0nYkHzQWCQ==",
       "path": "microsoft.data.sqlclient.sni.runtime/5.1.1",
       "hashPath": "microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512"
+    },
+    "Microsoft.DotNet.ILCompiler/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cMwVh5hsxAhv+oMHQdgcXodt2kDpfviofBO4IXupSAHJW2vZOZOOIhvPWRGO6NeGcP8SR4OpSwktRqb0i79KFA==",
+      "path": "microsoft.dotnet.ilcompiler/9.0.8",
+      "hashPath": "microsoft.dotnet.ilcompiler.9.0.8.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/9.0.7": {
       "type": "package",
@@ -2134,6 +2142,13 @@
       "sha512": "sha512-kDimB6Dkd3nkW2oZPDkMkVHfQt3IDqO5gL0oa8WVy3OP4uE8Ij+8TXnqg9TOd9ufjsY3IDiGz7pCUbnfL18tjg==",
       "path": "microsoft.identitymodel.tokens/8.0.1",
       "hashPath": "microsoft.identitymodel.tokens.8.0.1.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rd1CbIsMtVPtZNTIVD6Xydue//klYOOQIDpRgu3BHtv17AlpRs74/6QFbcYgMm/jL+naVU2T3OFLxVSLV5lQLQ==",
+      "path": "microsoft.net.illink.tasks/9.0.8",
+      "hashPath": "microsoft.net.illink.tasks.9.0.8.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

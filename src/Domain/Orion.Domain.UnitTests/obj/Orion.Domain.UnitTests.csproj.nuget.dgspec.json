@@ -52,7 +52,7 @@
           "dependencies": {
             "JetBrains.Annotations": {
               "target": "Package",
-              "version": "[2025.1.0-eap1, )"
+              "version": "[2025.2.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -130,13 +130,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "FastEndpoints": {
-              "target": "Package",
-              "version": "[6.2.0, )"
-            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",

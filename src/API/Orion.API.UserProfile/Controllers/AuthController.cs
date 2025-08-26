@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.UserProfile.Data;
+
 using Orion.API.UserProfile.Models;
 using Orion.DataAccess.Postgres.Data;
 
@@ -15,6 +15,7 @@ public class AuthController(OrionDbContext dbContext, JwtService jwtService) : C
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterUserRequest request)
     {
+        throw new NotImplementedException();
         // if (_dbContext.UserProfiles.Any(u => u.Username == request.Username))
         //     return BadRequest("Username already exists.");
         //
@@ -28,9 +29,9 @@ public class AuthController(OrionDbContext dbContext, JwtService jwtService) : C
         // };
         //
         // _dbContext.UserProfiles.Add(user);
-        await dbContext.SaveChangesAsync();
-
-        return Ok("User registered successfully.");
+        // await dbContext.SaveChangesAsync();
+        //
+        // return Ok("User registered successfully.");
     }
     
     //TODO: This needs to be fixed.

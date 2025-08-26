@@ -1,7 +1,10 @@
-﻿namespace Orion.DataAccess.Postgres.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class StoreContact
     {
+        [Key]
         public int CustomerId { get; set; }
         public int ContactId { get; set; }
         public int ContactTypeId { get; set; }

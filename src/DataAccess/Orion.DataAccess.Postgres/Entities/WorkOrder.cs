@@ -1,7 +1,9 @@
-﻿namespace Orion.DataAccess.Postgres.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Orion.DataAccess.Postgres.Entities
 {
     public class WorkOrder
-    {
+    {        [Key]
         public int WorkOrderId { get; set; }
         public int ProductId { get; set; }
         public int OrderQty { get; set; }
