@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Y6y6VMbpNk=",
+  "dgSpecHash": "o6RohWyuUps=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\Catalog\\Catalog.API\\Orion.Services.Catalog.API.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\Catalog\\Catalog.API\\Orion.Services.Catalog.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

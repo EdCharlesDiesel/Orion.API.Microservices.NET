@@ -1253,11 +1253,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\Orion.Services.CompetitionScorecard.API.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\Orion.Services.CompetitionScorecard.API.csproj",
       "projectName": "Orion.Services.CompetitionScorecard.API",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\Orion.Services.CompetitionScorecard.API.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\Orion.Services.CompetitionScorecard.API.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\CompetitionScorecard\\CompetitionScorecard.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1266,6 +1266,7 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
