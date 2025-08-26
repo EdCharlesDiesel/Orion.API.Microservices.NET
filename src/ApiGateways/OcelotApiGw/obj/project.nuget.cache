@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IeXLgwx5wT0=",
+  "dgSpecHash": "n+/IkQYbUU4=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\OcelotApiGw\\Orion.OcelotApiGw.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\cachemanager.core\\2.0.0-beta-1629\\cachemanager.core.2.0.0-beta-1629.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\cachemanager.microsoft.extensions.configuration\\2.0.0-beta-1629\\cachemanager.microsoft.extensions.configuration.2.0.0-beta-1629.nupkg.sha512",

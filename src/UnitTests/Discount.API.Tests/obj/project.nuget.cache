@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u9+23U7iV9s=",
+  "dgSpecHash": "9UumdyBuRmc=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\UnitTests\\Discount.API.Tests\\Orion.Services.Discount.API.Tests.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\UnitTests\\Discount.API.Tests\\Orion.Services.Discount.API.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

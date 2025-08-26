@@ -7169,11 +7169,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\Shopping.Aggregator\\Orion.Shopping.Aggregator.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\Shopping.Aggregator\\Orion.Shopping.Aggregator.csproj",
       "projectName": "Orion.Shopping.Aggregator",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\Shopping.Aggregator\\Orion.Shopping.Aggregator.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\Shopping.Aggregator\\Orion.Shopping.Aggregator.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\Shopping.Aggregator\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\Shopping.Aggregator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7182,14 +7182,15 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj"
+            "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Infrastructure\\Common.Logging\\Orion.Common.Logging.csproj"
             }
           }
         }

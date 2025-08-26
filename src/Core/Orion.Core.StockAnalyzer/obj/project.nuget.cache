@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2WzhReXLN+c=",
+  "dgSpecHash": "640Gk1Kz5yI=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.StockAnalyzer\\Orion.StockAnalyzer.Core.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.StockAnalyzer\\Orion.StockAnalyzer.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

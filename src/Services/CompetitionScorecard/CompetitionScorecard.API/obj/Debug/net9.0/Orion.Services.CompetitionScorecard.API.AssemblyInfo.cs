@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Services.CompetitionScorecard.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17106a1dbbfce630881f03c59001281e318296f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73000f059d6aeeea58c7c0351b1a7ab955e433ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Services.CompetitionScorecard.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Services.CompetitionScorecard.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

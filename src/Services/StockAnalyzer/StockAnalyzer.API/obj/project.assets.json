@@ -8050,11 +8050,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
+      "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
       "projectName": "Orion.Services.StockAnalyzer.API",
-      "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\Orion.Services.StockAnalyzer.API.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\obj\\",
+      "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Services\\StockAnalyzer\\StockAnalyzer.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8063,14 +8063,15 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.StockAnalyzer\\Orion.StockAnalyzer.Core.csproj": {
-              "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\Core\\Orion.Core.StockAnalyzer\\Orion.StockAnalyzer.Core.csproj"
+            "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.StockAnalyzer\\Orion.StockAnalyzer.Core.csproj": {
+              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Core\\Orion.Core.StockAnalyzer\\Orion.StockAnalyzer.Core.csproj"
             }
           }
         }

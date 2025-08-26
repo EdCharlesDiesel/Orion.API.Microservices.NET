@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SLoxqiL0+Ck=",
+  "dgSpecHash": "5v3YKR4yOuc=",
   "success": true,
-  "projectFilePath": "C:\\x\\Orion.API.Microservices.NET\\Orion.Services.Chat\\Orion.Services.Chat.csproj",
+  "projectFilePath": "C:\\x\\Orion.Microservices.NET\\Orion.Services.Chat\\Orion.Services.Chat.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\9.0.7\\microsoft.aspnetcore.authentication.negotiate.9.0.7.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\9.0.7\\microsoft.aspnetcore.connections.abstractions.9.0.7.nupkg.sha512",

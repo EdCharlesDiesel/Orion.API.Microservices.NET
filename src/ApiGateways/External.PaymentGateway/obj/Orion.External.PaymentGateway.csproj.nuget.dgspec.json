@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj": {}
+    "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj": {}
   },
   "projects": {
-    "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj": {
+    "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj",
+        "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj",
         "projectName": "Orion.External.PaymentGateway",
-        "projectPath": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj",
+        "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\Orion.External.PaymentGateway.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\x\\Orion.API.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\obj\\",
+        "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\ApiGateways\\External.PaymentGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,6 +20,7 @@
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
