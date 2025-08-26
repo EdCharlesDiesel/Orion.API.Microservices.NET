@@ -98,7 +98,7 @@ namespace Orion.DataAccess.Postgres.Data
         public DbSet<ChatRequest> ChatRequests { get; set; }
         public DbSet<Coupon> Coupons { get; set; }
         public DbSet<CompetitionMatch> CompetitionMatches { get; set; }
-        public DbSet<AwbuildVersion> AwbuildVersions { get; set; }
+
         public DbSet<Category> Categories { get; set; }
         public DbSet<Feature> Features { get; set; }
         public DbSet<Order> Orders { get; set; }

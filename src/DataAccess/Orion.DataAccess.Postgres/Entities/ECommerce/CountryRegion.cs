@@ -16,21 +16,21 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "CountryRegionCode", TypeName = "nvarchar")]
+        [Column(name:"CountryRegionCode", TypeName = "nvarchar")]
         [MaxLength(3)]
         [StringLength(3)]
         [Required(ErrorMessage = "Country Region Code is required")]
         [Display(Name = "Country Region Code")]
         [Description("ISO standard code for countries and regions.")]
         public string CountryRegionCode { get; set; } // nvarchar(3)
-        [Column(Name = "Name", TypeName = "nvarchar")]
+        [Column(name: "Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Country or region name.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name: "ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

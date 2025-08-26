@@ -19,7 +19,7 @@ public class ChatControllerController : ControllerBase
         private readonly AIProjectClient _projectClient;
         private readonly string _modelDeployment;
 
-        public ChatController(IConfiguration configuration)
+        public ChatController(IConfiguration configuration, string modelDeployment)
         {
             var endpoint = new Uri(configuration["PROJECT_ENDPOINT"]);
             _modelDeployment = configuration["MODEL_DEPLOYMENT_NAME"];
@@ -30,27 +30,27 @@ public class ChatControllerController : ControllerBase
         public async Task<IActionResult> Ask([FromBody] ChatRequest request)
         {
           try
-            {
-                throw new NotImplementedException();
-                // var chatClient = _projectClient.GetChatCompletionsClient(_modelDeployment);
-                //
-                // var response = await chatClient.GetChatCompletionsAsync(
-                //     new ChatCompletionsOptions
-                //     {
-                //         Messages =
-                //         {
-                //             new ChatMessage(ChatRole.System, "You are an assistant."),
-                //             new ChatMessage(ChatRole.User, request.Message)
-                //         }
-                //     });
-                //
-                // var result = response.Value.Choices.FirstOrDefault()?.Message.Content;
-                // return Ok(new { reply = result });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error: {ex.Message}");
-    }
+          {
+              throw new NotImplementedException();
+              // var chatClient = _projectClient.GetChatCompletionsClient(_modelDeployment);
+              //
+              // var response = await chatClient.GetChatCompletionsAsync(
+              //     new ChatCompletionsOptions
+              //     {
+              //         Messages =
+              //         {
+              //             new ChatMessage(ChatRole.System, "You are an assistant."),
+              //             new ChatMessage(ChatRole.User, request.Message)
+              //         }
+              //     });
+              //
+              // var result = response.Value.Choices.FirstOrDefault()?.Message.Content;
+              // return Ok(new { reply = result });
+          }
+          catch (Exception ex)
+          {
+              return StatusCode(500, $"Error: {ex.Message}");
+          }
         }
     }
 }

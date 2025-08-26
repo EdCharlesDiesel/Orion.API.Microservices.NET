@@ -16,21 +16,21 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "CurrencyCode", TypeName = "nchar")]
+        [Column(name:"CurrencyCode", TypeName = "nchar")]
         [MaxLength(3)]
         [StringLength(3)]
         [Required(ErrorMessage = "Currency Code is required")]
         [Display(Name = "Currency Code")]
         [Description("The ISO code for the Currency.")]
         public string CurrencyCode { get; set; } // nchar(3)
-        [Column(Name = "Name", TypeName = "nvarchar")]
+        [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Currency name.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

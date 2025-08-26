@@ -9,7 +9,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class CountryRegionCurrency
     {
         [Key]
-        [Column(Name = "CountryRegionCode", TypeName = "nvarchar", Order = 1)]
+        [Column(name: "CountryRegionCode", TypeName = "nvarchar", Order = 1)]
         [MaxLength(3)]
         [StringLength(3)]
         [Required(ErrorMessage = "Country Region Code is required")]
@@ -17,14 +17,14 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Description("ISO code for countries and regions. Foreign key to CountryRegion.CountryRegionCode.")]
         public string CountryRegionCode { get; set; } // nvarchar(3)
         [Key]
-        [Column(Name = "CurrencyCode", TypeName = "nchar", Order = 2)]
+        [Column(name: "CurrencyCode", TypeName = "nchar", Order = 2)]
         [MaxLength(3)]
         [StringLength(3)]
         [Required(ErrorMessage = "Currency Code is required")]
         [Display(Name = "Currency Code")]
         [Description("ISO standard currency code. Foreign key to Currency.CurrencyCode.")]
         public string CurrencyCode { get; set; } // nchar(3)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name: "ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

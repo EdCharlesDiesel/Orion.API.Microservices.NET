@@ -8,6 +8,6 @@ public class OrderProfile : Profile
 
         public OrderProfile()
         {
-            CreateMap<DataAccess.Postgres.Entities.Order, OrderDto>().ReverseMap();
+            CreateMap<Order, OrderDto>().ReverseMap();
         }
 }

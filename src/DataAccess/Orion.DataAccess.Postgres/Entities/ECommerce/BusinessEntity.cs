@@ -10,32 +10,32 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     {
         public BusinessEntity()
         {
-            this.BusinessEntityAddress = new List<Entities.BusinessEntityAddress>();
-            this.BusinessEntityContact = new List<Entities.BusinessEntityContact>();
+            this.BusinessEntityAddress = new List<BusinessEntityAddress>();
+            this.BusinessEntityContact = new List<BusinessEntityContact>();
         }
 
         [Key]
-        [Column(Name = "BusinessEntityID", TypeName = "int")]
+        [Column(name:"BusinessEntityID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key for all customers, vendors, and employees.")]
         public int? BusinessEntityID { get; set; } // int
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]
         public DateTime? ModifiedDate { get; set; } // datetime
 
         // Person.BusinessEntityAddress.BusinessEntityID -> Person.BusinessEntity.BusinessEntityID (FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID)
-        public IEnumerable<Entities.BusinessEntityAddress> BusinessEntityAddress { get; set; }
+        public IEnumerable<BusinessEntityAddress> BusinessEntityAddress { get; set; }
         // Person.BusinessEntityContact.BusinessEntityID -> Person.BusinessEntity.BusinessEntityID (FK_BusinessEntityContact_BusinessEntity_BusinessEntityID)
-        public IEnumerable<Entities.BusinessEntityContact> BusinessEntityContact { get; set; }
+        public IEnumerable<BusinessEntityContact> BusinessEntityContact { get; set; }
         // Person.Person.BusinessEntityID -> Person.BusinessEntity.BusinessEntityID (FK_Person_BusinessEntity_BusinessEntityID)
         public Person Person { get; set; }
         // Purchasing.Vendor.BusinessEntityID -> Person.BusinessEntity.BusinessEntityID (FK_Vendor_BusinessEntity_BusinessEntityID)
