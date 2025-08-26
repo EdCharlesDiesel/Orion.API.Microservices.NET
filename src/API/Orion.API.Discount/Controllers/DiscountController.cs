@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Orion.DataAccess.Postgres.Entities;
+using Orion.DataAccess.Postgres.Entities.Common;
 using Orion.Domain.IRepositories;
 
 namespace Orion.API.Discount.Controllers

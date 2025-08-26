@@ -16,12 +16,21 @@ namespace Orion.DataAccess.Postgres.Strategy
 
             foreach (var term in enumerable)
             {
-                var diff = term.EndOfTerm - term.StartOfTerm;
+                if (term.EndOfTerm != null)
+                {
+                    var diff = term.EndOfTerm - term.StartOfTerm;
 
-                totalDays += Convert.ToInt32(diff.TotalDays);
+                    totalDays += Convert.ToInt32((int)diff);
+                }
             }
 
             return totalDays;
         }
+    }
+
+    public class Term
+    {
+        public int EndOfTerm { get; set; }
+        public int StartOfTerm { get; set; }
     }
 }

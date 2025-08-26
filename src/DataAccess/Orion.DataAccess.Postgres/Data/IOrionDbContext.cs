@@ -1,5 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+
+using Microsoft.EntityFrameworkCore;
 using Orion.DataAccess.Postgres.Entities;
+using Orion.DataAccess.Postgres.Entities.Common;
+using Orion.DataAccess.Postgres.Entities.ECommerce;
 
 namespace Orion.DataAccess.Postgres.Data
 {

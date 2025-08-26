@@ -3,6 +3,7 @@ using Azure.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Orion.DataAccess.Postgres.Entities;
+using Orion.DataAccess.Postgres.Entities.Common;
 
 namespace Orion.API.Chat.Controllers;
 
