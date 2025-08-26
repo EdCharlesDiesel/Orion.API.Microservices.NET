@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
 export class ProductionLineComponent implements OnInit {
 
   AssemblyLineDataSet: Array<{ LocationID: number, AssemblyName: string, CountWorkOrder: number, RoutingSequence: number }> = [];
-  WorkOrderReceivedDataSet: any[];
-  WorkOrderCompletedDataSet: any[];
-  WorkOrderDelayedDataSet: any[];
-  WorkOrderScrappedDataSet: any[];
+  WorkOrderReceivedDataSet: any[] | undefined;
+  WorkOrderCompletedDataSet: any[] | undefined;
+  WorkOrderDelayedDataSet: any[] | undefined;
+  WorkOrderScrappedDataSet: any[] | undefined;
   StockInventoryDataSet: any;
 
   constructor(private DB: DBrepositoryService , private _Router: Router) {}

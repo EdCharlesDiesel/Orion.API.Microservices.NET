@@ -11,8 +11,8 @@ export class DashboardComponent implements OnInit, AfterViewInit {
 
   calendarPlugins = [dayGridPlugin];
   PendingShipmentDataSet: any[] = [ { title: 'event 1', date: new Date()}];
-  TerritoryPiGridChartDataSet: any[];
-  ProductSalesBarChartDataSet: any[];
+  TerritoryPiGridChartDataSet: any[] | undefined;
+  ProductSalesBarChartDataSet: any[] | undefined;
   TotalSalesForTheYear: string = 'NA';
   TotalCustomersCount: string = 'NA';
   IsBtn2014Clicked: boolean = false;

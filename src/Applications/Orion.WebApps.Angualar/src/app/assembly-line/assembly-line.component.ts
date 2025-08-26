@@ -2,7 +2,8 @@ import { Component, OnInit, ViewChild, AfterViewInit  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DBrepositoryService } from '../services/dbrepository.service';
 import { environment } from '../../environments/environment';
-import { jqxGridComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxgrid';
+import { jqxGridComponent } from 'jqwidgets-ng/jqxgrid';
+import 'jqwidgets-scripts/jqwidgets-ts/jqwidgets.d.ts';
 
 @Component({
   selector: 'app-assembly-line',
@@ -10,18 +11,18 @@ import { jqxGridComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxgrid
   styleUrls: ['./assembly-line.component.css']
 })
 export class AssemblyLineComponent implements OnInit , AfterViewInit {
-  LocationID: string;
-  AssemblyName: string;
+  LocationID: string | undefined;
+  AssemblyName: string | undefined;
   private readonly BASE_URL = environment.API_ENDPOINT;
   @ViewChild('IDAssemblyLineGrid', { static: false}) IDAssemblyLineGrid: jqxGridComponent;
-  AssemblyLineGridSource: jqwidgets.GridSource;
-  AssemblyLineGridOptions: jqwidgets.GridOptions;
+  AssemblyLineGridSource: any;
+  AssemblyLineGridOptions: any;
 
   constructor(private _ActivatedRoute: ActivatedRoute, private DB: DBrepositoryService) { }
 
   ngOnInit() {
-    this.LocationID = this._ActivatedRoute.snapshot.params.LocationID;
-    this.AssemblyName = this._ActivatedRoute.snapshot.params.AssemblyName;
+    this.LocationID = this._ActivatedRoute.snapshot.params['LocationID'];
+    this.AssemblyName = this._ActivatedRoute.snapshot.params['AssemblyName'];
   }
 
   ngAfterViewInit() {
@@ -62,7 +63,7 @@ export class AssemblyLineComponent implements OnInit , AfterViewInit {
       rendergridrows: (obj) =>  obj.data,
       source: new jqx.dataAdapter(this.AssemblyLineGridSource,
         {
-          beforeSend: function (jqxhr, settings) {
+          beforeSend: function (_jqxhr) {
 
          },
           loadError: function (xhr, status, error) {

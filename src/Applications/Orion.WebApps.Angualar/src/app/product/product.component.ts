@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { DBrepositoryService } from '../services/dbrepository.service';
 import { IProductDetails } from '../viewmodel/IProductDetails';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { ProductFilterService } from '../services/ProductFilter.service';
 import { ProductFilter } from '../viewmodel/IProductFilter';
@@ -13,12 +13,12 @@ import { ProductFilter } from '../viewmodel/IProductFilter';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  ProductDetailsList: IProductDetails[];
-  SingleProduct: IProductDetails;
+  ProductDetailsList: IProductDetails[] | undefined;
+  SingleProduct: IProductDetails | undefined;
   currentRate = 4;
   BASE_URL = environment.API_ENDPOINT;
-  IDTxtSearch: string;
-  @ViewChild('IDProductDetailsModelRef', { static: false }) ModalRef: ElementRef;
+  IDTxtSearch: string | undefined;
+  @ViewChild('IDProductDetailsModelRef', { static: false }) ModalRef: ElementRef | undefined;
 
   constructor(private _Router: Router,
     private DB: DBrepositoryService,
@@ -33,7 +33,7 @@ export class ProductComponent implements OnInit {
   }
 
   public BtnViewDetails(ProductID: number): void {
-    this.SingleProduct = this.ProductDetailsList.find(item => {
+    this.SingleProduct = this.ProductDetailsList?.find(item => {
       return item.ProductID === ProductID;
     });
     this.modalService.open(this.ModalRef, { size: 'lg', backdrop: 'static' });
@@ -58,7 +58,7 @@ export class ProductComponent implements OnInit {
           console.log(error);
         });
     } else {
-      this.DB.GetProductDetailsFromServer(filterData)
+      this.DB.GetProductDetailsFromServer(filterData ?? {})
       .subscribe(resp => {
         if (resp.length > 0) {
           this.ProductDetailsList = resp;

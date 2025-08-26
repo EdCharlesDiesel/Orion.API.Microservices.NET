@@ -1,6 +1,10 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { jqxGridComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxgrid';
+import 'jqwidgets-scripts/jqwidgets-ts/jqwidgets.d.ts';
+
+// Add the following line to declare the jqwidgets namespace for TypeScript
+declare var jqwidgets: any;
 
 @Component({
   selector: 'app-inventory',
@@ -11,8 +15,8 @@ export class InventoryComponent implements OnInit , AfterViewInit {
 
   private readonly BASE_URL = environment.API_ENDPOINT;
   @ViewChild('IDProductInventoryGrid', { static: false }) IDProductInventoryGrid: jqxGridComponent;
-  ProductInventoryGridSource: jqwidgets.GridSource;
-  ProductInventoryGridOptions: jqwidgets.GridOptions;
+  ProductInventoryGridSource: any;
+  ProductInventoryGridOptions: any;
   constructor() { }
 
   ngOnInit() {

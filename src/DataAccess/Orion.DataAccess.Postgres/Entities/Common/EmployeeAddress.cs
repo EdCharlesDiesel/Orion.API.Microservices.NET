@@ -1,4 +1,5 @@
-﻿using Orion.Domain.Tools;
+﻿using Orion.DataAccess.Postgres.Entities.ECommerce;
+using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities.Common
 {

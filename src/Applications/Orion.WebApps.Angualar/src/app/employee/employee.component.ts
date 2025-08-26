@@ -10,7 +10,7 @@ import { IEmployee } from '../viewmodel/IEmployee';
 export class EmployeeComponent {
 
    EmpList: Array<IEmployee> = [];
-   IDTxtEmployeeIDSearch: Number;
+   IDTxtEmployeeIDSearch: Number | undefined;
 
   constructor(private DB: DBrepositoryService) { }
 
