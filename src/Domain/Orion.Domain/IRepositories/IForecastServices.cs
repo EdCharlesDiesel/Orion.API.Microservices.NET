@@ -10,7 +10,7 @@ public interface IForecastServices
     Task<string> GetForecastsByCountries(params string[] countries);
     Task<string> GetForecastsByCountriesAndDates(DateTime startDate, DateTime endDate, params string[] countries);
     Task<string> GetForecastsByIndicator(params string[] indicators);
-    Task<Forecast> Create(List<Forecast> forecasts);
+    Task<Forecast> Create(List<Forecast>? forecasts);
 }
 
 public class Forecast

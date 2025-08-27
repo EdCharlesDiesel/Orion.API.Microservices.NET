@@ -14,25 +14,25 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "ProductDescriptionID", TypeName = "int")]
+        [Column(name:"ProductDescriptionID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Product Description ID is required")]
         [Display(Name = "Product Description ID")]
         [Description("Primary key for ProductDescription records.")]
         public int? ProductDescriptionID { get; set; } // int
-        [Column(Name = "Description", TypeName = "nvarchar")]
+        [Column(name:"Description", TypeName = "nvarchar")]
         [MaxLength(400)]
         [StringLength(400)]
         [Required(ErrorMessage = "Description is required")]
         [Display(Name = "Description")]
         [Description("Description of the product.")]
         public string Description { get; set; } // nvarchar(400)
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

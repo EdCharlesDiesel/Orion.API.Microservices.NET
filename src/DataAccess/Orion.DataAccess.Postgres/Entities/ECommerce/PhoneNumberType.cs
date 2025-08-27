@@ -14,20 +14,20 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "PhoneNumberTypeID", TypeName = "int")]
+        [Column(name:"PhoneNumberTypeID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Phone Number Type ID is required")]
         [Display(Name = "Phone Number Type ID")]
         [Description("Primary key for telephone number type records.")]
         public int? PhoneNumberTypeID { get; set; } // int
-        [Column(Name = "Name", TypeName = "nvarchar")]
+        [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Name of the telephone number type")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

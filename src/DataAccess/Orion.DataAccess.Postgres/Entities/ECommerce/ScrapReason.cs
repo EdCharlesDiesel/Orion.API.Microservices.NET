@@ -14,20 +14,20 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "ScrapReasonID", TypeName = "smallint")]
+        [Column(name:"ScrapReasonID", TypeName = "smallint")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Scrap Reason ID is required")]
         [Display(Name = "Scrap Reason ID")]
         [Description("Primary key for ScrapReason records.")]
         public short? ScrapReasonID { get; set; } // smallint
-        [Column(Name = "Name", TypeName = "nvarchar")]
+        [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Failure description.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

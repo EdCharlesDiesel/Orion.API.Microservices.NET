@@ -14,13 +14,13 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Display(Name = "Business Entity ID")]
         [Description("Primary key. Foreign key to BusinessEntity.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
-        [Key]
+        // [Key]
         [Column(name:"AddressID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Address ID is required")]
         [Display(Name = "Address ID")]
         [Description("Primary key. Foreign key to Address.AddressID.")]
         public int? AddressID { get; set; } // int
-        [Key]
+        // [Key]
         [Column(name:"AddressTypeID", TypeName = "int", Order = 3)]
         [Required(ErrorMessage = "Address Type ID is required")]
         [Display(Name = "Address Type ID")]

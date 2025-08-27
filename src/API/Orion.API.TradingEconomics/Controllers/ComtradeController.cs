@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Orion.DataAccess.Postgres.Repositories;
 using Orion.Domain.IRepositories;
 
 namespace Orion.API.TradingEconomics.Controllers;
@@ -7,11 +8,16 @@ namespace Orion.API.TradingEconomics.Controllers;
 [Route("api/[controller]")]
 public class ComtradeController : ControllerBase
 {
-    private readonly IComtradeServices _service;
+    private readonly TradingEconomicsService _service;
 
-    public ComtradeController(IComtradeServices service)
+    public ComtradeController(TradingEconomicsService service)
     {
         _service = service;
+    }
+
+    public ComtradeController(IComtradeServices serviceMockObject)
+    {
+        throw new NotImplementedException();
     }
 
     /// <summary>Get all comtrade categories</summary>

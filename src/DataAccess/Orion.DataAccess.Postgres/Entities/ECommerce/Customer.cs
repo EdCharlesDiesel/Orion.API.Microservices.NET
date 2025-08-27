@@ -10,29 +10,29 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     {
         public Customer()
         {
-            this.SalesOrderHeaders = new List<SalesOrderHeader>();
+ 
         }
 
         [Key]
-        [Column(Name = "CustomerID", TypeName = "int")]
+        [Column(name: "CustomerID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Customer ID is required")]
         [Display(Name = "Customer ID")]
         [Description("Primary key.")]
         public int? CustomerID { get; set; } // int
-        [Column(Name = "PersonID", TypeName = "int")]
+        [Column(name:"PersonID", TypeName = "int")]
         [Display(Name = "Person ID")]
         [Description("Foreign key to Person.BusinessEntityID")]
         public int? PersonID { get; set; } // int
-        [Column(Name = "StoreID", TypeName = "int")]
+        [Column(name:"StoreID", TypeName = "int")]
         [Display(Name = "Store ID")]
         [Description("Foreign key to Store.BusinessEntityID")]
         public int? StoreID { get; set; } // int
-        [Column(Name = "TerritoryID", TypeName = "int")]
+        [Column(name: "TerritoryID", TypeName = "int")]
         [Display(Name = "Territory ID")]
         [Description("ID of the territory in which the customer is located. Foreign key to SalesTerritory.SalesTerritoryID.")]
         public int? TerritoryID { get; set; } // int
-        [Column(Name = "AccountNumber", TypeName = "varchar")]
+        [Column(name:"AccountNumber", TypeName = "varchar")]
         [MaxLength(10)]
         [StringLength(10)]
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
@@ -40,12 +40,12 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Display(Name = "Account Number")]
         [Description("Unique number identifying the customer assigned by the accounting system.")]
         public string AccountNumber { get; set; } // varchar(10)
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name: "rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

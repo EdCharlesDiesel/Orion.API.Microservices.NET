@@ -9,26 +9,26 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class ProductModelProductDescriptionCulture
     {
         [Key]
-        [Column(Name = "ProductModelID", TypeName = "int", Order = 1)]
+        [Column(name:"ProductModelID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Product Model ID is required")]
         [Display(Name = "Product Model ID")]
         [Description("Primary key. Foreign key to ProductModel.ProductModelID.")]
         public int? ProductModelID { get; set; } // int
         [Key]
-        [Column(Name = "ProductDescriptionID", TypeName = "int", Order = 2)]
+        [Column(name:"ProductDescriptionID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Product Description ID is required")]
         [Display(Name = "Product Description ID")]
         [Description("Primary key. Foreign key to ProductDescription.ProductDescriptionID.")]
         public int? ProductDescriptionID { get; set; } // int
         [Key]
-        [Column(Name = "CultureID", TypeName = "nchar", Order = 3)]
+        [Column(name:"CultureID", TypeName = "nchar", Order = 3)]
         [MaxLength(6)]
         [StringLength(6)]
         [Required(ErrorMessage = "Culture ID is required")]
         [Display(Name = "Culture ID")]
         [Description("Culture identification number. Foreign key to Culture.CultureID.")]
         public string CultureID { get; set; } // nchar(6)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

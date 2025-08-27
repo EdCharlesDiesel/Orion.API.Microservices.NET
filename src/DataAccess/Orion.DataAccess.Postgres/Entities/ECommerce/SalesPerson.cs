@@ -17,45 +17,45 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "BusinessEntityID", TypeName = "int")]
+        [Column(name:"BusinessEntityID", TypeName = "int")]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key for SalesPerson records. Foreign key to Employee.BusinessEntityID")]
         public int? BusinessEntityID { get; set; } // int
-        [Column(Name = "TerritoryID", TypeName = "int")]
+        [Column(name:"TerritoryID", TypeName = "int")]
         [Display(Name = "Territory ID")]
         [Description("Territory currently assigned to. Foreign key to SalesTerritory.SalesTerritoryID.")]
         public int? TerritoryID { get; set; } // int
-        [Column(Name = "SalesQuota", TypeName = "money")]
+        [Column(name:"SalesQuota", TypeName = "money")]
         [Display(Name = "Sales Quota")]
         [Description("Projected yearly sales.")]
         public decimal? SalesQuota { get; set; } // money
-        [Column(Name = "Bonus", TypeName = "money")]
+        [Column(name:"Bonus", TypeName = "money")]
         [Required(ErrorMessage = "Bonus is required")]
         [Display(Name = "Bonus")]
         [Description("Bonus due if quota is met.")]
         public decimal? Bonus { get; set; } // money
-        [Column(Name = "CommissionPct", TypeName = "smallmoney")]
+        [Column(name:"CommissionPct", TypeName = "smallmoney")]
         [Required(ErrorMessage = "Commission Pct is required")]
         [Display(Name = "Commission Pct")]
         [Description("Commision percent received per sale.")]
         public decimal? CommissionPct { get; set; } // smallmoney
-        [Column(Name = "SalesYTD", TypeName = "money")]
+        [Column(name:"SalesYTD", TypeName = "money")]
         [Required(ErrorMessage = "Sales YTD is required")]
         [Display(Name = "Sales YTD")]
         [Description("Sales total year to date.")]
         public decimal? SalesYTD { get; set; } // money
-        [Column(Name = "SalesLastYear", TypeName = "money")]
+        [Column(name:"SalesLastYear", TypeName = "money")]
         [Required(ErrorMessage = "Sales Last Year is required")]
         [Display(Name = "Sales Last Year")]
         [Description("Sales total of previous year.")]
         public decimal? SalesLastYear { get; set; } // money
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

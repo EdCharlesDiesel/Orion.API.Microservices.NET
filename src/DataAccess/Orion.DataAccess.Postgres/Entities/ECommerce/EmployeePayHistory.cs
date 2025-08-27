@@ -9,28 +9,28 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class EmployeePayHistory
     {
         [Key]
-        [Column(Name = "BusinessEntityID", TypeName = "int", Order = 1)]
+        [Column(name:"BusinessEntityID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Employee identification number. Foreign key to Employee.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
         [Key]
-        [Column(Name = "RateChangeDate", TypeName = "datetime", Order = 2)]
+        [Column(name:"RateChangeDate", TypeName = "datetime", Order = 2)]
         [Required(ErrorMessage = "Rate Change Date is required")]
         [Display(Name = "Rate Change Date")]
         [Description("Date the change in pay is effective")]
         public DateTime? RateChangeDate { get; set; } // datetime
-        [Column(Name = "Rate", TypeName = "money")]
+        [Column(name:"Rate", TypeName = "money")]
         [Required(ErrorMessage = "Rate is required")]
         [Display(Name = "Rate")]
         [Description("Salary hourly rate.")]
         public decimal? Rate { get; set; } // money
-        [Column(Name = "PayFrequency", TypeName = "tinyint")]
+        [Column(name:"PayFrequency", TypeName = "tinyint")]
         [Required(ErrorMessage = "Pay Frequency is required")]
         [Display(Name = "Pay Frequency")]
         [Description("1 = Salary received monthly, 2 = Salary received biweekly")]
         public byte? PayFrequency { get; set; } // tinyint
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

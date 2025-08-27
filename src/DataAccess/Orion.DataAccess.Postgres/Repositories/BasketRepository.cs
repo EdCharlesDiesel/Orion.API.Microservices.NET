@@ -3,9 +3,9 @@ using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Postgres.Repositories;
 
-public class BasketRepository(OrionDbContext context) : IBasketServices
+public class BasketRepository(OrionDbContext context, IBasketServices basketServicesImplementation) : IBasketServices
 {
-    private IBasketServices _basketServicesImplementation;
+    private IBasketServices _basketServicesImplementation = basketServicesImplementation;
     // public async Task<Basket> Create(List<Basket> baskets)
     // {
     //     if (baskets == null)

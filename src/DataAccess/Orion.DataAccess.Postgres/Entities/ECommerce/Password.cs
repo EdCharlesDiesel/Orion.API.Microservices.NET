@@ -9,30 +9,30 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class Password
     {
         [Key]
-        [Column(Name = "BusinessEntityID", TypeName = "int")]
+        [Column(name:"BusinessEntityID", TypeName = "int")]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         public int? BusinessEntityID { get; set; } // int
-        [Column(Name = "PasswordHash", TypeName = "varchar")]
+        [Column(name:"PasswordHash", TypeName = "varchar")]
         [MaxLength(128)]
         [StringLength(128)]
         [Required(ErrorMessage = "Password Hash is required")]
         [Display(Name = "Password Hash")]
         [Description("Password for the e-mail account.")]
         public string PasswordHash { get; set; } // varchar(128)
-        [Column(Name = "PasswordSalt", TypeName = "varchar")]
+        [Column(name:"PasswordSalt", TypeName = "varchar")]
         [MaxLength(10)]
         [StringLength(10)]
         [Required(ErrorMessage = "Password Salt is required")]
         [Display(Name = "Password Salt")]
         [Description("Random value concatenated with the password string before the password is hashed.")]
         public string PasswordSalt { get; set; } // varchar(10)
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

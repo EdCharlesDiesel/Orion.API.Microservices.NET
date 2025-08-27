@@ -9,40 +9,40 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class SalesTaxRate
     {
         [Key]
-        [Column(Name = "SalesTaxRateID", TypeName = "int")]
+        [Column(name:"SalesTaxRateID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Sales Tax Rate ID is required")]
         [Display(Name = "Sales Tax Rate ID")]
         [Description("Primary key for SalesTaxRate records.")]
         public int? SalesTaxRateID { get; set; } // int
-        [Column(Name = "StateProvinceID", TypeName = "int")]
+        [Column(name:"StateProvinceID", TypeName = "int")]
         [Required(ErrorMessage = "State Province ID is required")]
         [Display(Name = "State Province ID")]
         [Description("State, province, or country/region the sales tax applies to.")]
         public int? StateProvinceID { get; set; } // int
-        [Column(Name = "TaxType", TypeName = "tinyint")]
+        [Column(name:"TaxType", TypeName = "tinyint")]
         [Required(ErrorMessage = "Tax Type is required")]
         [Display(Name = "Tax Type")]
         [Description("1 = Tax applied to retail transactions, 2 = Tax applied to wholesale transactions, 3 = Tax applied to all sales (retail and wholesale) transactions.")]
         public byte? TaxType { get; set; } // tinyint
-        [Column(Name = "TaxRate", TypeName = "smallmoney")]
+        [Column(name:"TaxRate", TypeName = "smallmoney")]
         [Required(ErrorMessage = "Tax Rate is required")]
         [Display(Name = "Tax Rate")]
         [Description("Tax rate amount.")]
         public decimal? TaxRate { get; set; } // smallmoney
-        [Column(Name = "Name", TypeName = "nvarchar")]
+        [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Tax rate description.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

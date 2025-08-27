@@ -1,4 +1,4 @@
-namespace Orion.DataAccess.Postgres.Entities;
+namespace Orion.DataAccess.Postgres.Entities.Common;
 
 public class EuropeanCentralBank
 {

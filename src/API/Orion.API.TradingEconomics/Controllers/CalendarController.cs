@@ -1,29 +1,21 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.Entities.Common;
-using Orion.Domain.IRepositories;
+using Orion.DataAccess.Postgres.Repositories;
 
 namespace Orion.API.TradingEconomics.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CalendarController : ControllerBase
+    public class CalendarController(ICalendarServices service) : ControllerBase
     {
-        private readonly ICalendarServices _service;
-
-        public CalendarController(ICalendarServices service)
-        {
-            _service = service;
-        }
-
         /// <summary>
         /// Get all calendar events
         /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetAllEvents()
         {
-            string result = await _service.GetCalendarEvents();
+            string result = await service.GetCalendarEvents();
 
             List<CalendarEvent>? calendarEvents;
             try
@@ -41,7 +33,7 @@ namespace Orion.API.TradingEconomics.Controllers
                 return BadRequest($"JSON deserialization error: {ex.Message}");
             }
 
-            await _service.Create(calendarEvents);
+            await service.Create(calendarEvents);
             return Ok(result);
         }
 
@@ -51,7 +43,7 @@ namespace Orion.API.TradingEconomics.Controllers
         [HttpGet("daterange")]
         public async Task<IActionResult> GetEventsByDate([FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
         {
-            var result = await _service.GetCalendarEventsByDate(startDate, endDate);
+            var result = await service.GetCalendarEventsByDate(startDate, endDate);
             return Ok(result);
         }
 
@@ -61,7 +53,7 @@ namespace Orion.API.TradingEconomics.Controllers
         [HttpGet("countries")]
         public async Task<IActionResult> GetEventsByCountries([FromQuery] string[] names)
         {
-            var result = await _service.GetCalendarEventsByCountries(names);
+            var result = await service.GetCalendarEventsByCountries(names);
             return Ok(result);
         }
 
@@ -74,7 +66,7 @@ namespace Orion.API.TradingEconomics.Controllers
             [FromQuery] DateTime endDate,
             [FromQuery] string[] names)
         {
-            var result = await _service.GetCalendarEventsByCountriesAndDates(startDate, endDate, names);
+            var result = await service.GetCalendarEventsByCountriesAndDates(startDate, endDate, names);
             return Ok(result);
         }
 
@@ -84,7 +76,7 @@ namespace Orion.API.TradingEconomics.Controllers
         [HttpGet("indicators")]
         public async Task<IActionResult> GetEventsByIndicators([FromQuery] string[] names)
         {
-            var result = await _service.GetCalendarEventsByIndicators(names);
+            var result = await service.GetCalendarEventsByIndicators(names);
             return Ok(result);
         }
     }

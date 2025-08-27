@@ -14,17 +14,17 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "IllustrationID", TypeName = "int")]
+        [Column(name:"IllustrationID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Illustration ID is required")]
         [Display(Name = "Illustration ID")]
         [Description("Primary key for Illustration records.")]
         public int? IllustrationID { get; set; } // int
-        [Column(Name = "Diagram", TypeName = "xml")]
+        [Column(name:"Diagram", TypeName = "xml")]
         [Display(Name = "Diagram")]
         [Description("Illustrations used in manufacturing instructions. Stored as XML.")]
         public string Diagram { get; set; } // XML(.)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

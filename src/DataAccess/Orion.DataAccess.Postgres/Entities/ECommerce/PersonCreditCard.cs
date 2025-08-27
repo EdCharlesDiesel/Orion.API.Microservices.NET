@@ -9,18 +9,18 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class PersonCreditCard
     {
         [Key]
-        [Column(Name = "BusinessEntityID", TypeName = "int", Order = 1)]
+        [Column(name:"BusinessEntityID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Business entity identification number. Foreign key to Person.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
         [Key]
-        [Column(Name = "CreditCardID", TypeName = "int", Order = 2)]
+        [Column(name:"CreditCardID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Credit Card ID is required")]
         [Display(Name = "Credit Card ID")]
         [Description("Credit card identification number. Foreign key to CreditCard.CreditCardID.")]
         public int? CreditCardID { get; set; } // int
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

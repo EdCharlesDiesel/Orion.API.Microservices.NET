@@ -11,10 +11,7 @@ namespace Orion.DataAccess.Postgres.Data
 {
     // Inherit from IdentityDbContext instead of DbContext
     public sealed class OrionDbContext(
-        DbContextOptions<OrionDbContext> options,
-        object database,
-        object userProfiles,
-        object customers)
+        DbContextOptions<OrionDbContext> options)
         : IdentityDbContext<IdentityUser, IdentityRole, string>(options), IOrionDbContext
     {
         // Your DbSets
@@ -101,88 +98,87 @@ namespace Orion.DataAccess.Postgres.Data
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Feature> Features { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public object Database { get; set; } = database;
-        public object UserProfiles { get; set; } = userProfiles;
-        public object Customers { get; set; } = customers;
+        public DbSet<OrderDetail> Orders { get; set; }
+
+        public DbSet<Customer>  Customers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Must call base to ensure Identity tables are configured
-            base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<SalesOrderHeader>()
-                .HasOne(soh => soh.BillToAddress)
-                .WithMany(a => a.SalesOrderHeaderBillToAddress)
-                .HasForeignKey(soh => soh.BillToAddressId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<SalesOrderHeader>()
-                .HasOne(soh => soh.ShipToAddress)
-                .WithMany(a => a.SalesOrderHeaderShipToAddress)
-                .HasForeignKey(soh => soh.ShipToAddressId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<BillOfMaterials>(entity =>
-            {
-                entity.HasOne(b => b.ProductAssembly)
-                    .WithMany(p => p.BillOfMaterialsAssembly)
-                    .HasForeignKey(b => b.ProductAssemblyId)
-                    .OnDelete(DeleteBehavior.Restrict);
-
-                entity.HasOne(b => b.Component)
-                    .WithMany(p => p.BillOfMaterialsComponent)
-                    .HasForeignKey(b => b.ComponentId)
-                    .OnDelete(DeleteBehavior.Restrict);
-            });
-
-            // modelBuilder.Entity<CurrencyRate>(entity =>
+            // base.OnModelCreating(modelBuilder);
+            //
+            // modelBuilder.Entity<SalesOrderHeader>()
+            //     .HasOne(soh => soh.BillToAddress)
+            //     .WithMany(a => a.SalesOrderHeaderBillToAddress)
+            //     .HasForeignKey(soh => soh.BillToAddressId)
+            //     .OnDelete(DeleteBehavior.Restrict);
+            //
+            // modelBuilder.Entity<SalesOrderHeader>()
+            //     .HasOne(soh => soh.ShipToAddress)
+            //     .WithMany(a => a.SalesOrderHeaderShipToAddress)
+            //     .HasForeignKey(soh => soh.ShipToAddressId)
+            //     .OnDelete(DeleteBehavior.Restrict);
+            //
+            // modelBuilder.Entity<BillOfMaterials>(entity =>
             // {
-            //     entity.HasOne(d => d.FromCurrencyCodeNavigation)
-            //         .WithMany(p => p.CurrencyRateFromCurrencyCodeNavigation)
-            //         .HasForeignKey(d => d.FromCurrencyCode)
+            //     entity.HasOne(b => b.ProductAssembly)
+            //         .WithMany(p => p.BillOfMaterialsAssembly)
+            //         .HasForeignKey(b => b.ProductAssemblyId)
             //         .OnDelete(DeleteBehavior.Restrict);
             //
-            //     entity.HasOne(d => d.ToCurrencyCodeNavigation)
-            //         .WithMany(p => p.CurrencyRateToCurrencyCodeNavigation)
-            //         .HasForeignKey(d => d.ToCurrencyCode)
+            //     entity.HasOne(b => b.Component)
+            //         .WithMany(p => p.BillOfMaterialsComponent)
+            //         .HasForeignKey(b => b.ComponentId)
             //         .OnDelete(DeleteBehavior.Restrict);
             // });
-
-            modelBuilder.Entity<Product>(entity =>
-            {
-                entity.HasOne(d => d.SizeUnitMeasureCodeNavigation)
-                    .WithMany(p => p.ProductsSizeUnitMeasureCodeNavigation)
-                    .HasForeignKey(d => d.SizeUnitMeasureCode)
-                    .OnDelete(DeleteBehavior.Restrict);
-
-                entity.HasOne(d => d.WeightUnitMeasureCodeNavigation)
-                    .WithMany(p => p.ProductsWeightUnitMeasureCodeNavigation)
-                    .HasForeignKey(d => d.WeightUnitMeasureCode)
-                    .OnDelete(DeleteBehavior.Restrict);
-            });
-
-            modelBuilder.Entity<SalesPerson>()
-                .Property(sp => sp.BusinessEntityId)
-                .HasConversion<int>();
-
-            modelBuilder.Entity<Employee>()
-                .HasOne(e => e.SalesPerson)
-                .WithOne(sp => sp.SalesPersonNavigation)
-                .HasForeignKey<SalesPerson>(sp => sp.BusinessEntityId);
-            
-            modelBuilder.Entity<Currency>()
-                .HasKey(c => c.Id);
-
-            modelBuilder.Entity<Currency>()
-                .HasIndex(c => c.Code)
-                .IsUnique(); // ensure codes are unique if needed
-
-            // modelBuilder.Entity<CurrencyRate>()
-            //     .HasOne(cr => cr.FromCurrencyCodeNavigation)
-            //     .WithMany(c => c.CurrencyRateFromCurrencyCodeNavigation)
-            //     .HasForeignKey(cr => cr.FromCurrencyCode)
-            //     .HasPrincipalKey(c => c.Code); // <-- key fix
+            //
+            // // modelBuilder.Entity<CurrencyRate>(entity =>
+            // // {
+            // //     entity.HasOne(d => d.FromCurrencyCodeNavigation)
+            // //         .WithMany(p => p.CurrencyRateFromCurrencyCodeNavigation)
+            // //         .HasForeignKey(d => d.FromCurrencyCode)
+            // //         .OnDelete(DeleteBehavior.Restrict);
+            // //
+            // //     entity.HasOne(d => d.ToCurrencyCodeNavigation)
+            // //         .WithMany(p => p.CurrencyRateToCurrencyCodeNavigation)
+            // //         .HasForeignKey(d => d.ToCurrencyCode)
+            // //         .OnDelete(DeleteBehavior.Restrict);
+            // // });
+            //
+            // modelBuilder.Entity<Product>(entity =>
+            // {
+            //     entity.HasOne(d => d.SizeUnitMeasureCodeNavigation)
+            //         .WithMany(p => p.ProductsSizeUnitMeasureCodeNavigation)
+            //         .HasForeignKey(d => d.SizeUnitMeasureCode)
+            //         .OnDelete(DeleteBehavior.Restrict);
+            //
+            //     entity.HasOne(d => d.WeightUnitMeasureCodeNavigation)
+            //         .WithMany(p => p.ProductsWeightUnitMeasureCodeNavigation)
+            //         .HasForeignKey(d => d.WeightUnitMeasureCode)
+            //         .OnDelete(DeleteBehavior.Restrict);
+            // });
+            //
+            // modelBuilder.Entity<SalesPerson>()
+            //     .Property(sp => sp.BusinessEntityId)
+            //     .HasConversion<int>();
+            //
+            // modelBuilder.Entity<Employee>()
+            //     .HasOne(e => e.SalesPerson)
+            //     .WithOne(sp => sp.SalesPersonNavigation)
+            //     .HasForeignKey<SalesPerson>(sp => sp.BusinessEntityId);
+            //
+            // modelBuilder.Entity<Currency>()
+            //     .HasKey(c => c.Id);
+            //
+            // modelBuilder.Entity<Currency>()
+            //     .HasIndex(c => c.Code)
+            //     .IsUnique(); // ensure codes are unique if needed
+            //
+            // // modelBuilder.Entity<CurrencyRate>()
+            // //     .HasOne(cr => cr.FromCurrencyCodeNavigation)
+            // //     .WithMany(c => c.CurrencyRateFromCurrencyCodeNavigation)
+            // //     .HasForeignKey(cr => cr.FromCurrencyCode)
+            // //     .HasPrincipalKey(c => c.Code); // <-- key fix
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

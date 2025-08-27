@@ -9,18 +9,18 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class ProductModelIllustration
     {
         [Key]
-        [Column(Name = "ProductModelID", TypeName = "int", Order = 1)]
+        [Column(name:"ProductModelID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Product Model ID is required")]
         [Display(Name = "Product Model ID")]
         [Description("Primary key. Foreign key to ProductModel.ProductModelID.")]
         public int? ProductModelID { get; set; } // int
         [Key]
-        [Column(Name = "IllustrationID", TypeName = "int", Order = 2)]
+        [Column(name:"IllustrationID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Illustration ID is required")]
         [Display(Name = "Illustration ID")]
         [Description("Primary key. Foreign key to Illustration.IllustrationID.")]
         public int? IllustrationID { get; set; } // int
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

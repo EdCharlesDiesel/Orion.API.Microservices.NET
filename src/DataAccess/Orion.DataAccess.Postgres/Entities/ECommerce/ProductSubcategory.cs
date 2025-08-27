@@ -14,30 +14,30 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "ProductSubcategoryID", TypeName = "int")]
+        [Column(name:"ProductSubcategoryID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Product Subcategory ID is required")]
         [Display(Name = "Product Subcategory ID")]
         [Description("Primary key for ProductSubcategory records.")]
         public int? ProductSubcategoryID { get; set; } // int
-        [Column(Name = "ProductCategoryID", TypeName = "int")]
+        [Column(name:"ProductCategoryID", TypeName = "int")]
         [Required(ErrorMessage = "Product Category ID is required")]
         [Display(Name = "Product Category ID")]
         [Description("Product category identification number. Foreign key to ProductCategory.ProductCategoryID.")]
         public int? ProductCategoryID { get; set; } // int
-        [Column(Name = "Name", TypeName = "nvarchar")]
+        [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Subcategory description.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

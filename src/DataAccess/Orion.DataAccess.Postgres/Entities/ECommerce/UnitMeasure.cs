@@ -8,8 +8,10 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     [Description("Unit of measure lookup table.")]
     public class UnitMeasure
     {
-        public UnitMeasure()
+        public UnitMeasure(string unitMeasureCode, string name)
         {
+            UnitMeasureCode = unitMeasureCode;
+            Name = name;
             this.BillOfMaterials = new List<BillOfMaterials>();
             this.Products = new List<Product>();
             this.Products1 = new List<Product>();
@@ -17,21 +19,21 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "UnitMeasureCode", TypeName = "nchar")]
+        [Column(name:"UnitMeasureCode", TypeName = "nchar")]
         [MaxLength(3)]
         [StringLength(3)]
         [Required(ErrorMessage = "Unit Measure Code is required")]
         [Display(Name = "Unit Measure Code")]
         [Description("Primary key.")]
         public string UnitMeasureCode { get; set; } // nchar(3)
-        [Column(Name = "Name", TypeName = "nvarchar")]
+        [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Unit of measure description.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

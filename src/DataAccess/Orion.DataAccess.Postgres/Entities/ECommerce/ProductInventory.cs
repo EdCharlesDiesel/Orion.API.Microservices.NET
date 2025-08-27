@@ -9,40 +9,40 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class ProductInventory
     {
         [Key]
-        [Column(Name = "ProductID", TypeName = "int", Order = 1)]
+        [Column(name:"ProductID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
         public int? ProductID { get; set; } // int
         [Key]
-        [Column(Name = "LocationID", TypeName = "smallint", Order = 2)]
+        [Column(name:"LocationID", TypeName = "smallint", Order = 2)]
         [Required(ErrorMessage = "Location ID is required")]
         [Display(Name = "Location ID")]
         [Description("Inventory location identification number. Foreign key to Location.LocationID. ")]
         public short? LocationID { get; set; } // smallint
-        [Column(Name = "Shelf", TypeName = "nvarchar")]
+        [Column(name:"Shelf", TypeName = "nvarchar")]
         [MaxLength(10)]
         [StringLength(10)]
         [Required(ErrorMessage = "Shelf is required")]
         [Display(Name = "Shelf")]
         [Description("Storage compartment within an inventory location.")]
         public string Shelf { get; set; } // nvarchar(10)
-        [Column(Name = "Bin", TypeName = "tinyint")]
+        [Column(name:"Bin", TypeName = "tinyint")]
         [Required(ErrorMessage = "Bin is required")]
         [Display(Name = "Bin")]
         [Description("Storage container on a shelf in an inventory location.")]
         public byte? Bin { get; set; } // tinyint
-        [Column(Name = "Quantity", TypeName = "smallint")]
+        [Column(name:"Quantity", TypeName = "smallint")]
         [Required(ErrorMessage = "Quantity is required")]
         [Display(Name = "Quantity")]
         [Description("Quantity of products in the inventory location.")]
         public short? Quantity { get; set; } // smallint
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

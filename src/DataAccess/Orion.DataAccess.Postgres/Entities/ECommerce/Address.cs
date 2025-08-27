@@ -7,13 +7,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
 {
     [Table("Person.Address")]
     [Description("Street address information for customers, employees, and vendors.")]
-    public class Address(
-        string addressLine1,
-        string addressLine2,
-        string city,
-        string postalCode,
-        SqlGeography spatialLocation,
-        StateProvince stateProvince)
+    public class Address( )
     {
         [Key]
         [Column(name:"AddressID", TypeName = "int")]
@@ -28,20 +22,20 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Address Line1 is required")]
         [Display(Name = "Address Line1")]
         [Description("First street address line.")]
-        public string AddressLine1 { get; set; } = addressLine1; // nvarchar(60)
+        public string AddressLine1 { get; set; } 
         [Column(name: "AddressLine2", TypeName = "nvarchar")]
         [MaxLength(60)]
         [StringLength(60)]
         [Display(Name = "Address Line2")]
         [Description("Second street address line.")]
-        public string AddressLine2 { get; set; } = addressLine2; // nvarchar(60)
+        public string AddressLine2 { get; set; } 
         [Column(name: "City", TypeName = "nvarchar")]
         [MaxLength(30)]
         [StringLength(30)]
         [Required(ErrorMessage = "City is required")]
         [Display(Name = "City")]
         [Description("Name of the city.")]
-        public string City { get; set; } = city; // nvarchar(30)
+        public string City { get; set; } 
         [Column(name: "StateProvinceID", TypeName = "int")]
         [Required(ErrorMessage = "State Province ID is required")]
         [Display(Name = "State Province ID")]
@@ -53,11 +47,11 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Postal Code is required")]
         [Display(Name = "Postal Code")]
         [Description("Postal code for the street address.")]
-        public string PostalCode { get; set; } = postalCode; // nvarchar(15)
+        public string PostalCode { get; set; } 
         [Column(name: "SpatialLocation", TypeName = "geography")]
         [Display(Name = "Spatial Location")]
         [Description("Latitude and longitude of this address.")]
-        public SqlGeography SpatialLocation { get; set; } = spatialLocation; // geography
+        public SqlGeography SpatialLocation { get; set; }
         [Column(name: "rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
@@ -70,7 +64,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         public DateTime? ModifiedDate { get; set; } // datetime
 
         // Person.Address.StateProvinceID -> Person.StateProvince.StateProvinceID (FK_Address_StateProvince_StateProvinceID)
-        public StateProvince StateProvince { get; set; } = stateProvince;
+        public StateProvince StateProvince { get; set; } 
 
         // Person.BusinessEntityAddress.AddressID -> Person.Address.AddressID (FK_BusinessEntityAddress_Address_AddressID)
         public IEnumerable<BusinessEntityAddress> BusinessEntityAddress { get; set; } = new List<BusinessEntityAddress>();

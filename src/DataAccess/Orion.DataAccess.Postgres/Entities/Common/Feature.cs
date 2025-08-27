@@ -3,7 +3,7 @@ using Orion.Domain.Aggregates;
 using Orion.Domain.Enums;
 using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Postgres.Entities
+namespace Orion.DataAccess.Postgres.Entities.Common
 {
     public class Feature : Entity<int>, IFeature
     {

@@ -9,21 +9,21 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class JobCandidate
     {
         [Key]
-        [Column(Name = "JobCandidateID", TypeName = "int")]
+        [Column(name:"JobCandidateID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Job Candidate ID is required")]
         [Display(Name = "Job Candidate ID")]
         [Description("Primary key for JobCandidate records.")]
         public int? JobCandidateID { get; set; } // int
-        [Column(Name = "BusinessEntityID", TypeName = "int")]
+        [Column(name:"BusinessEntityID", TypeName = "int")]
         [Display(Name = "Business Entity ID")]
         [Description("Employee identification number if applicant was hired. Foreign key to Employee.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
-        [Column(Name = "Resume", TypeName = "xml")]
+        [Column(name:"Resume", TypeName = "xml")]
         [Display(Name = "Resume")]
         [Description("Résumé in XML format.")]
         public string Resume { get; set; } // XML(.)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

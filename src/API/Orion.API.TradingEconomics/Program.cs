@@ -18,10 +18,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Register application services
 
-builder.Services.AddScoped<CalendarRepository>();
-builder.Services.AddScoped<IComtradeServices, ComtradeRepository>();
-builder.Services.AddScoped<IForecastServices, ForecastRepository>();
-builder.Services.AddAutoMapper(typeof(CalendarEventProfile));
+ builder.Services.AddScoped<CalendarRepository>();
+// builder.Services.AddScoped<IComtradeServices, ComtradeRepository>();
+// builder.Services.AddScoped<IForecastServices, ForecastRepository>();
+// builder.Services.AddAutoMapper(typeof(CalendarEventProfile));
 
 // ✅ Add HTTP client support if needed
 builder.Services.AddHttpClient(); // Or named client if needed

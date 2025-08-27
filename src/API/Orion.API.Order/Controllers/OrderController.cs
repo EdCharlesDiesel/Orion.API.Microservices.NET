@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Orion.DataAccess.Postgres.Entities.Common;
 using Orion.Domain.IRepositories;
 
 namespace Orion.API.Order.Controllers
@@ -24,7 +25,7 @@ namespace Orion.API.Order.Controllers
         /// <param name="order"></param>
         /// <returns></returns>
         [HttpPost("creat")]
-        public async Task<IActionResult> Create([FromQuery] FastEndpoints.Order order)
+        public async Task<IActionResult> Create([FromQuery] OrderDetail order)
         {
             // var profileToDatabase = mapper.Map<Core.Order.Domain.Order>(profile);
             // await service.AddAsync(order);
@@ -38,7 +39,7 @@ namespace Orion.API.Order.Controllers
         /// <param name="order"></param>
         /// <returns></returns>
         [HttpPut("update")]
-        public async Task<IActionResult> UpdateOrder([FromQuery] DataAccess.Postgres.Entities.Order order)
+        public async Task<IActionResult> UpdateOrder([FromQuery] OrderDetail order)
         {
             //  await service.UpdateAsync(order);
             // return Ok();

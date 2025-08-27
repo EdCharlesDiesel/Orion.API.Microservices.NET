@@ -14,27 +14,27 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "DepartmentID", TypeName = "smallint")]
+        [Column(name:"DepartmentID", TypeName = "smallint")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Department ID is required")]
         [Display(Name = "Department ID")]
         [Description("Primary key for Department records.")]
         public short? DepartmentID { get; set; } // smallint
-        [Column(Name = "Name", TypeName = "nvarchar")]
+        [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Name of the department.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(Name = "GroupName", TypeName = "nvarchar")]
+        [Column(name:"GroupName", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Group Name is required")]
         [Display(Name = "Group Name")]
         [Description("Name of the group to which the department belongs.")]
         public string GroupName { get; set; } // nvarchar(50)
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

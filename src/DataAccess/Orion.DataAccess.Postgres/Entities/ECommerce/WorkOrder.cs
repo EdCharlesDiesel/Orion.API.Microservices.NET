@@ -14,52 +14,52 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "WorkOrderID", TypeName = "int")]
+        [Column(name:"WorkOrderID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Work Order ID is required")]
         [Display(Name = "Work Order ID")]
         [Description("Primary key for WorkOrder records.")]
         public int? WorkOrderID { get; set; } // int
-        [Column(Name = "ProductID", TypeName = "int")]
+        [Column(name:"ProductID", TypeName = "int")]
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
         public int? ProductID { get; set; } // int
-        [Column(Name = "OrderQty", TypeName = "int")]
+        [Column(name:"OrderQty", TypeName = "int")]
         [Required(ErrorMessage = "Order Qty is required")]
         [Display(Name = "Order Qty")]
         [Description("Product quantity to build.")]
         public int? OrderQty { get; set; } // int
-        [Column(Name = "StockedQty", TypeName = "int")]
+        [Column(name:"StockedQty", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         [Required(ErrorMessage = "Stocked Qty is required")]
         [Display(Name = "Stocked Qty")]
         [Description("Quantity built and put in inventory.")]
         public int? StockedQty { get; set; } // int
-        [Column(Name = "ScrappedQty", TypeName = "smallint")]
+        [Column(name:"ScrappedQty", TypeName = "smallint")]
         [Required(ErrorMessage = "Scrapped Qty is required")]
         [Display(Name = "Scrapped Qty")]
         [Description("Quantity that failed inspection.")]
         public short? ScrappedQty { get; set; } // smallint
-        [Column(Name = "StartDate", TypeName = "datetime")]
+        [Column(name:"StartDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Start Date is required")]
         [Display(Name = "Start Date")]
         [Description("Work order start date.")]
         public DateTime? StartDate { get; set; } // datetime
-        [Column(Name = "EndDate", TypeName = "datetime")]
+        [Column(name:"EndDate", TypeName = "datetime")]
         [Display(Name = "End Date")]
         [Description("Work order end date.")]
         public DateTime? EndDate { get; set; } // datetime
-        [Column(Name = "DueDate", TypeName = "datetime")]
+        [Column(name:"DueDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Due Date is required")]
         [Display(Name = "Due Date")]
         [Description("Work order due date.")]
         public DateTime? DueDate { get; set; } // datetime
-        [Column(Name = "ScrapReasonID", TypeName = "smallint")]
+        [Column(name:"ScrapReasonID", TypeName = "smallint")]
         [Display(Name = "Scrap Reason ID")]
         [Description("Reason for inspection failure.")]
         public short? ScrapReasonID { get; set; } // smallint
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

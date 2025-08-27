@@ -1,6 +1,6 @@
 ﻿using Orion.Domain.Tools;
 
-namespace Orion.DataAccess.Postgres.Entities
+namespace Orion.DataAccess.Postgres.Entities.Common
 {
     public class CupMatches:Entity<Guid>
     {

@@ -9,33 +9,33 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class SalesTerritoryHistory
     {
         [Key]
-        [Column(Name = "BusinessEntityID", TypeName = "int", Order = 1)]
+        [Column(name:"BusinessEntityID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key. The sales rep.  Foreign key to SalesPerson.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
         [Key]
-        [Column(Name = "TerritoryID", TypeName = "int", Order = 3)]
+        [Column(name:"TerritoryID", TypeName = "int", Order = 3)]
         [Required(ErrorMessage = "Territory ID is required")]
         [Display(Name = "Territory ID")]
         [Description("Primary key. Territory identification number. Foreign key to SalesTerritory.SalesTerritoryID.")]
         public int? TerritoryID { get; set; } // int
         [Key]
-        [Column(Name = "StartDate", TypeName = "datetime", Order = 2)]
+        [Column(name:"StartDate", TypeName = "datetime", Order = 2)]
         [Required(ErrorMessage = "Start Date is required")]
         [Display(Name = "Start Date")]
         [Description("Primary key. Date the sales representive started work in the territory.")]
         public DateTime? StartDate { get; set; } // datetime
-        [Column(Name = "EndDate", TypeName = "datetime")]
+        [Column(name:"EndDate", TypeName = "datetime")]
         [Display(Name = "End Date")]
         [Description("Date the sales representative left work in the territory.")]
         public DateTime? EndDate { get; set; } // datetime
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

@@ -1,6 +1,9 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
+using Orion.DataAccess.Postgres.Entities.Common;
+using Orion.DataAccess.Postgres.Repositories;
 using Orion.Domain.IRepositories;
+using Forecast = Orion.Domain.IRepositories.Forecast;
 
 namespace Orion.API.TradingEconomics.Controllers;
 

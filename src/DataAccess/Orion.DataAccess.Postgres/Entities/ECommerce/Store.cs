@@ -14,32 +14,32 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         }
 
         [Key]
-        [Column(Name = "BusinessEntityID", TypeName = "int")]
+        [Column(name:"BusinessEntityID", TypeName = "int")]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key. Foreign key to Customer.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
-        [Column(Name = "Name", TypeName = "nvarchar")]
+        [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Name of the store.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(Name = "SalesPersonID", TypeName = "int")]
+        [Column(name:"SalesPersonID", TypeName = "int")]
         [Display(Name = "Sales Person ID")]
         [Description("ID of the sales person assigned to the customer. Foreign key to SalesPerson.BusinessEntityID.")]
         public int? SalesPersonID { get; set; } // int
-        [Column(Name = "Demographics", TypeName = "xml")]
+        [Column(name:"Demographics", TypeName = "xml")]
         [Display(Name = "Demographics")]
         [Description("Demographic informationg about the store such as the number of employees, annual sales and store type.")]
         public string Demographics { get; set; } // XML(.)
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

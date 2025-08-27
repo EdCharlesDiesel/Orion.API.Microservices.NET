@@ -9,28 +9,28 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class SalesPersonQuotaHistory
     {
         [Key]
-        [Column(Name = "BusinessEntityID", TypeName = "int", Order = 1)]
+        [Column(name:"BusinessEntityID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Sales person identification number. Foreign key to SalesPerson.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
         [Key]
-        [Column(Name = "QuotaDate", TypeName = "datetime", Order = 2)]
+        [Column(name:"QuotaDate", TypeName = "datetime", Order = 2)]
         [Required(ErrorMessage = "Quota Date is required")]
         [Display(Name = "Quota Date")]
         [Description("Sales quota date.")]
         public DateTime? QuotaDate { get; set; } // datetime
-        [Column(Name = "SalesQuota", TypeName = "money")]
+        [Column(name:"SalesQuota", TypeName = "money")]
         [Required(ErrorMessage = "Sales Quota is required")]
         [Display(Name = "Sales Quota")]
         [Description("Sales quota amount.")]
         public decimal? SalesQuota { get; set; } // money
-        [Column(Name = "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

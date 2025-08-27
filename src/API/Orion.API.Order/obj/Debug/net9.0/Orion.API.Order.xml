@@ -9,14 +9,14 @@
             Get all orders.
             </summary>
         </member>
-        <member name="M:Orion.API.Order.Controllers.OrderController.Create(FastEndpoints.Order)">
+        <member name="M:Orion.API.Order.Controllers.OrderController.Create(Orion.DataAccess.Postgres.Entities.Common.OrderDetail)">
             <summary>
             Create's an order.
             </summary>
             <param name="order"></param>
             <returns></returns>
         </member>
-        <member name="M:Orion.API.Order.Controllers.OrderController.UpdateOrder(Orion.DataAccess.Postgres.Entities.Order)">
+        <member name="M:Orion.API.Order.Controllers.OrderController.UpdateOrder(Orion.DataAccess.Postgres.Entities.Common.OrderDetail)">
             <summary>
             Update's an order.
             </summary>

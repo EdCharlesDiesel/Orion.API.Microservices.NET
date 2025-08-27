@@ -9,18 +9,18 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     public class SalesOrderHeaderSalesReason
     {
         [Key]
-        [Column(Name = "SalesOrderID", TypeName = "int", Order = 1)]
+        [Column(name:"SalesOrderID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Sales Order ID is required")]
         [Display(Name = "Sales Order ID")]
         [Description("Primary key. Foreign key to SalesOrderHeader.SalesOrderID.")]
         public int? SalesOrderID { get; set; } // int
         [Key]
-        [Column(Name = "SalesReasonID", TypeName = "int", Order = 2)]
+        [Column(name:"SalesReasonID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Sales Reason ID is required")]
         [Display(Name = "Sales Reason ID")]
         [Description("Primary key. Foreign key to SalesReason.SalesReasonID.")]
         public int? SalesReasonID { get; set; } // int
-        [Column(Name = "ModifiedDate", TypeName = "datetime")]
+        [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

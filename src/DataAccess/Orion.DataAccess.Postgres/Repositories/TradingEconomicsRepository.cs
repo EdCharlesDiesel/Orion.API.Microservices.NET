@@ -1,5 +1,6 @@
 using System.Net.Http.Headers;
 using System.Text;
+using Orion.DataAccess.Postgres.Entities.Common;
 
 namespace Orion.DataAccess.Postgres.Repositories;
 public class TradingEconomicsService
@@ -60,5 +61,85 @@ public class TradingEconomicsService
         var response = await _httpClient.GetAsync($"/markets/intraday/{symbol}?{start}/{end}");
         response.EnsureSuccessStatusCode();
         return await response.Content.ReadAsStringAsync();
+    }
+
+    public async Task<string> GetCalendarEvents()
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task Create(List<CalendarEvent> calendarEvents)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetCalendarEventsByDate(DateTime startDate, DateTime endDate)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetCalendarEventsByCountries(string[] names)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetCalendarEventsByCountriesAndDates(DateTime startDate, DateTime endDate, string[] names)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetCalendarEventsByIndicators(string[] names)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetCategories()
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetCountries()
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetByCountryAndPage(string country, int pageNumber)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetBetweenCountries(string country1, string country2, int pageNumber)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetHistorical(string symbol)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<Stream> GetForecasts()
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetForecastsByDate(DateTime startDate, DateTime endDate)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetForecastsByCountries(string[] names)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetForecastsByCountriesAndDates(DateTime startDate, DateTime endDate, string[] names)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<object?> GetForecastsByIndicator(string[] names)
+    {
+        throw new NotImplementedException();
     }
 }
