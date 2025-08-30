@@ -55,10 +55,10 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Description("Date and time the record was last updated.")]
         public DateTime? ModifiedDate { get; set; } // datetime
 
-        // Sales.CurrencyRate.FromCurrencyCode -> Sales.Currency.CurrencyCode (FK_CurrencyRate_Currency_FromCurrencyCode)
-        public Currency Currency { get; set; }
-        // Sales.CurrencyRate.ToCurrencyCode -> Sales.Currency.CurrencyCode (FK_CurrencyRate_Currency_ToCurrencyCode)
-        public Currency Currency1 { get; set; }
+        // // Sales.CurrencyRate.FromCurrencyCode -> Sales.Currency.CurrencyCode (FK_CurrencyRate_Currency_FromCurrencyCode)
+        // public Currency Currency { get; set; }
+        // // Sales.CurrencyRate.ToCurrencyCode -> Sales.Currency.CurrencyCode (FK_CurrencyRate_Currency_ToCurrencyCode)
+        // public Currency Currency1 { get; set; }
         // Sales.SalesOrderHeader.CurrencyRateID -> Sales.CurrencyRate.CurrencyRateID (FK_SalesOrderHeader_CurrencyRate_CurrencyRateID)
         public IEnumerable<SalesOrderHeader> SalesOrderHeaders { get; set; }
     }

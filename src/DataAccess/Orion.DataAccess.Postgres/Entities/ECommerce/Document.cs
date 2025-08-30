@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Document Node is required")]
         [Display(Name = "Document Node")]
         [Description("Primary key for Document records.")]
-        public SqlHierarchyId DocumentNode { get; set; } // hierarchyid
+        public string DocumentNode { get; set; } // hierarchyid
         [Column(name:"DocumentLevel", TypeName = "smallint")]
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         [Display(Name = "Document Level")]
@@ -41,7 +41,8 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Folder Flag is required")]
         [Display(Name = "Folder Flag")]
         [Description("0 = This is a folder, 1 = This is a document.")]
-        public bool? FolderFlag { get; set; } // bit
+        [NotMapped]
+        public bool FolderFlag { get; set; } // bit
         [Column(name:"FileName", TypeName = "nvarchar")]
         [MaxLength(400)]
         [StringLength(400)]

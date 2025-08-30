@@ -57,9 +57,9 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         public DateTime? ModifiedDate { get; set; } // datetime
 
         // Production.BillOfMaterials.ProductAssemblyID -> Production.Product.ProductID (FK_BillOfMaterials_Product_ProductAssemblyID)
-        public Product Product { get; set; }
-        // Production.BillOfMaterials.ComponentID -> Production.Product.ProductID (FK_BillOfMaterials_Product_ComponentID)
-        public Product Product1 { get; set; }
+        // public Product Product { get; set; }
+        // // Production.BillOfMaterials.ComponentID -> Production.Product.ProductID (FK_BillOfMaterials_Product_ComponentID)
+        // public Product Product1 { get; set; }
         // Production.BillOfMaterials.UnitMeasureCode -> Production.UnitMeasure.UnitMeasureCode (FK_BillOfMaterials_UnitMeasure_UnitMeasureCode)
         public UnitMeasure UnitMeasure { get; set; }
     }

@@ -10,8 +10,8 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
     {
         public SalesOrderHeader()
         {
-            this.SalesOrderDetails = new List<SalesOrderDetail>();
-            this.SalesOrderHeaderSalesReasons = new List<SalesOrderHeaderSalesReason>();
+            // this.SalesOrderDetails = new List<SalesOrderDetail>();
+            // this.SalesOrderHeaderSalesReasons = new List<SalesOrderHeaderSalesReason>();
         }
 
         [Key]
@@ -167,7 +167,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         // Sales.SalesOrderHeader.CurrencyRateID -> Sales.CurrencyRate.CurrencyRateID (FK_SalesOrderHeader_CurrencyRate_CurrencyRateID)
         public CurrencyRate CurrencyRate { get; set; }
         // Sales.SalesOrderDetail.SalesOrderID -> Sales.SalesOrderHeader.SalesOrderID (FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID)
-        public IEnumerable<SalesOrderDetail> SalesOrderDetails { get; set; }
+        // public IEnumerable<SalesOrderDetail> SalesOrderDetails { get; set; }
         // Sales.SalesOrderHeaderSalesReason.SalesOrderID -> Sales.SalesOrderHeader.SalesOrderID (FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID)
         public IEnumerable<SalesOrderHeaderSalesReason> SalesOrderHeaderSalesReasons { get; set; }
     }

@@ -70,9 +70,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         public IEnumerable<BusinessEntityAddress> BusinessEntityAddress { get; set; } = new List<BusinessEntityAddress>();
 
         // Sales.SalesOrderHeader.BillToAddressID -> Person.Address.AddressID (FK_SalesOrderHeader_Address_BillToAddressID)
-        public IEnumerable<SalesOrderHeader> SalesOrderHeaders { get; set; } = new List<SalesOrderHeader>();
+        // public IEnumerable<SalesOrderHeader> SalesOrderHeaders { get; set; } = new List<SalesOrderHeader>();
 
-        // Sales.SalesOrderHeader.ShipToAddressID -> Person.Address.AddressID (FK_SalesOrderHeader_Address_ShipToAddressID)
-        public IEnumerable<SalesOrderHeader> SalesOrderHeaders1 { get; set; } = new List<SalesOrderHeader>();
     }
 }

@@ -2745,6 +2745,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.7",
           "Microsoft.DotNet.ILCompiler": "9.0.8",
           "Microsoft.EntityFrameworkCore": "9.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
           "Microsoft.NET.ILLink.Tasks": "9.0.8",
           "Microsoft.SqlServer.Types": "160.1000.6",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
@@ -8711,12 +8712,6 @@
       "targetGraphs": [
         "net9.0"
       ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }
