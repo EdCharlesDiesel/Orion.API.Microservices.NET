@@ -8,12 +8,12 @@
         public bool AmbiguousMeasurements(int[][] measuringCups, int low, int high)
         {
             Dictionary<string,bool> memoization = new Dictionary<string,bool>();
-            return canMeasureInRange(measuringCups, low, high, memoization);
+            return CanMeasureInRange(measuringCups, low, high, memoization);
         }
 
-        private bool canMeasureInRange(int[][] measuringCups, int low, int high, Dictionary<string, bool> memoization)
+        private bool CanMeasureInRange(int[][] measuringCups, int low, int high, Dictionary<string, bool> memoization)
         {
-            string memorazekey = createHashableKey(low, high);
+            string memorazekey = CreateHashableKey(low, high);
             if (memoization.ContainsKey(memorazekey))
             {
                 return memoization[memorazekey];
@@ -39,7 +39,7 @@
                 int newLow = Math.Max(0,low -cupLow);
                 int newHigh = Math.Max(0,high -cupHigh);
 
-                canMeasure = canMeasureInRange(measuringCups,newLow, newHigh, memoization); 
+                canMeasure = CanMeasureInRange(measuringCups,newLow, newHigh, memoization); 
                 if (canMeasure)
                 {
                     break;
@@ -50,7 +50,7 @@
             return canMeasure;           
         }
 
-        private string createHashableKey(int low, int high)
+        private string CreateHashableKey(int low, int high)
         {
             return low +":" + high;
         }

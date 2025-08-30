@@ -1,45 +1,45 @@
 ﻿namespace Orion.Helpers.Binary_Search_Tree
 {
-    public class BSTConstructionClass
+    public class BstConstructionClass
     {
 
     }
 
-    public class BST
+    public class Bst
     {
-        public int value;
-        public BST left;
-        public BST right;
-        public BST(int value)
+        public int Value;
+        public Bst Left;
+        public Bst Right;
+        public Bst(int value)
         {
-            this.value = value;
+            this.Value = value;
         }
         // Average: O(log(n)) time | O(log(n)) space
         // Worst: O(n) time | O(n) space
-        public BST Insert(int value)
+        public Bst Insert(int value)
         {
-            if (value < this.value)
+            if (value < this.Value)
             {
-                if (left == null)
+                if (Left == null)
                 {
-                    BST newBST = new BST(value);
-                    left = newBST;
+                    Bst newBst = new Bst(value);
+                    Left = newBst;
                 }
                 else
                 {
-                    left.Insert(value);
+                    Left.Insert(value);
                 }
             }
             else
             {
-                if (right == null)
+                if (Right == null)
                 {
-                    BST newBST = new BST(value);
-                    right = newBST;
+                    Bst newBst = new Bst(value);
+                    Right = newBst;
                 }
                 else
                 {
-                    right.Insert(value);
+                    Right.Insert(value);
                 }
             }
             return this;
@@ -48,93 +48,93 @@
         // Worst: O(n) time | O(n) space
         public bool Contains(int value)
         {
-            if (value < this.value)
+            if (value < this.Value)
             {
-                if (left == null)
+                if (Left == null)
                 {
                     return false;
                 }
 
-                return left.Contains(value);
+                return Left.Contains(value);
             }
 
-            if (value > this.value)
+            if (value > this.Value)
             {
-                if (right == null)
+                if (Right == null)
                 {
                     return false;
                 }
 
-                return right.Contains(value);
+                return Right.Contains(value);
             }
 
             return true;
         }
         // Average: O(log(n)) time | O(log(n)) space
         // Worst: O(n) time | O(n) space
-        public BST Remove(int value)
+        public Bst Remove(int value)
         {
             Remove(value, null);
             return this;
         }
-        public void Remove(int value, BST parent)
+        public void Remove(int value, Bst parent)
         {
-            if (value < this.value)
+            if (value < this.Value)
             {
-                if (left != null)
+                if (Left != null)
                 {
-                    left.Remove(value, this);
+                    Left.Remove(value, this);
                 }
             }
-            else if (value > this.value)
+            else if (value > this.Value)
             {
-                if (right != null)
+                if (Right != null)
                 {
-                    right.Remove(value, this);
+                    Right.Remove(value, this);
                 }
             }
             else
             {
-                if (left != null && right != null)
+                if (Left != null && Right != null)
                 {
-                    this.value = right.getMinValue();
-                    right.Remove(this.value, this);
+                    this.Value = Right.GetMinValue();
+                    Right.Remove(this.Value, this);
                 }
                 else if (parent == null)
                 {
-                    if (left != null)
+                    if (Left != null)
                     {
-                        this.value = left.value;
-                        right = left.right;
-                        left = left.left;
+                        this.Value = Left.Value;
+                        Right = Left.Right;
+                        Left = Left.Left;
                     }
-                    else if (right != null)
+                    else if (Right != null)
                     {
-                        this.value = right.value;
-                        left = right.left;
-                        right = right.right;
+                        this.Value = Right.Value;
+                        Left = Right.Left;
+                        Right = Right.Right;
                     }
                     // This is a single-node tree; do nothing.
                 }
-                else if (parent.left == this)
+                else if (parent.Left == this)
                 {
-                    parent.left = left != null ? left : right;
+                    parent.Left = Left != null ? Left : Right;
                 }
-                else if (parent.right == this)
+                else if (parent.Right == this)
                 {
-                    parent.right = left != null ? left : right;
+                    parent.Right = Left != null ? Left : Right;
                 }
             }
         }
 
-        public int getMinValue()
+        public int GetMinValue()
         {
-            if (left == null)
+            if (Left == null)
             {
-                return value;
+                return Value;
             }
 
-            return left.getMinValue();
+            return Left.GetMinValue();
         }
     }
 }

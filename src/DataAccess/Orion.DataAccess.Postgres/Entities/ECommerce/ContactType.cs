@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Contact Type ID is required")]
         [Display(Name = "Contact Type ID")]
         [Description("Primary key for ContactType records.")]
-        public int? ContactTypeID { get; set; } // int
+        public int? ContactTypeId { get; set; } // int
         [Column(name: "Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

@@ -13,8 +13,8 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Employee identification number. Foreign key to Employee.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
-        [Key]
+        public int? BusinessEntityId { get; set; } // int
+        // [Key]
         [Column(name:"RateChangeDate", TypeName = "datetime", Order = 2)]
         [Required(ErrorMessage = "Rate Change Date is required")]
         [Display(Name = "Rate Change Date")]

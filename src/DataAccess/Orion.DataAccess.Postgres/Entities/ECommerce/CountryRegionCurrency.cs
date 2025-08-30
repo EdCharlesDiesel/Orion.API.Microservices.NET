@@ -16,7 +16,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Display(Name = "Country Region Code")]
         [Description("ISO code for countries and regions. Foreign key to CountryRegion.CountryRegionCode.")]
         public string CountryRegionCode { get; set; } // nvarchar(3)
-        [Key]
+        // [Key]
         [Column(name: "CurrencyCode", TypeName = "nchar", Order = 2)]
         [MaxLength(3)]
         [StringLength(3)]

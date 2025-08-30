@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Sales Reason ID is required")]
         [Display(Name = "Sales Reason ID")]
         [Description("Primary key for SalesReason records.")]
-        public int? SalesReasonID { get; set; } // int
+        public int? SalesReasonId { get; set; } // int
         [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

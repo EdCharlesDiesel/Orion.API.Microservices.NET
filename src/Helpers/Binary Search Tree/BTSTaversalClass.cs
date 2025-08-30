@@ -1,57 +1,57 @@
 ﻿namespace Orion.Helpers.Binary_Search_Tree
 {
-    public class BTSTaversalClass
+    public class BtsTaversalClass
     {
         // O(n) time | O(n) space
-        public static List<int> InOrderTraverse(BST tree, List<int> array)
+        public static List<int> InOrderTraverse(Bst tree, List<int> array)
         {
-            if (tree.left != null)
+            if (tree.Left != null)
             {
-                InOrderTraverse(tree.left, array);
+                InOrderTraverse(tree.Left, array);
             }
-            array.Add(tree.value);
-            if (tree.right != null)
+            array.Add(tree.Value);
+            if (tree.Right != null)
             {
-                InOrderTraverse(tree.right, array);
+                InOrderTraverse(tree.Right, array);
             }
             return array;
         }
         // O(n) time | O(n) space
-        public static List<int> PreOrderTraverse(BST tree, List<int> array)
+        public static List<int> PreOrderTraverse(Bst tree, List<int> array)
         {
-            array.Add(tree.value);
-            if (tree.left != null)
+            array.Add(tree.Value);
+            if (tree.Left != null)
             {
-                PreOrderTraverse(tree.left, array);
+                PreOrderTraverse(tree.Left, array);
             }
-            if (tree.right != null)
+            if (tree.Right != null)
             {
-                PreOrderTraverse(tree.right, array);
+                PreOrderTraverse(tree.Right, array);
             }
             return array;
         }
         // O(n) time | O(n) space
-        public static List<int> PostOrderTraverse(BST tree, List<int> array)
+        public static List<int> PostOrderTraverse(Bst tree, List<int> array)
         {
-            if (tree.left != null)
+            if (tree.Left != null)
             {
-                PostOrderTraverse(tree.left, array);
+                PostOrderTraverse(tree.Left, array);
             }
-            if (tree.right != null)
+            if (tree.Right != null)
             {
-                PostOrderTraverse(tree.right, array);
+                PostOrderTraverse(tree.Right, array);
             }
-            array.Add(tree.value);
+            array.Add(tree.Value);
             return array;
         }
-        public class BST
+        public class Bst
         {
-            public int value;
-            public BST left;
-            public BST right;
-            public BST(int value)
+            public int Value;
+            public Bst Left;
+            public Bst Right;
+            public Bst(int value)
             {
-                this.value = value;
+                this.Value = value;
             }
         }
     }

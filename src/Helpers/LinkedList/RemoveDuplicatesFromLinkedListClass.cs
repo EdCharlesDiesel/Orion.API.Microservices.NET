@@ -10,13 +10,13 @@
             LinkedList currentNode = linkedList;
             while (currentNode != null) 
             {
-                LinkedList nextDistince = currentNode.next;
-                while (nextDistince != null && nextDistince.value == currentNode.value)
+                LinkedList nextDistince = currentNode.Next;
+                while (nextDistince != null && nextDistince.Value == currentNode.Value)
                 {
-                    nextDistince = nextDistince.next;
+                    nextDistince = nextDistince.Next;
                 }
 
-                currentNode.next = nextDistince;
+                currentNode.Next = nextDistince;
                 currentNode = nextDistince;
             }
 

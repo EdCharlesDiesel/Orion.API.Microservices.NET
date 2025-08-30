@@ -18,7 +18,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key. Foreign key to Customer.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
@@ -29,7 +29,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Column(name:"SalesPersonID", TypeName = "int")]
         [Display(Name = "Sales Person ID")]
         [Description("ID of the sales person assigned to the customer. Foreign key to SalesPerson.BusinessEntityID.")]
-        public int? SalesPersonID { get; set; } // int
+        public int? SalesPersonId { get; set; } // int
         [Column(name:"Demographics", TypeName = "xml")]
         [Display(Name = "Demographics")]
         [Description("Demographic informationg about the store such as the number of employees, annual sales and store type.")]
@@ -38,7 +38,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

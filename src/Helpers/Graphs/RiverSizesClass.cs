@@ -15,13 +15,13 @@
                     {
                         continue;
                     }
-                    traverseNode(i, j, matrix, visited, sizes);
+                    TraverseNode(i, j, matrix, visited, sizes);
                 }
             }
             return sizes;
         }
 
-        public static void traverseNode(int i, int j, int[,] matrix, bool[,] visited, List<int> sizes)
+        public static void TraverseNode(int i, int j, int[,] matrix, bool[,] visited, List<int> sizes)
         {
             int currentRiverSize = 0;
             List<int[]> nodesToExplore = new List<int[]>();
@@ -43,7 +43,7 @@
                 }
                 currentRiverSize++;
                 List<int[]> unvisitedNeighbors =
-                getUnvisitedNeighbors(i, j, matrix, visited);
+                GetUnvisitedNeighbors(i, j, matrix, visited);
                 foreach (int[] neighbor in unvisitedNeighbors)
                 {
                     nodesToExplore.Add(neighbor);
@@ -55,7 +55,7 @@
             }
         }
 
-        public static List<int[]> getUnvisitedNeighbors(int i, int j, int[,] matrix, bool[,] visited)
+        public static List<int[]> GetUnvisitedNeighbors(int i, int j, int[,] matrix, bool[,] visited)
         {
             List<int[]> unvisitedNeighbors = new List<int[]>();
             if (i > 0 && !visited[i - 1, j])

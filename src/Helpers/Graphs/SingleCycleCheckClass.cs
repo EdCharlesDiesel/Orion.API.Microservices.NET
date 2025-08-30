@@ -11,11 +11,11 @@
             {
                 if (numElementsVisited > 0 && currentIdx == 0) return false;
                 numElementsVisited++;
-                currentIdx = getNextIdx(currentIdx, array);
+                currentIdx = GetNextIdx(currentIdx, array);
             }
             return currentIdx == 0;
         }
-        public static int getNextIdx(int currentIdx, int[] array)
+        public static int GetNextIdx(int currentIdx, int[] array)
         {
             int jump = array[currentIdx];
             int nextIdx = (currentIdx + jump) % array.Length;

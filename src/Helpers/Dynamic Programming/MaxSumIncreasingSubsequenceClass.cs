@@ -26,9 +26,9 @@
                     maxSumIdx = i;
                 }
             }
-            return buildSequence(array, sequences, maxSumIdx, sums[maxSumIdx]);
+            return BuildSequence(array, sequences, maxSumIdx, sums[maxSumIdx]);
         }
-        public static List<List<int>> buildSequence(int[] array, int[] sequences, int currentIdx,
+        public static List<List<int>> BuildSequence(int[] array, int[] sequences, int currentIdx,
         int sums)
         {
             List<List<int>> sequence = new List<List<int>>();

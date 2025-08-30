@@ -32,14 +32,14 @@
 
     public class TreeInfo
     {
-        public int numNodesInTree;
-        public int sumOfDepths;
-        public int sumOfAllDepths;
+        public int NumNodesInTree;
+        public int SumOfDepths;
+        public int SumOfAllDepths;
         public TreeInfo(int numNodesInTree, int sumOfDepths, int sumOfAllDepths)
         {
-            this.numNodesInTree = numNodesInTree;
-            this.sumOfDepths = sumOfDepths;
-            this.sumOfAllDepths = sumOfAllDepths;
+            this.NumNodesInTree = numNodesInTree;
+            this.SumOfDepths = sumOfDepths;
+            this.SumOfAllDepths = sumOfAllDepths;
         }
     }
 }

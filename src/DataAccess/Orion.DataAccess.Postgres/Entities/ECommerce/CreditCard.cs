@@ -20,7 +20,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Credit Card ID is required")]
         [Display(Name = "Credit Card ID")]
         [Description("Primary key for CreditCard records.")]
-        public int? CreditCardID { get; set; } // int
+        public int? CreditCardId { get; set; } // int
         [Column(name:"CardType", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

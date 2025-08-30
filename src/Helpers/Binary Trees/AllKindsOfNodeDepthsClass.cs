@@ -15,30 +15,30 @@ namespace Orion.Helpers.Binary_Trees
             {
                 AllKindsOfNodeDepthsClassBinaryTree node = stack.Pop();
                 if (node == null) continue;
-                sumOfAllDepths += nodeDepths(node, 0);
-                stack.Push(node.left);
-                stack.Push(node.right);
+                sumOfAllDepths += NodeDepths(node, 0);
+                stack.Push(node.Left);
+                stack.Push(node.Right);
             }
             return sumOfAllDepths;
         }
-        public static int nodeDepths(AllKindsOfNodeDepthsClassBinaryTree node, int depth)
+        public static int NodeDepths(AllKindsOfNodeDepthsClassBinaryTree node, int depth)
         {
             if (node == null) return 0;
-            return depth + nodeDepths(node.left, depth + 1) + nodeDepths(node.right, depth + 1);
+            return depth + NodeDepths(node.Left, depth + 1) + NodeDepths(node.Right, depth + 1);
         }
 
 
     }
     public class AllKindsOfNodeDepthsClassBinaryTree
     {
-        public int value;
-        public AllKindsOfNodeDepthsClassBinaryTree left;
-        public AllKindsOfNodeDepthsClassBinaryTree right;
+        public int Value;
+        public AllKindsOfNodeDepthsClassBinaryTree Left;
+        public AllKindsOfNodeDepthsClassBinaryTree Right;
         public AllKindsOfNodeDepthsClassBinaryTree(int value)
         {
-            this.value = value;
-            left = null;
-            right = null;
+            this.Value = value;
+            Left = null;
+            Right = null;
         }
 
         protected AllKindsOfNodeDepthsClassBinaryTree()

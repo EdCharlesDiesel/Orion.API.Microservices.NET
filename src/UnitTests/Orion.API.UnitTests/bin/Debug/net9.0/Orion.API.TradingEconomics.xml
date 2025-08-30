@@ -98,30 +98,17 @@
             Get all comtrade categories
             </summary>
         </member>
-        <member name="M:Orion.API.TradingEconomics.Controllers.LatestController.getLatestUpdates">
+        <member name="M:Orion.API.TradingEconomics.Controllers.LatestController.GetLatestUpdates">
             <summary>
             Get the latest news from trading economics
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Orion.API.TradingEconomics.Controllers.LatestController.getLatestUpdatesByDate(System.DateTime)">
+        <member name="M:Orion.API.TradingEconomics.Controllers.LatestController.GetLatestUpdatesByDate(System.DateTime)">
             <summary>
             Get latest updates since a specific date
             </summary>        
             <returns></returns>
-        </member>
-        <member name="M:Orion.API.TradingEconomics.Controllers.LatestController.GetLatestUpdates">
-            <summary>
-            Get latest updates with no filters
-            </summary>
-            <returns>A task that will be resolved in a string with the request result</returns>
-        </member>
-        <member name="M:Orion.API.TradingEconomics.Controllers.LatestController.GetLatestUpdatesByDate(System.DateTime)">
-            <summary>
-            Get latest updates by date
-            </summary>
-            <param name="startDate">Start date if needed</param>
-            <returns>A task that will be resolved in a string with the request result</returns>
         </member>
         <member name="M:Orion.API.TradingEconomics.Controllers.MarketsIntradayController.GetIntradaySymbol(System.String)">
             <summary>

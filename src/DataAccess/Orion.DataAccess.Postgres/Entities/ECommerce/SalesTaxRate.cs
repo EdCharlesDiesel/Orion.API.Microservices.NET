@@ -14,12 +14,12 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Sales Tax Rate ID is required")]
         [Display(Name = "Sales Tax Rate ID")]
         [Description("Primary key for SalesTaxRate records.")]
-        public int? SalesTaxRateID { get; set; } // int
+        public int? SalesTaxRateId { get; set; } // int
         [Column(name:"StateProvinceID", TypeName = "int")]
         [Required(ErrorMessage = "State Province ID is required")]
         [Display(Name = "State Province ID")]
         [Description("State, province, or country/region the sales tax applies to.")]
-        public int? StateProvinceID { get; set; } // int
+        public int? StateProvinceId { get; set; } // int
         [Column(name:"TaxType", TypeName = "tinyint")]
         [Required(ErrorMessage = "Tax Type is required")]
         [Display(Name = "Tax Type")]
@@ -41,7 +41,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

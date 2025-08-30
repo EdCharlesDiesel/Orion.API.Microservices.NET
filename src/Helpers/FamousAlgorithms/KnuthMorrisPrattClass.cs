@@ -5,10 +5,10 @@
         // O(n + m) time | O(m) space
         public static bool KnuthMorrisPrattAlgorithm(string str, string substring)
         {
-            int[] pattern = buildPattern(substring);
-            return doesMatch(str, substring, pattern);
+            int[] pattern = BuildPattern(substring);
+            return DoesMatch(str, substring, pattern);
         }
-        public static int[] buildPattern(string substring)
+        public static int[] BuildPattern(string substring)
         {
             int[] pattern = new int[substring.Length];
             Array.Fill(pattern, -1);
@@ -33,7 +33,7 @@
             }
             return pattern;
         }
-        public static bool doesMatch(string str, string substring, int[] pattern)
+        public static bool DoesMatch(string str, string substring, int[] pattern)
         {
             int i = 0;
             int j = 0;

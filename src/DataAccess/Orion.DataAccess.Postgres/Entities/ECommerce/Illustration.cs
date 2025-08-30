@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Illustration ID is required")]
         [Display(Name = "Illustration ID")]
         [Description("Primary key for Illustration records.")]
-        public int? IllustrationID { get; set; } // int
+        public int? IllustrationId { get; set; } // int
         [Column(name:"Diagram", TypeName = "xml")]
         [Display(Name = "Diagram")]
         [Description("Illustrations used in manufacturing instructions. Stored as XML.")]

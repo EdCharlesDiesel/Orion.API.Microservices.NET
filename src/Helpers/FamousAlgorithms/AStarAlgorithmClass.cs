@@ -4,19 +4,19 @@
     {
         public int[][] AStarAlgorithm(int startRow, int startCol, int endRow, int endCol, int[][] graph)
         {
-            List<List<Node>> nodes = initializeNodes(graph);
+            List<List<Node>> nodes = InitializeNodes(graph);
             Node startNode = nodes[startRow][startCol];
             Node endNode = nodes[endRow][endCol];
 
-            startNode.distanceFromStart = 0;
-            startNode.estimatedDistanceToEnd =
-                calculateManhattanDistance(startNode, endNode);
+            startNode.DistanceFromStart = 0;
+            startNode.EstimatedDistanceToEnd =
+                CalculateManhattanDistance(startNode, endNode);
 
             List<Node> nodesToVisitList = new List<Node>();
             nodesToVisitList.Add(startNode);
             MinHeap nodesToVisit = new MinHeap(nodesToVisitList);
 
-            while (!nodesToVisit.isEmpty())
+            while (!nodesToVisit.IsEmpty())
             {
                 Node currentMinDistanceNode = nodesToVisit.Remove();
                 if (currentMinDistanceNode == endNode)
@@ -24,24 +24,24 @@
                     break;
                 }
 
-                List<Node> neighbors = getNeighboringNodes(currentMinDistanceNode, nodes);
+                List<Node> neighbors = GetNeighboringNodes(currentMinDistanceNode, nodes);
                 foreach (var neighbor in neighbors)
                 {
-                    if (neighbor.value == 1)
+                    if (neighbor.Value == 1)
                     {
                         continue;
                     }
 
-                    int tentativeDistanceToNeighbor = currentMinDistanceNode.distanceFromStart + 1;
-                    if (tentativeDistanceToNeighbor >= neighbor.distanceFromStart)
+                    int tentativeDistanceToNeighbor = currentMinDistanceNode.DistanceFromStart + 1;
+                    if (tentativeDistanceToNeighbor >= neighbor.DistanceFromStart)
                     {
                         continue;
                     }
 
-                    neighbor.cameFrom = currentMinDistanceNode;
-                    neighbor.distanceFromStart = tentativeDistanceToNeighbor;
-                    neighbor.estimatedDistanceToEnd = tentativeDistanceToNeighbor +
-                        calculateManhattanDistance(neighbor, endNode);
+                    neighbor.CameFrom = currentMinDistanceNode;
+                    neighbor.DistanceFromStart = tentativeDistanceToNeighbor;
+                    neighbor.EstimatedDistanceToEnd = tentativeDistanceToNeighbor +
+                        CalculateManhattanDistance(neighbor, endNode);
 
                     if (!nodesToVisit.ContainsNode(neighbor))
                     {
@@ -54,12 +54,12 @@
                 }
             }
 
-            return reconstructPath(endNode);
+            return ReconstructPath(endNode);
         }
 
-        private int[][] reconstructPath(Node endNode)
+        private int[][] ReconstructPath(Node endNode)
         {
-            if (endNode.cameFrom == null)
+            if (endNode.CameFrom == null)
             {
                 return new int[][] { };
             }
@@ -70,10 +70,10 @@
             while (currentNode != null)
             {
                 List<int> nodeData = new List<int>();
-                nodeData.Add(currentNode.row);
-                nodeData.Add(currentNode.col);
+                nodeData.Add(currentNode.Row);
+                nodeData.Add(currentNode.Col);
                 path.Add(nodeData);
-                currentNode = currentNode.cameFrom;
+                currentNode = currentNode.CameFrom;
             }
 
             // convert path to return type int[][] and reverse
@@ -86,7 +86,7 @@
             return res;
         }
 
-        private List<List<Node>> initializeNodes(int[][] graph)
+        private List<List<Node>> InitializeNodes(int[][] graph)
         {
             List<List<Node>> nodes = new List<List<Node>>();
 
@@ -103,26 +103,26 @@
             return nodes;
         }
 
-        int calculateManhattanDistance(Node currentNode, Node endNode)
+        int CalculateManhattanDistance(Node currentNode, Node endNode)
         {
-            int currentRow = currentNode.row;
-            int currentCol = currentNode.col;
-            int endRow = endNode.row;
-            int endCol = endNode.col;
+            int currentRow = currentNode.Row;
+            int currentCol = currentNode.Col;
+            int endRow = endNode.Row;
+            int endCol = endNode.Col;
 
             return Math.Abs(currentRow - endRow) + Math.Abs(currentCol - endRow);
         }
 
 
-        List<Node> getNeighboringNodes(Node node, List<List<Node>> nodes)
+        List<Node> GetNeighboringNodes(Node node, List<List<Node>> nodes)
         {
             List<Node> neighbors = new List<Node>();
 
             int numberRows = nodes.Count;
             int numberColumns = nodes[0].Count;
 
-            int row = node.row;
-            int col = node.col;
+            int row = node.Row;
+            int col = node.Col;
 
             if (row < numberRows - 1) //Down
             {
@@ -151,50 +151,50 @@
 
     public class Node
     {
-        public string id;
-        public int row;
-        public int col;
-        public int value;
-        public int distanceFromStart;
-        public int estimatedDistanceToEnd;
-        public Node cameFrom;
+        public string Id;
+        public int Row;
+        public int Col;
+        public int Value;
+        public int DistanceFromStart;
+        public int EstimatedDistanceToEnd;
+        public Node CameFrom;
         public Node(int row, int col, int value)
         {
-            id = row.ToString() + '-' + col;
-            this.row = row;
-            this.col = col;
-            this.value = value;
-            distanceFromStart = int.MaxValue;
-            estimatedDistanceToEnd = int.MaxValue;
-            cameFrom = null;
+            Id = row.ToString() + '-' + col;
+            this.Row = row;
+            this.Col = col;
+            this.Value = value;
+            DistanceFromStart = int.MaxValue;
+            EstimatedDistanceToEnd = int.MaxValue;
+            CameFrom = null;
         }
     }
 
     public class MinHeap
     {
-        List<Node> heap = new List<Node>();
-        Dictionary<string, int> nodePositionsInHeap = new Dictionary<string, int>();
+        List<Node> _heap = new List<Node>();
+        Dictionary<string, int> _nodePositionsInHeap = new Dictionary<string, int>();
         public MinHeap(List<Node> array)
         {
             for (int i = 0; i < array.Count; i++)
             {
                 Node node = array[i];
-                nodePositionsInHeap[node.id] = i;
+                _nodePositionsInHeap[node.Id] = i;
             }
-            heap = buildHeap(array);
+            _heap = BuildHeap(array);
         }
 
-        List<Node> buildHeap(List<Node> array)
+        List<Node> BuildHeap(List<Node> array)
         {
             int firstParentIndex = (array.Count - 2) / 2;
             for (int currentIndex = firstParentIndex + 1; currentIndex >= 0; currentIndex++)
             {
-                shiftDown(currentIndex, array.Count - 1, array);
+                ShiftDown(currentIndex, array.Count - 1, array);
             }
             return array;
         }
 
-        void shiftDown(int currentIndex, int endIndex, List<Node> array)
+        void ShiftDown(int currentIndex, int endIndex, List<Node> array)
         {
             int childOneIndex = currentIndex * 2 + 1;
             while (childOneIndex <= endIndex)
@@ -202,7 +202,7 @@
                 int childTwoIndex = currentIndex * 2 + 2 <= endIndex ? currentIndex * 2 + 2 : -1;
                 int indexToSwap;
 
-                if (childOneIndex != -1 && array[childTwoIndex].estimatedDistanceToEnd < heap[childOneIndex].estimatedDistanceToEnd)
+                if (childOneIndex != -1 && array[childTwoIndex].EstimatedDistanceToEnd < _heap[childOneIndex].EstimatedDistanceToEnd)
                 {
                     indexToSwap = childTwoIndex;
                 }
@@ -211,9 +211,9 @@
                     indexToSwap = childOneIndex;
                 }
 
-                if (array[indexToSwap].estimatedDistanceToEnd < array[currentIndex].estimatedDistanceToEnd)
+                if (array[indexToSwap].EstimatedDistanceToEnd < array[currentIndex].EstimatedDistanceToEnd)
                 {
-                    swap(currentIndex, indexToSwap);
+                    Swap(currentIndex, indexToSwap);
                     currentIndex = indexToSwap;
                     childOneIndex = currentIndex * 2 + 1;
                 }
@@ -225,12 +225,12 @@
         }
 
         //O(log(n)) time | O(1) space
-        void shiftUp(int currentIndex)
+        void ShiftUp(int currentIndex)
         {
             int parentIndex = (currentIndex - 1) / 2;
-            while (currentIndex > 0 && heap[currentIndex].estimatedDistanceToEnd < heap[parentIndex].estimatedDistanceToEnd)
+            while (currentIndex > 0 && _heap[currentIndex].EstimatedDistanceToEnd < _heap[parentIndex].EstimatedDistanceToEnd)
             {
-                swap(currentIndex, parentIndex);
+                Swap(currentIndex, parentIndex);
                 currentIndex = parentIndex;
                 parentIndex = (parentIndex - 1) / 2;
             }
@@ -238,48 +238,48 @@
 
         public Node Remove()
         {
-            if (isEmpty())
+            if (IsEmpty())
             {
                 return null;
             }
 
-            swap(0, heap.Count - 1);
-            Node node = heap[heap.Count - 1];
-            heap.RemoveAt(heap.Count - 1);
-            nodePositionsInHeap.Remove(node.id);
-            shiftDown(0, heap.Count - 1, heap);
+            Swap(0, _heap.Count - 1);
+            Node node = _heap[_heap.Count - 1];
+            _heap.RemoveAt(_heap.Count - 1);
+            _nodePositionsInHeap.Remove(node.Id);
+            ShiftDown(0, _heap.Count - 1, _heap);
             return node;
         }
 
-        public bool isEmpty()
+        public bool IsEmpty()
         {
-            return heap.Count == 0;
+            return _heap.Count == 0;
         }
 
         public void Insert(Node node)
         {
-            heap.Add(node);
-            nodePositionsInHeap[node.id] = heap.Count - 1;
-            shiftUp(heap.Count - 1);
+            _heap.Add(node);
+            _nodePositionsInHeap[node.Id] = _heap.Count - 1;
+            ShiftUp(_heap.Count - 1);
         }
 
         public void Update(Node node)
         {
-            shiftUp(nodePositionsInHeap[node.id]);
+            ShiftUp(_nodePositionsInHeap[node.Id]);
         }
 
         public bool ContainsNode(Node node)
         {
-            return nodePositionsInHeap.ContainsKey(node.id);
+            return _nodePositionsInHeap.ContainsKey(node.Id);
         }
 
-        void swap(int currentIndex, int indexToSwap)
+        void Swap(int currentIndex, int indexToSwap)
         {
-            nodePositionsInHeap[heap[currentIndex].id] = indexToSwap;
-            nodePositionsInHeap[heap[indexToSwap].id] = currentIndex;
-            Node temp = heap[currentIndex];
-            heap[currentIndex] = heap[indexToSwap];
-            heap[indexToSwap] = temp;
+            _nodePositionsInHeap[_heap[currentIndex].Id] = indexToSwap;
+            _nodePositionsInHeap[_heap[indexToSwap].Id] = currentIndex;
+            Node temp = _heap[currentIndex];
+            _heap[currentIndex] = _heap[indexToSwap];
+            _heap[indexToSwap] = temp;
         }
     }
 }

@@ -13,14 +13,14 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Purchase Order ID is required")]
         [Display(Name = "Purchase Order ID")]
         [Description("Primary key. Foreign key to PurchaseOrderHeader.PurchaseOrderID.")]
-        public int? PurchaseOrderID { get; set; } // int
-        [Key]
+        public int? PurchaseOrderId { get; set; } // int
+        // [Key]
         [Column(name:"PurchaseOrderDetailID", TypeName = "int", Order = 2)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Purchase Order Detail ID is required")]
         [Display(Name = "Purchase Order Detail ID")]
         [Description("Primary key. One line number per purchased product.")]
-        public int? PurchaseOrderDetailID { get; set; } // int
+        public int? PurchaseOrderDetailId { get; set; } // int
         [Column(name:"DueDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Due Date is required")]
         [Display(Name = "Due Date")]
@@ -35,7 +35,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
+        public int? ProductId { get; set; } // int
         [Column(name:"UnitPrice", TypeName = "money")]
         [Required(ErrorMessage = "Unit Price is required")]
         [Display(Name = "Unit Price")]

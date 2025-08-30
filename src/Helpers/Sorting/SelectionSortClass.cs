@@ -22,12 +22,12 @@
                         smallestIdx = i;
                     }
                 }
-                swap(startIdx, smallestIdx, array);
+                Swap(startIdx, smallestIdx, array);
                 startIdx++;
             }
             return array;
         }
-        public static void swap(int i, int j, int[] array)
+        public static void Swap(int i, int j, int[] array)
         {
             int temp = array[j];
             array[j] = array[i];

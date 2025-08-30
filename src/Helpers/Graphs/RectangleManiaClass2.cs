@@ -2,17 +2,17 @@
 {
     internal class RectangleManiaClass2
     {
-        static string UP = "up";
-        static string RIGHT = "right";
-        static string DOWN = "down";
+        static string _up = "up";
+        static string _right = "right";
+        static string _down = "down";
         // O(n^2) time | O(n) space - where n is the number of coordinates
         public static int RectangleMania(Point[] coords)
         {
-            Dictionary<string, Dictionary<int, List<Point>>> coordsTable = getCoordsTable(
+            Dictionary<string, Dictionary<int, List<Point>>> coordsTable = GetCoordsTable(
             coords);
-            return getRectangleCount(coords, coordsTable);
+            return GetRectangleCount(coords, coordsTable);
         }
-        public static Dictionary<string, Dictionary<int, List<Point>>> getCoordsTable(
+        public static Dictionary<string, Dictionary<int, List<Point>>> GetCoordsTable(
         Point[] coords)
         {
             Dictionary<string, Dictionary<int,
@@ -36,26 +36,26 @@
             }
             return coordsTable;
         }
-        public static int getRectangleCount(Point[] coords, Dictionary<string, Dictionary<int,
+        public static int GetRectangleCount(Point[] coords, Dictionary<string, Dictionary<int,
         List<Point>>> coordsTable)
         {
             int rectangleCount = 0;
             foreach (Point coord in coords)
             {
                 int lowerLeftY = coord.Y;
-                rectangleCount += clockwiseCountRectangles(coord, coordsTable, UP,
+                rectangleCount += ClockwiseCountRectangles(coord, coordsTable, _up,
                 lowerLeftY);
             }
             return rectangleCount;
         }
-        public static int clockwiseCountRectangles(
+        public static int ClockwiseCountRectangles(
         Point coord1,
         Dictionary<string, Dictionary<int, List<Point>>> coordsTable,
         string direction,
         int lowerLeftY
         )
         {
-            if (direction == DOWN)
+            if (direction == _down)
             {
                 List<Point> relevantCoords = coordsTable["x"][coord1.X];
                 foreach (Point coord2 in relevantCoords)
@@ -67,24 +67,24 @@
             }
 
             int rectangleCount = 0;
-            if (direction == UP)
+            if (direction == _up)
             {
                 List<Point> relevantCoords = coordsTable["x"][coord1.X];
                 foreach (Point coord2 in relevantCoords)
                 {
                     bool isAbove = coord2.Y > coord1.Y;
-                    if (isAbove) rectangleCount += clockwiseCountRectangles(
-                        coord2, coordsTable, RIGHT, lowerLeftY);
+                    if (isAbove) rectangleCount += ClockwiseCountRectangles(
+                        coord2, coordsTable, _right, lowerLeftY);
                 }
             }
-            else if (direction == RIGHT)
+            else if (direction == _right)
             {
                 List<Point> relevantCoords = coordsTable["y"][coord1.Y];
                 foreach (Point coord2 in relevantCoords)
                 {
                     bool isRight = coord2.X > coord1.X;
-                    if (isRight) rectangleCount += clockwiseCountRectangles(
-                        coord2, coordsTable, DOWN, lowerLeftY);
+                    if (isRight) rectangleCount += ClockwiseCountRectangles(
+                        coord2, coordsTable, _down, lowerLeftY);
                 }
             }
             return rectangleCount;

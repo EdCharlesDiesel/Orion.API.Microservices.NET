@@ -13,8 +13,8 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Sales person identification number. Foreign key to SalesPerson.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
-        [Key]
+        public int? BusinessEntityId { get; set; } // int
+        // [Key]
         [Column(name:"QuotaDate", TypeName = "datetime", Order = 2)]
         [Required(ErrorMessage = "Quota Date is required")]
         [Display(Name = "Quota Date")]
@@ -29,7 +29,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

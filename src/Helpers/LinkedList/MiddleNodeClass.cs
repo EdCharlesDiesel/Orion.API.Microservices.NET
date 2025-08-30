@@ -4,13 +4,13 @@
     {
         public class LinkedList
         {
-            public int value;
-            public LinkedList next;
+            public int Value;
+            public LinkedList Next;
 
             public LinkedList(int value)
             {
-                this.value = value;
-                next = null;
+                this.Value = value;
+                Next = null;
             }
         }
 
@@ -18,10 +18,10 @@
         {
             LinkedList slowNode = linkedList;
             LinkedList fastnode = linkedList;
-            while (fastnode != null && fastnode.next != null) 
+            while (fastnode != null && fastnode.Next != null) 
             {
-                slowNode = fastnode.next;
-                fastnode = fastnode.next;
+                slowNode = fastnode.Next;
+                fastnode = fastnode.Next;
             }
 
             return slowNode;

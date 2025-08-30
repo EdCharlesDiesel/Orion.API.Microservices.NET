@@ -23,30 +23,30 @@
 
         private static int FindClosestValueInBst(Bst tree, int target, double closest)
         {
-            if (Math.Abs(target - closest) > Math.Abs(target - tree.value))
+            if (Math.Abs(target - closest) > Math.Abs(target - tree.Value))
             {
-                closest = tree.value;
+                closest = tree.Value;
             }
-            if (target < tree.value && tree.left != null)
+            if (target < tree.Value && tree.Left != null)
             {
-                return FindClosestValueInBst(tree.left, target, closest);
+                return FindClosestValueInBst(tree.Left, target, closest);
             }
 
-            if (target > tree.value && tree.right != null)
+            if (target > tree.Value && tree.Right != null)
             {
-                return FindClosestValueInBst(tree.right, target, closest);
+                return FindClosestValueInBst(tree.Right, target, closest);
             }
 
             return (int)closest;
         }
         public class Bst
         {
-            public int value;
-            public Bst left;
-            public Bst right;
+            public int Value;
+            public Bst Left;
+            public Bst Right;
             public Bst(int value)
             {
-                this.value = value;
+                this.Value = value;
             }
         }
     }

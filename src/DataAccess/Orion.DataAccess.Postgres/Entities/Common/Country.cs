@@ -7,7 +7,6 @@ public class Country
         public double BudgetDeficit { get; set; } // % of GDP
         public double DebtToGdp { get; set; } // % of GDP
         public bool NeedsMonetaryFlexibility { get; set; }
-        public int DebtToGDP { get; set; }
 
         public void TakeCorrectiveAction()
         {

@@ -1,172 +1,172 @@
 ﻿namespace Orion.Helpers.LinkedList
 {
-    public class LRUCache
+    public class LruCache
     {
-        public Dictionary<string, DoublyLinkedListNode> cache = new Dictionary<string, DoublyLinkedListNode>();
-        public int maxSize;
-        public int currentSize;
-        public DoublyLinkedList listOfMostRecent = new DoublyLinkedList();
+        public Dictionary<string, DoublyLinkedListNode> Cache = new Dictionary<string, DoublyLinkedListNode>();
+        public int MaxSize;
+        public int CurrentSize;
+        public DoublyLinkedList ListOfMostRecent = new DoublyLinkedList();
 
-        public LRUCache(int maxSize)
+        public LruCache(int maxSize)
         {
-            this.maxSize = maxSize > 1 ? maxSize : 1;
+            this.MaxSize = maxSize > 1 ? maxSize : 1;
         }
 
         // O(1) time | O(1) space
         public void InsertKeyValuePair(string key, int value)
         {
-            if (!cache.ContainsKey(key))
+            if (!Cache.ContainsKey(key))
             {
-                if (currentSize == maxSize)
+                if (CurrentSize == MaxSize)
                 {
                     EvictLeastRecent();
                 }
                 else
                 {
-                    currentSize++;
+                    CurrentSize++;
                 }
 
-                cache[key] = new DoublyLinkedListNode(key, value);
+                Cache[key] = new DoublyLinkedListNode(key, value);
             }
             else
             {
                 ReplaceKey(key, value);
             }
 
-            UpdateMostRecent(cache[key]);
+            UpdateMostRecent(Cache[key]);
         }
 
         // O(1) time | O(1) space
-        public LRUResult GetValueFromKey(string key)
+        public LruResult GetValueFromKey(string key)
         {
-            if (!cache.ContainsKey(key))
+            if (!Cache.ContainsKey(key))
             {
-                return new LRUResult(false, -1);
+                return new LruResult(false, -1);
             }
 
-            UpdateMostRecent(cache[key]);
-            return new LRUResult(true, cache[key].value);
+            UpdateMostRecent(Cache[key]);
+            return new LruResult(true, Cache[key].Value);
         }
 
         // O(1) time | O(1) space
         public string GetMostRecentKey()
         {
-            return listOfMostRecent.head.key;
+            return ListOfMostRecent.Head.Key;
         }
 
         private void EvictLeastRecent()
         {
-            string keyToRemove = listOfMostRecent.tail.key;
-            listOfMostRecent.RemoveTail();
-            cache.Remove(keyToRemove);
+            string keyToRemove = ListOfMostRecent.Tail.Key;
+            ListOfMostRecent.RemoveTail();
+            Cache.Remove(keyToRemove);
         }
 
         private void UpdateMostRecent(DoublyLinkedListNode node)
         {
-            listOfMostRecent.SetHeadTo(node);
+            ListOfMostRecent.SetHeadTo(node);
         }
 
         private void ReplaceKey(string key, int value)
         {
-            if (!cache.ContainsKey(key))
+            if (!Cache.ContainsKey(key))
             {
                 return;
             }
 
-            cache[key].value = value;
+            Cache[key].Value = value;
         }
     }
 
-    public class LRUResult
+    public class LruResult
     {
-        public bool found;
-        public int value;
+        public bool Found;
+        public int Value;
 
-        public LRUResult(bool found, int value)
+        public LruResult(bool found, int value)
         {
-            this.found = found;
-            this.value = value;
+            this.Found = found;
+            this.Value = value;
         }
     }
 
     public class DoublyLinkedListNode
     {
-        public string key;
-        public int value;
-        public DoublyLinkedListNode prev;
-        public DoublyLinkedListNode next;
+        public string Key;
+        public int Value;
+        public DoublyLinkedListNode Prev;
+        public DoublyLinkedListNode Next;
 
         public DoublyLinkedListNode(string key, int value)
         {
-            this.key = key;
-            this.value = value;
+            this.Key = key;
+            this.Value = value;
         }
 
         public void RemoveBindings()
         {
-            if (prev != null)
+            if (Prev != null)
             {
-                prev.next = next;
+                Prev.Next = Next;
             }
 
-            if (next != null)
+            if (Next != null)
             {
-                next.prev = prev;
+                Next.Prev = Prev;
             }
 
-            prev = null;
-            next = null;
+            Prev = null;
+            Next = null;
         }
     }
 
     public class DoublyLinkedList
     {
-        public DoublyLinkedListNode head;
-        public DoublyLinkedListNode tail;
+        public DoublyLinkedListNode Head;
+        public DoublyLinkedListNode Tail;
 
         public void SetHeadTo(DoublyLinkedListNode node)
         {
-            if (head == node)
+            if (Head == node)
             {
             }
-            else if (head == null)
+            else if (Head == null)
             {
-                head = node;
-                tail = node;
+                Head = node;
+                Tail = node;
             }
-            else if (head == tail)
+            else if (Head == Tail)
             {
-                tail.prev = node;
-                head = node;
-                head.next = tail;
+                Tail.Prev = node;
+                Head = node;
+                Head.Next = Tail;
             }
             else
             {
-                if (tail == node)
+                if (Tail == node)
                 {
                     RemoveTail();
                 }
 
                 node.RemoveBindings();
-                head.prev = node;
-                node.next = head;
-                head = node;
+                Head.Prev = node;
+                node.Next = Head;
+                Head = node;
             }
         }
 
         public void RemoveTail()
         {
-            if (tail == null) return;
+            if (Tail == null) return;
 
-            if (tail == head)
+            if (Tail == Head)
             {
-                head = null;
-                tail = null;
+                Head = null;
+                Tail = null;
                 return;
             }
 
-            tail = tail.prev;
-            if (tail != null) tail.next = null;
+            Tail = Tail.Prev;
+            if (Tail != null) Tail.Next = null;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Orion.Helpers.Binary_Search_Tree
 {
-    internal class BSTConstructionClass2
+    internal class BstConstructionClass2
     {
     }
 

@@ -6,56 +6,56 @@
         // Tree and d is the depth (height) of the Binary Tree
         public static BinaryTree FlattenBinaryTree(BinaryTree root)
         {
-            flattenTree(root);
-            return getLeftMost(root);
+            FlattenTree(root);
+            return GetLeftMost(root);
         }
-        public static BinaryTree[] flattenTree(BinaryTree node)
+        public static BinaryTree[] FlattenTree(BinaryTree node)
         {
             BinaryTree leftMost;
             BinaryTree rightMost;
-            if (node.left == null)
+            if (node.Left == null)
             {
                 leftMost = node;
             }
             else
             {
-                BinaryTree[] leftAndRightMostNodes = flattenTree(node.left);
-                connectNodes(leftAndRightMostNodes[1], node);
+                BinaryTree[] leftAndRightMostNodes = FlattenTree(node.Left);
+                ConnectNodes(leftAndRightMostNodes[1], node);
                 leftMost = leftAndRightMostNodes[0];
             }
-            if (node.right == null)
+            if (node.Right == null)
             {
                 rightMost = node;
             }
             else
             {
-                BinaryTree[] leftAndRightMostNodes = flattenTree(node.right);
-                connectNodes(node, leftAndRightMostNodes[0]);
+                BinaryTree[] leftAndRightMostNodes = FlattenTree(node.Right);
+                ConnectNodes(node, leftAndRightMostNodes[0]);
                 rightMost = leftAndRightMostNodes[1];
             }
             return new[] { leftMost, rightMost };
         }
-        public static void connectNodes(BinaryTree left, BinaryTree right)
+        public static void ConnectNodes(BinaryTree left, BinaryTree right)
         {
-            left.right = right;
-            right.left = left;
+            left.Right = right;
+            right.Left = left;
         }
-        public static BinaryTree getLeftMost(BinaryTree node)
+        public static BinaryTree GetLeftMost(BinaryTree node)
         {
-            while (node.left != null)
+            while (node.Left != null)
             {
-                node = node.left;
+                node = node.Left;
             }
             return node;
         }
         public class BinaryTree
         {
-            public int value;
-            public BinaryTree left;
-            public BinaryTree right;
+            public int Value;
+            public BinaryTree Left;
+            public BinaryTree Right;
             public BinaryTree(int value)
             {
-                this.value = value;
+                this.Value = value;
             }
         }
     }

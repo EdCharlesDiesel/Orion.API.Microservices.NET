@@ -20,7 +20,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "State Province ID is required")]
         [Display(Name = "State Province ID")]
         [Description("Primary key for StateProvince records.")]
-        public int? StateProvinceID { get; set; } // int
+        public int? StateProvinceId { get; set; } // int
         [Column(name:"StateProvinceCode", TypeName = "nchar")]
         [MaxLength(3)]
         [StringLength(3)]
@@ -51,12 +51,12 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Territory ID is required")]
         [Display(Name = "Territory ID")]
         [Description("ID of the territory in which the state or province is located. Foreign key to SalesTerritory.SalesTerritoryID.")]
-        public int? TerritoryID { get; set; } // int
+        public int? TerritoryId { get; set; } // int
         [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

@@ -13,14 +13,14 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Sales Order ID is required")]
         [Display(Name = "Sales Order ID")]
         [Description("Primary key. Foreign key to SalesOrderHeader.SalesOrderID.")]
-        public int? SalesOrderID { get; set; } // int
-        [Key]
+        public int? SalesOrderId { get; set; } // int
+        // [Key]
         [Column(name:"SalesOrderDetailID", TypeName = "int", Order = 2)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Sales Order Detail ID is required")]
         [Display(Name = "Sales Order Detail ID")]
         [Description("Primary key. One incremental unique number per product sold.")]
-        public int? SalesOrderDetailID { get; set; } // int
+        public int? SalesOrderDetailId { get; set; } // int
         [Column(name:"CarrierTrackingNumber", TypeName = "nvarchar")]
         [MaxLength(25)]
         [StringLength(25)]
@@ -36,12 +36,12 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product sold to customer. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
+        public int? ProductId { get; set; } // int
         [Column(name:"SpecialOfferID", TypeName = "int")]
         [Required(ErrorMessage = "Special Offer ID is required")]
         [Display(Name = "Special Offer ID")]
         [Description("Promotional code. Foreign key to SpecialOffer.SpecialOfferID.")]
-        public int? SpecialOfferID { get; set; } // int
+        public int? SpecialOfferId { get; set; } // int
         [Column(name:"UnitPrice", TypeName = "money")]
         [Required(ErrorMessage = "Unit Price is required")]
         [Display(Name = "Unit Price")]
@@ -62,7 +62,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

@@ -8,8 +8,8 @@
         }
         public class SuffixTrie
         {
-            public TrieNode root = new TrieNode();
-            public char endSymbol = '*';
+            public TrieNode Root = new TrieNode();
+            public char EndSymbol = '*';
             public SuffixTrie(string str)
             {
                 PopulateSuffixTrieFrom(str);
@@ -19,12 +19,12 @@
             {
                 for (int i = 0; i < str.Length; i++)
                 {
-                    insertSubstringStartingAt(i, str);
+                    InsertSubstringStartingAt(i, str);
                 }
             }
-            public void insertSubstringStartingAt(int i, string str)
+            public void InsertSubstringStartingAt(int i, string str)
             {
-                TrieNode node = root;
+                TrieNode node = Root;
                 for (int j = i; j < str.Length; j++)
                 {
                     char letter = str[j];
@@ -35,12 +35,12 @@
                     }
                     node = node.Children[letter];
                 }
-                node.Children[endSymbol] = null;
+                node.Children[EndSymbol] = null;
             }
             // O(m) time | O(1) space
             public bool Contains(string str)
             {
-                TrieNode node = root;
+                TrieNode node = Root;
                 for (int i = 0; i < str.Length; i++)
                 {
                     char letter = str[i];
@@ -50,7 +50,7 @@
                     }
                     node = node.Children[letter];
                 }
-                return node.Children.ContainsKey(endSymbol);
+                return node.Children.ContainsKey(EndSymbol);
             }
         }
     }

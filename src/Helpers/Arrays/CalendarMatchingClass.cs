@@ -132,13 +132,13 @@
     internal class StringMeeting
     {
   
-                    public int start;
-        public int end;
+                    public int Start;
+        public int End;
 
         public StringMeeting(int start, int end)
         {
-            this.start = start;
-            this.end = end;
+            this.Start = start;
+            this.End = end;
         }
     }
     }

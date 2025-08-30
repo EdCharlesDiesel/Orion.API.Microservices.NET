@@ -8,14 +8,14 @@
         {
             int[] rewards = new int[scores.Length];
             Array.Fill(rewards, 1);
-            List<int> localMinIdxs = getLocalMinIdxs(scores);
+            List<int> localMinIdxs = GetLocalMinIdxs(scores);
             foreach (int localMinIdx in localMinIdxs)
             {
-                expandFromLocalMinIdx(localMinIdx, scores, rewards);
+                ExpandFromLocalMinIdx(localMinIdx, scores, rewards);
             }
             return rewards.Sum();
         }
-        public static List<int> getLocalMinIdxs(int[] array)
+        public static List<int> GetLocalMinIdxs(int[] array)
         {
             List<int> localMinIdxs = new List<int>();
             if (array.Length == 1)
@@ -32,7 +32,7 @@
             }
             return localMinIdxs;
         }
-        public static void expandFromLocalMinIdx(int localMinIdx, int[] scores, int[] rewards)
+        public static void ExpandFromLocalMinIdx(int localMinIdx, int[] scores, int[] rewards)
         {
             int leftIdx = localMinIdx - 1;
             while (leftIdx >= 0 && scores[leftIdx] > scores[leftIdx + 1])

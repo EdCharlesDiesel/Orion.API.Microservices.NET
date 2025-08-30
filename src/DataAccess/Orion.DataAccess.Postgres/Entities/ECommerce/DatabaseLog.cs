@@ -14,7 +14,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Database Log ID is required")]
         [Display(Name = "Database Log ID")]
         [Description("Primary key for DatabaseLog records.")]
-        public int? DatabaseLogID { get; set; } // int
+        public int? DatabaseLogId { get; set; } // int
         [Column(name:"PostTime", TypeName = "datetime")]
         [Required(ErrorMessage = "Post Time is required")]
         [Display(Name = "Post Time")]
@@ -51,7 +51,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "TSQL is required")]
         [Display(Name = "TSQL")]
         [Description("The exact Transact-SQL statement that was executed.")]
-        public string TSQL { get; set; } // nvarchar(max)
+        public string Tsql { get; set; } // nvarchar(max)
         [Column(name:"XmlEvent", TypeName = "xml")]
         [Required(ErrorMessage = "Xml Event is required")]
         [Display(Name = "Xml Event")]

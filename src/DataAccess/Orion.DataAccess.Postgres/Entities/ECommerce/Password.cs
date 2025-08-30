@@ -12,7 +12,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Column(name:"BusinessEntityID", TypeName = "int")]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         [Column(name:"PasswordHash", TypeName = "varchar")]
         [MaxLength(128)]
         [StringLength(128)]
@@ -31,7 +31,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

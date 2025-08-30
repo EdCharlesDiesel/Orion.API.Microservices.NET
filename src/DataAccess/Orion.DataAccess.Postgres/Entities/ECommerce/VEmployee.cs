@@ -2,7 +2,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
 {
     public class VEmployee
     {
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         public string Title { get; set; } // nvarchar(8)
         public string FirstName { get; set; } // nvarchar(50)
         public string MiddleName { get; set; } // nvarchar(50)

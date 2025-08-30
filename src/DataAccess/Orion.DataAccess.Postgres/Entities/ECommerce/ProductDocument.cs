@@ -14,8 +14,8 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
-        [Key]
+        public int? ProductId { get; set; } // int
+        // [Key]
         [Column(name:"DocumentNode", TypeName = "hierarchyid", Order = 2)]
         [Required(ErrorMessage = "Document Node is required")]
         [Display(Name = "Document Node")]

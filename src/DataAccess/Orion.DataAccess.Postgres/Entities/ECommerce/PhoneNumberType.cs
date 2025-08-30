@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Phone Number Type ID is required")]
         [Display(Name = "Phone Number Type ID")]
         [Description("Primary key for telephone number type records.")]
-        public int? PhoneNumberTypeID { get; set; } // int
+        public int? PhoneNumberTypeId { get; set; } // int
         [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

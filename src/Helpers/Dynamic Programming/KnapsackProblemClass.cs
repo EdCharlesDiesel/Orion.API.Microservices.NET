@@ -26,10 +26,10 @@
                     }
                 }
             }
-            return getKnapsackItems(knapsackValues, items,
+            return GetKnapsackItems(knapsackValues, items,
             knapsackValues[items.GetLength(0), capacity]);
         }
-        public static List<List<int>> getKnapsackItems(int[,] knapsackValues, int[,] items,
+        public static List<List<int>> GetKnapsackItems(int[,] knapsackValues, int[,] items,
         int weight)
         {
             List<List<int>> sequence = new List<List<int>>();

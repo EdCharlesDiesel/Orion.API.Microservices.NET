@@ -31,10 +31,10 @@
         {
             int[] columnPlacements = new int[n];
 
-            return getNumberOfNonAttachingQueenPlacements(0, columnPlacements, n);
+            return GetNumberOfNonAttachingQueenPlacements(0, columnPlacements, n);
         }
 
-        public int getNumberOfNonAttachingQueenPlacements(int row, int[] columnPlacements, int boardSize)
+        public int GetNumberOfNonAttachingQueenPlacements(int row, int[] columnPlacements, int boardSize)
         {
             if (row==boardSize)
             {
@@ -47,7 +47,7 @@
                 if (IsNonAttackingPlacement(row, col, columnPlacements))
                 {
                     columnPlacements[row] = col;
-                    validPlacements += getNumberOfNonAttachingQueenPlacements(row + 1, columnPlacements, boardSize);
+                    validPlacements += GetNumberOfNonAttachingQueenPlacements(row + 1, columnPlacements, boardSize);
                 }
             }
 

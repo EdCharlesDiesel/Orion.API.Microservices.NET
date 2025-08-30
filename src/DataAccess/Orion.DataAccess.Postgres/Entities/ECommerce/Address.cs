@@ -15,7 +15,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Address ID is required")]
         [Display(Name = "Address ID")]
         [Description("Primary key for Address records.")]
-        public int? AddressID { get; set; } // int
+        public int? AddressId { get; set; } // int
         [Column(name:"AddressLine1", TypeName = "nvarchar")]
         [MaxLength(60)]
         [StringLength(60)]
@@ -40,7 +40,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "State Province ID is required")]
         [Display(Name = "State Province ID")]
         [Description("Unique identification number for the state or province. Foreign key to StateProvince table.")]
-        public int? StateProvinceID { get; set; } // int
+        public int? StateProvinceId { get; set; } // int
         [Column(name: "PostalCode", TypeName = "nvarchar")]
         [MaxLength(15)]
         [StringLength(15)]
@@ -51,12 +51,12 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Column(name: "SpatialLocation", TypeName = "geography")]
         [Display(Name = "Spatial Location")]
         [Description("Latitude and longitude of this address.")]
-        public SqlGeography SpatialLocation { get; set; }
+        public string SpatialLocation { get; set; }
         [Column(name: "rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name: "ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

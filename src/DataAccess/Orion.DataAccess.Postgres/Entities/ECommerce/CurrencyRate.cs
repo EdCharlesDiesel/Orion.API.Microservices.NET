@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Currency Rate ID is required")]
         [Display(Name = "Currency Rate ID")]
         [Description("Primary key for CurrencyRate records.")]
-        public int? CurrencyRateID { get; set; } // int
+        public int? CurrencyRateId { get; set; } // int
         [Column(name: "CurrencyRateDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Currency Rate Date is required")]
         [Display(Name = "Currency Rate Date")]

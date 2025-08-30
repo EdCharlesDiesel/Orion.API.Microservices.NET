@@ -14,14 +14,14 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Shopping Cart Item ID is required")]
         [Display(Name = "Shopping Cart Item ID")]
         [Description("Primary key for ShoppingCartItem records.")]
-        public int? ShoppingCartItemID { get; set; } // int
+        public int? ShoppingCartItemId { get; set; } // int
         [Column(name:"ShoppingCartID", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Shopping Cart ID is required")]
         [Display(Name = "Shopping Cart ID")]
         [Description("Shopping cart identification number.")]
-        public string ShoppingCartID { get; set; } // nvarchar(50)
+        public string ShoppingCartId { get; set; } // nvarchar(50)
         [Column(name:"Quantity", TypeName = "int")]
         [Required(ErrorMessage = "Quantity is required")]
         [Display(Name = "Quantity")]
@@ -31,7 +31,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product ordered. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
+        public int? ProductId { get; set; } // int
         [Column(name:"DateCreated", TypeName = "datetime")]
         [Required(ErrorMessage = "Date Created is required")]
         [Display(Name = "Date Created")]

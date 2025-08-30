@@ -13,13 +13,13 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Primary key. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
-        [Key]
+        public int? ProductId { get; set; } // int
+        // [Key]
         [Column(name:"BusinessEntityID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key. Foreign key to Vendor.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         [Column(name:"AverageLeadTime", TypeName = "int")]
         [Required(ErrorMessage = "Average Lead Time is required")]
         [Display(Name = "Average Lead Time")]

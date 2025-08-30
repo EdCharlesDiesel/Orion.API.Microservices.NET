@@ -6,7 +6,7 @@ namespace Orion.API.HumanResources.Business
     public interface IEmployeeService
     {
         event EventHandler<EmployeeIsAbsentEventArgs>? EmployeeIsAbsent;
-        Task AddCalendarAsync(Calendar Calendar);
+        Task AddCalendarAsync(Calendar calendar);
         Task AttendCourseAsync(Calendar employee, Course attendedCourse);
         ExternalEmployee CreateExternalEmployee(string firstName, 
             string lastName, string company);

@@ -10,18 +10,18 @@
             while (currentNode != null)
             {
                 BinaryTree nextNode;
-                if (previousNode == null || previousNode == currentNode.parent)
+                if (previousNode == null || previousNode == currentNode.Parent)
                 {
-                    nextNode = currentNode.left;
+                    nextNode = currentNode.Left;
                 }
-                else if (previousNode == currentNode.left)
+                else if (previousNode == currentNode.Left)
                 {
                     callback(currentNode);
-                    nextNode = currentNode.right;
+                    nextNode = currentNode.Right;
                 }
                 else
                 {
-                    nextNode = currentNode.parent;
+                    nextNode = currentNode.Parent;
                 }
                 previousNode = currentNode;
                 currentNode = nextNode;
@@ -30,9 +30,9 @@
 
         public class BinaryTree
         {
-            public BinaryTree left;
-            public BinaryTree right;
-            public BinaryTree parent;
+            public BinaryTree Left;
+            public BinaryTree Right;
+            public BinaryTree Parent;
 
             public BinaryTree(int i)
             {
@@ -43,18 +43,18 @@
 
     public class BinaryTree
     {
-        public int value;
-        public BinaryTree left;
-        public BinaryTree right;
-        public BinaryTree parent;
+        public int Value;
+        public BinaryTree Left;
+        public BinaryTree Right;
+        public BinaryTree Parent;
         public BinaryTree(int value)
         {
-            this.value = value;
+            this.Value = value;
         }
         public BinaryTree(int value, BinaryTree parent)
         {
-            this.value = value;
-            this.parent = parent;
+            this.Value = value;
+            this.Parent = parent;
         }
     }
 }

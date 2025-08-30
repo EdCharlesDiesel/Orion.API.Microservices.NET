@@ -13,24 +13,24 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key. Foreign key to BusinessEntity.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
-        [Key]
+        public int? BusinessEntityId { get; set; } // int
+        // [Key]
         [Column(name:"PersonID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Person ID is required")]
         [Display(Name = "Person ID")]
         [Description("Primary key. Foreign key to Person.BusinessEntityID.")]
-        public int? PersonID { get; set; } // int
-        [Key]
+        public int? PersonId { get; set; } // int
+        // [Key]
         [Column(name: "ContactTypeID", TypeName = "int", Order = 3)]
         [Required(ErrorMessage = "Contact Type ID is required")]
         [Display(Name = "Contact Type ID")]
         [Description("Primary key.  Foreign key to ContactType.ContactTypeID.")]
-        public int? ContactTypeID { get; set; } // int
+        public int? ContactTypeId { get; set; } // int
         [Column(name: "rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name: "ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

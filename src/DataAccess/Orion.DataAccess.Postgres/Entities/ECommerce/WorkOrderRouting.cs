@@ -13,14 +13,14 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Work Order ID is required")]
         [Display(Name = "Work Order ID")]
         [Description("Primary key. Foreign key to WorkOrder.WorkOrderID.")]
-        public int? WorkOrderID { get; set; } // int
-        [Key]
+        public int? WorkOrderId { get; set; } // int
+        // [ForeignKey("ProductID")]
         [Column(name:"ProductID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Primary key. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
-        [Key]
+        public int? ProductId { get; set; } // int
+        // [Key]
         [Column(name:"OperationSequence", TypeName = "smallint", Order = 3)]
         [Required(ErrorMessage = "Operation Sequence is required")]
         [Display(Name = "Operation Sequence")]
@@ -30,7 +30,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Location ID is required")]
         [Display(Name = "Location ID")]
         [Description("Manufacturing location where the part is processed. Foreign key to Location.LocationID.")]
-        public short? LocationID { get; set; } // smallint
+        public short? LocationId { get; set; } // smallint
         [Column(name:"ScheduledStartDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Scheduled Start Date is required")]
         [Display(Name = "Scheduled Start Date")]

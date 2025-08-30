@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Shift ID is required")]
         [Display(Name = "Shift ID")]
         [Description("Primary key for Shift records.")]
-        public byte? ShiftID { get; set; } // tinyint
+        public byte? ShiftId { get; set; } // tinyint
         [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

@@ -10,7 +10,7 @@
             for (int i = 0; i < array.Length; i++)
             {
                 int num = array[i];
-                if (isOutOfOrder(i, num, array))
+                if (IsOutOfOrder(i, num, array))
                 {
                     minOutOfOrder = Math.Min(minOutOfOrder, num);
                     maxOutOfOrder = Math.Max(maxOutOfOrder, num);
@@ -32,7 +32,7 @@
             }
             return new[] { subarrayLeftIdx, subarrayRightIdx };
         }
-        public static bool isOutOfOrder(int i, int num, int[] array)
+        public static bool IsOutOfOrder(int i, int num, int[] array)
         {
             if (i == 0)
             {

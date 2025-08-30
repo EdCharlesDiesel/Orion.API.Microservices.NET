@@ -4,18 +4,18 @@
     {
         public int OptimalFreelancing(Dictionary<string, int>[] jobs)
         {
-            const int LENGTH_OF_WEEK = 7;
+            const int lengthOfWeek = 7;
             int profit = 0;
-            Array.Sort(jobs, Comparer<Dictionary<string, int>>.Create((jobOne, JobTwo) => JobTwo["payment"]
+            Array.Sort(jobs, Comparer<Dictionary<string, int>>.Create((jobOne, jobTwo) => jobTwo["payment"]
             .CompareTo(jobOne["payment"])
                     )
             );
 
-            bool[] timeline = new bool[LENGTH_OF_WEEK];
+            bool[] timeline = new bool[lengthOfWeek];
 
             foreach( var job in jobs ) 
             {
-                int maxTime = Math.Min(job["deadline"], LENGTH_OF_WEEK);
+                int maxTime = Math.Min(job["deadline"], lengthOfWeek);
                 for (int time = maxTime-1; time >= 0; time--)
                 {
                     if (!timeline[time])

@@ -7,16 +7,16 @@
         public static OrgChart GetLowestCommonManager(OrgChart topManager, OrgChart reportOne,
         OrgChart reportTwo)
         {
-            return getOrgInfo(topManager, reportOne, reportTwo).lowestCommonManager;
+            return GetOrgInfo(topManager, reportOne, reportTwo).LowestCommonManager;
         }
-        public static OrgInfo getOrgInfo(OrgChart manager, OrgChart reportOne, OrgChart reportTwo)
+        public static OrgInfo GetOrgInfo(OrgChart manager, OrgChart reportOne, OrgChart reportTwo)
         {
             int numImportantReports = 0;
-            foreach (OrgChart directReport in manager.directReports)
+            foreach (OrgChart directReport in manager.DirectReports)
             {
-                OrgInfo orgInfo = getOrgInfo(directReport, reportOne, reportTwo);
-                if (orgInfo.lowestCommonManager != null) return orgInfo;
-                numImportantReports += orgInfo.numImportantReports;
+                OrgInfo orgInfo = GetOrgInfo(directReport, reportOne, reportTwo);
+                if (orgInfo.LowestCommonManager != null) return orgInfo;
+                numImportantReports += orgInfo.NumImportantReports;
             }
             if (manager == reportOne || manager == reportTwo) numImportantReports++;
             OrgChart lowestCommonManager = numImportantReports == 2 ? manager : null;
@@ -26,30 +26,30 @@
 
         public class OrgChart
         {
-            public char name;
-            public List<OrgChart> directReports;
+            public char Name;
+            public List<OrgChart> DirectReports;
             public OrgChart(char name)
             {
-                this.name = name;
-                directReports = new List<OrgChart>();
+                this.Name = name;
+                DirectReports = new List<OrgChart>();
             }
             // This method is for testing only.
-            public void addDirectReports(OrgChart[] directReports)
+            public void AddDirectReports(OrgChart[] directReports)
             {
                 foreach (OrgChart directReport in directReports)
                 {
-                    this.directReports.Add(directReport);
+                    this.DirectReports.Add(directReport);
                 }
             }
         }
         public class OrgInfo
         {
-            public OrgChart lowestCommonManager;
-            public int numImportantReports;
+            public OrgChart LowestCommonManager;
+            public int NumImportantReports;
             public OrgInfo(OrgChart lowestCommonManager, int numImportantReports)
             {
-                this.lowestCommonManager = lowestCommonManager;
-                this.numImportantReports = numImportantReports;
+                this.LowestCommonManager = lowestCommonManager;
+                this.NumImportantReports = numImportantReports;
             }
         }
 

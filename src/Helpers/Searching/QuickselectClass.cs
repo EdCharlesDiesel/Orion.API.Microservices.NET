@@ -26,7 +26,7 @@
                     if (array[leftIdx] > array[pivotIdx] &&
                     array[rightIdx] < array[pivotIdx])
                     {
-                        swap(leftIdx, rightIdx, array);
+                        Swap(leftIdx, rightIdx, array);
                     }
                     if (array[leftIdx] <= array[pivotIdx])
                     {
@@ -37,7 +37,7 @@
                         rightIdx--;
                     }
                 }
-                swap(pivotIdx, rightIdx, array);
+                Swap(pivotIdx, rightIdx, array);
                 if (rightIdx == position)
                 {
                     return array[rightIdx];
@@ -53,7 +53,7 @@
                 }
             }
         }
-        public static void swap(int i, int j, int[] array)
+        public static void Swap(int i, int j, int[] array)
         {
             int temp = array[j];
             array[j] = array[i];

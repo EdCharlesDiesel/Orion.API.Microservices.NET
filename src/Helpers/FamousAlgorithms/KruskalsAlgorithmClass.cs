@@ -57,8 +57,8 @@
 
             foreach (var edge in sortedEdges)
             {
-                int vertext1Root = find(edge[0], parents);
-                int vertext2Root = find(edge[1], parents);
+                int vertext1Root = Find(edge[0], parents);
+                int vertext2Root = Find(edge[1], parents);
                 if (vertext1Root != vertext2Root)
                 {
                     mst[edge[0]].Add(new[] { edge[1], edge[2] });
@@ -81,11 +81,11 @@
             return arrayMst;
         }
 
-        private int find(int vertex, int[] parents)
+        private int Find(int vertex, int[] parents)
         {
             if (vertex != parents[vertex])
             {
-                parents[vertex] = find(parents[vertex], parents);
+                parents[vertex] = Find(parents[vertex], parents);
             }
 
             return parents[vertex];

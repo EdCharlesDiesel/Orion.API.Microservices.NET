@@ -20,7 +20,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Culture ID is required")]
         [Display(Name = "Culture ID")]
         [Description("Primary key for Culture records.")]
-        public string CultureID { get; set; } // nchar(6)
+        public string CultureId { get; set; } // nchar(6)
         [Column(name: "Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

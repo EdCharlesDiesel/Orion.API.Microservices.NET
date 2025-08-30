@@ -13,8 +13,8 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Business entity identification number. Foreign key to Person.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
-        [Key]
+        public int? BusinessEntityId { get; set; } // int
+        // [Key]
         [Column(name:"PhoneNumber", TypeName = "nvarchar", Order = 2)]
         [MaxLength(25)]
         [StringLength(25)]
@@ -22,12 +22,12 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Display(Name = "Phone Number")]
         [Description("Telephone number identification number.")]
         public string PhoneNumber { get; set; } // nvarchar(25)
-        [Key]
+        // [Key]
         [Column(name:"PhoneNumberTypeID", TypeName = "int", Order = 3)]
         [Required(ErrorMessage = "Phone Number Type ID is required")]
         [Display(Name = "Phone Number Type ID")]
         [Description("Kind of phone number. Foreign key to PhoneNumberType.PhoneNumberTypeID.")]
-        public int? PhoneNumberTypeID { get; set; } // int
+        public int? PhoneNumberTypeId { get; set; } // int
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

@@ -219,7 +219,7 @@ namespace Orion.API.HumanResources.Business
         //            * employee.AttendedCourses.Count * 100;
         // }
         public event EventHandler<EmployeeIsAbsentEventArgs>? EmployeeIsAbsent;
-        public async Task AddCalendarAsync(Calendar Calendar)
+        public async Task AddCalendarAsync(Calendar calendar)
         {
             throw new NotImplementedException();
         }

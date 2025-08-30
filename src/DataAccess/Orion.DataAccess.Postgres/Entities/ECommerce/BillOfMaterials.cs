@@ -14,16 +14,16 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Bill Of Materials ID is required")]
         [Display(Name = "Bill Of Materials ID")]
         [Description("Primary key for BillOfMaterials records.")]
-        public int? BillOfMaterialsID { get; set; } // int
+        public int? BillOfMaterialsId { get; set; } // int
         [Column(name:"ProductAssemblyID", TypeName = "int")]
         [Display(Name = "Product Assembly ID")]
         [Description("Parent product identification number. Foreign key to Product.ProductID.")]
-        public int? ProductAssemblyID { get; set; } // int
+        public int? ProductAssemblyId { get; set; } // int
         [Column(name: "ComponentID", TypeName = "int")]
         [Required(ErrorMessage = "Component ID is required")]
         [Display(Name = "Component ID")]
         [Description("Component identification number. Foreign key to Product.ProductID.")]
-        public int? ComponentID { get; set; } // int
+        public int? ComponentId { get; set; } // int
         [Column(name: "StartDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Start Date is required")]
         [Display(Name = "Start Date")]
@@ -44,7 +44,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "BOM Level is required")]
         [Display(Name = "BOM Level")]
         [Description("Indicates the depth the component is from its parent (AssemblyID).")]
-        public short? BOMLevel { get; set; } // smallint
+        public short? BomLevel { get; set; } // smallint
         [Column(name:"PerAssemblyQty", TypeName = "decimal")]
         [Required(ErrorMessage = "Per Assembly Qty is required")]
         [Display(Name = "Per Assembly Qty")]

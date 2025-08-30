@@ -14,7 +14,7 @@
 
             while (visited.Count != numberOfVertices)
             {
-                int[] getVertexData = getVertextWithMinDistances(minDistances, visited);
+                int[] getVertexData = GetVertextWithMinDistances(minDistances, visited);
                 int vertex = getVertexData[0];
                 int currentMinDistance = getVertexData[1];
 
@@ -62,7 +62,7 @@
             return finalDestination;
         }
 
-        private static int[] getVertextWithMinDistances(int[] minDistances, HashSet<int> visited)
+        private static int[] GetVertextWithMinDistances(int[] minDistances, HashSet<int> visited)
         {
             int currentMinDistance = int.MaxValue;
             int vertex = -1;

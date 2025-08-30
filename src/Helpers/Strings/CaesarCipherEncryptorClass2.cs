@@ -10,12 +10,12 @@
             string alphabet = "abcdefghijklmnopqrstuvwxyz";
             for (int i = 0; i < str.Length; i++)
             {
-                newLetters[i] = getNewLetter(str[i], newKey, alphabet);
+                newLetters[i] = GetNewLetter(str[i], newKey, alphabet);
             }
             return new string(newLetters);
         }
 
-        public static char getNewLetter(char letter, int key, string alphabet)
+        public static char GetNewLetter(char letter, int key, string alphabet)
         {
             int newLetterCode = alphabet.IndexOf(letter) + key;
             return newLetterCode <= 25 ? alphabet[newLetterCode] : alphabet[-1 + newLetterCode];

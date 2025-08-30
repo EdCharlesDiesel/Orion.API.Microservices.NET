@@ -7,39 +7,39 @@
     {
         public class UnionFind
         {
-            private Dictionary<int, int> parents = new Dictionary<int, int>();
+            private Dictionary<int, int> _parents = new Dictionary<int, int>();
 
             //O(1) time | O(1) space
             public void CreateSet(int value)
             {
-                parents[value] = value;
+                _parents[value] = value;
             }
 
             public int? Find(int value)
             {
-                if (!parents.ContainsKey(value))
+                if (!_parents.ContainsKey(value))
                 {
                     return null;
                 }
 
                 int currentParent = value;
-                while (currentParent != parents[currentParent])
+                while (currentParent != _parents[currentParent])
                 {
-                    currentParent = parents[currentParent];
+                    currentParent = _parents[currentParent];
                 }
                 return currentParent;
             }
 
             public void Union(int valueOne, int valueTwo)
             {
-                if (!parents.ContainsKey(valueOne) || !parents.ContainsKey(valueTwo))
+                if (!_parents.ContainsKey(valueOne) || !_parents.ContainsKey(valueTwo))
                 {
                     return;
                 }
 
                 int valueOneRoot = (int)Find(valueOne);
                 int valueTwoRoot = (int)Find(valueTwo);
-                parents[valueTwoRoot] = valueOneRoot;
+                _parents[valueTwoRoot] = valueOneRoot;
             }
         }
     }

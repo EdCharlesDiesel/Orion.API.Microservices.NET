@@ -23,21 +23,21 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key for Employee records.  Foreign key to BusinessEntity.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         [Column(name:"NationalIDNumber", TypeName = "nvarchar")]
         [MaxLength(15)]
         [StringLength(15)]
         [Required(ErrorMessage = "National ID Number is required")]
         [Display(Name = "National ID Number")]
         [Description("Unique national identification number such as a social security number.")]
-        public string NationalIDNumber { get; set; } // nvarchar(15)
+        public string NationalIdNumber { get; set; } // nvarchar(15)
         [Column(name:"LoginID", TypeName = "nvarchar")]
         [MaxLength(256)]
         [StringLength(256)]
         [Required(ErrorMessage = "Login ID is required")]
         [Display(Name = "Login ID")]
         [Description("Network login.")]
-        public string LoginID { get; set; } // nvarchar(256)
+        public string LoginId { get; set; } // nvarchar(256)
         [Column(name:"OrganizationNode", TypeName = "hierarchyid")]
         [Display(Name = "Organization Node")]
         [Description("Where the employee is located in corporate hierarchy.")]
@@ -102,7 +102,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

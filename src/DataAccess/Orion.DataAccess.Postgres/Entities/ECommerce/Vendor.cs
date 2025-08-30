@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key for Vendor records.  Foreign key to BusinessEntity.BusinessEntityID")]
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         [Column(name:"AccountNumber", TypeName = "nvarchar")]
         [MaxLength(15)]
         [StringLength(15)]
@@ -54,7 +54,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [StringLength(1024)]
         [Display(Name = "Purchasing Web Service URL")]
         [Description("Vendor URL.")]
-        public string PurchasingWebServiceURL { get; set; } // nvarchar(1024)
+        public string PurchasingWebServiceUrl { get; set; } // nvarchar(1024)
         [Column(name: "ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

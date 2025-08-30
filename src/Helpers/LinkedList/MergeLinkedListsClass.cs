@@ -12,35 +12,35 @@ namespace Orion.Helpers.LinkedList
             LinkedList p2 = headTwo;
             while (p1 != null && p2 != null)
             {
-                if (p1.value < p2.value)
+                if (p1.Value < p2.Value)
                 {
                     p1Prev = p1;
-                    p1 = p1.next;
+                    p1 = p1.Next;
                 }
                 else
                 {
                     if (p1Prev != null)
-                        p1Prev.next = p2;
+                        p1Prev.Next = p2;
                     p1Prev = p2;
-                    p2 = p2.next;
-                    p1Prev.next = p1;
+                    p2 = p2.Next;
+                    p1Prev.Next = p1;
                 }
             }
             if (p1 == null)
-                p1Prev.next = p2!;
-            return headOne.value < headTwo.value ? headOne : headTwo;
+                p1Prev.Next = p2!;
+            return headOne.Value < headTwo.Value ? headOne : headTwo;
         }
     }
 
     public abstract class LinkedList
     {
-        public int value;
-        public LinkedList next;
+        public int Value;
+        public LinkedList Next;
 
         protected LinkedList(int value)
         {
-            this.value = value;
-            next = null;
+            this.Value = value;
+            Next = null;
         }
     }
 }

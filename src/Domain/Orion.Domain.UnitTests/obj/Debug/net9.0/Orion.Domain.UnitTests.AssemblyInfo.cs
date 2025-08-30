@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Domain.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+804e6fbe89526e16ea2c14c1f41d0318a4417091")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b811d2c563e5471b4ebf882d05b248dc897a1d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Domain.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Domain.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,28 +5,28 @@
         // O(n) time | O(1) space
         public static LinkedList FindLoop(LinkedList head)
         {
-            LinkedList first = head.next;
-            LinkedList second = head.next.next;
+            LinkedList first = head.Next;
+            LinkedList second = head.Next.Next;
             while (first != second)
             {
-                first = first.next;
-                second = second.next.next;
+                first = first.Next;
+                second = second.Next.Next;
             }
             first = head;
             while (first != second)
             {
-                first = first.next;
-                second = second.next;
+                first = first.Next;
+                second = second.Next;
             }
             return first;
         }
         public class LinkedList
         {
-            public int value;
-            public LinkedList next = null!;
+            public int Value;
+            public LinkedList Next = null!;
             public LinkedList(int value)
             {
-                this.value = value;
+                this.Value = value;
             }
         }
     }

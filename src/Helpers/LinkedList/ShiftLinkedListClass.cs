@@ -9,9 +9,9 @@ namespace Orion.Helpers.LinkedList
         {
             int listLength = 1;
             LinkedList listTail = head;
-            while (listTail.next != null)
+            while (listTail.Next != null)
             {
-                listTail = listTail.next;
+                listTail = listTail.Next;
                 listLength++;
             }
             int offset = Math.Abs(k) % listLength;
@@ -20,11 +20,11 @@ namespace Orion.Helpers.LinkedList
             LinkedList newTail = head;
             for (int i = 1; i < newTailPosition; i++)
             {
-                newTail = newTail.next;
+                newTail = newTail.Next;
             }
-            LinkedList newHead = newTail.next;
-            newTail.next = null;
-            listTail.next = head;
+            LinkedList newHead = newTail.Next;
+            newTail.Next = null;
+            listTail.Next = head;
             return newHead;
 
 

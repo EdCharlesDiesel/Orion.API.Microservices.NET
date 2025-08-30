@@ -14,12 +14,12 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Product Review ID is required")]
         [Display(Name = "Product Review ID")]
         [Description("Primary key for ProductReview records.")]
-        public int? ProductReviewID { get; set; } // int
+        public int? ProductReviewId { get; set; } // int
         [Column(name:"ProductID", TypeName = "int")]
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
+        public int? ProductId { get; set; } // int
         [Column(name:"ReviewerName", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

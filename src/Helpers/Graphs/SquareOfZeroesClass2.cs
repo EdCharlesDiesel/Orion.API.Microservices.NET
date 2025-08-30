@@ -15,7 +15,7 @@
                     {
                         int bottomRow = topRow + squareLength - 1;
                         int rightCol = leftCol + squareLength - 1;
-                        if (isSquareOfZeroes(matrix, topRow, leftCol, bottomRow,
+                        if (IsSquareOfZeroes(matrix, topRow, leftCol, bottomRow,
                         rightCol)) return true;
                         squareLength++;
                     }
@@ -25,7 +25,7 @@
         }
         // r1 is the top row, c1 is the left column
         // r2 is the bottom row, c2 is the right column
-        public static bool isSquareOfZeroes(List<List<int>> matrix, int r1, int c1, int r2, int c2)
+        public static bool IsSquareOfZeroes(List<List<int>> matrix, int r1, int c1, int r2, int c2)
         {
             for (int row = r1; row < r2 + 1; row++)
             {

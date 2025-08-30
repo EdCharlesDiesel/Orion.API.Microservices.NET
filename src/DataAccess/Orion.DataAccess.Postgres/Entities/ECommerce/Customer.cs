@@ -19,19 +19,19 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Customer ID is required")]
         [Display(Name = "Customer ID")]
         [Description("Primary key.")]
-        public int? CustomerID { get; set; } // int
+        public int? CustomerId { get; set; } // int
         [Column(name:"PersonID", TypeName = "int")]
         [Display(Name = "Person ID")]
         [Description("Foreign key to Person.BusinessEntityID")]
-        public int? PersonID { get; set; } // int
+        public int? PersonId { get; set; } // int
         [Column(name:"StoreID", TypeName = "int")]
         [Display(Name = "Store ID")]
         [Description("Foreign key to Store.BusinessEntityID")]
-        public int? StoreID { get; set; } // int
+        public int? StoreId { get; set; } // int
         [Column(name: "TerritoryID", TypeName = "int")]
         [Display(Name = "Territory ID")]
         [Description("ID of the territory in which the customer is located. Foreign key to SalesTerritory.SalesTerritoryID.")]
-        public int? TerritoryID { get; set; } // int
+        public int? TerritoryId { get; set; } // int
         [Column(name:"AccountNumber", TypeName = "varchar")]
         [MaxLength(10)]
         [StringLength(10)]
@@ -44,7 +44,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

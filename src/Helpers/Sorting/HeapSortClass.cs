@@ -9,23 +9,23 @@ namespace Orion.Helpers.Sorting
         // Worst: O(nlog(n)) time | O(1) space
         public static int[] HeapSort(int[] array)
         {
-            buildMaxHeap(array);
+            BuildMaxHeap(array);
             for (int endIdx = array.Length - 1; endIdx > 0; endIdx--)
             {
-                swap(0, endIdx, array);
-                siftDown(0, endIdx - 1, array);
+                Swap(0, endIdx, array);
+                SiftDown(0, endIdx - 1, array);
             }
             return array;
         }
-        public static void buildMaxHeap(int[] array)
+        public static void BuildMaxHeap(int[] array)
         {
             int firstParentIdx = (array.Length - 2) / 2;
             for (int currentIdx = firstParentIdx; currentIdx >= 0; currentIdx--)
             {
-                siftDown(currentIdx, array.Length - 1, array);
+                SiftDown(currentIdx, array.Length - 1, array);
             }
         }
-        public static void siftDown(int currentIdx, int endIdx, int[] heap)
+        public static void SiftDown(int currentIdx, int endIdx, int[] heap)
         {
             int childOneIdx = currentIdx * 2 + 1;
             while (childOneIdx <= endIdx)
@@ -42,7 +42,7 @@ namespace Orion.Helpers.Sorting
                 }
                 if (heap[idxToSwap] > heap[currentIdx])
                 {
-                    swap(currentIdx, idxToSwap, heap);
+                    Swap(currentIdx, idxToSwap, heap);
                     currentIdx = idxToSwap;
                     childOneIdx = currentIdx * 2 + 1;
                 }
@@ -52,7 +52,7 @@ namespace Orion.Helpers.Sorting
                 }
             }
         }
-        public static void swap(int i, int j, int[] array)
+        public static void Swap(int i, int j, int[] array)
         {
             int temp = array[j];
             array[j] = array[i];

@@ -19,18 +19,18 @@
                     smallestItems.Add(new Item(arrayIdx, relevantArray[elementIdx]));
                 }
                 if (smallestItems.Count == 0) break;
-                Item nextItem = getMinValue(smallestItems);
-                sortedList.Add(nextItem.num);
-                elementIdxs[nextItem.arrayIdx] = elementIdxs[nextItem.arrayIdx] + 1;
+                Item nextItem = GetMinValue(smallestItems);
+                sortedList.Add(nextItem.Num);
+                elementIdxs[nextItem.ArrayIdx] = elementIdxs[nextItem.ArrayIdx] + 1;
             }
             return sortedList;
         }
-        public static Item getMinValue(List<Item> items)
+        public static Item GetMinValue(List<Item> items)
         {
             int minValueIdx = 0;
             for (int i = 1; i < items.Count; i++)
             {
-                if (items[i].num < items[minValueIdx].num) minValueIdx = i;
+                if (items[i].Num < items[minValueIdx].Num) minValueIdx = i;
             }
             return items[minValueIdx];
         }
@@ -38,12 +38,12 @@
 
     public class Item
     {
-        public int arrayIdx;
-        public int num;
+        public int ArrayIdx;
+        public int Num;
         public Item(int arrayIdx, int num)
         {
-            this.arrayIdx = arrayIdx;
-            this.num = num;
+            this.ArrayIdx = arrayIdx;
+            this.Num = num;
         }
     }
 }

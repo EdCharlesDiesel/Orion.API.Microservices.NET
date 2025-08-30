@@ -19,18 +19,18 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Special Offer ID is required")]
         [Display(Name = "Special Offer ID")]
         [Description("Primary key for SpecialOfferProduct records.")]
-        public int? SpecialOfferID { get; set; } // int
-        [Key]
+        public int? SpecialOfferId { get; set; } // int
+        // [Key]
         [Column(name:"ProductID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
+        public int? ProductId { get; set; } // int
         [Column(name:"rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

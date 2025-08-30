@@ -32,7 +32,7 @@
                     continue;
                 }
 
-                if (breaksDirection(direction, array[i - 1], array[i]))
+                if (BreaksDirection(direction, array[i - 1], array[i]))
                 {
                     return false;
                 }
@@ -41,7 +41,7 @@
             return true;
         }
 
-        private static bool breaksDirection(int direction, int previous, int current)
+        private static bool BreaksDirection(int direction, int previous, int current)
         {
             var difference = current - previous;
             if (difference > 0) return difference < 0;

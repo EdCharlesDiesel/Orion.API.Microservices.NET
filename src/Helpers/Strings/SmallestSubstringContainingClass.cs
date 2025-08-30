@@ -6,20 +6,20 @@
         // input string and s is the length of the small input string
         public static string SmallestSubstringContaining(string bigstring, string smallstring)
         {
-            Dictionary<char, int> targetCharCounts = getCharCounts(smallstring);
-            List<int> substringBounds = getSubstringBounds(bigstring, targetCharCounts);
-            return getstringFromBounds(bigstring, substringBounds);
+            Dictionary<char, int> targetCharCounts = GetCharCounts(smallstring);
+            List<int> substringBounds = GetSubstringBounds(bigstring, targetCharCounts);
+            return GetstringFromBounds(bigstring, substringBounds);
         }
-        public static Dictionary<char, int> getCharCounts(string str)
+        public static Dictionary<char, int> GetCharCounts(string str)
         {
             Dictionary<char, int> charCounts = new Dictionary<char, int>();
             for (int i = 0; i < str.Length; i++)
             {
-                increaseCharCount(str[i], charCounts);
+                IncreaseCharCount(str[i], charCounts);
             }
             return charCounts;
         }
-        public static List<int> getSubstringBounds(string str, Dictionary<char,
+        public static List<int> GetSubstringBounds(string str, Dictionary<char,
         int> targetCharCounts)
         {
             List<int> substringBounds = new List<int> {
@@ -40,7 +40,7 @@
                     rightIdx++;
                     continue;
                 }
-                increaseCharCount(rightChar, substringCharCounts);
+                IncreaseCharCount(rightChar, substringCharCounts);
                 if (substringCharCounts[rightChar] == targetCharCounts[rightChar])
                 {
                     numUniqueCharsDone++;
@@ -50,7 +50,7 @@
                 // the rightIdx. Update the substringBounds accordingly.
                 while (numUniqueCharsDone == numUniqueChars && leftIdx <= rightIdx)
                 {
-                    substringBounds = getCloserBounds(leftIdx, rightIdx,
+                    substringBounds = GetCloserBounds(leftIdx, rightIdx,
                     substringBounds[0],
                     substringBounds[1]);
                     char leftChar = str[leftIdx];
@@ -63,14 +63,14 @@
                     {
                         numUniqueCharsDone--;
                     }
-                    decreaseCharCount(leftChar, substringCharCounts);
+                    DecreaseCharCount(leftChar, substringCharCounts);
                     leftIdx++;
                 }
                 rightIdx++;
             }
             return substringBounds;
         }
-        public static List<int> getCloserBounds(int idx1, int idx2, int idx3, int idx4)
+        public static List<int> GetCloserBounds(int idx1, int idx2, int idx3, int idx4)
         {
             return idx2 - idx1 < idx4 - idx3 ? new List<int>
                 {
@@ -81,7 +81,7 @@
                 idx3, idx4
             };
         }
-        public static string getstringFromBounds(string str, List<int> bounds)
+        public static string GetstringFromBounds(string str, List<int> bounds)
         {
             int start = bounds[0];
             int end = bounds[1];
@@ -89,7 +89,7 @@
                 return "";
             return str.Substring(start, end + 1 - start);
         }
-        public static void increaseCharCount(char c, Dictionary<char, int> charCounts)
+        public static void IncreaseCharCount(char c, Dictionary<char, int> charCounts)
         {
             if (!charCounts.ContainsKey(c))
             {
@@ -100,7 +100,7 @@
                 charCounts[c] = charCounts[c] + 1;
             }
         }
-        public static void decreaseCharCount(char c, Dictionary<char, int> charCounts)
+        public static void DecreaseCharCount(char c, Dictionary<char, int> charCounts)
         {
             charCounts[c] = charCounts[c] - 1;
         }

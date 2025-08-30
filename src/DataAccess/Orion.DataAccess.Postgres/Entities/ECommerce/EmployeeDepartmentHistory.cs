@@ -13,20 +13,20 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Employee identification number. Foreign key to Employee.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
-        [Key]
+        public int? BusinessEntityId { get; set; } // int
+        // [Key]
         [Column(name:"DepartmentID", TypeName = "smallint", Order = 3)]
         [Required(ErrorMessage = "Department ID is required")]
         [Display(Name = "Department ID")]
         [Description("Department in which the employee worked including currently. Foreign key to Department.DepartmentID.")]
-        public short? DepartmentID { get; set; } // smallint
-        [Key]
+        public short? DepartmentId { get; set; } // smallint
+        // [Key]
         [Column(name:"ShiftID", TypeName = "tinyint", Order = 4)]
         [Required(ErrorMessage = "Shift ID is required")]
         [Display(Name = "Shift ID")]
         [Description("Identifies which 8-hour shift the employee works. Foreign key to Shift.Shift.ID.")]
-        public byte? ShiftID { get; set; } // tinyint
-        [Key]
+        public byte? ShiftId { get; set; } // tinyint
+        // [Key]
         [Column(name:"StartDate", TypeName = "date", Order = 2)]
         [Required(ErrorMessage = "Start Date is required")]
         [Display(Name = "Start Date")]

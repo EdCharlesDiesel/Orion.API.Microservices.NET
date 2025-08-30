@@ -8,7 +8,7 @@
         public string Industry { get; set; }= null!;
         public string Website { get; set; }= null!;
         public string Description { get; set; }= null!;
-        public string CEO { get; set; }= null!;
+        public string Ceo { get; set; }= null!;
         public string IssueType { get; set; }= null!;
         public string Sector { get; set; }= null!;
     }

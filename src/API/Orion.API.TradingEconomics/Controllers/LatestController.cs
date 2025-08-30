@@ -18,10 +18,11 @@ namespace Orion.API.TradingEconomics.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         
         //[CheckClientKeyHeader]
-        public async Task<IActionResult> getLatestUpdates()
-        {              
-            var getLatestUpdates = GetLatestUpdates().Result;
-            return Ok(getLatestUpdates);
+        public async Task<IActionResult> GetLatestUpdates()
+        {
+            throw new NotImplementedException();
+            // var getLatestUpdates = LatestController.GetLatestUpdates().Result;
+            // return Ok(getLatestUpdates);
         }
 
         /// <summary>
@@ -32,31 +33,24 @@ namespace Orion.API.TradingEconomics.Controllers
         [CheckClientKeyHeader]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]        
-        public Task<IActionResult> getLatestUpdatesByDate(DateTime date)
-        {            
-            var getLatestUpdatesByDate = GetLatestUpdatesByDate(date).Result;
-
-            return Task.FromResult<IActionResult>(Ok(getLatestUpdatesByDate));
+        public Task<IActionResult> GetLatestUpdatesByDate(DateTime date)
+        {         
+            throw new NotImplementedException();
+            // var getLatestUpdatesByDate = LatestController.GetLatestUpdatesByDate(date).Result;
+            //
+            // return Task.FromResult<IActionResult>(Ok(getLatestUpdatesByDate));
         }   
-
-        /// <summary>
-        /// Get latest updates with no filters
-        /// </summary>
-        /// <returns>A task that will be resolved in a string with the request result</returns>
-        private static async Task<string> GetLatestUpdates()
-        {
-            return await HttpRequesterClass.HttpRequester("/updates");
-        }
+        
 
         /// <summary>
         /// Get latest updates by date
         /// </summary>
         /// <param name="startDate">Start date if needed</param>
         /// <returns>A task that will be resolved in a string with the request result</returns>
-        private static async Task<string> GetLatestUpdatesByDate(DateTime startDate)
-        {
-            return await HttpRequesterClass.HttpRequester($"/updates/{startDate.ToString("yyyy-MM-dd")}");
-        }
+        // private static async Task<string> GetLatestUpdatesByDate(DateTime startDate)
+        // {
+        //     return await HttpRequesterClass.HttpRequester($"/updates/{startDate.ToString("yyyy-MM-dd")}");
+        // }
     }
 }
     

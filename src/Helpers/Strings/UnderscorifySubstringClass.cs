@@ -5,10 +5,10 @@
         // O(n*m) | O(n) space
         public static string UnderscorifySubstring(string str, string substring)
         {
-            List<int[]> locations = collapse(getLocations(str, substring));
-            return underscorify(str, locations);
+            List<int[]> locations = Collapse(GetLocations(str, substring));
+            return Underscorify(str, locations);
         }
-        public static List<int[]> getLocations(string str, string substring)
+        public static List<int[]> GetLocations(string str, string substring)
         {
             List<int[]> locations = new List<int[]>();
             int startIdx = 0;
@@ -27,7 +27,7 @@
             }
             return locations;
         }
-        public static List<int[]> collapse(List<int[]> locations)
+        public static List<int[]> Collapse(List<int[]> locations)
         {
             if (locations.Count == 0)
             {
@@ -51,7 +51,7 @@
             }
             return newLocations;
         }
-        public static string underscorify(string str, List<int[]> locations)
+        public static string Underscorify(string str, List<int[]> locations)
         {
             int locationsIdx = 0;
             int stringIdx = 0;

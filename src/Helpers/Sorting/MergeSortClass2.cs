@@ -25,9 +25,9 @@
             int middleIdx = (startIdx + endIdx) / 2;
             MergeSort(auxiliaryArray, startIdx, middleIdx, mainArray);
             MergeSort(auxiliaryArray, middleIdx + 1, endIdx, mainArray);
-            doMerge(mainArray, startIdx, middleIdx, endIdx, auxiliaryArray);
+            DoMerge(mainArray, startIdx, middleIdx, endIdx, auxiliaryArray);
         }
-        public static void doMerge(int[] mainArray, int startIdx, int middleIdx, int endIdx,
+        public static void DoMerge(int[] mainArray, int startIdx, int middleIdx, int endIdx,
         int[] auxiliaryArray)
         {
             int k = startIdx;

@@ -8,12 +8,12 @@
             Trie trie = new Trie();
             foreach (string smallstring in smallstrings)
             {
-                trie.insert(smallstring);
+                trie.Insert(smallstring);
             }
             HashSet<string> containedstrings = new HashSet<string>();
             for (int i = 0; i < bigstring.Length; i++)
             {
-                findSmallstringsIn(bigstring, i, trie, containedstrings);
+                FindSmallstringsIn(bigstring, i, trie, containedstrings);
             }
             List<bool> solution = new List<bool>();
             foreach (string str in smallstrings)
@@ -22,21 +22,21 @@
             }
             return solution;
         }
-        public static void findSmallstringsIn(string str, int startIdx, Trie trie,
+        public static void FindSmallstringsIn(string str, int startIdx, Trie trie,
         HashSet<string> containedstrings)
         {
-            TrieNode currentNode = trie.root;
+            TrieNode currentNode = trie.Root;
             for (int i = startIdx; i < str.Length; i++)
             {
                 char currentChar = str[i];
-                if (!currentNode.children.ContainsKey(currentChar))
+                if (!currentNode.Children.ContainsKey(currentChar))
                 {
                     break;
                 }
-                currentNode = currentNode.children[currentChar];
-                if (currentNode.children.ContainsKey(trie.endSymbol))
+                currentNode = currentNode.Children[currentChar];
+                if (currentNode.Children.ContainsKey(trie.EndSymbol))
                 {
-                    containedstrings.Add(currentNode.word);
+                    containedstrings.Add(currentNode.Word);
                 }
             }
         }
@@ -45,28 +45,28 @@
 
     public class TrieNode
     {
-        public Dictionary<char, TrieNode> children = new Dictionary<char, TrieNode>();
-        public string word;
+        public Dictionary<char, TrieNode> Children = new Dictionary<char, TrieNode>();
+        public string Word;
     }
     public class Trie
     {
-        public TrieNode root = new TrieNode();
-        public char endSymbol = '*';
-        public void insert(string str)
+        public TrieNode Root = new TrieNode();
+        public char EndSymbol = '*';
+        public void Insert(string str)
         {
-            TrieNode node = root;
+            TrieNode node = Root;
             for (int i = 0; i < str.Length; i++)
             {
                 char letter = str[i];
-                if (!node.children.ContainsKey(letter))
+                if (!node.Children.ContainsKey(letter))
                 {
                     TrieNode newNode = new TrieNode();
-                    node.children.Add(letter, newNode);
+                    node.Children.Add(letter, newNode);
                 }
-                node = node.children[letter];
+                node = node.Children[letter];
             }
-            node.children[endSymbol] = null;
-            node.word = str;
+            node.Children[EndSymbol] = null;
+            node.Word = str;
         }
     }
 }

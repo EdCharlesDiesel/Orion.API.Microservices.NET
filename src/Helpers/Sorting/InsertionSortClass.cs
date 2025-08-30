@@ -16,13 +16,13 @@
                 int j = i;
                 while (j > 0 && array[j] < array[j - 1])
                 {
-                    swap(j, j - 1, array);
+                    Swap(j, j - 1, array);
                     j -= 1;
                 }
             }
             return array;
         }
-        public static void swap(int i, int j, int[] array)
+        public static void Swap(int i, int j, int[] array)
         {
             int temp = array[j];
             array[j] = array[i];

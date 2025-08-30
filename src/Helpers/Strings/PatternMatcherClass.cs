@@ -11,12 +11,12 @@ namespace Orion.Helpers.Strings
             {
                 return new string[] { };
             }
-            char[] newPattern = getNewPattern(pattern);
+            char[] newPattern = GetNewPattern(pattern);
             bool didSwitch = newPattern[0] != pattern[0];
             Dictionary<char, int> counts = new Dictionary<char, int>();
             counts['x'] = 0;
             counts['y'] = 0;
-            int firstYPos = getCountsAndFirstYPos(newPattern, counts);
+            int firstYPos = GetCountsAndFirstYPos(newPattern, counts);
             if (counts['y'] != 0)
             {
                 for (int lenOfX = 1; lenOfX < str.Length; lenOfX++)
@@ -32,7 +32,7 @@ namespace Orion.Helpers.Strings
                     int yIdx = firstYPos * lenOfX;
                     string x = str.Substring(0, lenOfX);
                     string y = str.Substring(yIdx, (int)lenOfY);
-                    string potentialMatch = buildPotentialMatch(newPattern, x, y);
+                    string potentialMatch = BuildPotentialMatch(newPattern, x, y);
                     if (str.Equals(potentialMatch))
                     {
                         return didSwitch ? new[] { y, x } : new[] {x,y};
@@ -45,7 +45,7 @@ namespace Orion.Helpers.Strings
                 if (lenOfX % 1 == 0)
                 {
                     string x = str.Substring(0, (int)lenOfX);
-                    string potentialMatch = buildPotentialMatch(newPattern, x, "");
+                    string potentialMatch = BuildPotentialMatch(newPattern, x, "");
                     if (str.Equals(potentialMatch))
                     {
                         return didSwitch ? new[] { "", x } : new[] {x,""};
@@ -54,7 +54,7 @@ namespace Orion.Helpers.Strings
             }
             return new string[] { };
         }
-        public static char[] getNewPattern(string pattern)
+        public static char[] GetNewPattern(string pattern)
         {
             char[] patternLetters = pattern.ToCharArray();
             if (pattern[0] == 'x')
@@ -74,7 +74,7 @@ namespace Orion.Helpers.Strings
             }
             return patternLetters;
         }
-        public static int getCountsAndFirstYPos(char[] pattern, Dictionary<char, int> counts)
+        public static int GetCountsAndFirstYPos(char[] pattern, Dictionary<char, int> counts)
         {
             int firstYPos = -1;
             for (int i = 0; i < pattern.Length; i++)
@@ -88,7 +88,7 @@ namespace Orion.Helpers.Strings
             }
             return firstYPos;
         }
-        public static string buildPotentialMatch(char[] pattern, string x, string y)
+        public static string BuildPotentialMatch(char[] pattern, string x, string y)
         {
             StringBuilder potentialMatch = new StringBuilder();
             foreach (char c in pattern)

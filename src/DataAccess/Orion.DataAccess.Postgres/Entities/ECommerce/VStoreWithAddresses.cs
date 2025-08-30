@@ -2,7 +2,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
 {
     public class VStoreWithAddresses
     {
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         public string Name { get; set; } // nvarchar(50)
         public string AddressType { get; set; } // nvarchar(50)
         public string AddressLine1 { get; set; } // nvarchar(60)

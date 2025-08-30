@@ -24,9 +24,9 @@ namespace Orion.Helpers.Strings
     /// from the string , your function should  return an empty list.
     /// 
     /// </summary>
-    public class ValidIPAddressesClass
+    public class ValidIpAddressesClass
     {
-        public List<string> ValidIPAddresses(string input)
+        public List<string> ValidIpAddresses(string input)
         {
             List<string> ipAddressesFound = new List<string>();
             for (int i = 1; i < Math.Min(input.Length, 4); i++)

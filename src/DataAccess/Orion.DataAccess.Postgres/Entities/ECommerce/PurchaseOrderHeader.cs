@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Purchase Order ID is required")]
         [Display(Name = "Purchase Order ID")]
         [Description("Primary key.")]
-        public int? PurchaseOrderID { get; set; } // int
+        public int? PurchaseOrderId { get; set; } // int
         [Column(name:"RevisionNumber", TypeName = "tinyint")]
         [Required(ErrorMessage = "Revision Number is required")]
         [Display(Name = "Revision Number")]
@@ -34,17 +34,17 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Employee ID is required")]
         [Display(Name = "Employee ID")]
         [Description("Employee who created the purchase order. Foreign key to Employee.BusinessEntityID.")]
-        public int? EmployeeID { get; set; } // int
+        public int? EmployeeId { get; set; } // int
         [Column(name:"VendorID", TypeName = "int")]
         [Required(ErrorMessage = "Vendor ID is required")]
         [Display(Name = "Vendor ID")]
         [Description("Vendor with whom the purchase order is placed. Foreign key to Vendor.BusinessEntityID.")]
-        public int? VendorID { get; set; } // int
+        public int? VendorId { get; set; } // int
         [Column(name:"ShipMethodID", TypeName = "int")]
         [Required(ErrorMessage = "Ship Method ID is required")]
         [Display(Name = "Ship Method ID")]
         [Description("Shipping method. Foreign key to ShipMethod.ShipMethodID.")]
-        public int? ShipMethodID { get; set; } // int
+        public int? ShipMethodId { get; set; } // int
         [Column(name:"OrderDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Order Date is required")]
         [Display(Name = "Order Date")]

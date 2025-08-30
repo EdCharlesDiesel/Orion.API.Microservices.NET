@@ -1,13 +1,13 @@
 ﻿namespace Orion.Helpers.Binary_Search_Tree
 {
-    public class MinHeightBSTClass
+    public class MinHeightBstClass
     {
         // O(nlog(n)) time | O(n) space - where n is the length of the array
-        public static BST MinHeightBst(List<int> array)
+        public static Bst MinHeightBst(List<int> array)
         {
-            return constructMinHeightBst(array, null, 0, array.Count - 1);
+            return ConstructMinHeightBst(array, null, 0, array.Count - 1);
         }
-        public static BST constructMinHeightBst(List<int> array, BST bst, int startIdx,
+        public static Bst ConstructMinHeightBst(List<int> array, Bst bst, int startIdx,
         int endIdx)
         {
             if (endIdx < startIdx) return null;
@@ -15,49 +15,49 @@
             int valueToAdd = array[midIdx];
             if (bst == null)
             {
-                bst = new BST(valueToAdd);
+                bst = new Bst(valueToAdd);
             }
             else
             {
-                bst.insert(valueToAdd);
+                bst.Insert(valueToAdd);
             }
-            constructMinHeightBst(array, bst, startIdx, midIdx - 1);
-            constructMinHeightBst(array, bst, midIdx + 1, endIdx);
+            ConstructMinHeightBst(array, bst, startIdx, midIdx - 1);
+            ConstructMinHeightBst(array, bst, midIdx + 1, endIdx);
             return bst;
         }
-        public class BST
+        public class Bst
         {
-            public int value;
-            public BST left;
-            public BST right;
-            public BST(int value)
+            public int Value;
+            public Bst Left;
+            public Bst Right;
+            public Bst(int value)
             {
-                this.value = value;
-                left = null;
-                right = null;
+                this.Value = value;
+                Left = null;
+                Right = null;
             }
-            public void insert(int value)
+            public void Insert(int value)
             {
-                if (value < this.value)
+                if (value < this.Value)
                 {
-                    if (left == null)
+                    if (Left == null)
                     {
-                        left = new BST(value);
+                        Left = new Bst(value);
                     }
                     else
                     {
-                        left.insert(value);
+                        Left.Insert(value);
                     }
                 }
                 else
                 {
-                    if (right == null)
+                    if (Right == null)
                     {
-                        right = new BST(value);
+                        Right = new Bst(value);
                     }
                     else
                     {
-                        right.insert(value);
+                        Right.Insert(value);
                     }
                 }
             }

@@ -14,11 +14,11 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Job Candidate ID is required")]
         [Display(Name = "Job Candidate ID")]
         [Description("Primary key for JobCandidate records.")]
-        public int? JobCandidateID { get; set; } // int
+        public int? JobCandidateId { get; set; } // int
         [Column(name:"BusinessEntityID", TypeName = "int")]
         [Display(Name = "Business Entity ID")]
         [Description("Employee identification number if applicant was hired. Foreign key to Employee.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         [Column(name:"Resume", TypeName = "xml")]
         [Display(Name = "Resume")]
         [Description("Résumé in XML format.")]

@@ -23,7 +23,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Territory ID is required")]
         [Display(Name = "Territory ID")]
         [Description("Primary key for SalesTerritory records.")]
-        public int? TerritoryID { get; set; } // int
+        public int? TerritoryId { get; set; } // int
         [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]
@@ -49,7 +49,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Sales YTD is required")]
         [Display(Name = "Sales YTD")]
         [Description("Sales in the territory year to date.")]
-        public decimal? SalesYTD { get; set; } // money
+        public decimal? SalesYtd { get; set; } // money
         [Column(name:"SalesLastYear", TypeName = "money")]
         [Required(ErrorMessage = "Sales Last Year is required")]
         [Display(Name = "Sales Last Year")]
@@ -59,7 +59,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Cost YTD is required")]
         [Display(Name = "Cost YTD")]
         [Description("Business costs in the territory year to date.")]
-        public decimal? CostYTD { get; set; } // money
+        public decimal? CostYtd { get; set; } // money
         [Column(name:"CostLastYear", TypeName = "money")]
         [Required(ErrorMessage = "Cost Last Year is required")]
         [Display(Name = "Cost Last Year")]
@@ -69,7 +69,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

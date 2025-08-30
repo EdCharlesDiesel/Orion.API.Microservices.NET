@@ -2,7 +2,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
 {
     public class VAdditionalContactInfo
     {
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         public string FirstName { get; set; } // nvarchar(50)
         public string MiddleName { get; set; } // nvarchar(50)
         public string LastName { get; set; } // nvarchar(50)
@@ -17,7 +17,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         public string EMailAddress { get; set; } // nvarchar(128)
         public string EMailSpecialInstructions { get; set; } // nvarchar(max)
         public string EMailTelephoneNumber { get; set; } // nvarchar(50)
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         public DateTime? ModifiedDate { get; set; } // datetime
     }
 }

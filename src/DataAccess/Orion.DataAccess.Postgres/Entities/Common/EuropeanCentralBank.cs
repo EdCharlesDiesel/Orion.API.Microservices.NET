@@ -2,6 +2,7 @@ namespace Orion.DataAccess.Postgres.Entities.Common;
 
 public class EuropeanCentralBank
 {
+
     public double GDPGrowth;
     public double InflationRate { get; set; }
     public double GdpGrowth { get; set; }

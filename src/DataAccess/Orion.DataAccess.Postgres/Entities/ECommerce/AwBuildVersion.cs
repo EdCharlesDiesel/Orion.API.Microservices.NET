@@ -14,7 +14,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "System Information ID is required")]
         [Display(Name = "System Information ID")]
         [Description("Primary key for AWBuildVersion records.")]
-        public byte? SystemInformationID { get; set; } // tinyint
+        public byte? SystemInformationId { get; set; } // tinyint
         [Column(name: "Database Version", TypeName = "nvarchar")]
         [MaxLength(25)]
         [StringLength(25)]

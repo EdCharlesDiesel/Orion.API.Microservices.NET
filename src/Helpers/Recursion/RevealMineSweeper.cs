@@ -45,11 +45,11 @@
                 return board;
             }
 
-            List<CellLocation> neighbors = getNeighbors(board, row, column);
+            List<CellLocation> neighbors = GetNeighbors(board, row, column);
             int adjacentMinesCount = 0;
             foreach (var neighbor in neighbors)
             {
-                if (board[neighbor.row][neighbor.column].Equals("M"))
+                if (board[neighbor.Row][neighbor.Column].Equals("M"))
                 {
                     adjacentMinesCount++;
                 }
@@ -64,16 +64,16 @@
                 board[row][column] = "0";
                 foreach (var neighbor in neighbors)
                 {
-                    if (board[neighbor.row][neighbor.column].Equals("H"))
+                    if (board[neighbor.Row][neighbor.Column].Equals("H"))
                     {
-                        RevealMineSweeperMethod(board, neighbor.row, neighbor.column);
+                        RevealMineSweeperMethod(board, neighbor.Row, neighbor.Column);
                     }
                 }
             }
             return board;
         }
 
-        private List<CellLocation> getNeighbors(string[][] board, int row, int column)
+        private List<CellLocation> GetNeighbors(string[][] board, int row, int column)
         {
             int[,] directions = new int[8, 2]
             {
@@ -98,13 +98,13 @@
 
     public class CellLocation
     {
-        public int row;
-        public int column;
+        public int Row;
+        public int Column;
 
         public CellLocation(int row, int column)
         {
-            this.row = row;
-            this.column = column;
+            this.Row = row;
+            this.Column = column;
         }
     }
 }

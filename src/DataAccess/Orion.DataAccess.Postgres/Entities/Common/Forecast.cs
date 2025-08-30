@@ -19,10 +19,10 @@ public class Forecast:Entity<Guid>
     public double? ForecastValue2 { get; set; }        // 242.00
     public double? ForecastValue3 { get; set; }        // 232.00
 
-    public DateTime? Q1_Date { get; set; }             // “2023-06-30T00:00:00”
-    public DateTime? Q2_Date { get; set; }             // “2023-09-30T00:00:00”
-    public DateTime? Q3_Date { get; set; }             // “2023-12-31T00:00:00”
-    public DateTime? Q4_Date { get; set; }             // “2024-03-31T00:00:00”
+    public DateTime? Q1Date { get; set; }             // “2023-06-30T00:00:00”
+    public DateTime? Q2Date { get; set; }             // “2023-09-30T00:00:00”
+    public DateTime? Q3Date { get; set; }             // “2023-12-31T00:00:00”
+    public DateTime? Q4Date { get; set; }             // “2024-03-31T00:00:00”
 
     public DateTime? ForecastLastUpdate { get; set; }  // “2024-03-31T00:00:00”
 

@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Product Photo ID is required")]
         [Display(Name = "Product Photo ID")]
         [Description("Primary key for ProductPhoto records.")]
-        public int? ProductPhotoID { get; set; } // int
+        public int? ProductPhotoId { get; set; } // int
         [Column(name:"ThumbNailPhoto", TypeName = "varbinary")]
         [MaxLength]
         [Display(Name = "Thumb Nail Photo")]

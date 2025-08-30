@@ -8,7 +8,7 @@
             bool startsWithPath = path[0] == '/';
             string[] tokensArr = path.Split("/");
             List<string> tokensList = new List<string>(tokensArr);
-            List<string> filteredTokens = tokensList.FindAll(token => isImportantToken(token));
+            List<string> filteredTokens = tokensList.FindAll(token => IsImportantToken(token));
             Stack<string> stack = new Stack<string>();
             if (startsWithPath) stack.Push("");
             foreach (string token in filteredTokens)
@@ -34,7 +34,7 @@
             Array.Reverse(arr);
             return String.Join("/", arr);
         }
-        public static bool isImportantToken(string token)
+        public static bool IsImportantToken(string token)
         {
             return token.Length > 0 && !token.Equals(".");
         }

@@ -4,24 +4,24 @@ public class EvaluateExpressionTreeClass
 {
     public int EvaluateExpressionTree(BinaryTree tree)
     {
-        if (tree.value >=0)
+        if (tree.Value >=0)
         {
-            return tree.value;
+            return tree.Value;
         }
 
-        int leftValue = EvaluateExpressionTree(tree.left);
-        int rightValue = EvaluateExpressionTree(tree.right);
+        int leftValue = EvaluateExpressionTree(tree.Left);
+        int rightValue = EvaluateExpressionTree(tree.Right);
 
-        if (tree.value ==-1) 
+        if (tree.Value ==-1) 
         {
             return leftValue + rightValue;
         }
-        if (tree.value == -2) 
+        if (tree.Value == -2) 
         {
             return leftValue - rightValue;
         }
 
-        if (tree.value == -3) 
+        if (tree.Value == -3) 
         {
             return leftValue / rightValue;
         }
@@ -33,13 +33,13 @@ public class EvaluateExpressionTreeClass
 
     public class BinaryTree
     {
-        public int value;
-        public BinaryTree left = null;
-        public BinaryTree right = null;
+        public int Value;
+        public BinaryTree Left = null;
+        public BinaryTree Right = null;
 
         public BinaryTree(int value)
         {
-            this.value = value;
+            this.Value = value;
         }
     }
 }

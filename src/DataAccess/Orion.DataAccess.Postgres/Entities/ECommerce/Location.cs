@@ -20,7 +20,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Location ID is required")]
         [Display(Name = "Location ID")]
         [Description("Primary key for Location records.")]
-        public short? LocationID { get; set; } // smallint
+        public short? LocationId { get; set; } // smallint
         [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

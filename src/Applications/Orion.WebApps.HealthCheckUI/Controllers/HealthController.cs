@@ -29,7 +29,7 @@ public class HealthController : ControllerBase
     public async Task<IActionResult> Analyze()
     {
         var risky = await _db.HealthRecords
-            .Where(r => r.BMI > 25 || r.HeartRate > 100)
+            .Where(r => r.Bmi > 25 || r.HeartRate > 100)
             .ToListAsync();
 
         return Ok(new { risky.Count, RiskyProfiles = risky });

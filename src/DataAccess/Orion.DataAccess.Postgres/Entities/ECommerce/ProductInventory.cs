@@ -13,13 +13,13 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
-        [Key]
+        public int? ProductId { get; set; } // int
+        // [Key]
         [Column(name:"LocationID", TypeName = "smallint", Order = 2)]
         [Required(ErrorMessage = "Location ID is required")]
         [Display(Name = "Location ID")]
         [Description("Inventory location identification number. Foreign key to Location.LocationID. ")]
-        public short? LocationID { get; set; } // smallint
+        public short? LocationId { get; set; } // smallint
         [Column(name:"Shelf", TypeName = "nvarchar")]
         [MaxLength(10)]
         [StringLength(10)]
@@ -41,7 +41,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

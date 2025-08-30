@@ -21,11 +21,11 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key for SalesPerson records. Foreign key to Employee.BusinessEntityID")]
-        public int? BusinessEntityID { get; set; } // int
+        public int? BusinessEntityId { get; set; } // int
         [Column(name:"TerritoryID", TypeName = "int")]
         [Display(Name = "Territory ID")]
         [Description("Territory currently assigned to. Foreign key to SalesTerritory.SalesTerritoryID.")]
-        public int? TerritoryID { get; set; } // int
+        public int? TerritoryId { get; set; } // int
         [Column(name:"SalesQuota", TypeName = "money")]
         [Display(Name = "Sales Quota")]
         [Description("Projected yearly sales.")]
@@ -44,7 +44,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Sales YTD is required")]
         [Display(Name = "Sales YTD")]
         [Description("Sales total year to date.")]
-        public decimal? SalesYTD { get; set; } // money
+        public decimal? SalesYtd { get; set; } // money
         [Column(name:"SalesLastYear", TypeName = "money")]
         [Required(ErrorMessage = "Sales Last Year is required")]
         [Display(Name = "Sales Last Year")]
@@ -54,7 +54,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? rowguid { get; set; } // uniqueidentifier
+        public Guid? Rowguid { get; set; } // uniqueidentifier
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

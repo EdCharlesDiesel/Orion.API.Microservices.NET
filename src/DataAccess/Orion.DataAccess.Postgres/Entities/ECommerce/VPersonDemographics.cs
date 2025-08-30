@@ -2,8 +2,8 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
 {
     public class VPersonDemographics
     {
-        public int? BusinessEntityID { get; set; } // int
-        public decimal? TotalPurchaseYTD { get; set; } // money
+        public int? BusinessEntityId { get; set; } // int
+        public decimal? TotalPurchaseYtd { get; set; } // money
         public DateTime? DateFirstPurchase { get; set; } // datetime
         public DateTime? BirthDate { get; set; } // datetime
         public string MaritalStatus { get; set; } // nvarchar(1)

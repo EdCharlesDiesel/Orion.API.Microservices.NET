@@ -19,12 +19,12 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Work Order ID is required")]
         [Display(Name = "Work Order ID")]
         [Description("Primary key for WorkOrder records.")]
-        public int? WorkOrderID { get; set; } // int
+        public int? WorkOrderId { get; set; } // int
         [Column(name:"ProductID", TypeName = "int")]
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
+        public int? ProductId { get; set; } // int
         [Column(name:"OrderQty", TypeName = "int")]
         [Required(ErrorMessage = "Order Qty is required")]
         [Display(Name = "Order Qty")]
@@ -58,7 +58,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Column(name:"ScrapReasonID", TypeName = "smallint")]
         [Display(Name = "Scrap Reason ID")]
         [Description("Reason for inspection failure.")]
-        public short? ScrapReasonID { get; set; } // smallint
+        public short? ScrapReasonId { get; set; } // smallint
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

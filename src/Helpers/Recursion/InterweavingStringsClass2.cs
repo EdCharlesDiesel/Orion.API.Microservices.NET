@@ -11,9 +11,9 @@
                 return false;
             }
             bool?[,] cache = new bool?[one.Length + 1, two.Length + 1];
-            return areInterwoven(one, two, three, 0, 0, cache);
+            return AreInterwoven(one, two, three, 0, 0, cache);
         }
-        public static bool areInterwoven(string one, string two, string three, int i, int j, bool?[,] cache)
+        public static bool AreInterwoven(string one, string two, string three, int i, int j, bool?[,] cache)
         {
             if (cache[i, j].HasValue)
             {
@@ -26,7 +26,7 @@
             }
             if (i < one.Length && one[i] == three[k])
             {
-                cache[i, j] = areInterwoven(one, two, three, i + 1, j, cache);
+                cache[i, j] = AreInterwoven(one, two, three, i + 1, j, cache);
                 if (cache[i, j].HasValue && cache[i, j].Value)
                 {
                     return true;
@@ -34,7 +34,7 @@
             }
             if (j < two.Length && two[j] == three[k])
             {
-                cache[i, j] = areInterwoven(one, two, three, i, j + 1, cache);
+                cache[i, j] = AreInterwoven(one, two, three, i, j + 1, cache);
                 return cache[i, j].Value;
             }
             cache[i, j] = false;

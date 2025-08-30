@@ -9,7 +9,7 @@ public class BaseEntityTest
 {
 
     [Fact]
-    public void METHOD()
+    public void Method()
     {
         
     }

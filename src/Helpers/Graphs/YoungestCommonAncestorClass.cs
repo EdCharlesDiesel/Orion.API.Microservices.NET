@@ -27,7 +27,7 @@
             while (descendant != topAncestor)
             {
                 depth++;
-                descendant = descendant.ancestor;
+                descendant = descendant.Ancestor;
             }
             return depth;
         }
@@ -39,26 +39,26 @@
         {
             while (diff > 0)
             {
-                lowerDescendant = lowerDescendant.ancestor;
+                lowerDescendant = lowerDescendant.Ancestor;
                 diff--;
             }
             while (lowerDescendant != higherDescendant)
             {
-                lowerDescendant = lowerDescendant.ancestor;
-                higherDescendant = higherDescendant.ancestor;
+                lowerDescendant = lowerDescendant.Ancestor;
+                higherDescendant = higherDescendant.Ancestor;
             }
             return lowerDescendant;
         }
 
         public abstract class AncestralTree
         {
-            public char name;
-            public AncestralTree ancestor;
+            public char Name;
+            public AncestralTree Ancestor;
 
             protected AncestralTree(char name, AncestralTree ancestor)
             {
-                this.name = name;
-                this.ancestor = ancestor;
+                this.Name = name;
+                this.Ancestor = ancestor;
                 ancestor = null;
             }
             // This method is for testing only.
@@ -66,7 +66,7 @@
             {
                 foreach (AncestralTree descendant in descendants)
                 {
-                    descendant.ancestor = this;
+                    descendant.Ancestor = this;
                 }
             }
         }

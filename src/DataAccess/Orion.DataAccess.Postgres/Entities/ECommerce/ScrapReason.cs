@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Scrap Reason ID is required")]
         [Display(Name = "Scrap Reason ID")]
         [Description("Primary key for ScrapReason records.")]
-        public short? ScrapReasonID { get; set; } // smallint
+        public short? ScrapReasonId { get; set; } // smallint
         [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

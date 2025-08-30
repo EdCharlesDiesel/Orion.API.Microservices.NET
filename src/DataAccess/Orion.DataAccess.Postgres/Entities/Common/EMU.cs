@@ -2,15 +2,15 @@ using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities.Common;
 
-public class EMU :Entity<Guid>
+public class Emu :Entity<Guid>
 {
     public List<Country> MemberStates { get; set; } = new List<Country>();
-    public EuropeanCentralBank ECB { get; set; } = new EuropeanCentralBank();
+    public EuropeanCentralBank Ecb { get; set; } = new EuropeanCentralBank();
 
     public void RunYearlyCycle()
     {
         Console.WriteLine("=== Running EMU Annual Economic Policy Cycle ===");
-        ECB.ApplyMonetaryPolicy();
+        Ecb.ApplyMonetaryPolicy();
 
         foreach (var country in MemberStates)
         {

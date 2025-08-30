@@ -2,23 +2,23 @@
 {
     public class MinHeapConstructionClass
     {
-        public List<int> heap = new List<int>();
+        public List<int> Heap = new List<int>();
         public MinHeapConstructionClass(List<int> array)
         {
-            heap = buildHeap(array);
+            Heap = BuildHeap(array);
         }
         // O(n) time | O(1) space
-        public List<int> buildHeap(List<int> array)
+        public List<int> BuildHeap(List<int> array)
         {
             int firstParentIdx = (array.Count - 2) / 2;
             for (int currentIdx = firstParentIdx; currentIdx >= 0; currentIdx--)
             {
-                siftDown(currentIdx, array.Count - 1, array);
+                SiftDown(currentIdx, array.Count - 1, array);
             }
             return array;
         }
         // O(log(n)) time | O(1) space
-        public void siftDown(int currentIdx, int endIdx, List<int> heap)
+        public void SiftDown(int currentIdx, int endIdx, List<int> heap)
         {
             int childOneIdx = currentIdx * 2 + 1;
             while (childOneIdx <= endIdx)
@@ -36,7 +36,7 @@
                 }
                 if (heap[idxToSwap] < heap[currentIdx])
                 {
-                    swap(currentIdx, idxToSwap, heap);
+                    Swap(currentIdx, idxToSwap, heap);
                     currentIdx = idxToSwap;
                     childOneIdx = currentIdx * 2 + 1;
                 }
@@ -48,34 +48,34 @@
         }
 
         // O(log(n)) time | O(1) space
-        public void siftUp(int currentIdx, List<int> heap)
+        public void SiftUp(int currentIdx, List<int> heap)
         {
             int parentIdx = (currentIdx - 1) / 2;
             while (currentIdx > 0 && heap[currentIdx] < heap[parentIdx])
             {
-                swap(currentIdx, parentIdx, heap);
+                Swap(currentIdx, parentIdx, heap);
                 currentIdx = parentIdx;
                 parentIdx = (currentIdx - 1) / 2;
             }
         }
         public int Peek()
         {
-            return heap[0];
+            return Heap[0];
         }
         public int Remove()
         {
-            swap(0, heap.Count - 1, heap);
-            int valueToRemove = heap[heap.Count - 1];
-            heap.RemoveAt(heap.Count - 1);
-            siftDown(0, heap.Count - 1, heap);
+            Swap(0, Heap.Count - 1, Heap);
+            int valueToRemove = Heap[Heap.Count - 1];
+            Heap.RemoveAt(Heap.Count - 1);
+            SiftDown(0, Heap.Count - 1, Heap);
             return valueToRemove;
         }
         public void Insert(int value)
         {
-            heap.Add(value);
-            siftUp(heap.Count - 1, heap);
+            Heap.Add(value);
+            SiftUp(Heap.Count - 1, Heap);
         }
-        public void swap(int i, int j, List<int> heap)
+        public void Swap(int i, int j, List<int> heap)
         {
             int temp = heap[j];
             heap[j] = heap[i];

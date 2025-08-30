@@ -15,18 +15,18 @@
         public static OrgChart GetLowestCommonManager(OrgChart topManager,OrgChart reportOne,
             OrgChart reportTwo)
         {
-            return getOrgInfo(topManager, reportOne, reportTwo).lowerCommonManager;
+            return GetOrgInfo(topManager, reportOne, reportTwo).LowerCommonManager;
         }
 
-        public static OrgInfo getOrgInfo(OrgChart manager, OrgChart reportOne, OrgChart reportTwo)
+        public static OrgInfo GetOrgInfo(OrgChart manager, OrgChart reportOne, OrgChart reportTwo)
         {
             int numImportantReports = 0;
-            foreach (OrgChart directReport in manager.directReports)
+            foreach (OrgChart directReport in manager.DirectReports)
             {
-                OrgInfo orgInfo = getOrgInfo(directReport, reportOne, reportTwo);
-                if (orgInfo.lowerCommonManager != null) return orgInfo;
+                OrgInfo orgInfo = GetOrgInfo(directReport, reportOne, reportTwo);
+                if (orgInfo.LowerCommonManager != null) return orgInfo;
 
-                numImportantReports += orgInfo.numImportantReports;
+                numImportantReports += orgInfo.NumImportantReports;
             }
 
             if (manager == reportOne || manager == reportTwo) {
@@ -42,33 +42,33 @@
 
         public class OrgChart
         {
-            public char name;
-            public List<OrgChart> directReports;
+            public char Name;
+            public List<OrgChart> DirectReports;
 
             public OrgChart(char name)
             {
-                this.name = name;
-                directReports = new List<OrgChart>();
+                this.Name = name;
+                DirectReports = new List<OrgChart>();
             }
 
-            public void addDirectReports(OrgChart[] directReports)
+            public void AddDirectReports(OrgChart[] directReports)
             {
                 foreach (OrgChart directReport in directReports)
                 {
-                    this.directReports.Add(directReport);
+                    this.DirectReports.Add(directReport);
                 }
             }
         }
 
         public class OrgInfo
         {
-            public OrgChart lowerCommonManager;
-            public int numImportantReports;
+            public OrgChart LowerCommonManager;
+            public int NumImportantReports;
 
             public OrgInfo(OrgChart lowerCommonManager, int numImportReport)
             {
-                this.lowerCommonManager = lowerCommonManager;
-                numImportantReports = numImportReport;
+                this.LowerCommonManager = lowerCommonManager;
+                NumImportantReports = numImportReport;
             }
         }
     }    

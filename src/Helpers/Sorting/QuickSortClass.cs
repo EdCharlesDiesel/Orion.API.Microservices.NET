@@ -24,7 +24,7 @@ namespace Orion.Helpers.Sorting
             {
                 if (array[leftIdx] > array[pivotIdx] && array[rightIdx] < array[pivotIdx])
                 {
-                    swap(leftIdx, rightIdx, array);
+                    Swap(leftIdx, rightIdx, array);
                 }
                 if (array[leftIdx] <= array[pivotIdx])
                 {
@@ -35,7 +35,7 @@ namespace Orion.Helpers.Sorting
                     rightIdx -= 1;
                 }
             }
-            swap(pivotIdx, rightIdx, array);
+            Swap(pivotIdx, rightIdx, array);
             bool leftSubarrayIsSmaller = rightIdx - 1 - startIdx < endIdx - (rightIdx + 1);
             if (leftSubarrayIsSmaller)
             {
@@ -48,7 +48,7 @@ namespace Orion.Helpers.Sorting
                 QuickSort(array, startIdx, rightIdx - 1);
             }
         }
-        public static void swap(int i, int j, int[] array)
+        public static void Swap(int i, int j, int[] array)
         {
             int temp = array[j];
             array[j] = array[i];

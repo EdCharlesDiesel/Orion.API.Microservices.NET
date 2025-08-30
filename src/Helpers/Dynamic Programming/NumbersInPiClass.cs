@@ -11,10 +11,10 @@
                 numbersTable.Add(number);
             }
             Dictionary<int, int> cache = new Dictionary<int, int>();
-            int minSpaces = getMinSpaces(pi, numbersTable, cache, 0);
+            int minSpaces = GetMinSpaces(pi, numbersTable, cache, 0);
             return minSpaces == Int32.MaxValue ? -1 : minSpaces;
         }
-        public static int getMinSpaces(string pi,HashSet<string> numbersTable,Dictionary<int, int> cache, int idx)
+        public static int GetMinSpaces(string pi,HashSet<string> numbersTable,Dictionary<int, int> cache, int idx)
         {
             if (idx == pi.Length) return -1;
             if (cache.ContainsKey(idx)) return cache[idx];
@@ -25,7 +25,7 @@
                 if (numbersTable.Contains(prefix))
                 {
                     int minSpacesInSuffix =
-                    getMinSpaces(pi, numbersTable, cache, i + 1);
+                    GetMinSpaces(pi, numbersTable, cache, i + 1);
                     // Handle int overflow.
                     if (minSpacesInSuffix == Int32.MaxValue)
                     {

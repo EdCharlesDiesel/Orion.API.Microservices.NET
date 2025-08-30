@@ -2,31 +2,31 @@
 {
     public abstract class BoggleBoardClass
     {
-        public static void explore(int i, int j, char[,] board, TrieNode trieNode, bool[,] visited,HashSet<string> finalWords)
+        public static void Explore(int i, int j, char[,] board, TrieNode trieNode, bool[,] visited,HashSet<string> finalWords)
         {
             if (visited[i, j])
             {
                 return;
             }
             char letter = board[i, j];
-            if (!trieNode.children.ContainsKey(letter))
+            if (!trieNode.Children.ContainsKey(letter))
             {
                 return;
             }
             visited[i, j] = true;
-            trieNode = trieNode.children[letter];
-            if (trieNode.children.ContainsKey('*'))
+            trieNode = trieNode.Children[letter];
+            if (trieNode.Children.ContainsKey('*'))
             {
-                finalWords.Add(trieNode.word);
+                finalWords.Add(trieNode.Word);
             }
-            List<int[]> neighbors = getNeighbors(i, j, board);
+            List<int[]> neighbors = GetNeighbors(i, j, board);
             foreach (int[] neighbor in neighbors)
             {
-                explore(neighbor[0], neighbor[1], board, trieNode, visited, finalWords);
+                Explore(neighbor[0], neighbor[1], board, trieNode, visited, finalWords);
             }
             visited[i, j] = false;
         }
-        public static List<int[]> getNeighbors(int i, int j, char[,] board)
+        public static List<int[]> GetNeighbors(int i, int j, char[,] board)
         {
             List<int[]> neighbors = new List<int[]>();
             if (i > 0 && j > 0)
@@ -72,33 +72,33 @@
 
     public class TrieNode
     {
-        public Dictionary<char, TrieNode> children = new Dictionary<char, TrieNode>();
-        public string word = "";
+        public Dictionary<char, TrieNode> Children = new Dictionary<char, TrieNode>();
+        public string Word = "";
     }
     public class Trie
     {
-        public TrieNode root;
-        public char endSymbol;
+        public TrieNode Root;
+        public char EndSymbol;
         public Trie()
         {
-            root = new TrieNode();
-            endSymbol = '*';
+            Root = new TrieNode();
+            EndSymbol = '*';
         }
         public void Add(string str)
         {
-            TrieNode node = root;
+            TrieNode node = Root;
             for (int i = 0; i < str.Length; i++)
             {
                 char letter = str[i];
-                if (!node.children.ContainsKey(letter))
+                if (!node.Children.ContainsKey(letter))
                 {
                     TrieNode newNode = new TrieNode();
-                    node.children.Add(letter, newNode);
+                    node.Children.Add(letter, newNode);
                 }
-                node = node.children[letter];
+                node = node.Children[letter];
             }
-            node.children[endSymbol] = null;
-            node.word = str;
+            node.Children[EndSymbol] = null;
+            node.Word = str;
         }
     }
 }

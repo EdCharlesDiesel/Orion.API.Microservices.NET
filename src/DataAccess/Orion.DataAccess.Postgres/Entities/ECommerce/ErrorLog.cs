@@ -14,7 +14,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Error Log ID is required")]
         [Display(Name = "Error Log ID")]
         [Description("Primary key for ErrorLog records.")]
-        public int? ErrorLogID { get; set; } // int
+        public int? ErrorLogId { get; set; } // int
         [Column(name:"ErrorTime", TypeName = "datetime")]
         [Required(ErrorMessage = "Error Time is required")]
         [Display(Name = "Error Time")]

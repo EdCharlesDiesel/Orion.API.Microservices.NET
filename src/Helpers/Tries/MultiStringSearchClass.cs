@@ -8,11 +8,11 @@
             List<bool> solution = new List<bool>();
             foreach (string smallstring in smallstrings)
             {
-                solution.Add(isInBigstring(bigstring, smallstring));
+                solution.Add(IsInBigstring(bigstring, smallstring));
             }
             return solution;
         }
-        public static bool isInBigstring(string bigstring, string smallstring)
+        public static bool IsInBigstring(string bigstring, string smallstring)
         {
             for (int i = 0; i < bigstring.Length; i++)
             {
@@ -20,14 +20,14 @@
                 {
                     break;
                 }
-                if (isInBigstring(bigstring, smallstring, i))
+                if (IsInBigstring(bigstring, smallstring, i))
                 {
                     return true;
                 }
             }
             return false;
         }
-        public static bool isInBigstring(string bigstring, string smallstring, int startIdx)
+        public static bool IsInBigstring(string bigstring, string smallstring, int startIdx)
         {
             int leftBigIdx = startIdx;
             int rightBigIdx = startIdx + smallstring.Length - 1;

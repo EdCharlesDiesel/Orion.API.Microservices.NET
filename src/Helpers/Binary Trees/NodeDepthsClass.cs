@@ -33,8 +33,7 @@ namespace Orion.Helpers.Binary_Trees
         // Binary tree node
         public class BinaryTree
         {
-            public BinaryTree left;
-            public BinaryTree right;
+
             public int Value { get; set; }
             public BinaryTree Left { get; set; }
             public BinaryTree Right { get; set; }

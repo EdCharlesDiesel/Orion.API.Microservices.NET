@@ -13,13 +13,13 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Business entity identification number. Foreign key to Person.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
-        [Key]
+        public int? BusinessEntityId { get; set; } // int
+        // [Key]
         [Column(name:"CreditCardID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Credit Card ID is required")]
         [Display(Name = "Credit Card ID")]
         [Description("Credit card identification number. Foreign key to CreditCard.CreditCardID.")]
-        public int? CreditCardID { get; set; } // int
+        public int? CreditCardId { get; set; } // int
         [Column(name:"ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

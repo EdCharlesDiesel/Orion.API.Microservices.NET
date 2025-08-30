@@ -19,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Department ID is required")]
         [Display(Name = "Department ID")]
         [Description("Primary key for Department records.")]
-        public short? DepartmentID { get; set; } // smallint
+        public short? DepartmentId { get; set; } // smallint
         [Column(name:"Name", TypeName = "nvarchar")]
         [MaxLength(50)]
         [StringLength(50)]

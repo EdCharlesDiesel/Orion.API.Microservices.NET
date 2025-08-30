@@ -9,22 +9,22 @@
             {
                 return;
             }
-            swapLeftAndRight(tree);
-            InvertBinaryTree(tree.left);
-            InvertBinaryTree(tree.right);
+            SwapLeftAndRight(tree);
+            InvertBinaryTree(tree.Left);
+            InvertBinaryTree(tree.Right);
         }
-        private static void swapLeftAndRight(BinaryTree tree)
+        private static void SwapLeftAndRight(BinaryTree tree)
         {
-            (tree.left, tree.right) = (tree.right, tree.left);
+            (tree.Left, tree.Right) = (tree.Right, tree.Left);
         }
         public class BinaryTree
         {
-            public int value;
-            public BinaryTree left;
-            public BinaryTree right;
+            public int Value;
+            public BinaryTree Left;
+            public BinaryTree Right;
             public BinaryTree(int value)
             {
-                this.value = value;
+                this.Value = value;
             }
         }
     }

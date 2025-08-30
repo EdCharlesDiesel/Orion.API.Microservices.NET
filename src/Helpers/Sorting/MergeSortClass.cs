@@ -14,9 +14,9 @@
             int middleIdx = array.Length / 2;
             int[] leftHalf = array.Take(middleIdx).ToArray();
             int[] rightHalf = array.Skip(middleIdx).ToArray();
-            return mergeSortedArrays(MergeSort(leftHalf), MergeSort(rightHalf));
+            return MergeSortedArrays(MergeSort(leftHalf), MergeSort(rightHalf));
         }
-        public static int[] mergeSortedArrays(int[] leftHalf, int[] rightHalf)
+        public static int[] MergeSortedArrays(int[] leftHalf, int[] rightHalf)
         {
             int[] sortedArray = new int[leftHalf.Length + rightHalf.Length];
             int k = 0;

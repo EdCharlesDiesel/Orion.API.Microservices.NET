@@ -29,7 +29,7 @@
         /// </summary>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public int HOME_TEAM_WON = 1;
+        public int HomeTeamWon = 1;
 
         public string TournamentWinner(List<List<string>> competitions, List<int> results)
         {
@@ -45,9 +45,9 @@
                 var homeTeam = competition[0];
                 var awayTeam = competition[1];
 
-                string winingTeam = (result == HOME_TEAM_WON) ? homeTeam : awayTeam;
+                string winingTeam = (result == HomeTeamWon) ? homeTeam : awayTeam;
 
-                updateScores(winingTeam, 3, scores);
+                UpdateScores(winingTeam, 3, scores);
 
                 if (scores[winingTeam] > scores[currentBestTeam])
                 {
@@ -58,7 +58,7 @@
             return currentBestTeam;
         }
 
-        private void updateScores(string winingTeam, int points, Dictionary<string, int> scores)
+        private void UpdateScores(string winingTeam, int points, Dictionary<string, int> scores)
         {
             if (!scores.ContainsKey(winingTeam))
             {

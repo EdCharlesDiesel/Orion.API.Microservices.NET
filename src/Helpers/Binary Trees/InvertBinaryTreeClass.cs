@@ -16,31 +16,31 @@
                 {
                     continue;
                 }
-                swapLeftAndRight(current);
-                if (current.left != null)
+                SwapLeftAndRight(current);
+                if (current.Left != null)
                 {
-                    queue.Add(current.left);
+                    queue.Add(current.Left);
                 }
-                if (current.right != null)
+                if (current.Right != null)
                 {
-                    queue.Add(current.right);
+                    queue.Add(current.Right);
                 }
             }
         }
-        private static void swapLeftAndRight(BinaryTree tree)
+        private static void SwapLeftAndRight(BinaryTree tree)
         {
-            BinaryTree left = tree.left;
-            tree.left = tree.right;
-            tree.right = left;
+            BinaryTree left = tree.Left;
+            tree.Left = tree.Right;
+            tree.Right = left;
         }
         public class BinaryTree
         {
-            public int value;
-            public BinaryTree left;
-            public BinaryTree right;
+            public int Value;
+            public BinaryTree Left;
+            public BinaryTree Right;
             public BinaryTree(int value)
             {
-                this.value = value;
+                this.Value = value;
             }
         }
     }

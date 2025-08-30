@@ -12,16 +12,16 @@ namespace Orion.API.TradingEconomics.Controllers;
         [HttpGet("simulate")]
         public IActionResult SimulateEmuCycle()
         {
-            var emu = new EMU();
+            var emu = new Emu();
 
             // Add member countries
-            emu.MemberStates.Add(new Country { Name = "Germany", BudgetDeficit = 2.5, DebtToGDP = 58, NeedsMonetaryFlexibility = false });
-            emu.MemberStates.Add(new Country { Name = "France", BudgetDeficit = 3.8, DebtToGDP = 65, NeedsMonetaryFlexibility = true });
-            emu.MemberStates.Add(new Country { Name = "Italy", BudgetDeficit = 4.2, DebtToGDP = 75, NeedsMonetaryFlexibility = true });
+            emu.MemberStates.Add(new Country { Name = "Germany", BudgetDeficit = 2.5, DebtToGdp = 58, NeedsMonetaryFlexibility = false });
+            emu.MemberStates.Add(new Country { Name = "France", BudgetDeficit = 3.8, DebtToGdp = 65, NeedsMonetaryFlexibility = true });
+            emu.MemberStates.Add(new Country { Name = "Italy", BudgetDeficit = 4.2, DebtToGdp = 75, NeedsMonetaryFlexibility = true });
 
             // ECB economic indicators
-            emu.ECB.InflationRate = 2.3;
-            emu.ECB.GDPGrowth = 0.9;
+            emu.Ecb.InflationRate = 2.3;
+            emu.Ecb.GDPGrowth = 0.9;
 
             // Simulate EMU
             emu.RunYearlyCycle();

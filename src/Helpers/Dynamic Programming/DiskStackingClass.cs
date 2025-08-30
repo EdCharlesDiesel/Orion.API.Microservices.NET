@@ -23,7 +23,7 @@
                 for (int j = 0; j < i; j++)
                 {
                     int[] otherDisk = disks[j];
-                    if (areValidDimensions(otherDisk, currentDisk))
+                    if (AreValidDimensions(otherDisk, currentDisk))
                     {
                         if (heights[i] <= currentDisk[2] + heights[j])
                         {
@@ -37,13 +37,13 @@
                     maxHeightIdx = i;
                 }
             }
-            return buildSequence(disks, sequences, maxHeightIdx);
+            return BuildSequence(disks, sequences, maxHeightIdx);
         }
-        public static bool areValidDimensions(int[] o, int[] c)
+        public static bool AreValidDimensions(int[] o, int[] c)
         {
             return o[0] < c[0] && o[1] < c[1] && o[2] < c[2];
         }
-        public static List<int[]> buildSequence(List<int[]> array, int[] sequences,
+        public static List<int[]> BuildSequence(List<int[]> array, int[] sequences,
         int currentIdx)
         {
             List<int[]> sequence = new List<int[]>();

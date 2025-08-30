@@ -4,29 +4,29 @@
     {
         public class BinaryTree
         {
-            public int value;
-            public BinaryTree left;
-            public BinaryTree right;
+            public int Value;
+            public BinaryTree Left;
+            public BinaryTree Right;
             public BinaryTree(int value)
             {
-                this.value = value;
-                left = null;
-                right = null;
+                this.Value = value;
+                Left = null;
+                Right = null;
             }
         }
         public static List<int> BranchSums(BinaryTree root)
         {
             List<int> sums = new List<int>();
-            calculateBranchSums(root, 0, sums);
+            CalculateBranchSums(root, 0, sums);
             return sums;
         }
 
-        public static void calculateBranchSums(
+        public static void CalculateBranchSums(
             BinaryTree node, int runningSum, List<int> sums)
         {
             if (node == null) return;
-            int newRunningSum = runningSum + node.value;
-            if (node.left == null && node.right == null)
+            int newRunningSum = runningSum + node.Value;
+            if (node.Left == null && node.Right == null)
             {
                 sums.Add(newRunningSum);
             }

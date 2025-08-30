@@ -4,7 +4,7 @@
     {
         // O(w * n * log(n) + n * w * log(w)) time | O(wn) space - where w is the numbe
         // n is the length of the longest word
-        public static List<List<string>> groupAnagrams(List<string> words)
+        public static List<List<string>> GroupAnagrams(List<string> words)
         {
             if (words.Count == 0) return new List<List<string>>();
             List<string> sortedWords = new List<string>();

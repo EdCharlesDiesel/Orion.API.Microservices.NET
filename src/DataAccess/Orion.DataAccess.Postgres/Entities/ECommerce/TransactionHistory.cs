@@ -14,22 +14,22 @@ namespace Orion.DataAccess.Postgres.Entities.ECommerce
         [Required(ErrorMessage = "Transaction ID is required")]
         [Display(Name = "Transaction ID")]
         [Description("Primary key for TransactionHistory records.")]
-        public int? TransactionID { get; set; } // int
+        public int? TransactionId { get; set; } // int
         [Column(name:"ProductID", TypeName = "int")]
         [Required(ErrorMessage = "Product ID is required")]
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
-        public int? ProductID { get; set; } // int
+        public int? ProductId { get; set; } // int
         [Column(name:"ReferenceOrderID", TypeName = "int")]
         [Required(ErrorMessage = "Reference Order ID is required")]
         [Display(Name = "Reference Order ID")]
         [Description("Purchase order, sales order, or work order identification number.")]
-        public int? ReferenceOrderID { get; set; } // int
+        public int? ReferenceOrderId { get; set; } // int
         [Column(name:"ReferenceOrderLineID", TypeName = "int")]
         [Required(ErrorMessage = "Reference Order Line ID is required")]
         [Display(Name = "Reference Order Line ID")]
         [Description("Line number associated with the purchase order, sales order, or work order.")]
-        public int? ReferenceOrderLineID { get; set; } // int
+        public int? ReferenceOrderLineId { get; set; } // int
         [Column(name:"TransactionDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Transaction Date is required")]
         [Display(Name = "Transaction Date")]

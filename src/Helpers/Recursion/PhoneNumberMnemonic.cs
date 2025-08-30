@@ -25,7 +25,7 @@
     /// </summary>
     public static class PhoneNumberMnemonic
     {
-        public static Dictionary<char, string[]> DIGIT_LETTERS = new Dictionary<char, string[]>
+        public static Dictionary<char, string[]> DigitLetters = new Dictionary<char, string[]>
         {
             {'0', new[]{"0"}},
             {'1', new[]{"1"}},
@@ -62,7 +62,7 @@
             else
             {
                 char digit = phoneNumber[index];
-                string[] letters = DIGIT_LETTERS[digit];
+                string[] letters = DigitLetters[digit];
 
                 foreach (string letter in letters)
                 {
