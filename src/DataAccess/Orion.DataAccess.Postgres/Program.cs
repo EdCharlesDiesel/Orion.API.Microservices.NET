@@ -16,11 +16,11 @@ var app = builder.Build();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // register DbContext with PostgreSQL
-// builder.Services.AddDbContext<OrionDbContext>(options =>
-//     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 builder.Services.AddDbContext<OrionDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// builder.Services.AddDbContext<OrionDbContext>(options =>
+//     options.UseSqlServer(builder.Configuration.GetConnectionString(connectionString)));
 
 
 

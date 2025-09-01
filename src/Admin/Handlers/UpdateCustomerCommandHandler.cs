@@ -19,24 +19,25 @@ namespace Orion.Admin.Handlers
         // FIXME HandleAsync(UpdateCustomerCommand command)
         public async Task HandleAsync(UpdateCustomerCommand command)
         {
-            bool done = false;
-            ICustomer model = null;
-            while (!done)
-            {
-                try
-                {
-                    model = await repo.Get(command.Updates.Id);
-                    if (model == null) return;
-                    model.FullUpdate(command.Updates);
-                    await mediator.TriggerEvents(model.DomainEvents);
-                    await repo.UnitOfWork.SaveEntitiesAsync();
-                    done = true;
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-
-                }
-            }
+            // bool done = false;
+            // ICustomer model = null;
+            // while (!done)
+            // {
+            //     try
+            //     {
+            //         model = await repo.Get(command.Updates.Id);
+            //         if (model == null) return;
+            //         model.FullUpdate(command.Updates);
+            //         await mediator.TriggerEvents(model.DomainEvents);
+            //         await repo.UnitOfWork.SaveEntitiesAsync();
+            //         done = true;
+            //     }
+            //     catch (DbUpdateConcurrencyException)
+            //     {
+            //
+            //     }
+            // }
+            throw new NotImplementedException();
         }
     }
 }

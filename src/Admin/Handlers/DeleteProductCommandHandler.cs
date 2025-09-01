@@ -16,10 +16,10 @@ namespace Orion.Admin.Handlers
         }
         public async Task HandleAsync(DeleteProductCommand command)
         {
-            var deleted = await repo.Delete(command.ProductId);
-            if (deleted != null)
-                await mediator.TriggerEvents(deleted.DomainEvents);
-            await repo.UnitOfWork.SaveEntitiesAsync();
+            // var deleted = await repo.Delete(command.ProductId);
+            // if (deleted != null)
+            //     await mediator.TriggerEvents(deleted.DomainEvents);
+            // await repo.UnitOfWork.SaveEntitiesAsync();
         }
     }
 }

@@ -32,12 +32,6 @@
               },
               "C:\\x\\Orion.Microservices.NET\\src\\Domain\\Orion.Domain\\Orion.Domain.csproj": {
                 "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Domain\\Orion.Domain\\Orion.Domain.csproj"
-              },
-              "C:\\x\\Orion.Microservices.NET\\src\\ORION.DataAccess\\ORION.DataAccess.csproj": {
-                "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\ORION.DataAccess\\ORION.DataAccess.csproj"
-              },
-              "C:\\x\\Orion.Microservices.NET\\src\\ORION.Domain\\ORION.Domain.csproj": {
-                "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\ORION.Domain\\ORION.Domain.csproj"
               }
             }
           }
@@ -130,10 +124,8 @@
               "version": "[9.0.7, )"
             },
             "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.7, )",
-              "autoReferenced": true
+              "version": "[9.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -145,11 +137,27 @@
               "target": "Package",
               "version": "[9.0.7, )"
             },
-            "Microsoft.NET.ILLink.Tasks": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.7, )",
-              "autoReferenced": true
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.SqlServer.Types": {
+              "target": "Package",
+              "version": "[160.1000.6, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -170,7 +178,7 @@
           "downloadDependencies": [
             {
               "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[9.0.7, 9.0.7]"
+              "version": "[9.0.8, 9.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -226,13 +234,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "FastEndpoints": {
-              "target": "Package",
-              "version": "[6.2.0, )"
-            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",

@@ -42,6 +42,7 @@ namespace Orion.Admin.Controllers
             int id,
             [FromServices] IEmployeeRepository repo)
         {
+            throw new NotImplementedException();
             // if (id == 0) return RedirectToAction(
             //     nameof(Index));
             // var aggregate = await repo.Get(id);

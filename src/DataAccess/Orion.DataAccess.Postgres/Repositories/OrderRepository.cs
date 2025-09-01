@@ -120,5 +120,7 @@ namespace Orion.DataAccess.Postgres.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public object UnitOfWork { get; set; }
     }
 }

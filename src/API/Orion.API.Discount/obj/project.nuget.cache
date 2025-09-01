@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "h4+rCx2VMuk=",
-  "success": true,
+  "dgSpecHash": "LKQnPJynpuw=",
+  "success": false,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Discount\\Orion.API.Discount.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -20,18 +20,19 @@
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.7\\microsoft.entityframeworkcore.analyzers.9.0.7.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.7\\microsoft.entityframeworkcore.relational.9.0.7.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\9.0.7\\microsoft.entityframeworkcore.sqlserver.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver.nettopologysuite\\9.0.8\\microsoft.entityframeworkcore.sqlserver.nettopologysuite.9.0.8.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.7\\microsoft.extensions.caching.abstractions.9.0.7.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.7\\microsoft.extensions.caching.memory.9.0.7.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.7\\microsoft.extensions.configuration.abstractions.9.0.7.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.7\\microsoft.extensions.dependencyinjection.9.0.7.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.7\\microsoft.extensions.dependencyinjection.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.8\\microsoft.extensions.caching.abstractions.9.0.8.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.8\\microsoft.extensions.caching.memory.9.0.8.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.8\\microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.8\\microsoft.extensions.dependencyinjection.9.0.8.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.8\\microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.identity.core\\9.0.7\\microsoft.extensions.identity.core.9.0.7.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.identity.stores\\9.0.7\\microsoft.extensions.identity.stores.9.0.7.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.logging\\9.0.7\\microsoft.extensions.logging.9.0.7.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.7\\microsoft.extensions.logging.abstractions.9.0.7.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.options\\9.0.7\\microsoft.extensions.options.9.0.7.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.7\\microsoft.extensions.primitives.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.logging\\9.0.8\\microsoft.extensions.logging.9.0.8.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.8\\microsoft.extensions.logging.abstractions.9.0.8.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.options\\9.0.8\\microsoft.extensions.options.9.0.8.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.8\\microsoft.extensions.primitives.9.0.8.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.identity.client\\4.61.3\\microsoft.identity.client.4.61.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.61.3\\microsoft.identity.client.extensions.msal.4.61.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
@@ -48,6 +49,8 @@
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.sqlserver.types\\160.1000.6\\microsoft.sqlserver.types.160.1000.6.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\nettopologysuite\\2.5.0\\nettopologysuite.2.5.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\nettopologysuite.io.sqlserverbytes\\2.1.0\\nettopologysuite.io.sqlserverbytes.2.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
@@ -59,7 +62,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.formats.asn1\\9.0.7\\system.formats.asn1.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.formats.asn1\\9.0.8\\system.formats.asn1.9.0.8.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
@@ -76,9 +79,21 @@
     "C:\\Users\\PC\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.text.json\\9.0.7\\system.text.json.9.0.7.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.text.json\\9.0.8\\system.text.json.9.0.8.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore.SqlServer from 9.0.8 to 9.0.7. Reference the package directly from the project to select a different version. \r\n Orion.API.Discount -> Orion.DataAccess.Postgres -> Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite 9.0.8 -> Microsoft.EntityFrameworkCore.SqlServer (>= 9.0.8) \r\n Orion.API.Discount -> Orion.DataAccess.Postgres -> Microsoft.EntityFrameworkCore.SqlServer (>= 9.0.7)",
+      "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Discount\\Orion.API.Discount.csproj",
+      "filePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Discount\\Orion.API.Discount.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

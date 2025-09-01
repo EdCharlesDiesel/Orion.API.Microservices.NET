@@ -8,5 +8,6 @@ namespace Orion.Domain.IRepositories
         Task<IOrder> Get(int id);
         IOrder New();
         Task Delete(int orderId);
+        object UnitOfWork { get; set; }
     }
 }

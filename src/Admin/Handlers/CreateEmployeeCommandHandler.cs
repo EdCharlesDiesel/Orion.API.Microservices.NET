@@ -14,9 +14,10 @@ namespace Orion.Admin.Handlers
         // FIXME HandleAsync(CreateEmployeeCommand 
         public async Task  HandleAsync(CreateEmployeeCommand command)
         {
-            var model= repo.New();
-            model.FullUpdate(command.Values);
-            await repo.UnitOfWork.SaveEntitiesAsync();
+            // var model= repo.New();
+            // model.FullUpdate(command.Values);
+            // await repo.UnitOfWork.SaveEntitiesAsync();
+            throw new NotImplementedException();
         }
     }
 }

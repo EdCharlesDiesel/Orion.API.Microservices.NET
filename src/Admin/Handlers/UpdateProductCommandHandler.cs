@@ -1,4 +1,5 @@
-﻿using Orion.Admin.Commands;
+﻿using Microsoft.EntityFrameworkCore;
+using Orion.Admin.Commands;
 using Orion.Admin.Tools;
 using Orion.Domain.Aggregates;
 using Orion.Domain.IRepositories;
@@ -17,24 +18,24 @@ namespace Orion.Admin.Handlers
         }
         public async Task HandleAsync(UpdateProductCommand command)
         {
-            bool done = false;
-            IProduct? model = null;
-            while (!done)
-            {
-                try
-                {
-                    model = await repo.Get(command.Updates.Id);
-                    if (model == null) return;
-                    model.FullUpdate(command.Updates);
-                    await mediator.TriggerEvents(model.DomainEvents);
-                    await repo.UnitOfWork.SaveEntitiesAsync();
-                    done = true;
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-
-                }
-            }
+            // bool done = false;
+            // IProduct? model = null;
+            // while (!done)
+            // {
+            //     try
+            //     {
+            //         model = await repo.Get(command.Updates.Id);
+            //         if (model == null) return;
+            //         model.FullUpdate(command.Updates);
+            //         await mediator.TriggerEvents(model.DomainEvents);
+            //         await repo.UnitOfWork.SaveEntitiesAsync();
+            //         done = true;
+            //     }
+            //     catch (DbUpdateConcurrencyException)
+            //     {
+            //
+            //     }
+            // }
         }
     }
 }

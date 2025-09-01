@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Orion.DataAccess.Postgres.Entities.ECommerce;
 using Orion.Domain.Aggregates;
 using Orion.Domain.Enums;
 using Orion.Domain.Tools;

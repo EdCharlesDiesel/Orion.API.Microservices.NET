@@ -15,9 +15,10 @@ namespace Orion.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Index([FromServices] IProductsListQuery query)
         {
-            var results = await query.GetAllProducts();
-            var vm = new ProductsListViewModel { Items = results };
-            return View(vm);
+            // var results = await query.GetAllProducts();
+            // var vm = new ProductsListViewModel { Items = results };
+            // return View(vm);
+            throw new NotImplementedException();
         }
         
         [HttpGet]
@@ -76,13 +77,14 @@ namespace Orion.Admin.Controllers
             int id,
             [FromServices] IProductRepository repo)
         {
-            if (id == 0) return RedirectToAction(
-                nameof(Index));
-            var aggregate = await repo.Get(id);
-            if (aggregate == null) return RedirectToAction(
-                nameof(Index));
-            var vm = new ProductFullEditViewModel(aggregate);
-            return View(vm);
+            // if (id == 0) return RedirectToAction(
+            //     nameof(Index));
+            // var aggregate = await repo.Get(id);
+            // if (aggregate == null) return RedirectToAction(
+            //     nameof(Index));
+            // var vm = new ProductFullEditViewModel(aggregate);
+            // return View(vm);
+            throw new NotImplementedException();
         }
         [HttpPost]
         public async Task<IActionResult> Edit(

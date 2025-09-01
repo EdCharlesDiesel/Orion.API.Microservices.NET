@@ -97,41 +97,43 @@ namespace Orion.Admin.Controllers
         private List<ClaimViewModel> GetAllClaims()
         {
 
-            var users = (from temp in _Context.Users
-                         select temp);
-
-            Dictionary<string, string> usersDictionary = new Dictionary<string, string>();
-
-            foreach(var usr in users)
-            {
-                usersDictionary.Add(usr.Id.ToString(), usr.UserName);
-            }
-
-            Dictionary<string, string> businessOwnersDictionary = new Dictionary<string, string>();
-
-            foreach (var businessOwner in _BusinessOwnerService.GetBusinessOwners())
-            {
-                businessOwnersDictionary.Add(businessOwner.Id.ToString(),
-                    String.Format("{0} {1}", businessOwner.FirstName, businessOwner.LastName)
-                    );
-            }
-
-            var claims = (
-                from temp in _Context.UserClaims
-                select temp
-                );
-
-            List<ClaimViewModel> returnValues = new List<ClaimViewModel>();
-
-            foreach (var claim in claims)
-            {
-                var temp = new ClaimViewModel(claim.Id.ToString(), usersDictionary[claim.UserId.ToString()],
-                    claim.ClaimType, businessOwnersDictionary[claim.ClaimValue]);
-
-                returnValues.Add(temp);
-            }
-
-            return returnValues;
+            // var users = (from temp in _Context.Users
+            //              select temp);
+            //
+            // Dictionary<string, string> usersDictionary = new Dictionary<string, string>();
+            //
+            // foreach(var usr in users)
+            // {
+            //     usersDictionary.Add(usr.Id.ToString(), usr.UserName);
+            // }
+            //
+            // Dictionary<string, string> businessOwnersDictionary = new Dictionary<string, string>();
+            //
+            // object _BusinessOwnerService;
+            // foreach (var businessOwner in _BusinessOwnerService.GetBusinessOwners())
+            // {
+            //     businessOwnersDictionary.Add(businessOwner.Id.ToString(),
+            //         String.Format("{0} {1}", businessOwner.FirstName, businessOwner.LastName)
+            //         );
+            // }
+            //
+            // var claims = (
+            //     from temp in _Context.UserClaims
+            //     select temp
+            //     );
+            //
+            // List<ClaimViewModel> returnValues = new List<ClaimViewModel>();
+            //
+            // foreach (var claim in claims)
+            // {
+            //     var temp = new ClaimViewModel(claim.Id.ToString(), usersDictionary[claim.UserId.ToString()],
+            //         claim.ClaimType, businessOwnersDictionary[claim.ClaimValue]);
+            //
+            //     returnValues.Add(temp);
+            // }
+            //
+            // return returnValues;
+            throw new NotImplementedException();
         }
 
         [HttpPost]
@@ -185,30 +187,32 @@ namespace Orion.Admin.Controllers
         public ActionResult RemoveSubscription(
             SecurityAdminAction securityAdminAction)
         {
-            if (securityAdminAction != null &&
-                securityAdminAction.UserId != null)
-            {
-                _SubscriptionService.RemoveSubscription(
-                    GetSelectedUsername(securityAdminAction));
-            }
-
-            return RedirectToAction("Index");
+            // if (securityAdminAction != null &&
+            //     securityAdminAction.UserId != null)
+            // {
+            //     _SubscriptionService.RemoveSubscription(
+            //         GetSelectedUsername(securityAdminAction));
+            // }
+            //
+            // return RedirectToAction("Index");
+            throw new NotImplementedException();
         }
 
         private string GetSelectedUsername(SecurityAdminAction securityAdminAction)
         {
-            var allUsers = _userManager.Users.ToList();
-
-            var username = (from temp in allUsers
-                            where temp.Id.ToString() == securityAdminAction.UserId
-                            select temp).FirstOrDefault();
-
-            if (username != null)
-            {
-                return username.UserName;
-            }
-
-            return securityAdminAction.UserId;
+            // var allUsers = _userManager.Users.ToList();
+            //
+            // var username = (from temp in allUsers
+            //                 where temp.Id.ToString() == securityAdminAction.UserId
+            //                 select temp).FirstOrDefault();
+            //
+            // if (username != null)
+            // {
+            //     return username.UserName;
+            // }
+            //
+            // return securityAdminAction.UserId;
+            throw new NotImplementedException();
         }
 
         private List<SelectListItem> AdaptToSelectListItems(List<IdentityRole> fromValues)
@@ -229,18 +233,19 @@ namespace Orion.Admin.Controllers
 
         private List<SelectListItem> AdaptToSelectListItems(IList<BusinessOwner> fromValues)
         {
-            List<SelectListItem> toValues = new List<SelectListItem>();
-
-            foreach (var fromValue in fromValues.OrderBy(x => x.LastName))
-            {
-                toValues.Add(new SelectListItem
-                {
-                    Value = fromValue.Id.ToString(),
-                    Text = String.Format("{0}, {1}", fromValue.LastName, fromValue.FirstName)
-                });
-            }
-
-            return toValues;
+            // List<SelectListItem> toValues = new List<SelectListItem>();
+            //
+            // foreach (var fromValue in fromValues.OrderBy(x => x.LastName))
+            // {
+            //     toValues.Add(new SelectListItem
+            //     {
+            //         Value = fromValue.Id.ToString(),
+            //         Text = String.Format("{0}, {1}", fromValue.LastName, fromValue.FirstName)
+            //     });
+            // }
+            //
+            // return toValues;
+            throw new NotImplementedException();
         }
 
         private List<SelectListItem> AdaptToSelectListItems(List<IdentityUser> fromValues)
@@ -295,18 +300,19 @@ namespace Orion.Admin.Controllers
 
         public ActionResult RemovePermission(int id)
         {
-            var removeThis = (from temp in _Context.UserClaims
-                              where temp.Id == id
-                              select temp).FirstOrDefault();
+            // var removeThis = (from temp in _Context.UserClaims
+            //                   where temp.Id == id
+            //                   select temp).FirstOrDefault();
+            //
+            // if (removeThis != null)
+            // {
+            //     _Context.UserClaims.Remove(removeThis);
+            //     _Context.SaveChanges();
+            // }
+            //
+            // return RedirectToAction("Index");
 
-            if (removeThis != null)
-            {
-                _Context.UserClaims.Remove(removeThis);
-                _Context.SaveChanges();
-            }
-
-            return RedirectToAction("Index");
-
+            throw new NotImplementedException();
         }
 
         [HttpPost]
