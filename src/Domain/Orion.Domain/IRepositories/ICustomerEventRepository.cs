@@ -9,5 +9,6 @@ namespace Orion.Domain.IRepositories
 
     public class CustomerEventType
     {
+        public static CustomerEventType Deleted { get; set; }
     }
 }

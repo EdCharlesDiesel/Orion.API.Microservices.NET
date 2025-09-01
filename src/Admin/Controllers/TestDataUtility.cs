@@ -51,14 +51,16 @@ namespace Orion.Admin.Controllers
 
         public async Task VerifyDatabaseIsPopulated()
         {
-            _dbContext.Database.GetHashCode();
-
-            var businessOwners = _service.GetBusinessOwners();
-
-            if (businessOwners == null || businessOwners.Count == 0)
-            {
-                await CreateBusinessOwnerTestData();
-            }
+            // _dbContext.Database.GetHashCode();
+            //
+            // var businessOwners = _service.GetBusinessOwners();
+            //
+            // if (businessOwners == null || businessOwners.Count == 0)
+            // {
+            //     await CreateBusinessOwnerTestData();
+            // }
+            
+            throw new NotImplementedException();
         }
 
         private List<BusinessOwner> PopulateBusinessOwnersFromXml(string xml)
@@ -99,29 +101,30 @@ namespace Orion.Admin.Controllers
 
         private BusinessOwner GetBusinessOwnerFromXml(XElement fromValue)
         {
-            BusinessOwner toValue = new BusinessOwner();
-
-            toValue.BirthCity = fromValue.AttributeValue("birthcity");
-            toValue.BirthProvince = fromValue.AttributeValue("birthstate");
-            toValue.BirthDate = SafeToDateTime(fromValue.AttributeValue("birthdate"));
-
-            toValue.BusinessCity = fromValue.AttributeValue("deathcity");
-            toValue.BusinessProvince = fromValue.AttributeValue("deathstate");
-            toValue.BusinessDate = SafeToDateTime(fromValue.AttributeValue("deathdate"));
-
-            toValue.FirstName = fromValue.AttributeValue("firstname");
-            toValue.LastName = fromValue.AttributeValue("lastname");
-
-            toValue.ImageFilename = fromValue.AttributeValue("image-filename");
-
-            toValue.AddTerm(
-                "BusinessOwner",
-                SafeToDateTime(fromValue.AttributeValue("start")),
-                SafeToDateTime(fromValue.AttributeValue("end")),
-                SafeToInt32(fromValue.AttributeValue("id"))
-                );
-
-            return toValue;
+            // BusinessOwner toValue = new BusinessOwner();
+            //
+            // toValue.BirthCity = fromValue.AttributeValue("birthcity");
+            // toValue.BirthProvince = fromValue.AttributeValue("birthstate");
+            // toValue.BirthDate = SafeToDateTime(fromValue.AttributeValue("birthdate"));
+            //
+            // toValue.BusinessCity = fromValue.AttributeValue("deathcity");
+            // toValue.BusinessProvince = fromValue.AttributeValue("deathstate");
+            // toValue.BusinessDate = SafeToDateTime(fromValue.AttributeValue("deathdate"));
+            //
+            // toValue.FirstName = fromValue.AttributeValue("firstname");
+            // toValue.LastName = fromValue.AttributeValue("lastname");
+            //
+            // toValue.ImageFilename = fromValue.AttributeValue("image-filename");
+            //
+            // toValue.AddTerm(
+            //     "BusinessOwner",
+            //     SafeToDateTime(fromValue.AttributeValue("start")),
+            //     SafeToDateTime(fromValue.AttributeValue("end")),
+            //     SafeToInt32(fromValue.AttributeValue("id"))
+            //     );
+            //
+            // return toValue;
+            throw new NotImplementedException();
         }
 
         private DateTime SafeToDateTime(string fromValue)
@@ -150,12 +153,13 @@ namespace Orion.Admin.Controllers
 
         private void DeleteAll()
         {
-            var allBusinessOwners = _service.GetBusinessOwners();
-
-            foreach (var item in allBusinessOwners)
-            {
-                _service.DeleteBusinessOwnerById(item.Id);
-            }
+            // var allBusinessOwners = _service.GetBusinessOwners();
+            //
+            // foreach (var item in allBusinessOwners)
+            // {
+            //     _service.DeleteBusinessOwnerById(item.Id);
+            // }
+            throw new NotImplementedException();
         }
         private async Task InitializeSecurity()
         {

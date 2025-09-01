@@ -7,57 +7,87 @@ namespace Orion.DataAccess.Postgres.AllFeatures
     public class FeatureManager : IFeatureManager
     {
         private readonly IUsernameProvider _usernameProvider;
+        private readonly Dictionary<string, bool> _featureConfigurations;
 
-        public FeatureManager(IFeatureRepository repository, IUsernameProvider usernameProvider, Dictionary<string, bool> featureConfigurations)
+        public FeatureManager(
+            IFeatureRepository repository, 
+            IUsernameProvider usernameProvider, 
+            Dictionary<string, bool> featureConfigurations)
         {
-            if (usernameProvider == null)
-                throw new ArgumentNullException(nameof(usernameProvider), $"{nameof(usernameProvider)} is null.");
-            if (repository == null)
-            {
-                throw new ArgumentNullException(nameof(repository), "Argument cannot be null.");
-            }
+            _usernameProvider = usernameProvider ?? throw new ArgumentNullException(nameof(usernameProvider));
+            if (repository == null) throw new ArgumentNullException(nameof(repository));
 
-            _usernameProvider = usernameProvider;
-            _featureConfigurations = featureConfigurations;
+            _featureConfigurations = featureConfigurations ?? new Dictionary<string, bool>();
 
             Initialize(repository);
         }
-        
-        private FeatureManager(IList<Feature> features, Dictionary<string, bool> featureConfigurations, IUsernameProvider usernameProvider)
-        { 
-            if (features == null)
-                throw new ArgumentNullException("features", "features is null.");
-            _featureConfigurations = featureConfigurations;
-            _usernameProvider = usernameProvider;
+
+        private FeatureManager(
+            IList<Feature> features, 
+            Dictionary<string, bool> featureConfigurations, 
+            IUsernameProvider usernameProvider)
+        {
+            if (features == null) throw new ArgumentNullException(nameof(features));
+
+            _featureConfigurations = featureConfigurations ?? new Dictionary<string, bool>();
+            _usernameProvider = usernameProvider ?? throw new ArgumentNullException(nameof(usernameProvider));
 
             Initialize(features);
         }
 
-        private Dictionary<string, bool> _featureConfigurations;
-
-        private Dictionary<string, bool> FeatureConfigurations
-        {
-            get
-            {
-                return _featureConfigurations;
-            }
-        }
+        private Dictionary<string, bool> FeatureConfigurations => _featureConfigurations;
 
         private void Initialize(IList<Feature> features)
         {
             foreach (var feature in features)
             {
-                FeatureConfigurations.Remove(feature.FeatureName);
+                FeatureConfigurations[feature.FeatureName] = feature.IsEnabled;
+            }
+        }
 
-                FeatureConfigurations.Add(feature.FeatureName, feature.IsEnabled);
+        private void Initialize(IFeatureRepository repository)
+        {
+            var username = _usernameProvider.GetUsername();
+            var features = repository.GetFeaturesByUsername<Feature>(username);
+
+            if (!string.IsNullOrWhiteSpace(username))
+            {
+                var userSpecificFeatures = features
+                    .Where(f => !string.IsNullOrWhiteSpace(f.Username))
+                    .ToList();
+
+                foreach (var userFeature in userSpecificFeatures)
+                {
+                    RemoveGenericUserFeatureConfiguration(features, userFeature);
+                }
+            }
+
+            Initialize(features);
+        }
+
+        /// <summary>
+        /// Removes a generic (non-user-specific) feature if a user-specific one exists.
+        /// </summary>
+        private static void RemoveGenericUserFeatureConfiguration(
+            IList<Feature> features, 
+            Feature userSpecificFeature)
+        {
+            var genericFeature = features.FirstOrDefault(
+                f => f.FeatureName == userSpecificFeature.FeatureName &&
+                     string.IsNullOrWhiteSpace(f.Username));
+
+            if (genericFeature != null)
+            {
+                features.Remove(genericFeature);
             }
         }
 
         private bool IsEnabled(string featureName, bool defaultValue)
         {
-            return FeatureConfigurations.ContainsKey(featureName) ? FeatureConfigurations[featureName] : defaultValue;
+            return FeatureConfigurations.TryGetValue(featureName, out var enabled) ? enabled : defaultValue;
         }
 
+        // Example features
         public bool CustomerSatisfaction
         {
             get => IsEnabled("CustomerSatisfaction", false);
@@ -79,48 +109,6 @@ namespace Orion.DataAccess.Postgres.AllFeatures
             get => IsEnabled("SearchByBirthBusinessProvince", false);
             set => throw new NotImplementedException();
         }
-
-
-        private void Initialize(IFeatureRepository repository)
-        {
-            string username = _usernameProvider.GetUsername();
-
-            Initialize(repository, username);
-        }
-
-        private static void Initialize(IFeatureRepository repository, string username)
-        {
-            try
-            {
-                var features = repository.GetByUsername(username);
-                
-             // FIXME Needs fixing will attend later
-            //     if (String.IsNullOrWhiteSpace(username) == false)
-            //     {
-            //         var featuresForThisUser =
-            //             (
-            //             from temp in features
-            //             where String.IsNullOrWhiteSpace(temp.Username) == false
-            //             select temp
-            //             ).ToList();
-
-            //         foreach (var userSpecificFeature in featuresForThisUser)
-            //         {
-            //             // if there's a user-specific feature config, remove the non-user-specific feature
-            //             RemoveGenericUserFeatureConfiguration(features, userSpecificFeature);
-            //         }
-            //     }
-            //    Initialize(features);
-            }
-            catch
-            {
-                // ignored
-            }
-            // catch (SqlException)
-            // {
-            //     Console.WriteLine("FeatureManager got a SqlException.");
-            // }
-        }
     }
 
     public interface IUsernameProvider
@@ -128,10 +116,5 @@ namespace Orion.DataAccess.Postgres.AllFeatures
         string GetUsername();
     }
 
-    public interface IFeatureManager
-    {
-        bool CustomerSatisfaction { get; set; }
-        bool Search { get; set; }
-        bool SearchByBirthBusinessProvince { get; set; }
-    }
+
 }

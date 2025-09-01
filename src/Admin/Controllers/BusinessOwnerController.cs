@@ -51,6 +51,8 @@ namespace Orion.Admin.Controllers
         [Route("/businessOwner/{last:alpha}/{first:alpha}")]
         public IActionResult Details(string last, string first)
         {
+
+            throw new NotImplementedException();
             // if (string.IsNullOrWhiteSpace(last) || string.IsNullOrWhiteSpace(first))
             //     return BadRequest();
             //
@@ -70,29 +72,30 @@ namespace Orion.Admin.Controllers
         [Authorize(Policy = SecurityConstants.PolicyNameEditBusinessOwner)]
         public IActionResult Edit(int? id)
         {
-            if (!id.HasValue)
-                return BadRequest();
-
-            BusinessOwner businessOwner;
-
-            if (id.Value == IdForCreateNewBusinessowner)
-            {
-                businessOwner = new BusinessOwner();
-                businessOwner.AddTerm(
-                    BusinessOwnerConstants.BusinessOwner,
-                    default,
-                    default,
-                    0);
-            }
-            else
-            {
-                businessOwner = _businessOwnerService.GetBusinessOwnerById(id.Value);
-            }
-
-            if (businessOwner == null)
-                return NotFound();
-
-            return View(businessOwner);
+            // if (!id.HasValue)
+            //     return BadRequest();
+            //
+            // BusinessOwner businessOwner;
+            //
+            // if (id.Value == IdForCreateNewBusinessowner)
+            // {
+            //     businessOwner = new BusinessOwner();
+            //     businessOwner.AddTerm(
+            //         BusinessOwnerConstants.BusinessOwner,
+            //         default,
+            //         default,
+            //         0);
+            // }
+            // else
+            // {
+            //     businessOwner = _businessOwnerService.GetBusinessOwnerById(id.Value);
+            // }
+            //
+            // if (businessOwner == null)
+            //     return NotFound();
+            //
+            // return View(businessOwner);
+            throw new NotImplementedException();
         }
 
         [HttpPost]
@@ -100,26 +103,27 @@ namespace Orion.Admin.Controllers
         [Authorize(Policy = SecurityConstants.PolicyNameEditBusinessOwner)]
         public IActionResult Edit(BusinessOwner businessOwner)
         {
-            if (_validator.IsValid(businessOwner))
-            {
-                bool isCreateNew = businessOwner.Id == IdForCreateNewBusinessowner;
-
-                if (!isCreateNew)
-                {
-                    var existing = _businessOwnerService.GetBusinessOwnerById(businessOwner.Id);
-                    if (existing == null)
-                    {
-                        return BadRequest(
-                            $"Unknown businessOwner id '{businessOwner.Id}'.");
-                    }
-                }
-
-                _businessOwnerService.Save(businessOwner);
-
-                return RedirectToAction(nameof(Edit), new { id = businessOwner.Id });
-            }
-
-            return View(businessOwner);
+            // if (_validator.IsValid(businessOwner))
+            // {
+            //     bool isCreateNew = businessOwner.Id == IdForCreateNewBusinessowner;
+            //
+            //     if (!isCreateNew)
+            //     {
+            //         var existing = _businessOwnerService.GetBusinessOwnerById(businessOwner.Id);
+            //         if (existing == null)
+            //         {
+            //             return BadRequest(
+            //                 $"Unknown businessOwner id '{businessOwner.Id}'.");
+            //         }
+            //     }
+            //
+            //     _businessOwnerService.Save(businessOwner);
+            //
+            //     return RedirectToAction(nameof(Edit), new { id = businessOwner.Id });
+            // }
+            //
+            // return View(businessOwner);
+            throw new NotImplementedException();
         }
 
         //[AllowAnonymous]

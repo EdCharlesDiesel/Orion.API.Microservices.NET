@@ -4,18 +4,18 @@ namespace Orion.Admin.Models.Packages
 {
     public class PackageFullEditViewModel: IPackageFullEditDTO
     {
-        public PackageFullEditViewModel() { }
-        public PackageFullEditViewModel(IPackage o)
-        {
-            Id = o.Id;
-            DestinationId = o.DestinationId;
-            Name = o.Name;
-            Description = o.Description;
-            Price = o.Price;
-            DurationInDays = o.DurationInDays;
-            StartValidityDate = o.StartValidityDate;
-            EndValidityDate = o.EndValidityDate;
-        }
+        // public PackageFullEditViewModel() { }
+        // public PackageFullEditViewModel(IPackage o)
+        // {
+        //     Id = o.Id;
+        //     DestinationId = o.DestinationId;
+        //     Name = o.Name;
+        //     Description = o.Description;
+        //     Price = o.Price;
+        //     DurationInDays = o.DurationInDays;
+        //     StartValidityDate = o.StartValidityDate;
+        //     EndValidityDate = o.EndValidityDate;
+        // }
         public int Id { get; set; }
         [StringLength(128, MinimumLength = 5), Required]
         [Display(Name = "name")]

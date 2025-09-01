@@ -1,11 +1,8 @@
-﻿
-
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.Entities.Common;
-using Orion.DataAccess.Postgres.Entities.ECommerce;
 
 namespace Orion.DataAccess.Postgres.Data
 {
@@ -86,7 +83,7 @@ namespace Orion.DataAccess.Postgres.Data
         public DbSet<WorkOrder> WorkOrder { get; set; }
         public DbSet<WorkOrderRouting> WorkOrderRouting { get; set; }
 
-        // Custom entities
+        // Common Entities.
         public DbSet<CalendarEvent> CalendarEvents { get; set; }
         public DbSet<ComtradeCategories> ComtradeCategories { get; set; }
         public DbSet<Basket> Baskets { get; set; }
@@ -95,90 +92,95 @@ namespace Orion.DataAccess.Postgres.Data
         public DbSet<ChatRequest> ChatRequests { get; set; }
         public DbSet<Coupon> Coupons { get; set; }
         public DbSet<CompetitionMatch> CompetitionMatches { get; set; }
-
         public DbSet<Category> Categories { get; set; }
         public DbSet<Feature> Features { get; set; }
         public DbSet<OrderDetail> Orders { get; set; }
-
         public DbSet<Customer>  Customers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Must call base to ensure Identity tables are configured
-            // base.OnModelCreating(modelBuilder);
-            //
-            // modelBuilder.Entity<SalesOrderHeader>()
-            //     .HasOne(soh => soh.BillToAddress)
-            //     .WithMany(a => a.SalesOrderHeaderBillToAddress)
-            //     .HasForeignKey(soh => soh.BillToAddressId)
-            //     .OnDelete(DeleteBehavior.Restrict);
-            //
-            // modelBuilder.Entity<SalesOrderHeader>()
-            //     .HasOne(soh => soh.ShipToAddress)
-            //     .WithMany(a => a.SalesOrderHeaderShipToAddress)
-            //     .HasForeignKey(soh => soh.ShipToAddressId)
-            //     .OnDelete(DeleteBehavior.Restrict);
-            //
-            // modelBuilder.Entity<BillOfMaterials>(entity =>
-            // {
-            //     entity.HasOne(b => b.ProductAssembly)
-            //         .WithMany(p => p.BillOfMaterialsAssembly)
-            //         .HasForeignKey(b => b.ProductAssemblyId)
-            //         .OnDelete(DeleteBehavior.Restrict);
-            //
-            //     entity.HasOne(b => b.Component)
-            //         .WithMany(p => p.BillOfMaterialsComponent)
-            //         .HasForeignKey(b => b.ComponentId)
-            //         .OnDelete(DeleteBehavior.Restrict);
-            // });
-            //
-            // // modelBuilder.Entity<CurrencyRate>(entity =>
-            // // {
-            // //     entity.HasOne(d => d.FromCurrencyCodeNavigation)
-            // //         .WithMany(p => p.CurrencyRateFromCurrencyCodeNavigation)
-            // //         .HasForeignKey(d => d.FromCurrencyCode)
-            // //         .OnDelete(DeleteBehavior.Restrict);
-            // //
-            // //     entity.HasOne(d => d.ToCurrencyCodeNavigation)
-            // //         .WithMany(p => p.CurrencyRateToCurrencyCodeNavigation)
-            // //         .HasForeignKey(d => d.ToCurrencyCode)
-            // //         .OnDelete(DeleteBehavior.Restrict);
-            // // });
-            //
-            // modelBuilder.Entity<Product>(entity =>
-            // {
-            //     entity.HasOne(d => d.SizeUnitMeasureCodeNavigation)
-            //         .WithMany(p => p.ProductsSizeUnitMeasureCodeNavigation)
-            //         .HasForeignKey(d => d.SizeUnitMeasureCode)
-            //         .OnDelete(DeleteBehavior.Restrict);
-            //
-            //     entity.HasOne(d => d.WeightUnitMeasureCodeNavigation)
-            //         .WithMany(p => p.ProductsWeightUnitMeasureCodeNavigation)
-            //         .HasForeignKey(d => d.WeightUnitMeasureCode)
-            //         .OnDelete(DeleteBehavior.Restrict);
-            // });
-            //
-            // modelBuilder.Entity<SalesPerson>()
-            //     .Property(sp => sp.BusinessEntityId)
-            //     .HasConversion<int>();
-            //
-            // modelBuilder.Entity<Employee>()
-            //     .HasOne(e => e.SalesPerson)
-            //     .WithOne(sp => sp.SalesPersonNavigation)
-            //     .HasForeignKey<SalesPerson>(sp => sp.BusinessEntityId);
-            //
-            // modelBuilder.Entity<Currency>()
-            //     .HasKey(c => c.Id);
-            //
-            // modelBuilder.Entity<Currency>()
-            //     .HasIndex(c => c.Code)
-            //     .IsUnique(); // ensure codes are unique if needed
-            //
-            // // modelBuilder.Entity<CurrencyRate>()
-            // //     .HasOne(cr => cr.FromCurrencyCodeNavigation)
-            // //     .WithMany(c => c.CurrencyRateFromCurrencyCodeNavigation)
-            // //     .HasForeignKey(cr => cr.FromCurrencyCode)
-            // //     .HasPrincipalKey(c => c.Code); // <-- key fix
+            modelBuilder.Entity<BusinessEntityAddress>()
+                .HasKey(bea => new { BusinessEntityID = bea.BusinessEntityId, AddressID = bea.AddressId });
+            
+            modelBuilder.Entity<BusinessEntityContact>()
+                .HasKey(bea => new { bea.BusinessEntityID, bea.PersonID,bea.ContactTypeID });
+            
+            modelBuilder.Entity<CountryRegionCurrency>()
+                .HasKey(bea => new { bea.CurrencyCode, bea.CountryRegionCode });
+            
+            modelBuilder.Entity<EmailAddress>()
+                .HasKey(bea => new { bea.BusinessEntityID,bea.EmailAddressID });
+            
+            modelBuilder.Entity<EmployeeDepartmentHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID,bea.DepartmentID ,bea.StartDate});
+            
+            modelBuilder.Entity<EmployeeDepartmentHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID,bea.DepartmentID ,bea.StartDate,bea.ShiftID});
+            
+            modelBuilder.Entity<EmployeePayHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID,bea.RateChangeDate });
+            
+            modelBuilder.Entity<PersonCreditCard>()
+                .HasKey(bea => new { bea.BusinessEntityID,bea.CreditCardID });
+            
+            modelBuilder.Entity<PersonPhone>()
+                .HasKey(bea => new { bea.BusinessEntityID,bea.PhoneNumber });
+            
+            modelBuilder.Entity<ProductCostHistory>()
+                .HasKey(bea => new { bea.ProductID,bea.StartDate });
+            
+            modelBuilder.Entity<ProductDocument>()
+                .HasKey(bea => new { bea.ProductID,bea.DocumentNode });
+            
+            modelBuilder.Entity<ProductInventory>()
+                .HasKey(bea => new { bea.ProductID,bea.LocationID });
+            
+            modelBuilder.Entity<ProductListPriceHistory>()
+                .HasKey(bea => new { bea.ProductID,bea.StartDate });
+            
+            modelBuilder.Entity<ProductModelIllustration>()
+                .HasKey(bea => new { bea.ProductModelID,bea.IllustrationID });
+            
+            modelBuilder.Entity<ProductModelIllustration>()
+                .HasKey(bea => new { bea.ProductModelID,bea.IllustrationID });
+            
+            modelBuilder.Entity<ProductModelProductDescriptionCulture>()
+                .HasKey(bea => new { bea.ProductModelID,bea.ProductDescriptionID,bea.CultureID });
+            
+            modelBuilder.Entity<ProductModelProductDescriptionCulture>()
+                .HasKey(bea => new { bea.ProductModelID,bea.ProductDescriptionID,bea.CultureID });
+            
+            modelBuilder.Entity<ProductProductPhoto>()
+                .HasKey(bea => new { bea.ProductID,bea.ProductPhotoID});
+            
+            modelBuilder.Entity<ProductVendor>()
+                .HasKey(bea => new { bea.ProductID,bea.BusinessEntityID});
+            
+            modelBuilder.Entity<PurchaseOrderDetail>()
+                .HasKey(bea => new { bea.ProductID,bea.PurchaseOrderDetailID});
+            
+            modelBuilder.Entity<SalesOrderDetail>()
+                .HasKey(bea => new { bea.ProductID,bea.SalesOrderDetailID});
+            
+            modelBuilder.Entity<SalesOrderHeaderSalesReason>()
+                .HasKey(bea => new { bea.SalesOrderID,bea.SalesReasonID});
+            
+            modelBuilder.Entity<SalesPersonQuotaHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID,bea.QuotaDate});
+            
+            modelBuilder.Entity<SalesPersonQuotaHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID,bea.QuotaDate});
+            
+            modelBuilder.Entity<SalesTerritoryHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID,bea.TerritoryID});
+            
+            modelBuilder.Entity<SpecialOfferProduct>()
+                .HasKey(bea => new { bea.SpecialOfferID,bea.ProductID});
+            
+            modelBuilder.Entity<WorkOrderRouting>()
+                .HasKey(bea => new { bea.WorkOrderID,bea.ProductID});
+
+            
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

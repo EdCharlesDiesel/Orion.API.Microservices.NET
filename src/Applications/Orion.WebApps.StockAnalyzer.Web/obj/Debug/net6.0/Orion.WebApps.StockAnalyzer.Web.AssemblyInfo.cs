@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.WebApps.StockAnalyzer.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4f45089ba92b2a376525f1a2f5026533ba4bc96")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+710ff1b4ab305c7cd224c06891f6b71873f7ec00")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.WebApps.StockAnalyzer.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.WebApps.StockAnalyzer.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,13 +2,17 @@ using System.Globalization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.EntityFrameworkCore;
+using Orion.Admin.Areas.API;
 using Orion.Admin.Controllers;
 using Orion.Admin.Security;
 using Orion.Admin.Tools;
-using Orion.DataAccess.AllFeatures;
-using Orion.DataAccess.Data;
-using Orion.DataAccess.Entities;
-using Orion.DataAccess.Strategy;
+using Orion.DataAccess.Postgres.AllFeatures;
+using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.Strategy;
+using Orion.Domain.IRepositories;
+using Orion.Domain.Utility;
+
 
 namespace Orion.Admin
 {
@@ -27,9 +31,7 @@ namespace Orion.Admin
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<OrionDbContext>(options =>
-                            options.UseSqlServer(
-                                Configuration.GetConnectionString("Orion_Default_Windows_ConnectionString")));
+
 
             services.AddIdentity<MasterUser, IdentityRole<int>>(options =>
                 {
@@ -63,9 +65,6 @@ namespace Orion.Admin
 
             services.AddControllersWithViews();
             services.AddRazorPages();
-            services.AddDbLayer(Configuration.GetConnectionString("Orion_Default_Windows_ConnectionString"),
-                "Orion_MainDb");
-
             services.AddAllQueries(GetType().Assembly);
             services.AddAllCommandHandlers(GetType().Assembly);
             services.AddAllEventHandlers(GetType().Assembly);
@@ -157,28 +156,28 @@ namespace Orion.Admin
         {
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            services.AddTransient<IUsernameProvider, HttpContextUsernameProvider>();
-
             services.AddTransient<IFeatureManager, FeatureManager>();
+            // services.AddTransient<IUsernameProvider, HttpContextUsernameProvider>();
 
-            services.AddTransient<ILogger, Logger>();
 
-            services.AddDbContext<OrionDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("Orion_Default_Windows_ConnectionString")));
+            // services.AddTransient<ILogger, Logger>();
+            //
+            // services.AddDbContext<OrionDbContext>(options =>
+            //     options.UseSqlServer(Configuration.GetConnectionString("Orion_Default_Windows_ConnectionString")));
 
            //services.AddTransient<IOrionDbContext, OrionDbContext>();
 
             //services.AddTransient<IRepository<Person>, SqlEntityFrameworkPersonRepository>();
 
-            services.AddTransient<IValidatorStrategy<BusinessOwner>, DefaultValidatorStrategy<BusinessOwner>>();
-            
-            services.AddTransient<IDaysInOfficeStrategy, DefaultDaysInOfficeStrategy>();
-
-            services.AddTransient<IFeatureRepository, SqlEntityFrameworkFeatureRepository>();
-
-            services.AddTransient<IBusinessOwnerService, BusinessOwnerService>();
-
-            services.AddTransient<ISubscriptionService, SubscriptionService>();
+            // services.AddTransient<IValidatorStrategy<BusinessOwner>, DefaultValidatorStrategy<BusinessOwner>>();
+            //
+            // services.AddTransient<IDaysInOfficeStrategy, DefaultDaysInOfficeStrategy>();
+            //
+            // services.AddTransient<IFeatureRepository, SqlEntityFrameworkFeatureRepository>();
+            //
+            // services.AddTransient<IBusinessOwnerService, BusinessOwnerService>();
+            //
+            // services.AddTransient<ISubscriptionService, SubscriptionService>();
 
             services.AddTransient<ITestDataUtility, TestDataUtility>();
 
@@ -189,7 +188,24 @@ namespace Orion.Admin
             services.AddTransient<IUserClaimsPrincipalProvider, 
                 HttpContextUserClaimsPrincipalProvider>();            
         }
-    }   
+    }
+
+    public class BusinessOwner
+    {
+        public string LastName { get; set; }
+    }
+
+    internal class SqlEntityFrameworkFeatureRepository
+    {
+    }
+
+    internal class SubscriptionService
+    {
+    }
+
+    internal class BusinessOwnerService
+    {
+    }
 }
 
 

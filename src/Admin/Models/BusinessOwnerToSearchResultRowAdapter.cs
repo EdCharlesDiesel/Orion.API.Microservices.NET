@@ -7,14 +7,15 @@ namespace Orion.Admin.Models
     {
         public void Adapt(BusinessOwner fromValue, SearchResultRow toValue)
         {
-            if (fromValue == null)
-                throw new ArgumentNullException("fromValue", "fromValue is null.");
-            if (toValue == null)
-                throw new ArgumentNullException("toValue", "toValue is null.");
-
-            toValue.Id = fromValue.Id;
-            toValue.LastName = fromValue.LastName;
-            toValue.FirstName = fromValue.FirstName;
+            // if (fromValue == null)
+            //     throw new ArgumentNullException("fromValue", "fromValue is null.");
+            // if (toValue == null)
+            //     throw new ArgumentNullException("toValue", "toValue is null.");
+            //
+            // toValue.Id = fromValue.Id;
+            // toValue.LastName = fromValue.LastName;
+            // toValue.FirstName = fromValue.FirstName;
+            throw new NotImplementedException();
         }
     }
 }

@@ -13,9 +13,10 @@ namespace Orion.Admin.Handlers
         }
         public async Task  HandleAsync(CreateOrderCommand command)
         {
-            var model= repo.New();
-            model.FullUpdate(command.Values);
-            await repo.UnitOfWork.SaveEntitiesAsync();
+            // var model= repo.New();
+            // model.FullUpdate(command.Values);
+            // await repo.UnitOfWork.SaveEntitiesAsync();
+            throw new NotImplementedException();
         }
     }
 }
