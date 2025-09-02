@@ -4,12 +4,13 @@ using Microsoft.SqlServer.Types;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities
 {
     [Table("Production.Document")]
     [Description("Product maintenance documents.")]
-    public class Document
+    public class Document: Entity<int>
     {
         public Document()
         {

@@ -3,6 +3,7 @@
 using Microsoft.EntityFrameworkCore;
 using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.Entities.Common;
+using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Data
 {
@@ -92,31 +93,31 @@ namespace Orion.DataAccess.Postgres.Data
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 
-    public class ContactCreditCard
+    public class ContactCreditCard: Entity<int>
     {
     }
 
-    public class CustomerAddress
+    public class CustomerAddress: Entity<int>
     {
     }
 
-    public class StoreContact
+    public class StoreContact: Entity<int>
     {
     }
 
-    public class VendorContact
+    public class VendorContact: Entity<int>
     {
     }
 
-    public class VendorAddress
+    public class VendorAddress: Entity<int>
     {
     }
 
-    public class Individual
+    public class Individual: Entity<int>
     {
     }
 
-    public class Contact
+    public class Contact: Entity<int>
     {
     }
 }

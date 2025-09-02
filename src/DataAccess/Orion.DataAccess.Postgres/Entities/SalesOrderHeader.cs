@@ -51,6 +51,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "Online Order Flag is required")]
         [Display(Name = "Online Order Flag")]
         [Description("0 = Order placed by sales person. 1 = Order placed online by customer.")]
+        [NotMapped]
         public bool? OnlineOrderFlag { get; set; } // bit
         [Column(name : "SalesOrderNumber", TypeName = "nvarchar")]
         [MaxLength(25)]

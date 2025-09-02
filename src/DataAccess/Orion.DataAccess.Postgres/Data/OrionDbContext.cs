@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.SqlServer.Types;
 using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.Entities.Common;
 
@@ -95,92 +96,93 @@ namespace Orion.DataAccess.Postgres.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Feature> Features { get; set; }
         public DbSet<OrderDetail> Orders { get; set; }
-        public DbSet<Customer>  Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder); // 👈 keep Identity configuration
+
             modelBuilder.Entity<BusinessEntityAddress>()
-                .HasKey(bea => new { BusinessEntityID = bea.BusinessEntityId, AddressID = bea.AddressId });
-            
+                .HasKey(bea => new { bea.BusinessEntityID, bea.AddressID });
+
             modelBuilder.Entity<BusinessEntityContact>()
-                .HasKey(bea => new { bea.BusinessEntityID, bea.PersonID,bea.ContactTypeID });
-            
+                .HasKey(bea => new { bea.BusinessEntityID, bea.PersonID, bea.ContactTypeID });
+
             modelBuilder.Entity<CountryRegionCurrency>()
                 .HasKey(bea => new { bea.CurrencyCode, bea.CountryRegionCode });
-            
-            modelBuilder.Entity<EmailAddress>()
-                .HasKey(bea => new { bea.BusinessEntityID,bea.EmailAddressID });
-            
-            modelBuilder.Entity<EmployeeDepartmentHistory>()
-                .HasKey(bea => new { bea.BusinessEntityID,bea.DepartmentID ,bea.StartDate});
-            
-            modelBuilder.Entity<EmployeeDepartmentHistory>()
-                .HasKey(bea => new { bea.BusinessEntityID,bea.DepartmentID ,bea.StartDate,bea.ShiftID});
-            
-            modelBuilder.Entity<EmployeePayHistory>()
-                .HasKey(bea => new { bea.BusinessEntityID,bea.RateChangeDate });
-            
-            modelBuilder.Entity<PersonCreditCard>()
-                .HasKey(bea => new { bea.BusinessEntityID,bea.CreditCardID });
-            
-            modelBuilder.Entity<PersonPhone>()
-                .HasKey(bea => new { bea.BusinessEntityID,bea.PhoneNumber });
-            
-            modelBuilder.Entity<ProductCostHistory>()
-                .HasKey(bea => new { bea.ProductID,bea.StartDate });
-            
-            modelBuilder.Entity<ProductDocument>()
-                .HasKey(bea => new { bea.ProductID,bea.DocumentNode });
-            
-            modelBuilder.Entity<ProductInventory>()
-                .HasKey(bea => new { bea.ProductID,bea.LocationID });
-            
-            modelBuilder.Entity<ProductListPriceHistory>()
-                .HasKey(bea => new { bea.ProductID,bea.StartDate });
-            
-            modelBuilder.Entity<ProductModelIllustration>()
-                .HasKey(bea => new { bea.ProductModelID,bea.IllustrationID });
-            
-            modelBuilder.Entity<ProductModelIllustration>()
-                .HasKey(bea => new { bea.ProductModelID,bea.IllustrationID });
-            
-            modelBuilder.Entity<ProductModelProductDescriptionCulture>()
-                .HasKey(bea => new { bea.ProductModelID,bea.ProductDescriptionID,bea.CultureID });
-            
-            modelBuilder.Entity<ProductModelProductDescriptionCulture>()
-                .HasKey(bea => new { bea.ProductModelID,bea.ProductDescriptionID,bea.CultureID });
-            
-            modelBuilder.Entity<ProductProductPhoto>()
-                .HasKey(bea => new { bea.ProductID,bea.ProductPhotoID});
-            
-            modelBuilder.Entity<ProductVendor>()
-                .HasKey(bea => new { bea.ProductID,bea.BusinessEntityID});
-            
-            modelBuilder.Entity<PurchaseOrderDetail>()
-                .HasKey(bea => new { bea.ProductID,bea.PurchaseOrderDetailID});
-            
-            modelBuilder.Entity<SalesOrderDetail>()
-                .HasKey(bea => new { bea.ProductID,bea.SalesOrderDetailID});
-            
-            modelBuilder.Entity<SalesOrderHeaderSalesReason>()
-                .HasKey(bea => new { bea.SalesOrderID,bea.SalesReasonID});
-            
-            modelBuilder.Entity<SalesPersonQuotaHistory>()
-                .HasKey(bea => new { bea.BusinessEntityID,bea.QuotaDate});
-            
-            modelBuilder.Entity<SalesPersonQuotaHistory>()
-                .HasKey(bea => new { bea.BusinessEntityID,bea.QuotaDate});
-            
-            modelBuilder.Entity<SalesTerritoryHistory>()
-                .HasKey(bea => new { bea.BusinessEntityID,bea.TerritoryID});
-            
-            modelBuilder.Entity<SpecialOfferProduct>()
-                .HasKey(bea => new { bea.SpecialOfferID,bea.ProductID});
-            
-            modelBuilder.Entity<WorkOrderRouting>()
-                .HasKey(bea => new { bea.WorkOrderID,bea.ProductID});
 
-            
+            modelBuilder.Entity<EmailAddress>()
+                .HasKey(bea => new { bea.BusinessEntityID, bea.EmailAddressID });
+
+            modelBuilder.Entity<EmployeeDepartmentHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID, bea.DepartmentID, bea.StartDate });
+            // ❌ removed duplicate with ShiftID
+
+            modelBuilder.Entity<EmployeePayHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID, bea.RateChangeDate });
+
+            modelBuilder.Entity<PersonCreditCard>()
+                .HasKey(bea => new { bea.BusinessEntityID, bea.CreditCardID });
+
+            modelBuilder.Entity<PersonPhone>()
+                .HasKey(bea => new { bea.BusinessEntityID, bea.PhoneNumber });
+
+            modelBuilder.Entity<ProductCostHistory>()
+                .HasKey(bea => new { bea.ProductID, bea.StartDate });
+
+            modelBuilder.Entity<ProductDocument>()
+                .HasKey(bea => new { bea.ProductID, bea.DocumentNode });
+
+            modelBuilder.Entity<ProductInventory>()
+                .HasKey(bea => new { bea.ProductID, bea.LocationID });
+
+            modelBuilder.Entity<ProductListPriceHistory>()
+                .HasKey(bea => new { bea.ProductID, bea.StartDate });
+
+            modelBuilder.Entity<ProductModelIllustration>()
+                .HasKey(bea => new { bea.ProductModelID, bea.IllustrationID });
+            // ❌ removed duplicate
+
+            modelBuilder.Entity<ProductModelProductDescriptionCulture>()
+                .HasKey(bea => new { bea.ProductModelID, bea.ProductDescriptionID, bea.CultureID });
+            // ❌ removed duplicate
+
+            modelBuilder.Entity<ProductProductPhoto>()
+                .HasKey(bea => new { bea.ProductID, bea.ProductPhotoID });
+
+            modelBuilder.Entity<ProductVendor>()
+                .HasKey(bea => new { bea.ProductID, bea.BusinessEntityID });
+
+            modelBuilder.Entity<PurchaseOrderDetail>()
+                .HasKey(bea => new { bea.ProductID, bea.PurchaseOrderDetailID });
+
+            modelBuilder.Entity<SalesOrderDetail>()
+                .HasKey(bea => new { bea.ProductID, bea.SalesOrderDetailID });
+
+            modelBuilder.Entity<SalesOrderHeaderSalesReason>()
+                .HasKey(bea => new { bea.SalesOrderID, bea.SalesReasonID });
+
+            modelBuilder.Entity<SalesPersonQuotaHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID, bea.QuotaDate });
+            // ❌ removed duplicate
+
+            modelBuilder.Entity<SalesTerritoryHistory>()
+                .HasKey(bea => new { bea.BusinessEntityID, bea.TerritoryID });
+
+            modelBuilder.Entity<SpecialOfferProduct>()
+                .HasKey(bea => new { bea.SpecialOfferID, bea.ProductID });
+
+            modelBuilder.Entity<WorkOrderRouting>()
+                .HasKey(bea => new { bea.WorkOrderID, bea.ProductID });
+
+            // ✅ Fix for PostgreSQL: store hierarchyid as string/text
+            modelBuilder.Entity<ProductDocument>()
+                .Property(p => p.DocumentNode)
+                .HasConversion(
+                    v => v.ToString(),
+                    v => SqlHierarchyId.Parse(v)
+                )
+                .HasColumnType("text");
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

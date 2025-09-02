@@ -15,7 +15,7 @@ public class Program
                                throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
         // builder.Services.AddDbContext<ApplicationDbContext>(options =>
         //     options.UseNpgsql(connectionString));
-        builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+        //builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
         // builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
         //     .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -26,7 +26,7 @@ public class Program
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
-            app.UseMigrationsEndPoint();
+          //  app.UseMigrationsEndPoint();
         }
         else
         {

@@ -13,24 +13,24 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key. Foreign key to BusinessEntity.BusinessEntityID.")]
-        public int? BusinessEntityId { get; set; } // int
+        public int? BusinessEntityID { get; set; } // int
         [Key]
         [Column(name : "AddressID", TypeName = "int", Order = 2)]
         [Required(ErrorMessage = "Address ID is required")]
         [Display(Name = "Address ID")]
         [Description("Primary key. Foreign key to Address.AddressID.")]
-        public int? AddressId { get; set; } // int
+        public int? AddressID { get; set; } // int
         [Key]
         [Column(name : "AddressTypeID", TypeName = "int", Order = 3)]
         [Required(ErrorMessage = "Address Type ID is required")]
         [Display(Name = "Address Type ID")]
         [Description("Primary key. Foreign key to AddressType.AddressTypeID.")]
-        public int? AddressTypeId { get; set; } // int
+        public int? AddressTypeID { get; set; } // int
         [Column(name : "rowguid", TypeName = "uniqueidentifier")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
-        public Guid? Rowguid { get; set; } // uniqueidentifier
+        public Guid? rowguid { get; set; } // uniqueidentifier
         [Column(name : "ModifiedDate", TypeName = "datetime")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]

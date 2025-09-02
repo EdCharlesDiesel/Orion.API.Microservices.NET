@@ -3,6 +3,8 @@
   <component name="UserContentModel">
     <attachedFolders />
     <explicitIncludes />
-    <explicitExcludes />
+    <explicitExcludes>
+      <Path>src/Api/Orion.API.Basket</Path>
+    </explicitExcludes>
   </component>
 </project>

@@ -41,6 +41,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "Is Only State Province Flag is required")]
         [Display(Name = "Is Only State Province Flag")]
         [Description("0 = StateProvinceCode exists. 1 = StateProvinceCode unavailable, using CountryRegionCode.")]
+        [NotMapped]
         public bool? IsOnlyStateProvinceFlag { get; set; } // bit
         [Column(name : "Name", TypeName = "nvarchar")]
         [MaxLength(50)]

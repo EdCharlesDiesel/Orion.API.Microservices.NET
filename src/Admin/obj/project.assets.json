@@ -189,19 +189,13 @@
           }
         }
       },
-      "Microsoft.DotNet.ILCompiler/9.0.8": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore/9.0.7": {
+      "Microsoft.EntityFrameworkCore/9.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "9.0.7",
-          "Microsoft.EntityFrameworkCore.Analyzers": "9.0.7",
-          "Microsoft.Extensions.Caching.Memory": "9.0.7",
-          "Microsoft.Extensions.Logging": "9.0.7"
+          "Microsoft.EntityFrameworkCore.Abstractions": "9.0.8",
+          "Microsoft.EntityFrameworkCore.Analyzers": "9.0.8",
+          "Microsoft.Extensions.Caching.Memory": "9.0.8",
+          "Microsoft.Extensions.Logging": "9.0.8"
         },
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
@@ -217,7 +211,7 @@
           "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/9.0.7": {
+      "Microsoft.EntityFrameworkCore.Abstractions/9.0.8": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -230,16 +224,16 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/9.0.7": {
+      "Microsoft.EntityFrameworkCore.Analyzers/9.0.8": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Relational/9.0.7": {
+      "Microsoft.EntityFrameworkCore.Relational/9.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "9.0.7",
-          "Microsoft.Extensions.Caching.Memory": "9.0.7",
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.7",
-          "Microsoft.Extensions.Logging": "9.0.7"
+          "Microsoft.EntityFrameworkCore": "9.0.8",
+          "Microsoft.Extensions.Caching.Memory": "9.0.8",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+          "Microsoft.Extensions.Logging": "9.0.8"
         },
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
@@ -252,48 +246,65 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/9.0.7": {
+      "Microsoft.EntityFrameworkCore.SqlServer/9.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.6",
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.7",
-          "Microsoft.Extensions.Caching.Memory": "9.0.7",
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.7",
-          "Microsoft.Extensions.Logging": "9.0.7",
-          "System.Formats.Asn1": "9.0.7",
-          "System.Text.Json": "9.0.7"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite/9.0.8": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Data.SqlClient": "5.1.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
           "Microsoft.Extensions.Caching.Memory": "9.0.8",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
           "Microsoft.Extensions.Logging": "9.0.8",
-          "NetTopologySuite": "2.5.0",
-          "NetTopologySuite.IO.SqlServerBytes": "2.1.0",
           "System.Formats.Asn1": "9.0.8",
           "System.Text.Json": "9.0.8"
         },
         "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer.Abstractions/9.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.SqlServer.Types": "160.1000.6",
+          "System.Text.Json": "9.0.8"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer.HierarchyId/9.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.1.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer.Abstractions": "9.0.8",
+          "Microsoft.Extensions.Caching.Memory": "9.0.8",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+          "Microsoft.Extensions.Logging": "9.0.8",
+          "Microsoft.SqlServer.Types": "160.1000.6",
+          "System.Formats.Asn1": "9.0.8",
+          "System.Text.Json": "9.0.8"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.HierarchyId.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.HierarchyId.dll": {
             "related": ".xml"
           }
         },
@@ -643,12 +654,6 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.8": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -772,19 +777,32 @@
           }
         }
       },
-      "NetTopologySuite.IO.SqlServerBytes/2.1.0": {
+      "NetTopologySuite.IO.PostGis/2.1.0": {
         "type": "package",
         "dependencies": {
           "NetTopologySuite": "[2.0.0, 3.0.0-A)"
         },
         "compile": {
-          "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.dll": {
+          "lib/netstandard2.1/NetTopologySuite.IO.PostGis.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.dll": {
+          "lib/netstandard2.1/NetTopologySuite.IO.PostGis.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "NodaTime/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/NodaTime.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/NodaTime.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -818,6 +836,81 @@
         },
         "runtime": {
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite/9.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Npgsql.NetTopologySuite": "9.0.3"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime/9.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Npgsql.NodaTime": "9.0.3"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "Npgsql.NetTopologySuite/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NetTopologySuite": "2.5.0",
+          "NetTopologySuite.IO.PostGIS": "2.1.0",
+          "Npgsql": "9.0.3"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.NodaTime/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NodaTime": "3.2.0",
+          "Npgsql": "9.0.3"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.NodaTime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.NodaTime.dll": {
             "related": ".xml"
           }
         }
@@ -1278,13 +1371,12 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.7",
-          "Microsoft.DotNet.ILCompiler": "9.0.8",
-          "Microsoft.EntityFrameworkCore": "9.0.7",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
-          "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": "9.0.8",
-          "Microsoft.NET.ILLink.Tasks": "9.0.8",
+          "Microsoft.EntityFrameworkCore": "9.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer.HierarchyId": "9.0.8",
           "Microsoft.SqlServer.Types": "160.1000.6",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": "9.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime": "9.0.4",
           "Orion.Domain": "1.0.0"
         },
         "compile": {
@@ -1595,39 +1687,10 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
-    "Microsoft.DotNet.ILCompiler/9.0.8": {
-      "sha512": "cMwVh5hsxAhv+oMHQdgcXodt2kDpfviofBO4IXupSAHJW2vZOZOOIhvPWRGO6NeGcP8SR4OpSwktRqb0i79KFA==",
+    "Microsoft.EntityFrameworkCore/9.0.8": {
+      "sha512": "bNGdPhN762+BIIO5MFYLjafRqkSS1MqLOc/erd55InvLnFxt9H3N5JNsuag1ZHyBor1VtD42U0CHpgqkWeAYgQ==",
       "type": "package",
-      "path": "microsoft.dotnet.ilcompiler/9.0.8",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "build/BuildFrameworkNativeObjects.proj",
-        "build/Microsoft.DotNet.ILCompiler.SingleEntry.targets",
-        "build/Microsoft.DotNet.ILCompiler.props",
-        "build/Microsoft.NETCore.Native.Publish.targets",
-        "build/Microsoft.NETCore.Native.Unix.targets",
-        "build/Microsoft.NETCore.Native.Windows.targets",
-        "build/Microsoft.NETCore.Native.targets",
-        "build/NativeAOT.natstepfilter",
-        "build/NativeAOT.natvis",
-        "build/WindowsAPIs.txt",
-        "build/findvcvarsall.bat",
-        "microsoft.dotnet.ilcompiler.9.0.8.nupkg.sha512",
-        "microsoft.dotnet.ilcompiler.nuspec",
-        "runtime.json",
-        "tools/netstandard/ILCompiler.Build.Tasks.deps.json",
-        "tools/netstandard/ILCompiler.Build.Tasks.dll"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore/9.0.7": {
-      "sha512": "PbD0q5ax15r91jD4TN7xbDCjldZSz4JfpYN4ZZjAkWeUyROkV92Ydg0O2/1keFA+2u3KPsDkJMmBKv2zQ06ZVg==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore/9.0.7",
+      "path": "microsoft.entityframeworkcore/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1636,14 +1699,14 @@
         "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props",
         "lib/net8.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.9.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.9.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/9.0.7": {
-      "sha512": "YUXNerEkCf4OANO+zjuMznpUW7R8XxSCqmBfYhBrbrJVc09i84KkNgeUTaOUXCGogSK/3d7ORRhMqfUobnejBg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/9.0.8": {
+      "sha512": "B2yfAIQRRAQ4zvvWqh+HudD+juV3YoLlpXnrog3tU0PM9AFpuq6xo0+mEglN1P43WgdcUiF+65CWBcZe35s15Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/9.0.7",
+      "path": "microsoft.entityframeworkcore.abstractions/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1651,28 +1714,28 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.9.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.9.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/9.0.7": {
-      "sha512": "HqiPjAvjVOsyA1svnjL81/Wk2MRQYMK/lxKVWvw0f5IcA//VcxBepVSAqe7CFirdsPXqe8rFKEwZROWZTz7Jqw==",
+    "Microsoft.EntityFrameworkCore.Analyzers/9.0.8": {
+      "sha512": "2EYStCXt4Hi9p3J3EYMQbItJDtASJd064Kcs8C8hj8Jt5srILrR9qlaL0Ryvk8NrWQoCQvIELsmiuqLEZMLvGA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/9.0.7",
+      "path": "microsoft.entityframeworkcore.analyzers/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "docs/PACKAGE.md",
-        "microsoft.entityframeworkcore.analyzers.9.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.9.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/9.0.7": {
-      "sha512": "Yo5joquG7L79H5BhtpqP8apu+KFOAYfvmj0dZnVkPElBY14wY5qva0SOcrDWzYw5BrJrhIArfCcJCJHBvMYiKg==",
+    "Microsoft.EntityFrameworkCore.Relational/9.0.8": {
+      "sha512": "OVhfyxiHxMvYpwQ8Jy3YZi4koy6TK5/Q7C1oq3z6db+HEGuu6x9L1BX5zDIdJxxlRePMyO4D8ORiXj/D7+MUqw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/9.0.7",
+      "path": "microsoft.entityframeworkcore.relational/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1680,14 +1743,14 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.9.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.9.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/9.0.7": {
-      "sha512": "xNWKpPWY97Cm/+htOdlLprzaIVsZpjiBH7Bz94WqwwlpHzDMULQhT57jsvOxfgK4vphp2qWoJcmyU1mfmvlqTA==",
+    "Microsoft.EntityFrameworkCore.SqlServer/9.0.8": {
+      "sha512": "yNZJIdLQTTHj6FTv9+IUQwmQvOwvUanTBOG1ibeTaaB1zfTtOqrSFQnjMOkcKOgxu+ofsBEDcuctb/f5xj/Oog==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/9.0.7",
+      "path": "microsoft.entityframeworkcore.sqlserver/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1695,24 +1758,39 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.9.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.9.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite/9.0.8": {
-      "sha512": "JphklIoZkb203Mmi6hxeKdfgIIVShw4rovfMJ/sUfFu9HmheeM2OCgJ16m4JHc24sJzU9YRhgGd7nA0o9U+uDQ==",
+    "Microsoft.EntityFrameworkCore.SqlServer.Abstractions/9.0.8": {
+      "sha512": "MAai94UUmMXVbMl0xy5v+cRu/l0UTtLr9ymxSf3TsiM2P7LHyUVijTZRksLJBkNC2JYE3YftNlAtEVCnByz9RQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver.nettopologysuite/9.0.8",
+      "path": "microsoft.entityframeworkcore.sqlserver.abstractions/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "PACKAGE.md",
-        "build/net8.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.targets",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.xml",
-        "microsoft.entityframeworkcore.sqlserver.nettopologysuite.9.0.8.nupkg.sha512",
-        "microsoft.entityframeworkcore.sqlserver.nettopologysuite.nuspec"
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.Abstractions.xml",
+        "microsoft.entityframeworkcore.sqlserver.abstractions.9.0.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer.HierarchyId/9.0.8": {
+      "sha512": "iZQH4lIBGuHz4atrxH+iOcATutup4Q5I0bIc57CpGtIUXAYGBq5wQQlHibZVcI5aPLETi+ZUmbqll9EezZE7Iw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.sqlserver.hierarchyid/9.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "build/net8.0/Microsoft.EntityFrameworkCore.SqlServer.HierarchyId.targets",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.HierarchyId.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.HierarchyId.xml",
+        "microsoft.entityframeworkcore.sqlserver.hierarchyid.9.0.8.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.hierarchyid.nuspec"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/9.0.8": {
@@ -2246,57 +2324,6 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/9.0.8": {
-      "sha512": "rd1CbIsMtVPtZNTIVD6Xydue//klYOOQIDpRgu3BHtv17AlpRs74/6QFbcYgMm/jL+naVU2T3OFLxVSLV5lQLQ==",
-      "type": "package",
-      "path": "microsoft.net.illink.tasks/9.0.8",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "Sdk/Sdk.props",
-        "THIRD-PARTY-NOTICES.TXT",
-        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
-        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
-        "build/Microsoft.NET.ILLink.Analyzers.props",
-        "build/Microsoft.NET.ILLink.Tasks.props",
-        "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.9.0.8.nupkg.sha512",
-        "microsoft.net.illink.tasks.nuspec",
-        "tools/net472/ILLink.Tasks.dll",
-        "tools/net472/ILLink.Tasks.dll.config",
-        "tools/net472/Mono.Cecil.Mdb.dll",
-        "tools/net472/Mono.Cecil.Pdb.dll",
-        "tools/net472/Mono.Cecil.Rocks.dll",
-        "tools/net472/Mono.Cecil.dll",
-        "tools/net472/Sdk/Sdk.props",
-        "tools/net472/System.Buffers.dll",
-        "tools/net472/System.Collections.Immutable.dll",
-        "tools/net472/System.Memory.dll",
-        "tools/net472/System.Numerics.Vectors.dll",
-        "tools/net472/System.Reflection.Metadata.dll",
-        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
-        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
-        "tools/net472/build/Microsoft.NET.ILLink.targets",
-        "tools/net9.0/ILLink.Tasks.deps.json",
-        "tools/net9.0/ILLink.Tasks.dll",
-        "tools/net9.0/Mono.Cecil.Mdb.dll",
-        "tools/net9.0/Mono.Cecil.Pdb.dll",
-        "tools/net9.0/Mono.Cecil.Rocks.dll",
-        "tools/net9.0/Mono.Cecil.dll",
-        "tools/net9.0/Sdk/Sdk.props",
-        "tools/net9.0/build/Microsoft.NET.ILLink.Analyzers.props",
-        "tools/net9.0/build/Microsoft.NET.ILLink.Tasks.props",
-        "tools/net9.0/build/Microsoft.NET.ILLink.targets",
-        "tools/net9.0/illink.deps.json",
-        "tools/net9.0/illink.dll",
-        "tools/net9.0/illink.runtimeconfig.json",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -2425,18 +2452,40 @@
         "nettopologysuite.nuspec"
       ]
     },
-    "NetTopologySuite.IO.SqlServerBytes/2.1.0": {
-      "sha512": "R4BcV19f2l6EjHSjh/EHwLhYQHrOov9vig1EW5oBm0iqlZOgaIJm5tBnlbFnYlvdYOPuf5p0Qtf8PCVwH77Wbg==",
+    "NetTopologySuite.IO.PostGis/2.1.0": {
+      "sha512": "3W8XTFz8iP6GQ5jDXK1/LANHiU+988k1kmmuPWNKcJLpmSg6CvFpbTpz+s4+LBzkAp64wHGOldSlkSuzYfrIKA==",
       "type": "package",
-      "path": "nettopologysuite.io.sqlserverbytes/2.1.0",
+      "path": "nettopologysuite.io.postgis/2.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "icon.png",
-        "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.dll",
-        "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.xml",
-        "nettopologysuite.io.sqlserverbytes.2.1.0.nupkg.sha512",
-        "nettopologysuite.io.sqlserverbytes.nuspec"
+        "lib/netstandard2.0/NetTopologySuite.IO.PostGis.dll",
+        "lib/netstandard2.0/NetTopologySuite.IO.PostGis.xml",
+        "lib/netstandard2.1/NetTopologySuite.IO.PostGis.dll",
+        "lib/netstandard2.1/NetTopologySuite.IO.PostGis.xml",
+        "nettopologysuite.io.postgis.2.1.0.nupkg.sha512",
+        "nettopologysuite.io.postgis.nuspec"
+      ]
+    },
+    "NodaTime/3.2.0": {
+      "sha512": "yoRA3jEJn8NM0/rQm78zuDNPA3DonNSZdsorMUj+dltc1D+/Lc5h9YXGqbEEZozMGr37lAoYkcSM/KjTVqD0ow==",
+      "type": "package",
+      "path": "nodatime/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/NodaTime.dll",
+        "lib/net6.0/NodaTime.pdb",
+        "lib/net6.0/NodaTime.xml",
+        "lib/net8.0/NodaTime.dll",
+        "lib/net8.0/NodaTime.pdb",
+        "lib/net8.0/NodaTime.xml",
+        "lib/netstandard2.0/NodaTime.dll",
+        "lib/netstandard2.0/NodaTime.pdb",
+        "lib/netstandard2.0/NodaTime.xml",
+        "nodatime.3.2.0.nupkg.sha512",
+        "nodatime.nuspec"
       ]
     },
     "Npgsql/9.0.3": {
@@ -2468,6 +2517,68 @@
         "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
         "npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
         "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite/9.0.4": {
+      "sha512": "NDwzUXBZSaDbnKUlce1QudqlqHvAHSKe5b7lAfq68YFrdqbOI1Q87FVKKkJQAWjRjTO+0TntbAOOJA7EgnT/AA==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql.nettopologysuite/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.targets",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.xml",
+        "npgsql.entityframeworkcore.postgresql.nettopologysuite.9.0.4.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nettopologysuite.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime/9.0.4": {
+      "sha512": "QZ80CL3c9xzC83eVMWYWa1RcFZA6HJtpMAKFURlmz+1p0OyysSe8R6f/4sI9vk/nwqF6Fkw3lDgku/xH6HcJYg==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql.nodatime/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime.targets",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime.dll",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime.xml",
+        "npgsql.entityframeworkcore.postgresql.nodatime.9.0.4.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nodatime.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.NetTopologySuite/9.0.3": {
+      "sha512": "4+bs4sJ18cSuVYp9mnACKPXx0HVQ6zqgNn00SSDn4OyGJ7qJnILT80y9S0uH0Ot9CzsLb1fN1zWBrwam81GdpA==",
+      "type": "package",
+      "path": "npgsql.nettopologysuite/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.NetTopologySuite.dll",
+        "lib/net6.0/Npgsql.NetTopologySuite.xml",
+        "npgsql.nettopologysuite.9.0.3.nupkg.sha512",
+        "npgsql.nettopologysuite.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.NodaTime/9.0.3": {
+      "sha512": "PMWXCft/iw+5A7eCeMcy6YZXBst6oeisbCkv2JMQVG4SAFa5vQaf6K2voXzUJCqzwOFcCWs+oT42w2uMDFpchw==",
+      "type": "package",
+      "path": "npgsql.nodatime/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.NodaTime.dll",
+        "lib/net6.0/Npgsql.NodaTime.xml",
+        "npgsql.nodatime.9.0.3.nupkg.sha512",
+        "npgsql.nodatime.nuspec",
         "postgresql.png"
       ]
     },
@@ -3570,16 +3681,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore.SqlServer from 9.0.8 to 9.0.7. Reference the package directly from the project to select a different version. \r\n Orion.Admin -> Orion.DataAccess.Postgres -> Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite 9.0.8 -> Microsoft.EntityFrameworkCore.SqlServer (>= 9.0.8) \r\n Orion.Admin -> Orion.DataAccess.Postgres -> Microsoft.EntityFrameworkCore.SqlServer (>= 9.0.7)",
-      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

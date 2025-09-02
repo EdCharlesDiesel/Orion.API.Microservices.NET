@@ -45,11 +45,13 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "Preferred Vendor Status is required")]
         [Display(Name = "Preferred Vendor Status")]
         [Description("0 = Do not use if another vendor is available. 1 = Preferred over other vendors supplying the same product.")]
+        [NotMapped]
         public bool? PreferredVendorStatus { get; set; } // bit
         [Column(name : "ActiveFlag", TypeName = "bit")]
         [Required(ErrorMessage = "Active Flag is required")]
         [Display(Name = "Active Flag")]
         [Description("0 = Vendor no longer used. 1 = Vendor is actively used.")]
+        [NotMapped]
         public bool? ActiveFlag { get; set; } // bit
         [Column(name : "PurchasingWebServiceURL", TypeName = "nvarchar")]
         [MaxLength(1024)]
