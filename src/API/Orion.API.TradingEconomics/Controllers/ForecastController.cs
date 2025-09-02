@@ -1,5 +1,6 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<<< HEAD:src/API/Orion.API.TradingEconomics/Controllers/ForecastController.cs
 using Orion.DataAccess.Postgres.Entities.Common;
 using Orion.DataAccess.Postgres.Repositories;
 using Orion.Domain.IRepositories;
@@ -7,11 +8,25 @@ using Forecast = Orion.Domain.IRepositories.Forecast;
 
 namespace Orion.API.TradingEconomics.Controllers;
 
+========
+using Orion.Services.StockAnalyzer.API.Services;
+using Orion.StockAnalyzer.Core.Domain;
+>>>>>>>> master:src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/CalendarController.cs
 
     [ApiController]
     [Route("api/[controller]")]
     public class ForecastController(IForecastServices service) : ControllerBase
     {
+<<<<<<<< HEAD:src/API/Orion.API.TradingEconomics/Controllers/ForecastController.cs
+========
+        private readonly ICalendarServices _service;
+
+        public CalendarController(ICalendarServices service)
+        {
+            _service = service;
+        }
+
+>>>>>>>> master:src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/CalendarController.cs
         /// <summary>
         /// Get all comtrade categories
         /// </summary>
