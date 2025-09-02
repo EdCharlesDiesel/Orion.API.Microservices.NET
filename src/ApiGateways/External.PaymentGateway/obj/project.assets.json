@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "Microsoft.Extensions.ApiDescription.Server/9.0.7": {
+      "Microsoft.Extensions.ApiDescription.Server/9.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.Extensions.ApiDescription.Server.props": {},
@@ -13,10 +13,10 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/9.0.7": {
+      "Microsoft.Extensions.DependencyInjection/9.0.8": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.7"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.DependencyInjection.dll": {
@@ -32,7 +32,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.7": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.8": {
         "type": "package",
         "compile": {
           "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -129,7 +129,7 @@
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
         }
       },
-      "Microsoft.Extensions.Primitives/9.0.7": {
+      "Microsoft.Extensions.Primitives/9.0.8": {
         "type": "package",
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Primitives.dll": {
@@ -145,7 +145,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.OpenApi/2.0.0": {
+      "Microsoft.OpenApi/2.2.0": {
         "type": "package",
         "dependencies": {
           "System.Text.Json": "8.0.5"
@@ -161,10 +161,10 @@
           }
         }
       },
-      "Microsoft.OpenApi.Readers/1.6.24": {
+      "Microsoft.OpenApi.Readers/1.6.25": {
         "type": "package",
         "dependencies": {
-          "Microsoft.OpenApi": "1.6.24",
+          "Microsoft.OpenApi": "1.6.25",
           "SharpYaml": "2.1.1"
         },
         "compile": {
@@ -276,10 +276,10 @@
     }
   },
   "libraries": {
-    "Microsoft.Extensions.ApiDescription.Server/9.0.7": {
-      "sha512": "51aeqSIFKvZgXhLwMBP5VFySJoSTJhgMhMUsH42GNSOZ8SJl7013b6c4IM8xOxVF2SHUSxm7dENrDvhdJv9bvA==",
+    "Microsoft.Extensions.ApiDescription.Server/9.0.8": {
+      "sha512": "wAvim8U3Z7Y0c4qyK5KJQuN8TlaHxDkZ/0e3UqHsl+YHGglsWZ5BOxKcCLusrJWKEU2048yYdrVnW0AtSbqIBg==",
       "type": "package",
-      "path": "microsoft.extensions.apidescription.server/9.0.7",
+      "path": "microsoft.extensions.apidescription.server/9.0.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -289,7 +289,7 @@
         "build/Microsoft.Extensions.ApiDescription.Server.targets",
         "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
         "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
-        "microsoft.extensions.apidescription.server.9.0.7.nupkg.sha512",
+        "microsoft.extensions.apidescription.server.9.0.8.nupkg.sha512",
         "microsoft.extensions.apidescription.server.nuspec",
         "tools/Newtonsoft.Json.dll",
         "tools/dotnet-getdocument.deps.json",
@@ -533,10 +533,10 @@
         "tools/netcoreapp2.1/System.Diagnostics.DiagnosticSource.dll"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/9.0.7": {
-      "sha512": "i05AYA91vgq0as84ROVCyltD2gnxaba/f1Qw2rG7mUsS0gv8cPTr1Gm7jPQHq7JTr4MJoQUcanLVs16tIOUJaQ==",
+    "Microsoft.Extensions.DependencyInjection/9.0.8": {
+      "sha512": "JJjI2Fa+QtZcUyuNjbKn04OjIUX5IgFGFu/Xc+qvzh1rXdZHLcnqqVXhR4093bGirTwacRlHiVg1XYI9xum6QQ==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/9.0.7",
+      "path": "microsoft.extensions.dependencyinjection/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -558,15 +558,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.9.0.7.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.9.0.8.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.7": {
-      "sha512": "iPK1FxbGFr2Xb+4Y+dTYI8Gupu9pOi8I3JPuPsrogUmEhe2hzZ9LpCmolMEBhVDo2ikcSr7G5zYiwaapHSQTew==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.8": {
+      "sha512": "xY3lTjj4+ZYmiKIkyWitddrp1uL5uYiweQjqo4BKBw01ZC4HhcfgLghDpPZcUlppgWAFqFy9SgkiYWOMx365pw==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.7",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -588,7 +588,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.9.0.7.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -767,10 +767,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Primitives/9.0.7": {
-      "sha512": "ti/zD9BuuO50IqlvhWQs9GHxkCmoph5BHjGiWKdg2t6Or8XoyAfRJiKag+uvd/fpASnNklfsB01WpZ4fhAe0VQ==",
+    "Microsoft.Extensions.Primitives/9.0.8": {
+      "sha512": "tizSIOEsIgSNSSh+hKeUVPK7xmTIjR8s+mJWOu1KXV3htvNQiPMFRMO17OdI1y/4ZApdBVk49u/08QGC9yvLug==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/9.0.7",
+      "path": "microsoft.extensions.primitives/9.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -790,15 +790,15 @@
         "lib/net9.0/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.9.0.7.nupkg.sha512",
+        "microsoft.extensions.primitives.9.0.8.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.OpenApi/2.0.0": {
-      "sha512": "GGYLfzV/G/ct80OZ45JxnWP7NvMX1BCugn/lX7TH5o0lcVaviavsLMTxmFV2AybXWjbi3h6FF1vgZiTK6PXndw==",
+    "Microsoft.OpenApi/2.2.0": {
+      "sha512": "zLDoSPmxIHtEfvR9WaoN4zEFSR+qVxV9gEQbdLjCUUMYTQJh7YOozSd9R5pXm7NYxTAKyOWqQikm7s+gEXOysw==",
       "type": "package",
-      "path": "microsoft.openapi/2.0.0",
+      "path": "microsoft.openapi/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -809,14 +809,14 @@
         "lib/netstandard2.0/Microsoft.OpenApi.dll",
         "lib/netstandard2.0/Microsoft.OpenApi.pdb",
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
-        "microsoft.openapi.2.0.0.nupkg.sha512",
+        "microsoft.openapi.2.2.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
     },
-    "Microsoft.OpenApi.Readers/1.6.24": {
-      "sha512": "dWcqm4L/M9/HcPmDv5RJob7hdW1lmiABZUZu03lYyReLn4zSwZ4iIF07ziBcWfuf49dNR/R3HOR7fPHVArXEeg==",
+    "Microsoft.OpenApi.Readers/1.6.25": {
+      "sha512": "QsiJrhk+5BiH8/YKdIUWkGdhLpftMhok+urTi0S2i+xTIQhoDLJQ6QMNJQ2/g4oLYftID5v5LNqKUZSIXTjGeg==",
       "type": "package",
-      "path": "microsoft.openapi.readers/1.6.24",
+      "path": "microsoft.openapi.readers/1.6.25",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -824,7 +824,7 @@
         "lib/netstandard2.0/Microsoft.OpenApi.Readers.dll",
         "lib/netstandard2.0/Microsoft.OpenApi.Readers.pdb",
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
-        "microsoft.openapi.readers.1.6.24.nupkg.sha512",
+        "microsoft.openapi.readers.1.6.25.nupkg.sha512",
         "microsoft.openapi.readers.nuspec"
       ]
     },
@@ -985,14 +985,14 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.Extensions.ApiDescription.Server >= 9.0.7",
-      "Microsoft.Extensions.DependencyInjection >= 9.0.7",
-      "Microsoft.Extensions.DependencyInjection.Abstractions >= 9.0.7",
+      "Microsoft.Extensions.ApiDescription.Server >= 9.0.8",
+      "Microsoft.Extensions.DependencyInjection >= 9.0.8",
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 9.0.8",
       "Microsoft.Extensions.Logging >= 9.0.7",
       "Microsoft.Extensions.Logging.Debug >= 9.0.7",
-      "Microsoft.Extensions.Primitives >= 9.0.7",
-      "Microsoft.OpenApi >= 2.0.0",
-      "Microsoft.OpenApi.Readers >= 1.6.24",
+      "Microsoft.Extensions.Primitives >= 9.0.8",
+      "Microsoft.OpenApi >= 2.2.0",
+      "Microsoft.OpenApi.Readers >= 1.6.25",
       "Swashbuckle.AspNetCore >= 9.0.3",
       "Swashbuckle.AspNetCore.Swagger >= 9.0.3",
       "Swashbuckle.AspNetCore.SwaggerUI >= 9.0.3"
@@ -1046,15 +1046,15 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.7, )"
+            "version": "[9.0.8, )"
           },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
-            "version": "[9.0.7, )"
+            "version": "[9.0.8, )"
           },
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
-            "version": "[9.0.7, )"
+            "version": "[9.0.8, )"
           },
           "Microsoft.Extensions.Logging": {
             "target": "Package",
@@ -1066,15 +1066,15 @@
           },
           "Microsoft.Extensions.Primitives": {
             "target": "Package",
-            "version": "[9.0.7, )"
+            "version": "[9.0.8, )"
           },
           "Microsoft.OpenApi": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "[2.2.0, )"
           },
           "Microsoft.OpenApi.Readers": {
             "target": "Package",
-            "version": "[1.6.24, )"
+            "version": "[1.6.25, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

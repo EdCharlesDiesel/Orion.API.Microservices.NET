@@ -13,3 +13,4 @@ C:\x\Orion.API.Microservices.NET.v1.0.1\obj\Debug\docker-compose.dcproj.Assembly
 C:\x\Orion.API.Microservices.NET.v1.0.1\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\x\Orion.API.Microservices.NET.v1.0.1\obj\Debug\docker-compose.dcproj.CopyComplete
 C:\x\Orion.API.Microservices.NET\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\x\Orion.Microservices.NET\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

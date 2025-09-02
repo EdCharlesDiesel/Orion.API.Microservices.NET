@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Orion.API.Order</name>
+    </assembly>
+    <members>
+        <member name="M:Orion.API.Order.Controllers.OrderController.GetAllOrders">
+            <summary>
+            Get all orders.
+            </summary>
+        </member>
+        <member name="M:Orion.API.Order.Controllers.OrderController.Create(Orion.DataAccess.Postgres.Entities.Common.OrderDetail)">
+            <summary>
+            Create's an order.
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orion.API.Order.Controllers.OrderController.UpdateOrder(Orion.DataAccess.Postgres.Entities.Common.OrderDetail)">
+            <summary>
+            Update's an order.
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Orion.API.Order.Controllers.OrderController.UpdateOrder(System.Guid)">
+            <summary>
+            Delete's an order by id.
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

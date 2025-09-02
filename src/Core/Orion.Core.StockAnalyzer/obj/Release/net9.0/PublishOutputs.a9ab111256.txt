@@ -1,3 +1,0 @@
-C:\x\Orion.API.Microservices.NET\out\Orion.StockAnalyzer.Core.dll
-C:\x\Orion.API.Microservices.NET\out\Orion.StockAnalyzer.Core.deps.json
-C:\x\Orion.API.Microservices.NET\out\Orion.StockAnalyzer.Core.pdb

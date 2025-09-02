@@ -1,3 +1,5 @@
+using System;
+using System.Net.Http;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -8,12 +10,10 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Orion.Common.Logging;
+using Orion.Shopping.Aggregator.Services;
 using Polly;
 using Polly.Extensions.Http;
 using Serilog;
-using System;
-using System.Net.Http;
-using Orion.Shopping.Aggregator.Services;
 
 namespace Orion.Shopping.Aggregator
 {
@@ -26,19 +26,19 @@ namespace Orion.Shopping.Aggregator
         {
             services.AddTransient<LoggingDelegatingHandler>();
 
-            services.AddHttpClient<ICatalogService, CatalogService>(c =>
+            services.AddHttpClient<ICatalogAggregatorService, CatalogAggregatorService>(c =>
                 c.BaseAddress = new Uri(Configuration["ApiSettings:CatalogUrl"] ?? throw new InvalidOperationException()))
                 .AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy())
                 .AddPolicyHandler(GetCircuitBreakerPolicy());
 
-            services.AddHttpClient<IBasketService, BasketService>(c =>
+            services.AddHttpClient<IBasketAggregatorService, BasketAggregatorService>(c =>
                 c.BaseAddress = new Uri(Configuration["ApiSettings:BasketUrl"] ?? throw new InvalidOperationException()))
                 .AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy())
                 .AddPolicyHandler(GetCircuitBreakerPolicy());
 
-            services.AddHttpClient<IOrderService, OrderService>(c =>
+            services.AddHttpClient<IOrderAggregatorService, OrderAggregatorService>(c =>
                 c.BaseAddress = new Uri(Configuration["ApiSettings:OrderingUrl"] ?? throw new InvalidOperationException()))
                 .AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy())
@@ -73,7 +73,7 @@ namespace Orion.Shopping.Aggregator
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
+                endpoints.MapHealthChecks("/hc", new HealthCheckOptions
                 {
                     Predicate = _ => true,
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse

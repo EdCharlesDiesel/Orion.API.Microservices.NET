@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Orion.Services.Catalog.API</name>
+    </assembly>
+    <members>
+        <member name="M:Orion.Services.Catalog.API.Controllers.ProductController.GetAllProducts">
+            <summary>Get all products.</summary>
+        </member>
+        <member name="M:Orion.Services.Catalog.API.Controllers.ProductController.GetProductById(System.Guid)">
+            <summary>Get a product by ID.</summary>
+        </member>
+        <member name="M:Orion.Services.Catalog.API.Controllers.ProductController.Create(Orion.Core.Catalog.Domain.Product)">
+            <summary>Create a product.</summary>
+        </member>
+        <member name="M:Orion.Services.Catalog.API.Controllers.ProductController.Update(System.Guid,Orion.Core.Catalog.Domain.Product)">
+            <summary>Update a product.</summary>
+        </member>
+        <member name="M:Orion.Services.Catalog.API.Controllers.ProductController.Delete(System.Guid)">
+            <summary>Delete a product.</summary>
+        </member>
+        <member name="T:Orion.Services.Catalog.API.Data.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.Catalog.API.Data.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.Catalog.API.Data.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Orion.Services.Catalog.API.Data.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="F:Orion.Services.Catalog.API.Helper.HttpRequesterClass._clientKey">
+            <summary>
+            Store the client key to be used through the program
+            </summary>
+        </member>
+        <member name="M:Orion.Services.Catalog.API.Helper.HttpRequesterClass.HttpRequester(System.String,System.String)">
+            <summary>
+            Method to make HTTP calls to TradingEconomics API
+            </summary>
+            <param name="url">The URL to fetch</param>
+            <param name="baseUrl">The base path, the default is 'https://api.tradingeconomics.com/'</param>
+            <returns>A task tha will be resolved in a string with the content of the response</returns>
+        </member>
+    </members>
+</doc>

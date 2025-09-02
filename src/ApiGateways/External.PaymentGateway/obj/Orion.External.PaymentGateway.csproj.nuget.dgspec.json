@@ -49,15 +49,15 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.7, )"
+              "version": "[9.0.8, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[9.0.7, )"
+              "version": "[9.0.8, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
-              "version": "[9.0.7, )"
+              "version": "[9.0.8, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
@@ -69,15 +69,15 @@
             },
             "Microsoft.Extensions.Primitives": {
               "target": "Package",
-              "version": "[9.0.7, )"
+              "version": "[9.0.8, )"
             },
             "Microsoft.OpenApi": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.OpenApi.Readers": {
               "target": "Package",
-              "version": "[1.6.24, )"
+              "version": "[1.6.25, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

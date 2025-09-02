@@ -5,12 +5,22 @@
     <projectFile profileName="https">Orion.Blazor.Web/Orion.Blazor.Web.csproj</projectFile>
     <projectFile profileName="https">Orion.Web/Orion.Web.csproj</projectFile>
     <projectFile kind="DockerCompose">docker-compose.dcproj</projectFile>
+    <projectFile kind="Docker">src/API/Orion.API.Basket/Orion.Services.Basket.API/Orion.API.Basket.API.csproj</projectFile>
+    <projectFile profileName="UserProfile.API">src/API/Orion.API.Basket/Orion.Services.Basket.API/Orion.API.Basket.API.csproj</projectFile>
+    <projectFile kind="Docker">src/API/Orion.API.Catalog/Orion.Services.Catalog.API/Orion.API.Catalog.csproj</projectFile>
+    <projectFile profileName=".Catalog.API">src/API/Orion.API.Catalog/Orion.Services.Catalog.API/Orion.API.Catalog.csproj</projectFile>
     <projectFile profileName="External.PaymentGateway">src/ApiGateways/External.PaymentGateway/Orion.External.PaymentGateway.csproj</projectFile>
     <projectFile profileName="IIS Express">src/ApiGateways/External.PaymentGateway/Orion.External.PaymentGateway.csproj</projectFile>
     <projectFile kind="Docker">src/ApiGateways/OcelotApiGw/Orion.OcelotApiGw.csproj</projectFile>
     <projectFile profileName="OcelotApiGw">src/ApiGateways/OcelotApiGw/Orion.OcelotApiGw.csproj</projectFile>
     <projectFile kind="Docker">src/ApiGateways/Shopping.Aggregator/Orion.Shopping.Aggregator.csproj</projectFile>
     <projectFile profileName="Shopping.Aggregator">src/ApiGateways/Shopping.Aggregator/Orion.Shopping.Aggregator.csproj</projectFile>
+    <projectFile kind="Docker">src/Applications/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj</projectFile>
+    <projectFile profileName="http">src/Applications/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj</projectFile>
+    <projectFile profileName="https">src/Applications/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj</projectFile>
+    <projectFile profileName="IIS Express">src/Applications/Orion.WebApps.StockAnalyzer.Web/Orion.WebApps.StockAnalyzer.Web.csproj</projectFile>
+    <projectFile profileName="Orion.StockAnalyzer.Web">src/Applications/Orion.WebApps.StockAnalyzer.Web/Orion.WebApps.StockAnalyzer.Web.csproj</projectFile>
+    <projectFile kind="Docker">src/Applications/Orion.WebApps.Web/Orion.WebApps.Web.csproj</projectFile>
     <projectFile kind="Docker">src/Services/Catalog/Catalog.API/Orion.Services.Catalog.API.csproj</projectFile>
     <projectFile profileName="Catalog.API">src/Services/Catalog/Catalog.API/Orion.Services.Catalog.API.csproj</projectFile>
     <projectFile profileName="IIS Express">src/Services/Catalog/Catalog.API/Orion.Services.Catalog.API.csproj</projectFile>
@@ -19,9 +29,23 @@
     <projectFile kind="Docker">src/Services/Discount/Discount.API/Orion.Services.Discount.API.csproj</projectFile>
     <projectFile profileName="Discount.API">src/Services/Discount/Discount.API/Orion.Services.Discount.API.csproj</projectFile>
     <projectFile profileName="IIS Express">src/Services/Discount/Discount.API/Orion.Services.Discount.API.csproj</projectFile>
+    <projectFile profileName="UserProfile.API">src/Services/Orion.Services.Basket/Orion.Services.Basket.API/Orion.Services.Basket.API.csproj</projectFile>
+    <projectFile profileName=".Catalog.API">src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Orion.Services.Catalog.API.csproj</projectFile>
+    <projectFile profileName="UserProfile.API">src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Orion.Services.Catalog.API.csproj</projectFile>
+    <projectFile>src/Services/Orion.Services.Chat/Orion.Services.Chat.csproj</projectFile>
+    <projectFile>src/Services/Orion.Services.CompetitionScorecard/Orion.Services.CompetitionScorecard.API/Orion.Services.CompetitionScorecard.API.csproj</projectFile>
+    <projectFile>src/Services/Orion.Services.Discount/Orion.Services.Discount.API/Orion.Services.Discount.API.csproj</projectFile>
+    <projectFile profileName="UserProfile.API">src/Services/Orion.Services.Order/Orion.Services.Order.API/Orion.Services.Order.API.csproj</projectFile>
+    <projectFile profileName="IIS Express">src/Services/Orion.Services.TradingEconomics/Orion.Services.TradingEconomics.API/Orion.Services.TradingEconomics.API.csproj</projectFile>
+    <projectFile profileName="StockAnalyzer.API">src/Services/Orion.Services.TradingEconomics/Orion.Services.TradingEconomics.API/Orion.Services.TradingEconomics.API.csproj</projectFile>
+    <projectFile profileName="TradingEconomics.API">src/Services/Orion.Services.TradingEconomics/Orion.Services.TradingEconomics.API/Orion.Services.TradingEconomics.API.csproj</projectFile>
+    <projectFile profileName="IIS Express">src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Orion.Services.UserProfile.API.csproj</projectFile>
+    <projectFile profileName="StockAnalyzer.API">src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Orion.Services.UserProfile.API.csproj</projectFile>
+    <projectFile profileName="UserProfile.API">src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Orion.Services.UserProfile.API.csproj</projectFile>
     <projectFile kind="Docker">src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj</projectFile>
     <projectFile profileName="IIS Express">src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj</projectFile>
     <projectFile profileName="StockAnalyzer.API">src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj</projectFile>
+    <projectFile profileName="IIS Express">src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.TradingEcomomics.API.csproj</projectFile>
     <projectFile profileName="http">src/Services/Users/Users.csproj</projectFile>
     <projectFile profileName="https">src/Services/Users/Users.csproj</projectFile>
     <projectFile kind="Docker">src/WebApps/AspnetRunBasics/Orion.WebApps.WebASP.csproj</projectFile>
@@ -44,89 +68,271 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/Domain/Forecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/ForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Repositories/ForecastRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/IForecastServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/Controllers/ForecastControllerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/# Orion.Microservices.NET.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Orion.Microservices.NET.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/dictionaries/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/httpRequests/http-client.cookies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orion.API.Microservices.NET.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Orion.API.Microservices.NET.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/Domain/LatestModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/Orion.StockAnalyzer.Core.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/ref/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/ref/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/refint/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.StockAnalyzer/obj/Debug/net9.0/refint/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/IStockAnalyzerContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/IStockAnalyzerContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/Migrations/StockAnalyzerContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/Migrations/StockAnalyzerContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/StockAnalyzerContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Data/StockAnalyzerContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Repositories/LatestModelRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Services/ILatestModelRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/ref/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/ref/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/refint/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/refint/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/Controllers/ComtradeControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/Controllers/ComtradeControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/Controllers/LatestControllerUnitTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/Orion.Services.StockAnalyzer.API.Tests.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/ref/Orion.Services.StockAnalyzer.API.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/ref/Orion.Services.StockAnalyzer.API.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/refint/Orion.Services.StockAnalyzer.API.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/StockAnalyzer.API.Tests/obj/Debug/net9.0/refint/Orion.Services.StockAnalyzer.API.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.Services.StockAnalyzer.API.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.StockAnalyzer.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.StockAnalyzer.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.WebApps.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.WebApps.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.WebApps.Web.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.WebApps.Web.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.WebApps.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/bin/Debug/net9.0/Orion.WebApps.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/ref/Orion.WebApps.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/ref/Orion.WebApps.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/refint/Orion.WebApps.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/refint/Orion.WebApps.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApps/Orion.WebApps.Web/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/Docker/docker-compose.generated.override.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.Microservices.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orion.Microservices.NET/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orion.API.Microservices.NET.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Orion.Microservices.NET.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orion.API.Microservices.NET.sln.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dcproj" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dcproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API.Tests/obj/Orion.Services.Basket.API.Tests.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API.Tests/obj/Orion.Services.Basket.API.Tests.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API.Tests/obj/Orion.Services.Basket.API.Tests.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API.Tests/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API.Tests/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API.Tests/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/Orion.Services.Catalog.API.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Debug/net9.0/Orion.External.PaymentGateway.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Orion.External.PaymentGateway.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/Orion.External.PaymentGateway.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Debug/net9.0/Orion.OcelotApiGw.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Orion.OcelotApiGw.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/Orion.OcelotApiGw.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/OcelotApiGw/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Debug/net9.0/Orion.Shopping.Aggregator.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Orion.Shopping.Aggregator.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/Orion.Shopping.Aggregator.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiGateways/Shopping.Aggregator/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheck/obj/Debug/net9.0/Orion.WebApps.HealthCheck.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheck/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Debug/net9.0/Orion.WebApps.HealthCheckUI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Orion.WebApps.HealthCheckUI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/Orion.WebApps.HealthCheckUI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/Orion.WebApps.StockAnalyzer.Web.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Orion.WebApps.StockAnalyzer.Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Orion.WebApps.StockAnalyzer.Web.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Orion.WebApps.StockAnalyzer.Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/Orion.WebApps.StockAnalyzer.Web.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Debug/net9.0/Orion.WebApps.Web.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Orion.WebApps.Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Orion.WebApps.Web.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Orion.WebApps.Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Orion.WebApps.Web.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Orion.WebApps.Web.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/Orion.WebApps.Web.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Debug/net9.0/Orion.Core.Basket.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Debug/net9.0/Orion.Core.Basket.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Debug/net9.0/Orion.Core.Basket.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Debug/net9.0/Orion.Core.Basket.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Debug/net9.0/Orion.Core.Basket.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Debug/net9.0/Orion.Core.Basket.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Debug/net9.0/Orion.Core.Basket.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Debug/net9.0/Orion.Core.Basket.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Orion.Core.Basket.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/Orion.Core.Basket.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Basket/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Debug/net9.0/Orion.Core.Catalog.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Debug/net9.0/Orion.Core.Catalog.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Debug/net9.0/Orion.Core.Catalog.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Debug/net9.0/Orion.Core.Catalog.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Debug/net9.0/Orion.Core.Catalog.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Debug/net9.0/Orion.Core.Catalog.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Debug/net9.0/Orion.Core.Catalog.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Debug/net9.0/Orion.Core.Catalog.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Orion.Core.Catalog.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/Orion.Core.Catalog.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Catalog/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Debug/net9.0/Orion.Core.Chat.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Debug/net9.0/Orion.Core.Chat.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Debug/net9.0/Orion.Core.Chat.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Debug/net9.0/Orion.Core.Chat.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Debug/net9.0/Orion.Core.Chat.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Debug/net9.0/Orion.Core.Chat.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Debug/net9.0/Orion.Core.Chat.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Debug/net9.0/Orion.Core.Chat.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Orion.Core.Chat.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/Orion.Core.Chat.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Chat/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Debug/net9.0/Orion.Core.CompetitionScorecard.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Debug/net9.0/Orion.Core.CompetitionScorecard.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Debug/net9.0/Orion.Core.CompetitionScorecard.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Debug/net9.0/Orion.Core.CompetitionScorecard.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Debug/net9.0/Orion.Core.CompetitionScorecard.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Debug/net9.0/Orion.Core.CompetitionScorecard.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Debug/net9.0/Orion.Core.CompetitionScorecard.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Debug/net9.0/Orion.Core.CompetitionScorecard.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Orion.Core.CompetitionScorecard.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/Orion.Core.CompetitionScorecard.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.CompetitionScorecard/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Debug/net9.0/Orion.Core.Discount.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Debug/net9.0/Orion.Core.Discount.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Debug/net9.0/Orion.Core.Discount.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Debug/net9.0/Orion.Core.Discount.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Debug/net9.0/Orion.Core.Discount.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Debug/net9.0/Orion.Core.Discount.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Debug/net9.0/Orion.Core.Discount.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Debug/net9.0/Orion.Core.Discount.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Orion.Core.Discount.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/Orion.Core.Discount.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Discount/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Debug/net9.0/Orion.Core.Order.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Orion.Core.Order.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/Orion.Core.Order.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.Order/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Debug/net9.0/Orion.Core.TradingEconomics.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Debug/net9.0/Orion.Core.TradingEconomics.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Debug/net9.0/Orion.Core.TradingEconomics.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Debug/net9.0/Orion.Core.TradingEconomics.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Debug/net9.0/Orion.Core.TradingEconomics.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Debug/net9.0/Orion.Core.TradingEconomics.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Debug/net9.0/Orion.Core.TradingEconomics.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Debug/net9.0/Orion.Core.TradingEconomics.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Orion.Core.TradingEconomics.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/Orion.Core.TradingEconomics.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.TradingEconomics/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Debug/net9.0/Orion.Core.UserProfile.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Debug/net9.0/Orion.Core.UserProfile.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Debug/net9.0/Orion.Core.UserProfile.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Debug/net9.0/Orion.Core.UserProfile.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Debug/net9.0/Orion.Core.UserProfile.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Debug/net9.0/Orion.Core.UserProfile.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Debug/net9.0/Orion.Core.UserProfile.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Debug/net9.0/Orion.Core.UserProfile.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Orion.Core.UserProfile.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/Orion.Core.UserProfile.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Orion.Core.UserProfile/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Debug/net9.0/Orion.Common.Logging.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Orion.Common.Logging.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/Orion.Common.Logging.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common.Logging/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Debug/net9.0/Orion.EventBus.Messages.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Orion.EventBus.Messages.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/Orion.EventBus.Messages.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/EventBus.Messages/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Debug/net9.0/Orion.Services.Basket.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Orion.Services.Basket.API.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Orion.Services.Basket.API.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Orion.Services.Basket.API.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Orion.Services.Basket.API.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Orion.Services.Basket.API.Tests.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/Orion.Services.Basket.API.Tests.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Basket.API.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping_Orion.Services.Catalog.API.Tests" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping_Orion.Services.Catalog.API.Tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Debug/net9.0/Orion.Services.Catalog.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Orion.Services.Catalog.API.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Orion.Services.Catalog.API.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Orion.Services.Catalog.API.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Orion.Services.Catalog.API.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Orion.Services.Catalog.API.Tests.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/Orion.Services.Catalog.API.Tests.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Catalog.API.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Debug/net9.0/Orion.Services.Chat.API.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Orion.Services.Chat.API.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/Orion.Services.Chat.API.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Chat.API.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Debug/net9.0/Orion.Services.Discount.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Orion.Services.Discount.API.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Orion.Services.Discount.API.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Orion.Services.Discount.API.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Orion.Services.Discount.API.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Orion.Services.Discount.API.Tests.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/Orion.Services.Discount.API.Tests.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.Discount.API.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Debug/net9.0/Orion.Services.TradingEconomics.API.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Orion.Services.TradingEconomics.API.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Orion.Services.TradingEconomics.API.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Orion.Services.TradingEconomics.API.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Orion.Services.TradingEconomics.API.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Orion.Services.TradingEconomics.API.Tests.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/Orion.Services.TradingEconomics.API.Tests.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitTests/Orion.Services.TradingEconomics.API.Tests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +392,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/459bbf9fdb12446c978a3113a173b6d335928/55/d7e61a9e/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8af41436563a490388760e5ba9810f5f4c200/eb/a2295655/ReturnsExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d1e0b313578742df9fa24022a890f31b23908/8d/ca2874b6/ServiceCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eb83c0d558c84b998f640ddee4d6cfb01b918/b2/7548c4f5/WebApplicationBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1c8dbdc22d51f6b2fa81c5f9285e698e027f24dcb8c729c80fef2e18dd4/Calendar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -201,6 +408,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c7102cd0ffb8973777e61b1942c3fffac7e14016a511d055c3adf73ff91748/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c794baab3518d05f8546334d672798d62c10be97c2de99a62b39b885a637/TaskContinuation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f16564c8c4b61e6ea398fe412680c6b795b266584ccf6a362aed712dc4d2b387/WebApplication.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ApiGateways/External.PaymentGateway/Startup.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -224,9 +433,18 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;.NET Launch Settings Profile.Orion.Blazor.Web: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Basket.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Catalog.API: .Catalog.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Catalog.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.Orion.Services.Discount.API: Discount.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.Order.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: Docker.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: IIS Express.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.TradingEcomomics.API: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.TradingEconomics.API: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.TradingEconomics.API: TradingEconomics.API.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.UserProfile.API: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Orion.Services.UserProfile.API: UserProfile.API.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.Orion.Web: http (1).executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.Orion.Web: http.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.Orion.WebApps.HealthCheck.executor&quot;: &quot;Run&quot;,
@@ -234,6 +452,7 @@
     &quot;.NET Launch Settings Profile.Orion.WebApps.Web: http.executor&quot;: &quot;Debug&quot;,
     &quot;.NET Launch Settings Profile.Orion.WebApps.WebASP: AspnetRunBasics.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.Users: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Services\\Catalog\\Orion.Services.Catalog.API.executor&quot;: &quot;Run&quot;,
     &quot;.NET Project.WebApps\\Orion.Blazor.Web.executor&quot;: &quot;Run&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Docker.AspnetRunBasics/Dockerfile.executor&quot;: &quot;Run&quot;,
@@ -245,17 +464,24 @@
     &quot;Docker.StockAnalyzer.API/Dockerfile.executor&quot;: &quot;Run&quot;,
     &quot;Docker.Users/Dockerfile.executor&quot;: &quot;Debug&quot;,
     &quot;Docker.docker-compose.override.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.external.paymentgateway: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.ocelotapigw: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.services.basket.api: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.services.competitionscorecard.api: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.orion.services.stockanalyzer.api-1: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.shopping.aggregator: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.orion.webapps.healthcheck: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.orion.webapps.healthcheckui: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.orion.webapps.web: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Debug&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.Users | #1.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Publish to IIS.Publish Orion.WebApps.WebASP to IIS.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature/DEV-03-ChatBot&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -276,7 +502,7 @@
       <force-push-target remote-path="origin" branch="Feature/DEV-02-StockAnalyzer" />
     </force-push-targets>
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: IIS Express">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -299,7 +525,7 @@
       <riderPublish configuration="Release" platform="Any CPU" publish_profile="&lt;no publish profile&gt;" uuid_high="-8020621603912922607" uuid_low="-5208661210872475040" />
       <method v="2" />
     </configuration>
-    <configuration name="Orion.Web" type="DotNetProject" factoryName=".NET Project">
+    <configuration name="Orion.Services.Chat" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -312,7 +538,53 @@
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <option name="MIXED_MODE_DEBUG" value="0" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/WebApps/Orion.Web/Orion.Web.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.Chat/Orion.Services.Chat.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.CompetitionScorecard.API" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.CompetitionScorecard/Orion.Services.CompetitionScorecard.API/Orion.Services.CompetitionScorecard.API.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.Discount.API" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.Discount/Orion.Services.Discount.API/Orion.Services.Discount.API.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -341,6 +613,82 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.WebApps.Web" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/Applications/Orion.WebApps.Web/Orion.WebApps.Web.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Web" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/WebApps/Orion.Web/Orion.Web.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.API.Basket.API: UserProfile.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/API/Orion.API.Basket/Orion.Services.Basket.API/Orion.API.Basket.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="UserProfile.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.API.Catalog: .Catalog.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/API/Orion.API.Catalog/Orion.Services.Catalog.API/Orion.API.Catalog.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value=".Catalog.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -495,8 +843,23 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Orion.Services.Basket.API: UserProfile.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.Basket/Orion.Services.Basket.API/Orion.Services.Basket.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="UserProfile.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Orion.Services.Catalog.API: Catalog.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Orion.Services.Catalog.API.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Orion.Services.Catalog 2.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="Catalog.API" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -526,7 +889,7 @@
       </method>
     </configuration>
     <configuration name="Orion.Services.Catalog.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Orion.Services.Catalog.API.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Orion.Services.Catalog 2.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -544,6 +907,36 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Catalog/Catalog.API/Orion.Services.Catalog.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.Catalog.API: UserProfile.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Orion.Services.Catalog.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="UserProfile.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.Catalog.API: .Catalog.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Orion.Services.Catalog.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value=".Catalog.API" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -705,10 +1098,10 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Orion.Services.StockAnalyzer.API: Docker" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj" />
+    <configuration name="Orion.Services.Order.API: UserProfile.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.Order/Orion.Services.Order.API/Orion.Services.Order.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="Docker" />
+      <option name="LAUNCH_PROFILE_NAME" value="UserProfile.API" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -721,7 +1114,7 @@
       </method>
     </configuration>
     <configuration name="Orion.Services.StockAnalyzer.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.TradingEconomics.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="StockAnalyzer.API" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -751,7 +1144,7 @@
       </method>
     </configuration>
     <configuration name="Orion.Services.StockAnalyzer.API: StockAnalyzer.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.TradingEconomics.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="StockAnalyzer.API" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -769,6 +1162,111 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.StockAnalyzer.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="StockAnalyzer.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.TradingEcomomics.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Orion.Services.TradingEconomics.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.TradingEconomics.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.TradingEconomics/Orion.Services.TradingEconomics.API/Orion.Services.TradingEconomics.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.TradingEconomics.API: StockAnalyzer.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.TradingEconomics/Orion.Services.TradingEconomics.API/Orion.Services.TradingEconomics.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="StockAnalyzer.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.TradingEconomics.API: TradingEconomics.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.TradingEconomics/Orion.Services.TradingEconomics.API/Orion.Services.TradingEconomics.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="TradingEconomics.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.UserProfile.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Orion.Services.UserProfile.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.UserProfile.API: StockAnalyzer.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Orion.Services.UserProfile.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="StockAnalyzer.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.Services.UserProfile.API: UserProfile.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Orion.Services.UserProfile.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="UserProfile.API" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -825,8 +1323,8 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="Orion.WebApps.HealthCheckUI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/WebApps/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj" />
+    <configuration name="Orion.WebApps.HealthCheckUI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -840,6 +1338,21 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Orion.WebApps.HealthCheckUI: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Applications/Orion.WebApps.HealthCheckUI/Orion.WebApps.HealthCheckUI.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Orion.WebApps.HealthCheck: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/WebApps/Orion.WebApps.HealthCheck/Orion.WebApps.HealthCheck.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -874,6 +1387,36 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/WebApps/Orion.WebApps.HealthCheck/Orion.WebApps.HealthCheck.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="Orion.WebApps.HealthCheck" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.WebApps.StockAnalyzer.Web: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/Orion.WebApps.StockAnalyzer.Web.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Orion.WebApps.StockAnalyzer.Web: Orion.StockAnalyzer.Web" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Applications/Orion.WebApps.StockAnalyzer.Web/Orion.WebApps.StockAnalyzer.Web.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="Orion.StockAnalyzer.Web" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -1105,6 +1648,27 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="External.PaymentGateway/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="orion.external.paymentgateway" />
+          <option name="containerName" value="orion.external.paymentgateway" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/ApiGateways/External.PaymentGateway/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="OcelotApiGw/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -1164,6 +1728,209 @@
             </list>
           </option>
           <option name="sourceFilePath" value="Orion.Blazor.Web/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.Basket.API/Dockerfile (1)" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="orion.api.basket.api" />
+          <option name="contextFolderPath" value="C:\x\Orion.Microservices.NET" />
+          <option name="publishAllPorts" value="true" />
+          <option name="sourceFilePath" value="src/API/Orion.API.Basket/Orion.Services.Basket.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.Basket.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="orion.services.basket.api" />
+          <option name="containerName" value="orion.services.basket.api" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Orion.Services.Basket/Orion.Services.Basket.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.Catalog.API/Dockerfile (1)" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="orion.api.catalog" />
+          <option name="contextFolderPath" value="C:\x\Orion.Microservices.NET" />
+          <option name="publishAllPorts" value="true" />
+          <option name="sourceFilePath" value="src/API/Orion.API.Catalog/Orion.Services.Catalog.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.Catalog.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="orion.services.catalog.api" />
+          <option name="containerName" value="orion.services.catalog.api" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.Chat/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="orion.services.chat" />
+          <option name="containerName" value="orion.services.chat" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Orion.Services.Chat/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.CompetitionScorecard.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="orion.services.competitionscorecard.api" />
+          <option name="containerName" value="orion.services.competitionscorecard.api" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Orion.Services.CompetitionScorecard/Orion.Services.CompetitionScorecard.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.Discount.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="orion.services.discount.api" />
+          <option name="containerName" value="orion.services.discount.api" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Orion.Services.Discount/Orion.Services.Discount.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.Order.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="orion.services.order.api" />
+          <option name="containerName" value="orion.services.order.api" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Orion.Services.Order/Orion.Services.Order.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.TradingEconomics.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="orion.services.tradingeconomics.api" />
+          <option name="containerName" value="orion.services.tradingeconomics.api" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Orion.Services.TradingEconomics/Orion.Services.TradingEconomics.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.Services.UserProfile.API/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="orion.services.userprofile.api" />
+          <option name="containerName" value="orion.services.userprofile.api" />
+          <option name="contextFolderPath" value="C:\x\Orion.API.Microservices.NET" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.WebApps.HealthCheckUI/Dockerfile (1)" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="orion.webapps.healthcheckui" />
+          <option name="contextFolderPath" value="C:\x\Orion.Microservices.NET" />
+          <option name="sourceFilePath" value="src/Applications/Orion.WebApps.HealthCheckUI/Dockerfile" />
         </settings>
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
@@ -1217,6 +1984,17 @@
             </list>
           </option>
           <option name="sourceFilePath" value="src/WebApps/Orion.WebApps.HealthCheck/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Orion.WebApps.Web/Dockerfile (1)" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="orion.webapps.web" />
+          <option name="contextFolderPath" value="C:\x\Orion.Microservices.NET" />
+          <option name="sourceFilePath" value="src/Applications/Orion.WebApps.Web/Dockerfile" />
         </settings>
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
@@ -1427,12 +2205,12 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.orion.services.stockanalyzer.api-1: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.orion.services.basket.api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="orion.services.stockanalyzer.api-1" />
+              <option value="orion.services.basket.api" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -1441,12 +2219,40 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.orion.services.competitionscorecard.api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="orion.webapps.healthcheck-1" />
+              <option value="orion.services.competitionscorecard.api" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.orion.shopping.aggregator: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="orion.shopping.aggregator" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.orion.webapps.healthcheckui: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="orion.webapps.healthcheckui" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -1470,6 +2276,23 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile.Orion.API.Basket.API: UserProfile.API" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.API.Catalog: .Catalog.API" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.WebApps.HealthCheckUI: http" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.WebApps.HealthCheckUI: https" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.WebApps.StockAnalyzer.Web: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.WebApps.StockAnalyzer.Web: Orion.StockAnalyzer.Web" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.Catalog.API: .Catalog.API" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.TradingEconomics.API: TradingEconomics.API" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.Basket.API: UserProfile.API" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.Order.API: UserProfile.API" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.Catalog.API: UserProfile.API" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.TradingEcomomics.API: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.TradingEconomics.API: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.TradingEconomics.API: StockAnalyzer.API" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.UserProfile.API: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.UserProfile.API: StockAnalyzer.API" />
+      <item itemvalue=".NET Launch Settings Profile.Orion.Services.UserProfile.API: UserProfile.API" />
       <item itemvalue=".NET Launch Settings Profile.Orion.Services.Chat: http" />
       <item itemvalue=".NET Launch Settings Profile.Orion.Services.Chat: https" />
       <item itemvalue=".NET Launch Settings Profile.Orion.WebApps.Web: http" />
@@ -1494,9 +2317,24 @@
       <item itemvalue=".NET Launch Settings Profile.Orion.WebApps.WebASP: AspnetRunBasics" />
       <item itemvalue=".NET Launch Settings Profile.Users: http" />
       <item itemvalue=".NET Launch Settings Profile.Users: https" />
-      <item itemvalue=".NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: Docker" />
-      <item itemvalue=".NET Launch Settings Profile.Orion.WebApps.HealthCheckUI: http" />
+      <item itemvalue=".NET Project.Orion.WebApps.Web" />
+      <item itemvalue=".NET Project.Orion.Services.CompetitionScorecard.API" />
+      <item itemvalue=".NET Project.Orion.Services.Discount.API" />
+      <item itemvalue=".NET Project.Orion.Services.Chat" />
       <item itemvalue=".NET Project.Orion.Web" />
+      <item itemvalue="Docker.Orion.Services.Basket.API/Dockerfile (1)" />
+      <item itemvalue="Docker.Orion.Services.Catalog.API/Dockerfile (1)" />
+      <item itemvalue="Docker.Orion.WebApps.HealthCheckUI/Dockerfile (1)" />
+      <item itemvalue="Docker.Orion.WebApps.Web/Dockerfile (1)" />
+      <item itemvalue="Docker.External.PaymentGateway/Dockerfile" />
+      <item itemvalue="Docker.Orion.Services.Basket.API/Dockerfile" />
+      <item itemvalue="Docker.Orion.Services.Catalog.API/Dockerfile" />
+      <item itemvalue="Docker.Orion.Services.Chat/Dockerfile" />
+      <item itemvalue="Docker.Orion.Services.CompetitionScorecard.API/Dockerfile" />
+      <item itemvalue="Docker.Orion.Services.Discount.API/Dockerfile" />
+      <item itemvalue="Docker.Orion.Services.Order.API/Dockerfile" />
+      <item itemvalue="Docker.Orion.Services.TradingEconomics.API/Dockerfile" />
+      <item itemvalue="Docker.Orion.Services.UserProfile.API/Dockerfile" />
       <item itemvalue="Docker.Orion.WebApps.HealthCheckUI/Dockerfile" />
       <item itemvalue="Docker.Orion.WebApps.Web/Dockerfile" />
       <item itemvalue="Docker.Orion.Web/Dockerfile (1)" />
@@ -1511,18 +2349,20 @@
       <item itemvalue="Docker.Shopping.Aggregator/Dockerfile" />
       <item itemvalue="Docker.StockAnalyzer.API/Dockerfile" />
       <item itemvalue="Docker.Users/Dockerfile" />
-      <item itemvalue="Docker.docker-compose.yml.orion.services.stockanalyzer.api-1: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.orion.webapps.healthcheckui: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.orion.webapps.web: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.orion.services.basket.api: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.orion.services.competitionscorecard.api: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.orion.shopping.aggregator: Compose Deployment" />
       <item itemvalue="Publish to IIS.Publish Orion.WebApps.WebASP to IIS" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue=".NET Launch Settings Profile.Orion.Services.StockAnalyzer.API: Docker" />
-        <item itemvalue=".NET Launch Settings Profile.Orion.WebApps.HealthCheckUI: http" />
-        <item itemvalue="Docker.docker-compose.yml.orion.webapps.healthcheck-1: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.orion.webapps.healthcheckui: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.orion.webapps.web: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.orion.services.stockanalyzer.api-1: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.orion.services.competitionscorecard.api: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.orion.services.basket.api: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.orion.shopping.aggregator: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -1551,6 +2391,14 @@
       <workItem from="1753189290611" duration="3230000" />
       <workItem from="1753210278843" duration="484000" />
       <workItem from="1753289167030" duration="14630000" />
+      <workItem from="1753568031038" duration="1717000" />
+      <workItem from="1753606077342" duration="2106000" />
+      <workItem from="1753608434403" duration="632000" />
+      <workItem from="1753861993498" duration="12042000" />
+      <workItem from="1753932477814" duration="3594000" />
+      <workItem from="1753938932658" duration="18801000" />
+      <workItem from="1754020052855" duration="12938000" />
+      <workItem from="1754412025424" duration="545000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Still,&#10;Working on fixing the Dockerfile">
       <option name="closed" value="true" />
@@ -1690,19 +2538,6 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/LatestController.cs</url>
-          <line>62</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\Controllers\LatestController.cs" containingFunctionPresentation="Method 'GetLatestUpdatesByDate'">
-            <startOffsets>
-              <option value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <option value="-1" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/WebApps/Orion.Web/Controllers/CalendarController.cs</url>
           <line>28</line>
           <properties documentPath="C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.Web\Controllers\CalendarController.cs" containingFunctionPresentation="Method 'Details'" />
@@ -1722,29 +2557,69 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/CalendarController.cs</url>
-          <line>42</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\Controllers\CalendarController.cs" containingFunctionPresentation="Method 'GetAllEvents'">
-            <startOffsets>
-              <option value="1324" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1362" />
-            </endOffsets>
-          </properties>
+          <line>43</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\Controllers\CalendarController.cs" containingFunctionPresentation="Method 'GetAllEvents'" />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Services/StockAnalyzer/StockAnalyzer.API/Controllers/ComtradeController.cs</url>
-          <line>21</line>
-          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\Controllers\ComtradeController.cs" containingFunctionPresentation="Method 'GetComCategories'">
-            <startOffsets>
-              <option value="588" />
-            </startOffsets>
-            <endOffsets>
-              <option value="606" />
-            </endOffsets>
-          </properties>
+          <line>18</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\StockAnalyzer\StockAnalyzer.API\Controllers\ComtradeController.cs" containingFunctionPresentation="Method 'GetComCategories'" />
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Repositories/UserProfileRepository.cs</url>
+          <line>66</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.UserProfile\Orion.Services.UserProfile.API\Repositories\UserProfileRepository.cs" containingFunctionPresentation="Method 'Create'" />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Controllers/UserProfileController.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.UserProfile\Orion.Services.UserProfile.API\Controllers\UserProfileController.cs" containingFunctionPresentation="Method 'Create'" />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Orion.Services.UserProfile/Orion.Services.UserProfile.API/Controllers/UserProfileController.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.UserProfile\Orion.Services.UserProfile.API\Controllers\UserProfileController.cs" containingFunctionPresentation="Method 'Create'" />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/WebApps/Orion.WebApps.HealthCheckUI/Controllers/HealthController.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\WebApps\Orion.WebApps.HealthCheckUI\Controllers\HealthController.cs" containingFunctionPresentation="Method 'Add'" />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Orion.Services.Order/Orion.Services.Order.API/Controllers/OrderController.cs</url>
+          <line>17</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Order\Orion.Services.Order.API\Controllers\OrderController.cs" containingFunctionPresentation="Method 'GetAllEvents'" />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Repositories/CatalogRepository.cs</url>
+          <line>45</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\Repositories\CatalogRepository.cs" containingFunctionPresentation="Method 'GetByIdAsync'" />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Repositories/CatalogRepository.cs</url>
+          <line>49</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\Repositories\CatalogRepository.cs" containingFunctionPresentation="Method 'GetByIdAsync'" />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Controllers/ProductController.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\Controllers\ProductController.cs" containingFunctionPresentation="Method 'GetAllProducts'" />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Services/Orion.Services.Catalog/Orion.Services.Catalog.API/Controllers/ProductController.cs</url>
+          <line>45</line>
+          <properties documentPath="C:\x\Orion.API.Microservices.NET\src\Services\Orion.Services.Catalog\Orion.Services.Catalog.API\Controllers\ProductController.cs" containingFunctionPresentation="Method 'Update'" />
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
