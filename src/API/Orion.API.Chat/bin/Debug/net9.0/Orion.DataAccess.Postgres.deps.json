@@ -9,12 +9,10 @@
       "Orion.DataAccess.Postgres/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.7",
-          "Microsoft.DotNet.ILCompiler": "9.0.7",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.Design": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer.HierarchyId": "9.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
-          "Microsoft.NET.ILLink.Tasks": "9.0.7",
           "Microsoft.SqlServer.Types": "160.1000.6",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": "9.0.4",
@@ -463,7 +461,6 @@
           }
         }
       },
-      "Microsoft.DotNet.ILCompiler/9.0.7": {},
       "Microsoft.EntityFrameworkCore/9.0.8": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "9.0.8",
@@ -805,7 +802,6 @@
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.7": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.SqlServer.Server/1.0.0": {
@@ -1426,13 +1422,6 @@
       "path": "microsoft.data.sqlclient.sni.runtime/5.1.1",
       "hashPath": "microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512"
     },
-    "Microsoft.DotNet.ILCompiler/9.0.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FpvJ2rCpj2CB/4hZt0cmB3hCPMNZV2vrisQis3hR9itTEjLzeggi0AShrgJIZ5+3Y7433K7ESSsJ6+8T+nE2nQ==",
-      "path": "microsoft.dotnet.ilcompiler/9.0.7",
-      "hashPath": "microsoft.dotnet.ilcompiler.9.0.7.nupkg.sha512"
-    },
     "Microsoft.EntityFrameworkCore/9.0.8": {
       "type": "package",
       "serviceable": true,
@@ -1635,13 +1624,6 @@
       "sha512": "sha512-RN7lvp7s3Boucg1NaNAbqDbxtlLj5Qeb+4uSS1TeK5FSBVM40P4DKaTKChT43sHyKfh7V0zkrMph6DdHvyA4bg==",
       "path": "microsoft.identitymodel.tokens/6.35.0",
       "hashPath": "microsoft.identitymodel.tokens.6.35.0.nupkg.sha512"
-    },
-    "Microsoft.NET.ILLink.Tasks/9.0.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-SZ1brSGoLnhLbE8QUZrtN6YwzN2gDT1wbx9qDBEfFFJcstiDTjJ6ygNuTPBV/K7SjGfx2YNbcJi5+ygbPOZpDg==",
-      "path": "microsoft.net.illink.tasks/9.0.7",
-      "hashPath": "microsoft.net.illink.tasks.9.0.7.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

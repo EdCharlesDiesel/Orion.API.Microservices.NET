@@ -10,12 +10,6 @@ namespace Orion.DataAccess.Postgres.Entities
     [Description("Cross-reference table mapping products to special offer discounts.")]
     public class SpecialOfferProduct
     {
-        public SpecialOfferProduct()
-        {
-            this.SalesOrderDetails = new List<SalesOrderDetail>();
-            this.SalesOrderDetails1 = new List<SalesOrderDetail>();
-        }
-
         [Key]
         [Column(name : "SpecialOfferID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Special Offer ID is required")]
@@ -46,10 +40,9 @@ namespace Orion.DataAccess.Postgres.Entities
         [ForeignKey("ProductID")]
         public Product Product { get; set; }
         // Sales.SalesOrderDetail.SpecialOfferID -> Sales.SpecialOfferProduct.SpecialOfferID (FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID)
-        [InverseProperty("SpecialOfferProduct1")]
+        [InverseProperty("SpecialOfferProduct")]
         public IEnumerable<SalesOrderDetail> SalesOrderDetails { get; set; }
         // Sales.SalesOrderDetail.ProductID -> Sales.SpecialOfferProduct.ProductID (FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID)
-        [InverseProperty("SpecialOfferProduct")]
-        public IEnumerable<SalesOrderDetail> SalesOrderDetails1 { get; set; }
+
     }
 }

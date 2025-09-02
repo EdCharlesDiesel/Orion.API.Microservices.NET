@@ -2,7 +2,7 @@
 
 namespace Orion.DataAccess.Postgres.Entities.Common
 {
-    public abstract class CompetitionMatch:Entity<Guid>
+    public class CompetitionMatch:Entity<Guid>
     {
         private string? PlayerOne { get; set; }
         public string PlayerTwo { get; set; } = null!;

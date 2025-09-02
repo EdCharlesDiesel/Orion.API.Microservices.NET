@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,7 +6,7 @@ namespace Orion.DataAccess.Postgres.Entities
 {
     [Table("Person.EmailAddress")]
     [Description("Where to send a person email.")]
-    public abstract class EmailAddress
+    public class EmailAddress
     {
         [Key]
         [Column(name : "BusinessEntityID", TypeName = "int", Order = 1)]
