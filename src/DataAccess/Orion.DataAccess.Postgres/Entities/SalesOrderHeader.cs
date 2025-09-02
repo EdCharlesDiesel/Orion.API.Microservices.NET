@@ -15,7 +15,7 @@ namespace Orion.DataAccess.Postgres.Entities
             this.SalesOrderDetails = new List<SalesOrderDetail>();
             this.SalesOrderHeaderSalesReasons = new List<SalesOrderHeaderSalesReason>();
         }
-
+      
         [Key]
         [Column(name : "SalesOrderID", TypeName = "int")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
