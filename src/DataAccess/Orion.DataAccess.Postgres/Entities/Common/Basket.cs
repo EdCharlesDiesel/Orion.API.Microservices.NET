@@ -8,7 +8,7 @@ namespace Orion.DataAccess.Postgres.Entities.Common
     /// Current basket of the database. 
     /// </summary>
     [Table("BuildVersion")]
-    public abstract class Basket:Entity<Guid>
+    public class Basket:Entity<Guid>
     {
         public Guid UserId { get; set; } 
         public List<BasketItem>? Items { get; set; } 

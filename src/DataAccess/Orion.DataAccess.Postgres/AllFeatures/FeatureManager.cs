@@ -1,5 +1,4 @@
-﻿using Orion.DataAccess.Postgres.Entities;
-using Orion.DataAccess.Postgres.Entities.Common;
+﻿using Orion.DataAccess.Postgres.Entities.Common;
 using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Postgres.AllFeatures

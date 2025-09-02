@@ -155,9 +155,9 @@ namespace Orion.DataAccess.Postgres.Data
 
             modelBuilder.Entity<PurchaseOrderDetail>()
                 .HasKey(bea => new { bea.ProductID, bea.PurchaseOrderDetailID });
-
+            
             modelBuilder.Entity<SalesOrderDetail>()
-                .HasKey(bea => new { bea.ProductID, bea.SalesOrderDetailID });
+                .HasKey(d => new { d.SalesOrderID, d.SalesOrderDetailID });
 
             modelBuilder.Entity<SalesOrderHeaderSalesReason>()
                 .HasKey(bea => new { bea.SalesOrderID, bea.SalesReasonID });
@@ -170,7 +170,13 @@ namespace Orion.DataAccess.Postgres.Data
                 .HasKey(bea => new { bea.BusinessEntityID, bea.TerritoryID });
 
             modelBuilder.Entity<SpecialOfferProduct>()
-                .HasKey(bea => new { bea.SpecialOfferID, bea.ProductID });
+                .HasKey(sop => new { sop.SpecialOfferID, sop.ProductID });
+
+            modelBuilder.Entity<SalesOrderDetail>()
+                .HasOne(sod => sod.SpecialOfferProduct)
+                .WithMany(sop => sop.SalesOrderDetails)
+                .HasForeignKey(sod => new { sod.SpecialOfferID, sod.ProductID }); 
+            // 👆 Needs both FKs, not just ProductID
 
             modelBuilder.Entity<WorkOrderRouting>()
                 .HasKey(bea => new { bea.WorkOrderID, bea.ProductID });
@@ -183,6 +189,18 @@ namespace Orion.DataAccess.Postgres.Data
                     v => SqlHierarchyId.Parse(v)
                 )
                 .HasColumnType("text");
+            
+            modelBuilder.Entity<Person>()
+                .ToTable("Person");
+
+            modelBuilder.Entity<Store>()
+                .ToTable("Store");
+
+            modelBuilder.Entity<Vendor>()
+                .ToTable("Vendor");
+
+            modelBuilder.Entity<BusinessEntity>()
+                .ToTable("BusinessEntity"); // 👈 only if it has a table
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

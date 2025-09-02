@@ -76,7 +76,6 @@ namespace Orion.DataAccess.Postgres.Entities
         [ForeignKey("ProductID")]
         public SpecialOfferProduct SpecialOfferProduct { get; set; }
         // Sales.SalesOrderDetail.SpecialOfferID -> Sales.SpecialOfferProduct.SpecialOfferID (FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID)
-        [ForeignKey("SpecialOfferID")]
-        public SpecialOfferProduct SpecialOfferProduct1 { get; set; }
+
     }
 }

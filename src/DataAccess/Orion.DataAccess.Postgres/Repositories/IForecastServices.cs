@@ -1,5 +1,6 @@
-using Orion.StockAnalyzer.Core.Domain;
-namespace Orion.Services.StockAnalyzer.API.Services;
+using Orion.DataAccess.Postgres.Entities.Common;
+
+namespace Orion.DataAccess.Postgres.Repositories;
 public interface IForecastServices
 {
     Task<string> GetForecasts();

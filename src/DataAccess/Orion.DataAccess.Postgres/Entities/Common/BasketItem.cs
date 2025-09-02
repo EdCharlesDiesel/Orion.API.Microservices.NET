@@ -8,7 +8,7 @@ namespace Orion.DataAccess.Postgres.Entities.Common;
 /// Current basket of the database. 
 /// </summary>
 [Table("BasketItem")]
-public abstract class BasketItem(string? productName) : Entity<Guid>
+public class BasketItem(string? productName) : Entity<Guid>
 {
     public string? ProductName { get; set; } = productName;
     private int Quantity { get; set; } = 0;
