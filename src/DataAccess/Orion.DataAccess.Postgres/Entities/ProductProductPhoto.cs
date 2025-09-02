@@ -28,7 +28,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("0 = Photo is not the principal image. 1 = Photo is the principal image.")]
         [NotMapped]
         public bool? Primary { get; set; } // bit
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

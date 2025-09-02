@@ -15,19 +15,19 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Address Type ID")]
         [Description("Primary key for AddressType records.")]
         public int? AddressTypeId { get; set; } // int
-        [Column(name : "Name", TypeName = "nvarchar")]
+        [Column(name : "Name")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Address type description. For example, Billing, Home, or Shipping.")]
         public string Name { get; init; } = name; // nvarchar(50)
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? Rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

@@ -30,7 +30,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Culture ID")]
         [Description("Culture identification number. Foreign key to Culture.CultureID.")]
         public string CultureID { get; set; } // nchar(6)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

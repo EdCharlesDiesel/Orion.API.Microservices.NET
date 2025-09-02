@@ -25,7 +25,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Resume")]
         [Description("Résumé in XML format.")]
         public string Resume { get; set; } // XML(.)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

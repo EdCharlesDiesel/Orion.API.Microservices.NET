@@ -22,14 +22,14 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Contact Type ID")]
         [Description("Primary key for ContactType records.")]
         public int? ContactTypeID { get; set; } // int
-        [Column(name : "Name", TypeName = "nvarchar")]
+        [Column(name : "Name")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Contact type description.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

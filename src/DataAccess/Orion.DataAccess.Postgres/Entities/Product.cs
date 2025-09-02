@@ -35,14 +35,14 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Product ID")]
         [Description("Primary key for Product records.")]
         public int? ProductID { get; set; } // int
-        [Column(name : "Name", TypeName = "nvarchar")]
+        [Column(name : "Name")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Name of the product.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(name : "ProductNumber", TypeName = "nvarchar")]
+        [Column(name : "ProductNumber")]
         [MaxLength(25)]
         [StringLength(25)]
         [Required(ErrorMessage = "Product Number is required")]
@@ -61,7 +61,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("0 = Product is not a salable item. 1 = Product is salable.")]
         [NotMapped]
         public bool? FinishedGoodsFlag { get; set; } // bit
-        [Column(name : "Color", TypeName = "nvarchar")]
+        [Column(name : "Color")]
         [MaxLength(15)]
         [StringLength(15)]
         [Display(Name = "Color")]
@@ -87,7 +87,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "List Price")]
         [Description("Selling price.")]
         public decimal? ListPrice { get; set; } // money
-        [Column(name : "Size", TypeName = "nvarchar")]
+        [Column(name : "Size")]
         [MaxLength(5)]
         [StringLength(5)]
         [Display(Name = "Size")]
@@ -140,25 +140,25 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Product Model ID")]
         [Description("Product is a member of this product model. Foreign key to ProductModel.ProductModelID.")]
         public int? ProductModelID { get; set; } // int
-        [Column(name : "SellStartDate", TypeName = "datetime")]
+        [Column(name : "SellStartDate")]
         [Required(ErrorMessage = "Sell Start Date is required")]
         [Display(Name = "Sell Start Date")]
         [Description("Date the product was available for sale.")]
         public DateTime? SellStartDate { get; set; } // datetime
-        [Column(name : "SellEndDate", TypeName = "datetime")]
+        [Column(name : "SellEndDate")]
         [Display(Name = "Sell End Date")]
         [Description("Date the product was no longer available for sale.")]
         public DateTime? SellEndDate { get; set; } // datetime
-        [Column(name : "DiscontinuedDate", TypeName = "datetime")]
+        [Column(name : "DiscontinuedDate")]
         [Display(Name = "Discontinued Date")]
         [Description("Date the product was discontinued.")]
         public DateTime? DiscontinuedDate { get; set; } // datetime
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

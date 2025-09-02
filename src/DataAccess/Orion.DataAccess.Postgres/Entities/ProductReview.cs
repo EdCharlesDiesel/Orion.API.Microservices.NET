@@ -22,19 +22,19 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
         public int? ProductID { get; set; } // int
-        [Column(name : "ReviewerName", TypeName = "nvarchar")]
+        [Column(name : "ReviewerName")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Reviewer Name is required")]
         [Display(Name = "Reviewer Name")]
         [Description("Name of the reviewer.")]
         public string ReviewerName { get; set; } // nvarchar(50)
-        [Column(name : "ReviewDate", TypeName = "datetime")]
+        [Column(name : "ReviewDate")]
         [Required(ErrorMessage = "Review Date is required")]
         [Display(Name = "Review Date")]
         [Description("Date review was submitted.")]
         public DateTime? ReviewDate { get; set; } // datetime
-        [Column(name : "EmailAddress", TypeName = "nvarchar")]
+        [Column(name : "EmailAddress")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Email Address is required")]
@@ -46,13 +46,13 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Rating")]
         [Description("Product rating given by the reviewer. Scale is 1 to 5 with 5 as the highest rating.")]
         public int? Rating { get; set; } // int
-        [Column(name : "Comments", TypeName = "nvarchar")]
+        [Column(name : "Comments")]
         [MaxLength(3850)]
         [StringLength(3850)]
         [Display(Name = "Comments")]
         [Description("Reviewer's comments")]
         public string Comments { get; set; } // nvarchar(3850)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

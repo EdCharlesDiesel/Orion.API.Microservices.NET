@@ -15,12 +15,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("Product identification number. Foreign key to Product.ProductID")]
         public int? ProductID { get; set; } // int
         [Key]
-        [Column(name : "StartDate", TypeName = "datetime", Order = 2)]
+        [Column(name : "StartDate", Order = 2)]
         [Required(ErrorMessage = "Start Date is required")]
         [Display(Name = "Start Date")]
         [Description("List price start date.")]
         public DateTime? StartDate { get; set; } // datetime
-        [Column(name : "EndDate", TypeName = "datetime")]
+        [Column(name : "EndDate")]
         [Display(Name = "End Date")]
         [Description("List price end date")]
         public DateTime? EndDate { get; set; } // datetime
@@ -29,7 +29,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "List Price")]
         [Description("Product list price.")]
         public decimal? ListPrice { get; set; } // money
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

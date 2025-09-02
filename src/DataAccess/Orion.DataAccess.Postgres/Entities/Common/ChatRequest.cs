@@ -3,7 +3,7 @@ using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities.Common;
 
-public abstract class ChatRequest:Entity<Guid>
+public class ChatRequest:Entity<Guid>
 {
     public string? Message { get; set; } 
     public DateTime? LastUpdate { get; set; }

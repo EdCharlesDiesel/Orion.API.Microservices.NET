@@ -20,12 +20,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Purchase Order ID")]
         [Description("Primary key.")]
         public int? PurchaseOrderID { get; set; } // int
-        [Column(name : "RevisionNumber", TypeName = "tinyint")]
+        [Column(name : "RevisionNumber")]
         [Required(ErrorMessage = "Revision Number is required")]
         [Display(Name = "Revision Number")]
         [Description("Incremental number to track changes to the purchase order over time.")]
         public byte? RevisionNumber { get; set; } // tinyint
-        [Column(name : "Status", TypeName = "tinyint")]
+        [Column(name : "Status")]
         [Required(ErrorMessage = "Status is required")]
         [Display(Name = "Status")]
         [Description("Order current status. 1 = Pending; 2 = Approved; 3 = Rejected; 4 = Complete")]
@@ -45,12 +45,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Ship Method ID")]
         [Description("Shipping method. Foreign key to ShipMethod.ShipMethodID.")]
         public int? ShipMethodID { get; set; } // int
-        [Column(name : "OrderDate", TypeName = "datetime")]
+        [Column(name : "OrderDate")]
         [Required(ErrorMessage = "Order Date is required")]
         [Display(Name = "Order Date")]
         [Description("Purchase order creation date.")]
         public DateTime? OrderDate { get; set; } // datetime
-        [Column(name : "ShipDate", TypeName = "datetime")]
+        [Column(name : "ShipDate")]
         [Display(Name = "Ship Date")]
         [Description("Estimated shipment date from the vendor.")]
         public DateTime? ShipDate { get; set; } // datetime
@@ -75,7 +75,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Total Due")]
         [Description("Total due to vendor. Computed as Subtotal + TaxAmt + Freight.")]
         public decimal? TotalDue { get; set; } // money
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

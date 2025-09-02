@@ -10,12 +10,6 @@ namespace Orion.DataAccess.Postgres.Entities
     [Description("Cross-reference table mapping products to special offer discounts.")]
     public class SpecialOfferProduct
     {
-        public SpecialOfferProduct()
-        {
-            this.SalesOrderDetails = new List<SalesOrderDetail>();
-            this.SalesOrderDetails1 = new List<SalesOrderDetail>();
-        }
-
         [Key]
         [Column(name : "SpecialOfferID", TypeName = "int", Order = 1)]
         [Required(ErrorMessage = "Special Offer ID is required")]
@@ -28,12 +22,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
         public int? ProductID { get; set; } // int
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]
@@ -46,10 +40,9 @@ namespace Orion.DataAccess.Postgres.Entities
         [ForeignKey("ProductID")]
         public Product Product { get; set; }
         // Sales.SalesOrderDetail.SpecialOfferID -> Sales.SpecialOfferProduct.SpecialOfferID (FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID)
-        [InverseProperty("SpecialOfferProduct1")]
+        [InverseProperty("SpecialOfferProduct")]
         public IEnumerable<SalesOrderDetail> SalesOrderDetails { get; set; }
         // Sales.SalesOrderDetail.ProductID -> Sales.SpecialOfferProduct.ProductID (FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID)
-        [InverseProperty("SpecialOfferProduct")]
-        public IEnumerable<SalesOrderDetail> SalesOrderDetails1 { get; set; }
+
     }
 }

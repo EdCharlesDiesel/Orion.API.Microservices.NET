@@ -6,7 +6,7 @@ namespace Orion.DataAccess.Postgres.Entities
 {
     [Table("Person.BusinessEntity")]
     [Description("Source of the ID that connects vendors, customers, and employees with address and contact information.")]
-    public abstract class BusinessEntity(Person person, Vendor vendor, Store store)
+    public class BusinessEntity()
     {
         [Key]
         [Column(name : "BusinessEntityID", TypeName = "int")]
@@ -14,13 +14,13 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key for all customers, vendors, and employees.")]
-        public int? BusinessEntityId { get; set; } // int
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        public int? BusinessEntityID  { get; set; } // int
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? Rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]
@@ -32,13 +32,6 @@ namespace Orion.DataAccess.Postgres.Entities
         // Person.BusinessEntityContact.BusinessEntityID -> Person.BusinessEntity.BusinessEntityID (FK_BusinessEntityContact_BusinessEntity_BusinessEntityID)
         public IEnumerable<BusinessEntityContact> BusinessEntityContact { get; set; } = new List<BusinessEntityContact>();
 
-        // Person.Person.BusinessEntityID -> Person.BusinessEntity.BusinessEntityID (FK_Person_BusinessEntity_BusinessEntityID)
-        public Person Person { get; set; } = person;
 
-        // Purchasing.Vendor.BusinessEntityID -> Person.BusinessEntity.BusinessEntityID (FK_Vendor_BusinessEntity_BusinessEntityID)
-        public Vendor Vendor { get; set; } = vendor;
-
-        // Sales.Store.BusinessEntityID -> Person.BusinessEntity.BusinessEntityID (FK_Store_BusinessEntity_BusinessEntityID)
-        public Store Store { get; set; } = store;
     }
 }

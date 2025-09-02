@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.WebApps.HealthCheckUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4da7f7fb595107f19858b74cedbab0fb4bd9663")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+269c29bc1ad1301ff6ffd9f0af8803696e9a2b3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.WebApps.HealthCheckUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.WebApps.HealthCheckUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

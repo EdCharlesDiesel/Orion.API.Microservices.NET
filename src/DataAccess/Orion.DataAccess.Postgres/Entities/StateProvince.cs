@@ -30,7 +30,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "State Province Code")]
         [Description("ISO standard state or province code.")]
         public string StateProvinceCode { get; set; } // nchar(3)
-        [Column(name : "CountryRegionCode", TypeName = "nvarchar")]
+        [Column(name : "CountryRegionCode")]
         [MaxLength(3)]
         [StringLength(3)]
         [Required(ErrorMessage = "Country Region Code is required")]
@@ -43,7 +43,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("0 = StateProvinceCode exists. 1 = StateProvinceCode unavailable, using CountryRegionCode.")]
         [NotMapped]
         public bool? IsOnlyStateProvinceFlag { get; set; } // bit
-        [Column(name : "Name", TypeName = "nvarchar")]
+        [Column(name : "Name")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
@@ -55,12 +55,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Territory ID")]
         [Description("ID of the territory in which the state or province is located. Foreign key to SalesTerritory.SalesTerritoryID.")]
         public int? TerritoryID { get; set; } // int
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

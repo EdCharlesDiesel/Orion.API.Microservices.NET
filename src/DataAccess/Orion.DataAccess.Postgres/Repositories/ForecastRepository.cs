@@ -88,6 +88,11 @@ public class ForecastRepository(OrionDbContext context) : IForecastServices
         throw new NotImplementedException();
     }
 
+    public async Task<Entities.Common.Forecast> Create(List<Entities.Common.Forecast> forecasts)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task<Forecast> Create(List<Forecast>? forecasts)
     {
         throw new NotImplementedException();

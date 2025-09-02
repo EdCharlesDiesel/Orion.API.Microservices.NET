@@ -17,12 +17,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Error Log ID")]
         [Description("Primary key for ErrorLog records.")]
         public int? ErrorLogID { get; set; } // int
-        [Column(name : "ErrorTime", TypeName = "datetime")]
+        [Column(name : "ErrorTime")]
         [Required(ErrorMessage = "Error Time is required")]
         [Display(Name = "Error Time")]
         [Description("The date and time at which the error occurred.")]
         public DateTime? ErrorTime { get; set; } // datetime
-        [Column(name : "UserName", TypeName = "nvarchar")]
+        [Column(name : "UserName")]
         [MaxLength(128)]
         [StringLength(128)]
         [Required(ErrorMessage = "User Name is required")]
@@ -42,7 +42,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Error State")]
         [Description("The state number of the error that occurred.")]
         public int? ErrorState { get; set; } // int
-        [Column(name : "ErrorProcedure", TypeName = "nvarchar")]
+        [Column(name : "ErrorProcedure")]
         [MaxLength(126)]
         [StringLength(126)]
         [Display(Name = "Error Procedure")]
@@ -52,7 +52,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Error Line")]
         [Description("The line number at which the error occurred.")]
         public int? ErrorLine { get; set; } // int
-        [Column(name : "ErrorMessage", TypeName = "nvarchar")]
+        [Column(name : "ErrorMessage")]
         [MaxLength(4000)]
         [StringLength(4000)]
         [Required(ErrorMessage = "Error Message is required")]

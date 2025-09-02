@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -43,16 +41,16 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Scrapped Qty")]
         [Description("Quantity that failed inspection.")]
         public short? ScrappedQty { get; set; } // smallint
-        [Column(name : "StartDate", TypeName = "datetime")]
+        [Column(name : "StartDate")]
         [Required(ErrorMessage = "Start Date is required")]
         [Display(Name = "Start Date")]
         [Description("Work order start date.")]
         public DateTime? StartDate { get; set; } // datetime
-        [Column(name : "EndDate", TypeName = "datetime")]
+        [Column(name : "EndDate")]
         [Display(Name = "End Date")]
         [Description("Work order end date.")]
         public DateTime? EndDate { get; set; } // datetime
-        [Column(name : "DueDate", TypeName = "datetime")]
+        [Column(name : "DueDate")]
         [Required(ErrorMessage = "Due Date is required")]
         [Display(Name = "Due Date")]
         [Description("Work order due date.")]
@@ -61,7 +59,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Scrap Reason ID")]
         [Description("Reason for inspection failure.")]
         public short? ScrapReasonID { get; set; } // smallint
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

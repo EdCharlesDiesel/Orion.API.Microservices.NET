@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,7 +6,7 @@ namespace Orion.DataAccess.Postgres.Entities
 {
     [Table("Person.EmailAddress")]
     [Description("Where to send a person email.")]
-    public abstract class EmailAddress
+    public class EmailAddress
     {
         [Key]
         [Column(name : "BusinessEntityID", TypeName = "int", Order = 1)]
@@ -23,18 +21,18 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Email Address ID")]
         [Description("Primary key. ID of this email address.")]
         public int? EmailAddressID { get; set; } // int
-        [Column(name : "EmailAddress", TypeName = "nvarchar")]
+        [Column(name : "EmailAddress")]
         [MaxLength(50)]
         [StringLength(50)]
         [Display(Name = "Email Address")]
         [Description("E-mail address for the person.")]
         public string PersonalEmailAddress { get; set; } // nvarchar(50)
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

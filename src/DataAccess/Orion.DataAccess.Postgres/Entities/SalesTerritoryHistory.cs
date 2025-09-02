@@ -23,21 +23,21 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("Primary key. Territory identification number. Foreign key to SalesTerritory.SalesTerritoryID.")]
         public int? TerritoryID { get; set; } // int
         [Key]
-        [Column(name : "StartDate", TypeName = "datetime", Order = 2)]
+        [Column(name : "StartDate", Order = 2)]
         [Required(ErrorMessage = "Start Date is required")]
         [Display(Name = "Start Date")]
         [Description("Primary key. Date the sales representive started work in the territory.")]
         public DateTime? StartDate { get; set; } // datetime
-        [Column(name : "EndDate", TypeName = "datetime")]
+        [Column(name : "EndDate")]
         [Display(Name = "End Date")]
         [Description("Date the sales representative left work in the territory.")]
         public DateTime? EndDate { get; set; } // datetime
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]
