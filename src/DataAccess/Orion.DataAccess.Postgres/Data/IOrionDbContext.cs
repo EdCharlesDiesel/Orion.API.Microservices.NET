@@ -11,7 +11,7 @@ namespace Orion.DataAccess.Postgres.Data
     {
         DbSet<Address> Address { get; set; }
         DbSet<AddressType> AddressType { get; set; }
-        DbSet<AwBuildVersion> AwbuildVersion { get; set; }
+        DbSet<AWBuildVersion> AwbuildVersion { get; set; }
         DbSet<BillOfMaterials> BillOfMaterials { get; set; }
         DbSet<Contact> Contact { get; set; }
         DbSet<ContactCreditCard> ContactCreditCard { get; set; }

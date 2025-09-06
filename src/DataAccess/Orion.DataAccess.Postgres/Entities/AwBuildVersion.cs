@@ -6,7 +6,7 @@ namespace Orion.DataAccess.Postgres.Entities
 {
     [Table("AWBuildVersion")]
     [Description("Current version number of the OrionProductionDatabase 2016 sample database. ")]
-    public class AwBuildVersion(string databaseVersion)
+    public class AWBuildVersion(string databaseVersion)
     {
         [Key]
         [Column(name : "SystemInformationID")]
@@ -14,7 +14,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "System Information ID is required")]
         [Display(Name = "System Information ID")]
         [Description("Primary key for AWBuildVersion records.")]
-        public int? SystemInformationId { get; set; } // tinyint
+        public int? SystemInformationID { get; set; } // tinyint
         [Column(name : "Database Version")]
         [MaxLength(25)]
         [StringLength(25)]
