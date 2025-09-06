@@ -23,7 +23,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("Department in which the employee worked including currently. Foreign key to Department.DepartmentID.")]
         public short? DepartmentID { get; set; } // smallint
         [Key]
-        [Column(name : "ShiftID", TypeName = "tinyint", Order = 4)]
+        [Column(name : "ShiftID", Order = 4)]
         [Required(ErrorMessage = "Shift ID is required")]
         [Display(Name = "Shift ID")]
         [Description("Identifies which 8-hour shift the employee works. Foreign key to Shift.Shift.ID.")]
@@ -38,7 +38,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "End Date")]
         [Description("Date the employee left the department. NULL = Current department.")]
         public DateTime? EndDate { get; set; } // date
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

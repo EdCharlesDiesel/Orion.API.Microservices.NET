@@ -16,13 +16,13 @@ namespace Orion.DataAccess.Postgres.Entities
         }
 
         [Key]
-        [Column(name : "ShiftID", TypeName = "tinyint")]
+        [Column(name : "ShiftID")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Shift ID is required")]
         [Display(Name = "Shift ID")]
         [Description("Primary key for Shift records.")]
         public byte? ShiftID { get; set; } // tinyint
-        [Column(name : "Name", TypeName = "nvarchar")]
+        [Column(name : "Name")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
@@ -39,7 +39,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "End Time")]
         [Description("Shift end time.")]
         public TimeSpan? EndTime { get; set; } // time(7)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

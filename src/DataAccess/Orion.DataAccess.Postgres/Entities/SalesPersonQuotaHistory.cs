@@ -15,7 +15,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("Sales person identification number. Foreign key to SalesPerson.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
         [Key]
-        [Column(name : "QuotaDate", TypeName = "datetime", Order = 2)]
+        [Column(name : "QuotaDate", Order = 2)]
         [Required(ErrorMessage = "Quota Date is required")]
         [Display(Name = "Quota Date")]
         [Description("Sales quota date.")]
@@ -25,12 +25,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Sales Quota")]
         [Description("Sales quota amount.")]
         public decimal? SalesQuota { get; set; } // money
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

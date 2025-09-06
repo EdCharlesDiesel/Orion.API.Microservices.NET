@@ -29,7 +29,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Reference Order Line ID")]
         [Description("Line number associated with the purchase order, sales order, or work order.")]
         public int? ReferenceOrderLineID { get; set; } // int
-        [Column(name : "TransactionDate", TypeName = "datetime")]
+        [Column(name : "TransactionDate")]
         [Required(ErrorMessage = "Transaction Date is required")]
         [Display(Name = "Transaction Date")]
         [Description("Date and time of the transaction.")]
@@ -51,7 +51,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Actual Cost")]
         [Description("Product cost.")]
         public decimal? ActualCost { get; set; } // money
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

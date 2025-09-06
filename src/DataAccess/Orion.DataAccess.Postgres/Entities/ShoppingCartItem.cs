@@ -17,7 +17,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Shopping Cart Item ID")]
         [Description("Primary key for ShoppingCartItem records.")]
         public int? ShoppingCartItemID { get; set; } // int
-        [Column(name : "ShoppingCartID", TypeName = "nvarchar")]
+        [Column(name : "ShoppingCartID")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Shopping Cart ID is required")]
@@ -34,12 +34,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Product ID")]
         [Description("Product ordered. Foreign key to Product.ProductID.")]
         public int? ProductID { get; set; } // int
-        [Column(name : "DateCreated", TypeName = "datetime")]
+        [Column(name : "DateCreated")]
         [Required(ErrorMessage = "Date Created is required")]
         [Display(Name = "Date Created")]
         [Description("Date the time the record was created.")]
         public DateTime? DateCreated { get; set; } // datetime
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

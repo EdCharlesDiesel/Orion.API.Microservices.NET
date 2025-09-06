@@ -21,7 +21,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Purchase Order Detail ID")]
         [Description("Primary key. One line number per purchased product.")]
         public int? PurchaseOrderDetailID { get; set; } // int
-        [Column(name : "DueDate", TypeName = "datetime")]
+        [Column(name : "DueDate")]
         [Required(ErrorMessage = "Due Date is required")]
         [Display(Name = "Due Date")]
         [Description("Date the product is expected to be received.")]
@@ -63,7 +63,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Stocked Qty")]
         [Description("Quantity accepted into inventory. Computed as ReceivedQty - RejectedQty.")]
         public decimal? StockedQty { get; set; } // decimal(9,2)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

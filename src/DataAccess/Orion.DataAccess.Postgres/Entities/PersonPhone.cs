@@ -17,7 +17,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("Business entity identification number. Foreign key to Person.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
         [Key]
-        [Column(name : "PhoneNumber", TypeName = "nvarchar", Order = 2)]
+        [Column(name : "PhoneNumber", Order = 2)]
         [MaxLength(25)]
         [StringLength(25)]
         [Required(ErrorMessage = "Phone Number is required")]
@@ -30,7 +30,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Phone Number Type ID")]
         [Description("Kind of phone number. Foreign key to PhoneNumberType.PhoneNumberTypeID.")]
         public int? PhoneNumberTypeID { get; set; } // int
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

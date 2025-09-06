@@ -17,7 +17,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("Employee identification number. Foreign key to Employee.BusinessEntityID.")]
         public int? BusinessEntityID { get; set; } // int
         [Key]
-        [Column(name : "RateChangeDate", TypeName = "datetime", Order = 2)]
+        [Column(name : "RateChangeDate", Order = 2)]
         [Required(ErrorMessage = "Rate Change Date is required")]
         [Display(Name = "Rate Change Date")]
         [Description("Date the change in pay is effective")]
@@ -27,12 +27,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Rate")]
         [Description("Salary hourly rate.")]
         public decimal? Rate { get; set; } // money
-        [Column(name : "PayFrequency", TypeName = "tinyint")]
+        [Column(name : "PayFrequency")]
         [Required(ErrorMessage = "Pay Frequency is required")]
         [Display(Name = "Pay Frequency")]
         [Description("1 = Salary received monthly, 2 = Salary received biweekly")]
         public byte? PayFrequency { get; set; } // tinyint
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

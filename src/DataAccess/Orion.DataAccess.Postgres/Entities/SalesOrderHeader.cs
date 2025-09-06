@@ -23,26 +23,26 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Sales Order ID")]
         [Description("Primary key.")]
         public int? SalesOrderID { get; set; } // int
-        [Column(name : "RevisionNumber", TypeName = "tinyint")]
+        [Column(name : "RevisionNumber")]
         [Required(ErrorMessage = "Revision Number is required")]
         [Display(Name = "Revision Number")]
         [Description("Incremental number to track changes to the sales order over time.")]
         public byte? RevisionNumber { get; set; } // tinyint
-        [Column(name : "OrderDate", TypeName = "datetime")]
+        [Column(name : "OrderDate")]
         [Required(ErrorMessage = "Order Date is required")]
         [Display(Name = "Order Date")]
         [Description("Dates the sales order was created.")]
         public DateTime? OrderDate { get; set; } // datetime
-        [Column(name : "DueDate", TypeName = "datetime")]
+        [Column(name : "DueDate")]
         [Required(ErrorMessage = "Due Date is required")]
         [Display(Name = "Due Date")]
         [Description("Date the order is due to the customer.")]
         public DateTime? DueDate { get; set; } // datetime
-        [Column(name : "ShipDate", TypeName = "datetime")]
+        [Column(name : "ShipDate")]
         [Display(Name = "Ship Date")]
         [Description("Date the order was shipped to the customer.")]
         public DateTime? ShipDate { get; set; } // datetime
-        [Column(name : "Status", TypeName = "tinyint")]
+        [Column(name : "Status")]
         [Required(ErrorMessage = "Status is required")]
         [Display(Name = "Status")]
         [Description("Order current status. 1 = In process; 2 = Approved; 3 = Backordered; 4 = Rejected; 5 = Shipped; 6 = Cancelled")]
@@ -53,7 +53,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("0 = Order placed by sales person. 1 = Order placed online by customer.")]
         [NotMapped]
         public bool? OnlineOrderFlag { get; set; } // bit
-        [Column(name : "SalesOrderNumber", TypeName = "nvarchar")]
+        [Column(name : "SalesOrderNumber")]
         [MaxLength(25)]
         [StringLength(25)]
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
@@ -61,13 +61,13 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Sales Order Number")]
         [Description("Unique sales order identification number.")]
         public string SalesOrderNumber { get; set; } // nvarchar(25)
-        [Column(name : "PurchaseOrderNumber", TypeName = "nvarchar")]
+        [Column(name : "PurchaseOrderNumber")]
         [MaxLength(25)]
         [StringLength(25)]
         [Display(Name = "Purchase Order Number")]
         [Description("Customer purchase order number reference. ")]
         public string PurchaseOrderNumber { get; set; } // nvarchar(25)
-        [Column(name : "AccountNumber", TypeName = "nvarchar")]
+        [Column(name : "AccountNumber")]
         [MaxLength(15)]
         [StringLength(15)]
         [Display(Name = "Account Number")]
@@ -136,18 +136,18 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Total Due")]
         [Description("Total due from customer. Computed as Subtotal + TaxAmt + Freight.")]
         public decimal? TotalDue { get; set; } // money
-        [Column(name : "Comment", TypeName = "nvarchar")]
+        [Column(name : "Comment")]
         [MaxLength(128)]
         [StringLength(128)]
         [Display(Name = "Comment")]
         [Description("Sales representative comments.")]
         public string Comment { get; set; } // nvarchar(128)
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

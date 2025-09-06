@@ -24,12 +24,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Component ID")]
         [Description("Component identification number. Foreign key to Product.ProductID.")]
         public int? ComponentId { get; set; } // int
-        [Column(name : "StartDate", TypeName = "datetime")]
+        [Column(name : "StartDate")]
         [Required(ErrorMessage = "Start Date is required")]
         [Display(Name = "Start Date")]
         [Description("Date the component started being used in the assembly item.")]
         public DateTime? StartDate { get; set; } // datetime
-        [Column(name : "EndDate", TypeName = "datetime")]
+        [Column(name : "EndDate")]
         [Display(Name = "End Date")]
         [Description("Date the component stopped being used in the assembly item.")]
         public DateTime? EndDate { get; set; } // datetime
@@ -50,7 +50,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Per Assembly Qty")]
         [Description("Quantity of the component needed to create the assembly.")]
         public decimal? PerAssemblyQty { get; set; } // decimal(8,2)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

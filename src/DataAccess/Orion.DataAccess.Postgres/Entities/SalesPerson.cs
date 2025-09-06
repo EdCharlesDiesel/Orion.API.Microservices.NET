@@ -37,7 +37,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Bonus")]
         [Description("Bonus due if quota is met.")]
         public decimal? Bonus { get; set; } // money
-        [Column(name : "CommissionPct", TypeName = "smallmoney")]
+        [Column(name : "CommissionPct")]
         [Required(ErrorMessage = "Commission Pct is required")]
         [Display(Name = "Commission Pct")]
         [Description("Commision percent received per sale.")]
@@ -52,12 +52,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Sales Last Year")]
         [Description("Sales total of previous year.")]
         public decimal? SalesLastYear { get; set; } // money
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

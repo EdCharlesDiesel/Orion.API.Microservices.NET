@@ -22,7 +22,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Sales Reason ID")]
         [Description("Primary key. Foreign key to SalesReason.SalesReasonID.")]
         public int? SalesReasonID { get; set; } // int
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

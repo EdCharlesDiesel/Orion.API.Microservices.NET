@@ -36,7 +36,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Last Receipt Cost")]
         [Description("The selling price when last purchased.")]
         public decimal? LastReceiptCost { get; set; } // money
-        [Column(name : "LastReceiptDate", TypeName = "datetime")]
+        [Column(name : "LastReceiptDate")]
         [Display(Name = "Last Receipt Date")]
         [Description("Date the product was last received by the vendor.")]
         public DateTime? LastReceiptDate { get; set; } // datetime
@@ -61,7 +61,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Unit Measure Code")]
         [Description("The product's unit of measure.")]
         public string UnitMeasureCode { get; set; } // nchar(3)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

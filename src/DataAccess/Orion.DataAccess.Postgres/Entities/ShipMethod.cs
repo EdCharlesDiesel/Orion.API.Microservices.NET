@@ -23,7 +23,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Ship Method ID")]
         [Description("Primary key for ShipMethod records.")]
         public int? ShipMethodID { get; set; } // int
-        [Column(name : "Name", TypeName = "nvarchar")]
+        [Column(name : "Name")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
@@ -40,12 +40,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Ship Rate")]
         [Description("Shipping charge per pound.")]
         public decimal? ShipRate { get; set; } // money
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

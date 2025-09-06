@@ -22,12 +22,12 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Product ID")]
         [Description("Product identification number. Foreign key to Product.ProductID.")]
         public int? ProductID { get; set; } // int
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

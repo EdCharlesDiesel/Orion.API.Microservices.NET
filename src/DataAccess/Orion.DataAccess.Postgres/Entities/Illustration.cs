@@ -26,7 +26,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Diagram")]
         [Description("Illustrations used in manufacturing instructions. Stored as XML.")]
         public string Diagram { get; set; } // XML(.)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

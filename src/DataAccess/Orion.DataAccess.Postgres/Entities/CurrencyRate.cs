@@ -22,7 +22,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Currency Rate ID")]
         [Description("Primary key for CurrencyRate records.")]
         public int? CurrencyRateID { get; set; } // int
-        [Column(name : "CurrencyRateDate", TypeName = "datetime")]
+        [Column(name : "CurrencyRateDate")]
         [Required(ErrorMessage = "Currency Rate Date is required")]
         [Display(Name = "Currency Rate Date")]
         [Description("Date and time the exchange rate was obtained.")]
@@ -51,7 +51,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "End Of Day Rate")]
         [Description("Final exchange rate for the day.")]
         public decimal? EndOfDayRate { get; set; } // money
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

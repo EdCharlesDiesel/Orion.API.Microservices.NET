@@ -22,7 +22,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("Document identification number. Foreign key to Document.DocumentNode.")]
         [NotMapped]
         public SqlHierarchyId DocumentNode { get; set; } // hierarchyid
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

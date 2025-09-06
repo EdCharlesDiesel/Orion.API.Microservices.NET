@@ -29,7 +29,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Document Level")]
         [Description("Depth in the document hierarchy.")]
         public short? DocumentLevel { get; set; } // smallint
-        [Column(name : "Title", TypeName = "nvarchar")]
+        [Column(name : "Title")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Title is required")]
@@ -47,14 +47,14 @@ namespace Orion.DataAccess.Postgres.Entities
         [Description("0 = This is a folder, 1 = This is a document.")]
         [NotMapped]
         public bool? FolderFlag { get; set; } // bit
-        [Column(name : "FileName", TypeName = "nvarchar")]
+        [Column(name : "FileName")]
         [MaxLength(400)]
         [StringLength(400)]
         [Required(ErrorMessage = "File Name is required")]
         [Display(Name = "File Name")]
         [Description("File name of the document")]
         public string FileName { get; set; } // nvarchar(400)
-        [Column(name : "FileExtension", TypeName = "nvarchar")]
+        [Column(name : "FileExtension")]
         [MaxLength(8)]
         [StringLength(8)]
         [Required(ErrorMessage = "File Extension is required")]
@@ -73,27 +73,27 @@ namespace Orion.DataAccess.Postgres.Entities
         [Display(Name = "Change Number")]
         [Description("Engineering change approval number.")]
         public int? ChangeNumber { get; set; } // int
-        [Column(name : "Status", TypeName = "tinyint")]
+        [Column(name : "Status")]
         [Required(ErrorMessage = "Status is required")]
         [Display(Name = "Status")]
         [Description("1 = Pending approval, 2 = Approved, 3 = Obsolete")]
         public byte? Status { get; set; } // tinyint
-        [Column(name : "DocumentSummary", TypeName = "nvarchar")]
+        [Column(name : "DocumentSummary")]
         [MaxLength]
         [Display(Name = "Document Summary")]
         [Description("Document abstract.")]
         public string DocumentSummary { get; set; } // nvarchar(max)
-        [Column(name : "Document", TypeName = "varbinary")]
+        [Column(name : "Document")]
         [MaxLength]
         [Display(Name = "Document")]
         [Description("Complete document.")]
         public byte[] CompleteDocument { get; set; } // varbinary(max)
-        [Column(name : "rowguid", TypeName = "uniqueidentifier")]
+        [Column(name : "rowguid")]
         [Required(ErrorMessage = "rowguid is required")]
         [Display(Name = "rowguid")]
         [Description("ROWGUIDCOL number uniquely identifying the record. Required for FileStream.")]
         public Guid? rowguid { get; set; } // uniqueidentifier
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

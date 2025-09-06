@@ -18,21 +18,21 @@ namespace Orion.DataAccess.Postgres.Entities
         }
 
         [Key]
-        [Column(name : "CountryRegionCode", TypeName = "nvarchar")]
+        [Column(name : "CountryRegionCode")]
         [MaxLength(3)]
         [StringLength(3)]
         [Required(ErrorMessage = "Country Region Code is required")]
         [Display(Name = "Country Region Code")]
         [Description("ISO standard code for countries and regions.")]
         public string CountryRegionCode { get; set; } // nvarchar(3)
-        [Column(name : "Name", TypeName = "nvarchar")]
+        [Column(name : "Name")]
         [MaxLength(50)]
         [StringLength(50)]
         [Required(ErrorMessage = "Name is required")]
         [Display(Name = "Name")]
         [Description("Country or region name.")]
         public string Name { get; set; } // nvarchar(50)
-        [Column(name : "ModifiedDate", TypeName = "datetime")]
+        [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]

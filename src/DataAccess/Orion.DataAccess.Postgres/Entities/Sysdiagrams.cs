@@ -9,7 +9,7 @@ namespace Orion.DataAccess.Postgres.Entities
     [Table("sysdiagrams")]
     public class Sysdiagrams
     {
-        [Column(name : "name", TypeName = "nvarchar")]
+        [Column(name : "name")]
         [MaxLength(128)]
         [StringLength(128)]
         [Required(ErrorMessage = "name is required")]
@@ -28,7 +28,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Column(name : "version", TypeName = "int")]
         [Display(Name = "version")]
         public int? version { get; set; } // int
-        [Column(name : "definition", TypeName = "varbinary")]
+        [Column(name : "definition")]
         [MaxLength]
         [Display(Name = "definition")]
         public byte[] definition { get; set; } // varbinary(max)
