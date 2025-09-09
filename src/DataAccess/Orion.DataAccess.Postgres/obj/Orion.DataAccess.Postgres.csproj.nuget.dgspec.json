@@ -49,9 +49,19 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.7, )"
+            },
+            "Microsoft.DotNet.ILCompiler": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )",
+              "autoReferenced": true
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -70,6 +80,12 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )",
+              "autoReferenced": true
             },
             "Microsoft.SqlServer.Types": {
               "target": "Package",
@@ -99,6 +115,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
+              "version": "[9.0.7, 9.0.7]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

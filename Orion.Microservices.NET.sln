@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{9EB5AA97-4ABD-4608-8EBE-06BF0CC8D23D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{9EB5AA97-4ABD-4608-8EBE-06BF0CC8D23D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{6FB067AD-8FC3-4A3A-858C-2E5ED7A9A0E4}"
 EndProject
@@ -97,6 +97,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.DataAccess.Postgres", "src\DataAccess\Orion.DataAccess.Postgres\Orion.DataAccess.Postgres.csproj", "{FAC0F9F0-97C2-45E3-A52F-481A00D1AF36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.Domain.UnitTests", "src\Domain\Orion.Domain.UnitTests\Orion.Domain.UnitTests.csproj", "{AA9D14DF-C7C9-49FB-8C3C-B169741CEFAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWBuildVersion", "AWBuildVersion", "{E0034BDA-0C99-4B9B-9F8A-7D085B9DAEC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.AWBuildVersion", "src\API\Orion.API.AWBuildVersion\Orion.API.AWBuildVersion.csproj", "{89E53B75-A6FB-448F-BE20-591A36EAD30D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -204,6 +208,10 @@ Global
 		{AA9D14DF-C7C9-49FB-8C3C-B169741CEFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA9D14DF-C7C9-49FB-8C3C-B169741CEFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA9D14DF-C7C9-49FB-8C3C-B169741CEFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E53B75-A6FB-448F-BE20-591A36EAD30D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E53B75-A6FB-448F-BE20-591A36EAD30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E53B75-A6FB-448F-BE20-591A36EAD30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E53B75-A6FB-448F-BE20-591A36EAD30D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -244,6 +252,8 @@ Global
 		{0CF64A6E-61E0-4DBB-B8B7-2013DDBFA6E7} = {12CE92B3-B016-47B1-9F3A-B40E7E4827B3}
 		{FAC0F9F0-97C2-45E3-A52F-481A00D1AF36} = {E92855C7-3E03-4F60-B210-3DE18021B457}
 		{AA9D14DF-C7C9-49FB-8C3C-B169741CEFAA} = {AA3F4F55-B094-4862-92CA-0DDA806D7587}
+		{E0034BDA-0C99-4B9B-9F8A-7D085B9DAEC0} = {9EB5AA97-4ABD-4608-8EBE-06BF0CC8D23D}
+		{89E53B75-A6FB-448F-BE20-591A36EAD30D} = {E0034BDA-0C99-4B9B-9F8A-7D085B9DAEC0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFC31B86-B732-491F-9E63-995F435D6ED6}

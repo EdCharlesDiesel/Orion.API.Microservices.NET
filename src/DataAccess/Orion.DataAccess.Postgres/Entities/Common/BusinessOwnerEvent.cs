@@ -1,5 +1,5 @@
-﻿using Orion.Domain.Enums;
-using Orion.Domain.Tools;
+﻿using Orion.DataAccess.Postgres.Tools;
+using Orion.Domain.Enums;
 
 namespace Orion.DataAccess.Postgres.Entities.Common
 {

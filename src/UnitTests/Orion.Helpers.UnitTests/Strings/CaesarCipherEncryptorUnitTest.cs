@@ -7,7 +7,7 @@ namespace Orion.Helpers.UnitTests.Strings
         [Fact]
         public void Test1()
         {
-            Assert.True(CaesarCipherEncryptorClass.CaesarCypherEncryptor("xyz", 2).Equals("zab"));
+            Assert.Equal("zab", CaesarCipherEncryptorClass.CaesarCypherEncryptor("xyz", 2));
         }
     }
 }

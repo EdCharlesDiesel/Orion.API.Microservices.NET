@@ -1,25 +1,36 @@
-﻿namespace Orion.Helpers.Arrays
+﻿namespace Orion.Helpers.Arrays;
+
+public abstract class SortedSquaredArray
 {
     public class SortedSquaredArrayClass
     {
-        /// <summary>
-        /// Write a function that takes in a non-empty array of integers that are sorted
-        /// in ascending  order and returns a new array of the saw length with the squares
-        /// of the original integer  also sorted in ascending order.
-        /// </summary>
-        /// <param name="array"></param>
-        /// <returns></returns>
-        public int[] SortedSquaredArray(int[] array)
+        public int[] SortedSquaredArray(int[] input)
         {
-            var sortedSquares = new int[array.Length];
-            for (int index = 0; index < array.Length; index++)
+            int n = input.Length;
+            int[] result = new int[n];
+            int left = 0;
+            int right = n - 1;
+            int idx = n - 1;
+
+            // Two-pointer approach: largest square goes to end
+            while (left <= right)
             {
-                var value = array[index];
-                sortedSquares[index] = value * value;
+                int leftSquare = input[left] * input[left];
+                int rightSquare = input[right] * input[right];
+
+                if (leftSquare > rightSquare)
+                {
+                    result[idx--] = leftSquare;
+                    left++;
+                }
+                else
+                {
+                    result[idx--] = rightSquare;
+                    right--;
+                }
             }
 
-            Array.Sort(sortedSquares);
-            return sortedSquares;
+            return result;
         }
     }
 }

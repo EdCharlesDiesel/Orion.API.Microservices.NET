@@ -1,6 +1,6 @@
 ﻿namespace Orion.Helpers.Arrays
 {
-    public class ApartmentHuntingClass
+    public static class ApartmentHuntingClass
     {
         // O(b^2*r) time | O(b) space - where b is the number of blocks and r is the number of requirements
         public static int ApartmentHunting(List<Dictionary<string, bool>> blocks, string[] reqs)
@@ -47,7 +47,7 @@
             return Math.Abs(a - b);
         }
     }
-    public class ApartmentHuntingClass2
+    public static class ApartmentHuntingClass2
     {
         // O(br) time | O(br) space - where b is the number of blocks and r is the number of requirements
         public static int ApartmentHunting(List<Dictionary<string, bool>> blocks, string[] reqs)

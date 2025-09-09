@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Orion.Domain.Tools;
+using Orion.DataAccess.Postgres.Tools;
 
 namespace Orion.Admin.Tools
 {

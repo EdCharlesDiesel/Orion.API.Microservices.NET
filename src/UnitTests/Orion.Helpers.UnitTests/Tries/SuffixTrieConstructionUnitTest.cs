@@ -7,7 +7,7 @@ namespace Orion.Helpers.UnitTests.Tries
         [Fact]
         public void Test1()
         {
-            SuffixTrieConstructionClass.SuffixTrie trie = new SuffixTrieConstructionClass.SuffixTrie("babc");
+            var trie = new SuffixTrieConstructionClass.SuffixTrie("babc");
             Assert.True(trie.Contains("abc"));
         }
     }

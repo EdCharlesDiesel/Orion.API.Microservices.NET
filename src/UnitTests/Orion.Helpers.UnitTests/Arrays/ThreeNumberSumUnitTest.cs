@@ -14,10 +14,10 @@ public class ThreeNumberSumClassUnitTest
         expected.Add(new[] { -8, 3, 5 });
         expected.Add(new[] { -6, 1, 5 });
         List<int[]> output = ThreeNumberSumClass.ThreeNumberSum(new[] { 12, 3, 1, 2, -6, 5, -8, 6 }, 0);
-        Assert.True(compare(output, expected));
+        Assert.True(Compare(output, expected));
     }
 
-    private bool compare(List<int[]> triplets1, List<int[]> triplets2)
+    private bool Compare(List<int[]> triplets1, List<int[]> triplets2)
     {
         if (triplets1.Count != triplets2.Count) return false;
         for (int i = 0; i < triplets1.Count; i++)

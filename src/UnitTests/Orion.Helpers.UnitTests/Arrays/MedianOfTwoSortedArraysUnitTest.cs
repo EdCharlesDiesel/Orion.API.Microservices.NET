@@ -4,7 +4,7 @@ namespace Orion.Helpers.UnitTests.Arrays
 {
     public class MedianOfTwoSortedArraysClassUnitTest
     {
-        [Fact(Skip =  "Failing unit test")]
+        [Fact]
         public void Test1()
         {
             int[] arrayOne = new[] { 1, 3, 4, 5 };

@@ -11,11 +11,11 @@ namespace Orion.Helpers.UnitTests.Strings
             string inputPattern = "xxyxxy";
             string inputstring = "gogopowerrangergogopowerranger";
             Assert.True(
-              compare(PatternMatcherClass.PatternMatcher(inputPattern, inputstring), expected)
+              Compare(PatternMatcherClass.PatternMatcher(inputPattern, inputstring), expected)
             );
         }
 
-        private bool compare(string[] arr1, string[] arr2)
+        private bool Compare(string[] arr1, string[] arr2)
         {
             if (arr1.Length != arr2.Length)
             {

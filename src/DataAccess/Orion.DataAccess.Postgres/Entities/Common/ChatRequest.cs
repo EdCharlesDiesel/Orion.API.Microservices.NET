@@ -1,5 +1,5 @@
 #nullable enable
-using Orion.Domain.Tools;
+using Orion.DataAccess.Postgres.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities.Common;
 

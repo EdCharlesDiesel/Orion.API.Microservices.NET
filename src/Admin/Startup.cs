@@ -9,7 +9,6 @@ using Orion.Admin.Security;
 using Orion.Admin.Tools;
 using Orion.DataAccess.Postgres.AllFeatures;
 using Orion.DataAccess.Postgres.Data;
-using Orion.DataAccess.Postgres.Strategy;
 using Orion.Domain.IRepositories;
 using Orion.Domain.Utility;
 
@@ -188,6 +187,13 @@ namespace Orion.Admin
             services.AddTransient<IUserClaimsPrincipalProvider, 
                 HttpContextUserClaimsPrincipalProvider>();            
         }
+    }
+
+    internal class FeatureManager : IFeatureManager
+    {
+        public bool CustomerSatisfaction { get; set; }
+        public bool Search { get; set; }
+        public bool SearchByBirthBusinessProvince { get; set; }
     }
 
     public class BusinessOwner

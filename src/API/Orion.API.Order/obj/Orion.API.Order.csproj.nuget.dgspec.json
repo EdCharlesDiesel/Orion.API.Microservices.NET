@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.csproj",
-        "projectName": "Orion.Services.TradingEconomics.API",
+        "projectName": "Orion.API.Order",
         "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\Orion.API.Order.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
         "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Order\\obj\\",
@@ -145,6 +145,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.7, )"

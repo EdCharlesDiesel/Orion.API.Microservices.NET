@@ -11,12 +11,12 @@ namespace Orion.Helpers.UnitTests.Famous_Algorithmns
             int[,] depsArray =
               new[,] { { 1, 2 }, { 1, 3 }, { 3, 2 }, { 4, 2 }, { 4, 3 } };
             List<int[]> deps = new List<int[]>();
-            fillDeps(depsArray, deps);
+            FillDeps(depsArray, deps);
             List<int> order = TopologicalSortClass.TopologicalSort(jobs, deps);
             Assert.True(IsValidTopologicalOrder(order, jobs, deps));
         }
 
-        void fillDeps(int[,] depsArray, List<int[]> deps)
+        void FillDeps(int[,] depsArray, List<int[]> deps)
         {
             for (int x = 0; x < depsArray.GetLength(0); x++)
             {

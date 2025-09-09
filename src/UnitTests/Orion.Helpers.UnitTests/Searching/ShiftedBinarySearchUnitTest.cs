@@ -2,7 +2,7 @@ using Orion.Helpers.Searching;
 
 namespace Orion.Helpers.UnitTests.Searching
 {
-    public class UnitTest1
+    public class ShiftedBinarySearchClassUnitTest1
     {
         [Fact]
         public void Test1()

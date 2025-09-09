@@ -12,10 +12,10 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
             InvertBinaryTreeClass.InvertBinaryTree(tree);
             InvertedBinaryTree invertedTree = new InvertedBinaryTree(1);
             invertedTree.insert(new[] { 2, 3, 4, 5, 6, 7, 8, 9 }, 0);
-            Assert.True(compareBT(tree, invertedTree));
+            Assert.True(CompareBt(tree, invertedTree));
         }
 
-        private bool compareBT(InvertBinaryTreeClass.BinaryTree tree1, InvertedBinaryTree tree2)
+        private bool CompareBt(InvertBinaryTreeClass.BinaryTree tree1, InvertedBinaryTree tree2)
         {
             if (tree1 == null && tree2 == null)
             {
@@ -23,8 +23,8 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
             }
             if (tree1 != null && tree2 != null)
             {
-                return tree1.value == tree2.value && compareBT(tree1.left, tree2.left) &&
-                       compareBT(tree1.right, tree2.right);
+                return tree1.Value == tree2.value && CompareBt(tree1.Left, tree2.Left) &&
+                       CompareBt(tree1.Right, tree2.Right);
             }
             return false;
         }
@@ -32,8 +32,8 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
         class InvertedBinaryTree
         {
             public int value;
-            public InvertedBinaryTree left;
-            public InvertedBinaryTree right;
+            public InvertedBinaryTree Left;
+            public InvertedBinaryTree Right;
 
             public InvertedBinaryTree(int value)
             {
@@ -53,18 +53,18 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
                 {
                     InvertedBinaryTree current = queue[index];
                     index += 1;
-                    if (current.right == null)
+                    if (current.Right == null)
                     {
-                        current.right = new InvertedBinaryTree(values[i]);
+                        current.Right = new InvertedBinaryTree(values[i]);
                         break;
                     }
-                    queue.Add(current.right);
-                    if (current.left == null)
+                    queue.Add(current.Right);
+                    if (current.Left == null)
                     {
-                        current.left = new InvertedBinaryTree(values[i]);
+                        current.Left = new InvertedBinaryTree(values[i]);
                         break;
                     }
-                    queue.Add(current.left);
+                    queue.Add(current.Left);
                 }
                 insert(values, i + 1);
             }
@@ -87,18 +87,18 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
                 {
                     InvertBinaryTreeClass.BinaryTree current = queue[index];
                     index += 1;
-                    if (current.left == null)
+                    if (current.Left == null)
                     {
-                        current.left = new InvertBinaryTreeClass.BinaryTree(values[i]);
+                        current.Left = new InvertBinaryTreeClass.BinaryTree(values[i]);
                         break;
                     }
-                    queue.Add(current.left);
-                    if (current.right == null)
+                    queue.Add(current.Left);
+                    if (current.Right == null)
                     {
-                        current.right = new InvertBinaryTreeClass.BinaryTree(values[i]);
+                        current.Right = new InvertBinaryTreeClass.BinaryTree(values[i]);
                         break;
                     }
-                    queue.Add(current.right);
+                    queue.Add(current.Right);
                 }
                 insert(values, i + 1);
             }

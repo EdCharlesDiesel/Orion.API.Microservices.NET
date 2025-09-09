@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\_Main_\_Main_.csproj" />
+
     <ProjectReference Include="..\..\Helpers\Orion.Helpers.csproj" />
   </ItemGroup>
 

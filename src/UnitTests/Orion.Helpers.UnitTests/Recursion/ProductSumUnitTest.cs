@@ -2,7 +2,7 @@
 namespace Orion.Helpers.UnitTests.Recursion
 {
     
-    public class Tests
+    public class ProductSumTests
     {
         [Fact]
         public  void TestCase1()
@@ -26,8 +26,8 @@ namespace Orion.Helpers.UnitTests.Recursion
                      4
                  },
             };
-            //var result =  Program.ProductSum(test);
-            //Assert.That(result, Is.EqualTo(8));
+            var result =  GenericClassAlgorithm.ProductSum(test);
+            Assert.Equal(result, (8));
         }
     }
 }

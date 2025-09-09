@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using Orion.Domain.Aggregates;
+using Orion.DataAccess.Postgres.Aggregates;
 using Orion.Domain.DTOs;
 
 //TODO Fix this

@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using Orion.API.TradingEconomics.Controllers;
-using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.Entities.Common;
-using Orion.Domain.IRepositories;
 using Orion.WebApps.Web.Helper;
 
 namespace Orion.WebApps.Web.Controllers;
@@ -137,4 +134,8 @@ public class CalendarController(
         await Task.CompletedTask;
         return RedirectToAction(nameof(Index));
     }
+}
+
+public interface ICalendarServices
+{
 }

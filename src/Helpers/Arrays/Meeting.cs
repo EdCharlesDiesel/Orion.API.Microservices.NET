@@ -1,6 +1,6 @@
 ﻿namespace Orion.Helpers.Arrays
 { 
-    public class Meeting
+    public partial class Meeting
     {
         public int Start;
         public int End;

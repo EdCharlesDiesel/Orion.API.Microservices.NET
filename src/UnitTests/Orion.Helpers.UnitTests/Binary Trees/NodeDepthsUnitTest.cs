@@ -1,26 +1,23 @@
-using _Main_;
-using Microsoft.VisualBasic.CompilerServices;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Orion.Helpers.Binary_Trees;
 
 namespace Orion.Helpers.UnitTests.Binary_Trees
 {
     public class NodeDepthsClassUnitTest
     {
-        [Fact(Skip ="Fix this")]
+        [Fact]
         public void Test1()
         {
             var root = new NodeDepthsClass.BinaryTree(1);
-            root.left = new _Go__.BinaryTree(2);
-            root.left.left = new _Go__.BinaryTree(4);
-            root.left.left.left = new _Go__.BinaryTree(8);
-            root.left.left.right = new _Go__.BinaryTree(9);
-            root.left.right = new _Go__.BinaryTree(5);
-            root.right = new _Go__.BinaryTree(3);
-            root.right.left = new _Go__.BinaryTree(6);
-            root.right.right = new _Go__.BinaryTree(7);
-            int actual = _Go__.NodeDepths(root);
-            Assert.Equals(16, actual);
+            root.Left = new NodeDepthsClass.BinaryTree(2);
+            root.Left.Left = new NodeDepthsClass.BinaryTree(4);
+            root.Left.Left.Left = new NodeDepthsClass.BinaryTree(8);
+            root.Left.Left.Right = new NodeDepthsClass.BinaryTree(9);
+            root.Left.Right = new NodeDepthsClass.BinaryTree(5);
+            root.Right = new NodeDepthsClass.BinaryTree(3);
+            root.Right.Left = new NodeDepthsClass.BinaryTree(6);
+            root.Right.Right = new NodeDepthsClass.BinaryTree(7);
+            int actual = NodeDepthsClass.NodeDepths(root);
+            Assert.Equal(16, actual);
         }
     }
 }

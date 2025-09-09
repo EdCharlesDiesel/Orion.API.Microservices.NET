@@ -12,7 +12,7 @@ namespace Orion.Helpers.UnitTests.Strings
             string output = UnderscorifySubstringClass.UnderscorifySubstring(
               "testthis is a testtest to see if testestest it works", "test"
             );
-            Assert.True(expected.Equals(output));
+            Assert.Equal(expected, output);
         }
     }
 }

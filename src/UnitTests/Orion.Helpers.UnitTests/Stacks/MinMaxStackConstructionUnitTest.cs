@@ -1,27 +1,27 @@
 namespace Orion.Helpers.UnitTests.Stacks
 {
-    public class UnitTest1
+    public class GenericClassAlgorithmUnitTest
     {
-        [Fact(Skip = "Fix this")]
+        [Fact]
         public void Test1()
         {
-            //Program.MinMaxStack stack = new Program.MinMaxStack();
-            //stack.Push(5);
-            //testMinMaxPeek(5, 5, 5, stack);
-            //stack.Push(7);
-            //testMinMaxPeek(5, 7, 7, stack);
-            //stack.Push(2);
-            //testMinMaxPeek(2, 7, 2, stack);
-            //Utils.AssertTrue(stack.Pop() == 2);
-            //Utils.AssertTrue(stack.Pop() == 7);
-            //testMinMaxPeek(5, 5, 5, stack);
+            GenericClassAlgorithm.MinMaxStack stack = new GenericClassAlgorithm.MinMaxStack();
+            stack.Push(5);
+            TestMinMaxPeek(5, 5, 5, stack);
+            stack.Push(7);
+            TestMinMaxPeek(5, 7, 7, stack);
+            stack.Push(2);
+            TestMinMaxPeek(2, 7, 2, stack);
+            Assert.True(stack.Pop() == 2);
+            Assert.True(stack.Pop() == 7);
+            TestMinMaxPeek(5, 5, 5, stack);
         }
 
-        //public void testMinMaxPeek(int min, int max, int Peek, Program.MinMaxStack stack)
-        //{
-        //    Utils.AssertTrue(stack.GetMin() == min);
-        //    Utils.AssertTrue(stack.GetMax() == max);
-        //    Utils.AssertTrue(stack.Peek() == Peek);
-        //}
+        public void TestMinMaxPeek(int min, int max, int Peek, GenericClassAlgorithm.MinMaxStack stack)
+        {
+            Assert.True(stack.GetMin() == min);
+            Assert.True(stack.GetMax() == max);
+            Assert.True(stack.Peek() == Peek);
+        }
     }
 }

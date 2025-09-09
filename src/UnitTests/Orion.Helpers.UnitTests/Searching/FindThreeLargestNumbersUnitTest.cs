@@ -2,13 +2,13 @@ using Orion.Helpers.Searching;
 
 namespace Orion.Helpers.UnitTests.Searching
 {
-    public class UnitTest1
+    public class FindThreeLargestNumbersClassUnitTest
     {
         [Fact]
         public void Test1()
         {
             int[] expected = { 18, 141, 541 };
-            Assert.True(compare(
+            Assert.True(Compare(
               FindThreeLargestNumbersClass.FindThreeLargestNumbers(
                 new[] { 141, 1, 17, -7, -17, -27, 18, 541, 8, 7, 7 }
               ),
@@ -16,7 +16,7 @@ namespace Orion.Helpers.UnitTests.Searching
             ));
         }
 
-        public bool compare(int[] arr1, int[] arr2)
+        public bool Compare(int[] arr1, int[] arr2)
         {
             if (arr1.Length != arr2.Length)
             {

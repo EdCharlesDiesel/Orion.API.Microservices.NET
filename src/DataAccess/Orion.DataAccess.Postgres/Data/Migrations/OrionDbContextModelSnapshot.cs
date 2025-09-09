@@ -309,6 +309,34 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     b.ToTable("VendorContact");
                 });
 
+            modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.AWBuildVersion", b =>
+                {
+                    b.Property<int>("SystemInformationID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("SystemInformationID");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("SystemInformationID"));
+
+                    b.Property<string>("DatabaseVersion")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("character varying(25)")
+                        .HasColumnName("Database Version");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("ModifiedDate");
+
+                    b.Property<DateTime>("VersionDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("VersionDate");
+
+                    b.HasKey("SystemInformationID");
+
+                    b.ToTable("AWBuildVersion", "public");
+                });
+
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Address", b =>
                 {
                     b.Property<int>("AddressID")
@@ -387,34 +415,6 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     b.HasKey("AddressTypeId");
 
                     b.ToTable("Person.AddressType");
-                });
-
-            modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.AwBuildVersion", b =>
-                {
-                    b.Property<int>("SystemInformationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("SystemInformationID");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("SystemInformationId"));
-
-                    b.Property<string>("DatabaseVersion")
-                        .IsRequired()
-                        .HasMaxLength(25)
-                        .HasColumnType("character varying(25)")
-                        .HasColumnName("Database Version");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("ModifiedDate");
-
-                    b.Property<DateTime>("VersionDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("VersionDate");
-
-                    b.HasKey("SystemInformationId");
-
-                    b.ToTable("AWBuildVersion");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.BillOfMaterials", b =>
@@ -592,7 +592,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BuildVersion");
+                    b.ToTable("Basket");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Common.BasketItem", b =>
