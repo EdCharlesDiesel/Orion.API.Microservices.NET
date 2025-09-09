@@ -21,16 +21,16 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "Database Version is required")]
         [Display(Name = "Database Version")]
         [Description("Version number of the database in 9.yy.mm.dd.00 format.")]
-        public string DatabaseVersion { get; init; } // nvarchar(25)
+        public string DatabaseVersion { get; set; } // nvarchar(25)
         [Column(name : "VersionDate")]
         [Required(ErrorMessage = "Version Date is required")]
         [Display(Name = "Version Date")]
         [Description("Date and time the record was last updated.")]
-        public DateTime? VersionDate { get; init; } // datetime
+        public DateTime? VersionDate { get; set; } // datetime
         [Column(name : "ModifiedDate")]
         [Required(ErrorMessage = "Modified Date is required")]
         [Display(Name = "Modified Date")]
         [Description("Date and time the record was last updated.")]
-        public DateTime? ModifiedDate { get; init; } // datetime
+        public DateTime? ModifiedDate { get; set; } // datetime
     }
 }

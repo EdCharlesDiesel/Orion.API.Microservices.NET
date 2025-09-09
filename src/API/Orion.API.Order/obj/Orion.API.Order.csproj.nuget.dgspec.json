@@ -122,7 +122,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\x\\Orion.Microservices.NET\\src\\Domain\\Orion.Domain\\Orion.Domain.csproj": {
+                "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Domain\\Orion.Domain\\Orion.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.WebApps.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b46847fb3b30c0e9222fdd3c9a7779ebf5d6a7b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e86feed4518c5b56d149f39652aa80cbb64b488e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.WebApps.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.WebApps.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

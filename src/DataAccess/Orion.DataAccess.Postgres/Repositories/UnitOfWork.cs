@@ -1,6 +1,6 @@
 using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.IRepositories;
 using Orion.DataAccess.Postgres.Tools;
-using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Postgres.Repositories
 {
@@ -11,7 +11,7 @@ namespace Orion.DataAccess.Postgres.Repositories
         public UnitOfWork(OrionDbContext context)
         {
             _context = context;
-            // AWBuildVersions = new AWBuildVersionRepository(_context);
+            AWBuildVersions = new AwBuildVersionRepository(_context);
         }
 
         public async Task<bool> SaveEntitiesAsync()
@@ -37,7 +37,7 @@ namespace Orion.DataAccess.Postgres.Repositories
         public async Task<int> CompleteAsync() =>
             await _context.SaveChangesAsync();
 
-        public object AWBuildVersions { get; set; }
+        public IAwBuildVersionRepository AWBuildVersions { get; set; }
 
         public void Dispose() => _context.Dispose();
     }

@@ -34,18 +34,13 @@
   </ItemGroup>
 
   <ItemGroup>
-
-    <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.Postgres\Orion.DataAccess.Postgres.csproj" />
-
-    <ProjectReference Include="..\..\Domain\Orion.Domain\Orion.Domain.csproj" />
-
-    <ProjectReference Include="..\..\Helpers\Orion.Helpers.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="..\..\..\..\.dockerignore">
       <Link>.dockerignore</Link>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.Postgres\Orion.DataAccess.Postgres.csproj" />
   </ItemGroup>
 
 </Project>

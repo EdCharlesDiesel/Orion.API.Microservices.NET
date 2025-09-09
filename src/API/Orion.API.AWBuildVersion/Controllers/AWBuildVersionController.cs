@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Orion.DataAccess.Postgres.Tools;
-using Orion.Domain.IRepositories;
 
 namespace Orion.API.AWBuildVersion.Controllers
 {

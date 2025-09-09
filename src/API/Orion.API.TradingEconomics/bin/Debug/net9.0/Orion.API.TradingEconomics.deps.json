@@ -1231,25 +1231,9 @@
           }
         }
       },
-      "Orion.Domain/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "5.0.17",
-          "Microsoft.Extensions.DependencyInjection": "9.0.8",
-          "System.ComponentModel.Annotations": "5.0.0"
-        },
+      "Orion.Domain.Reference/1.0.0.0": {
         "runtime": {
           "Orion.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Orion.Helpers/1.0.0": {
-        "dependencies": {
-          "Elasticsearch.Net": "7.17.5"
-        },
-        "runtime": {
-          "Orion.Helpers.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -2031,13 +2015,8 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Orion.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Orion.Helpers/1.0.0": {
-      "type": "project",
+    "Orion.Domain.Reference/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

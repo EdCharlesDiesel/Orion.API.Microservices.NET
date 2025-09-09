@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\x\\Orion.Microservices.NET\\src\\Api\\Orion.API.AWBuildVersion\\Orion.API.AWBuildVersion.csproj": {}
+    "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.AWBuildVersion\\Orion.API.AWBuildVersion.csproj": {}
   },
   "projects": {
-    "C:\\x\\Orion.Microservices.NET\\src\\Api\\Orion.API.AWBuildVersion\\Orion.API.AWBuildVersion.csproj": {
+    "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.AWBuildVersion\\Orion.API.AWBuildVersion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\Api\\Orion.API.AWBuildVersion\\Orion.API.AWBuildVersion.csproj",
+        "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.AWBuildVersion\\Orion.API.AWBuildVersion.csproj",
         "projectName": "Orion.Services.TradingEconomics.API",
-        "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\Api\\Orion.API.AWBuildVersion\\Orion.API.AWBuildVersion.csproj",
+        "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.AWBuildVersion\\Orion.API.AWBuildVersion.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\Api\\Orion.API.AWBuildVersion\\obj\\",
+        "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.AWBuildVersion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"

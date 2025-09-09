@@ -19,7 +19,7 @@ namespace Orion.Helpers.UnitTests.Graph
                     output.Sort();
                     Assert.True(Compare(output, expected));
                 }
-        }
+        
 
         public static bool Compare(List<int> arr1, int[] arr2)
         {

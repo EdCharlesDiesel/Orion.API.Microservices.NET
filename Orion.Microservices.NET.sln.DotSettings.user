@@ -45,14 +45,8 @@
     &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.Tests.Recursion.PermutationsUnitTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=262f66ce_002D2fe8_002D4c32_002Da637_002Dc6a341860864/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Create_ReturnsCreatedAt" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.Create_ReturnsCreatedAt&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.Update_ReturnsBadRequest_WhenIdMismatch&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.Update_ReturnsOk_WhenValid&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.Delete_ReturnsNoContent&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::529CD237-D27B-4134-861C-9AF6F29C692F::net9.0::Orion.Services.Catalog.API.Tests.Controllers.ProductControllerTests.GetProductById_ReturnsOk_WhenFound&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=262f66ce_002D2fe8_002D4c32_002Da637_002Dc6a341860864/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Create_ReturnsCreatedAt" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\x\Orion.Microservices.NET\src\UnitTests\Orion.Helpers.UnitTests" Presentation="&amp;lt;UnitTests&amp;gt;\&amp;lt;Orion.Helpers.UnitTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2a83acff_002D54be_002D4079_002D8b33_002Dcbaeaad16448/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllEvents_ReturnsOk_WhenDeserializationSuccessful" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
@@ -104,7 +98,7 @@
     &lt;TestId&gt;xUnit::69B62104-8836-433A-88FB-498B39A35694::net9.0::Orion.Services.StockAnalyzer.API.Tests.Controllers.LatestControllerTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ddb7707d_002Daedf_002D4d31_002Dbc56_002D43b44e22a55c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalendarControllerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ddb7707d_002Daedf_002D4d31_002Dbc56_002D43b44e22a55c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalendarControllerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;
       &lt;TestId&gt;xUnit::70E07A35-6A35-4343-9385-0D0CEB743491::net9.0::Orion.Services.Catalog.API.Tests.CatalogControllerUnitTest&lt;/TestId&gt;&#xD;
@@ -112,10 +106,30 @@
     &lt;Project Location="C:\x\Orion.API.Microservices.NET\src\UnitTests\StockAnalyzer.API.Tests" Presentation="&amp;lt;UnitTests&amp;gt;\&amp;lt;Orion.Services.StockAnalyzer.API.Tests&amp;gt;" /&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e31fea4b_002D2696_002D482d_002Da5f1_002D1c8bd472f607/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RightSmallerThanUnitTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Binary_Search_Tree.RightSmallerThanUnitTest&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e31fea4b_002D2696_002D482d_002Da5f1_002D1c8bd472f607/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="RightSmallerThanUnitTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Binary_Search_Tree.RightSmallerThanUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.ApartmentHuntingUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.CalendarMatchingClassTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.EvaluateExpressionTreeClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.FirstDuplicateValueClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.FourNumberSumClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.IndexEqualsValueClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.KnightConnectionClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.LargestRangeClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.LongestPeakClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.LongestSubarrayWithSumClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.MajorityElementClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.MergeOverlappingIntervalsClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.MinRewardsClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.MissingNumbersClassUnitTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.IsMonotonicClassTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::64EB3844-7B3E-4FE5-A95F-B35A4D0D0334::net9.0::Orion.Helpers.UnitTests.Arrays.MoveElementToEndClassTest&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;64EB3844-7B3E-4FE5-A95F-B35A4D0D0334/d:Arrays/f:ArrayOfProductsUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;64EB3844-7B3E-4FE5-A95F-B35A4D0D0334/d:Arrays/f:BestSeatUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Admin_002FOrion_002EAdmin_002FTestData_002FTestDataResource/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>

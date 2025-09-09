@@ -1524,7 +1524,8 @@
           "Microsoft.SqlServer.Types": "160.1000.6",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": "9.0.4",
-          "Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime": "9.0.4"
+          "Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime": "9.0.4",
+          "Orion.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Orion.DataAccess.Postgres.dll": {}

@@ -1,6 +1,6 @@
 ﻿namespace Orion.Helpers.Tries
 {
-    internal class MultiStringSearchClass3
+    public class MultiStringSearchClass3
     {
         // O(ns + bs) time | O(ns) space
         public static List<bool> MultistringSearch(string bigstring, string[] smallstrings)

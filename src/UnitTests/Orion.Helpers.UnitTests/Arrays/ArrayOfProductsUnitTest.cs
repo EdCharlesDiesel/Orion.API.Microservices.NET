@@ -4,7 +4,7 @@ namespace Orion.Helpers.UnitTests.Arrays
 {
     public class ArrayOfProductsUnitTest
     {
-        [Fact(Skip = "Need to look at this function")]
+        [Fact]
         public void Test1()
         {
             var input = new[] { 5, 1, 4, 2 };
