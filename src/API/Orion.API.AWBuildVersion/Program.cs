@@ -1,6 +1,8 @@
 using System.Reflection;
 using Microsoft.OpenApi.Models;
+using Orion.API.AWBuildVersion.Mappings;
 using Orion.DataAccess.Postgres.Repositories;
+using Orion.DataAccess.Postgres.Services;
 using Orion.DataAccess.Postgres.Tools;
 using Orion.Domain.IRepositories;
 
@@ -11,15 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 // ✅ Configuration
 var configuration = builder.Configuration;
 
-// Unit of Work + Repo
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-// ✅ Add EF Core with PostgresSQL
-// builder.Services.AddDbContext<BasketContext>(options =>
-//     options.UseNpgsql(connectionString));
-
-// ✅ Register application services
-//
-// builder.Services.AddScoped<service_>();
+builder.Services.AddScoped<AwBuildVersionService>();
 // builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // ✅ Add HTTP client support if needed
@@ -58,33 +52,33 @@ builder.Services.AddSwaggerGen(options =>
         options.IncludeXmlComments(xmlPath);
     }
 
-    // Optional: Add JWT bearer auth support if you're using authentication
-    /*
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer",
-        BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Description = "Enter 'Bearer' followed by your token"
-    });
+     // Optional: Add JWT bearer auth support if you're using authentication
+     
+     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+     {
+         Name = "Authorization",
+         Type = SecuritySchemeType.ApiKey,
+         Scheme = "Bearer",
+         BearerFormat = "JWT",
+         In = ParameterLocation.Header,
+         Description = "Enter 'Bearer' followed by your token"
+     });
 
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
-    */
+     options.AddSecurityRequirement(new OpenApiSecurityRequirement
+     {
+         {
+             new OpenApiSecurityScheme
+             {
+                 Reference = new OpenApiReference
+                 {
+                     Type = ReferenceType.SecurityScheme,
+                     Id = "Bearer"
+                 }
+             },
+             Array.Empty<string>()
+         }
+     });
+     
 });
 
 var app = builder.Build();
@@ -105,7 +99,7 @@ else
 app.UseHttpsRedirection();
 
 // Optional: add if you configure authentication
-// app.UseAuthentication();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

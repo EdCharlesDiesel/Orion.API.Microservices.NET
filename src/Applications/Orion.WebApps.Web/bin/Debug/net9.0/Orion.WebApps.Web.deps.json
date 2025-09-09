@@ -2848,6 +2848,7 @@
           "FastEndpoints.MediatR": "2.0.6",
           "Microsoft.AspNetCore.Authentication.Negotiate": "9.0.7",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
+          "Orion.DataAccess.Postgres": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {

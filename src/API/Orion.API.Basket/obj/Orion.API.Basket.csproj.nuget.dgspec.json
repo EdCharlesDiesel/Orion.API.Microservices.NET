@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
-        "projectName": "Orion.Services.TradingEconomics.API",
+        "projectName": "Orion.API.Basket",
         "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\Orion.API.Basket.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
         "outputPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Basket\\obj\\",

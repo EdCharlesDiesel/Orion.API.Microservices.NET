@@ -26,7 +26,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\x\\Orion.Microservices.NET\\src\\DataAccess\\Orion.DataAccess.Postgres\\Orion.DataAccess.Postgres.csproj": {
+                "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\DataAccess\\Orion.DataAccess.Postgres\\Orion.DataAccess.Postgres.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

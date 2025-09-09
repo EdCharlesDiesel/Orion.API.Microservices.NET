@@ -95,7 +95,6 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\Orion.API
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\scopedcss\bundle\Orion.Services.TradingEconomics.API.styles.css
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\staticwebassets.build.json
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\staticwebassets.development.json
@@ -144,3 +143,4 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\bin\Debug\net9.0\Npgsql.Ne
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\bin\Debug\net9.0\Npgsql.NodaTime.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\bin\Debug\net9.0\System.Text.Json.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\scopedcss\bundle\Orion.API.Basket.styles.css

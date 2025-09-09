@@ -1,5 +1,5 @@
 using AutoMapper;
-using Orion.API.Basket.DTO;
+using Orion.Domain.DTO;
 
 namespace Orion.API.Basket.Mappings;
 

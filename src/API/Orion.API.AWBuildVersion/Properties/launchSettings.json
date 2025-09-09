@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Orion.API.Basket": {
+    "Orion.API.AWBuildVersion": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
