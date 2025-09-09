@@ -1,4 +1,4 @@
-using _Main_;
+
 
 namespace Orion.Helpers.UnitTests.Graph
 {
@@ -15,11 +15,11 @@ namespace Orion.Helpers.UnitTests.Graph
               { 1, 0, 1, 1, 0 },
             };
                     int[] expected = { 1, 2, 2, 2, 5 };
-                    List<int> output = _Go__.RiverSizes(input);
+                    List<int> output = GenericClassAlgorithm.RiverSizes(input);
                     output.Sort();
                     Assert.True(Compare(output, expected));
                 }
-        }
+        
 
         public static bool Compare(List<int> arr1, int[] arr2)
         {

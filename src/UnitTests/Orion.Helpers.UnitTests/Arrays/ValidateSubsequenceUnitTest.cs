@@ -1,5 +1,7 @@
 
 
+using Orion.Helpers.Arrays;
+
 namespace Orion.Helpers.UnitTests.Arrays
 {
     public class ValidateSubsequenceUnitTest
@@ -15,20 +17,11 @@ namespace Orion.Helpers.UnitTests.Arrays
             1, 6, -1, 10
             };
 
-          Assert.True(ValidateSubsequence.ValidateSubsequenceClass.IsValidSubsequence(array, sequence));
+          Assert.True(ValidateSubsequenceClass.IsValidSubsequence(array, sequence));
         }
     }
 
-    public class ValidateSubsequence
-    {
-        public class ValidateSubsequenceClass
-        {
-            public static bool IsValidSubsequence(List<int> array, List<int> sequence)
-            {
-                throw new NotImplementedException();
-            }
-        }
-    }
+ 
 }
 
    

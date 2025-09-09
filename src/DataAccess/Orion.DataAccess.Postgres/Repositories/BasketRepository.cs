@@ -1,4 +1,5 @@
 using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.IRepositories;
 using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Postgres.Repositories;

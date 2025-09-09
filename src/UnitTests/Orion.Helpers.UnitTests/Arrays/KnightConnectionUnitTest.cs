@@ -4,7 +4,7 @@ namespace Orion.Helpers.UnitTests.Arrays
 {
     public class KnightConnectionClassUnitTest
     {
-        [Fact(Skip = "Failing unit test")]
+        [Fact]
         public void Test1()
         {
             var knightA = new[] { 0, 0 };

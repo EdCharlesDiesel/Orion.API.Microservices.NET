@@ -3,7 +3,7 @@
 using Microsoft.EntityFrameworkCore;
 using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.Entities.Common;
-using Orion.Domain.Tools;
+using Orion.DataAccess.Postgres.Tools;
 
 namespace Orion.DataAccess.Postgres.Data
 {
@@ -11,7 +11,7 @@ namespace Orion.DataAccess.Postgres.Data
     {
         DbSet<Address> Address { get; set; }
         DbSet<AddressType> AddressType { get; set; }
-        DbSet<AwBuildVersion> AwbuildVersion { get; set; }
+        DbSet<AWBuildVersion> AwbuildVersion { get; set; }
         DbSet<BillOfMaterials> BillOfMaterials { get; set; }
         DbSet<Contact> Contact { get; set; }
         DbSet<ContactCreditCard> ContactCreditCard { get; set; }

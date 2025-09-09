@@ -1,5 +1,5 @@
 using JetBrains.Annotations;
-using Orion.Domain.Aggregates;
+using Orion.DataAccess.Postgres.Aggregates;
 using Xunit;
 
 namespace Orion.Domain.UnitTests.Aggregates;

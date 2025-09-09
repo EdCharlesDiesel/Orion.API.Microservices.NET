@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Admin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+269c29bc1ad1301ff6ffd9f0af8803696e9a2b3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e351e8d02c69098b6efa94a7a63b7025c08cbb15")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Admin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Admin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

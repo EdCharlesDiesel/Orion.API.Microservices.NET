@@ -1,5 +1,7 @@
 
 
+using Orion.Helpers.Arrays;
+
 namespace Orion.Helpers.UnitTests.Arrays
 {
     public class SortedSquaredArrayUnitTest
@@ -9,22 +11,26 @@ namespace Orion.Helpers.UnitTests.Arrays
         {
             var input = new[] { 1, 2, 3, 5, 6, 8, 9 };
             var expected = new[] { 1, 4, 9, 25, 36, 64, 81 };
-           var actual = new SortedSquaredArray.SortedSquaredArrayClass().SortedSquaredArray(input);
+
+            var actual = new SortedSquaredArray.SortedSquaredArrayClass().SortedSquaredArray(input);
+
+            Assert.Equal(expected.Length, actual.Length);
+
             for (int i = 0; i < expected.Length; i++)
             {
-              // Assert.True(expected[i] == actual[i]);
+                Assert.Equal(expected[i], actual[i]);
             }
         }
-    }
 
-    public abstract class SortedSquaredArray
-    {
-        public class SortedSquaredArrayClass
+        [Fact]
+        public void HandlesNegativeNumbers()
         {
-            public object SortedSquaredArray(int[] input)
-            {
-                throw new NotImplementedException();
-            }
+            var input = new[] { -7, -3, 1, 9, 22, 30 };
+            var expected = new[] { 1, 9, 49, 81, 484, 900 };
+
+            var actual = new SortedSquaredArray.SortedSquaredArrayClass().SortedSquaredArray(input);
+
+            Assert.Equal(expected, actual);
         }
     }
 }

@@ -8,14 +8,14 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
         public void Test1()
         {
             var root = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(1);
-            root.left = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(2);
-            root.left.left = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(4);
-            root.left.left.left = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(8);
-            root.left.left.right = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(9);
-            root.left.right = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(5);
-            root.right = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(3);
-            root.right.left = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(6);
-            root.right.right = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(7);
+            root.Left = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(2);
+            root.Left.Left = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(4);
+            root.Left.Left.Left = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(8);
+            root.Left.Left.Right = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(9);
+            root.Left.Right = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(5);
+            root.Right = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(3);
+            root.Right.Left = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(6);
+            root.Right.Right = new AllKindsOfNodeDepths.AllKindsOfNodeDepthsClassBinaryTree(7);
             var actual = AllKindsOfNodeDepthsClass.AllKindsOfNodeDepths(root);
             Assert.Equal(26, actual);
         }

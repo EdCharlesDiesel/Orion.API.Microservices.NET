@@ -24,14 +24,14 @@ namespace Orion.Helpers.Strings
     /// from the string , your function should  return an empty list.
     /// 
     /// </summary>
-    public class ValidIpAddressesClass
+    public static class ValidIpAddressesClass
     {
-        public List<string> ValidIpAddresses(string input)
+        public static List<string> ValidIpAddresses(string input)
         {
-            List<string> ipAddressesFound = new List<string>();
+            var ipAddressesFound = new List<string>();
             for (int i = 1; i < Math.Min(input.Length, 4); i++)
             {
-                string[] currentIpAddressPart = new[] { "", "", "", "" };
+                var currentIpAddressPart = new[] { "", "", "", "" };
                 currentIpAddressPart[0] = input.Substring(0, i - 0);
                 if (!ValidPart(currentIpAddressPart[0]))
                 {
@@ -60,7 +60,7 @@ namespace Orion.Helpers.Strings
             return ipAddressesFound;
         }
 
-        private string Join(string[] currentIpAddressPart)
+        private static string Join(string[] currentIpAddressPart)
         {
             StringBuilder stringBuilder = new StringBuilder();
             for (int i = 0; i < currentIpAddressPart.Length; i++)
@@ -75,9 +75,9 @@ namespace Orion.Helpers.Strings
             return stringBuilder.ToString();
         }
 
-        private bool ValidPart(string v)
+        private static bool ValidPart(string v)
         {
-            int stringAsInt = Int32.Parse(v);
+            var stringAsInt = Int32.Parse(v);
             if (stringAsInt > 255)
             {
                 return false;

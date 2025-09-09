@@ -11,7 +11,7 @@
     <OutputType>WinExe</OutputType>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
-    <PackageId>Orion.Services.TradingEconomics.API</PackageId>
+    <PackageId>Orion.API.Catalog</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

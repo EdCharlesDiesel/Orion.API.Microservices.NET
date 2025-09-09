@@ -1,21 +1,26 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Orion.Domain.Aggregates;
+using Orion.DataAccess.Postgres.Aggregates;
+using Orion.DataAccess.Postgres.Tools;
 using Orion.Domain.Enums;
-using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities.Common
 {
     public class Feature : Entity<int>, IFeature
     {
+        // public void FullUpdate(IFeature o)
+        // {
+        //    if (IsTransient())
+        //    {
+        //        Id = o.;
+        //    }
+        //    FeatureName = o.FeatureName;
+        //    IsEnabled = o.IsEnabled;
+        //    Username = o.Username;
+        // }
+
         public void FullUpdate(IFeature o)
         {
-           if (IsTransient())
-           {
-               Id = o.Id;
-           }
-           FeatureName = o.FeatureName;
-           IsEnabled = o.IsEnabled;
-           Username = o.Username;
+            throw new NotImplementedException();
         }
 
         [Display(Name = "Feature Name")]

@@ -8,14 +8,14 @@ namespace Orion.Helpers.UnitTests.Binary_Search_Tree
         public void Test1()
         {
             var root = new FindClosestValueInBstClass.Bst(10);
-            root.left = new FindClosestValueInBstClass.Bst(5);
-            root.left.left = new FindClosestValueInBstClass.Bst(2);
-            root.left.left.left = new FindClosestValueInBstClass.Bst(1);
-            root.left.right = new FindClosestValueInBstClass.Bst(5);
-            root.right = new FindClosestValueInBstClass.Bst(15);
-            root.right.left = new FindClosestValueInBstClass.Bst(13);
-            root.right.left.right = new FindClosestValueInBstClass.Bst(14);
-            root.right.right = new FindClosestValueInBstClass.Bst(22);
+            root.Left = new FindClosestValueInBstClass.Bst(5);
+            root.Left.Left = new FindClosestValueInBstClass.Bst(2);
+            root.Left.Left = new FindClosestValueInBstClass.Bst(1);
+            root.Left.Right = new FindClosestValueInBstClass.Bst(5);
+            root.Right = new FindClosestValueInBstClass.Bst(15);
+            root.Right.Left = new FindClosestValueInBstClass.Bst(13);
+            root.Right.Left.Right = new FindClosestValueInBstClass.Bst(14);
+            root.Right.Right = new FindClosestValueInBstClass.Bst(22);
 
             var expected = 13;
             var actual = FindClosestValueInBstClass.FindClosestValueInBst(root, 12);

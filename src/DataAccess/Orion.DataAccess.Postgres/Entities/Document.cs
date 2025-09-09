@@ -4,7 +4,7 @@ using Microsoft.SqlServer.Types;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Orion.Domain.Tools;
+using Orion.DataAccess.Postgres.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities
 {

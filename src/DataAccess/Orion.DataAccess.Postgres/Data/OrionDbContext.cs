@@ -15,7 +15,7 @@ namespace Orion.DataAccess.Postgres.Data
         // Your DbSets
         public DbSet<Address> Address { get; set; }
         public DbSet<AddressType> AddressType { get; set; }
-        public DbSet<AwBuildVersion> AwbuildVersion { get; set; }
+        public DbSet<AWBuildVersion> AwbuildVersion { get; set; }
         public DbSet<BillOfMaterials> BillOfMaterials { get; set; }
         public DbSet<Contact> Contact { get; set; }
         public DbSet<ContactCreditCard> ContactCreditCard { get; set; }
@@ -101,6 +101,14 @@ namespace Orion.DataAccess.Postgres.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder); // 👈 keep Identity configuration
+            
+            modelBuilder.Entity<AWBuildVersion>()
+                .ToTable("AWBuildVersion", "public")
+                .HasKey(x => x.SystemInformationID);
+
+            modelBuilder.Entity<AWBuildVersion>()
+                .Property(x => x.DatabaseVersion)
+                .HasColumnName("Database Version");
 
             modelBuilder.Entity<BusinessEntityAddress>()
                 .HasKey(bea => new { bea.BusinessEntityID, bea.AddressID });

@@ -1,7 +1,6 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Orion.DataAccess.Postgres.Entities.Common;
-using Orion.DataAccess.Postgres.Repositories;
 
 namespace Orion.API.TradingEconomics.Controllers
 {

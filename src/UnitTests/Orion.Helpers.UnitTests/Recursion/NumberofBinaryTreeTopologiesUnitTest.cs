@@ -2,7 +2,7 @@ using Orion.Helpers.Recursion;
 
 namespace Orion.Helpers.UnitTests.Recursion
 {
-    public partial class Tests
+    public class NumberofBinaryTreeTopologiesTests
     { 
         [Fact]
         public void TestCaseSolutionOne()

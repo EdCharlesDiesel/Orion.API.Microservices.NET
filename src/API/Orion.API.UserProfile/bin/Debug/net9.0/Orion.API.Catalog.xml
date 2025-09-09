@@ -10,10 +10,10 @@
         <member name="M:Orion.API.Catalog.Controllers.ProductController.GetProductById(System.Guid)">
             <summary>Get a product by ID.</summary>
         </member>
-        <member name="M:Orion.API.Catalog.Controllers.ProductController.Create(Orion.Domain.IRepositories.Product)">
+        <member name="M:Orion.API.Catalog.Controllers.ProductController.Create(Orion.DataAccess.Postgres.IRepositories.Product)">
             <summary>Create a product.</summary>
         </member>
-        <member name="M:Orion.API.Catalog.Controllers.ProductController.Update(System.Guid,Orion.Domain.IRepositories.Product)">
+        <member name="M:Orion.API.Catalog.Controllers.ProductController.Update(System.Guid,Orion.DataAccess.Postgres.IRepositories.Product)">
             <summary>Update a product.</summary>
         </member>
         <member name="M:Orion.API.Catalog.Controllers.ProductController.Delete(System.Guid)">

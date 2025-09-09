@@ -1,4 +1,6 @@
 
+using Orion.Helpers.Recursion;
+
 namespace Orion.Helpers.UnitTests.Recursion
 {
     public class PowerSetUnitTest
@@ -7,16 +9,16 @@ namespace Orion.Helpers.UnitTests.Recursion
         [Fact]
         public void TestCase1()
         {
-            //List<List<int>> output = PowerSet.Powerset(new List<int>(){1, 2, 3});
-            //Assert.True(output.Count == 8);
-            //Assert.True(Contains(output, new int[] { }));
-            //Assert.True(Contains(output, new int[] { 1 }));
-            //Assert.True(Contains(output, new int[] { 2 }));
-            //Assert.True(Contains(output, new int[] { 1, 2 }));
-            //Assert.True(Contains(output, new int[] { 3 }));
-            //Assert.True(Contains(output, new int[] { 1, 3 }));
-            //Assert.True(Contains(output, new int[] { 2, 3 }));
-            //Assert.True(Contains(output, new int[] { 1, 2, 3 }));
+            List<List<int>> output = PowerSet.Powerset(new List<int>(){1, 2, 3});
+            Assert.True(output.Count == 8);
+            Assert.True(Contains(output, new int[] { }));
+            Assert.True(Contains(output, new int[] { 1 }));
+            Assert.True(Contains(output, new int[] { 2 }));
+            Assert.True(Contains(output, new int[] { 1, 2 }));
+            Assert.True(Contains(output, new int[] { 3 }));
+            Assert.True(Contains(output, new int[] { 1, 3 }));
+            Assert.True(Contains(output, new int[] { 2, 3 }));
+            Assert.True(Contains(output, new int[] { 1, 2, 3 }));
         }
 
         public bool Contains(List<List<int>> arr1, int[] arr2)

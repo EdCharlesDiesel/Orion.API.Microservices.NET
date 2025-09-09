@@ -1,4 +1,4 @@
-using _Main_;
+
 
 namespace Orion.Helpers.UnitTests.Binary_Search_Tree
 {
@@ -8,7 +8,7 @@ namespace Orion.Helpers.UnitTests.Binary_Search_Tree
         public void Test1()
         {
             var array = new List<int> { 1, 2, 5, 7, 10, 13, 14, 15, 22 };
-            _Go__.BST tree = _Go__.MinHeightBst(array);
+            GenericClassAlgorithm.BST tree = GenericClassAlgorithm.MinHeightBST(array);
 
             Assert.True(ValidateBst(tree));
             Assert.Equal(4, GetTreeHeight(tree));
@@ -18,44 +18,41 @@ namespace Orion.Helpers.UnitTests.Binary_Search_Tree
             Assert.True(inOrder.SequenceEqual(expected));
         }
 
-        static bool ValidateBst(_Go__.BST tree) =>
+        private static bool ValidateBst(GenericClassAlgorithm.BST tree) =>
             ValidateBst(tree, int.MinValue, int.MaxValue);
 
-        static bool ValidateBst(_Go__.BST tree, int minValue, int maxValue)
+        private static bool ValidateBst(GenericClassAlgorithm.BST tree, int minValue, int maxValue)
         {
-            if (tree.value < minValue || tree.value >= maxValue)
+            if (tree.Value < minValue || tree.Value >= maxValue)
                 return false;
 
-            if (tree.left != null && !ValidateBst(tree.left, minValue, tree.value))
+            if (tree.Left != null && !ValidateBst(tree.Left, minValue, tree.Value))
                 return false;
 
-            if (tree.right != null && !ValidateBst(tree.right, tree.value, maxValue))
-                return false;
-
-            return true;
+            return tree.Right == null || ValidateBst(tree.Right, tree.Value, maxValue);
         }
 
-        private static List<int> InOrderTraverse(_Go__.BST? tree, List<int> array)
+        public static List<int> InOrderTraverse(GenericClassAlgorithm.BST? tree, List<int> array)
         {
-            if (tree.left != null)
-                InOrderTraverse(tree.left, array);
+            if (tree.Left != null)
+                InOrderTraverse(tree.Left, array);
 
-            array.Add(tree.value);
+            array.Add(tree.Value);
 
-            InOrderTraverse(tree.right, array);
+            InOrderTraverse(tree.Right, array);
 
             return array;
         }
 
-        static int GetTreeHeight(_Go__.BST? tree) =>
+        static int GetTreeHeight(GenericClassAlgorithm.BST? tree) =>
             GetTreeHeight(tree, 0);
 
-        static int GetTreeHeight(_Go__.BST? tree, int height)
+        static int GetTreeHeight(GenericClassAlgorithm.BST? tree, int height)
         {
             if (tree == null) return height;
-            int leftTreeHeight = GetTreeHeight(tree.left, height + 1);
-            int rightTreeHeight = GetTreeHeight(tree.right, height + 1);
-            return Math.Max(leftTreeHeight, rightTreeHeight);
+            int LeftTreeHeight = GetTreeHeight(tree.Left, height + 1);
+            int RightTreeHeight = GetTreeHeight(tree.Right, height + 1);
+            return Math.Max(LeftTreeHeight, RightTreeHeight);
         }
     }
 }

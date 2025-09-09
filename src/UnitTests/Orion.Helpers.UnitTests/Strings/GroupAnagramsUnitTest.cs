@@ -13,7 +13,7 @@ namespace Orion.Helpers.UnitTests.Strings
             expected.Add(new List<string> { "flop", "olfp" });
             expected.Add(new List<string> { "act", "tac", "cat" });
             expected.Add(new List<string> { "foo" });
-            List<List<string>> output = GroupAnagramsClass.groupAnagrams(words);
+            List<List<string>> output = GroupAnagramsClass.GroupAnagrams(words);
             foreach (List<string> innerList in output)
             {
                 innerList.Sort();

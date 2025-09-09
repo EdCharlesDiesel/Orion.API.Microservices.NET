@@ -1,10 +1,11 @@
 
 
+using Orion.Helpers.Recursion;
+
 namespace Orion.Helpers.UnitTests.Recursion
 {
-    public class Tests
+    public class PhoneNumberMnemonicTests
     {
-       
 
         [Fact]
         public void Test1()
@@ -29,8 +30,8 @@ namespace Orion.Helpers.UnitTests.Recursion
             {
                 expected.Add(expectedValues[i]);
             }
-           // var actual = PhoneNumberMnemonic.PhoneNumberMnemonics(phoneNumber);
-           // Assert.True(Enumerable.SequenceEqual(expected, actual));
+            var actual = PhoneNumberMnemonic.PhoneNumberMnemonics(phoneNumber);
+            Assert.True(Enumerable.SequenceEqual(expected, actual));
         }
     }
 }

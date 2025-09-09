@@ -1,6 +1,6 @@
 using AutoMapper;
-using Orion.API.Catalog.DTO;
 using Orion.DataAccess.Postgres.Entities;
+using Orion.Domain.DTO;
 
 namespace Orion.API.Catalog.Mappings;
 

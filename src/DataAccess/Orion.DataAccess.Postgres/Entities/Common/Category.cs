@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Orion.Domain.Aggregates;
+using Orion.DataAccess.Postgres.Aggregates;
+using Orion.DataAccess.Postgres.Tools;
 using Orion.Domain.Enums;
-using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities.Common
 {
