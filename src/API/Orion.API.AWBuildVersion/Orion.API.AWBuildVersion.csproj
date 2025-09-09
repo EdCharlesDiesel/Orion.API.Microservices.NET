@@ -36,4 +36,10 @@
     <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.Postgres\Orion.DataAccess.Postgres.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Authentication.JwtBearer">
+      <HintPath>..\..\..\..\..\Users\PC\.nuget\packages\microsoft.aspnetcore.authentication.jwtbearer\9.0.9\lib\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

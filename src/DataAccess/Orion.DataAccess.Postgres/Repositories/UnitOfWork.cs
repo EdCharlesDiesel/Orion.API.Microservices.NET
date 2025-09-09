@@ -14,25 +14,17 @@ namespace Orion.DataAccess.Postgres.Repositories
             AWBuildVersions = new AwBuildVersionRepository(_context);
         }
 
+
         public async Task<bool> SaveEntitiesAsync()
         {
-            throw new NotImplementedException();
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task StartAsync()
-        {
-            throw new NotImplementedException();
-        }
+        public Task StartAsync() => Task.CompletedTask;
 
-        public async Task CommitAsync()
-        {
-            throw new NotImplementedException();
-        }
+        public Task CommitAsync() => Task.CompletedTask;
 
-        public async Task RollbackAsync()
-        {
-            throw new NotImplementedException();
-        }
+        public Task RollbackAsync() => Task.CompletedTask;
 
         public async Task<int> CompleteAsync() =>
             await _context.SaveChangesAsync();

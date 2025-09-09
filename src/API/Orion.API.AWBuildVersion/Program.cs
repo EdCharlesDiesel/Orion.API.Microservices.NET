@@ -1,19 +1,23 @@
 using System.Reflection;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Orion.API.AWBuildVersion.Mappings;
-using Orion.DataAccess.Postgres.Repositories;
-using Orion.DataAccess.Postgres.Services;
-using Orion.DataAccess.Postgres.Tools;
-using Orion.Domain.IRepositories;
+using Orion.DataAccess.Postgres.Tools;       // IUnitOfWork
+// UnitOfWork
 
-AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // ✅ Fixes timestamp issues with Npgsql
+// AwBuildVersionService
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // ✅ Configuration
 var configuration = builder.Configuration;
+// Call extension method
+builder.Services.AddPostgresDataAccess(builder.Configuration);
 
-builder.Services.AddScoped<AwBuildVersionService>();
+// Service registration
+// builder.Services.AddScoped<IAwBuildVersionService, AwBuildVersionService>();
 // builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // ✅ Add HTTP client support if needed
@@ -54,7 +58,7 @@ builder.Services.AddSwaggerGen(options =>
 
      // Optional: Add JWT bearer auth support if you're using authentication
      
-     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+      options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
      {
          Name = "Authorization",
          Type = SecuritySchemeType.ApiKey,
@@ -81,6 +85,25 @@ builder.Services.AddSwaggerGen(options =>
      
 });
 
+// 🔐 Add Authentication with JWT
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["OrionApi"],
+            ValidAudience = builder.Configuration["Jwt:OrionApiUsers"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
+
+
+builder.Services.AddAuthorization();
 var app = builder.Build();
 
 // ✅ Configure the HTTP request pipeline
@@ -106,3 +129,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+

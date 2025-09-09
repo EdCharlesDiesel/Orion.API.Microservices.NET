@@ -12,8 +12,12 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.EnsureSchema(
+                name: "public");
+
             migrationBuilder.CreateTable(
                 name: "AWBuildVersion",
+                schema: "public",
                 columns: table => new
                 {
                     SystemInformationID = table.Column<int>(type: "integer", nullable: false)
@@ -67,7 +71,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "BuildVersion",
+                name: "Basket",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
@@ -78,7 +82,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BuildVersion", x => x.Id);
+                    table.PrimaryKey("PK_Basket", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -840,9 +844,9 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 {
                     table.PrimaryKey("PK_BasketItem", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_BasketItem_BuildVersion_BasketId",
+                        name: "FK_BasketItem_Basket_BasketId",
                         column: x => x.BasketId,
-                        principalTable: "BuildVersion",
+                        principalTable: "Basket",
                         principalColumn: "Id");
                 });
 
@@ -2595,7 +2599,8 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AWBuildVersion");
+                name: "AWBuildVersion",
+                schema: "public");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
@@ -2766,7 +2771,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "BuildVersion");
+                name: "Basket");
 
             migrationBuilder.DropTable(
                 name: "HumanResources.Department");

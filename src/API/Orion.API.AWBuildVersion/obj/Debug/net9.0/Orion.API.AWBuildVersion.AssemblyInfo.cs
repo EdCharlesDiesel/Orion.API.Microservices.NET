@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.API.AWBuildVersion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ca45de6c923c4ce9b440d1e26f7a6a6349914af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c7b56d975d1c75a2acbc0b3e3c5815316eec8bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.API.AWBuildVersion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.API.AWBuildVersion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

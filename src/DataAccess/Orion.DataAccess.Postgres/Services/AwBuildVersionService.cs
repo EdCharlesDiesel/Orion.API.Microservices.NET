@@ -1,37 +1,40 @@
 using Orion.DataAccess.Postgres.Entities;
+using Orion.DataAccess.Postgres.Services;
 using Orion.DataAccess.Postgres.Tools;
 
-namespace Orion.DataAccess.Postgres.Services;
-
-public class AwBuildVersionService(IUnitOfWork unitOfWork)
+public class AwBuildVersionService : IAwBuildVersionService
 {
-    public void CreateAwBuildVersion(AWBuildVersion awBuildVersion)
+    private readonly IUnitOfWork _unitOfWork;
+
+    public AwBuildVersionService(IUnitOfWork unitOfWork)
     {
-        unitOfWork.AWBuildVersions.AddAsync(awBuildVersion);
-        unitOfWork.CompleteAsync();
+        _unitOfWork = unitOfWork;
     }
-    
-    public void GetAllAwBuildVersions()
+
+    public async Task CreateAwBuildVersion(AWBuildVersion awBuildVersion)
     {
-        unitOfWork.AWBuildVersions.GetAllAsync();
-        unitOfWork.CompleteAsync();
+        await _unitOfWork.AWBuildVersions.AddAsync(awBuildVersion);
+        await _unitOfWork.CompleteAsync();
     }
-    
-    public void GetByIdAwBuildVersion(int systemInformationId)
+
+    public async Task<IEnumerable<AWBuildVersion>> GetAllAwBuildVersions()
     {
-        unitOfWork.AWBuildVersions.GetByIdAsync(systemInformationId);
-        unitOfWork.CompleteAsync();
+        return await _unitOfWork.AWBuildVersions.GetAllAsync();
     }
-    
-    public void UpdateAwBuildVersion(AWBuildVersion awBuildVersion)
+
+    public async Task<AWBuildVersion?> GetByIdAwBuildVersion(int systemInformationId)
     {
-        unitOfWork.AWBuildVersions.Update(awBuildVersion);
-        unitOfWork.CompleteAsync();
+        return await _unitOfWork.AWBuildVersions.GetByIdAsync(systemInformationId);
     }
-    
-    public void GetUpdateAwBuildVersion(AWBuildVersion awBuildVersion)
+
+    public async Task UpdateAwBuildVersion(AWBuildVersion awBuildVersion)
     {
-        unitOfWork.AWBuildVersions.Update(awBuildVersion);
-        unitOfWork.CompleteAsync();
+        _unitOfWork.AWBuildVersions.Update(awBuildVersion);
+        await _unitOfWork.CompleteAsync();
+    }
+
+    public async Task<IEnumerable<AWBuildVersion>> GetAllAsync()
+    {
+        return await _unitOfWork.AWBuildVersions.GetAllAsync();
     }
 }

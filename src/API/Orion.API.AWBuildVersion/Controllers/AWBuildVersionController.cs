@@ -4,7 +4,7 @@ using Orion.DataAccess.Postgres.Tools;
 
 namespace Orion.API.AWBuildVersion.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AwBuildVersionController(IUnitOfWork unitOfWork) : ControllerBase
