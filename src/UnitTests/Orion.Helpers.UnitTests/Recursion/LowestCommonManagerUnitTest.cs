@@ -22,13 +22,13 @@ namespace Orion.Helpers.UnitTests.Recursion
         public void TestCase1()
         {
             var orgCharts = getOrgCharts();
-            orgCharts['A'].addDirectReports(new[] {orgCharts['B'],
+            orgCharts['A'].AddDirectReports(new[] {orgCharts['B'],
                                                                 orgCharts['C']});
-            orgCharts['B'].addDirectReports(new[] {orgCharts['D'],
+            orgCharts['B'].AddDirectReports(new[] {orgCharts['D'],
                                                                 orgCharts['E']});
-            orgCharts['C'].addDirectReports(new[] {orgCharts['F'],
+            orgCharts['C'].AddDirectReports(new[] {orgCharts['F'],
                                                                 orgCharts['G']});
-            orgCharts['D'].addDirectReports(new[] {orgCharts['H'],
+            orgCharts['D'].AddDirectReports(new[] {orgCharts['H'],
                                                                 orgCharts['I']});
             LowestCommonManagerClass.OrgChart lcm = LowestCommonManagerClass.GetLowestCommonManager(orgCharts['A'],
                 orgCharts['E'],

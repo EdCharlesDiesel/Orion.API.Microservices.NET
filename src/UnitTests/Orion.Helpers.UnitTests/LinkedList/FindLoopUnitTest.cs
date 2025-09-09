@@ -2,7 +2,7 @@ using Orion.Helpers.LinkedList;
 
 namespace Orion.Helpers.UnitTests.LinkedList
 {
-    public partial class UnitTest1
+    public partial class FindLoopClassUnitTest1
     {
         [Fact]
         public void Test1()
@@ -21,14 +21,14 @@ namespace Orion.Helpers.UnitTests.LinkedList
         public void AddMany(int[] values)
         {
             FindLoopClass.LinkedList current = this;
-            while (current.next != null)
+            while (current.Next != null)
             {
-                current = current.next;
+                current = current.Next;
             }
             foreach (int value in values)
             {
-                current.next = new FindLoopClass.LinkedList(value);
-                current = current.next;
+                current.Next = new FindLoopClass.LinkedList(value);
+                current = current.Next;
             }
         }
 
@@ -38,7 +38,7 @@ namespace Orion.Helpers.UnitTests.LinkedList
             FindLoopClass.LinkedList current = this;
             while (counter < n)
             {
-                current = current.next;
+                current = current.Next;
                 counter++;
             }
             return current;

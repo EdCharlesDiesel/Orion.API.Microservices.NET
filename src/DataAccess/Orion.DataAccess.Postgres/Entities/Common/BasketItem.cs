@@ -1,7 +1,7 @@
 #nullable enable
 using System.ComponentModel.DataAnnotations.Schema;
+using Orion.DataAccess.Postgres.Tools;
 using Orion.Domain.Enums;
-using Orion.Domain.Tools;
 
 namespace Orion.DataAccess.Postgres.Entities.Common;
 /// <summary>

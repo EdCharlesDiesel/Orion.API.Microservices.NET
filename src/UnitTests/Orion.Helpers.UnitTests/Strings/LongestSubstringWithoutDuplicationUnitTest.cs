@@ -7,8 +7,8 @@ namespace Orion.Helpers.UnitTests.Strings
         [Fact]
         public void Test1()
         {
-            Assert.Equal(LongestSubstringWithoutDuplicationClass.LongestSubstringWithoutDuplication("clementisacap")
-, "mentisac");
+            Assert.Equal("mentisac", LongestSubstringWithoutDuplicationClass.LongestSubstringWithoutDuplication("clementisacap")
+);
         }
     }
 }

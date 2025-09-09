@@ -1,6 +1,6 @@
 ﻿namespace Orion.Helpers.Arrays
 {
-    public class SubarraySortClass
+    public static  class SubarraySortClass
     {
         // O(n) time | O(1) space
         public static int[] SubarraySort(int[] array)

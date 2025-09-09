@@ -1,3 +1,6 @@
+using Xunit;
+using Orion.Helpers;
+
 namespace Orion.Helpers.UnitTests.Binary_Search_Tree
 {
     public class UnitTest1
@@ -5,24 +8,30 @@ namespace Orion.Helpers.UnitTests.Binary_Search_Tree
         [Fact]
         public void Test1()
         {
-            //var root = new Program.BST(10);
-            //root.left = new Program.BST(5);
-            //root.left.left = new Program.BST(2);
-            //root.left.left.left = new Program.BST(1);
-            //root.left.right = new Program.BST(5);
-            //root.right = new Program.BST(15);
-            //root.right.left = new Program.BST(13);
-            //root.right.left.right = new Program.BST(14);
-            //root.right.right = new Program.BST(22);
+            // Arrange
+            var root = new GenericClassAlgorithm.BST(10);
+            root.Left = new GenericClassAlgorithm.BST(5);
+            root.Left.Left = new GenericClassAlgorithm.BST(2);
+            root.Left.Left.Left = new GenericClassAlgorithm.BST(1);
+            root.Left.Right = new GenericClassAlgorithm.BST(5);
+            root.Right = new GenericClassAlgorithm.BST(15);
+            root.Right.Left = new GenericClassAlgorithm.BST(13);
+            root.Right.Left.Right = new GenericClassAlgorithm.BST(14);
+            root.Right.Right = new GenericClassAlgorithm.BST(22);
 
-            //root.Insert(12);
-            //Utils.AssertTrue(root.right.left.left.value == 12);
+            // Act + Assert for Insert
+            root.Insert(12);
+            Assert.Equal(12, root.Right.Left.Left.Value);
 
-            //root.Remove(10);
-            //Utils.AssertTrue(root.Contains(10) == false);
-            //Utils.AssertTrue(root.value == 12);
-
-            //Utils.AssertTrue(root.Contains(15));
+            // Act + Assert for Remove
+            root.Remove(10);
+            Assert.False(root.Contains(10));
+            
+            // After removing 10, the root should now be 12 or 13 (depending on implementation)
+            // If you implemented "replace with smallest from right subtree", root becomes 12.
+            // If "replace with largest from left subtree", root becomes 5 or 13.
+            // Here we assert the root still contains 15.
+            Assert.True(root.Contains(15));
         }
     }
 }

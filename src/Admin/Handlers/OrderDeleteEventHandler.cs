@@ -1,5 +1,5 @@
 ﻿using Orion.Admin.Tools;
-using Orion.Domain.Events;
+using Orion.DataAccess.Postgres.Tools;
 using Orion.Domain.IRepositories;
 
 namespace Orion.Admin.Handlers
@@ -16,5 +16,9 @@ namespace Orion.Admin.Handlers
             // repo.New(OrderEventType.Deleted, ev.OrderId, ev.OldVersion);
             // return Task.CompletedTask;
         }
+    }
+
+    public class OrderDeleteEvent : IEventNotification
+    {
     }
 }

@@ -1,29 +1,28 @@
-using _Main_;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+
 
 namespace Orion.Helpers.UnitTests.Graph
 {
     public class AncestralTreeUnitTest
     {
-        [Fact(Skip ="Fix later")]
+        [Fact]
         public void Test1()
         {
             var trees = GetNewTrees();
             trees['A'].AddAsAncestor(
-              new _Go__.AncestralTree[] { trees['B'], trees['C'] }
+              new GenericClassAlgorithm.AncestralTree[] { trees['B'], trees['C'] }
             );
             trees['B'].AddAsAncestor(
-              new _Go__.AncestralTree[] { trees['D'], trees['E'] }
+              new GenericClassAlgorithm.AncestralTree[] { trees['D'], trees['E'] }
             );
             trees['D'].AddAsAncestor(
-              new _Go__.AncestralTree[] { trees['H'], trees['I'] }
+              new GenericClassAlgorithm.AncestralTree[] { trees['H'], trees['I'] }
             );
             trees['C'].AddAsAncestor(
-              new _Go__.AncestralTree[] { trees['F'], trees['G'] }
+              new GenericClassAlgorithm.AncestralTree[] { trees['F'], trees['G'] }
             );
 
-            _Go__.AncestralTree yca =
-                _Go__.GetYoungestCommonAncestor(trees['A'], trees['E'], trees['I']);
+            GenericClassAlgorithm.AncestralTree yca =
+                GenericClassAlgorithm.GetYoungestCommonAncestor(trees['A'], trees['E'], trees['I']);
             Assert.True(yca == trees['B']);
         }
 
@@ -33,13 +32,13 @@ namespace Orion.Helpers.UnitTests.Graph
         }
     }
 
-    public Dictionary<char, _Go__.AncestralTree> GetNewTrees()
+    public Dictionary<char, GenericClassAlgorithm.AncestralTree> GetNewTrees()
     {
-        var trees = new Dictionary<char, _Go__.AncestralTree>();
+        var trees = new Dictionary<char, GenericClassAlgorithm.AncestralTree>();
         var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         foreach (char a in alphabet)
         {
-            trees.Add(a, new _Go__.AncestralTree(a));
+            trees.Add(a, new GenericClassAlgorithm.AncestralTree(a));
         }
 
         trees['A'].AddAsAncestor(new[] {

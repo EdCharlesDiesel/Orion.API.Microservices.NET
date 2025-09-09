@@ -1,6 +1,6 @@
 ﻿namespace Orion.Helpers.Binary_Search_Tree
 {
-    public class BtsTaversalClass
+    public class BtsTraversalClass
     {
         // O(n) time | O(n) space
         public static List<int> InOrderTraverse(Bst tree, List<int> array)
@@ -44,12 +44,12 @@
             array.Add(tree.Value);
             return array;
         }
-        public class Bst
+        public class BST
         {
             public int Value;
             public Bst Left;
             public Bst Right;
-            public Bst(int value)
+            public BST(int value)
             {
                 this.Value = value;
             }

@@ -9,10 +9,10 @@ namespace Orion.Helpers.UnitTests.Sorting
         {
             int[] expected = { 2, 3, 5, 5, 6, 8, 9 };
             int[] input = { 8, 5, 2, 9, 5, 6, 3 };
-            Assert.True(compare(BubbleSortClass.BubbleSort(input), expected));
+            Assert.True(Compare(BubbleSortClass.BubbleSort(input), expected));
         }
 
-        public bool compare(int[] arr1, int[] arr2)
+        public bool Compare(int[] arr1, int[] arr2)
         {
             if (arr1.Length != arr2.Length)
             {

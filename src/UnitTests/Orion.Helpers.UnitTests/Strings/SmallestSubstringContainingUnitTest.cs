@@ -10,8 +10,8 @@ namespace Orion.Helpers.UnitTests.Strings
             string bigstring = "abcd$ef$axb$c$";
             string smallstring = "$$abf";
             string expected = "f$axb$";
-            Assert.True(SmallestSubstringContainingClass.SmallestSubstringContaining(bigstring, smallstring)
-                                       .Equals(expected));
+            Assert.Equal(SmallestSubstringContainingClass.SmallestSubstringContaining(bigstring, smallstring)
+, expected);
         }
     }
 }

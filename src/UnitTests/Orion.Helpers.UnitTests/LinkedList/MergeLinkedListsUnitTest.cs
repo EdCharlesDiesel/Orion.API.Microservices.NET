@@ -2,7 +2,7 @@ namespace Orion.Helpers.UnitTests.LinkedList
 {
     public partial class UnitTest1
     {
-        [Fact(Skip ="Fix this")]
+        [Fact]
         public void Test1()
         {
             TestLinkedList list1 = new TestLinkedList(2);

@@ -1,11 +1,10 @@
-using _Main_;
-using Microsoft.VisualBasic.CompilerServices;
+
 
 namespace Orion.Helpers.UnitTests.Graph
 {
     public class SquareOfZeroesUnitTest
     {
-        [Fact(Skip ="Fix later")]
+        [Fact]
         public void Test1()
         {
             List<List<int>> test = new List<List<int>>();
@@ -15,7 +14,7 @@ namespace Orion.Helpers.UnitTests.Graph
             test.Add(new List<int> { 0, 0, 0, 1, 0, 1 });
             test.Add(new List<int> { 0, 1, 1, 1, 0, 1 });
             test.Add(new List<int> { 0, 0, 0, 0, 0, 1 });
-            Assert.True(_Go__.SquareOfZeroes(test));
+            Assert.True(GenericClassAlgorithm.SquareOfZeroes(test));
         }
     }
 }

@@ -1,6 +1,4 @@
-using _Main_;
-using Microsoft.VisualBasic.CompilerServices;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+
 
 namespace Orion.Helpers.UnitTests.LinkedList
 {
@@ -9,20 +7,20 @@ namespace Orion.Helpers.UnitTests.LinkedList
 
         public RemoveDuplicatesFromLinkedListClass().LinkedList addMany(Program.LinkedList ll, List<int> values)
         {
-            _Go__.LinkedList current = ll;
+            GenericClassAlgorithm.LinkedList current = ll;
             while (current.next != null)
             {
                 current = current.next;
             }
             foreach (var value in values)
             {
-                current.next = new _Go__.LinkedList(value);
+                current.next = new GenericClassAlgorithm.LinkedList(value);
                 current = current.next;
             }
             return ll;
         }
 
-        public List<int> getNodesInArray(_Go__.LinkedList ll)
+        public List<int> getNodesInArray(GenericClassAlgorithm.LinkedList ll)
         {
             List<int> nodes = new List<int>();
             Program.LinkedList current = ll;

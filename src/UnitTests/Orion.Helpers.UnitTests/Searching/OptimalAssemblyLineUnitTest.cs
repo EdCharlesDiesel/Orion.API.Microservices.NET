@@ -2,9 +2,9 @@ using Orion.Helpers.Searching;
 
 namespace Orion.Helpers.UnitTests.Searching
 {
-    public class UnitTest1
+    public class OptimalAssemblyLineClassUnitTest1
     {
-        [Fact(Skip = "Failing unit test")]
+        [Fact]
         public void Test1()
         {
             int[] stepDurations = new[] { 15, 15, 30, 30, 45 };

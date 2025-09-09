@@ -1,4 +1,5 @@
-﻿using Orion.Domain.Aggregates;
+﻿using Orion.DataAccess.Postgres.Aggregates;
+using Orion.DataAccess.Postgres.IRepositories;
 using Orion.Domain.IRepositories;
 
 namespace Orion.DataAccess.Postgres.Repositories

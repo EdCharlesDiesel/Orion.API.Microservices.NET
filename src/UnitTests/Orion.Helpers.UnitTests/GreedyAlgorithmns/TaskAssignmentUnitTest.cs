@@ -4,7 +4,7 @@ namespace Orion.Helpers.UnitTests.GreedyAlgorithmns
 {
     public class TaskAssignmentUnitTest
     {
-        [Fact(Skip = "Failing unit test")]
+        [Fact]
         public void Test1()
         {
             var k = 3;

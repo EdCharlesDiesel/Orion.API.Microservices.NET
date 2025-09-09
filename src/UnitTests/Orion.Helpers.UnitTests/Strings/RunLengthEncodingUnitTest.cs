@@ -16,7 +16,7 @@ namespace Orion.Helpers.UnitTests.Strings
             var actual = new RunLengthEncodingClass().RunLengthEncoding(input);
 
             //ASSERT
-            Assert.True(expected.Equals(actual));					 
+            Assert.Equal(expected, actual);					 
         }
     }
 }

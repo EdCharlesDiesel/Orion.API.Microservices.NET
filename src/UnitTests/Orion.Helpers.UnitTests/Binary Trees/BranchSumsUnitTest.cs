@@ -2,7 +2,7 @@ using Orion.Helpers.Binary_Trees;
 
 namespace Orion.Helpers.UnitTests.Binary_Trees
 {
-    public partial class UnitTest1
+    public class BranchSumsUnitTestUnitTest1
     {
         public class TestBinaryTree(int value) : BranchSumsClass.BinaryTree(value)
         {
@@ -21,18 +21,18 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
                 {
                     TestBinaryTree current = queue[0];
                     queue.RemoveAt(0);
-                    if (current.left == null)
+                    if (current.Left == null)
                     {
-                        current.left = new TestBinaryTree(values[i]);
+                        current.Left = new TestBinaryTree(values[i]);
                         break;
                     }
-                    queue.Add((TestBinaryTree)current.left);
-                    if (current.right == null)
+                    queue.Add((TestBinaryTree)current.Left);
+                    if (current.Right == null)
                     {
-                        current.right = new TestBinaryTree(values[i]);
+                        current.Right = new TestBinaryTree(values[i]);
                         break;
                     }
-                    queue.Add((TestBinaryTree)current.right);
+                    queue.Add((TestBinaryTree)current.Right);
                 }
                 Insert(values, i + 1);
                 return this;

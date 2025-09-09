@@ -4,7 +4,7 @@ namespace Orion.Helpers.UnitTests.GreedyAlgorithmns
 {
     public class UnitTest1
     {
-        [Fact(Skip ="Failing Unit Test")]
+        [Fact]
         public void Test1()
         {
             List<int> redShirtHeights = new List<int> { 5, 8, 1, 3, 4 };

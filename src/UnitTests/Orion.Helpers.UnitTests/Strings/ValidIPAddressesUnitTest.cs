@@ -2,12 +2,12 @@ using Orion.Helpers.Strings;
 
 namespace Orion.Helpers.UnitTests.Strings
 {
-    public class UnitTest1
+    public class ValidIpAddressesClassUnitTest
     {
         [Fact]
         public void Test1()
         {
-            string input = "1921680";
+            var input = "1921680";
             List<string> expected = new List<string>();
             expected.Add("1.9.216.80");
             expected.Add("1.92.16.80");
@@ -20,7 +20,9 @@ namespace Orion.Helpers.UnitTests.Strings
             expected.Add("192.1.6.80");
             expected.Add("192.1.68.0");
             expected.Add("192.16.8.0");
-            var actual = new ValidIPAddressesClass().ValidIPAddresses(input);
+            var actual = ValidIPAddressesClass().ValidIPAddresses(input);
+            
+           
             Assert.True(expected.SequenceEqual(actual));
         }
     }

@@ -9,18 +9,18 @@ namespace Orion.Helpers.UnitTests.Graph
         {
             DepthFirstSearchClass.Node graph = new DepthFirstSearchClass.Node("A");
             graph.AddChild("B").AddChild("C").AddChild("D");
-            graph.children[0].AddChild("E").AddChild("F");
-            graph.children[2].AddChild("G").AddChild("H");
-            graph.children[0].children[1].AddChild("I").AddChild("J");
-            graph.children[2].children[0].AddChild("K");
+            graph.Children[0].AddChild("E").AddChild("F");
+            graph.Children[2].AddChild("G").AddChild("H");
+            graph.Children[0].Children[1].AddChild("I").AddChild("J");
+            graph.Children[2].Children[0].AddChild("K");
             string[] expected = {
               "A", "B", "E", "F", "I", "J", "C", "D", "G", "K", "H"
             };
             List<string> inputArray = new List<string>();
-            Assert.True(compare(graph.DepthFirstSearch(inputArray), expected));
+            Assert.True(Compare(graph.DepthFirstSearch(inputArray), expected));
         }
-        
-        public static bool compare(List<string> arr1, string[] arr2) {
+
+        private static bool Compare(List<string> arr1, string[] arr2) {
             if (arr1.Count != arr2.Length) {
                 return false;
             }

@@ -3,7 +3,7 @@
     public class TournamentWinnerClass
     {
         /// <summary>
-        /// There's an algorithms tournament taking place in which teams of programmers compete against
+        /// There's an algorithms tournament taking place in which teams of GenericClassAlgorithmmers compete against
         /// each other to solve algorithmic problems as fast as possible. Teams compete in round robin,
         /// where each team faces off against all other teams. Only two teams compete against each team
         /// other at a time, and for each competition, one team is designated the home team, while the 

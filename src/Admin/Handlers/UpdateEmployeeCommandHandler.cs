@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Orion.Admin.Commands;
 using Orion.Admin.Tools;
-using Orion.Domain.Aggregates;
+using Orion.DataAccess.Postgres.Tools;
 using Orion.Domain.IRepositories;
-using Orion.Domain.Tools;
 
 namespace Orion.Admin.Handlers
 {

@@ -1,6 +1,6 @@
 ﻿using Orion.Admin.Tools;
-using Orion.Domain.Aggregates;
-using Orion.Domain.Events;
+using Orion.DataAccess.Postgres.Aggregates;
+using Orion.DataAccess.Postgres.Tools;
 using Orion.Domain.IRepositories;
 
 namespace Orion.Admin.Handlers
@@ -18,5 +18,11 @@ namespace Orion.Admin.Handlers
             repo.New(ProductEventType.Deleted, ev.ProductId, ev.OldVersion);
             return Task.CompletedTask;
         }
+    }
+
+    public class ProductDeleteEvent : IEventNotification
+    {
+        public int ProductId { get; set; }
+        public long OldVersion { get; set; }
     }
 }

@@ -9,23 +9,23 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
         {
             FlattenBinaryTreeClass.BinaryTree root = new FlattenBinaryTreeClass.BinaryTree(1);
             insert(root, new[] { 2, 3, 4, 5, 6 });
-            root.left.right.left = new FlattenBinaryTreeClass.BinaryTree(7);
-            root.left.right.right = new FlattenBinaryTreeClass.BinaryTree(8);
-            FlattenBinaryTreeClass.BinaryTree leftMostNode = FlattenBinaryTreeClass.FlattenBinaryTree(root);
-            List<int> leftToRightToLeft = this.leftToRightToLeft(leftMostNode);
+            root.Left.Right.Left = new FlattenBinaryTreeClass.BinaryTree(7);
+            root.Left.Right.Right = new FlattenBinaryTreeClass.BinaryTree(8);
+            FlattenBinaryTreeClass.BinaryTree LeftMostNode = FlattenBinaryTreeClass.FlattenBinaryTree(root);
+            List<int> LeftToRightToLeft = this.LeftToRightToLeft(LeftMostNode);
             List<int> expected =
               new List<int> { 4, 2, 7, 5, 8, 1, 6, 3, 3, 6, 1, 8, 5, 7, 2, 4 };
-            Assert.True(expected.SequenceEqual(leftToRightToLeft));
+            Assert.True(expected.SequenceEqual(LeftToRightToLeft));
         }
 
-        public void insert(FlattenBinaryTreeClass.BinaryTree root, int[] values)
+        public void insert(FlattenBinaryTreeClass.BinaryTree root, int[] Values)
         {
-            insert(root, values, 0);
+            Insert(root, Values, 0);
         }
 
-        public void insert(FlattenBinaryTreeClass.BinaryTree root, int[] values, int i)
+        public static void Insert(FlattenBinaryTreeClass.BinaryTree root, int[] Values, int i)
         {
-            if (i >= values.Length)
+            if (i >= Values.Length)
             {
                 return;
             }
@@ -34,36 +34,36 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
             while (queue.Count > 0)
             {
                 FlattenBinaryTreeClass.BinaryTree current = queue.Dequeue();
-                if (current.left == null)
+                if (current.Left == null)
                 {
-                    current.left = new FlattenBinaryTreeClass.BinaryTree(values[i]);
+                    current.Left = new FlattenBinaryTreeClass.BinaryTree(Values[i]);
                     break;
                 }
-                queue.Enqueue(current.left);
-                if (current.right == null)
+                queue.Enqueue(current.Left);
+                if (current.Right == null)
                 {
-                    current.right = new FlattenBinaryTreeClass.BinaryTree(values[i]);
+                    current.Right = new FlattenBinaryTreeClass.BinaryTree(Values[i]);
                     break;
                 }
-                queue.Enqueue(current.right);
+                queue.Enqueue(current.Right);
             }
-            insert(root, values, i + 1);
+            Insert(root, Values, i + 1);
         }
 
-        public List<int> leftToRightToLeft(FlattenBinaryTreeClass.BinaryTree leftMost)
+        public List<int> LeftToRightToLeft(FlattenBinaryTreeClass.BinaryTree leftMost)
         {
             List<int> nodes = new List<int>();
             FlattenBinaryTreeClass.BinaryTree current = leftMost;
-            while (current.right != null)
+            while (current.Right != null)
             {
-                nodes.Add(current.value);
-                current = current.right;
+                nodes.Add(current.Value);
+                current = current.Right;
             }
-            nodes.Add(current.value);
+            nodes.Add(current.Value);
             while (current != null)
             {
-                nodes.Add(current.value);
-                current = current.left;
+                nodes.Add(current.Value);
+                current = current.Left;
             }
             return nodes;
         }

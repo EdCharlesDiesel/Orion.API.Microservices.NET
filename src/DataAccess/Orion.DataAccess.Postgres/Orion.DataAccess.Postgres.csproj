@@ -18,10 +18,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Domain\Orion.Domain\Orion.Domain.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
         <!-- EF Core packages -->
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.7" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
@@ -36,6 +32,10 @@
         <!-- Optional plugins (NodaTime / NetTopologySuite) -->
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite" Version="9.0.4" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime" Version="9.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Domain\Orion.Domain\Orion.Domain.csproj" />
     </ItemGroup>
 
 

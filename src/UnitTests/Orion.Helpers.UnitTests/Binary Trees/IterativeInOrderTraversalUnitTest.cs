@@ -1,5 +1,3 @@
-using _Main_;
-using Microsoft.VisualBasic.CompilerServices;
 using Orion.Helpers.Binary_Trees;
 
 namespace Orion.Helpers.UnitTests.Binary_Trees
@@ -10,15 +8,15 @@ namespace Orion.Helpers.UnitTests.Binary_Trees
         public void IterativeInorderTraversalClassTest1()
         {
             var root = new IterativeInorderTraversalClass.BinaryTree(1);
-            root.left = new IterativeInorderTraversalClass.BinaryTree(2, root);
-            root.left.left = new IterativeInorderTraversalClass.BinaryTree(4, root.left);
-            root.left.left.right = new _Go__.BinaryTree(9, root.left.left);
-            root.right = new _Go__.BinaryTree(3, root);
-            root.right.left = new _Go__.BinaryTree(6, root.right);
-            root.right.right = new _Go__.BinaryTree(7, root.right);
+            root.Left = new IterativeInorderTraversalClass.BinaryTree(2, root);
+            root.Left.Left = new IterativeInorderTraversalClass.BinaryTree(4, root.Left);
+            root.Left.Left.Right = new GenericClassAlgorithm.BinaryTree(9, root.Left.Left);
+            root.Right = new GenericClassAlgorithm.BinaryTree(3, root);
+            root.Right.Left = new GenericClassAlgorithm.BinaryTree(6, root.Right);
+            root.Right.Right = new GenericClassAlgorithm.BinaryTree(7, root.Right);
 
             testArray.Clear();
-            _Go__.IterativeInOrderTraversal(root, testCallback);
+            GenericClassAlgorithm.IterativeInOrderTraversal(root, testCallback);
             Assert.True(
               Enumerable.SequenceEqual(testArray, new List<int> { 4, 9, 2, 1, 6, 3, 7 })
             );
