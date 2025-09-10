@@ -92,25 +92,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/Orion.API.AWBuildVersion.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/Orion.API.AWBuildVersion.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/bin/Debug/net9.0/Orion.API.AWBuildVersion.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/bin/Debug/net9.0/Orion.API.AWBuildVersion.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/bin/Debug/net9.0/Orion.API.AWBuildVersion.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/bin/Debug/net9.0/Orion.API.AWBuildVersion.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/bin/Debug/net9.0/Orion.API.AWBuildVersion.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/bin/Debug/net9.0/Orion.API.AWBuildVersion.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/Orion.API.AWBuildVersion.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/ref/Orion.API.AWBuildVersion.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/ref/Orion.API.AWBuildVersion.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/refint/Orion.API.AWBuildVersion.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/refint/Orion.API.AWBuildVersion.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.AWBuildVersion/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
-    </list>
+    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -2603,7 +2585,7 @@
       <workItem from="1757449355577" duration="463000" />
       <workItem from="1757450109638" duration="115000" />
       <workItem from="1757450363527" duration="6638000" />
-      <workItem from="1757516806075" duration="2665000" />
+      <workItem from="1757516806075" duration="2986000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Still,&#10;Working on fixing the Dockerfile">
       <option name="closed" value="true" />
