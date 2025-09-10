@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Orion.DataAccess.Postgres.Data;
 using Orion.DataAccess.Postgres.Repositories;
-using Orion.DataAccess.Postgres.Services;
 
 namespace Orion.DataAccess.Postgres.Tools;
 
@@ -13,7 +12,6 @@ public static class ServiceCollectionExtensions
             options.UseNpgsql(config.GetConnectionString("DefaultConnection")));
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
-        services.AddScoped<IAwBuildVersionService, AwBuildVersionService>();
 
         return services;
     }

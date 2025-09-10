@@ -188,3 +188,4 @@ C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Orion.DataAccess.Postgres.dll
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Orion.DataAccess.Postgres.pdb
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

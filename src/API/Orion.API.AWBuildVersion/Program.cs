@@ -3,22 +3,15 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Orion.DataAccess.Postgres.Tools;       // IUnitOfWork
-// UnitOfWork
-
-// AwBuildVersionService
-
+using Orion.API.AWBuildVersion.Mappings;
+using Orion.DataAccess.Postgres.Tools;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ Configuration
-var configuration = builder.Configuration;
-// Call extension method
-builder.Services.AddPostgresDataAccess(builder.Configuration);
 
 // Service registration
-// builder.Services.AddScoped<IAwBuildVersionService, AwBuildVersionService>();
-// builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddPostgresDataAccess(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // ✅ Add HTTP client support if needed
 builder.Services.AddHttpClient(); // Or named client if needed
@@ -34,7 +27,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Title = "Orion AWBuildVersion API",
         Version = "v1",
-        Description = "An API for AWBuildVersion features for Orion.",
+        Description = "An API for AWBuildVersion feature for Orion.",
         Contact = new OpenApiContact
         {
             Name = "Khotso Mokhethi",
@@ -98,13 +91,18 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = builder.Configuration["OrionApi"],
             ValidAudience = builder.Configuration["Jwt:OrionApiUsers"],
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ?? string.Empty))
         };
     });
 
 
 builder.Services.AddAuthorization();
 var app = builder.Build();
+
+app.UseCors(builder => 
+    builder.WithOrigins("http://localhost:4200")
+        .AllowAnyMethod()
+        .AllowAnyHeader());
 
 // ✅ Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())

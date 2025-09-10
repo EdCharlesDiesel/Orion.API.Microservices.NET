@@ -11,26 +11,27 @@ namespace Orion.DataAccess.Postgres.Repositories
         public UnitOfWork(OrionDbContext context)
         {
             _context = context;
-            AWBuildVersions = new AwBuildVersionRepository(_context);
+            AwBuildVersions = new AwBuildVersionRepository(_context);
+            DatabaseLogs = new DatabaseLogRepository(_context);
         }
 
-
-        public async Task<bool> SaveEntitiesAsync()
-        {
-            return await _context.SaveChangesAsync() > 0;
-        }
+        public IAwBuildVersionRepository AwBuildVersions { get; set; }
+        public IDatabaseLogRepository DatabaseLogs { get; set; }
 
         public Task StartAsync() => Task.CompletedTask;
 
         public Task CommitAsync() => Task.CompletedTask;
 
         public Task RollbackAsync() => Task.CompletedTask;
+        
+        public async Task<bool> SaveEntitiesAsync()
+        {
+            return await _context.SaveChangesAsync() > 0;
+        }
 
         public async Task<int> CompleteAsync() =>
             await _context.SaveChangesAsync();
-
-        public IAwBuildVersionRepository AWBuildVersions { get; set; }
-
+        
         public void Dispose() => _context.Dispose();
     }
 
