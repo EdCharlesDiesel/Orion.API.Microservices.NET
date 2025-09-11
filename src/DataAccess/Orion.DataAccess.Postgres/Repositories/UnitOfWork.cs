@@ -13,10 +13,13 @@ namespace Orion.DataAccess.Postgres.Repositories
             _context = context;
             AwBuildVersions = new AwBuildVersionRepository(_context);
             DatabaseLogs = new DatabaseLogRepository(_context);
+            TransactionHistoryArchives = new TransactionHistoryArchivesRepository(_context);
+            
         }
 
         public IAwBuildVersionRepository AwBuildVersions { get; set; }
         public IDatabaseLogRepository DatabaseLogs { get; set; }
+        public ITransactionHistoryArchivesRepository TransactionHistoryArchives { get; set; }
 
         public Task StartAsync() => Task.CompletedTask;
 

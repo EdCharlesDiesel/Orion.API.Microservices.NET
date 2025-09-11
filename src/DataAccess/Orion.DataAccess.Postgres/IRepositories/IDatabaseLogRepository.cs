@@ -10,3 +10,6 @@ public interface IDatabaseLogRepository
     void Update(DatabaseLog entity);
     void Delete(DatabaseLog entity);
 }
+
+
+

@@ -6,7 +6,8 @@ namespace Orion.DataAccess.Postgres.Tools
     {
         IAwBuildVersionRepository AwBuildVersions { get; }
         IDatabaseLogRepository DatabaseLogs { get; }
-        
+        ITransactionHistoryArchivesRepository TransactionHistoryArchives { get; set; }
+
         Task<bool> SaveEntitiesAsync();
         Task StartAsync();
         Task CommitAsync();
