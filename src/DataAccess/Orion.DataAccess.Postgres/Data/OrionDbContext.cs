@@ -35,7 +35,7 @@ namespace Orion.DataAccess.Postgres.Data
         public DbSet<EmployeeAddress> EmployeeAddress { get; set; }
         public DbSet<EmployeeDepartmentHistory> EmployeeDepartmentHistory { get; set; }
         public DbSet<EmployeePayHistory> EmployeePayHistory { get; set; }
-        public DbSet<ErrorLog> ErrorLog { get; set; }
+        public DbSet<ErrorLog> ErrorLogs { get; set; }
         public DbSet<Illustration> Illustration { get; set; }
         public DbSet<Individual> Individual { get; set; }
         public DbSet<JobCandidate> JobCandidate { get; set; }
