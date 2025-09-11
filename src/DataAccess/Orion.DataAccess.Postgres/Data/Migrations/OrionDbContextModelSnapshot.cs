@@ -319,7 +319,6 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("SystemInformationID"));
 
                     b.Property<string>("DatabaseVersion")
-                        .IsRequired()
                         .HasMaxLength(25)
                         .HasColumnType("character varying(25)")
                         .HasColumnName("Database Version");

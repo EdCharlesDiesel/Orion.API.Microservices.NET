@@ -4,7 +4,9 @@ namespace Orion.DataAccess.Postgres.Tools
 {
     public interface IUnitOfWork
     {
-        IAwBuildVersionRepository AWBuildVersions { get; }
+        IAwBuildVersionRepository AwBuildVersions { get; }
+        IDatabaseLogRepository DatabaseLogs { get; }
+        
         Task<bool> SaveEntitiesAsync();
         Task StartAsync();
         Task CommitAsync();

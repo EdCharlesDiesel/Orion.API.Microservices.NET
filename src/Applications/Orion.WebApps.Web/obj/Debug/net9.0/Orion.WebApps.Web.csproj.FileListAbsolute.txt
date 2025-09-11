@@ -944,3 +944,4 @@ C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\bin\Debug\net9.0
 C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\bin\Debug\net9.0\Npgsql.NodaTime.dll
 C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\bin\Debug\net9.0\System.Text.Json.dll
+C:\x\Orion.Microservices.NET\src\Applications\Orion.WebApps.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

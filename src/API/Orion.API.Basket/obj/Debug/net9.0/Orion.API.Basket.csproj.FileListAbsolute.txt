@@ -144,3 +144,4 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\bin\Debug\net9.0\Npgsql.No
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\bin\Debug\net9.0\System.Text.Json.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\obj\Debug\net9.0\scopedcss\bundle\Orion.API.Basket.styles.css
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Basket\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
