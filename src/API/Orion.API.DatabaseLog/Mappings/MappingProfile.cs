@@ -7,6 +7,6 @@ namespace Orion.API.DatabaseLog.Mappings;
 public class MappingProfile : Profile
 { public MappingProfile()
     {
-        CreateMap<DatabaseLogDto, DataAccess.Postgres.Entities.DatabaseLog>().ReverseMap();
+        CreateMap<AwBuildVersionDto, DataAccess.Postgres.Entities.AWBuildVersion>().ReverseMap();
     }
 }

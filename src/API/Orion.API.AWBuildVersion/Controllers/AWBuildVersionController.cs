@@ -25,7 +25,7 @@ namespace Orion.API.AWBuildVersion.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(DataAccess.Postgres.Entities.AWBuildVersion version)
+        public async Task<IActionResult> Create([FromBody] DataAccess.Postgres.Entities.AWBuildVersion version)
         {
             await unitOfWork.AwBuildVersions.AddAsync(version);
             await unitOfWork.CompleteAsync();

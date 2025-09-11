@@ -8,10 +8,10 @@ using Orion.DataAccess.Postgres.Tools;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 // Service registration
 builder.Services.AddPostgresDataAccess(builder.Configuration);
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+
 
 // ✅ Add HTTP client support if needed
 builder.Services.AddHttpClient(); // Or named client if needed

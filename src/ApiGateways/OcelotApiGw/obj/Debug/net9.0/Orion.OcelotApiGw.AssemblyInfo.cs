@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.OcelotApiGw")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67a1e7d3a30d0382c5aa63aeabaa0ecee178a1fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5fa5a0c0a8b968ead9446f03636d7bd4c2d1b17")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.OcelotApiGw")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.OcelotApiGw")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

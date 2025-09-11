@@ -18,10 +18,9 @@ namespace Orion.DataAccess.Postgres.Entities
         [Column(name : "Database Version")]
         [MaxLength(25)]
         [StringLength(25)]
-        [Required(ErrorMessage = "Database Version is required")]
         [Display(Name = "Database Version")]
         [Description("Version number of the database in 9.yy.mm.dd.00 format.")]
-        public string DatabaseVersion { get; set; } // nvarchar(25)
+        public string? DatabaseVersion { get; set; }
         [Column(name : "VersionDate")]
         [Required(ErrorMessage = "Version Date is required")]
         [Display(Name = "Version Date")]
