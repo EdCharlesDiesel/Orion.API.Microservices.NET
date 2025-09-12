@@ -1,6 +1,7 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.Tools;
+using Orion.Domain.Tools;
 
 namespace Orion.API.AWBuildVersion.Controllers
 {
@@ -27,37 +28,127 @@ namespace Orion.API.AWBuildVersion.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] DataAccess.Postgres.Entities.AWBuildVersion version)
         {
-            await unitOfWork.AwBuildVersions.AddAsync(version);
-            await unitOfWork.CompleteAsync();
-            return CreatedAtAction(nameof(GetById), new { id = version.SystemInformationID }, version);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                await unitOfWork.AwBuildVersions.AddAsync(version);
+                await unitOfWork.CompleteAsync();
+
+                return CreatedAtAction(nameof(GetById), new { id = version.SystemInformationID }, version);
+            }
+            catch (Exception exception)
+            {
+                try
+                {
+                    var error = new ErrorLog()
+                    {
+                        ErrorTime = DateTimeOffset.UtcNow,
+                        UserName = HttpContext?.User?.Identity?.Name ?? "System",
+                        ErrorMessage = exception.Message,
+                        ErrorNumber = exception.HResult,
+                        ErrorProcedure = exception.TargetSite?.Name,
+                        ErrorLine = StaticTools.TryGetErrorLine(exception)
+                    };
+                    await unitOfWork.SaveErrorsAsync(error);
+                }
+                catch { /* prevent secondary failure */ }
+
+                await unitOfWork.RollbackAsync();
+                return StatusCode(500, "An internal error occurred while processing your request.");
+            }
         }
-
+        
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, DataAccess.Postgres.Entities.AWBuildVersion version)
+        public async Task<IActionResult> Update(int id, [FromBody] DataAccess.Postgres.Entities.AWBuildVersion version)
         {
-            var existing = await unitOfWork.AwBuildVersions.GetByIdAsync(id);
-            if (existing == null) return NotFound();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            existing.DatabaseVersion = version.DatabaseVersion;
-            existing.VersionDate = version.VersionDate;
-            existing.ModifiedDate = version.ModifiedDate;
+            try
+            {
+                var existing = await unitOfWork.AwBuildVersions.GetByIdAsync(id);
+                if (existing == null)
+                {
+                    return NotFound($"Record with ID {id} not found.");
+                }
 
-            unitOfWork.AwBuildVersions.Update(existing);
-            await unitOfWork.CompleteAsync();
+                // Map fields (manual or via AutoMapper)
+                existing.DatabaseVersion = version.DatabaseVersion;
+                existing.VersionDate = version.VersionDate;
+                existing.ModifiedDate = version.ModifiedDate;
 
-            return NoContent();
+                unitOfWork.AwBuildVersions.Update(existing);
+                await unitOfWork.CompleteAsync();
+
+                return Ok(existing);
+            }
+            catch (Exception exception)
+            {
+                try
+                {
+                    var error = new ErrorLog()
+                    {
+                        ErrorTime = DateTimeOffset.UtcNow,
+                        UserName = HttpContext?.User?.Identity?.Name ?? "System",
+                        ErrorMessage = exception.Message,
+                        ErrorNumber = exception.HResult,
+                        ErrorProcedure = exception.TargetSite?.Name,
+                        ErrorLine = StaticTools.TryGetErrorLine(exception)
+                    };
+
+                    await unitOfWork.SaveErrorsAsync(error);
+                }
+                catch { }
+
+                await unitOfWork.RollbackAsync();
+                return StatusCode(500, "An internal error occurred while updating the record.");
+            }
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var existing = await unitOfWork.AwBuildVersions.GetByIdAsync(id);
-            if (existing == null) return NotFound();
+            try
+            {
+                var existing = await unitOfWork.AwBuildVersions.GetByIdAsync(id);
+                if (existing == null)
+                {
+                    return NotFound($"Record with ID {id} not found.");
+                }
 
-            unitOfWork.AwBuildVersions.Delete(existing);
-            await unitOfWork.CompleteAsync();
+                existing.SystemInformationID = 66;
+                unitOfWork.AwBuildVersions.Delete(existing);
+                await unitOfWork.CompleteAsync();
 
-            return NoContent();
+                return NoContent();
+            }
+            catch (Exception exception)
+            {
+
+                var error = new ErrorLog()
+                {
+                    ErrorLogID = 22,
+                    ErrorTime = DateTimeOffset.UtcNow,
+                    UserName = HttpContext?.User?.Identity?.Name ?? "System",
+                    ErrorMessage = exception.Message,
+                    ErrorNumber = exception.HResult,
+                    ErrorProcedure = exception.TargetSite?.Name,
+                    ErrorLine = StaticTools.TryGetErrorLine(exception)
+                };
+
+                await unitOfWork.SaveErrorsAsync(error);
+                await unitOfWork.RollbackAsync();
+                return StatusCode(500, "An internal error occurred while deleting the record.");
+            }
         }
+
+        
+        
     }
 }

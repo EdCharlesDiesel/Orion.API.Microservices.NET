@@ -1,6 +1,9 @@
 using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.IRepositories;
 using Orion.DataAccess.Postgres.Tools;
+using Orion.Domain.DTO;
+using Serilog;
 
 namespace Orion.DataAccess.Postgres.Repositories
 {
@@ -32,6 +35,27 @@ namespace Orion.DataAccess.Postgres.Repositories
         {
             return await _context.SaveChangesAsync() > 0;
         }
+        
+        public async Task<bool> SaveErrorsAsync(ErrorLog errorLog)
+        {
+            try
+            {
+                await _context.ErrorLogs.AddAsync(errorLog);
+                var result = await _context.SaveChangesAsync();
+
+                // Log with Serilog
+                Log.Error("Database ErrorLog saved: {@ErrorLog}", errorLog);
+
+                return result > 0;
+            }
+            catch (Exception ex)
+            {
+                // Log failure with Serilog
+                Log.Error(ex, "Failed to save ErrorLog: {@ErrorLog}", errorLog);
+                return false;
+            }
+        }
+
 
         public async Task<int> CompleteAsync() =>
             await _context.SaveChangesAsync();

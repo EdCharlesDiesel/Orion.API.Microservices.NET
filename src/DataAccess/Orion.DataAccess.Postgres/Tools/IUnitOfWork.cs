@@ -1,4 +1,5 @@
-﻿using Orion.DataAccess.Postgres.IRepositories;
+﻿using Orion.DataAccess.Postgres.Entities;
+using Orion.DataAccess.Postgres.IRepositories;
 
 namespace Orion.DataAccess.Postgres.Tools
 {
@@ -10,6 +11,7 @@ namespace Orion.DataAccess.Postgres.Tools
         IErrorLogsRepository ErrorLogs { get; set; }
 
         Task<bool> SaveEntitiesAsync();
+        Task<bool> SaveErrorsAsync(ErrorLog errorLogDto);
         Task StartAsync();
         Task CommitAsync();
         Task RollbackAsync();

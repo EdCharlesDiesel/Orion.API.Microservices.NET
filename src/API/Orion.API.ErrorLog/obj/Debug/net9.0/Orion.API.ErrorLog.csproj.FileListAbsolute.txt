@@ -125,3 +125,4 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.ErrorLog\obj\Debug\net9.0\Orion.A
 C:\x\Orion.Microservices.NET\src\API\Orion.API.ErrorLog\obj\Debug\net9.0\Orion.API.ErrorLog.pdb
 C:\x\Orion.Microservices.NET\src\API\Orion.API.ErrorLog\obj\Debug\net9.0\Orion.API.ErrorLog.genruntimeconfig.cache
 C:\x\Orion.Microservices.NET\src\API\Orion.API.ErrorLog\obj\Debug\net9.0\ref\Orion.API.ErrorLog.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.ErrorLog\bin\Debug\net9.0\Serilog.dll
