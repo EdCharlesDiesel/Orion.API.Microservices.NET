@@ -21,7 +21,7 @@ namespace Orion.API.HumanResources
         public static IServiceCollection RegisterHumanResourcesServices(
             this IServiceCollection services, IConfiguration configuration)
         {
-            // Add the DbContext with PostgreSQL
+            // Add the DbContext with PostgresSQL
             services.AddDbContext<OrionDbContext>(options =>
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
