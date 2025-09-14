@@ -97,15 +97,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.API.HumanResources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.API.HumanResources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.API.HumanResources.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.API.HumanResources.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.API.HumanResources.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.API.HumanResources.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.DataAccess.Postgres.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.DataAccess.Postgres.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.DataAccess.Postgres.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.DataAccess.Postgres.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.DataAccess.Postgres.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Orion.API.HumanResources/bin/Debug/net9.0/Orion.DataAccess.Postgres.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -266,7 +258,7 @@
     "Publish to IIS.Publish Orion.WebApps.WebASP to IIS.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging Feature/DEV-06-Human-Resources",
+    "git-widget-placeholder": "Feature/DEV-06-Human-Resources",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -2735,6 +2727,7 @@
       <workItem from="1757850538039" duration="6065000" />
       <workItem from="1757856981374" duration="5418000" />
       <workItem from="1757875775128" duration="1666000" />
+      <workItem from="1757879370336" duration="1961000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Still,&#10;Working on fixing the Dockerfile">
       <option name="closed" value="true" />
@@ -3010,19 +3003,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/API/Orion.API.HumanResources/Controllers/InternalEmployeesController.cs</url>
-          <line>28</line>
-          <properties documentPath="C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\Controllers\InternalEmployeesController.cs" containingFunctionPresentation="Method 'GetCalendars'">
-            <startOffsets>
-              <option value="910" />
-            </startOffsets>
-            <endOffsets>
-              <option value="966" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

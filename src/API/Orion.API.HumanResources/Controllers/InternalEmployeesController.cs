@@ -8,15 +8,15 @@ using Orion.Domain.DTO;
 
 namespace Orion.API.HumanResources.Controllers
 {
-    [Route("api/Calendars")]
+    [Route("api/InternalEmployeesController")]
     [ApiController]
-    public class CalendarsController : ControllerBase
+    public class InternalEmployeesController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;
         private readonly IEmployeeRepository _employee;
         private readonly IMapper _mapper;
         
-        public CalendarsController(IEmployeeService employeeService, 
+        public InternalEmployeesController(IEmployeeService employeeService, 
             IMapper mapper)
         {
             _employeeService = employeeService;
@@ -26,22 +26,22 @@ namespace Orion.API.HumanResources.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<OrionCalendarEventDto>>> GetCalendars()
         {
-            // var employee = await _employee.GetEmployeeByIdAsync()
-            // var calendars = await _employeeService.FetchOrionCalendarEventsAsync();
-            //
-            // // Manual mapping
-            // var dtos = calendars.Select(e => new OrionCalendarEventDto
-            // {
-            //     Id = e.Id,
-            //     FirstName = e.FirstName,
-            //     LastName = e.LastName,
-            //     Salary = e.Salary,
-            //     SuggestedBonus = e.SuggestedBonus,
-            //     YearsInService = e.YearsInService
-            // });
-            //
-            // return Ok(dtos);
-            throw new NotImplementedException();
+            //TODO: Need to fix this the logic has not yet made sense.
+            var employeeID = 1;
+            var calendars = await _employeeService.FetchOrionCalendarEventsAsync(1);
+            
+            // Manual mapping
+            var dtos = calendars.Select(e => new OrionCalendarEventDto
+            {
+                Id = e.Id,
+                FirstName = e.FirstName,
+                LastName = e.LastName,
+                Salary = e.Salary,
+                SuggestedBonus = e.SuggestedBonus,
+                YearsInService = e.YearsInService
+            });
+            
+            return Ok(dtos);
         }
 
         
