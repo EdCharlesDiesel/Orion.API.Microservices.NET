@@ -16,6 +16,7 @@ namespace Orion.DataAccess.Postgres.Entities
             this.JobCandidates = new List<JobCandidate>();
             this.Documents = new List<Document>();
             this.PurchaseOrderHeaders = new List<PurchaseOrderHeader>();
+            
         }
 
         [Key]
@@ -23,7 +24,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "Business Entity ID is required")]
         [Display(Name = "Business Entity ID")]
         [Description("Primary key for Employee records.  Foreign key to BusinessEntity.BusinessEntityID.")]
-        public int? BusinessEntityID { get; set; } // int
+        public int BusinessEntityID { get; set; } // int
         [Column(name : "NationalIDNumber")]
         [MaxLength(15)]
         [StringLength(15)]
@@ -127,5 +128,11 @@ namespace Orion.DataAccess.Postgres.Entities
         public IEnumerable<PurchaseOrderHeader> PurchaseOrderHeaders { get; set; }
         // Sales.SalesPerson.BusinessEntityID -> HumanResources.Employee.BusinessEntityID (FK_SalesPerson_Employee_BusinessEntityID)
         public SalesPerson SalesPerson { get; set; }
+        public int JobLevel { get; set; }
+        public int YearsInService { get; set; }
+        public IEnumerable<Course> AttendedCourses { get; set; }
+        public int SuggestedBonus { get; set; }
+        public int Salary { get; set; }
+        public bool MinimumRaiseGiven { get; set; }
     }
 }

@@ -8,6 +8,7 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddPostgresDataAccess(this IServiceCollection services, IConfiguration config)
     {
+        // add the DbContext
         services.AddDbContext<OrionDbContext>(options =>
             options.UseNpgsql(config.GetConnectionString("DefaultConnection")));
 
