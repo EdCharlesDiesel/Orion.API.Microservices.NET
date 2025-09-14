@@ -40,7 +40,7 @@ public class OrionCalendarEvent
     public int JobLevel { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public object Salary { get; set; }
-    public object SuggestedBonus { get; set; }
-    public object YearsInService { get; set; }
+    public decimal Salary { get; set; }
+    public decimal SuggestedBonus { get; set; }
+    public int YearsInService { get; set; }
 }
