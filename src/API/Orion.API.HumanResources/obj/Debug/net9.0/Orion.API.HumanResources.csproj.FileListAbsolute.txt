@@ -206,3 +206,4 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\obj\Debug\net9.0\r
 C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\obj\Debug\net9.0\Orion.API.HumanResources.pdb
 C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\obj\Debug\net9.0\Orion.API.HumanResources.genruntimeconfig.cache
 C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\obj\Debug\net9.0\ref\Orion.API.HumanResources.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Serilog.Sinks.File.dll

@@ -13,6 +13,7 @@ namespace Orion.DataAccess.Postgres.Tools
         IDepartmentsRepository Departments { get; set; }
         IJobCandidatesRepository JobCandidates { get; set; }
         IEmployeePayHistoriesRepository EmployeePayHistories { get; set; }
+        IEmployeeDepartmentHistoriesRepository EmployeeDepartmentHistories { get; set; }
 
         Task<bool> SaveEntitiesAsync();
         Task<bool> SaveErrorsAsync(ErrorLog errorLogDto);

@@ -27,7 +27,7 @@ namespace Orion.API.HumanResources.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] DataAccess.Postgres.Entities.Department version)
+        public async Task<IActionResult> Create([FromBody] DataAccess.Postgres.Entities.EmployeePayHistory version)
         {
             if (!ModelState.IsValid)
             {
@@ -39,7 +39,7 @@ namespace Orion.API.HumanResources.Controllers
                 await unitOfWork.EmployeePayHistories.AddAsync(version);
                 await unitOfWork.CompleteAsync();
 
-                return CreatedAtAction(nameof(GetById), new { id = version.DepartmentID }, version);
+                return CreatedAtAction(nameof(GetById), new { id = version.BusinessEntityID }, version);
             }
             catch (Exception exception)
             {
@@ -64,7 +64,7 @@ namespace Orion.API.HumanResources.Controllers
         }
         
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] DataAccess.Postgres.Entities.Department version)
+        public async Task<IActionResult> Update(int id, [FromBody] DataAccess.Postgres.Entities.EmployeePayHistory version)
         {
             if (!ModelState.IsValid)
             {
@@ -80,8 +80,8 @@ namespace Orion.API.HumanResources.Controllers
                 }
 
                 // Map fields (manual or via AutoMapper)
-                existing.DatabaseVersion = version.DatabaseVersion;
-                existing.VersionDate = version.VersionDate;
+                existing.Employee = version.Employee;
+              
                 existing.ModifiedDate = version.ModifiedDate;
 
                 unitOfWork.EmployeePayHistories.Update(existing);
@@ -147,8 +147,5 @@ namespace Orion.API.HumanResources.Controllers
                 return StatusCode(500, "An internal error occurred while deleting the record.");
             }
         }
-
-        
-        
     }
 }
