@@ -9,89 +9,91 @@ namespace Orion.DataAccess.Postgres.Data
 {
     public interface IOrionDbContext
     {
-        DbSet<Address> Address { get; set; }
-        DbSet<AddressType> AddressType { get; set; }
-        DbSet<AWBuildVersion> AwbuildVersion { get; set; }
+        DbSet<Address> Addresses { get; set; }
+        DbSet<AddressType> AddressTypes { get; set; }
+        DbSet<AWBuildVersion> AwbuildVersions { get; set; }
         DbSet<BillOfMaterials> BillOfMaterials { get; set; }
-        DbSet<Contact> Contact { get; set; }
-        DbSet<ContactCreditCard> ContactCreditCard { get; set; }
-        DbSet<ContactType> ContactType { get; set; }
-        DbSet<CountryRegion> CountryRegion { get; set; }
-        DbSet<CountryRegionCurrency> CountryRegionCurrency { get; set; }
-        DbSet<CreditCard> CreditCard { get; set; }
-        DbSet<Culture> Culture { get; set; }
-        DbSet<Currency> Currency { get; set; }
-        DbSet<CurrencyRate> CurrencyRate { get; set; }
-        DbSet<Customer> Customer { get; set; }
-        DbSet<CustomerAddress> CustomerAddress { get; set; }
-        DbSet<DatabaseLog> DatabaseLog { get; set; }
-        DbSet<Department> Department { get; set; }
-        DbSet<Document> Document { get; set; }
-        DbSet<Employee> Employee { get; set; }
-        DbSet<EmployeeAddress> EmployeeAddress { get; set; }
-        DbSet<EmployeeDepartmentHistory> EmployeeDepartmentHistory { get; set; }
-        DbSet<EmployeePayHistory> EmployeePayHistory { get; set; }
+        DbSet<Contact> Contacts { get; set; }
+        DbSet<ContactCreditCard> ContactCreditCards { get; set; }
+        DbSet<ContactType> ContactTypes { get; set; }
+        DbSet<CountryRegion> CountryRegions { get; set; }
+        DbSet<CountryRegionCurrency> CountryRegionCurrencies { get; set; }
+        DbSet<CreditCard> CreditCards { get; set; }
+        DbSet<Culture> Cultures { get; set; }
+        DbSet<Currency> Currencies{ get; set; }
+        DbSet<CurrencyRate> CurrencyRates { get; set; }
+        DbSet<Customer> Customers { get; set; }
+        DbSet<CustomerAddress> CustomerAddresses { get; set; }
+        DbSet<DatabaseLog> DatabaseLogs { get; set; }
+        DbSet<Department> Departments { get; set; }
+        DbSet<Document> Documents { get; set; }
+        DbSet<Employee> Employees { get; set; }
+        DbSet<EmployeeAddress> EmployeeAddresses { get; set; }
+        DbSet<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; }
+        DbSet<EmployeePayHistory> EmployeePayHistories { get; set; }
         DbSet<ErrorLog> ErrorLogs { get; set; }
-        DbSet<Illustration> Illustration { get; set; }
-        DbSet<Individual> Individual { get; set; }
-        DbSet<JobCandidate> JobCandidate { get; set; }
-        DbSet<Location> Location { get; set; }
-        DbSet<Product> Product { get; set; }
-        DbSet<ProductCategory> ProductCategory { get; set; }
-        DbSet<ProductCostHistory> ProductCostHistory { get; set; }
-        DbSet<ProductDescription> ProductDescription { get; set; }
-        DbSet<ProductDocument> ProductDocument { get; set; }
-        DbSet<ProductInventory> ProductInventory { get; set; }
-        DbSet<ProductListPriceHistory> ProductListPriceHistory { get; set; }
-        DbSet<ProductModel> ProductModel { get; set; }
-        DbSet<ProductModelIllustration> ProductModelIllustration { get; set; }
-        DbSet<ProductModelProductDescriptionCulture> ProductModelProductDescriptionCulture { get; set; }
-        DbSet<ProductPhoto> ProductPhoto { get; set; }
-        DbSet<ProductProductPhoto> ProductProductPhoto { get; set; }
-        DbSet<ProductReview> ProductReview { get; set; }
-        DbSet<ProductSubcategory> ProductSubcategory { get; set; }
-        DbSet<ProductVendor> ProductVendor { get; set; }
-        DbSet<PurchaseOrderDetail> PurchaseOrderDetail { get; set; }
-        DbSet<PurchaseOrderHeader> PurchaseOrderHeader { get; set; }
-        DbSet<SalesOrderDetail> SalesOrderDetail { get; set; }
-        DbSet<SalesOrderHeader> SalesOrderHeader { get; set; }
-        DbSet<SalesOrderHeaderSalesReason> SalesOrderHeaderSalesReason { get; set; }
-        DbSet<SalesPerson> SalesPerson { get; set; }
-        DbSet<SalesPersonQuotaHistory> SalesPersonQuotaHistory { get; set; }
-        DbSet<SalesReason> SalesReason { get; set; }
-        DbSet<SalesTaxRate> SalesTaxRate { get; set; }
-        DbSet<SalesTerritory> SalesTerritory { get; set; }
-        DbSet<SalesTerritoryHistory> SalesTerritoryHistory { get; set; }
-        DbSet<ScrapReason> ScrapReason { get; set; }
-        DbSet<Shift> Shift { get; set; }
-        DbSet<ShipMethod> ShipMethod { get; set; }
-        DbSet<ShoppingCartItem> ShoppingCartItem { get; set; }
-        DbSet<SpecialOffer> SpecialOffer { get; set; }
-        DbSet<SpecialOfferProduct> SpecialOfferProduct { get; set; }
-        DbSet<StateProvince> StateProvince { get; set; }
-        DbSet<Store> Store { get; set; }
-        DbSet<StoreContact> StoreContact { get; set; }
-        DbSet<TransactionHistory> TransactionHistory { get; set; }
-        DbSet<TransactionHistoryArchive> TransactionHistoryArchive { get; set; }
-        DbSet<UnitMeasure> UnitMeasure { get; set; }
-        DbSet<Vendor> Vendor { get; set; }
-        DbSet<VendorAddress> VendorAddress { get; set; }
-        DbSet<VendorContact> VendorContact { get; set; }
-        DbSet<WorkOrder> WorkOrder { get; set; }
+        DbSet<Illustration> Illustrations { get; set; }
+        DbSet<Individual> Individuals { get; set; }
+        DbSet<JobCandidate> JobCandidates { get; set; }
+        DbSet<Location> Locations { get; set; }
+        DbSet<Product> Products { get; set; }
+        DbSet<ProductCategory> ProductCategories { get; set; }
+        DbSet<ProductCostHistory> ProductCostHistories{ get; set; }
+        DbSet<ProductDescription> ProductDescriptions { get; set; }
+        DbSet<ProductDocument> ProductDocuments { get; set; }
+        DbSet<ProductInventory> ProductInventories { get; set; }
+        DbSet<ProductListPriceHistory> ProductListPriceHistories { get; set; }
+        DbSet<ProductModel> ProductModels { get; set; }
+        DbSet<ProductModelIllustration> ProductModelIllustrations { get; set; }
+        DbSet<ProductModelProductDescriptionCulture> ProductModelProductDescriptionCultures { get; set; }
+        DbSet<ProductPhoto> ProductPhotos { get; set; }
+        DbSet<ProductProductPhoto> ProductProductPhotos { get; set; }
+        DbSet<ProductReview> ProductReviews { get; set; }
+        DbSet<ProductSubcategory> ProductSubcategories { get; set; }
+        DbSet<ProductVendor> ProductVendors { get; set; }
+        DbSet<PurchaseOrderDetail> PurchaseOrderDetails { get; set; }
+        DbSet<PurchaseOrderHeader> PurchaseOrderHeaders { get; set; }
+        DbSet<SalesOrderDetail> SalesOrderDetails { get; set; }
+        DbSet<SalesOrderHeader> SalesOrderHeaders { get; set; }
+        DbSet<SalesOrderHeaderSalesReason> SalesOrderHeaderSalesReasons { get; set; }
+        DbSet<SalesPerson> SalesPersons { get; set; }
+        DbSet<SalesPersonQuotaHistory> SalesPersonQuotaHistories { get; set; }
+        DbSet<SalesReason> SalesReasons { get; set; }
+        DbSet<SalesTaxRate> SalesTaxRates { get; set; }
+        DbSet<SalesTerritory> SalesTerritories { get; set; }
+        DbSet<SalesTerritoryHistory> SalesTerritoryHistories { get; set; }
+        DbSet<ScrapReason> ScrapReasons { get; set; }
+        DbSet<Shift> Shifts { get; set; }
+        DbSet<ShipMethod> ShipMethods { get; set; }
+        DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
+        DbSet<SpecialOffer> SpecialOffers { get; set; }
+        DbSet<SpecialOfferProduct> SpecialOfferProducts { get; set; }
+        DbSet<StateProvince> StateProvinces { get; set; }
+        DbSet<Store> Stores { get; set; }
+        DbSet<StoreContact> StoreContacts { get; set; }
+        DbSet<TransactionHistory> TransactionHistories { get; set; }
+        DbSet<TransactionHistoryArchive> TransactionHistoryArchives { get; set; }
+        DbSet<UnitMeasure> UnitMeasures { get; set; }
+        DbSet<Vendor> Vendors { get; set; }
+        DbSet<VendorAddress> VendorAddresses { get; set; }
+        DbSet<VendorContact> VendorContacts { get; set; }
+        DbSet<WorkOrder> WorkOrders { get; set; }
         DbSet<WorkOrderRouting> WorkOrderRouting { get; set; }
         DbSet<TradingEconomicsCalendar> TradingEconomicsCalendars { get; set; }
         DbSet<OrionCalendarEvent> OrionCalendarEvents { get; set; }
-        
-        DbSet<ComtradeCategories> ComtradeCategories  { get; set; }
+        DbSet<OrderDetail> Orders { get; set; }
         DbSet<Basket> Baskets  { get; set; }
-        DbSet<Product> Products  { get; set; }
-        DbSet<Forecast> Forecast  { get; set; }
         DbSet<ChatRequest> ChatRequests  { get; set; }
         DbSet<Coupon> Coupons  { get; set; }
         DbSet<CompetitionMatch> CompetitionMatches  { get; set; }
-   
         
-        // DbSet<Orion.Core.Orders.Domain.Order> Orders  { get; set; }
+        DbSet<Course> Courses { get; set; }
+   
+        //Trading Economics
+        DbSet<ComtradeCategories> ComtradeCategories  { get; set; }
+        
+        DbSet<Forecast> Forecasts  { get; set; }
+
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 

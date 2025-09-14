@@ -3,6 +3,7 @@ using Orion.Admin.Commands;
 using Orion.Admin.Models.Employees;
 using Orion.Admin.Queries;
 using Orion.Admin.Tools;
+using Orion.DataAccess.Postgres.IRepositories;
 using Orion.Domain.IRepositories;
 
 namespace Orion.Admin.Controllers

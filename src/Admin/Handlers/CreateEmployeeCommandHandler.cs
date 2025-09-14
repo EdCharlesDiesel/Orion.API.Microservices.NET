@@ -1,5 +1,6 @@
 ﻿using Orion.Admin.Commands;
 using Orion.Admin.Tools;
+using Orion.DataAccess.Postgres.IRepositories;
 using Orion.Domain.IRepositories;
 
 namespace Orion.Admin.Handlers

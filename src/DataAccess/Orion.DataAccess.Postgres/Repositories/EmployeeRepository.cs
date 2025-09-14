@@ -1,74 +1,83 @@
-﻿using Orion.DataAccess.Postgres.Aggregates;
-using Orion.Domain.IRepositories;
+﻿using Microsoft.EntityFrameworkCore;
+using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.Entities;
+using Orion.DataAccess.Postgres.IRepositories;
 
 namespace Orion.DataAccess.Postgres.Repositories
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        //private OrionDbContext context;
-        //public EmployeeRepository(OrionDbContext context)
-        //{
-        //    this.context = context;
-        //}
-        //public IUnitOfWork UnitOfWork => context;
+        private readonly OrionDbContext _context;
 
-        //public async Task<IEmployee> Get(int id)
-        //{
-        //    throw new NotImplementedException();
-        //    //return await context.Employees.Where(m => m.Id == id)
-        //    //    .FirstOrDefaultAsync();
-        //}
+        public EmployeeRepository(OrionDbContext context)
+        {
+            _context = context;
+        }
 
-        //public async Task<IEmployee> Delete(int id)
-        //{
-        //    var model = await Get(id);
-        //    if (model == null) return null;
-        //    context.Employees.Remove(model as Employee);
-        //    //model.AddDomainEvent(
-        //    //    new EmployeeDeleteEvent(
-        //    //        model.Id, (model as Employee).EntityVersion));
-        //    return model;
-        //}
+        public async Task<IEnumerable<Employee>> GetAllEmployeesAsync()
+        {
+            return await _context.Employees.AsNoTracking().ToListAsync();
+        }
 
-        //public IEmployee New()
-        //{
-        //    throw new NotImplementedException();            
-        //    //var model = new Employee() { EntityVersion = 1 };
-        //    //context.Employees.Add(model);
-        //    //return model;
-        //}
+        public async Task<Employee?> GetEmployeeByIdAsync(int businessEntityID)
+        {
+            return await _context.Employees
+                .AsNoTracking()
+                .FirstOrDefaultAsync(e => e.BusinessEntityID == businessEntityID);
+        }
 
-        public async Task<IEnumerable<IEmployee>> GetAllAsync()
+        public async Task AddEmployeeAsync(Employee entity)
+        {
+            await _context.Employees.AddAsync(entity);
+        }
+
+        public async Task UpdateEmployeeAsync(Employee entity)
+        {
+            _context.Employees.Update(entity);
+            await Task.CompletedTask;
+        }
+
+        public async Task DeleteEmployeeAsync(Employee entity)
+        {
+            _context.Employees.Remove(entity);
+            await Task.CompletedTask;
+        }
+
+        public async Task<IEnumerable<Course>> GetCoursesAsync(Guid[] obligatoryCourseIds)
         {
             throw new NotImplementedException();
         }
 
-        public async Task GetByIdAsync(Guid id)
+        public async Task CreateCalendarAsync(OrionCalendarEvent calendar)
         {
             throw new NotImplementedException();
         }
 
-        public async Task AddAsync(IEmployee entity)
+        public async Task<IEnumerable<Course>> GetCoursesAsync(int[] obligatoryCourseIds)
         {
-            throw new NotImplementedException();
+            return await _context.Courses
+                .Where(c => obligatoryCourseIds.Contains(c.Id))
+                .ToListAsync();
         }
 
-        public async Task UpdateAsync(IEmployee entity)
+        public async Task AddCalendarAsync(OrionCalendarEvent calendar)
         {
-            throw new NotImplementedException();
+            await _context.OrionCalendarEvents.AddAsync(calendar);
         }
 
-        public async Task DeleteAsync(Guid id)
+        public async Task<OrionCalendarEvent?> GetOrionCalendarEventAsync(int employeeId)
         {
-            throw new NotImplementedException();
+            return await _context.OrionCalendarEvents
+                .AsNoTracking()
+                .FirstOrDefaultAsync(e => e.EmployeeID == employeeId);
         }
 
-        public async Task<IEmployee> Get(int id)
+        public async Task SaveChangesAsync()
         {
-            throw new NotImplementedException();
+            await _context.SaveChangesAsync();
         }
 
-        public IEmployee New()
+        public async Task<IEnumerable<OrionCalendarEvent>> GetOrionCalendarEventsAsync()
         {
             throw new NotImplementedException();
         }

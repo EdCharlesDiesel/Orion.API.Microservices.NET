@@ -17,7 +17,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // add other services
 builder.Services.RegisterBusinessServices();
-builder.Services.RegisterDataServices(builder.Configuration); 
+// builder.Services.RegisterDataServices(builder.Configuration); 
 
 var app = builder.Build();
 

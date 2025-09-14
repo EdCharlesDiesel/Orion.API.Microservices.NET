@@ -2,9 +2,9 @@
 {
     public class EmployeeIsAbsentEventArgs : EventArgs
     {
-        public Guid EmployeeId { get; private set; }
+        public int EmployeeId { get; private set; }
 
-        public EmployeeIsAbsentEventArgs(Guid employeeId)
+        public EmployeeIsAbsentEventArgs(int employeeId)
         {
             EmployeeId = employeeId;
         }

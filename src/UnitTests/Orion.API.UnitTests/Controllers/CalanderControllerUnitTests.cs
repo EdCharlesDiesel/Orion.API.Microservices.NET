@@ -24,9 +24,9 @@ public class CalendarControllerTests
     public async Task GetAllEvents_ReturnsOk_WhenDeserializationSuccessful()
     {
         // Arrange
-        var mockData = JsonSerializer.Serialize(new List<CalendarEvent>
+        var mockData = JsonSerializer.Serialize(new List<TradingEconomicsCalendar>
         {
-            new CalendarEvent { CalendarId = "Event 1", Importance = 1 }
+            new TradingEconomicsCalendar { CalendarId = "Event 1", Importance = 1 }
         });
 
         _serviceMock.Setup(s => s.GetCalendarEvents()).ReturnsAsync(mockData);
@@ -59,7 +59,7 @@ public class CalendarControllerTests
     public async Task GetAllEvents_ReturnsBadRequest_WhenNoEvents()
     {
         // Arrange
-        var emptyListJson = JsonSerializer.Serialize(new List<CalendarEvent>());
+        var emptyListJson = JsonSerializer.Serialize(new List<TradingEconomicsCalendar>());
         _serviceMock.Setup(s => s.GetCalendarEvents()).ReturnsAsync(emptyListJson);
 
         // Act
@@ -114,19 +114,19 @@ public class CalendarControllerTests
         result.ShouldBeOfType<OkObjectResult>().Value.ShouldBe(expected);
     }
 
-    // [Fact]
-    // public async Task GetEventsByIndicators_ReturnsOk()
-    // {
-    //     var expected = "indicators result";
-    //     var indicators = new[] { "GDP", "Inflation" };
-    //
-    //     _serviceMock
-    //         .Setup(s => s.GetCalendarEventsByIndicator(indicators))
-    //         .ReturnsAsync(expected);
-    //
-    //     var result = await _controller.GetEventsByIndicators(indicators);
-    //
-    //     result.ShouldBeOfType<OkObjectResult>().Value.ShouldBe(expected);
-    // }
+    [Fact]
+    public async Task GetEventsByIndicators_ReturnsOk()
+    {
+        var expected = "indicators result";
+        var indicators = new[] { "GDP", "Inflation" };
+    
+        _serviceMock
+            .Setup(s => s.GetCalendarEventsByIndicator(indicators))
+            .Equals(expected);
+    
+        var result = await _controller.GetEventsByIndicators(indicators);
+    
+        result.ShouldBeOfType<OkObjectResult>().Value.ShouldBe(expected);
+    }
 }
 

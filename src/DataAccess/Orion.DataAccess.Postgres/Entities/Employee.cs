@@ -134,5 +134,7 @@ namespace Orion.DataAccess.Postgres.Entities
         public int SuggestedBonus { get; set; }
         public int Salary { get; set; }
         public bool MinimumRaiseGiven { get; set; }
+        public Guid Id { get; set; }
+        public int EntityVersion { get; set; }
     }
 }

@@ -1,6 +1,6 @@
-﻿using System.Globalization;
+﻿
+
 using Orion.DataAccess.Postgres.Entities;
-using Orion.DataAccess.Postgres.Entities.Common;
 
 namespace Orion.API.HumanResources.Business
 {
@@ -14,7 +14,8 @@ namespace Orion.API.HumanResources.Business
         /// </summary>
         public virtual Employee CreateEmployee(string firstName,
             string lastName, 
-            string? company = null, 
+            string? company = null,
+            string? employeeID = null,
             bool isExternal = false)
         {
             if (string.IsNullOrEmpty(firstName))
@@ -34,12 +35,18 @@ namespace Orion.API.HumanResources.Business
                 throw new ArgumentException($"'{nameof(company)}' cannot be null or empty when the employee is external.",
                     nameof(company));
             }
+            
+            if (string.IsNullOrEmpty(employeeID))
+            {
+                throw new ArgumentException($"'{nameof(employeeID)}' cannot be null or empty when the employee is external.",
+                    nameof(employeeID));
+            }
     
             if (isExternal)
             {
                 // we know company won't be null here due to the check above, so 
                 // we can use the null-forgiving operator to notify the compiler of this
-                return new Employee();
+                return new ExternalEmployee();
             }
     
             // create a new employee with default values 

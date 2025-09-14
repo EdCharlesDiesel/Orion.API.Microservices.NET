@@ -32,7 +32,7 @@ namespace Orion.API.HumanResources.Controllers
                         calendarForCreation.FirstName, calendarForCreation.LastName,calendarForCreation.Company,calendarForCreation.EmployeeNumber);
         
             // persist it
-            await employeeService.AddCalendarAsync(Calendar);
+            await employeeService.CreateOrionCalendarEventAsync(Calendar);
         
             // return created employee after mapping to a DTO
             return CreatedAtAction("GetOrionCalenderEvent",

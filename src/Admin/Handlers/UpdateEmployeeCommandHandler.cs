@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Orion.Admin.Commands;
 using Orion.Admin.Tools;
+using Orion.DataAccess.Postgres.IRepositories;
 using Orion.DataAccess.Postgres.Tools;
 using Orion.Domain.IRepositories;
 

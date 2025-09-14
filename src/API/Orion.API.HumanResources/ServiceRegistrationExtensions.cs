@@ -1,8 +1,7 @@
-﻿
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Orion.API.HumanResources.Business;
 using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.IRepositories;
 using Orion.DataAccess.Postgres.Repositories;
 using Orion.DataAccess.Postgres.Tools;
 
@@ -11,10 +10,9 @@ namespace Orion.API.HumanResources
     public static class ServiceCollectionExtensions
     {
         public static IServiceCollection RegisterBusinessServices(
-            this IService
-                collection services)
+            this IServiceCollection services)
         {
-            services.AddScoped<IEmployeeService, E>();
+            services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IPromotionService, PromotionService>();
             services.AddScoped<EmployeeFactory>(); 
             return services;
@@ -23,19 +21,15 @@ namespace Orion.API.HumanResources
         public static IServiceCollection RegisterHumanResourcesServices(
             this IServiceCollection services, IConfiguration configuration)
         {
-            // add the DbContext
-            object config;
+            // Add the DbContext with PostgreSQL
             services.AddDbContext<OrionDbContext>(options =>
-                options.UseNpgsql(config.GetConnectionString("DefaultConnection")));
-    
-            // register the repository
+                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+
+            // Register repositories
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            // services.AddScoped<IEmployeeManagementRepository, EmployeeManagementRepository>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            // Add other repositories as needed
             return services;
         }
-    }
-
-    public interface IService
-    {
     }
 }

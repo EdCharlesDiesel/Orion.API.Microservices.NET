@@ -1,3 +1,5 @@
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Orion.DataAccess.Postgres.Aggregates;
 using Orion.Domain.Enums;
@@ -8,8 +10,24 @@ namespace Orion.DataAccess.Postgres.Entities;
 /// Orion Calendar of the database. 
 /// </summary>
 [Table("OrionCalendarEvent")]
-public class OrionCalendarEvent: IBaseEntity
+public class OrionCalendarEvent
 {
+    [Key]
+    [Column(name : "OrionCalendarEventID", TypeName = "int")]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    [Required(ErrorMessage = "Calendar Event ID is required")]
+    [Display(Name = "Calendar Event ID")]
+    [Description("Primary key for Calendar Event ID records.")]
+    public int? OrionCalendarEventID{ get; set; } // int
+    
+    [Column(name : "Employee ID", TypeName = "int")]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    [Required(ErrorMessage = "Employee ID is required")]
+    [Display(Name = "Employee ID")]
+
+    public int? EmployeeID{ get; set; } // int
+    
+    
     public string Reference { get; set; }
     public DateTime? LastUpdate { get; set; }
     public DateTime? Date { get; set; }

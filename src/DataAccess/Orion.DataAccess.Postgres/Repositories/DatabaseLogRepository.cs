@@ -8,18 +8,18 @@ namespace Orion.DataAccess.Postgres.Repositories
     public class DatabaseLogRepository(OrionDbContext context) : IDatabaseLogRepository
     {
         public async Task<IEnumerable<DatabaseLog>> GetAllAsync() =>
-            await context.DatabaseLog.ToListAsync();
+            await context.DatabaseLogs.ToListAsync();
 
         public async Task<DatabaseLog?> GetByIdAsync(int id) =>
-            await context.DatabaseLog.FindAsync(id);
+            await context.DatabaseLogs.FindAsync(id);
 
         public async Task AddAsync(DatabaseLog entity) =>
-            await context.DatabaseLog.AddAsync(entity);
+            await context.DatabaseLogs.AddAsync(entity);
 
         public void Update(DatabaseLog entity) =>
-            context.DatabaseLog.Update(entity);
+            context.DatabaseLogs.Update(entity);
 
         public void Delete(DatabaseLog entity) =>
-            context.DatabaseLog.Remove(entity);
+            context.DatabaseLogs.Remove(entity);
     }
 }

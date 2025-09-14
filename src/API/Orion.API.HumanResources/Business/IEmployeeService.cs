@@ -7,13 +7,11 @@ namespace Orion.API.HumanResources.Business
     public interface IEmployeeService
     {
         event EventHandler<EmployeeIsAbsentEventArgs>? EmployeeIsAbsent;
-        Task AddCalendarAsync(OrionCalendarEvent calendar);
+        Task CreateOrionCalendarEventAsync(OrionCalendarEvent calendar);
         Task AttendCourseAsync(Employee employee, Course attendedCourse);
-        ExternalEmployee CreateExternalEmployee(string firstName, string lastName, string company);
-        Task<OrionCalendarEvent> CreateCalendarAsync(string firstName, string lastName, string company,string employeeID);
-        OrionCalendarEvent? FetchCalendar(int employeeId);
-        Task<OrionCalendarEvent?> FetchCalendarAsync(Guid employeeId);
-        Task<IEnumerable<OrionCalendarEvent>> FetchCalendarsAsync();
+        Task<OrionCalendarEvent> CreateCalendarAsync(string firstName, string lastName, string company,string employeeId);
+        Task<OrionCalendarEvent?> FetchOrionCalendarEventAsync(int? employeeId);
+        Task<IEnumerable<OrionCalendarEvent>> FetchOrionCalendarEventsAsync(int employeeId);
         Task GiveMinimumRaiseAsync(Employee employee);
         Task GiveRaiseAsync(Employee employee, int raise);
         void NotifyOfAbsence(Employee employee);
