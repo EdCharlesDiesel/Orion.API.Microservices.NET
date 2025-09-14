@@ -16,10 +16,10 @@ namespace Orion.API.TradingEconomics.Controllers
         {
             string result = await service.GetCalendarEvents();
 
-            List<CalendarEvent>? calendarEvents;
+            List<TradingEconomicsCalendar>? calendarEvents;
             try
             {
-                calendarEvents = JsonSerializer.Deserialize<List<CalendarEvent>>(result, new JsonSerializerOptions
+                calendarEvents = JsonSerializer.Deserialize<List<TradingEconomicsCalendar>>(result, new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
                 });
@@ -82,7 +82,7 @@ namespace Orion.API.TradingEconomics.Controllers
 
     public interface ICalendarServices
     {
-        Task Create(List<CalendarEvent> calendarEvents);
+        Task Create(List<TradingEconomicsCalendar> calendarEvents);
         Task<object?> GetCalendarEventsByIndicators(string[] names);
         Task<object?> GetCalendarEventsByCountriesAndDates(DateTime startDate, DateTime endDate, string[] names);
         Task<object?> GetCalendarEventsByDate(DateTime startDate, DateTime endDate);

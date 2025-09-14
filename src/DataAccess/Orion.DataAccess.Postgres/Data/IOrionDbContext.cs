@@ -79,7 +79,9 @@ namespace Orion.DataAccess.Postgres.Data
         DbSet<VendorContact> VendorContact { get; set; }
         DbSet<WorkOrder> WorkOrder { get; set; }
         DbSet<WorkOrderRouting> WorkOrderRouting { get; set; }
-        DbSet<CalendarEvent> CalendarEvents { get; set; }
+        DbSet<TradingEconomicsCalendar> TradingEconomicsCalendars { get; set; }
+        DbSet<OrionCalendarEvent> OrionCalendarEvents { get; set; }
+        
         DbSet<ComtradeCategories> ComtradeCategories  { get; set; }
         DbSet<Basket> Baskets  { get; set; }
         DbSet<Product> Products  { get; set; }

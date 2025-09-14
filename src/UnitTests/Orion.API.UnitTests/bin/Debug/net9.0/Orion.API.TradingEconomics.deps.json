@@ -971,6 +971,14 @@
           }
         }
       },
+      "Serilog/4.3.0": {
+        "runtime": {
+          "lib/net9.0/Serilog.dll": {
+            "assemblyVersion": "4.3.0.0",
+            "fileVersion": "4.3.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.5.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -1438,7 +1446,8 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": "9.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime": "9.0.4",
-          "Orion.Domain": "1.0.0"
+          "Orion.Domain": "1.0.0",
+          "Serilog": "4.3.0"
         },
         "runtime": {
           "Orion.DataAccess.Postgres.dll": {
@@ -2034,6 +2043,13 @@
       "sha512": "sha512-o2qaMZCINdM+GZl3U8Ck7GnDkG+I8bAvFZSl0dbD2J4Uubxov+C2Wahh/Kqpc+yQ4+zmWaBuBYreORCp6iaP6w==",
       "path": "nswag.generation.aspnetcore/14.1.0",
       "hashPath": "nswag.generation.aspnetcore.14.1.0.nupkg.sha512"
+    },
+    "Serilog/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+cDryFR0GRhsGOnZSKwaDzRRl4MupvJ42FhCE4zhQRVanX0Jpg6WuCBk59OVhVDPmab1bB+nRykAnykYELA9qQ==",
+      "path": "serilog/4.3.0",
+      "hashPath": "serilog.4.3.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.5.0": {
       "type": "package",

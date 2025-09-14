@@ -4,7 +4,7 @@ using Orion.DataAccess.Postgres.Repositories;
 
 namespace Orion.DataAccess.Postgres.Tools;
 
-public static class ServiceCollectionExtensions
+public static class DatabaseServiceCollectionExtensions
 {
     public static IServiceCollection AddPostgresDataAccess(this IServiceCollection services, IConfiguration config)
     {

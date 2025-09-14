@@ -58,12 +58,12 @@ public class CalendarRepository
     }
 
 
-    public async Task<CalendarEvent> Create(List<CalendarEvent> calendarEvents)
+    public async Task<TradingEconomicsCalendar> Create(List<TradingEconomicsCalendar> calendarEvents)
     {
         if (calendarEvents == null || !calendarEvents.Any())
             throw new ArgumentException("Event list cannot be null or empty.");
 
-        await _context.CalendarEvents.AddRangeAsync(calendarEvents);
+        await _context.TradingEconomicsCalendars.AddRangeAsync(calendarEvents);
         await _context.SaveChangesAsync();
         
         return calendarEvents.First();

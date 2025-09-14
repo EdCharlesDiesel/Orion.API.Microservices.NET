@@ -10,6 +10,6 @@ public class CalendarEventProfile : Profile
 
         public CalendarEventProfile()
         {
-            CreateMap<CalendarEvent, CalendarEventDto>().ReverseMap();
+            CreateMap<TradingEconomicsCalendar, TradingEconomicsCalendarDto>().ReverseMap();
         }
 }

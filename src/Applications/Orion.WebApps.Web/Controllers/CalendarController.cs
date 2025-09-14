@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.Entities.Common;
 using Orion.WebApps.Web.Helper;
 
@@ -14,7 +15,7 @@ public class CalendarController(
     private readonly ApiSettings _apiSettings = apiOptions.Value;
 
     // In-memory store (simulate a database)
-    private static List<CalendarEvent> _calendarEvents = new();
+    private static List<OrionCalendarEvent> _calendarEvents = new();
 
     // GET: /Calendar
     public async Task<IActionResult> Index()
@@ -23,8 +24,8 @@ public class CalendarController(
 
         try
         {
-            var events = await client.GetFromJsonAsync<List<CalendarEvent>>(_apiSettings.CalendarApiUrl);
-            _calendarEvents = events ?? new List<CalendarEvent>();
+            var events = await client.GetFromJsonAsync<List<OrionCalendarEvent>>(_apiSettings.CalendarApiUrl);
+            _calendarEvents = events ?? new List<OrionCalendarEvent>();
             // if (events != null) await iCalendarServices.Create(events);
 
             return View(_calendarEvents);
@@ -40,7 +41,7 @@ public class CalendarController(
     public async Task<IActionResult> Details(Guid id)
     {
         var client = httpClientFactory.CreateClient();
-        var events = await client.GetFromJsonAsync<List<CalendarEvent>>(_apiSettings.CalendarApiUrl);
+        var events = await client.GetFromJsonAsync<List<OrionCalendarEvent>>(_apiSettings.CalendarApiUrl);
         var item = events?.FirstOrDefault(c => c.Id == id);
 
         if (item == null)
@@ -58,7 +59,7 @@ public class CalendarController(
     // POST: /Calendar/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(CalendarEvent calendar)
+    public async Task<IActionResult> Create(OrionCalendarEvent calendar)
     {
         if (ModelState.IsValid)
         {

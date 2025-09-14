@@ -3467,3 +3467,4 @@ C:\x\Orion.Microservices.NET\src\Admin\obj\Debug\net9.0\Orion.Admin.pdb
 C:\x\Orion.Microservices.NET\src\Admin\obj\Debug\net9.0\Orion.Admin.genruntimeconfig.cache
 C:\x\Orion.Microservices.NET\src\Admin\obj\Debug\net9.0\ref\Orion.Admin.dll
 C:\x\Orion.Microservices.NET\src\Admin\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\x\Orion.Microservices.NET\src\Admin\bin\Debug\net9.0\Serilog.dll

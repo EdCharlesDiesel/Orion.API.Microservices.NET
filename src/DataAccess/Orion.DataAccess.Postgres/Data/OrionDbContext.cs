@@ -83,9 +83,11 @@ namespace Orion.DataAccess.Postgres.Data
         public DbSet<VendorContact> VendorContact { get; set; }
         public DbSet<WorkOrder> WorkOrder { get; set; }
         public DbSet<WorkOrderRouting> WorkOrderRouting { get; set; }
+        public DbSet<TradingEconomicsCalendar> TradingEconomicsCalendars { get; set; }
+        public DbSet<OrionCalendarEvent> OrionCalendarEvents { get; set; }
 
         // Common Entities.
-        public DbSet<CalendarEvent> CalendarEvents { get; set; }
+
         public DbSet<ComtradeCategories> ComtradeCategories { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<Product> Products { get; set; }

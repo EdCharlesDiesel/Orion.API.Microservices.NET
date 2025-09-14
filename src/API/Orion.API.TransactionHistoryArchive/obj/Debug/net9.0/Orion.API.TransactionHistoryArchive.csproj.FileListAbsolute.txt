@@ -125,3 +125,4 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\obj\Deb
 C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\obj\Debug\net9.0\Orion.API.TransactionHistoryArchive.pdb
 C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\obj\Debug\net9.0\Orion.API.TransactionHistoryArchive.genruntimeconfig.cache
 C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\obj\Debug\net9.0\ref\Orion.API.TransactionHistoryArchive.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\bin\Debug\net9.0\Serilog.dll

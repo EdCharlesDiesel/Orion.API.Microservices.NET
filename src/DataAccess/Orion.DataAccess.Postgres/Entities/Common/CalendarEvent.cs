@@ -5,10 +5,10 @@ using Orion.Domain.Enums;
 namespace Orion.DataAccess.Postgres.Entities.Common;
 
 /// <summary>
-/// Current basket of the database. 
+/// Trading Economics Calendar of the database. 
 /// </summary>
-[Table("CalendarEvent")]
-public class CalendarEvent: IBaseEntity
+[Table("TradingEconomicsCalendar")]
+public class TradingEconomicsCalendar: IBaseEntity
 {
     public object SourceURL;
     public string CalendarId { get; set; }
@@ -39,3 +39,4 @@ public class CalendarEvent: IBaseEntity
     public DateTime? DeleteDate { get; set; }
     public Status Status { get; set; }
 }
+
