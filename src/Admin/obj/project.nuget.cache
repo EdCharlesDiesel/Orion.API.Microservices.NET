@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vAE7d45G5Nk=",
+  "dgSpecHash": "W4UM+OtKZhU=",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\Admin\\Orion.Admin.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql.nodatime\\9.0.4\\npgsql.entityframeworkcore.postgresql.nodatime.9.0.4.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\npgsql.nettopologysuite\\9.0.3\\npgsql.nettopologysuite.9.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\npgsql.nodatime\\9.0.3\\npgsql.nodatime.9.0.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",

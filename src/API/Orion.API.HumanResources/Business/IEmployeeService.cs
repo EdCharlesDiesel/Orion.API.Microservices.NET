@@ -1,28 +1,21 @@
 ﻿using System.Globalization;
 using Orion.API.HumanResources.Business.EventArguments;
+using Orion.DataAccess.Postgres.Entities;
 
 namespace Orion.API.HumanResources.Business
 {
     public interface IEmployeeService
     {
         event EventHandler<EmployeeIsAbsentEventArgs>? EmployeeIsAbsent;
-        Task AddCalendarAsync(Calendar calendar);
-        Task AttendCourseAsync(Calendar employee, Course attendedCourse);
-        ExternalEmployee CreateExternalEmployee(string firstName, 
-            string lastName, string company);
-        Calendar CreateCalendar(string firstName, 
-            string lastName);
-        Task<Calendar> CreateCalendarAsync(string firstName, 
-            string lastName);
-        Calendar? FetchCalendar(Guid employeeId);
-        Task<Calendar?> FetchCalendarAsync(Guid employeeId);
-        Task<IEnumerable<Calendar>> FetchCalendarsAsync();
-        Task GiveMinimumRaiseAsync(Calendar employee);
-        Task GiveRaiseAsync(Calendar employee, int raise);
+        Task CreateOrionCalendarEventAsync(OrionCalendarEvent calendar);
+        Task AttendCourseAsync(Employee employee, Course attendedCourse);
+        Task<OrionCalendarEvent> CreateCalendarAsync(string firstName, string lastName, string company,string employeeId);
+        Task<OrionCalendarEvent?> FetchOrionCalendarEventAsync(int? employeeId);
+        Task<IEnumerable<OrionCalendarEvent>> FetchOrionCalendarEventsAsync(int employeeId);
+        Task GiveMinimumRaiseAsync(Employee employee);
+        Task GiveRaiseAsync(Employee employee, int raise);
         void NotifyOfAbsence(Employee employee);
     }
 
-    public class Course
-    {
-    }
+
 }

@@ -2,7 +2,7 @@
 {
     public abstract class PromotionForCreationDto
     {
-        public Guid EmployeeId { get; set; }
+        public int EmployeeId { get; set; }
 
     }
 }

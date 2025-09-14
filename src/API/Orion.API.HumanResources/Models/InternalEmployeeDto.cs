@@ -1,6 +1,6 @@
 ﻿namespace Orion.API.HumanResources.Models
 {
-    public abstract class CalendarDto
+    public abstract class InternalEmployeeDto
     {
         public Guid Id { get; set; }
 

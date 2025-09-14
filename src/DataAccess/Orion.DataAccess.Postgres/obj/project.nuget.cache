@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "63C7CscVnb4=",
+  "dgSpecHash": "dGpEyh9WeY8=",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\DataAccess\\Orion.DataAccess.Postgres\\Orion.DataAccess.Postgres.csproj",
   "expectedPackageFiles": [
@@ -67,6 +67,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql.nodatime\\9.0.4\\npgsql.entityframeworkcore.postgresql.nodatime.9.0.4.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\npgsql.nettopologysuite\\9.0.3\\npgsql.nettopologysuite.9.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\npgsql.nodatime\\9.0.3\\npgsql.nodatime.9.0.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

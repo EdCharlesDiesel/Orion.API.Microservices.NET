@@ -12,6 +12,7 @@
       }
     ],
     "configProperties": {
+      "Serilog.Capturing.IsStructureValueSupported": false,
       "Microsoft.Extensions.DependencyInjection.VerifyOpenGenericServiceTrimmability": true,
       "System.ComponentModel.DefaultValueAttribute.IsSupported": false,
       "System.ComponentModel.Design.IDesignerHost.IsSupported": false,

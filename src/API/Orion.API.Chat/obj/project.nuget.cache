@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o3PlpERYIdY=",
+  "dgSpecHash": "aMYT39fpVaU=",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Chat\\Orion.API.Chat.csproj",
   "expectedPackageFiles": [
@@ -66,6 +66,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\npgsql.nettopologysuite\\9.0.3\\npgsql.nettopologysuite.9.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\npgsql.nodatime\\9.0.3\\npgsql.nodatime.9.0.3.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\openai\\2.0.0\\openai.2.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.clientmodel\\1.5.1\\system.clientmodel.1.5.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",

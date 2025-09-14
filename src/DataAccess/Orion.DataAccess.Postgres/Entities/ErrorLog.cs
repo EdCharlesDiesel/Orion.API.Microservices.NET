@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -21,7 +19,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "Error Time is required")]
         [Display(Name = "Error Time")]
         [Description("The date and time at which the error occurred.")]
-        public DateTime? ErrorTime { get; set; } // datetime
+        public DateTimeOffset? ErrorTime { get; set; } // datetime
         [Column(name : "UserName")]
         [MaxLength(128)]
         [StringLength(128)]
@@ -47,7 +45,7 @@ namespace Orion.DataAccess.Postgres.Entities
         [StringLength(126)]
         [Display(Name = "Error Procedure")]
         [Description("The name of the stored procedure or trigger where the error occurred.")]
-        public string ErrorProcedure { get; set; } // nvarchar(126)
+        public string? ErrorProcedure { get; set; } // nvarchar(126)
         [Column(name : "ErrorLine", TypeName = "int")]
         [Display(Name = "Error Line")]
         [Description("The line number at which the error occurred.")]

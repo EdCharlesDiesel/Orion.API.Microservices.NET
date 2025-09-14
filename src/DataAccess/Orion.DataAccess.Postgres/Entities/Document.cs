@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using Microsoft.SqlServer.Types;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -10,7 +8,7 @@ namespace Orion.DataAccess.Postgres.Entities
 {
     [Table("Production.Document")]
     [Description("Product maintenance documents.")]
-    public class Document: Entity<int>
+    public class Document
     {
         public Document()
         {
@@ -18,12 +16,11 @@ namespace Orion.DataAccess.Postgres.Entities
         }
 
         [Key]
-        [Column(name : "DocumentNode", TypeName = "hierarchyid")]
-        [Required(ErrorMessage = "Document Node is required")]
-        [Display(Name = "Document Node")]
-        [Description("Primary key for Document records.")]
-        [NotMapped]
-        public SqlHierarchyId DocumentNode { get; set; } // hierarchyid
+        [Column(name : "BusinessEntityID", TypeName = "int")]
+        [Required(ErrorMessage = "Business Entity ID is required")]
+        [Display(Name = "Business Entity ID")]
+        [Description("Primary key for Document records.  Foreign key to BusinessEntity.BusinessEntityID.")]
+        public int BusinessEntityID { get; set; } // int
         [Column(name : "DocumentLevel", TypeName = "smallint")]
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         [Display(Name = "Document Level")]

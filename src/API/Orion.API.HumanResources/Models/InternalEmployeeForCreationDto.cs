@@ -2,7 +2,7 @@
 
 namespace Orion.API.HumanResources.Models
 {
-    public class CalendarForCreationDto
+    public class InternalEmployeeDtoCreationDto
     {
         [Required]
         [MaxLength(100)]

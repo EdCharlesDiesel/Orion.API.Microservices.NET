@@ -1,6 +1,6 @@
 namespace Orion.API.TradingEconomics.DTO;
 
-public class CalendarEventDto
+public class TradingEconomicsCalendarDto
 {
     public int CalendarId { get; set; }
     public int Importance { get; set; }

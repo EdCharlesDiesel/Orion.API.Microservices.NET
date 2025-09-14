@@ -5,10 +5,15 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Orion.API.AWBuildVersion.Mappings;
 using Orion.DataAccess.Postgres.Tools;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .Enrich.FromLogContext()
+    .CreateLogger();
 // Service registration
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddPostgresDataAccess(builder.Configuration);

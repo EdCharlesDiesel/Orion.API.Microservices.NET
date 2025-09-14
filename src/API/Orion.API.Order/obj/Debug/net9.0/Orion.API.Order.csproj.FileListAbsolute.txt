@@ -130,3 +130,4 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.Order\bin\Debug\net9.0\System.For
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Order\bin\Debug\net9.0\System.Text.Json.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Order\obj\Debug\net9.0\scopedcss\bundle\Orion.API.Order.styles.css
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Order\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Order\bin\Debug\net9.0\Serilog.dll

@@ -33,6 +33,7 @@
         <!-- Optional plugins (NodaTime / NetTopologySuite) -->
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite" Version="9.0.4" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime" Version="9.0.4" />
+        <PackageReference Include="Serilog" Version="4.3.0" />
     </ItemGroup>
 
     <ItemGroup>

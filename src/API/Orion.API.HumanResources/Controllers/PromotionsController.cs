@@ -8,21 +8,21 @@ namespace Orion.API.HumanResources.Controllers
     [ApiController]
     public class PromotionsController : ControllerBase
     {
-        private readonly IEmployeeService _employeeService;
-        private readonly IPromotionService _promotionService;
-
-        public PromotionsController(IEmployeeService employeeService, 
-            IPromotionService promotionService)
-        {
-            _employeeService = employeeService;
-            _promotionService = promotionService;
-        }
-
+        // private readonly IEmployeeService _employeeService;
+        // private readonly IPromotionService _promotionService;
+        //
+        // public PromotionsController(IEmployeeService employeeService, 
+        //     IPromotionService promotionService)
+        // {
+        //     _employeeService = employeeService;
+        //     _promotionService = promotionService;
+        // }
+        //
         // [HttpPost]
         // public async Task<IActionResult> CreatePromotion(PromotionForCreationDto promotionForCreation)
         // { 
         //     var CalendarToPromote = await _employeeService
-        //         .FetchCalendarAsync(promotionForCreation.EmployeeId);
+        //         .FetchOrionCalendarEventsAsync(promotionForCreation.EmployeeId);
         //
         //     if (CalendarToPromote == null)
         //     {

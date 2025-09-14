@@ -68,7 +68,7 @@ public class TradingEconomicsService
         throw new NotImplementedException();
     }
 
-    public async Task Create(List<CalendarEvent> calendarEvents)
+    public async Task Create(List<TradingEconomicsCalendar> calendarEvents)
     {
         throw new NotImplementedException();
     }

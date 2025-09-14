@@ -1,4 +1,5 @@
-﻿using Orion.DataAccess.Postgres.IRepositories;
+﻿using Orion.DataAccess.Postgres.Entities;
+using Orion.DataAccess.Postgres.IRepositories;
 
 namespace Orion.DataAccess.Postgres.Tools
 {
@@ -8,11 +9,19 @@ namespace Orion.DataAccess.Postgres.Tools
         IDatabaseLogRepository DatabaseLogs { get; }
         ITransactionHistoryArchivesRepository TransactionHistoryArchives { get; set; }
         IErrorLogsRepository ErrorLogs { get; set; }
+        IShiftsRepository Shifts { get; set; }
+        IDepartmentsRepository Departments { get; set; }
+        IJobCandidatesRepository JobCandidates { get; set; }
+        IEmployeePayHistoriesRepository EmployeePayHistories { get; set; }
+        IEmployeeDepartmentHistoriesRepository EmployeeDepartmentHistories { get; set; }
 
         Task<bool> SaveEntitiesAsync();
+        Task<bool> SaveErrorsAsync(ErrorLog errorLogDto);
         Task StartAsync();
         Task CommitAsync();
         Task RollbackAsync();
         Task<int> CompleteAsync();
     }
+
+
 }

@@ -8,18 +8,18 @@ namespace Orion.DataAccess.Postgres.Repositories
     public class AwBuildVersionRepository(OrionDbContext context) : IAwBuildVersionRepository
     {
         public async Task<IEnumerable<AWBuildVersion>> GetAllAsync() =>
-            await context.AwbuildVersion.ToListAsync();
+            await context.AwbuildVersions.ToListAsync();
 
         public async Task<AWBuildVersion?> GetByIdAsync(int id) =>
-            await context.AwbuildVersion.FindAsync(id);
+            await context.AwbuildVersions.FindAsync(id);
 
         public async Task AddAsync(AWBuildVersion entity) =>
-            await context.AwbuildVersion.AddAsync(entity);
+            await context.AwbuildVersions.AddAsync(entity);
 
         public void Update(AWBuildVersion entity) =>
-            context.AwbuildVersion.Update(entity);
+            context.AwbuildVersions.Update(entity);
 
         public void Delete(AWBuildVersion entity) =>
-            context.AwbuildVersion.Remove(entity);
+            context.AwbuildVersions.Remove(entity);
     }
 }

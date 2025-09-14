@@ -1,33 +1,35 @@
-﻿
+﻿using Microsoft.EntityFrameworkCore;
+using Orion.API.HumanResources.Business;
+using Orion.DataAccess.Postgres.Data;
+using Orion.DataAccess.Postgres.IRepositories;
+using Orion.DataAccess.Postgres.Repositories;
+using Orion.DataAccess.Postgres.Tools;
 
 namespace Orion.API.HumanResources
 {
-    // public static class ServiceRegistrationExtensions
-    // {
-    //     public static IServiceCollection RegisterBusinessServices(
-    //         this IService
-    //             collection services)
-    //     {
-    //         services.AddScoped<IEmployeeService, EmployeeService>();
-    //         services.AddScoped<IPromotionService, PromotionService>();
-    //         services.AddScoped<EmployeeFactory>(); 
-    //         return services;
-    //     }
-    //
-    //     public static IServiceCollection RegisterDataServices(
-    //         this IServiceCollection services, IConfiguration configuration)
-    //     {
-    //         // add the DbContext
-    //         services.AddDbContext<HumanResourcesDbContext>(options =>
-    //             options.UseSqlite(configuration.GetConnectionString("EmployeeManagementDB")));
-    //
-    //         // register the repository
-    //         services.AddScoped<IEmployeeManagementRepository, EmployeeManagementRepository>();
-    //         return services;
-    //     }
-    // }
-
-    public interface IService
+    public static class ServiceCollectionExtensions
     {
+        public static IServiceCollection RegisterBusinessServices(
+            this IServiceCollection services)
+        {
+            services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IPromotionService, PromotionService>();
+            services.AddScoped<EmployeeFactory>(); 
+            return services;
+        }
+    
+        public static IServiceCollection RegisterHumanResourcesServices(
+            this IServiceCollection services, IConfiguration configuration)
+        {
+            // Add the DbContext with PostgreSQL
+            services.AddDbContext<OrionDbContext>(options =>
+                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+
+            // Register repositories
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            // Add other repositories as needed
+            return services;
+        }
     }
 }

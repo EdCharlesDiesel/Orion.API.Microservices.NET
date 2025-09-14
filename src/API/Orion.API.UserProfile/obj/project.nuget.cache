@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/ScEyzXVfqc=",
+  "dgSpecHash": "gBbUPJ/ZyJE=",
   "success": true,
   "projectFilePath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.UserProfile\\Orion.API.UserProfile.csproj",
   "expectedPackageFiles": [
@@ -84,6 +84,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\nswag.core.yaml\\14.1.0\\nswag.core.yaml.14.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\nswag.generation\\14.1.0\\nswag.generation.14.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\nswag.generation.aspnetcore\\14.1.0\\nswag.generation.aspnetcore.14.1.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

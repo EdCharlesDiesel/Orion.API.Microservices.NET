@@ -6,77 +6,46 @@ using Orion.API.HumanResources.Models;
 
 namespace Orion.API.HumanResources.Controllers
 {
- //   [Route("api/statistics")]
     [ApiController]
+    [Route("api/[controller]")]
     public class StatisticsController : ControllerBase
     {
         private readonly IMapper _mapper;
-        public StatisticsController(IMapper mapper)
+        private readonly HttpClient _httpClient;
+
+        public StatisticsController(IMapper mapper, IHttpClientFactory httpClientFactory)
         {
             _mapper = mapper;
+            _httpClient = httpClientFactory.CreateClient();
         }
 
-       // [HttpGet]
+        // Example using AutoMapper
+        [HttpGet("connection")]
         [CheckShowStatisticsHeader]
         public ActionResult<StatisticsDto> GetStatistics()
         {
-            var httpConnectionFeature = HttpContext.Features
-                .Get<IHttpConnectionFeature>();
+            var httpConnectionFeature = HttpContext.Features.Get<IHttpConnectionFeature>();
             return Ok(_mapper.Map<StatisticsDto>(httpConnectionFeature));
         }
 
-       // [HttpGet(Name="Name")]
-        //public async ActionResult<IHttpActionResult> GetTradeByCountry()
-        //{
-        //    Object myrespones = null;
+        // Call TradingEconomics API
+        [HttpGet("trade/country/{country}")]
+        public async Task<ActionResult<string>> GetTradeByCountry(string country = "mexico")
+        {
+            var url = $"https://api.tradingeconomics.com/forecast/country/{country}?c=guest:guest";
 
-        //    using (var httpClient = new HttpClient())
-        //    {
-        //        using (var request = new HttpRequestMessage(new
-        //            HttpMethod("GET"), "https://api.tradingeconomics.com/forecast/country/mexico?c=guest:guest"))
-        //        {
-        //            request.Headers.TryAddWithoutValidation("Upgrade-Insecure-Requests", "1");
-        //            var response = await httpClient.SendAsync(request);
-        //            myrespones = response  ;
-        //            if (response.IsSuccessStatusCode)
-        //            {
-        //                var content = await response.Content.ReadAsStringAsync();
-        //                Console.WriteLine(content);
+            var request = new HttpRequestMessage(HttpMethod.Get, url);
+            request.Headers.TryAddWithoutValidation("Upgrade-Insecure-Requests", "1");
 
-        //                return response;
-        //            }
-        //        }                
-        //    }            
+            var response = await _httpClient.SendAsync(request);
 
-        //    return Ok(myrespones);
-        //}
-        //public async IHttpActionResult GetTradeByCountry()
-        //{
-        //    IList<Object> myrespones = null;
-        //    using (var httpClient = new HttpClient())
-        //    {
-        //        using (var request = new HttpRequestMessage(new
-        //            HttpMethod("GET"), "https://api.tradingeconomics.com/forecast/country/mexico?c=guest:guest"))
-        //        {
-        //            request.Headers.TryAddWithoutValidation("Upgrade-Insecure-Requests", "1");
-        //            var response = await httpClient.SendAsync(request);
-        //            response = myrespones;
-        //            if (response.IsSuccessStatusCode)
-        //            {
-        //                var content = await response.Content.ReadAsStringAsync();
-        //                Console.WriteLine(content);
+            if (!response.IsSuccessStatusCode)
+            {
+                return StatusCode((int)response.StatusCode, await response.Content.ReadAsStringAsync());
+            }
 
-        //                return response;
-        //            }
-        //        }
-
-        //        return Ok(myrespones);
-        //    }
-        //}
-    }
-
-    public class Response
-    {
-        public int MyProperty { get; set; }
+            var content = await response.Content.ReadAsStringAsync();
+            return Ok(content); // returns JSON string
+        }
     }
 }
