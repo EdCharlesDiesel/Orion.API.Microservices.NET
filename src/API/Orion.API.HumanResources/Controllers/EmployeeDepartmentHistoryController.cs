@@ -13,20 +13,20 @@ namespace Orion.API.HumanResources.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var versions = await unitOfWork.Departments.GetAllAsync();
+            var versions = await unitOfWork.EmployeeDepartmentHistories.GetAllAsync();
             return Ok(versions);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var version = await unitOfWork.Departments.GetByIdAsync(id);
+            var version = await unitOfWork.EmployeeDepartmentHistories.GetByIdAsync(id);
             if (version == null) return NotFound();
             return Ok(version);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] DataAccess.Postgres.Entities.Department version)
+        public async Task<IActionResult> Create([FromBody] DataAccess.Postgres.Entities.EmployeeDepartmentHistory version)
         {
             if (!ModelState.IsValid)
             {
@@ -35,10 +35,10 @@ namespace Orion.API.HumanResources.Controllers
 
             try
             {
-                await unitOfWork.Departments.AddAsync(version);
+                await unitOfWork.EmployeeDepartmentHistories.AddAsync(version);
                 await unitOfWork.CompleteAsync();
 
-                return CreatedAtAction(nameof(GetById), new { id = version.DepartmentID }, version);
+                return CreatedAtAction(nameof(GetById), new { id = version.BusinessEntityID }, version);
             }
             catch (Exception exception)
             {
@@ -63,7 +63,7 @@ namespace Orion.API.HumanResources.Controllers
         }
         
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] DataAccess.Postgres.Entities.Department version)
+        public async Task<IActionResult> Update(int id, [FromBody] DataAccess.Postgres.Entities.EmployeeDepartmentHistory version)
         {
             if (!ModelState.IsValid)
             {
@@ -72,18 +72,19 @@ namespace Orion.API.HumanResources.Controllers
 
             try
             {
-                var existing = await unitOfWork.Departments.GetByIdAsync(id);
+                var existing = await unitOfWork.EmployeeDepartmentHistories.GetByIdAsync(id);
                 if (existing == null)
                 {
                     return NotFound($"Record with ID {id} not found.");
                 }
 
                 // Map fields (manual or via AutoMapper)
-                existing.DatabaseVersion = version.DatabaseVersion;
-                existing.VersionDate = version.VersionDate;
+                existing.Employee = version.Employee;
+  
+                existing.EndDate = version.EndDate;
                 existing.ModifiedDate = version.ModifiedDate;
 
-                unitOfWork.Departments.Update(existing);
+                unitOfWork.EmployeeDepartmentHistories.Update(existing);
                 await unitOfWork.CompleteAsync();
 
                 return Ok(existing);
@@ -116,13 +117,13 @@ namespace Orion.API.HumanResources.Controllers
         {
             try
             {
-                var existing = await unitOfWork.Departments.GetByIdAsync(id);
+                var existing = await unitOfWork.EmployeeDepartmentHistories.GetByIdAsync(id);
                 if (existing == null)
                 {
                     return NotFound($"Record with ID {id} not found.");
                 }
 
-                unitOfWork.Departments.Delete(existing);
+                unitOfWork.EmployeeDepartmentHistories.Delete(existing);
                 await unitOfWork.CompleteAsync();
 
                 return NoContent();

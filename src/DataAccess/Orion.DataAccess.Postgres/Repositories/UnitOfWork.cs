@@ -20,6 +20,9 @@ namespace Orion.DataAccess.Postgres.Repositories
             ErrorLogs = new ErrorLogsRepository(_context);
             Shifts = new ShiftsRepository(_context);
             Departments = new DepartmentsRepository(_context);
+            JobCandidates = new  JobCandidatesRepository(_context);
+            EmployeePayHistories = new EmployeePayHistoriesRepository(_context);
+            EmployeeDepartmentHistories = new  EmployeeDepartmentHistoriesRepository(_context);
         }
 
         public IAwBuildVersionRepository AwBuildVersions { get; set; }
@@ -30,6 +33,7 @@ namespace Orion.DataAccess.Postgres.Repositories
         public IDepartmentsRepository Departments { get; set; }
         public IJobCandidatesRepository JobCandidates { get; set; }
         public IEmployeePayHistoriesRepository EmployeePayHistories { get; set; }
+        public IEmployeeDepartmentHistoriesRepository EmployeeDepartmentHistories { get; set; }
 
         public Task StartAsync() => Task.CompletedTask;
 

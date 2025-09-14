@@ -79,8 +79,10 @@ namespace Orion.API.HumanResources.Controllers
                 }
 
                 // Map fields (manual or via AutoMapper)
-                existing.DatabaseVersion = version.DatabaseVersion;
-                existing.VersionDate = version.VersionDate;
+                existing.Employee = version.Employee;
+                existing.Resume = version.Resume;
+                existing.JobCandidateID = version.JobCandidateID;
+                existing.Resume = version.Resume;
                 existing.ModifiedDate = version.ModifiedDate;
 
                 unitOfWork.JobCandidates.Update(existing);
