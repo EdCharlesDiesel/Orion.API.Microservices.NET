@@ -2,8 +2,8 @@ using Orion.DataAccess.Postgres.Data;
 using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.IRepositories;
 using Orion.DataAccess.Postgres.Tools;
-using Orion.Domain.DTO;
 using Serilog;
+
 
 namespace Orion.DataAccess.Postgres.Repositories
 {
@@ -18,12 +18,18 @@ namespace Orion.DataAccess.Postgres.Repositories
             DatabaseLogs = new DatabaseLogRepository(_context);
             TransactionHistoryArchives = new TransactionHistoryArchivesRepository(_context);
             ErrorLogs = new ErrorLogsRepository(_context);
+            Shifts = new ShiftsRepository(_context);
+            Departments = new DepartmentsRepository(_context);
         }
 
         public IAwBuildVersionRepository AwBuildVersions { get; set; }
         public IDatabaseLogRepository DatabaseLogs { get; set; }
         public ITransactionHistoryArchivesRepository TransactionHistoryArchives { get; set; }
         public IErrorLogsRepository ErrorLogs { get; set; }
+        public IShiftsRepository Shifts { get; set; }
+        public IDepartmentsRepository Departments { get; set; }
+        public IJobCandidatesRepository JobCandidates { get; set; }
+        public IEmployeePayHistoriesRepository EmployeePayHistories { get; set; }
 
         public Task StartAsync() => Task.CompletedTask;
 

@@ -9,6 +9,10 @@ namespace Orion.DataAccess.Postgres.Tools
         IDatabaseLogRepository DatabaseLogs { get; }
         ITransactionHistoryArchivesRepository TransactionHistoryArchives { get; set; }
         IErrorLogsRepository ErrorLogs { get; set; }
+        IShiftsRepository Shifts { get; set; }
+        IDepartmentsRepository Departments { get; set; }
+        IJobCandidatesRepository JobCandidates { get; set; }
+        IEmployeePayHistoriesRepository EmployeePayHistories { get; set; }
 
         Task<bool> SaveEntitiesAsync();
         Task<bool> SaveErrorsAsync(ErrorLog errorLogDto);
@@ -17,4 +21,6 @@ namespace Orion.DataAccess.Postgres.Tools
         Task RollbackAsync();
         Task<int> CompleteAsync();
     }
+
+
 }

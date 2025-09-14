@@ -9,14 +9,13 @@ using Orion.Domain.DTO;
 
 namespace Orion.API.HumanResources.Controllers
 {
-    [Microsoft.AspNetCore.Mvc.Route("api/demoCalendars")]
-    public class DemoCalendarsController(
-        IEmployeeService employeeService,
+    [Microsoft.AspNetCore.Mvc.Route("api/externalEmployees")]
+    public class ExternalEmployeesController(IEmployeeService employeeService,
         IMapper mapper) : ControllerBase
     {
         private readonly IMapper _mapper = mapper;
         
-        [Microsoft.AspNetCore.Mvc.HttpPost]
+        [HttpPost]
         public async Task<ActionResult<OrionCalendarEventDto>> CreateCalendar(
             OrionCalendarEventDto calendarForCreation)
         {
