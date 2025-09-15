@@ -19,13 +19,13 @@ namespace Orion.DataAccess.Postgres.Entities
         [Required(ErrorMessage = "Department ID is required")]
         [Display(Name = "Department ID")]
         [Description("Department in which the employee worked including currently. Foreign key to Department.DepartmentID.")]
-        public short? DepartmentID { get; set; } // smallint
+        public int? DepartmentID { get; set; } // smallint
         [Key]
         [Column(name : "ShiftID", Order = 4)]
         [Required(ErrorMessage = "Shift ID is required")]
         [Display(Name = "Shift ID")]
         [Description("Identifies which 8-hour shift the employee works. Foreign key to Shift.Shift.ID.")]
-        public byte? ShiftID { get; set; } // tinyint
+        public int? ShiftID { get; set; } // tinyint
         [Key]
         [Column(name : "StartDate", TypeName = "date", Order = 2)]
         [Required(ErrorMessage = "Start Date is required")]

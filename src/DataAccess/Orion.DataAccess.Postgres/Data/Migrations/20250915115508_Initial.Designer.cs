@@ -12,8 +12,8 @@ using Orion.DataAccess.Postgres.Data;
 namespace Orion.DataAccess.Postgres.Data.Migrations
 {
     [DbContext(typeof(OrionDbContext))]
-    [Migration("20250911121351_Database Version is required")]
-    partial class DatabaseVersionisrequired
+    [Migration("20250915115508_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -231,7 +231,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contact");
+                    b.ToTable("Contacts");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Data.ContactCreditCard", b =>
@@ -244,7 +244,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ContactCreditCard");
+                    b.ToTable("ContactCreditCards");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Data.CustomerAddress", b =>
@@ -257,7 +257,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CustomerAddress");
+                    b.ToTable("CustomerAddresses");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Data.Individual", b =>
@@ -270,7 +270,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Individual");
+                    b.ToTable("Individuals");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Data.StoreContact", b =>
@@ -283,7 +283,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("StoreContact");
+                    b.ToTable("StoreContacts");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Data.VendorAddress", b =>
@@ -296,7 +296,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("VendorAddress");
+                    b.ToTable("VendorAddresses");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Data.VendorContact", b =>
@@ -309,7 +309,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("VendorContact");
+                    b.ToTable("VendorContacts");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.AWBuildVersion", b =>
@@ -631,113 +631,6 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     b.ToTable("BasketItem");
                 });
 
-            modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Common.CalendarEvent", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Actual")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("CalendarId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Category")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Country")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Currency")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime?>("Date")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("DateSpan")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Event")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Forecast")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("Importance")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime?>("LastUpdate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Previous")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Reference")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime?>("ReferenceDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Revised")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Source")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("SourceUrl")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Symbol")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("TeForecast")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Ticker")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Unit")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime?>("UpdateDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("CalendarEvent");
-                });
-
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Common.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -885,7 +778,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasIndex("EmployeeId");
 
-                    b.ToTable("EmployeeAddress");
+                    b.ToTable("EmployeeAddresses");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Common.Feature", b =>
@@ -998,7 +891,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Forecast");
+                    b.ToTable("Forecasts");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Common.OrderDetail", b =>
@@ -1012,6 +905,113 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Common.TradingEconomicsCalendar", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Actual")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("CalendarId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Currency")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("Date")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("DateSpan")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("DeleteDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Event")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Forecast")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Importance")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime?>("LastUpdate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Previous")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Reference")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("ReferenceDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Revised")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Source")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SourceUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Symbol")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("TeForecast")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Ticker")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TradingEconomicsCalendar");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.ContactType", b =>
@@ -1083,6 +1083,48 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     b.HasIndex("CountryRegionCode");
 
                     b.ToTable("Sales.CountryRegionCurrency");
+                });
+
+            modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(1000)
+                        .HasColumnType("character varying(1000)");
+
+                    b.Property<int>("DurationInMinutes")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("EmployeeBusinessEntityID")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsMandatory")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeBusinessEntityID");
+
+                    b.ToTable("Courses");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.CreditCard", b =>
@@ -1315,12 +1357,12 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Department", b =>
                 {
-                    b.Property<short>("DepartmentID")
+                    b.Property<int>("DepartmentID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("smallint")
+                        .HasColumnType("int")
                         .HasColumnName("DepartmentID");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<short>("DepartmentID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("DepartmentID"));
 
                     b.Property<string>("GroupName")
                         .IsRequired()
@@ -1340,19 +1382,128 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("DepartmentID");
 
-                    b.ToTable("HumanResources.Department");
+                    b.ToTable("Department", "HumanResources");
+
+                    b.HasData(
+                        new
+                        {
+                            DepartmentID = 1,
+                            GroupName = "Research and Development",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Engineering"
+                        },
+                        new
+                        {
+                            DepartmentID = 2,
+                            GroupName = "Research and Development",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Tool Design"
+                        },
+                        new
+                        {
+                            DepartmentID = 3,
+                            GroupName = "Sales and Marketing",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Sales"
+                        },
+                        new
+                        {
+                            DepartmentID = 4,
+                            GroupName = "Sales and Marketing",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Marketing"
+                        },
+                        new
+                        {
+                            DepartmentID = 5,
+                            GroupName = "Inventory Management",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Purchasing"
+                        },
+                        new
+                        {
+                            DepartmentID = 6,
+                            GroupName = "Research and Development",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Research and Development"
+                        },
+                        new
+                        {
+                            DepartmentID = 7,
+                            GroupName = "Manufacturing",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Production"
+                        },
+                        new
+                        {
+                            DepartmentID = 8,
+                            GroupName = "Manufacturing",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Production Control"
+                        },
+                        new
+                        {
+                            DepartmentID = 9,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Human Resources"
+                        },
+                        new
+                        {
+                            DepartmentID = 10,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Finance"
+                        },
+                        new
+                        {
+                            DepartmentID = 11,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Information Services"
+                        },
+                        new
+                        {
+                            DepartmentID = 12,
+                            GroupName = "Quality Assurance",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Sales"
+                        },
+                        new
+                        {
+                            DepartmentID = 13,
+                            GroupName = "Quality Assurance",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Quality Assurance"
+                        },
+                        new
+                        {
+                            DepartmentID = 14,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Facilities and Maintenance"
+                        },
+                        new
+                        {
+                            DepartmentID = 15,
+                            GroupName = "Sales and Inventory Management",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Shipping and Receiving"
+                        },
+                        new
+                        {
+                            DepartmentID = 16,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Executive"
+                        });
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Document", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
                     b.Property<int>("BusinessEntityID")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("BusinessEntityID");
 
                     b.Property<int>("ChangeNumber")
                         .HasColumnType("int")
@@ -1413,9 +1564,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("rowguid");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("BusinessEntityID");
+                    b.HasKey("BusinessEntityID");
 
                     b.ToTable("Production.Document");
                 });
@@ -1464,6 +1613,9 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         .HasColumnType("date")
                         .HasColumnName("BirthDate");
 
+                    b.Property<int>("EntityVersion")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Gender")
                         .IsRequired()
                         .HasMaxLength(1)
@@ -1473,6 +1625,12 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     b.Property<DateTime>("HireDate")
                         .HasColumnType("date")
                         .HasColumnName("HireDate");
+
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("JobLevel")
+                        .HasColumnType("integer");
 
                     b.Property<string>("JobTitle")
                         .IsRequired()
@@ -1492,6 +1650,9 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         .HasColumnType("nchar")
                         .HasColumnName("MaritalStatus");
 
+                    b.Property<bool>("MinimumRaiseGiven")
+                        .HasColumnType("boolean");
+
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("ModifiedDate");
@@ -1507,13 +1668,22 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         .HasColumnType("smallint")
                         .HasColumnName("OrganizationLevel");
 
+                    b.Property<int>("Salary")
+                        .HasColumnType("integer");
+
                     b.Property<short>("SickLeaveHours")
                         .HasColumnType("smallint")
                         .HasColumnName("SickLeaveHours");
 
+                    b.Property<int>("SuggestedBonus")
+                        .HasColumnType("integer");
+
                     b.Property<short>("VacationHours")
                         .HasColumnType("smallint")
                         .HasColumnName("VacationHours");
+
+                    b.Property<int>("YearsInService")
+                        .HasColumnType("integer");
 
                     b.Property<Guid>("rowguid")
                         .HasColumnType("uuid")
@@ -1549,8 +1719,8 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("ModifiedDate");
 
-                    b.Property<byte>("ShiftID")
-                        .HasColumnType("smallint")
+                    b.Property<int>("ShiftID")
+                        .HasColumnType("integer")
                         .HasColumnName("ShiftID")
                         .HasColumnOrder(4);
 
@@ -1616,7 +1786,6 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         .HasColumnName("ErrorNumber");
 
                     b.Property<string>("ErrorProcedure")
-                        .IsRequired()
                         .HasMaxLength(126)
                         .HasColumnType("character varying(126)")
                         .HasColumnName("ErrorProcedure");
@@ -1629,7 +1798,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         .HasColumnType("int")
                         .HasColumnName("ErrorState");
 
-                    b.Property<DateTime>("ErrorTime")
+                    b.Property<DateTimeOffset>("ErrorTime")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("ErrorTime");
 
@@ -1726,6 +1895,75 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     b.HasKey("LocationID");
 
                     b.ToTable("Production.Location");
+                });
+
+            modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.OrionCalendarEvent", b =>
+                {
+                    b.Property<int>("OrionCalendarEventID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("OrionCalendarEventID");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("OrionCalendarEventID"));
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("Date")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("DeleteDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("EmployeeID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("Employee ID");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("EmployeeID"));
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("JobLevel")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("LastUpdate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Reference")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("ReferenceDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("Salary")
+                        .HasColumnType("numeric");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("SuggestedBonus")
+                        .HasColumnType("numeric");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("YearsInService")
+                        .HasColumnType("integer");
+
+                    b.HasKey("OrionCalendarEventID");
+
+                    b.ToTable("OrionCalendarEvent");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Password", b =>
@@ -2134,8 +2372,8 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         .HasColumnName("DocumentNode")
                         .HasColumnOrder(2);
 
-                    b.Property<int>("DocumentId")
-                        .HasColumnType("integer");
+                    b.Property<int>("DocumentBusinessEntityID")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("timestamp with time zone")
@@ -2143,7 +2381,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("ProductID", "DocumentNode");
 
-                    b.HasIndex("DocumentId");
+                    b.HasIndex("DocumentBusinessEntityID");
 
                     b.ToTable("Production.ProductDocument");
                 });
@@ -3137,12 +3375,12 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Shift", b =>
                 {
-                    b.Property<byte>("ShiftID")
+                    b.Property<int>("ShiftID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("smallint")
+                        .HasColumnType("integer")
                         .HasColumnName("ShiftID");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<byte>("ShiftID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ShiftID"));
 
                     b.Property<TimeSpan>("EndTime")
                         .HasColumnType("time")
@@ -3870,6 +4108,13 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     b.Navigation("Currency");
                 });
 
+            modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Course", b =>
+                {
+                    b.HasOne("Orion.DataAccess.Postgres.Entities.Employee", null)
+                        .WithMany("AttendedCourses")
+                        .HasForeignKey("EmployeeBusinessEntityID");
+                });
+
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.CurrencyRate", b =>
                 {
                     b.HasOne("Orion.DataAccess.Postgres.Entities.Currency", "Currency")
@@ -4104,7 +4349,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 {
                     b.HasOne("Orion.DataAccess.Postgres.Entities.Document", "Document")
                         .WithMany("ProductDocuments")
-                        .HasForeignKey("DocumentId")
+                        .HasForeignKey("DocumentBusinessEntityID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -4693,6 +4938,8 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Employee", b =>
                 {
+                    b.Navigation("AttendedCourses");
+
                     b.Navigation("Documents");
 
                     b.Navigation("EmployeeDepartmentHistories");

@@ -9,7 +9,9 @@ using Orion.Domain.DTO;
 
 namespace Orion.API.HumanResources.Controllers
 {
-    [Microsoft.AspNetCore.Mvc.Route("api/externalEmployees")]
+    //[Authorize]
+    [Route("api/[controller]")]
+    [ApiController]
     public class ExternalEmployeesController(IEmployeeService employeeService,
         IMapper mapper) : ControllerBase
     {

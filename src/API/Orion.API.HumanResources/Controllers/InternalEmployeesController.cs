@@ -8,7 +8,8 @@ using Orion.Domain.DTO;
 
 namespace Orion.API.HumanResources.Controllers
 {
-    [Route("api/InternalEmployeesController")]
+    //[Authorize]
+    [Route("api/[controller]")]
     [ApiController]
     public class InternalEmployeesController : ControllerBase
     {

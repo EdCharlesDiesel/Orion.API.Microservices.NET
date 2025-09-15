@@ -4,7 +4,8 @@ using Orion.API.HumanResources.Models;
 
 namespace Orion.API.HumanResources.Controllers
 {
-    [Route("api/promotions")]
+    //[Authorize]
+    [Route("api/[controller]")]
     [ApiController]
     public class PromotionsController : ControllerBase
     {

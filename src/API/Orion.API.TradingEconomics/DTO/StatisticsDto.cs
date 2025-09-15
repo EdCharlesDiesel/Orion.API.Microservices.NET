@@ -1,4 +1,4 @@
-﻿namespace Orion.API.HumanResources.Models
+﻿namespace Orion.API.TradingEconomics.DTO
 {
     public abstract class StatisticsDto
     {

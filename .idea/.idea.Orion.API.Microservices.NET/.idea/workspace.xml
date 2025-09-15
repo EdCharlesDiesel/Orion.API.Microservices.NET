@@ -97,7 +97,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="" />
+    <list default="true" id="6d3a8154-9f9e-44f8-9a27-efe5671b52ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Orion.API.Microservices.NET/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,8 +201,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.Orion.API.AWBuildVersion.executor": "Debug",
-    ".NET Launch Settings Profile.Orion.API.DatabaseLog: Orion.API.DatabaseLog.executor": "Run",
+    ".NET Launch Settings Profile.Orion.API.AWBuildVersion.executor": "Run",
+    ".NET Launch Settings Profile.Orion.API.DatabaseLog: Orion.API.DatabaseLog.executor": "Debug",
     ".NET Launch Settings Profile.Orion.API.ErrorLog: Orion.API.ErrorLog.executor": "Run",
     ".NET Launch Settings Profile.Orion.API.ErrorLog:.executor": "Run",
     ".NET Launch Settings Profile.Orion.API.HumanResources.executor": "Run",
@@ -284,7 +286,7 @@
       <command value="OrionCalenderEvent" />
     </option>
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Orion.API.HumanResources">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Orion.API.DatabaseLog: Orion.API.DatabaseLog">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -645,13 +647,14 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/API/Orion.API.HumanResources/Orion.API.HumanResources.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="Orion.API.HumanResources" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="1" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -2728,6 +2731,8 @@
       <workItem from="1757856981374" duration="5418000" />
       <workItem from="1757875775128" duration="1666000" />
       <workItem from="1757879370336" duration="1961000" />
+      <workItem from="1757915861232" duration="3379000" />
+      <workItem from="1757932822965" duration="5413000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring Still,&#10;Working on fixing the Dockerfile">
       <option name="closed" value="true" />

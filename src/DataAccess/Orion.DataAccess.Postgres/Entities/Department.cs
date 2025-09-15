@@ -14,12 +14,12 @@ namespace Orion.DataAccess.Postgres.Entities
         }
 
         [Key]
-        [Column(name : "DepartmentID", TypeName = "smallint")]
+        [Column(name : "DepartmentID", TypeName = "int")] 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required(ErrorMessage = "Department ID is required")]
         [Display(Name = "Department ID")]
         [Description("Primary key for Department records.")]
-        public short? DepartmentID { get; set; } // smallint
+        public int? DepartmentID { get; set; } // smallint
         [Column(name : "Name")]
         [MaxLength(50)]
         [StringLength(50)]

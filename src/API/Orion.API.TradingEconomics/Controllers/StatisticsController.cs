@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.HumanResources.ActionFilters;
-using Orion.API.HumanResources.Models;
+using Orion.API.TradingEconomics.ActionFilters;
+using Orion.API.TradingEconomics.DTO;
 
-namespace Orion.API.HumanResources.Controllers
+namespace Orion.API.TradingEconomics.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
