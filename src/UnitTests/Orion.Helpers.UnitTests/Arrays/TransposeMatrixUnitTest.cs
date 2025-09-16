@@ -4,7 +4,7 @@ using Orion.Helpers.Arrays;
 
 namespace Orion.Helpers.UnitTests.Arrays
 {
-    public class Tests
+    public class TransposeMatrixClassTests
     {
 
         [Fact]

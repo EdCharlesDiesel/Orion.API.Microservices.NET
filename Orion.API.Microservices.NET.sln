@@ -108,6 +108,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.ErrorLog", "src\A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.HumanResources", "src\API\Orion.API.HumanResources\Orion.API.HumanResources.csproj", "{5A10B6D3-724A-463F-B1E6-7383E553965C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orion.API.HumanResources.UnitTests", "src\API\Orion.API.HumanResources.UnitTests\Orion.API.HumanResources.UnitTests.csproj", "{0AB3AB87-04B0-4F3B-863D-780BA4BA245A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -226,6 +228,10 @@ Global
 		{5A10B6D3-724A-463F-B1E6-7383E553965C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A10B6D3-724A-463F-B1E6-7383E553965C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A10B6D3-724A-463F-B1E6-7383E553965C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB3AB87-04B0-4F3B-863D-780BA4BA245A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB3AB87-04B0-4F3B-863D-780BA4BA245A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB3AB87-04B0-4F3B-863D-780BA4BA245A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB3AB87-04B0-4F3B-863D-780BA4BA245A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -272,6 +278,7 @@ Global
 		{B9599D8F-A32B-4804-8306-6FA93C108C5E} = {9EB5AA97-4ABD-4608-8EBE-06BF0CC8D23D}
 		{DDADE853-DC64-4205-8C59-725BA391E648} = {B9599D8F-A32B-4804-8306-6FA93C108C5E}
 		{5A10B6D3-724A-463F-B1E6-7383E553965C} = {C81AA78C-ABB9-4EAB-BDD4-2038A6A5F904}
+		{0AB3AB87-04B0-4F3B-863D-780BA4BA245A} = {AA3F4F55-B094-4862-92CA-0DDA806D7587}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFC31B86-B732-491F-9E63-995F435D6ED6}

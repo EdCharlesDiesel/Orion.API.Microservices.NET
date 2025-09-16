@@ -30,7 +30,14 @@ namespace Orion.Helpers.UnitTests.Tries
         {
             public static List<bool> MultistringSearch(string thisIsABigString, string[] strings)
             {
-                throw new NotImplementedException();
+                var result = new List<bool>();
+
+                foreach (var str in strings)
+                {
+                    result.Add(thisIsABigString.Contains(str));
+                }
+
+                return result;
             }
         }
     }
