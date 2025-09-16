@@ -18,6 +18,9 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 name: "public");
 
             migrationBuilder.EnsureSchema(
+                name: "Person");
+
+            migrationBuilder.EnsureSchema(
                 name: "HumanResources");
 
             migrationBuilder.CreateTable(
@@ -34,6 +37,22 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AWBuildVersion", x => x.SystemInformationID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AddressType",
+                schema: "Person",
+                columns: table => new
+                {
+                    AddressTypeID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    rowguid = table.Column<Guid>(type: "uuid", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AddressType", x => x.AddressTypeID);
                 });
 
             migrationBuilder.CreateTable(
@@ -321,22 +340,6 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "HumanResources.Shift",
-                columns: table => new
-                {
-                    ShiftID = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    StartTime = table.Column<TimeSpan>(type: "time", nullable: false),
-                    EndTime = table.Column<TimeSpan>(type: "time", nullable: false),
-                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_HumanResources.Shift", x => x.ShiftID);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Individuals",
                 columns: table => new
                 {
@@ -387,21 +390,6 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_OrionCalendarEvent", x => x.OrionCalendarEventID);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Person.AddressType",
-                columns: table => new
-                {
-                    AddressTypeID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    rowguid = table.Column<Guid>(type: "uuid", nullable: false),
-                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Person.AddressType", x => x.AddressTypeID);
                 });
 
             migrationBuilder.CreateTable(
@@ -681,6 +669,23 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Sales.SpecialOffer", x => x.SpecialOfferID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Shift",
+                schema: "HumanResources",
+                columns: table => new
+                {
+                    ShiftID = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    StartTime = table.Column<TimeSpan>(type: "time", nullable: false),
+                    EndTime = table.Column<TimeSpan>(type: "time", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Shift", x => x.ShiftID);
                 });
 
             migrationBuilder.CreateTable(
@@ -1404,9 +1409,10 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         principalColumn: "BusinessEntityID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_HumanResources.EmployeeDepartmentHistory_HumanResources.Shi~",
+                        name: "FK_HumanResources.EmployeeDepartmentHistory_Shift_ShiftID",
                         column: x => x.ShiftID,
-                        principalTable: "HumanResources.Shift",
+                        principalSchema: "HumanResources",
+                        principalTable: "Shift",
                         principalColumn: "ShiftID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -2088,16 +2094,17 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 {
                     table.PrimaryKey("PK_Person.BusinessEntityAddress", x => new { x.BusinessEntityID, x.AddressID });
                     table.ForeignKey(
+                        name: "FK_Person.BusinessEntityAddress_AddressType_AddressTypeID",
+                        column: x => x.AddressTypeID,
+                        principalSchema: "Person",
+                        principalTable: "AddressType",
+                        principalColumn: "AddressTypeID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_Person.BusinessEntityAddress_BusinessEntity_BusinessEntityID",
                         column: x => x.BusinessEntityID,
                         principalTable: "BusinessEntity",
                         principalColumn: "BusinessEntityID",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Person.BusinessEntityAddress_Person.AddressType_AddressType~",
-                        column: x => x.AddressTypeID,
-                        principalTable: "Person.AddressType",
-                        principalColumn: "AddressTypeID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Person.BusinessEntityAddress_Person.Address_AddressID",
@@ -2319,6 +2326,20 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
+                schema: "Person",
+                table: "AddressType",
+                columns: new[] { "AddressTypeID", "ModifiedDate", "Name", "rowguid" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Billing", new Guid("f6947549-435e-47dd-badd-c3799d866a00") },
+                    { 2, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Home", new Guid("971c54d9-15e0-4a20-a441-ac658ba2be39") },
+                    { 3, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Main Office", new Guid("23c8de28-8828-4e55-b718-14c4017def9e") },
+                    { 4, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Primary", new Guid("4855e200-f05b-4bd8-a642-40391e61dc12") },
+                    { 5, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Shipping", new Guid("5b2a6c5a-356c-401e-b024-873f6846c98f") },
+                    { 6, new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Archive", new Guid("7cdbdb27-3596-404e-835d-0e8fa310fea4") }
+                });
+
+            migrationBuilder.InsertData(
                 schema: "HumanResources",
                 table: "Department",
                 columns: new[] { "DepartmentID", "GroupName", "ModifiedDate", "Name" },
@@ -2340,6 +2361,17 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                     { 14, "Executive General and Administration", new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Facilities and Maintenance" },
                     { 15, "Sales and Inventory Management", new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Shipping and Receiving" },
                     { 16, "Executive General and Administration", new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Executive" }
+                });
+
+            migrationBuilder.InsertData(
+                schema: "HumanResources",
+                table: "Shift",
+                columns: new[] { "ShiftID", "EndTime", "ModifiedDate", "Name", "StartTime" },
+                values: new object[,]
+                {
+                    { 1, new TimeSpan(0, 15, 0, 0, 0), new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Day", new TimeSpan(0, 7, 0, 0, 0) },
+                    { 2, new TimeSpan(0, 23, 0, 0, 0), new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Evening", new TimeSpan(0, 15, 0, 0, 0) },
+                    { 3, new TimeSpan(0, 7, 0, 0, 0), new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "Night", new TimeSpan(0, 23, 0, 0, 0) }
                 });
 
             migrationBuilder.CreateIndex(
@@ -2874,10 +2906,12 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                 schema: "HumanResources");
 
             migrationBuilder.DropTable(
-                name: "HumanResources.Shift");
+                name: "Shift",
+                schema: "HumanResources");
 
             migrationBuilder.DropTable(
-                name: "Person.AddressType");
+                name: "AddressType",
+                schema: "Person");
 
             migrationBuilder.DropTable(
                 name: "Person.ContactType");

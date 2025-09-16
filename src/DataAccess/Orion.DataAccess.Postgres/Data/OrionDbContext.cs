@@ -346,8 +346,139 @@ namespace Orion.DataAccess.Postgres.Data
                     }
                     
                 );
+            }); 
+ 
+            
+            modelBuilder.Entity<ProductDocument>()
+                .Property(p => p.DocumentNode)
+                .HasConversion(
+                    v => v.ToString(),
+                    v => SqlHierarchyId.Parse(v)
+                )
+                .HasColumnType("text");
+            
+                modelBuilder.Entity<Person>()
+                    .ToTable("Person");
+
+                modelBuilder.Entity<Store>()
+                    .ToTable("Store");
+
+                modelBuilder.Entity<Vendor>()
+                    .ToTable("Vendor");
+
+                modelBuilder.Entity<BusinessEntity>()
+                    .ToTable("BusinessEntity"); // 👈 only if it has a table
+            
+            // ✅ Seed AddressType data
+            modelBuilder.Entity<AddressType>(entity =>
+            {
+                entity.ToTable("AddressType", "Person");
+
+                entity.HasKey(e => e.AddressTypeId);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Rowguid)
+                    .IsRequired();
+
+                entity.Property(e => e.ModifiedDate)
+                    .IsRequired();
+
+                // ✅ Seed data
+                entity.HasData(
+                    new AddressType("Billing")
+                    {
+                        AddressTypeId = 1,
+                        Name = "Billing",
+                        Rowguid = Guid.NewGuid(), // <-- add this
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new AddressType("Home")
+                    {
+                        AddressTypeId = 2,
+                        Name = "Home",
+                        Rowguid = Guid.NewGuid(), // <-- add this
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new AddressType("Main Office")
+                    {
+                        AddressTypeId = 3,
+                        Name = "Main Office",
+                        Rowguid = Guid.NewGuid(), // <-- add this
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new AddressType("Primary")
+                    {
+                        AddressTypeId = 4,
+                        Name = "Primary",
+                        Rowguid = Guid.NewGuid(), // <-- add this
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new AddressType("Shipping")
+                    {
+                        AddressTypeId = 5,
+                        Name = "Shipping",
+                        Rowguid = Guid.NewGuid(), // <-- add this
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new AddressType("Archive")
+                    {
+                        AddressTypeId = 6,
+                        Name = "Archive",
+                        Rowguid = Guid.NewGuid(), // <-- add this
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    }
+                );
+            });
+            
+            // ✅ Seed Shift data 
+            modelBuilder.Entity<Shift>(entity =>
+            {
+                entity.ToTable("Shift", "HumanResources");
+
+                entity.HasKey(e => e.ShiftID);
+
+                entity.Property(e => e.StartTime)
+                    .IsRequired();
+
+                entity.Property(e => e.EndTime)
+                    .IsRequired();
+
+                entity.Property(e => e.ModifiedDate)
+                    .IsRequired();
+
+                // ✅ Seed data
+                entity.HasData(
+                    new Shift()
+                    {
+                        ShiftID = 1,
+                        Name = "Day",
+                        StartTime = TimeSpan.Parse("07:00:00.0000000"),
+                        EndTime = TimeSpan.Parse("15:00:00.0000000"),
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Shift()
+                    {
+                        ShiftID = 2,
+                        Name = "Evening",
+                        StartTime = TimeSpan.Parse("15:00:00.0000000"),
+                        EndTime = TimeSpan.Parse("23:00:00.0000000"),
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Shift()
+                    {
+                        ShiftID = 3,
+                        Name = "Night",
+                        StartTime = TimeSpan.Parse("23:00:00.0000000"),
+                        EndTime = TimeSpan.Parse("07:00:00.0000000"),
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    }
+                );
             });
         }
+        
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {

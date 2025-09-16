@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.Shopping.Aggregator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f99d32e22da0c603212a283690ac27482d4732e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e302d9a8b7cbbe34569f0cdb5765b39a63a9873")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.Shopping.Aggregator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.Shopping.Aggregator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

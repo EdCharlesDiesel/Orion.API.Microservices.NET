@@ -413,7 +413,51 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("AddressTypeId");
 
-                    b.ToTable("Person.AddressType");
+                    b.ToTable("AddressType", "Person");
+
+                    b.HasData(
+                        new
+                        {
+                            AddressTypeId = 1,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Billing",
+                            Rowguid = new Guid("f6947549-435e-47dd-badd-c3799d866a00")
+                        },
+                        new
+                        {
+                            AddressTypeId = 2,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Home",
+                            Rowguid = new Guid("971c54d9-15e0-4a20-a441-ac658ba2be39")
+                        },
+                        new
+                        {
+                            AddressTypeId = 3,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Main Office",
+                            Rowguid = new Guid("23c8de28-8828-4e55-b718-14c4017def9e")
+                        },
+                        new
+                        {
+                            AddressTypeId = 4,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Primary",
+                            Rowguid = new Guid("4855e200-f05b-4bd8-a642-40391e61dc12")
+                        },
+                        new
+                        {
+                            AddressTypeId = 5,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Shipping",
+                            Rowguid = new Guid("5b2a6c5a-356c-401e-b024-873f6846c98f")
+                        },
+                        new
+                        {
+                            AddressTypeId = 6,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Archive",
+                            Rowguid = new Guid("7cdbdb27-3596-404e-835d-0e8fa310fea4")
+                        });
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.BillOfMaterials", b =>
@@ -3399,7 +3443,33 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("ShiftID");
 
-                    b.ToTable("HumanResources.Shift");
+                    b.ToTable("Shift", "HumanResources");
+
+                    b.HasData(
+                        new
+                        {
+                            ShiftID = 1,
+                            EndTime = new TimeSpan(0, 15, 0, 0, 0),
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Day",
+                            StartTime = new TimeSpan(0, 7, 0, 0, 0)
+                        },
+                        new
+                        {
+                            ShiftID = 2,
+                            EndTime = new TimeSpan(0, 23, 0, 0, 0),
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Evening",
+                            StartTime = new TimeSpan(0, 15, 0, 0, 0)
+                        },
+                        new
+                        {
+                            ShiftID = 3,
+                            EndTime = new TimeSpan(0, 7, 0, 0, 0),
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Night",
+                            StartTime = new TimeSpan(0, 23, 0, 0, 0)
+                        });
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.ShipMethod", b =>
