@@ -126,3 +126,9 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\obj\Deb
 C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\obj\Debug\net9.0\Orion.API.TransactionHistoryArchive.genruntimeconfig.cache
 C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\obj\Debug\net9.0\ref\Orion.API.TransactionHistoryArchive.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\bin\Debug\net9.0\Serilog.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.TransactionHistoryArchive\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

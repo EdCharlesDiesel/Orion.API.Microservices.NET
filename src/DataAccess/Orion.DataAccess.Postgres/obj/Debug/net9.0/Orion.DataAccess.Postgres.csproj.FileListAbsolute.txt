@@ -196,3 +196,9 @@ C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\
 C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\obj\Debug\net9.0\EFCoreSqlServerHierarchyId.cs
 C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Serilog.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\x\Orion.Microservices.NET\src\DataAccess\Orion.DataAccess.Postgres\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

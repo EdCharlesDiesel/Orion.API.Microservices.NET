@@ -131,3 +131,9 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\bin\Debug\net9.0\System.T
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\obj\Debug\net9.0\scopedcss\bundle\Orion.API.Catalog.styles.css
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\bin\Debug\net9.0\Serilog.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Catalog\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

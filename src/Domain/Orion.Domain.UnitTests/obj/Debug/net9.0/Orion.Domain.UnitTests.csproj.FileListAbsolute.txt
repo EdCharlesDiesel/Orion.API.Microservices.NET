@@ -190,3 +190,9 @@ C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Orion.DataAccess.Postgres.pdb
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Serilog.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\x\Orion.Microservices.NET\src\Domain\Orion.Domain.UnitTests\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

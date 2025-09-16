@@ -1,6 +1,6 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
-using Orion.API.TradingEconomics.ActionFilters;
+
 
 
 namespace Orion.API.TradingEconomics.Controllers
@@ -30,7 +30,7 @@ namespace Orion.API.TradingEconomics.Controllers
         /// </summary>        
         /// <returns></returns>
         [HttpGet("{date}", Name = "GetLatestUpdatesByDate")]
-        [CheckClientKeyHeader]
+        [Orion.API.TradingEconomics.ActionFilters.CheckShowStatisticsHeader]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]        
         public Task<IActionResult> GetLatestUpdatesByDate(DateTime date)

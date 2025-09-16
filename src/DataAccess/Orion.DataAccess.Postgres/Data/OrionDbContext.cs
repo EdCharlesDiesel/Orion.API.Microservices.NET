@@ -211,6 +211,142 @@ namespace Orion.DataAccess.Postgres.Data
 
             modelBuilder.Entity<BusinessEntity>()
                 .ToTable("BusinessEntity"); // 👈 only if it has a table
+            
+            // ✅ Seed data
+            modelBuilder.Entity<Department>(entity =>
+            {
+                entity.ToTable("Department", "HumanResources");
+
+                entity.HasKey(e => e.DepartmentID);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.GroupName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.ModifiedDate)
+                    .IsRequired();
+
+                // ✅ Seed data
+                entity.HasData(
+                    new Department
+                    {
+                        DepartmentID = 1,
+                        Name = "Engineering",
+                        GroupName = "Research and Development",
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 2,
+                        Name = "Tool Design",
+                        GroupName = "Research and Development",
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 3,
+                        Name = "Sales",
+                        GroupName = "Sales and Marketing",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 4,
+                        Name = "Marketing",
+                        GroupName = "Sales and Marketing",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 5,
+                        Name = "Purchasing",
+                        GroupName = "Inventory Management",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 6,
+                        Name = "Research and Development",
+                        GroupName = "Research and Development",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 7,
+                        Name = "Production",
+                        GroupName = "Manufacturing",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 8,
+                        Name = "Production Control",
+                        GroupName = "Manufacturing",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 9,
+                        Name = "Human Resources",
+                        GroupName = "Executive General and Administration",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 10,
+                        Name = "Finance",
+                        GroupName = "Executive General and Administration",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 11,
+                        Name = "Information Services",
+                        GroupName = "Executive General and Administration",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 12,
+                        Name = "Sales",
+                        GroupName = "Quality Assurance",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 13,
+                        Name = "Quality Assurance",
+                        GroupName = "Quality Assurance",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 14,
+                        Name = "Facilities and Maintenance",
+                        GroupName = "Executive General and Administration",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 15,
+                        Name = "Shipping and Receiving",
+                        GroupName = "Sales and Inventory Management",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    },
+                    new Department
+                    {
+                        DepartmentID = 16,
+                        Name = "Executive",
+                        GroupName = "Executive General and Administration",
+                         ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc)
+                    }
+                    
+                );
+            });
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

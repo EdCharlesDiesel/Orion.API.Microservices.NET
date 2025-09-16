@@ -1354,12 +1354,12 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Department", b =>
                 {
-                    b.Property<short>("DepartmentID")
+                    b.Property<int>("DepartmentID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("smallint")
+                        .HasColumnType("int")
                         .HasColumnName("DepartmentID");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<short>("DepartmentID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("DepartmentID"));
 
                     b.Property<string>("GroupName")
                         .IsRequired()
@@ -1379,7 +1379,121 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("DepartmentID");
 
-                    b.ToTable("HumanResources.Department");
+                    b.ToTable("Department", "HumanResources");
+
+                    b.HasData(
+                        new
+                        {
+                            DepartmentID = 1,
+                            GroupName = "Research and Development",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Engineering"
+                        },
+                        new
+                        {
+                            DepartmentID = 2,
+                            GroupName = "Research and Development",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Tool Design"
+                        },
+                        new
+                        {
+                            DepartmentID = 3,
+                            GroupName = "Sales and Marketing",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Sales"
+                        },
+                        new
+                        {
+                            DepartmentID = 4,
+                            GroupName = "Sales and Marketing",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Marketing"
+                        },
+                        new
+                        {
+                            DepartmentID = 5,
+                            GroupName = "Inventory Management",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Purchasing"
+                        },
+                        new
+                        {
+                            DepartmentID = 6,
+                            GroupName = "Research and Development",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Research and Development"
+                        },
+                        new
+                        {
+                            DepartmentID = 7,
+                            GroupName = "Manufacturing",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Production"
+                        },
+                        new
+                        {
+                            DepartmentID = 8,
+                            GroupName = "Manufacturing",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Production Control"
+                        },
+                        new
+                        {
+                            DepartmentID = 9,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Human Resources"
+                        },
+                        new
+                        {
+                            DepartmentID = 10,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Finance"
+                        },
+                        new
+                        {
+                            DepartmentID = 11,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Information Services"
+                        },
+                        new
+                        {
+                            DepartmentID = 12,
+                            GroupName = "Quality Assurance",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Sales"
+                        },
+                        new
+                        {
+                            DepartmentID = 13,
+                            GroupName = "Quality Assurance",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Quality Assurance"
+                        },
+                        new
+                        {
+                            DepartmentID = 14,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Facilities and Maintenance"
+                        },
+                        new
+                        {
+                            DepartmentID = 15,
+                            GroupName = "Sales and Inventory Management",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Shipping and Receiving"
+                        },
+                        new
+                        {
+                            DepartmentID = 16,
+                            GroupName = "Executive General and Administration",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Executive"
+                        });
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Document", b =>
@@ -1602,8 +1716,8 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("ModifiedDate");
 
-                    b.Property<byte>("ShiftID")
-                        .HasColumnType("smallint")
+                    b.Property<int>("ShiftID")
+                        .HasColumnType("integer")
                         .HasColumnName("ShiftID")
                         .HasColumnOrder(4);
 
@@ -3258,12 +3372,12 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Shift", b =>
                 {
-                    b.Property<byte>("ShiftID")
+                    b.Property<int>("ShiftID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("smallint")
+                        .HasColumnType("integer")
                         .HasColumnName("ShiftID");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<byte>("ShiftID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ShiftID"));
 
                     b.Property<TimeSpan>("EndTime")
                         .HasColumnType("time")

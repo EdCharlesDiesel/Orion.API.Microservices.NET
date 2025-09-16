@@ -141,3 +141,9 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\System.Form
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\System.Text.Json.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\Serilog.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.Chat\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
