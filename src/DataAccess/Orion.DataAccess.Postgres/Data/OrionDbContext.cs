@@ -85,7 +85,7 @@ namespace Orion.DataAccess.Postgres.Data
         public DbSet<WorkOrderRouting> WorkOrderRouting { get; set; }
         public DbSet<OrionCalendarEvent> OrionCalendarEvents { get; set; }
         public DbSet<Course> Courses { get; set; }
-        
+        public DbSet<Person> Persons { get; set; }
 
         // Common Entities.
 

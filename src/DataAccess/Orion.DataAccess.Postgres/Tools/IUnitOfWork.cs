@@ -14,6 +14,7 @@ namespace Orion.DataAccess.Postgres.Tools
         IJobCandidatesRepository JobCandidates { get; set; }
         IEmployeePayHistoriesRepository EmployeePayHistories { get; set; }
         IEmployeeDepartmentHistoriesRepository EmployeeDepartmentHistories { get; set; }
+        IPersonsRepository Persons { get; set; }
 
         Task<bool> SaveEntitiesAsync();
         Task<bool> SaveErrorsAsync(ErrorLog errorLogDto);
@@ -23,5 +24,7 @@ namespace Orion.DataAccess.Postgres.Tools
         Task<int> CompleteAsync();
     }
 
-
+    public interface IPersonsRepository
+    {
+    }
 }

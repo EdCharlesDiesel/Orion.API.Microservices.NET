@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.API.Basket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e302d9a8b7cbbe34569f0cdb5765b39a63a9873")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b53d58e8b2c1e47a08178458eaf2620413e4336b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.API.Basket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.API.Basket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
