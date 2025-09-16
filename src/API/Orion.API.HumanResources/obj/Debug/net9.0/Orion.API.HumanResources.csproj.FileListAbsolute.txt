@@ -242,3 +242,9 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\r
 C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Orion.API.TradingEconomics.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Orion.API.TradingEconomics.pdb
 C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Orion.API.TradingEconomics.xml
+C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.HumanResources\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

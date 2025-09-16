@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orion.DataAccess.Postgres")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b90c1ad9439611d9bf63fa2dcfdb9a90b5041968")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a99a8b761f415ccf1083822adcfb506766033d1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orion.DataAccess.Postgres")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orion.DataAccess.Postgres")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

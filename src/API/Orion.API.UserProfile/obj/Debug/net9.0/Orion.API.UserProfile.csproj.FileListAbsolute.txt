@@ -165,3 +165,9 @@ C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\bin\Debug\net9.0\runt
 C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\obj\Debug\net9.0\scopedcss\bundle\Orion.API.UserProfile.styles.css
 C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\bin\Debug\net9.0\Serilog.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\x\Orion.Microservices.NET\src\API\Orion.API.UserProfile\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
