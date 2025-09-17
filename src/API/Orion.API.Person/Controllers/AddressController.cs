@@ -13,20 +13,20 @@ namespace Orion.API.Person.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var versions = await unitOfWork.Persons.GetAllAsync();
+            var versions = await unitOfWork.Addresses.GetAllAsync();
             return Ok(versions);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var version = await unitOfWork.Persons.GetByIdAsync(id);
+            var version = await unitOfWork.Addresses.GetByIdAsync(id);
             if (version == null) return NotFound();
             return Ok(version);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] DataAccess.Postgres.Entities.Person version)
+        public async Task<IActionResult> Create([FromBody] DataAccess.Postgres.Entities.Address version)
         {
             if (!ModelState.IsValid)
             {
@@ -35,10 +35,10 @@ namespace Orion.API.Person.Controllers
 
             try
             {
-                await unitOfWork.Persons.AddAsync(version);
+                await unitOfWork.Addresses.AddAsync(version);
                 await unitOfWork.CompleteAsync();
 
-                return CreatedAtAction(nameof(GetById), new { id = version.PersonID }, version);
+                return CreatedAtAction(nameof(GetById), new { id = version.AddressID }, version);
             }
             catch (Exception exception)
             {
@@ -63,7 +63,7 @@ namespace Orion.API.Person.Controllers
         }
         
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] DataAccess.Postgres.Entities.Person version)
+        public async Task<IActionResult> Update(int id, [FromBody] DataAccess.Postgres.Entities.Address version)
         {
             if (!ModelState.IsValid)
             {
@@ -72,19 +72,23 @@ namespace Orion.API.Person.Controllers
 
             try
             {
-                var existing = await unitOfWork.Persons.GetByIdAsync(id);
+                var existing = await unitOfWork.Addresses.GetByIdAsync(id);
                 if (existing == null)
                 {
                     return NotFound($"Record with ID {id} not found.");
                 }
 
                 // Map fields (manual or via AutoMapper)
-                existing.Name = version.Name;
-                existing.GroupName = version.GroupName;
-                existing.EmployeePersonHistories = new List<EmployeePersonHistory>();
+                existing.AddressLine1 = version.AddressLine1;
+                existing.AddressLine2 = version.AddressLine2;
+                existing.City = version.City;
+                existing.StateProvinceID = version.StateProvinceID;
+                existing.PostalCode = version.PostalCode;
+                existing.SpatialLocation = version.SpatialLocation;
+                existing.rowguid = version.rowguid;
                 existing.ModifiedDate = version.ModifiedDate;
 
-                unitOfWork.Persons.Update(existing);
+                unitOfWork.Addresses.Update(existing);
                 await unitOfWork.CompleteAsync();
 
                 return Ok(existing);
@@ -117,13 +121,13 @@ namespace Orion.API.Person.Controllers
         {
             try
             {
-                var existing = await unitOfWork.Persons.GetByIdAsync(id);
+                var existing = await unitOfWork.Addresses.GetByIdAsync(id);
                 if (existing == null)
                 {
                     return NotFound($"Record with ID {id} not found.");
                 }
 
-                unitOfWork.Persons.Delete(existing);
+                unitOfWork.Addresses.Delete(existing);
                 await unitOfWork.CompleteAsync();
 
                 return NoContent();

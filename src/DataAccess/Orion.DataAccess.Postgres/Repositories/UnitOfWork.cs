@@ -27,6 +27,8 @@ namespace Orion.DataAccess.Postgres.Repositories
             EmployeePayHistories = new EmployeePayHistoriesRepository(_context);
             EmployeeDepartmentHistories = new  EmployeeDepartmentHistoriesRepository(_context);
             Persons = new  PersonsRepository(_context);
+            Addresses = new  AddressesRepository(_context); 
+            AddressTypes = new  AddressTypesRepository(_context); 
         }
 
         public IAwBuildVersionRepository AwBuildVersions { get; set; }
@@ -39,7 +41,8 @@ namespace Orion.DataAccess.Postgres.Repositories
         public IEmployeePayHistoriesRepository EmployeePayHistories { get; set; }
         public IEmployeeDepartmentHistoriesRepository EmployeeDepartmentHistories { get; set; }
         public IPersonsRepository Persons { get; set; }
-
+        public IAddressesRepository Addresses { get; set; }
+        public IAddressTypesRepository AddressTypes { get; set; }
         public Task StartAsync() => Task.CompletedTask;
 
         public Task CommitAsync() => Task.CompletedTask;

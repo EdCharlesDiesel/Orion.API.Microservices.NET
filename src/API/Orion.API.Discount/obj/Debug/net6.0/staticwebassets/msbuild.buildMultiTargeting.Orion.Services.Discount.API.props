@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Orion.Services.Discount.API.props" />
-</Project>

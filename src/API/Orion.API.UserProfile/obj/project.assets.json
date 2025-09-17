@@ -2080,28 +2080,6 @@
           }
         }
       },
-      "Orion.API.Catalog/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "AutoMapper": "15.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "Microsoft.AspNetCore.Authentication.Negotiate": "9.0.7",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1",
-          "Orion.DataAccess.Postgres": "1.0.0",
-          "Orion.Domain": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.5.0"
-        },
-        "compile": {
-          "bin/placeholder/Orion.API.Catalog.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Orion.API.Catalog.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Orion.DataAccess.Postgres/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -5396,11 +5374,6 @@
         "yamldotnet.nuspec"
       ]
     },
-    "Orion.API.Catalog/1.0.0": {
-      "type": "project",
-      "path": "../Orion.API.Catalog/Orion.API.Catalog.csproj",
-      "msbuildProject": "../Orion.API.Catalog/Orion.API.Catalog.csproj"
-    },
     "Orion.DataAccess.Postgres/1.0.0": {
       "type": "project",
       "path": "../../DataAccess/Orion.DataAccess.Postgres/Orion.DataAccess.Postgres.csproj",
@@ -5425,7 +5398,6 @@
       "Microsoft.AspNetCore.Authentication.Negotiate >= 9.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
-      "Orion.API.Catalog >= 1.0.0",
       "Orion.DataAccess.Postgres >= 1.0.0",
       "Orion.Domain >= 1.0.0",
       "Orion.Helpers >= 1.0.0",
@@ -5458,9 +5430,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Catalog\\Orion.API.Catalog.csproj": {
-              "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\API\\Orion.API.Catalog\\Orion.API.Catalog.csproj"
-            },
             "C:\\x\\Orion.Microservices.NET\\src\\DataAccess\\Orion.DataAccess.Postgres\\Orion.DataAccess.Postgres.csproj": {
               "projectPath": "C:\\x\\Orion.Microservices.NET\\src\\DataAccess\\Orion.DataAccess.Postgres\\Orion.DataAccess.Postgres.csproj"
             },
@@ -5551,6 +5520,12 @@
       "targetGraphs": [
         "net9.0"
       ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }
