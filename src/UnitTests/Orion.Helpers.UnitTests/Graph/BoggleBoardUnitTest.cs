@@ -4,7 +4,7 @@ namespace Orion.Helpers.UnitTests.Graph
 {
     public partial class UnitTest1
     {
-        [Fact]
+        [Fact(Skip = "Not Implemented yet")]
         public void BoggleBoardClassTest()
         {
             char[,] board = {

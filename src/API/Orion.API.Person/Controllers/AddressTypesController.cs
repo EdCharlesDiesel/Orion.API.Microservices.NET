@@ -38,7 +38,7 @@ namespace Orion.API.Person.Controllers
                 await unitOfWork.AddressTypes.AddAsync(version);
                 await unitOfWork.CompleteAsync();
 
-                return CreatedAtAction(nameof(GetById), new { id = version.AddressID }, version);
+                return CreatedAtAction(nameof(GetById), new { id = version.AddressTypeId }, version);
             }
             catch (Exception exception)
             {
@@ -79,16 +79,10 @@ namespace Orion.API.Person.Controllers
                 }
 
                 // Map fields (manual or via AutoMapper)
-                existing.AddressLine1 = version.AddressLine1;
-                existing.AddressLine2 = version.AddressLine2;
-                existing.City = version.City;
-                existing.StateProvinceID = version.StateProvinceID;
-                existing.PostalCode = version.PostalCode;
-                existing.SpatialLocation = version.SpatialLocation;
-                existing.rowguid = version.rowguid;
+  
                 existing.ModifiedDate = version.ModifiedDate;
 
-                unitOfWork.Addresses.Update(existing);
+                unitOfWork.AddressTypes.Update(existing);
                 await unitOfWork.CompleteAsync();
 
                 return Ok(existing);

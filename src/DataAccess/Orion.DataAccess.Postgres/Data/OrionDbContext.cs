@@ -126,7 +126,7 @@ namespace Orion.DataAccess.Postgres.Data
 
             modelBuilder.Entity<EmployeeDepartmentHistory>()
                 .HasKey(bea => new { bea.BusinessEntityID, bea.DepartmentID, bea.StartDate });
-            // ❌ removed duplicate with ShiftID
+            
 
             modelBuilder.Entity<EmployeePayHistory>()
                 .HasKey(bea => new { bea.BusinessEntityID, bea.RateChangeDate });
@@ -151,11 +151,11 @@ namespace Orion.DataAccess.Postgres.Data
 
             modelBuilder.Entity<ProductModelIllustration>()
                 .HasKey(bea => new { bea.ProductModelID, bea.IllustrationID });
-            // ❌ removed duplicate
+            
 
             modelBuilder.Entity<ProductModelProductDescriptionCulture>()
                 .HasKey(bea => new { bea.ProductModelID, bea.ProductDescriptionID, bea.CultureID });
-            // ❌ removed duplicate
+            
 
             modelBuilder.Entity<ProductProductPhoto>()
                 .HasKey(bea => new { bea.ProductID, bea.ProductPhotoID });
@@ -174,7 +174,7 @@ namespace Orion.DataAccess.Postgres.Data
 
             modelBuilder.Entity<SalesPersonQuotaHistory>()
                 .HasKey(bea => new { bea.BusinessEntityID, bea.QuotaDate });
-            // ❌ removed duplicate
+            
 
             modelBuilder.Entity<SalesTerritoryHistory>()
                 .HasKey(bea => new { bea.BusinessEntityID, bea.TerritoryID });
@@ -358,7 +358,7 @@ namespace Orion.DataAccess.Postgres.Data
                 .HasColumnType("text");
             
                 modelBuilder.Entity<Person>()
-                    .ToTable("Person");
+                     .ToTable("Person");
 
                 modelBuilder.Entity<Store>()
                     .ToTable("Store");
@@ -368,6 +368,27 @@ namespace Orion.DataAccess.Postgres.Data
 
                 modelBuilder.Entity<BusinessEntity>()
                     .ToTable("BusinessEntity"); // 👈 only if it has a table
+                
+                
+            // ✅ Seed default BusinessEntity data 
+            modelBuilder.Entity<BusinessEntity>(entity =>
+            {
+                entity.ToTable("BusinessEntity", "Person");
+        
+                entity.HasKey(e => e.BusinessEntityID);
+        
+                // ✅ Seed data
+                entity.HasData(
+                    new BusinessEntity( )
+                    {
+                        BusinessEntityID = 1,
+                        Rowguid = Guid.NewGuid(),
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc),
+                        BusinessEntityContact = new List<BusinessEntityContact>(){},
+                        BusinessEntityAddress = new List<BusinessEntityAddress>(){}
+                    }
+                );
+            });
             
             // ✅ Seed AddressType data
             modelBuilder.Entity<AddressType>(entity =>
@@ -477,8 +498,94 @@ namespace Orion.DataAccess.Postgres.Data
                     }
                 );
             });
+            
+            // ✅ Seed default person data 
+            modelBuilder.Entity<Employee>(entity =>
+            {
+                entity.ToTable("Employee", "HumanResources");
+            
+                entity.HasKey(e => e.BusinessEntityID);
+                entity.Property(e => e.ModifiedDate)
+                    .IsRequired();
+            
+                // ✅ Seed data
+                entity.HasData(
+                        new Employee()
+                        {
+                            BusinessEntityID = 1,
+                            AttendedCourses = new List<Course>(),
+                            NationalIDNumber = "8898086267098",
+                            BirthDate = DateTime.MaxValue,
+                            JobTitle = "Developer",
+                            Documents = new  List<Document>(),
+                            JobLevel = 8,
+                            Salary = 20000000,
+                            Gender = "M",
+                            YearsInService = 10,
+                            LoginID = "Batman",
+                            CurrentFlag = true,
+                            EntityVersion = Int32.MaxValue,
+                            HireDate = new  DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc),
+                            JobCandidates = new   List<JobCandidate>(),
+                            SalariedFlag = false,
+                            MinimumRaiseGiven = true,
+                            MaritalStatus = "M",
+                            SuggestedBonus = 120000000,
+                            ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc),
+                            SickLeaveHours = 21,
+                            VacationHours = 199,
+                            rowguid = Guid.NewGuid(),
+                            
+                        }
+                );
+            });
+            
+            // ✅ Seed default person data 
+            modelBuilder.Entity<Person>(entity =>
+            {
+                entity.ToTable("Person", "Person");
+            
+                entity.HasKey(e => e.BusinessEntityID);
+            
+                entity.Property(e => e.FirstName)
+                    .IsRequired();
+            
+                entity.Property(e => e.LastName)
+                    .IsRequired();
+            
+                entity.Property(e => e.ModifiedDate)
+                    .IsRequired();
+            
+                // ✅ Seed data
+                entity.HasData(
+                    new Person( )
+                    {
+                        BusinessEntityID = 4,
+                        PersonType = "E",
+                        FirstName = "Khotso",
+                        LastName = "Mokhethi",
+                        NameStyle = true,
+                        Title = "Mr",
+                        MiddleName = "Ed",
+                        Suffix = "ADMIN",
+                        EmailPromotion = 1,
+                        AdditionalContactInfo = "Ckhotso@gmail.com",
+                        Demographics = "",
+                        rowguid = Guid.NewGuid(),
+                        ModifiedDate = new DateTime(2025, 01, 01, 0, 0, 0, DateTimeKind.Utc),
+                        Employee = null,
+                        BusinessEntityContact = new List<BusinessEntityContact>(){},
+                        Customers = new  List<Customer>(){},
+                        PersonPhones = new List<PersonPhone>(){},
+                        Password = null,
+                        EmailAddresses = new List<EmailAddress>(){},
+                        PersonCreditCards = new  List<PersonCreditCard>(){},
+                        
+                        
+                    }
+                );
+            });
         }
-        
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {

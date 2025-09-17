@@ -37,7 +37,6 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.Postgres\Orion.DataAccess.Postgres.csproj" />
-	  <ProjectReference Include="..\Orion.API.TradingEconomics\Orion.API.TradingEconomics.csproj" />
 	</ItemGroup>
 
 </Project>

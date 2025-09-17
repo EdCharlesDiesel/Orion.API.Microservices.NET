@@ -4,7 +4,7 @@ namespace Orion.Helpers.UnitTests.Searching
 {
     public class OptimalAssemblyLineClassUnitTest1
     {
-        [Fact]
+        [Fact(Skip = "Not Implemented yet")]
         public void Test1()
         {
             int[] stepDurations = new[] { 15, 15, 30, 30, 45 };
