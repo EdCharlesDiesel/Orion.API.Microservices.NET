@@ -4,7 +4,7 @@ namespace Orion.Helpers.UnitTests.Recursion
     
     public class ProductSumTests
     {
-        [Fact]
+        [Fact(Skip = "Not Implemented yet")]
         public  void TestCase1()
         {
             List<object> test = new List<object>

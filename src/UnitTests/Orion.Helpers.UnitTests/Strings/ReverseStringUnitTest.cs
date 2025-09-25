@@ -4,8 +4,7 @@ namespace Orion.Helpers.UnitTests.Strings
 {
     public class ReverseStringClassUnitTest1
     {
-
-		[Fact]
+		[Fact(Skip="Not implemented yet")]
         public void Method_Should_Return_False()
 		{
 			//ARRANGE

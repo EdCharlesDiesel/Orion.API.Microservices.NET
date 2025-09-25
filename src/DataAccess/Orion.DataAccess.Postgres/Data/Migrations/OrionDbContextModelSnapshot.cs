@@ -413,7 +413,51 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("AddressTypeId");
 
-                    b.ToTable("Person.AddressType");
+                    b.ToTable("AddressType", "Person");
+
+                    b.HasData(
+                        new
+                        {
+                            AddressTypeId = 1,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Billing",
+                            Rowguid = new Guid("68a51bec-dd71-408f-b68a-76cca0cbfe73")
+                        },
+                        new
+                        {
+                            AddressTypeId = 2,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Home",
+                            Rowguid = new Guid("308de43c-8cee-4c18-a2af-84419d197257")
+                        },
+                        new
+                        {
+                            AddressTypeId = 3,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Main Office",
+                            Rowguid = new Guid("c79d0a5e-bcbc-4846-86f0-1f1d912bfb57")
+                        },
+                        new
+                        {
+                            AddressTypeId = 4,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Primary",
+                            Rowguid = new Guid("0fe672a4-2913-4049-9b30-df7ea337a85d")
+                        },
+                        new
+                        {
+                            AddressTypeId = 5,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Shipping",
+                            Rowguid = new Guid("eb9d9d9b-868c-495f-8a31-f1d9fdb61490")
+                        },
+                        new
+                        {
+                            AddressTypeId = 6,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Archive",
+                            Rowguid = new Guid("0c2a8111-60ea-4de4-9c89-32c12cbf88b9")
+                        });
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.BillOfMaterials", b =>
@@ -502,7 +546,15 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("BusinessEntityID");
 
-                    b.ToTable("BusinessEntity", (string)null);
+                    b.ToTable("BusinessEntity", "Person");
+
+                    b.HasData(
+                        new
+                        {
+                            BusinessEntityID = 1,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Rowguid = new Guid("bd1da44c-c6b3-4ce0-86eb-89bc54c24ff5")
+                        });
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.BusinessEntityAddress", b =>
@@ -1688,7 +1740,31 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("BusinessEntityID");
 
-                    b.ToTable("HumanResources.Employee");
+                    b.ToTable("Employee", "HumanResources");
+
+                    b.HasData(
+                        new
+                        {
+                            BusinessEntityID = 1,
+                            BirthDate = new DateTime(9999, 12, 31, 23, 59, 59, 999, DateTimeKind.Unspecified).AddTicks(9999),
+                            EntityVersion = 2147483647,
+                            Gender = "M",
+                            HireDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            JobLevel = 8,
+                            JobTitle = "Developer",
+                            LoginID = "Batman",
+                            MaritalStatus = "M",
+                            MinimumRaiseGiven = true,
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            NationalIDNumber = "8898086267098",
+                            Salary = 20000000,
+                            SickLeaveHours = (short)21,
+                            SuggestedBonus = 120000000,
+                            VacationHours = (short)199,
+                            YearsInService = 10,
+                            rowguid = new Guid("8424e352-667f-4c36-9126-99142fc58336")
+                        });
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.EmployeeDepartmentHistory", b =>
@@ -2060,7 +2136,24 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("BusinessEntityID");
 
-                    b.ToTable("Person", (string)null);
+                    b.ToTable("Person", "Person");
+
+                    b.HasData(
+                        new
+                        {
+                            BusinessEntityID = 4,
+                            AdditionalContactInfo = "Ckhotso@gmail.com",
+                            Demographics = "",
+                            EmailPromotion = 1,
+                            FirstName = "Khotso",
+                            LastName = "Mokhethi",
+                            MiddleName = "Ed",
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            PersonType = "E",
+                            Suffix = "ADMIN",
+                            Title = "Mr",
+                            rowguid = new Guid("d2bb7ab6-60ab-4ec2-ab9b-beb6bbca723a")
+                        });
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.PersonCreditCard", b =>
@@ -3399,7 +3492,33 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.HasKey("ShiftID");
 
-                    b.ToTable("HumanResources.Shift");
+                    b.ToTable("Shift", "HumanResources");
+
+                    b.HasData(
+                        new
+                        {
+                            ShiftID = 1,
+                            EndTime = new TimeSpan(0, 15, 0, 0, 0),
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Day",
+                            StartTime = new TimeSpan(0, 7, 0, 0, 0)
+                        },
+                        new
+                        {
+                            ShiftID = 2,
+                            EndTime = new TimeSpan(0, 23, 0, 0, 0),
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Evening",
+                            StartTime = new TimeSpan(0, 15, 0, 0, 0)
+                        },
+                        new
+                        {
+                            ShiftID = 3,
+                            EndTime = new TimeSpan(0, 7, 0, 0, 0),
+                            ModifiedDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Name = "Night",
+                            StartTime = new TimeSpan(0, 23, 0, 0, 0)
+                        });
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.ShipMethod", b =>
@@ -4947,8 +5066,7 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.Navigation("PurchaseOrderHeaders");
 
-                    b.Navigation("SalesPerson")
-                        .IsRequired();
+                    b.Navigation("SalesPerson");
                 });
 
             modelBuilder.Entity("Orion.DataAccess.Postgres.Entities.Illustration", b =>
@@ -4971,11 +5089,9 @@ namespace Orion.DataAccess.Postgres.Data.Migrations
 
                     b.Navigation("EmailAddresses");
 
-                    b.Navigation("Employee")
-                        .IsRequired();
+                    b.Navigation("Employee");
 
-                    b.Navigation("Password")
-                        .IsRequired();
+                    b.Navigation("Password");
 
                     b.Navigation("PersonCreditCards");
 

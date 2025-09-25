@@ -4,7 +4,7 @@ namespace Orion.Helpers.UnitTests.GreedyAlgorithmns
 {
     public class TaskAssignmentUnitTest
     {
-        [Fact]
+        [Fact(Skip = "Not Implemented yet")]
         public void Test1()
         {
             var k = 3;

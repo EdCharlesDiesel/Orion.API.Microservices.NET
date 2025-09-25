@@ -115,7 +115,7 @@ namespace Orion.DataAccess.Postgres.Entities
 
         // HumanResources.Employee.BusinessEntityID -> Person.Person.BusinessEntityID (FK_Employee_Person_BusinessEntityID)
         [ForeignKey("BusinessEntityID")]
-        public Person Person { get; set; }
+        public Person? Person { get; set; }
         // HumanResources.EmployeeDepartmentHistory.BusinessEntityID -> HumanResources.Employee.BusinessEntityID (FK_EmployeeDepartmentHistory_Employee_BusinessEntityID)
         public IEnumerable<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; }
         // HumanResources.EmployeePayHistory.BusinessEntityID -> HumanResources.Employee.BusinessEntityID (FK_EmployeePayHistory_Employee_BusinessEntityID)
@@ -127,7 +127,7 @@ namespace Orion.DataAccess.Postgres.Entities
         // Purchasing.PurchaseOrderHeader.EmployeeID -> HumanResources.Employee.BusinessEntityID (FK_PurchaseOrderHeader_Employee_EmployeeID)
         public IEnumerable<PurchaseOrderHeader> PurchaseOrderHeaders { get; set; }
         // Sales.SalesPerson.BusinessEntityID -> HumanResources.Employee.BusinessEntityID (FK_SalesPerson_Employee_BusinessEntityID)
-        public SalesPerson SalesPerson { get; set; }
+        public SalesPerson? SalesPerson { get; set; }
         public int JobLevel { get; set; }
         public int YearsInService { get; set; }
         public IEnumerable<Course> AttendedCourses { get; set; }

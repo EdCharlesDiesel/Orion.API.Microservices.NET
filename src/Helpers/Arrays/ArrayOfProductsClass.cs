@@ -12,22 +12,52 @@
     {
         public static int[] ArrayOfProducts(int[] array)
         {
-            var products = new int[array.Length];
-
-            var runningProduct = 1;
-            for (var i = 0; i < array.Length; i++) 
+            if (array == null || array.Length == 0)
+                return new int[0];
+        
+            int[] result = new int[array.Length];
+        
+            // Method 1: Two-pass approach (O(n) time, O(1) extra space)
+            // First pass: calculate products of all elements to the left
+            result[0] = 1;
+            for (int i = 1; i < array.Length; i++)
             {
-                for (var j = 0; j < array.Length; j++)
+                result[i] = result[i - 1] * array[i - 1];
+            }
+        
+            // Second pass: multiply by products of all elements to the right
+            int rightProduct = 1;
+            for (int i = array.Length - 1; i >= 0; i--)
+            {
+                result[i] *= rightProduct;
+                rightProduct *= array[i];
+            }
+        
+            return result;
+        }
+    
+        // Alternative simpler approach (O(n²) time)
+        public static int[] ArrayOfProductsSimple(int[] array)
+        {
+            if (array == null || array.Length == 0)
+                return new int[0];
+        
+            int[] result = new int[array.Length];
+        
+            for (int i = 0; i < array.Length; i++)
+            {
+                int product = 1;
+                for (int j = 0; j < array.Length; j++)
                 {
                     if (i != j)
                     {
-                        runningProduct *= array[j]; 
+                        product *= array[j];
                     }
-                    products[i] = runningProduct;   
                 }
+                result[i] = product;
             }
-
-            return products;
+        
+            return result;
         }
     }
 }

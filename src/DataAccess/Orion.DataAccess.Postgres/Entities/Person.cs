@@ -98,13 +98,13 @@ namespace Orion.DataAccess.Postgres.Entities
         [ForeignKey("BusinessEntityID")]
         public BusinessEntity BusinessEntity { get; set; }
         // HumanResources.Employee.BusinessEntityID -> Person.Person.BusinessEntityID (FK_Employee_Person_BusinessEntityID)
-        public Employee Employee { get; set; }
+        public Employee? Employee { get; set; }
         // Person.BusinessEntityContact.PersonID -> Person.Person.BusinessEntityID (FK_BusinessEntityContact_Person_PersonID)
         public IEnumerable<BusinessEntityContact> BusinessEntityContact { get; set; }
         // Person.EmailAddress.BusinessEntityID -> Person.Person.BusinessEntityID (FK_EmailAddress_Person_BusinessEntityID)
         public IEnumerable<EmailAddress> EmailAddresses { get; set; }
         // Person.Password.BusinessEntityID -> Person.Person.BusinessEntityID (FK_Password_Person_BusinessEntityID)
-        public Password Password { get; set; }
+        public Password? Password { get; set; }
         // Person.PersonPhone.BusinessEntityID -> Person.Person.BusinessEntityID (FK_PersonPhone_Person_BusinessEntityID)
         public IEnumerable<PersonPhone> PersonPhones { get; set; }
         // Sales.Customer.PersonID -> Person.Person.BusinessEntityID (FK_Customer_Person_PersonID)

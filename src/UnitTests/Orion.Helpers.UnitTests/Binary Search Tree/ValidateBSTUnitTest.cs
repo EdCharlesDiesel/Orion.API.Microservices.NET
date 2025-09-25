@@ -1,23 +1,25 @@
 
 
+using Orion.Helpers.Binary_Search_Tree;
+
 namespace Orion.Helpers.UnitTests.Binary_Search_Tree
 {
-    public class BstUnitTest
+    public class ValidateBstClassUnitTest
     {
-        [Fact(Skip ="Sort later")]
+        [Fact]
         public void Test1()
         {
-            var root = new GenericClassAlgorithm.BST(10);
-            root.Left = new GenericClassAlgorithm.BST(5);
-            root.Left.Left = new GenericClassAlgorithm.BST(2);
-            root.Left.Left.Left = new GenericClassAlgorithm.BST(1);
-            root.Left.Right = new GenericClassAlgorithm.BST(5);
-            root.Right = new GenericClassAlgorithm.BST(15);
-            root.Right.Left = new GenericClassAlgorithm.BST(13);
-            root.Right.Left.Right = new GenericClassAlgorithm.BST(14);
-            root.Right.Right = new GenericClassAlgorithm.BST(22);
+            var root = new ValidateBstClass.BST(10);
+            root.Left = new ValidateBstClass.BST(5);
+            root.Left.Left = new ValidateBstClass.BST(2);
+            root.Left.Left.Left = new ValidateBstClass.BST(1);
+            root.Left.Right = new ValidateBstClass.BST(5);
+            root.Right = new ValidateBstClass.BST(15);
+            root.Right.Left = new ValidateBstClass.BST(13);
+            root.Right.Left.Right = new ValidateBstClass.BST(14);
+            root.Right.Right = new ValidateBstClass.BST(22);
 
-            Assert.True(GenericClassAlgorithm.ValidateBST(root));
+            Assert.True(ValidateBstClass.ValidateBST(root));
         }
     }
 }

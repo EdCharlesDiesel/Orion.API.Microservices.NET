@@ -1,8 +1,11 @@
+
+
 using Orion.DataAccess.Postgres.Data;
 using Orion.DataAccess.Postgres.Entities;
 using Orion.DataAccess.Postgres.IRepositories;
 using Orion.DataAccess.Postgres.Tools;
 using Serilog;
+
 
 
 namespace Orion.DataAccess.Postgres.Repositories
@@ -23,6 +26,9 @@ namespace Orion.DataAccess.Postgres.Repositories
             JobCandidates = new  JobCandidatesRepository(_context);
             EmployeePayHistories = new EmployeePayHistoriesRepository(_context);
             EmployeeDepartmentHistories = new  EmployeeDepartmentHistoriesRepository(_context);
+            Persons = new  PersonsRepository(_context);
+            Addresses = new  AddressesRepository(_context); 
+            AddressTypes = new  AddressTypesRepository(_context); 
         }
 
         public IAwBuildVersionRepository AwBuildVersions { get; set; }
@@ -34,7 +40,9 @@ namespace Orion.DataAccess.Postgres.Repositories
         public IJobCandidatesRepository JobCandidates { get; set; }
         public IEmployeePayHistoriesRepository EmployeePayHistories { get; set; }
         public IEmployeeDepartmentHistoriesRepository EmployeeDepartmentHistories { get; set; }
-
+        public IPersonsRepository Persons { get; set; }
+        public IAddressesRepository Addresses { get; set; }
+        public IAddressTypesRepository AddressTypes { get; set; }
         public Task StartAsync() => Task.CompletedTask;
 
         public Task CommitAsync() => Task.CompletedTask;

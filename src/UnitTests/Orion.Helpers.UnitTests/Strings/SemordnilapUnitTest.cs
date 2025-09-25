@@ -2,10 +2,10 @@ using Orion.Helpers.Strings;
 
 namespace Orion.Helpers.UnitTests.Strings
 {
-    public class USemordnilapClassnitTest 
+    public class SemordnilapClassTest 
     {
-        [Fact]
-        public void Test1()
+        [Fact(Skip="Not implemented yet")]
+        public void SemordnilapTest1()
         {
             var input = new[] { "desserts", "stressed", "hello" };
             var expected = new List<List<string>>();

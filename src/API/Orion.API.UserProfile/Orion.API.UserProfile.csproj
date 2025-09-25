@@ -37,7 +37,6 @@
     <ProjectReference Include="..\..\DataAccess\Orion.DataAccess.Postgres\Orion.DataAccess.Postgres.csproj" />
     <ProjectReference Include="..\..\Domain\Orion.Domain\Orion.Domain.csproj" />
     <ProjectReference Include="..\..\Helpers\Orion.Helpers.csproj" />
-    <ProjectReference Include="..\Orion.API.Catalog\Orion.API.Catalog.csproj" />
   </ItemGroup>
 
   <ItemGroup>
